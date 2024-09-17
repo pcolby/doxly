@@ -1,0 +1,6 @@
+[FORMAT]
+max-line-length=120
+
+[BASIC]
+variable-naming-style=camelCase
+argument-naming-style=camelCase
