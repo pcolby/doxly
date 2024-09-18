@@ -4,16 +4,12 @@
 """Convert Doxygen XML to Docusaurus Markdown files."""
 
 import logging
-import sys
 
 import doxmlparser
 import jinja2 as j2
 
 
-logging.basicConfig(stream=sys.stdout, level=logging.INFO)
 logger = logging.getLogger(__name__)
-
-
 env = j2.Environment(loader=j2.FileSystemLoader('templates'))
 
 

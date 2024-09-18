@@ -4,7 +4,9 @@
 """Convert Doxygen XML to Docusaurus Markdown files."""
 
 import argparse
+import logging
 import pathlib
+import sys
 
 from .render import process_index
 from ._version import __version__
@@ -34,9 +36,11 @@ def main():
     parser.add_argument('-d', '--debug', action='store_true', help='enable debug output')
     parser.add_argument('-v', '--version', action='version', version='%(prog)s ' + __version__)
     args = parser.parse_args()
-    # if args.debug:
-    #     logger.setLevel(logging.DEBUG)
-    process_index(args.doxml)
+    logging.basicConfig(stream=sys.stdout, level=logging.INFO)
+    if args.debug:
+        logging.getLogger().setLevel(logging.DEBUG)
+        logging.getLogger(__name__).debug("Debugging enabled")
+    process_index(args.input_dir)
     print("done")
 
 
