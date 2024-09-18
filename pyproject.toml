@@ -6,7 +6,7 @@ requires = ["flit_core >= 3.4"]
 build-backend = "flit_core.buildapi"
 
 [project]
-name = "donkegin"
+name = "doxly"
 dynamic = ["version", "description"]
 dependencies = [
   "doxmlparser",
@@ -28,11 +28,11 @@ classifiers = [
 ]
 
 [project.urls]
-Home = "https://github.com/pcolby/donkegin"
-Documentation = "https://pcolby.github.io/donkegin/"
-Repository = "https://github.com/pcolby/donkegin.git"
-"Bug Tracker" = "https://github.com/pcolby/donkegin/issues"
-Changelog = "https://github.com/pcolby/donkegin/blob/master/CHANGELOG.md"
+Home = "https://github.com/pcolby/doxly"
+Documentation = "https://pcolby.github.io/doxly/"
+Repository = "https://github.com/pcolby/doxly.git"
+"Bug Tracker" = "https://github.com/pcolby/doxly/issues"
+Changelog = "https://github.com/pcolby/doxly/blob/master/CHANGELOG.md"
 
 [project.scripts]
-donkegin = "donkegin.cli:main"
+doxly = "doxly.cli:main"
