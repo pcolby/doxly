@@ -3,6 +3,6 @@
 set -o errexit -o noclobber -o nounset -o pipefail
 
 rc=0
-pycodestyle doxysaurus || rc=$?
-pylint doxysaurus || rc=$?
+pycodestyle src || rc=$?
+pylint src || rc=$?
 exit $rc

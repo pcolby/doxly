@@ -1,0 +1,38 @@
+# SPDX-FileCopyrightText: 2024 Paul Colby <git@colby.id.au>
+# SPDX-License-Identifier: GPL-3.0-or-later
+
+[build-system]
+requires = ["flit_core >= 3.4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "donkegin"
+dynamic = ["version", "description"]
+dependencies = [
+  "doxmlparser",
+  "jinja2",
+]
+requires-python = ">= 3.4"
+authors = [
+  {name = "Paul Colby", email = "git@colby.id.au"},
+]
+maintainers = [
+  {name = "Paul Colby", email = "git@colby.id.au"},
+]
+readme = "README.md"
+license = {file = "LICENSE.txt"}
+keywords = ["Doxygen", "doxml", "jinja2", "Docusaurus"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python"
+]
+
+[project.urls]
+Home = "https://github.com/pcolby/donkegin"
+Documentation = "https://pcolby.github.io/donkegin/"
+Repository = "https://github.com/pcolby/donkegin.git"
+"Bug Tracker" = "https://github.com/pcolby/donkegin/issues"
+Changelog = "https://github.com/pcolby/donkegin/blob/master/CHANGELOG.md"
+
+[project.scripts]
+donkegin = "donkegin.cli:main"

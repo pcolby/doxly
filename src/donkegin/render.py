@@ -1,12 +1,9 @@
-#!/usr/bin/env python3
 # SPDX-FileCopyrightText: 2024 Paul Colby <git@colby.id.au>
 # SPDX-License-Identifier: GPL-3.0-or-later
 
 """Convert Doxygen XML to Docusaurus Markdown files."""
 
-import argparse
 import logging
-import pathlib
 import sys
 
 import doxmlparser
@@ -52,26 +49,3 @@ def process_index(doxmlDir):
     for compound in index.get_compound():
         logger.debug("%s %s", compound.get_kind(), compound.get_refid())
         process_compound(doxmlDir, compound.get_refid())
-
-
-def main():
-    """Main CLI entrypoint"""
-    parser = argparse.ArgumentParser(
-        description='Convert Doxygen XML to Docusaurus Markdown',
-        epilog='foo')
-    parser.add_argument('-d', '--debug', action='store_true', help="enable debugging")
-    parser.add_argument(
-        '-i', '--doxml', type=pathlib.Path, required=True,
-        help='Doxygen XML directory', metavar='DIR')
-    parser.add_argument(
-        '-o', '--output', type=pathlib.Path, required=True,
-        help='utput directory', metavar='DIR')
-    args = parser.parse_args()
-    if args.debug:
-        logger.setLevel(logging.DEBUG)
-    process_index(args.doxml)
-    print("done")
-
-
-if __name__ == '__main__':
-    main()
