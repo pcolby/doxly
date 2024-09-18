@@ -20,7 +20,7 @@ maintainers = [
   {name = "Paul Colby", email = "git@colby.id.au"},
 ]
 readme = "README.md"
-license = {file = "LICENSE.txt"}
+license = {file = "COPYING.md"}
 keywords = ["Doxygen", "doxml", "jinja2", "Docusaurus"]
 classifiers = [
   "Development Status :: 4 - Beta",
