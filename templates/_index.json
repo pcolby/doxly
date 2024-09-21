@@ -5,6 +5,6 @@
     "kind": "{{ compound.kind }}",
     "refId": "{{ compound.refid }}",
     "template": "compound.md",
-    "destination": "{{ compound.refid }}.md"
+    "destination":"{% if compound.refid == 'indexpage' %}index{% else %}{{ compound.refid }}{% endif %}.md"
   }{% if not loop.last %},{% else %}
 {% endif %}{% endfor %}]
