@@ -41,7 +41,6 @@ def main():
         logging.getLogger().setLevel(logging.DEBUG)
         logging.getLogger(__name__).debug("Debugging enabled")
     process_index(args.input_dir)
-    print("done")
 
 
 if __name__ == '__main__':

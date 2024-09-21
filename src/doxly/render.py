@@ -8,9 +8,11 @@ import logging
 import doxmlparser
 import jinja2 as j2
 
+from ._version import __version__
+
 
 logger = logging.getLogger(__name__)
-env = j2.Environment(loader=j2.FileSystemLoader('templates'))
+env = j2.Environment(loader=j2.FileSystemLoader('/home/paul/src/doxly/templates'))
 
 
 def process_compound(dirName, baseName):
@@ -44,4 +46,10 @@ def process_index(doxmlDir):
     logger.debug('Parsed v%s index', index.get_version())
     for compound in index.get_compound():
         logger.debug("%s %s", compound.get_kind(), compound.get_refid())
-        process_compound(doxmlDir, compound.get_refid())
+        # process_compound(doxmlDir, compound.get_refid())
+    ctx = {
+      'doxly': { 'version':  __version__ },
+      'index': index,
+    }
+    template = env.get_template('_index.json')
+    print(template.render(ctx))

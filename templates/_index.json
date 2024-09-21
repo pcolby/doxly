@@ -1,0 +1,10 @@
+{# doxly.version #}
+{# index.version #}
+[{% for compound in index.compound %}
+  {
+    "kind": "{{ compound.kind }}",
+    "refId": "{{ compound.refid }}",
+    "template": "compound.md",
+    "destination": "{{ compound.refid }}.md"
+  }{% if not loop.last %},{% else %}
+{% endif %}{% endfor %}]
