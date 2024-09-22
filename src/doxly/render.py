@@ -17,6 +17,7 @@ env = j2.Environment(loader=j2.FileSystemLoader('/home/paul/src/doxly/templates'
 
 
 def kind_plural(kind):
+    """Return kind as a pural"""
     match kind:
         case 'category':
             return 'categories'
@@ -61,13 +62,15 @@ def process_index(doxmlDir):
         logger.debug("%s %s", compound.get_kind(), compound.get_refid())
         # process_compound(doxmlDir, compound.get_refid())
     ctx = {
-      'doxly': { 'version':  __version__ },
+      'doxly': {
+          'version':  __version__
+      },
       'index': index,
     }
     env.filters['kindplural'] = kind_plural
     template = env.get_template('_index.json')
     data = template.render(ctx)
-    #print(data)
+    # print(data)
     j = json.loads(data)
     print(j)
-    print('About to render %d files in ...' % (len(j)))
+    print(f"About to render {len(j)} files in ...'")
