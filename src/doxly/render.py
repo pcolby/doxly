@@ -9,7 +9,7 @@ import logging
 import doxmlparser
 import jinja2 as j2
 
-from ._version import __version__
+from .version import __version__
 
 
 logger = logging.getLogger(__name__)

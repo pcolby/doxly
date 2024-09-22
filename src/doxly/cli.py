@@ -9,7 +9,7 @@ import pathlib
 import sys
 
 from .render import process_index
-from ._version import __version__
+from .version import __version__
 
 
 def formatter(prog):
