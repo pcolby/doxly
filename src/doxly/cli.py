@@ -8,7 +8,7 @@ import logging
 import pathlib
 import sys
 
-from .render import process_index
+from .doxly import process_index
 from .version import __version__
 
 
