@@ -3,6 +3,7 @@
 
 """Convert Doxygen XML to Docusaurus Markdown files."""
 
+import json
 import logging
 
 import doxmlparser
@@ -52,4 +53,8 @@ def process_index(doxmlDir):
       'index': index,
     }
     template = env.get_template('_index.json')
-    print(template.render(ctx))
+    data = template.render(ctx)
+    #print(data)
+    j = json.loads(data)
+    print(j)
+    print('About to render %d files in ...' % (len(j)))

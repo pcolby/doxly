@@ -1,10 +1,16 @@
-{# doxly.version #}
-{# index.version #}
-[{% for compound in index.compound %}
+{#- doxly.version -#}
+{#- index.version -#}
+{%- from '_macros.json' import plural -%}
+[{% for kind in index.compound|map(attribute='kind')|sort|unique %}
   {
-    "kind": "{{ compound.kind }}",
-    "refId": "{{ compound.refid }}",
+    "template": "compoundList.md",
+    "destination": "{{ plural(kind) }}.md"
+  },
+{%- endfor -%}
+{% for compound in index.compound %}
+  {
     "template": "compound.md",
-    "destination":"{% if compound.refid == 'indexpage' %}index{% else %}{{ compound.refid }}{% endif %}.md"
+    "context": { "refid": "{{ compound.refid }}" },
+    "destination": "{% if compound.refid == 'indexpage' %}index{% else %}{{ compound.refid }}{% endif %}.md"
   }{% if not loop.last %},{% else %}
 {% endif %}{% endfor %}]
