@@ -1,7 +1,0 @@
-{% macro plural(kind) -%}
-  {%- if kind == 'category' -%}categories
-  {%- elif kind == 'class' -%}classes
-  {%- elif kind == 'property' -%}properties
-  {%- else -%}{{ kind }}s
-  {%- endif -%}
-{%- endmacro %}

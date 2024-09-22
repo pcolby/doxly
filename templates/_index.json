@@ -1,10 +1,9 @@
 {#- doxly.version -#}
 {#- index.version -#}
-{%- from '_macros.json' import plural -%}
 [{% for kind in index.compound|map(attribute='kind')|sort|unique %}
   {
     "template": "compoundList.md",
-    "destination": "{{ plural(kind) }}.md"
+    "destination": "{{ kind|kindplural }}.md"
   },
 {%- endfor -%}
 {% for compound in index.compound %}

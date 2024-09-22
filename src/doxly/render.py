@@ -16,6 +16,18 @@ logger = logging.getLogger(__name__)
 env = j2.Environment(loader=j2.FileSystemLoader('/home/paul/src/doxly/templates'))
 
 
+def kind_plural(kind):
+    match kind:
+        case 'category':
+            return 'categories'
+        case 'class':
+            return 'classes'
+        case 'property':
+            return 'properties'
+        case _:
+            return kind + 's'
+
+
 def process_compound(dirName, baseName):
     """Process a Doxygen compound"""
     compoundPath = (dirName / baseName).with_suffix('.xml')
@@ -52,6 +64,7 @@ def process_index(doxmlDir):
       'doxly': { 'version':  __version__ },
       'index': index,
     }
+    env.filters['kindplural'] = kind_plural
     template = env.get_template('_index.json')
     data = template.render(ctx)
     #print(data)

@@ -12,7 +12,7 @@ dependencies = [
   "doxmlparser",
   "jinja2",
 ]
-requires-python = ">= 3.4"
+requires-python = ">= 3.10"
 authors = [
   {name = "Paul Colby", email = "git@colby.id.au"},
 ]
