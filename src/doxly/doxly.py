@@ -17,28 +17,26 @@ logger = logging.getLogger(__name__)
 
 class Doxly:
     def __init__(self, doxmlDir, templatesLoader):
+        self.context = {
+          'doxly': {
+              'version':  __version__
+          }
+        }
         self.doxmlDir = doxmlDir
         self.env = Environment(loader=templatesLoader)
         self.env.filters['kindplural'] = _kind_plural
-        self._load_doxml_index()
+        self._load_indexes()
 
 
-    def _load_doxml_index(self):
-        indexPath = self.doxmlDir / 'index.xml'
-        logger.debug('Parsing: %s', indexPath)
-        index = doxmlparser.index.parse(indexPath, silence=True)
-        logger.debug('Parsed v%s index', index.get_version())
-        # \todo move base context.
-        ctx = {
-          'doxly': {
-              'version':  __version__
-          },
-          'index': index,
-        }
+    def _load_indexes(self):
+        path = self.doxmlDir / 'index.xml'
+        logger.debug('Parsing: %s', path)
+        self.context['index'] = doxmlparser.index.parse(path, silence=True)
+        logger.debug('Parsed v%s index', self.context['index'].get_version())
         template = self.env.get_template('_index.json')
-        data = template.render(ctx)
+        data = template.render(self.context)
         self.filesIndex = json.loads(data)
-        print(data)
+        logger.debug('Loaded index %s', self.filesIndex)
 
 
     def expectedFiles(self):
