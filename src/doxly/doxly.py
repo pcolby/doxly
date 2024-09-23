@@ -7,7 +7,7 @@ import json
 import logging
 
 import doxmlparser
-from jinja2 import Environment, TemplateSyntaxError
+import jinja2
 
 from .version import __version__
 
@@ -23,7 +23,7 @@ class Doxly:
           }
         }
         self.doxmlDir = doxmlDir
-        self.env = Environment(loader=templatesLoader)
+        self.env = jinja2.Environment(loader=templatesLoader)
         self.env.filters['kindplural'] = _kind_plural
         self._load_indexes()
 
@@ -45,7 +45,11 @@ class Doxly:
         except json.decoder.JSONDecodeError as e:
             logger.error("Error JSON-decoding template index: %s", e)
             logger.debug(e.doc)
-        except TemplateSyntaxError as e:
+        except jinja2.TemplateNotFound as e:
+            logger.error("Failed to find template file '%s'", e.name)
+            if isinstance(self.env.loader, jinja2.FileSystemLoader):
+                logger.debug("Loader search path: %s", self.env.loader.searchpath)
+        except jinja2.TemplateSyntaxError as e:
             logger.error("Error processing template '%s' at line %d: %s", e.filename, e.lineno, e.message)
         except Exception as e:
             logger.debug(type(e).__name__)
@@ -53,10 +57,13 @@ class Doxly:
 
 
     def expectedFiles(self):
-        return [i['destination'] for i in self.filesIndex]
+        try:
+            return [i['destination'] for i in self.filesIndex]
+        except AttributeError:
+            return None
 
 
-    def render_files(self):
+    def render_files(self, outputDir):
         logger.debug('Rendering all files...')
         for file in self.filesIndex:
             logger.debug('Rendering:%s', file)

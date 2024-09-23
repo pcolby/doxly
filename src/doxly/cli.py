@@ -5,6 +5,7 @@
 
 import argparse
 import logging
+import os
 import pathlib
 import sys
 
@@ -43,11 +44,12 @@ def main():
         logging.getLogger().setLevel(logging.DEBUG)
         logging.getLogger(__name__).debug("Debugging enabled")
 
-    doxly = Doxly(args.input_dir, FileSystemLoader('/home/paul/src/doxly/templates'))
+    doxly = Doxly(args.input_dir, FileSystemLoader(args.templates_dir))
     if not doxly.expectedFiles():
         sys.exit(1)
-    print(f"About to render {len(doxly.expectedFiles())} files in ...'")
-    doxly.render_files()
+    print(f"About to render {len(doxly.expectedFiles())} files in '{args.output_dir}'")
+    os.makedirs(args.output_dir, exist_ok=True)
+    doxly.render_files(args.output_dir)
 
 if __name__ == '__main__':
     main()
