@@ -69,15 +69,14 @@ class Doxly:
             if 'compound' in file:
                 try:
                     compoundPath = (self.doxmlDir / file['compound']).with_suffix('.xml')
-                    context['compound'] = doxmlparser.compound.parse(compoundPath, silence=True)
+                    context['compound'] = doxmlparser.compound.parse(compoundPath, silence=True).get_compounddef()[0]
                 except Exception as e:
                     logger.debug(type(e).__name__)
                     logger.error('Failed to parse Doxygen XML compound file "%s"', compoundPath)
                     logger.error(e)
                     return False
             try:
-                self.env.get_template(file['template']).render(context)
-                # \todo write to file.
+                text = self.env.get_template(file['template']).render(context)
             except jinja2.TemplateNotFound as e:
                 logger.error("Failed to find template file '%s'", e.name)
                 if isinstance(self.env.loader, jinja2.FileSystemLoader):
@@ -91,6 +90,8 @@ class Doxly:
                 logger.error("Error processing template index: %s", e)
                 return False
 
+            with open(outputDir / file['destination'], mode='w') as f:
+                f.write(text)
 
 def _kind_plural(kind):
     """Return kind as a pural"""
