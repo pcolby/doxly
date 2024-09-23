@@ -7,7 +7,7 @@ import json
 import logging
 
 import doxmlparser
-from jinja2 import Environment
+from jinja2 import Environment, TemplateSyntaxError
 
 from .version import __version__
 
@@ -31,12 +31,29 @@ class Doxly:
     def _load_indexes(self):
         path = self.doxmlDir / 'index.xml'
         logger.debug('Parsing: %s', path)
-        self.context['index'] = doxmlparser.index.parse(path, silence=True)
-        logger.debug('Parsed v%s index', self.context['index'].get_version())
-        template = self.env.get_template('_index.json')
-        data = template.render(self.context)
-        self.filesIndex = json.loads(data)
-        logger.debug('Loaded index %s', self.filesIndex)
+        try:
+            self.context['index'] = doxmlparser.index.parse(path, silence=True)
+            logger.debug('Parsed v%s index', self.context['index'].get_version())
+        except Exception as e:
+            logger.debug(type(e).__name__)
+            logger.error('Failed to parse Doxygen XML index file "%s"', path)
+            logger.error(e)
+            raise e
+
+        try:
+            self.filesIndex = json.loads(self.env.get_template('_index.json').render(self.context))
+            logger.debug('Loaded index %s', self.filesIndex)
+        except json.decoder.JSONDecodeError as e:
+            logger.error("Error JSON-decoding template index: %s", e)
+            logger.debug(e.doc)
+            raise e
+        except TemplateSyntaxError as e:
+            logger.error("Error processing template '%s' at line %d: %s", e.filename, e.lineno, e.message)
+            raise e
+        except Exception as e:
+            logger.debug(type(e).__name__)
+            logger.error("Error processing template index: %s", e)
+            raise e
 
 
     def expectedFiles(self):
