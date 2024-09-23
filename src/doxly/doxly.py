@@ -38,7 +38,6 @@ class Doxly:
             logger.debug(type(e).__name__)
             logger.error('Failed to parse Doxygen XML index file "%s"', path)
             logger.error(e)
-            raise e
 
         try:
             self.filesIndex = json.loads(self.env.get_template('_index.json').render(self.context))
@@ -46,19 +45,26 @@ class Doxly:
         except json.decoder.JSONDecodeError as e:
             logger.error("Error JSON-decoding template index: %s", e)
             logger.debug(e.doc)
-            raise e
         except TemplateSyntaxError as e:
             logger.error("Error processing template '%s' at line %d: %s", e.filename, e.lineno, e.message)
-            raise e
         except Exception as e:
             logger.debug(type(e).__name__)
             logger.error("Error processing template index: %s", e)
-            raise e
 
 
     def expectedFiles(self):
         return [i['destination'] for i in self.filesIndex]
 
+
+    def render_files(self):
+        logger.debug('Rendering all files...')
+        for file in self.filesIndex:
+            logger.debug('Rendering:%s', file)
+            # if context then setup context.
+            #    compoundPath = (dirName / baseName).with_suffix('.xml')
+            #    compound = doxmlparser.compound.parse(compoundPath, silence=True)
+            # load template; with caching.
+            # render
 
 def _kind_plural(kind):
     """Return kind as a pural"""

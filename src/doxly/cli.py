@@ -44,8 +44,10 @@ def main():
         logging.getLogger(__name__).debug("Debugging enabled")
 
     doxly = Doxly(args.input_dir, FileSystemLoader('/home/paul/src/doxly/templates'))
+    if not doxly.expectedFiles():
+        sys.exit(1)
     print(f"About to render {len(doxly.expectedFiles())} files in ...'")
-
+    doxly.render_files()
 
 if __name__ == '__main__':
     main()
