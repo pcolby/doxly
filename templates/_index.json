@@ -2,14 +2,14 @@
 {#- index.version -#}
 [{% for kind in index.compound|map(attribute='kind')|sort|unique %}
   {
-    "template": "compoundList.md",
+    "template": "compounds.md",
     "destination": "{{ kind|kindplural }}.md"
   },
 {%- endfor -%}
 {% for compound in index.compound %}
   {
     "template": "compound.md",
-    "context": { "refid": "{{ compound.refid }}" },
+    "compound": "{{ compound.refid }}",
     "destination": "{% if compound.refid == 'indexpage' %}index{% else %}{{ compound.refid }}{% endif %}.md"
   }{% if not loop.last %},{% else %}
 {% endif %}{% endfor %}]

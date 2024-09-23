@@ -17,14 +17,12 @@ logger = logging.getLogger(__name__)
 
 class Doxly:
     def __init__(self, doxmlDir, templatesLoader):
-        self.context = {
-          'doxly': {
-              'version':  __version__
-          }
-        }
         self.doxmlDir = doxmlDir
         self.env = jinja2.Environment(loader=templatesLoader)
         self.env.filters['kindplural'] = _kind_plural
+        self.env.globals['doxly'] = {
+            'version':  __version__
+        }
         self._load_indexes()
 
 
@@ -32,15 +30,15 @@ class Doxly:
         path = self.doxmlDir / 'index.xml'
         logger.debug('Parsing: %s', path)
         try:
-            self.context['index'] = doxmlparser.index.parse(path, silence=True)
-            logger.debug('Parsed v%s index', self.context['index'].get_version())
+            self.env.globals['index'] = doxmlparser.index.parse(path, silence=True)
+            logger.debug('Parsed v%s index', self.env.globals['index'].get_version())
         except Exception as e:
             logger.debug(type(e).__name__)
             logger.error('Failed to parse Doxygen XML index file "%s"', path)
             logger.error(e)
 
         try:
-            self.filesIndex = json.loads(self.env.get_template('_index.json').render(self.context))
+            self.filesIndex = json.loads(self.env.get_template('_index.json').render())
             logger.debug('Loaded index %s', self.filesIndex)
         except json.decoder.JSONDecodeError as e:
             logger.error("Error JSON-decoding template index: %s", e)
@@ -67,11 +65,32 @@ class Doxly:
         logger.debug('Rendering all files...')
         for file in self.filesIndex:
             logger.debug('Rendering:%s', file)
-            # if context then setup context.
-            #    compoundPath = (dirName / baseName).with_suffix('.xml')
-            #    compound = doxmlparser.compound.parse(compoundPath, silence=True)
-            # load template; with caching.
-            # render
+            context = { }
+            if 'compound' in file:
+                try:
+                    compoundPath = (self.doxmlDir / file['compound']).with_suffix('.xml')
+                    context['compound'] = doxmlparser.compound.parse(compoundPath, silence=True)
+                except Exception as e:
+                    logger.debug(type(e).__name__)
+                    logger.error('Failed to parse Doxygen XML compound file "%s"', compoundPath)
+                    logger.error(e)
+                    return False
+            try:
+                self.env.get_template(file['template']).render(context)
+                # \todo write to file.
+            except jinja2.TemplateNotFound as e:
+                logger.error("Failed to find template file '%s'", e.name)
+                if isinstance(self.env.loader, jinja2.FileSystemLoader):
+                    logger.debug("Loader search path: %s", self.env.loader.searchpath)
+                return False
+            except jinja2.TemplateSyntaxError as e:
+                logger.error("Error processing template '%s' at line %d: %s", e.filename, e.lineno, e.message)
+                return False
+            except Exception as e:
+                logger.debug(type(e).__name__)
+                logger.error("Error processing template index: %s", e)
+                return False
+
 
 def _kind_plural(kind):
     """Return kind as a pural"""
@@ -89,7 +108,7 @@ def _kind_plural(kind):
 # todo remove
 def process_compound(dirName, baseName):
     """Process a Doxygen compound"""
-    compoundPath = (dirName / baseName).with_suffix('.xml')
+    compoundPath = (doxmlDir / baseName).with_suffix('.xml')
     compound = doxmlparser.compound.parse(compoundPath, silence=True)
     for compounddef in compound.get_compounddef():
         # kind = compounddef.get_kind()
