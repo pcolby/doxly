@@ -8,7 +8,9 @@ import logging
 import pathlib
 import sys
 
-from .doxly import process_index
+from jinja2 import FileSystemLoader
+
+from .doxly import Doxly
 from .version import __version__
 
 
@@ -40,7 +42,9 @@ def main():
     if args.debug:
         logging.getLogger().setLevel(logging.DEBUG)
         logging.getLogger(__name__).debug("Debugging enabled")
-    process_index(args.input_dir)
+
+    doxly = Doxly(args.input_dir, FileSystemLoader('/home/paul/src/doxly/templates'))
+    print(f"About to render {len(doxly.expectedFiles())} files in ...'")
 
 
 if __name__ == '__main__':
