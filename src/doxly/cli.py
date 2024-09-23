@@ -9,10 +9,15 @@ import os
 import pathlib
 import sys
 
-from jinja2 import FileSystemLoader
+import jinja2
 
 from .doxly import Doxly
 from .version import __version__
+
+
+BUILT_IN_TEMPLATES = [
+    'docusaurus'
+]
 
 
 def formatter(prog):
@@ -31,7 +36,7 @@ def main():
         '-i', '--input-dir', type=pathlib.Path, required=True,
         help='read Doyxgen XML files from DIR', metavar='DIR')
     parser.add_argument(
-        '-t', '--templates-dir', type=pathlib.Path, required=True,
+        '-t', '--template', action='append', type=pathlib.Path, required=True,
         help='read text templates from DIR', metavar='DIR')
     parser.add_argument(
         '-o', '--output-dir', type=pathlib.Path, required=True,
@@ -44,7 +49,18 @@ def main():
         logging.getLogger().setLevel(logging.DEBUG)
         logging.getLogger(__name__).debug("Debugging enabled")
 
-    doxly = Doxly(args.input_dir, FileSystemLoader(args.templates_dir))
+    print(args.template)
+    loaders = []
+    for template in args.template:
+        if len(template.parts) == 1 and not template.is_dir() and template.parts[0] in BUILT_IN_TEMPLATES:
+            loaders.append(jinja2.PackageLoader('doxly', 'templates/' + template.parts[0]))
+            print('builtin')
+        else:
+            loaders.append(jinja2.FileSystemLoader(args.template))
+    logging.debug('Template loaders: %s', loaders)
+    loader = loaders[0] if len(loaders) == 1 else jinja2.ChoiceLoader(loaders)
+
+    doxly = Doxly(args.input_dir, loader)
     if not doxly.expectedFiles():
         sys.exit(1)
     print(f"About to render {len(doxly.expectedFiles())} files in '{args.output_dir}'")
