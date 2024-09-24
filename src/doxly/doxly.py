@@ -115,17 +115,17 @@ def _to_markdown(value):
         case doxmlparser.compound.docAnchorType:
             return f'<a id="{value.get_id()}"></a>'
         case doxmlparser.compound.docListItemType:
-            print(value.get_override()) # TODO Not sure what this means.
-            print(value.get_value()) # Same here.
+            #print(value.get_override()) # TODO Not sure what this means.
+            #print(value.get_value()) # Same here.
             # TODO we probably need to do hanging indents here?
             return '\n* '+(''.join([ _to_markdown(para) for para in value.get_para() ]))
         case doxmlparser.compound.docListType:
-            print(value.get_type()) # TODO Handle ordered lists?
-            print(value.get_start()) # TODO Handle non-zero starts?
+            #print(value.get_type()) # TODO Handle ordered lists?
+            #print(value.get_start()) # TODO Handle non-zero starts?
             return ''.join([ _to_markdown(item) for item in value.get_listitem() ])
         case doxmlparser.compound.docMarkupType:
-            print(value.get_ulink()) # TODO
-            print(f'{value.get_computeroutput()}') # TODO
+            #print(value.get_ulink()) # TODO
+            #print(f'{value.get_computeroutput()}') # TODO
             return ''.join([ _to_markdown(item) for item in value.content_ ])
         case doxmlparser.compound.docParaType:
             return ''.join([ _to_markdown(item) for item in value.content_ ])
@@ -136,9 +136,17 @@ def _to_markdown(value):
                 logger.debug(f"value.external")
                 return content
             return f'<a href="{value.refid}">{content}</a>'
+        case doxmlparser.compound.docTitleType:
+            # todo Bold etc.
+            return ''.join([ _to_markdown(item) for item in value.content_ ])
         case doxmlparser.compound.docVariableListType:
-            print('TODO var')
-            return 'TODO'
+            text = ''
+            for entry, item in zip(value.get_varlistentry(), value.get_listitem()):
+              text += f'\n## {_to_markdown(entry).strip()}\n'
+              text += f'\n{_to_markdown(item).strip()}\n'
+            return text
+        case doxmlparser.compound.docVarListEntryType:
+            return _to_markdown(value.get_term())
         case doxmlparser.compound.docXRefSectType:
             print('TODO xref')
             return 'TODO'
