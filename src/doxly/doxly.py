@@ -135,7 +135,7 @@ def _to_markdown(value):
                 logger.debug(f"Ignoring external reference to {value.kindref} '{value.refid}'")
                 logger.debug(f"value.external")
                 return content
-            return f'[{content}]({value.refid})'
+            return f'[{content}]({value.get_refid()})'
         case doxmlparser.compound.docTitleType:
             # todo Bold etc.
             return ''.join([ _to_markdown(item) for item in value.content_ ])
