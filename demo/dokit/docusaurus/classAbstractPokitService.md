@@ -1,6 +1,6 @@
 ---
 id: 
 title: AbstractPokitService Class
-description: <doxmlparser.compound.docParaType object at 0x7168a764a2a0>
+description: The  class provides a common base for Pokit services classes.
 tags:
 ---

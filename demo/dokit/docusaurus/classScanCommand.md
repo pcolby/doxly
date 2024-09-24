@@ -1,6 +1,6 @@
 ---
 id: 
 title: ScanCommand Class
-description: <doxmlparser.compound.docParaType object at 0x7168a7131370>
+description: The  class implements the  CLI command, by scanning for nearby Pokit Bluetooth devices.
 tags:
 ---

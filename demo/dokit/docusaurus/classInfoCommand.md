@@ -1,6 +1,6 @@
 ---
 id: 
 title: InfoCommand Class
-description: <doxmlparser.compound.docParaType object at 0x7168a74aee70>
+description: The  class implements the  CLI command.
 tags:
 ---

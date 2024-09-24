@@ -1,6 +1,6 @@
 ---
 id: 
 title: VoltageRange Namespace
-description: <doxmlparser.compound.docParaType object at 0x7168a7186990>
+description: Encapsulates convenience functions for working with voltage ranges.
 tags:
 ---

@@ -1,6 +1,6 @@
 ---
 id: 
 title: DataLoggerServicePrivate Class
-description: <doxmlparser.compound.docParaType object at 0x7168a74ca300>
+description: The  class provides private implementation for .
 tags:
 ---

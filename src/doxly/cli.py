@@ -65,7 +65,8 @@ def main():
         sys.exit(1)
     print(f"About to render {len(doxly.expectedFiles())} files in '{args.output_dir}'")
     os.makedirs(args.output_dir, exist_ok=True)
-    doxly.render_files(args.output_dir)
+    if not doxly.render_files(args.output_dir):
+        sys.exit(2)
 
 if __name__ == '__main__':
     main()

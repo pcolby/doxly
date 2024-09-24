@@ -1,6 +1,6 @@
 ---
 id: 
 title: CapacitanceRange Namespace
-description: <doxmlparser.compound.docParaType object at 0x7168a717ab10>
+description: Encapsulates convenience functions for working with capacitance ranges.
 tags:
 ---

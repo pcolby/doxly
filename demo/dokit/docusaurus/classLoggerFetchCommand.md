@@ -1,6 +1,6 @@
 ---
 id: 
 title: LoggerFetchCommand Class
-description: <doxmlparser.compound.docParaType object at 0x7168a746fe30>
+description: The  class implements the  CLI command.
 tags:
 ---

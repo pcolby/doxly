@@ -1,6 +1,6 @@
 ---
 id: 
 title: AbstractCommand Class
-description: <doxmlparser.compound.docParaType object at 0x7168a80e4aa0>
+description: The  class provides a consistent base for the classes that implement CLI commands.
 tags:
 ---

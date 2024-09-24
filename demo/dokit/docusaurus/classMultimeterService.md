@@ -1,6 +1,6 @@
 ---
 id: 
 title: MultimeterService Class
-description: <doxmlparser.compound.docParaType object at 0x7168a766ecc0>
+description: The  class accesses the  service of Pokit devices.
 tags:
 ---

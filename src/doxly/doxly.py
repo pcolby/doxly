@@ -93,6 +93,7 @@ class Doxly:
 
             with open(outputDir / file['destination'], mode='w') as f:
                 f.write(text)
+        return True
 
 def _kind_plural(kind):
     """Return kind as a pural"""
