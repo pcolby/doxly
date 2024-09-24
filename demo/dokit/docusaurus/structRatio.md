@@ -1,5 +1,5 @@
 ---
-id: 
+id: structRatio
 title: Ratio Struct
 tags:
 ---
