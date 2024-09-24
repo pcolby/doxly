@@ -36,6 +36,7 @@ class Doxly:
             logger.debug(type(e).__name__)
             logger.error('Failed to parse Doxygen XML index file "%s"', path)
             logger.error(e)
+            return
 
         try:
             self.filesIndex = json.loads(self.env.get_template('_index.json').render())
@@ -104,27 +105,3 @@ def _kind_plural(kind):
             return 'properties'
         case _:
             return kind + 's'
-
-
-# todo remove
-def process_compound(dirName, baseName):
-    """Process a Doxygen compound"""
-    compoundPath = (doxmlDir / baseName).with_suffix('.xml')
-    compound = doxmlparser.compound.parse(compoundPath, silence=True)
-    for compounddef in compound.get_compounddef():
-        # kind = compounddef.get_kind()
-        compounddef.get_kind()
-        # if kind==DoxCompoundKind.CLASS:
-        #     if is_documented(compounddef):
-        # elif kind==DoxCompoundKind.STRUCT:
-        # elif kind==DoxCompoundKind.UNION:
-        # elif kind==DoxCompoundKind.INTERFACE:
-        # elif kind==DoxCompoundKind.EXCEPTION:
-        # elif kind==DoxCompoundKind.NAMESPACE:
-        # elif kind==DoxCompoundKind.FILE:
-        #     if is_documented(compounddef):
-        # elif kind==DoxCompoundKind.GROUP:
-        # elif kind==DoxCompoundKind.PAGE:
-        # else:
-        #     continue
-        # parse_sections(compounddef,metrics)
