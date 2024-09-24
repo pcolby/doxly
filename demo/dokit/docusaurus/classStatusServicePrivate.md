@@ -4,4 +4,4 @@ title: StatusServicePrivate Class
 description: The  class provides private implementation for .
 tags:
 ---
-The <a href="classStatusServicePrivate">StatusServicePrivate</a> class provides private implementation for <a href="classStatusService">StatusService</a>.
+The [StatusServicePrivate](classStatusServicePrivate) class provides private implementation for [StatusService](classStatusService).

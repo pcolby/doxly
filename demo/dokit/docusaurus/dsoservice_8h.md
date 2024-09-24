@@ -4,4 +4,4 @@ title: dsoservice.h File
 description: Declares the  class.
 tags:
 ---
-Declares the <a href="classDsoService">DsoService</a> class.
+Declares the [DsoService](classDsoService) class.

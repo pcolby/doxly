@@ -4,4 +4,4 @@ title: pokitdevice_p.h File
 description: Declares the  class.
 tags:
 ---
-Declares the <a href="classPokitDevicePrivate">PokitDevicePrivate</a> class.
+Declares the [PokitDevicePrivate](classPokitDevicePrivate) class.

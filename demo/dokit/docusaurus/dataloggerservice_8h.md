@@ -4,4 +4,4 @@ title: dataloggerservice.h File
 description: Declares the  class.
 tags:
 ---
-Declares the <a href="classDataLoggerService">DataLoggerService</a> class.
+Declares the [DataLoggerService](classDataLoggerService) class.

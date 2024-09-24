@@ -4,4 +4,4 @@ title: multimeterservice.h File
 description: Declares the  class.
 tags:
 ---
-Declares the <a href="classMultimeterService">MultimeterService</a> class.
+Declares the [MultimeterService](classMultimeterService) class.

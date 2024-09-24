@@ -4,4 +4,4 @@ title: dsoservice.cpp File
 description: Defines the  and  classes.
 tags:
 ---
-Defines the <a href="classDsoService">DsoService</a> and <a href="classDsoServicePrivate">DsoServicePrivate</a> classes.
+Defines the [DsoService](classDsoService) and [DsoServicePrivate](classDsoServicePrivate) classes.

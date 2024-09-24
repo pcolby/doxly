@@ -4,4 +4,4 @@ title: deviceinfoservice.h File
 description: Declares the  class.
 tags:
 ---
-Declares the <a href="classDeviceInfoService">DeviceInfoService</a> class.
+Declares the [DeviceInfoService](classDeviceInfoService) class.

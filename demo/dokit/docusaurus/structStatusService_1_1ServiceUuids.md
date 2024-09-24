@@ -4,5 +4,5 @@ title: StatusService::ServiceUuids Struct
 description: UUIDs of the  service.
 tags:
 ---
-UUIDs of the Pokit <a href="structStatusService_1_1Status">Status</a> service.
+UUIDs of the Pokit [Status](structStatusService_1_1Status) service.
 TODO

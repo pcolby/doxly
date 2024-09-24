@@ -4,4 +4,4 @@ title: calibrationservice_p.h File
 description: Declares the  class.
 tags:
 ---
-Declares the <a href="classCalibrationServicePrivate">CalibrationServicePrivate</a> class.
+Declares the [CalibrationServicePrivate](classCalibrationServicePrivate) class.

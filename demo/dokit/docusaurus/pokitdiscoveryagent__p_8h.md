@@ -4,4 +4,4 @@ title: pokitdiscoveryagent_p.h File
 description: Declares the  class.
 tags:
 ---
-Declares the <a href="classPokitDiscoveryAgentPrivate">PokitDiscoveryAgentPrivate</a> class.
+Declares the [PokitDiscoveryAgentPrivate](classPokitDiscoveryAgentPrivate) class.

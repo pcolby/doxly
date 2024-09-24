@@ -4,4 +4,4 @@ title: deviceinfoservice_p.h File
 description: Declares the  class.
 tags:
 ---
-Declares the <a href="classDeviceInfoServicePrivate">DeviceInfoServicePrivate</a> class.
+Declares the [DeviceInfoServicePrivate](classDeviceInfoServicePrivate) class.
