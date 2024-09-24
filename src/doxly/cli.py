@@ -49,12 +49,10 @@ def main():
         logging.getLogger().setLevel(logging.DEBUG)
         logging.getLogger(__name__).debug("Debugging enabled")
 
-    print(args.template)
     loaders = []
     for template in args.template:
         if len(template.parts) == 1 and not template.is_dir() and template.parts[0] in BUILT_IN_TEMPLATES:
             loaders.append(jinja2.PackageLoader('doxly', 'templates/' + template.parts[0]))
-            print('builtin')
         else:
             loaders.append(jinja2.FileSystemLoader(args.template))
     logging.debug('Template loaders: %s', loaders)
