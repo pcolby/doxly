@@ -4,4 +4,4 @@ title: CalibrationServicePrivate Class
 description: The  class provides private implementation for .
 tags:
 ---
-The  <docRefTextType>  class provides private implementation for  <docRefTextType> .
+The <a href="classCalibrationServicePrivate">CalibrationServicePrivate</a> class provides private implementation for <a href="classCalibrationService">CalibrationService</a>.

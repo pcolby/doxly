@@ -4,4 +4,4 @@ title: abstractpokitservice.cpp File
 description: Defines the  and  classes.
 tags:
 ---
-Defines the  <docRefTextType>  and  <docRefTextType>  classes.
+Defines the <a href="classAbstractPokitService">AbstractPokitService</a> and <a href="classAbstractPokitServicePrivate">AbstractPokitServicePrivate</a> classes.

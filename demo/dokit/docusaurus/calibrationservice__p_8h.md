@@ -4,4 +4,4 @@ title: calibrationservice_p.h File
 description: Declares the  class.
 tags:
 ---
-Declares the  <docRefTextType>  class.
+Declares the <a href="classCalibrationServicePrivate">CalibrationServicePrivate</a> class.

@@ -4,4 +4,4 @@ title: abstractpokitservice_p.h File
 description: Declares the  class.
 tags:
 ---
-Declares the  <docRefTextType>  class.
+Declares the <a href="classAbstractPokitServicePrivate">AbstractPokitServicePrivate</a> class.

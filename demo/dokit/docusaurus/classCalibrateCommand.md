@@ -4,4 +4,4 @@ title: CalibrateCommand Class
 description: The  class implements the  CLI command.
 tags:
 ---
-The  <docRefTextType>  class implements the  <docMarkupType>  CLI command.
+The <a href="classCalibrateCommand">CalibrateCommand</a> class implements the TODO CLI command.

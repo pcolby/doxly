@@ -112,8 +112,20 @@ def _to_markdown(value):
     """Custom filter to convert values to Markdown"""
     logger.debug(f'Converting {type(value).__name__} to Markdown')
     match type(value):
+        case doxmlparser.compound.docAnchorType:
+            return f'<a id="{value.get_id()}"></a>'
         case doxmlparser.compound.docParaType:
-            return ' '.join([ _to_markdown(item) for item in value.content_ ])
+            return ''.join([ _to_markdown(item) for item in value.content_ ])
+        case doxmlparser.compound.docRefTextType:
+            content = ''.join([ _to_markdown(item) for item in value.content_ ])
+            if value.external:
+                logger.debug(f"Ignoring external reference to {value.kindref} '{value.refid}'")
+                logger.debug(f"value.external")
+                return content
+            return f'<a href="{value.refid}">{content}</a>'
+        case doxmlparser.compound.docMarkupType:
+            print('TODO mark')
+            return 'TODO'
         case doxmlparser.compound.MixedContainer:
             logger.debug(f"MixedContainer:{value.category}:{value.content_type}:'{value.name}':{value.value}")
             match value.getCategory():
@@ -127,6 +139,9 @@ def _to_markdown(value):
                 case _:
                     logger.warning(f'Unknown MixedContainer category {value.getCategory()}')
                     return value.getValue()
+        case doxmlparser.compound.docVariableListType:
+            print('TODO var')
+            return 'TODO'
         case _:
             logger.warning(f"Don't know how to convert {value} to Markdown")
             return f'<{type(value).__name__}>'

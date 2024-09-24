@@ -4,4 +4,4 @@ title: DataLoggerServicePrivate Class
 description: The  class provides private implementation for .
 tags:
 ---
-The  <docRefTextType>  class provides private implementation for  <docRefTextType> .
+The <a href="classDataLoggerServicePrivate">DataLoggerServicePrivate</a> class provides private implementation for <a href="classDataLoggerService">DataLoggerService</a>.

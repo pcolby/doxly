@@ -4,4 +4,4 @@ title: dataloggerservice.cpp File
 description: Defines the  and  classes.
 tags:
 ---
-Defines the  <docRefTextType>  and  <docRefTextType>  classes.
+Defines the <a href="classDataLoggerService">DataLoggerService</a> and <a href="classDataLoggerServicePrivate">DataLoggerServicePrivate</a> classes.

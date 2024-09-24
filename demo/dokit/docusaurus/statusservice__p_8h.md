@@ -4,4 +4,4 @@ title: statusservice_p.h File
 description: Declares the  class.
 tags:
 ---
-Declares the  <docRefTextType>  class.
+Declares the <a href="classStatusServicePrivate">StatusServicePrivate</a> class.

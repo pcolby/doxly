@@ -4,4 +4,4 @@ title: DataLoggerService::Metadata Struct
 description: Attributes included in the  characterstic.
 tags:
 ---
-Attributes included in the  <docMarkupType>  characterstic.
+Attributes included in the TODO characterstic.

@@ -4,4 +4,4 @@ title: pokitpro.h File
 description: Declares the  namespace.
 tags:
 ---
-Declares the  <docRefTextType>  namespace.
+Declares the <a href="namespacePokitPro">PokitPro</a> namespace.

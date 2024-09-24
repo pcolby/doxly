@@ -4,4 +4,4 @@ title: LoggerStartCommand Class
 description: The  class implements the  CLI command.
 tags:
 ---
-The  <docRefTextType>  class implements the  <docMarkupType>  CLI command.
+The <a href="classLoggerStartCommand">LoggerStartCommand</a> class implements the TODO CLI command.

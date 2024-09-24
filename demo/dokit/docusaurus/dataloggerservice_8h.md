@@ -4,4 +4,4 @@ title: dataloggerservice.h File
 description: Declares the  class.
 tags:
 ---
-Declares the  <docRefTextType>  class.
+Declares the <a href="classDataLoggerService">DataLoggerService</a> class.

@@ -4,4 +4,4 @@ title: SetNameCommand Class
 description: The  class implements the  CLI command.
 tags:
 ---
-The  <docRefTextType>  class implements the  <docMarkupType>  CLI command.
+The <a href="classSetNameCommand">SetNameCommand</a> class implements the TODO CLI command.

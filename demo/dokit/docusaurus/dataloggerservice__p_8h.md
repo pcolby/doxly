@@ -4,4 +4,4 @@ title: dataloggerservice_p.h File
 description: Declares the  class.
 tags:
 ---
-Declares the  <docRefTextType>  class.
+Declares the <a href="classDataLoggerServicePrivate">DataLoggerServicePrivate</a> class.

@@ -4,4 +4,4 @@ title: pokitpro.cpp File
 description: Defined the  helper functions.
 tags:
 ---
-Defined the  <docRefTextType>  helper functions.
+Defined the <a href="namespacePokitPro">PokitPro</a> helper functions.
