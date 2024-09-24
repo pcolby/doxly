@@ -20,6 +20,7 @@ class Doxly:
         self.doxmlDir = doxmlDir
         self.env = jinja2.Environment(loader=templatesLoader)
         self.env.filters['kindplural'] = _kind_plural
+        self.env.filters['tomarkdown'] = _to_markdown
         self.env.globals['doxly'] = {
             'version':  __version__
         }
@@ -106,3 +107,26 @@ def _kind_plural(kind):
             return 'properties'
         case _:
             return kind + 's'
+
+def _to_markdown(value):
+    """Custom filter to convert values to Markdown"""
+    logger.debug(f'Converting {type(value).__name__} to Markdown')
+    match type(value):
+        case doxmlparser.compound.docParaType:
+            return ' '.join([ _to_markdown(item) for item in value.content_ ])
+        case doxmlparser.compound.MixedContainer:
+            logger.debug(f"MixedContainer:{value.category}:{value.content_type}:'{value.name}':{value.value}")
+            match value.getCategory():
+                case doxmlparser.compound.MixedContainer.CategoryText:
+                    return value.getValue()
+                case doxmlparser.compound.MixedContainer.CategorySimple:
+                    print("SIMPLE") # Todo
+                    return value.getValue()
+                case doxmlparser.compound.MixedContainer.CategoryComplex:
+                    return _to_markdown(value.getValue())
+                case _:
+                    logger.warning(f'Unknown MixedContainer category {value.getCategory()}')
+                    return value.getValue()
+        case _:
+            logger.warning(f"Don't know how to convert {value} to Markdown")
+            return f'<{type(value).__name__}>'

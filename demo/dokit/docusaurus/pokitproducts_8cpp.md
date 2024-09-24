@@ -4,3 +4,4 @@ title: pokitproducts.cpp File
 description: Defines the  helper functions.
 tags:
 ---
+Defines the  <docRefTextType>  helper functions.
