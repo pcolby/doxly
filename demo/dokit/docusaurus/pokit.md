@@ -18,25 +18,25 @@ tags:
 
 ## Member [MultimeterService::Mode](classMultimeterService_1a51f66d0b81dace3115c5c68bc931eaea)
 
-* <a id="pokit_1_pokit000004"></a> The following enumeration values are as-yet undocumented by Pokit Innovations. <docURLLink> reverse-engineered them as part of the <docURLLink> project.
+* <a id="pokit_1_pokit000004"></a> The following enumeration values are as-yet undocumented by Pokit Innovations. [@pcolby](https://github.com/pcolby) reverse-engineered them as part of the [dokit](https://github.com/pcolby/dokit) project.
 * [Mode::Capacitance](classMultimeterService_1a51f66d0b81dace3115c5c68bc931eaeaa22bef5ff8cc5db9cc862164e779f29dc)
 * [Mode::ExternalTemperature](classMultimeterService_1a51f66d0b81dace3115c5c68bc931eaeaa8d6937c3adb213bd7b7beb575aa17687)
 
 ## Member [PokitPro::CapacitanceRange](namespacePokitPro_1adc67ba31bcd650dd7535939e42cec17a)
 
-* <a id="pokit_1_pokit000005"></a> These Pokit Pro enumeration values are as-yet undocumented by Pokit Innovations. <docURLLink> reverse-engineered them as part of the <docURLLink> project.
+* <a id="pokit_1_pokit000005"></a> These Pokit Pro enumeration values are as-yet undocumented by Pokit Innovations. [@pcolby](https://github.com/pcolby) reverse-engineered them as part of the [dokit](https://github.com/pcolby/dokit) project.
 
 ## Member [PokitPro::CurrentRange](namespacePokitPro_1ac51059eb5a52fa362da01d4e2f44de21)
 
-* <a id="pokit_1_pokit000006"></a> These Pokit Pro enumeration values are as-yet undocumented by Pokit Innovations. <docURLLink> reverse-engineered them as part of the <docURLLink> project.
+* <a id="pokit_1_pokit000006"></a> These Pokit Pro enumeration values are as-yet undocumented by Pokit Innovations. [@pcolby](https://github.com/pcolby) reverse-engineered them as part of the [dokit](https://github.com/pcolby/dokit) project.
 
 ## Member [PokitPro::ResistanceRange](namespacePokitPro_1ac6fedf42d1268613f25da2b7c82832a7)
 
-* <a id="pokit_1_pokit000007"></a> These Pokit Pro enumeration values are as-yet undocumented by Pokit Innovations. <docURLLink> reverse-engineered them as part of the <docURLLink> project.
+* <a id="pokit_1_pokit000007"></a> These Pokit Pro enumeration values are as-yet undocumented by Pokit Innovations. [@pcolby](https://github.com/pcolby) reverse-engineered them as part of the [dokit](https://github.com/pcolby/dokit) project.
 
 ## Member [PokitPro::VoltageRange](namespacePokitPro_1a68ddba45fec73a3391f241f2da38e78a)
 
-* <a id="pokit_1_pokit000008"></a> These Pokit Pro enumeration values are as-yet undocumented by Pokit Innovations. <docURLLink> reverse-engineered them as part of the <docURLLink> project.
+* <a id="pokit_1_pokit000008"></a> These Pokit Pro enumeration values are as-yet undocumented by Pokit Innovations. [@pcolby](https://github.com/pcolby) reverse-engineered them as part of the [dokit](https://github.com/pcolby/dokit) project.
 
 ## Member [StatusService::flashLed](classStatusService_1a425bf65d42b24c4a621b312fcd152708)  ()
 

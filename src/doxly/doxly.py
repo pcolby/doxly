@@ -139,6 +139,10 @@ def _to_markdown(value):
         case doxmlparser.compound.docTitleType:
             # todo Bold etc.
             return ''.join([ _to_markdown(item) for item in value.content_ ])
+        case doxmlparser.compound.docURLLink:
+            content = ''.join([ _to_markdown(item) for item in value.content_ ])
+            print(content)
+            return f'[{content}]({value.get_url()})'
         case doxmlparser.compound.docVariableListType:
             text = ''
             for entry, item in zip(value.get_varlistentry(), value.get_listitem()):
