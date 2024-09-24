@@ -1,0 +1,767 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.0" xml:lang="en-US">
+  <compounddef id="abstractcommand_8cpp" kind="file" language="C++">
+    <compoundname>abstractcommand.cpp</compoundname>
+    <includes refid="abstractcommand_8h" local="yes">abstractcommand.h</includes>
+    <includes refid="pokitdevice_8h" local="no">qtpokit/pokitdevice.h</includes>
+    <includes refid="pokitdiscoveryagent_8h" local="no">qtpokit/pokitdiscoveryagent.h</includes>
+    <includes local="no">QLocale</includes>
+    <includes local="no">QTimer</includes>
+    <includes local="no">ratio</includes>
+    <incdepgraph>
+      <node id="7">
+        <label>qtpokit/pokitdevice.h</label>
+        <link refid="pokitdevice_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>qtpokit/pokitdiscoveryagent.h</label>
+        <link refid="pokitdiscoveryagent_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>qtpokit_global.h</label>
+        <link refid="qtpokit__global_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>abstractcommand.cpp</label>
+        <link refid="abstractcommand_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>abstractcommand.h</label>
+        <link refid="abstractcommand_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>QBluetoothDeviceDiscoveryAgent</label>
+      </node>
+      <node id="3">
+        <label>QBluetoothDeviceInfo</label>
+      </node>
+      <node id="4">
+        <label>QCommandLineParser</label>
+      </node>
+      <node id="12">
+        <label>QLocale</label>
+      </node>
+      <node id="5">
+        <label>QLoggingCategory</label>
+      </node>
+      <node id="6">
+        <label>QObject</label>
+      </node>
+      <node id="13">
+        <label>QTimer</label>
+      </node>
+      <node id="9">
+        <label>QtGlobal</label>
+      </node>
+      <node id="14">
+        <label>ratio</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structRatio" prot="public">Ratio</innerclass>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="abstractcommand_8cpp_1ae5a50d9bea8103b1b31f0227f15e92f5" prot="public" static="no">
+        <name>DOKIT_RESULT</name>
+        <param><defname>var</defname></param>
+        <initializer>(var * ratio.num * R::den / ratio.den / R::num)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/abstractcommand.cpp" line="194" column="13"/>
+      </memberdef>
+      <memberdef kind="define" id="abstractcommand_8cpp_1a91121f88e07630c7835216434a7b26b5" prot="public" static="no">
+        <name>DOKIT_INSTANTIATE_TEMPLATE_FUNCTION</name>
+        <param><defname>type</defname></param>
+        <initializer>template \
+quint32 <ref refid="classAbstractCommand_1a29b2a2446ef034195183a2ae9d4bb911" kindref="member">AbstractCommand::parseNumber</ref>&lt;type&gt;(const <ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref> &amp;value, const <ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref> &amp;unit, const quint32 sensibleMinimum)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/abstractcommand.cpp" line="220" column="9" bodyfile="/home/paul/src/dokit/src/cli/abstractcommand.cpp" bodystart="220" bodyend="221"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="abstractcommand_8cpp_1a3cb2d827820e77f35817c09368291f5b" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename R</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="structRatio" kindref="compound">Ratio</ref></type>
+        <definition>Ratio makeRatio</definition>
+        <argsstring>()</argsstring>
+        <name>makeRatio</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<internal><para>Returns a (run-time) <ref refid="structRatio" kindref="compound">Ratio</ref> representation of (compile-time) ratio <emphasis>R</emphasis>. </para>
+</internal>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/abstractcommand.cpp" line="130" column="28" bodyfile="/home/paul/src/dokit/src/cli/abstractcommand.cpp" bodystart="130" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="function" id="abstractcommand_8cpp_1a6ad6f4d1358f10290697cd5cd212c5a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>DOKIT_INSTANTIATE_TEMPLATE_FUNCTION</definition>
+        <argsstring>(std::exa)</argsstring>
+        <name>DOKIT_INSTANTIATE_TEMPLATE_FUNCTION</name>
+        <param>
+          <type>std::exa</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/abstractcommand.cpp" line="222" column="1" declfile="/home/paul/src/dokit/src/cli/abstractcommand.cpp" declline="222" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="abstractcommand_8cpp_1a0a57232168868014ae2fe6826de200e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>DOKIT_INSTANTIATE_TEMPLATE_FUNCTION</definition>
+        <argsstring>(std::peta)</argsstring>
+        <name>DOKIT_INSTANTIATE_TEMPLATE_FUNCTION</name>
+        <param>
+          <type>std::peta</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/abstractcommand.cpp" line="223" column="1" declfile="/home/paul/src/dokit/src/cli/abstractcommand.cpp" declline="223" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="abstractcommand_8cpp_1ae7fbd1a7b15a56208ed6da33eb06ae48" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>DOKIT_INSTANTIATE_TEMPLATE_FUNCTION</definition>
+        <argsstring>(std::tera)</argsstring>
+        <name>DOKIT_INSTANTIATE_TEMPLATE_FUNCTION</name>
+        <param>
+          <type>std::tera</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/abstractcommand.cpp" line="224" column="1" declfile="/home/paul/src/dokit/src/cli/abstractcommand.cpp" declline="224" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="abstractcommand_8cpp_1a6e3679fe01adeb06fb41d650ced5f976" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>DOKIT_INSTANTIATE_TEMPLATE_FUNCTION</definition>
+        <argsstring>(std::giga)</argsstring>
+        <name>DOKIT_INSTANTIATE_TEMPLATE_FUNCTION</name>
+        <param>
+          <type>std::giga</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/abstractcommand.cpp" line="225" column="1" declfile="/home/paul/src/dokit/src/cli/abstractcommand.cpp" declline="225" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="abstractcommand_8cpp_1ac0c511339d668d91ecefef5e208eb935" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>DOKIT_INSTANTIATE_TEMPLATE_FUNCTION</definition>
+        <argsstring>(std::mega)</argsstring>
+        <name>DOKIT_INSTANTIATE_TEMPLATE_FUNCTION</name>
+        <param>
+          <type>std::mega</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/abstractcommand.cpp" line="226" column="1" declfile="/home/paul/src/dokit/src/cli/abstractcommand.cpp" declline="226" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="abstractcommand_8cpp_1a48fe673ab3270b4d4066ec72491abc51" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>DOKIT_INSTANTIATE_TEMPLATE_FUNCTION</definition>
+        <argsstring>(std::kilo)</argsstring>
+        <name>DOKIT_INSTANTIATE_TEMPLATE_FUNCTION</name>
+        <param>
+          <type>std::kilo</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/abstractcommand.cpp" line="227" column="1" declfile="/home/paul/src/dokit/src/cli/abstractcommand.cpp" declline="227" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="abstractcommand_8cpp_1a83cb769cf60677f06d15059530afe547" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>DOKIT_INSTANTIATE_TEMPLATE_FUNCTION</definition>
+        <argsstring>(std::hecto)</argsstring>
+        <name>DOKIT_INSTANTIATE_TEMPLATE_FUNCTION</name>
+        <param>
+          <type>std::hecto</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/abstractcommand.cpp" line="228" column="1" declfile="/home/paul/src/dokit/src/cli/abstractcommand.cpp" declline="228" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="abstractcommand_8cpp_1a756d2329f6792055c7ce5ed76ab1022f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>DOKIT_INSTANTIATE_TEMPLATE_FUNCTION</definition>
+        <argsstring>(std::deca)</argsstring>
+        <name>DOKIT_INSTANTIATE_TEMPLATE_FUNCTION</name>
+        <param>
+          <type>std::deca</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/abstractcommand.cpp" line="229" column="1" declfile="/home/paul/src/dokit/src/cli/abstractcommand.cpp" declline="229" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="abstractcommand_8cpp_1a9990c5d2020efcda41ff2caa2ff4c03b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>DOKIT_INSTANTIATE_TEMPLATE_FUNCTION</definition>
+        <argsstring>(std::ratio&lt; 1 &gt;)</argsstring>
+        <name>DOKIT_INSTANTIATE_TEMPLATE_FUNCTION</name>
+        <param>
+          <type>std::ratio&lt; 1 &gt;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/abstractcommand.cpp" line="230" column="1" declfile="/home/paul/src/dokit/src/cli/abstractcommand.cpp" declline="230" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="abstractcommand_8cpp_1a0764d1ea3c03a2abfb31ef223e70340a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>DOKIT_INSTANTIATE_TEMPLATE_FUNCTION</definition>
+        <argsstring>(std::deci)</argsstring>
+        <name>DOKIT_INSTANTIATE_TEMPLATE_FUNCTION</name>
+        <param>
+          <type>std::deci</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/abstractcommand.cpp" line="231" column="1" declfile="/home/paul/src/dokit/src/cli/abstractcommand.cpp" declline="231" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="abstractcommand_8cpp_1a125b84a4678a346b328e1b172656da15" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>DOKIT_INSTANTIATE_TEMPLATE_FUNCTION</definition>
+        <argsstring>(std::centi)</argsstring>
+        <name>DOKIT_INSTANTIATE_TEMPLATE_FUNCTION</name>
+        <param>
+          <type>std::centi</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/abstractcommand.cpp" line="232" column="1" declfile="/home/paul/src/dokit/src/cli/abstractcommand.cpp" declline="232" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="abstractcommand_8cpp_1a0bfb3e02faef1513628a9400f23bf95c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>DOKIT_INSTANTIATE_TEMPLATE_FUNCTION</definition>
+        <argsstring>(std::milli)</argsstring>
+        <name>DOKIT_INSTANTIATE_TEMPLATE_FUNCTION</name>
+        <param>
+          <type>std::milli</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/abstractcommand.cpp" line="233" column="1" declfile="/home/paul/src/dokit/src/cli/abstractcommand.cpp" declline="233" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="abstractcommand_8cpp_1a128e33c20e76dc5078b150a294606259" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>DOKIT_INSTANTIATE_TEMPLATE_FUNCTION</definition>
+        <argsstring>(std::micro)</argsstring>
+        <name>DOKIT_INSTANTIATE_TEMPLATE_FUNCTION</name>
+        <param>
+          <type>std::micro</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/abstractcommand.cpp" line="234" column="1" declfile="/home/paul/src/dokit/src/cli/abstractcommand.cpp" declline="234" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="abstractcommand_8cpp_1ae327c0889165c5b5c872529d483750e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>DOKIT_INSTANTIATE_TEMPLATE_FUNCTION</definition>
+        <argsstring>(std::nano)</argsstring>
+        <name>DOKIT_INSTANTIATE_TEMPLATE_FUNCTION</name>
+        <param>
+          <type>std::nano</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/abstractcommand.cpp" line="235" column="1" declfile="/home/paul/src/dokit/src/cli/abstractcommand.cpp" declline="235" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="abstractcommand_8cpp_1a76a0c3dd38ac3e862d6e5c3fd5ffd071" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>DOKIT_INSTANTIATE_TEMPLATE_FUNCTION</definition>
+        <argsstring>(std::pico)</argsstring>
+        <name>DOKIT_INSTANTIATE_TEMPLATE_FUNCTION</name>
+        <param>
+          <type>std::pico</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/abstractcommand.cpp" line="236" column="1" declfile="/home/paul/src/dokit/src/cli/abstractcommand.cpp" declline="236" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="abstractcommand_8cpp_1af74cfadd07b06e1aa00eab8486b3b1f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>DOKIT_INSTANTIATE_TEMPLATE_FUNCTION</definition>
+        <argsstring>(std::femto)</argsstring>
+        <name>DOKIT_INSTANTIATE_TEMPLATE_FUNCTION</name>
+        <param>
+          <type>std::femto</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/abstractcommand.cpp" line="237" column="1" declfile="/home/paul/src/dokit/src/cli/abstractcommand.cpp" declline="237" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="abstractcommand_8cpp_1a3c0160cd602161cbe896b40d7875e32e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>DOKIT_INSTANTIATE_TEMPLATE_FUNCTION</definition>
+        <argsstring>(std::atto)</argsstring>
+        <name>DOKIT_INSTANTIATE_TEMPLATE_FUNCTION</name>
+        <param>
+          <type>std::atto</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/abstractcommand.cpp" line="238" column="1" declfile="/home/paul/src/dokit/src/cli/abstractcommand.cpp" declline="238" declcolumn="1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>SPDX-FileCopyrightText:<sp/>2022-2024<sp/>Paul<sp/>Colby<sp/>&lt;git@colby.id.au&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>SPDX-License-Identifier:<sp/>LGPL-3.0-or-later</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;abstractcommand.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="pokitdevice_8h" kindref="compound">qtpokit/pokitdevice.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="pokitdiscoveryagent_8h" kindref="compound">qtpokit/pokitdiscoveryagent.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QLocale&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QTimer&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;ratio&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="14"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>\class<sp/>AbstractCommand</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>The<sp/>AbstractCommand<sp/>class<sp/>provides<sp/>a<sp/>consistent<sp/>base<sp/>for<sp/>the<sp/>classes<sp/>that<sp/>implement<sp/>CLI<sp/>commands.</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="20"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/>Constructs<sp/>a<sp/>new<sp/>command<sp/>with<sp/>\a<sp/>parent.</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="classAbstractCommand_1a0d6fde269511e87aa6f178c1733073ae" refkind="member"><highlight class="normal"><ref refid="classAbstractCommand_1a0d6fde269511e87aa6f178c1733073ae" kindref="member">AbstractCommand::AbstractCommand</ref>(<ref refid="qobject" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QObject</ref><sp/>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>parent)<sp/>:<sp/><ref refid="qobject" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QObject</ref>(parent),</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>discoveryAgent(new<sp/><ref refid="classPokitDiscoveryAgent" kindref="compound">PokitDiscoveryAgent</ref>(this))</highlight></codeline>
+<codeline lineno="25"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="qobject_1connect-4" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">connect</ref>(<ref refid="classAbstractCommand_1a86878df43cd818f4a7f333a97dabac3c" kindref="member">discoveryAgent</ref>,<sp/>&amp;<ref refid="classPokitDiscoveryAgent_1af38e511ae250a745cc900c0c4f356972" kindref="member">PokitDiscoveryAgent::pokitDeviceDiscovered</ref>,</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>&amp;<ref refid="classAbstractCommand_1a6ea2745014149145e803d64ca51057d9" kindref="member">AbstractCommand::deviceDiscovered</ref>);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="qobject_1connect-4" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">connect</ref>(<ref refid="classAbstractCommand_1a86878df43cd818f4a7f333a97dabac3c" kindref="member">discoveryAgent</ref>,<sp/>&amp;<ref refid="qbluetoothdevicediscoveryagent_1finished" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">PokitDiscoveryAgent::finished</ref>,</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>&amp;<ref refid="classAbstractCommand_1adb456a44bfe2f353e3a16aa720aeb299" kindref="member">AbstractCommand::deviceDiscoveryFinished</ref>);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="qobject_1connect-4" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">connect</ref>(<ref refid="classAbstractCommand_1a86878df43cd818f4a7f333a97dabac3c" kindref="member">discoveryAgent</ref>,</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#</highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(QT_VERSION<sp/>&lt;<sp/>QT_VERSION_CHECK(6,<sp/>2,<sp/>0))</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QOverload&lt;PokitDiscoveryAgent::Error&gt;::of(&amp;<ref refid="qbluetoothdevicediscoveryagent_1error" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">PokitDiscoveryAgent::error</ref>),</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#</highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;<ref refid="qbluetoothdevicediscoveryagent_1errorOccurred" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">PokitDiscoveryAgent::errorOccurred</ref>,</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#endif</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>[](</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qbluetoothdevicediscoveryagent_1Error-enum" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">PokitDiscoveryAgent::Error</ref><sp/>&amp;error)<sp/>{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>qCWarning(lc).noquote()<sp/>&lt;&lt;<sp/><ref refid="qobject_1tr" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">tr</ref>(</highlight><highlight class="stringliteral">&quot;Bluetooth<sp/>discovery<sp/>error:&quot;</highlight><highlight class="normal">)<sp/>&lt;&lt;<sp/>error;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="qtimer_1singleShot-prop" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QTimer::singleShot</ref>(0,<sp/><ref refid="qcoreapplication_1instance" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCoreApplication::instance</ref>(),<sp/>[](){</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="qcoreapplication_1exit" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCoreApplication::exit</ref>(EXIT_FAILURE);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>});</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>});</highlight></codeline>
+<codeline lineno="42"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="44"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="45"><highlight class="comment"><sp/>*<sp/>Returns<sp/>a<sp/>list<sp/>of<sp/>CLI<sp/>option<sp/>names<sp/>required<sp/>by<sp/>this<sp/>command.<sp/>The<sp/>main<sp/>console<sp/>appication<sp/>may</highlight></codeline>
+<codeline lineno="46"><highlight class="comment"><sp/>*<sp/>use<sp/>this<sp/>list<sp/>to<sp/>output<sp/>an<sp/>eror<sp/>(and<sp/>exit)<sp/>if<sp/>any<sp/>of<sp/>the<sp/>returned<sp/>names<sp/>are<sp/>not<sp/>found<sp/>in<sp/>the</highlight></codeline>
+<codeline lineno="47"><highlight class="comment"><sp/>*<sp/>parsed<sp/>CLI<sp/>options.</highlight></codeline>
+<codeline lineno="48"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="49"><highlight class="comment"><sp/>*<sp/>The<sp/>(already<sp/>parsed)<sp/>\a<sp/>parser<sp/>may<sp/>be<sp/>used<sp/>adjust<sp/>the<sp/>returned<sp/>required<sp/>options<sp/>depending<sp/>on<sp/>the</highlight></codeline>
+<codeline lineno="50"><highlight class="comment"><sp/>*<sp/>value<sp/>of<sp/>other<sp/>options.<sp/>For<sp/>example,<sp/>the<sp/>`logger`<sp/>command<sp/>only<sp/>requires<sp/>the<sp/>`--mode`<sp/>option<sp/>if</highlight></codeline>
+<codeline lineno="51"><highlight class="comment"><sp/>*<sp/>the<sp/>`--command`<sp/>option<sp/>is<sp/>`start`.</highlight></codeline>
+<codeline lineno="52"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="53"><highlight class="comment"><sp/>*<sp/>This<sp/>base<sp/>implementation<sp/>simply<sp/>returns<sp/>an<sp/>empty<sp/>list.<sp/>Derived<sp/>classes<sp/>should<sp/>override<sp/>this</highlight></codeline>
+<codeline lineno="54"><highlight class="comment"><sp/>*<sp/>function<sp/>to<sp/>include<sp/>any<sp/>required<sp/>options.</highlight></codeline>
+<codeline lineno="55"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="classAbstractCommand_1afd6f41cfc925751415cfa45e3b2d0b4a" refkind="member"><highlight class="normal"><ref refid="qstringlist" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QStringList</ref><sp/><ref refid="classAbstractCommand_1afd6f41cfc925751415cfa45e3b2d0b4a" kindref="member">AbstractCommand::requiredOptions</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qcommandlineparser" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCommandLineParser</ref><sp/>&amp;parser)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="57"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_UNUSED(parser)</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="qstringlist" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QStringList</ref>();</highlight></codeline>
+<codeline lineno="60"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="62"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="63"><highlight class="comment"><sp/>*<sp/>Returns<sp/>a<sp/>list<sp/>of<sp/>CLI<sp/>option<sp/>names<sp/>supported<sp/>by<sp/>this<sp/>command.<sp/>The<sp/>main<sp/>console<sp/>appication<sp/>may</highlight></codeline>
+<codeline lineno="64"><highlight class="comment"><sp/>*<sp/>use<sp/>this<sp/>list<sp/>to<sp/>output<sp/>a<sp/>warning<sp/>for<sp/>any<sp/>parsed<sp/>CLI<sp/>options<sp/>not<sp/>included<sp/>in<sp/>the<sp/>returned<sp/>list.</highlight></codeline>
+<codeline lineno="65"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="66"><highlight class="comment"><sp/>*<sp/>The<sp/>(already<sp/>parsed)<sp/>\a<sp/>parser<sp/>may<sp/>be<sp/>used<sp/>adjust<sp/>the<sp/>returned<sp/>supported<sp/>options<sp/>depending<sp/>on<sp/>the</highlight></codeline>
+<codeline lineno="67"><highlight class="comment"><sp/>*<sp/>value<sp/>of<sp/>other<sp/>options.<sp/>For<sp/>example,<sp/>the<sp/>`logger`<sp/>command<sp/>only<sp/>supported<sp/>the<sp/>`--timestamp`<sp/>option</highlight></codeline>
+<codeline lineno="68"><highlight class="comment"><sp/>*<sp/>if<sp/>the<sp/>`--command`<sp/>option<sp/>is<sp/>`start`.</highlight></codeline>
+<codeline lineno="69"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="70"><highlight class="comment"><sp/>*<sp/>This<sp/>base<sp/>implementation<sp/>simply<sp/>returns<sp/>requiredOptions().<sp/>Derived<sp/>classes<sp/>should<sp/>override<sp/>this</highlight></codeline>
+<codeline lineno="71"><highlight class="comment"><sp/>*<sp/>function<sp/>to<sp/>include<sp/>optional<sp/>options,<sp/>such<sp/>as:</highlight></codeline>
+<codeline lineno="72"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="73"><highlight class="comment"><sp/>*<sp/>```</highlight></codeline>
+<codeline lineno="74"><highlight class="comment"><sp/>*<sp/>QStringList<sp/>Derived::supportedOptions(const<sp/>QCommandLineParser<sp/>&amp;parser)<sp/>const</highlight></codeline>
+<codeline lineno="75"><highlight class="comment"><sp/>*<sp/>{</highlight></codeline>
+<codeline lineno="76"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/>const<sp/>QStringList<sp/>list<sp/>=<sp/>AbstractCommand::supportedOptions(parser)<sp/>+<sp/>QStringList{<sp/>...<sp/>};</highlight></codeline>
+<codeline lineno="77"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/>list.sort();</highlight></codeline>
+<codeline lineno="78"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/>list.removeDuplicates();<sp/>//<sp/>Optional,<sp/>recommended.</highlight></codeline>
+<codeline lineno="79"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/>return<sp/>list;</highlight></codeline>
+<codeline lineno="80"><highlight class="comment"><sp/>*<sp/>}</highlight></codeline>
+<codeline lineno="81"><highlight class="comment"><sp/>*<sp/>```</highlight></codeline>
+<codeline lineno="82"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83" refid="classAbstractCommand_1a1ceca3c5b4cb24277dd4d4054f45db18" refkind="member"><highlight class="normal"><ref refid="qstringlist" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QStringList</ref><sp/><ref refid="classAbstractCommand_1a1ceca3c5b4cb24277dd4d4054f45db18" kindref="member">AbstractCommand::supportedOptions</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qcommandlineparser" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCommandLineParser</ref><sp/>&amp;parser)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="84"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classAbstractCommand_1afd6f41cfc925751415cfa45e3b2d0b4a" kindref="member">requiredOptions</ref>(parser)<sp/>+<sp/><ref refid="qstringlist" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QStringList</ref>{</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="qlatin1string" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QLatin1String</ref>(</highlight><highlight class="stringliteral">&quot;debug&quot;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="qlatin1string" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QLatin1String</ref>(</highlight><highlight class="stringliteral">&quot;device&quot;</highlight><highlight class="normal">),<sp/><ref refid="qlatin1string" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QLatin1String</ref>(</highlight><highlight class="stringliteral">&quot;d&quot;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="qlatin1string" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QLatin1String</ref>(</highlight><highlight class="stringliteral">&quot;output&quot;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="qlatin1string" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QLatin1String</ref>(</highlight><highlight class="stringliteral">&quot;timeout&quot;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="91"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="93"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="94"><highlight class="comment"><sp/>*<sp/>Returns<sp/>an<sp/>RFC<sp/>4180<sp/>compliant<sp/>version<sp/>of<sp/>\a<sp/>field.<sp/>That<sp/>is,<sp/>if<sp/>\a<sp/>field<sp/>contains<sp/>any<sp/>of<sp/>the</highlight></codeline>
+<codeline lineno="95"><highlight class="comment"><sp/>*<sp/>the<sp/>below<sp/>four<sp/>characters,<sp/>than<sp/>any<sp/>double<sp/>quotes<sp/>are<sp/>escaped<sp/>(by<sp/>addition<sp/>double-quotes),<sp/>and</highlight></codeline>
+<codeline lineno="96"><highlight class="comment"><sp/>*<sp/>the<sp/>string<sp/>itself<sp/>surrounded<sp/>in<sp/>double-quotes.<sp/>Otherwise,<sp/>\a<sp/>field<sp/>is<sp/>returned<sp/>verbatim.</highlight></codeline>
+<codeline lineno="97"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="98"><highlight class="comment"><sp/>*<sp/>Some<sp/>examples:</highlight></codeline>
+<codeline lineno="99"><highlight class="comment"><sp/>*<sp/>```</highlight></codeline>
+<codeline lineno="100"><highlight class="comment"><sp/>*<sp/>QCOMPARE(escapeCsvField(&quot;abc&quot;),<sp/>&quot;abc&quot;);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>Returned<sp/>unchanged.</highlight></codeline>
+<codeline lineno="101"><highlight class="comment"><sp/>*<sp/>QCOMPARE(escapeCsvField(&quot;a,c&quot;),<sp/>R&quot;(&quot;a,c&quot;)&quot;);<sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>Wrapped<sp/>in<sp/>double-quotes.</highlight></codeline>
+<codeline lineno="102"><highlight class="comment"><sp/>*<sp/>QCOMPARE(escapeCsvField(R&quot;(a&quot;c)&quot;),<sp/>R(&quot;(&quot;a&quot;&quot;c&quot;)&quot;);<sp/>//<sp/>Existing<sp/>double-quotes<sp/>doubled,<sp/>then<sp/>wrapped.</highlight></codeline>
+<codeline lineno="103"><highlight class="comment"><sp/>*<sp/>```</highlight></codeline>
+<codeline lineno="104"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105" refid="classAbstractCommand_1af85c842568f8a3a893e336e449ef7813" refkind="member"><highlight class="normal"><ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref><sp/><ref refid="classAbstractCommand_1af85c842568f8a3a893e336e449ef7813" kindref="member">AbstractCommand::escapeCsvField</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref><sp/>&amp;field)</highlight></codeline>
+<codeline lineno="106"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(field.<ref refid="qstring_1contains-1" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">contains</ref>(<ref refid="qlatin1char" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QLatin1Char</ref>(</highlight><highlight class="charliteral">&apos;,&apos;</highlight><highlight class="normal">))||field.<ref refid="qstring_1contains-1" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">contains</ref>(<ref refid="qlatin1char" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QLatin1Char</ref>(</highlight><highlight class="charliteral">&apos;\r&apos;</highlight><highlight class="normal">))||</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>field.<ref refid="qstring_1contains-1" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">contains</ref>(<ref refid="qlatin1char" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QLatin1Char</ref>(</highlight><highlight class="charliteral">&apos;&quot;&apos;</highlight><highlight class="normal">))||field.<ref refid="qstring_1contains-1" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">contains</ref>(<ref refid="qlatin1char" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QLatin1Char</ref>(</highlight><highlight class="charliteral">&apos;\n&apos;</highlight><highlight class="normal">)))</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="qstring_1fromLatin1-1" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString::fromLatin1</ref>(R</highlight><highlight class="stringliteral">&quot;(&quot;%1&quot;)&quot;).<ref refid="qstring_1arg-14" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">arg</ref>(</highlight></codeline>
+<codeline lineno="111"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref>(field).replace(<ref refid="qlatin1char" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QLatin1Char</ref>(</highlight><highlight class="charliteral">&apos;&quot;&apos;</highlight><highlight class="normal">),<sp/><ref refid="qlatin1string" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QLatin1String</ref>(R</highlight><highlight class="stringliteral">&quot;(&quot;&quot;)&quot;)));</highlight></codeline>
+<codeline lineno="112"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>field;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="115"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="116"><highlight class="comment"><sp/>*<sp/>\internal</highlight></codeline>
+<codeline lineno="117"><highlight class="comment"><sp/>*<sp/>A<sp/>(run-time)<sp/>class<sp/>approximately<sp/>equivalent<sp/>to<sp/>the<sp/>compile-time<sp/>std::ratio<sp/>template.</highlight></codeline>
+<codeline lineno="118"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="119" refid="structRatio" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structRatio" kindref="compound">Ratio</ref><sp/>{</highlight></codeline>
+<codeline lineno="120" refid="structRatio_1a8e07dbd09bf3610c9e3f2d7ddf3f4691" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::intmax_t<sp/><ref refid="structRatio_1a8e07dbd09bf3610c9e3f2d7ddf3f4691" kindref="member">num</ref><sp/>{<sp/>0<sp/>};<sp/></highlight><highlight class="comment">///&lt;<sp/>Numerator.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121" refid="structRatio_1a9ae669a5646b7743df8d6be0427b918e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::intmax_t<sp/><ref refid="structRatio_1a9ae669a5646b7743df8d6be0427b918e" kindref="member">den</ref><sp/>{<sp/>0<sp/>};<sp/></highlight><highlight class="comment">///&lt;<sp/>Denominator.</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="122"><highlight class="comment"><sp/><sp/><sp/><sp/>//!<sp/>Returns<sp/>\a<sp/>true<sp/>if<sp/>both<sp/>#num<sp/>and<sp/>#den<sp/>are<sp/>non-zero.</highlight></codeline>
+<codeline lineno="123" refid="structRatio_1abbfb48e8ebeec5666385f38b31f94215" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structRatio_1abbfb48e8ebeec5666385f38b31f94215" kindref="member">isValid</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(<ref refid="structRatio_1a8e07dbd09bf3610c9e3f2d7ddf3f4691" kindref="member">num</ref><sp/>!=<sp/>0)<sp/>&amp;&amp;<sp/>(<ref refid="structRatio_1a9ae669a5646b7743df8d6be0427b918e" kindref="member">den</ref><sp/>!=<sp/>0);<sp/>}</highlight></codeline>
+<codeline lineno="124"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="126"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="127"><highlight class="comment"><sp/>*<sp/>\internal</highlight></codeline>
+<codeline lineno="128"><highlight class="comment"><sp/>*<sp/>Returns<sp/>a<sp/>(run-time)<sp/>Ratio<sp/>representation<sp/>of<sp/>(compile-time)<sp/>ratio<sp/>\a<sp/>R.</highlight></codeline>
+<codeline lineno="129"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>R&gt;<sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/><ref refid="structRatio" kindref="compound">Ratio</ref><sp/>makeRatio()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structRatio" kindref="compound">Ratio</ref>{<sp/>R::num,<sp/>R::den<sp/>};<sp/>}</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="132"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="133"><highlight class="comment"><sp/>*<sp/>Returns<sp/>\a<sp/>value<sp/>as<sp/>an<sp/>integer<sp/>multiple<sp/>of<sp/>the<sp/>ratio<sp/>\a<sp/>R.<sp/>The<sp/>string<sp/>\a<sp/>value</highlight></codeline>
+<codeline lineno="134"><highlight class="comment"><sp/>*<sp/>may<sp/>end<sp/>with<sp/>the<sp/>optional<sp/>\a<sp/>unit,<sp/>such<sp/>as<sp/>`V`<sp/>or<sp/>`s`,<sp/>which<sp/>may<sp/>also<sp/>be<sp/>preceded<sp/>with<sp/>a<sp/>SI<sp/>unit</highlight></codeline>
+<codeline lineno="135"><highlight class="comment"><sp/>*<sp/>prefix<sp/>such<sp/>as<sp/>`m`<sp/>for<sp/>`milli`.<sp/>If<sp/>\a<sp/>value<sp/>contains<sp/>no<sp/>SI<sp/>unit<sp/>prefix,<sp/>then<sp/>the<sp/>result<sp/>will<sp/>be</highlight></codeline>
+<codeline lineno="136"><highlight class="comment"><sp/>*<sp/>multiplied<sp/>by<sp/>1,000<sp/>enough<sp/>times<sp/>to<sp/>be<sp/>greater<sp/>than<sp/>\a<sp/>sensibleMinimum.<sp/>This<sp/>allows<sp/>for</highlight></codeline>
+<codeline lineno="137"><highlight class="comment"><sp/>*<sp/>convenient<sp/>use<sp/>like:</highlight></codeline>
+<codeline lineno="138"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="139"><highlight class="comment"><sp/>*<sp/>```</highlight></codeline>
+<codeline lineno="140"><highlight class="comment"><sp/>*<sp/>const<sp/>quint32<sp/>timeout<sp/>=<sp/>parseNumber&lt;std::milli&gt;(parser.value(&quot;window&quot;),<sp/>&apos;s&apos;,<sp/>500&apos;000);</highlight></codeline>
+<codeline lineno="141"><highlight class="comment"><sp/>*<sp/>```</highlight></codeline>
+<codeline lineno="142"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="143"><highlight class="comment"><sp/>*<sp/>So<sp/>that<sp/>an<sp/>unqalified<sp/>period<sp/>like<sp/>&quot;300&quot;<sp/>will<sp/>be<sp/>assumed<sp/>to<sp/>be<sp/>300<sp/>milliseconds,<sp/>and<sp/>not<sp/>300</highlight></codeline>
+<codeline lineno="144"><highlight class="comment"><sp/>*<sp/>microseconds,<sp/>while<sp/>a<sp/>period<sp/>like<sp/>&quot;1000&quot;<sp/>will<sp/>be<sp/>assume<sp/>to<sp/>be<sp/>1<sp/>second.</highlight></codeline>
+<codeline lineno="145"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="146"><highlight class="comment"><sp/>*<sp/>If<sp/>conversion<sp/>fails<sp/>for<sp/>any<sp/>reason,<sp/>0<sp/>is<sp/>returned.</highlight></codeline>
+<codeline lineno="147"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>R&gt;</highlight></codeline>
+<codeline lineno="149" refid="classAbstractCommand_1a29b2a2446ef034195183a2ae9d4bb911" refkind="member"><highlight class="normal">quint32<sp/><ref refid="classAbstractCommand_1a29b2a2446ef034195183a2ae9d4bb911" kindref="member">AbstractCommand::parseNumber</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref><sp/>&amp;value,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref><sp/>&amp;unit,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>quint32<sp/>sensibleMinimum)</highlight></codeline>
+<codeline lineno="150"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qmap" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QMap&lt;QChar, Ratio&gt;</ref><sp/>unitPrefixScaleMap<sp/>{</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/><ref refid="qlatin1char" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QLatin1Char</ref>(</highlight><highlight class="charliteral">&apos;E&apos;</highlight><highlight class="normal">),<sp/>makeRatio&lt;std::exa&gt;()<sp/><sp/><sp/>},</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/><ref refid="qlatin1char" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QLatin1Char</ref>(</highlight><highlight class="charliteral">&apos;P&apos;</highlight><highlight class="normal">),<sp/>makeRatio&lt;std::peta&gt;()<sp/><sp/>},</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/><ref refid="qlatin1char" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QLatin1Char</ref>(</highlight><highlight class="charliteral">&apos;T&apos;</highlight><highlight class="normal">),<sp/>makeRatio&lt;std::tera&gt;()<sp/><sp/>},</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/><ref refid="qlatin1char" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QLatin1Char</ref>(</highlight><highlight class="charliteral">&apos;G&apos;</highlight><highlight class="normal">),<sp/>makeRatio&lt;std::giga&gt;()<sp/><sp/>},</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/><ref refid="qlatin1char" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QLatin1Char</ref>(</highlight><highlight class="charliteral">&apos;M&apos;</highlight><highlight class="normal">),<sp/>makeRatio&lt;std::mega&gt;()<sp/><sp/>},</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/><ref refid="qlatin1char" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QLatin1Char</ref>(</highlight><highlight class="charliteral">&apos;K&apos;</highlight><highlight class="normal">),<sp/>makeRatio&lt;std::kilo&gt;()<sp/><sp/>},<sp/></highlight><highlight class="comment">//<sp/>Not<sp/>official<sp/>SI<sp/>unit<sp/>prefix,<sp/>but<sp/>commonly<sp/>used.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/><ref refid="qlatin1char" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QLatin1Char</ref>(</highlight><highlight class="charliteral">&apos;k&apos;</highlight><highlight class="normal">),<sp/>makeRatio&lt;std::kilo&gt;()<sp/><sp/>},</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/><ref refid="qlatin1char" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QLatin1Char</ref>(</highlight><highlight class="charliteral">&apos;h&apos;</highlight><highlight class="normal">),<sp/>makeRatio&lt;std::hecto&gt;()<sp/>},</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/><ref refid="qlatin1char" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QLatin1Char</ref>(</highlight><highlight class="charliteral">&apos;d&apos;</highlight><highlight class="normal">),<sp/>makeRatio&lt;std::deci&gt;()<sp/><sp/>},</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/><ref refid="qlatin1char" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QLatin1Char</ref>(</highlight><highlight class="charliteral">&apos;c&apos;</highlight><highlight class="normal">),<sp/>makeRatio&lt;std::centi&gt;()<sp/>},</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/><ref refid="qlatin1char" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QLatin1Char</ref>(</highlight><highlight class="charliteral">&apos;m&apos;</highlight><highlight class="normal">),<sp/>makeRatio&lt;std::milli&gt;()<sp/>},</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/><ref refid="qlatin1char" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QLatin1Char</ref>(</highlight><highlight class="charliteral">&apos;u&apos;</highlight><highlight class="normal">),<sp/>makeRatio&lt;std::micro&gt;()<sp/>},<sp/></highlight><highlight class="comment">//<sp/>Not<sp/>official<sp/>SI<sp/>unit<sp/>prefix,<sp/>but<sp/>commonly<sp/>used.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/><ref refid="qchar" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QChar</ref><sp/><sp/><sp/>(0x00B5),<sp/>makeRatio&lt;std::micro&gt;()<sp/>},<sp/></highlight><highlight class="comment">//<sp/>Unicode<sp/>micro<sp/>symbol<sp/>(μ).</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/><ref refid="qlatin1char" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QLatin1Char</ref>(</highlight><highlight class="charliteral">&apos;n&apos;</highlight><highlight class="normal">),<sp/>makeRatio&lt;std::nano&gt;()<sp/><sp/>},</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/><ref refid="qlatin1char" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QLatin1Char</ref>(</highlight><highlight class="charliteral">&apos;p&apos;</highlight><highlight class="normal">),<sp/>makeRatio&lt;std::pico&gt;()<sp/><sp/>},</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/><ref refid="qlatin1char" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QLatin1Char</ref>(</highlight><highlight class="charliteral">&apos;f&apos;</highlight><highlight class="normal">),<sp/>makeRatio&lt;std::femto&gt;()<sp/>},</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/><ref refid="qlatin1char" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QLatin1Char</ref>(</highlight><highlight class="charliteral">&apos;a&apos;</highlight><highlight class="normal">),<sp/>makeRatio&lt;std::atto&gt;()<sp/><sp/>},</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Remove<sp/>the<sp/>optional<sp/>(whole)<sp/>unit<sp/>suffix.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structRatio" kindref="compound">Ratio</ref><sp/>ratio;</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref><sp/>number<sp/>=<sp/>value.<ref refid="qstring_1trimmed" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">trimmed</ref>();</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((!unit.<ref refid="qstring_1isEmpty" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">isEmpty</ref>())<sp/>&amp;&amp;<sp/>(number.<ref refid="qstring_1endsWith-3" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">endsWith</ref>(unit,<sp/><ref refid="qt_1CaseSensitivity-enum" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">Qt::CaseInsensitive</ref>)))<sp/>{</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>number.<ref refid="qstring_1chop" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">chop</ref>(unit.<ref refid="qstring_1length" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">length</ref>());</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ratio<sp/>=<sp/>makeRatio&lt;std::ratio&lt;1&gt;&gt;();</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Parse,<sp/>and<sp/>remove,<sp/>the<sp/>optional<sp/>SI<sp/>unit<sp/>prefix.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!number.<ref refid="qstring_1isEmpty" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">isEmpty</ref>())<sp/>{</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#if<sp/>(QT_VERSION<sp/>&gt;=<sp/>QT_VERSION_CHECK(5,<sp/>10,<sp/>0))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qchar" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QChar</ref><sp/>siPrefix<sp/>=<sp/>number.<ref refid="qstring_1back-1" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">back</ref>();<sp/></highlight><highlight class="comment">//<sp/>QString::back()<sp/>introduced<sp/>in<sp/>Qt<sp/>5.10.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qchar" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QChar</ref><sp/>siPrefix<sp/>=<sp/>number.<ref refid="qstring_1at" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">at</ref>(number.<ref refid="qstring_1size" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">size</ref>()<sp/>-<sp/>1);</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>iter<sp/>=<sp/>unitPrefixScaleMap.constFind(siPrefix);</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(iter<sp/>!=<sp/>unitPrefixScaleMap.constEnd())<sp/>{</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Q_ASSERT(iter-&gt;isValid());</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ratio<sp/>=<sp/>*iter;</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>number.<ref refid="qstring_1chop" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">chop</ref>(1);</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>DOKIT_RESULT(var)<sp/>(var<sp/>*<sp/>ratio.num<sp/>*<sp/>R::den<sp/>/<sp/>ratio.den<sp/>/<sp/>R::num)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Parse<sp/>the<sp/>number<sp/>as<sp/>an<sp/>(unsigned)<sp/>integer.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="qlocale" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QLocale</ref><sp/>locale;<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>ok;</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/>qulonglong<sp/>integer<sp/>=<sp/>locale.<ref refid="qlocale_1toULongLong-1" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">toULongLong</ref>(number,<sp/>&amp;ok);</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ok)<sp/>{</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(integer<sp/>==<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!ratio.<ref refid="structRatio_1abbfb48e8ebeec5666385f38b31f94215" kindref="member">isValid</ref>())<sp/>{</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(ratio<sp/>=<sp/>makeRatio&lt;R&gt;();<sp/>DOKIT_RESULT(integer)<sp/>&lt;<sp/>sensibleMinimum;<sp/>ratio.<ref refid="structRatio_1a8e07dbd09bf3610c9e3f2d7ddf3f4691" kindref="member">num</ref><sp/>*=<sp/>1000);</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(integer<sp/>==<sp/>0)<sp/>?<sp/>0u<sp/>:<sp/>(quint32)DOKIT_RESULT(integer);</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"></highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Parse<sp/>the<sp/>number<sp/>as<sp/>a<sp/>(double)<sp/>floating<sp/>point<sp/>number,<sp/>and<sp/>check<sp/>that<sp/>it<sp/>is<sp/>positive.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>dbl<sp/>=<sp/>locale.<ref refid="qlocale_1toDouble-1" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">toDouble</ref>(number,<sp/>&amp;ok);</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((ok)<sp/>&amp;&amp;<sp/>(dbl<sp/>&gt;<sp/>0.0))<sp/>{</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!ratio.<ref refid="structRatio_1abbfb48e8ebeec5666385f38b31f94215" kindref="member">isValid</ref>())<sp/>{</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(ratio<sp/>=<sp/>makeRatio&lt;R&gt;();<sp/>DOKIT_RESULT(dbl)<sp/>&lt;<sp/>sensibleMinimum;<sp/>ratio.<ref refid="structRatio_1a8e07dbd09bf3610c9e3f2d7ddf3f4691" kindref="member">num</ref><sp/>*=<sp/>1000);</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(quint32)DOKIT_RESULT(dbl);</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#undef<sp/>DOKIT_RESULT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;<sp/></highlight><highlight class="comment">//<sp/>Failed<sp/>to<sp/>parse<sp/>as<sp/>either<sp/>integer,<sp/>or<sp/>float.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="218"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"></highlight></codeline>
+<codeline lineno="220"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DOKIT_INSTANTIATE_TEMPLATE_FUNCTION(type)<sp/>template<sp/>\</highlight></codeline>
+<codeline lineno="221"><highlight class="preprocessor">quint32<sp/>AbstractCommand::parseNumber&lt;type&gt;(const<sp/>QString<sp/>&amp;value,<sp/>const<sp/>QString<sp/>&amp;unit,<sp/>const<sp/>quint32<sp/>sensibleMinimum)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="222"><highlight class="normal">DOKIT_INSTANTIATE_TEMPLATE_FUNCTION(std::exa);</highlight></codeline>
+<codeline lineno="223"><highlight class="normal">DOKIT_INSTANTIATE_TEMPLATE_FUNCTION(std::peta);</highlight></codeline>
+<codeline lineno="224"><highlight class="normal">DOKIT_INSTANTIATE_TEMPLATE_FUNCTION(std::tera);</highlight></codeline>
+<codeline lineno="225"><highlight class="normal">DOKIT_INSTANTIATE_TEMPLATE_FUNCTION(std::giga);</highlight></codeline>
+<codeline lineno="226"><highlight class="normal">DOKIT_INSTANTIATE_TEMPLATE_FUNCTION(std::mega);</highlight></codeline>
+<codeline lineno="227"><highlight class="normal">DOKIT_INSTANTIATE_TEMPLATE_FUNCTION(std::kilo);</highlight></codeline>
+<codeline lineno="228"><highlight class="normal">DOKIT_INSTANTIATE_TEMPLATE_FUNCTION(std::hecto);</highlight></codeline>
+<codeline lineno="229"><highlight class="normal">DOKIT_INSTANTIATE_TEMPLATE_FUNCTION(std::deca);</highlight></codeline>
+<codeline lineno="230"><highlight class="normal">DOKIT_INSTANTIATE_TEMPLATE_FUNCTION(std::ratio&lt;1&gt;);</highlight></codeline>
+<codeline lineno="231"><highlight class="normal">DOKIT_INSTANTIATE_TEMPLATE_FUNCTION(std::deci);</highlight></codeline>
+<codeline lineno="232"><highlight class="normal">DOKIT_INSTANTIATE_TEMPLATE_FUNCTION(std::centi);</highlight></codeline>
+<codeline lineno="233"><highlight class="normal">DOKIT_INSTANTIATE_TEMPLATE_FUNCTION(std::milli);</highlight></codeline>
+<codeline lineno="234"><highlight class="normal">DOKIT_INSTANTIATE_TEMPLATE_FUNCTION(std::micro);</highlight></codeline>
+<codeline lineno="235"><highlight class="normal">DOKIT_INSTANTIATE_TEMPLATE_FUNCTION(std::nano);</highlight></codeline>
+<codeline lineno="236"><highlight class="normal">DOKIT_INSTANTIATE_TEMPLATE_FUNCTION(std::pico);</highlight></codeline>
+<codeline lineno="237"><highlight class="normal">DOKIT_INSTANTIATE_TEMPLATE_FUNCTION(std::femto);</highlight></codeline>
+<codeline lineno="238"><highlight class="normal">DOKIT_INSTANTIATE_TEMPLATE_FUNCTION(std::atto);</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>DOKIT_INSTANTIATE_TEMPLATE_FUNCTION</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="240"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="241"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="242"><highlight class="comment"><sp/>*<sp/>Processes<sp/>the<sp/>relevant<sp/>options<sp/>from<sp/>the<sp/>command<sp/>line<sp/>\a<sp/>parser.</highlight></codeline>
+<codeline lineno="243"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="244"><highlight class="comment"><sp/>*<sp/>On<sp/>success,<sp/>returns<sp/>an<sp/>empty<sp/>QStringList,<sp/>otherwise<sp/>returns<sp/>a<sp/>list<sp/>of<sp/>CLI<sp/>errors<sp/>that<sp/>the<sp/>caller</highlight></codeline>
+<codeline lineno="245"><highlight class="comment"><sp/>*<sp/>should<sp/>report<sp/>appropriately<sp/>before<sp/>exiting.</highlight></codeline>
+<codeline lineno="246"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="247"><highlight class="comment"><sp/>*<sp/>This<sp/>base<sp/>implementations<sp/>performs<sp/>some<sp/>common<sp/>checks,<sp/>such<sp/>as<sp/>ensuring<sp/>that<sp/>required<sp/>options<sp/>are</highlight></codeline>
+<codeline lineno="248"><highlight class="comment"><sp/>*<sp/>present.<sp/>Derived<sp/>classes<sp/>should<sp/>override<sp/>this<sp/>function<sp/>to<sp/>perform<sp/>further<sp/>processing,<sp/>typically</highlight></codeline>
+<codeline lineno="249"><highlight class="comment"><sp/>*<sp/>inovking<sp/>this<sp/>base<sp/>implementation<sp/>as<sp/>a<sp/>first<sp/>step,<sp/>such<sp/>as:</highlight></codeline>
+<codeline lineno="250"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="251"><highlight class="comment"><sp/>*<sp/>```</highlight></codeline>
+<codeline lineno="252"><highlight class="comment"><sp/>*<sp/>QStringList<sp/>CustomCommand::processOptions(const<sp/>QCommandLineParser<sp/>&amp;parser)</highlight></codeline>
+<codeline lineno="253"><highlight class="comment"><sp/>*<sp/>{</highlight></codeline>
+<codeline lineno="254"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/>QStringList<sp/>errors<sp/>=<sp/>AbstractCommand::processOptions(parser);</highlight></codeline>
+<codeline lineno="255"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/>if<sp/>(!errors.isEmpty())<sp/>{</highlight></codeline>
+<codeline lineno="256"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>return<sp/>errors;</highlight></codeline>
+<codeline lineno="257"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="258"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="259"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/>//<sp/>Do<sp/>further<sp/>procession<sp/>of<sp/>options.</highlight></codeline>
+<codeline lineno="260"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="261"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/>return<sp/>errors;</highlight></codeline>
+<codeline lineno="262"><highlight class="comment"><sp/>*<sp/>}</highlight></codeline>
+<codeline lineno="263"><highlight class="comment"><sp/>*<sp/>```</highlight></codeline>
+<codeline lineno="264"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="265" refid="classAbstractCommand_1ad827a18a24776efeb955739459d48f7d" refkind="member"><highlight class="normal"><ref refid="qstringlist" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QStringList</ref><sp/><ref refid="classAbstractCommand_1ad827a18a24776efeb955739459d48f7d" kindref="member">AbstractCommand::processOptions</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qcommandlineparser" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCommandLineParser</ref><sp/>&amp;parser)</highlight></codeline>
+<codeline lineno="266"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Report<sp/>any<sp/>supplied<sp/>options<sp/>that<sp/>are<sp/>not<sp/>supported<sp/>by<sp/>this<sp/>command.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qstringlist" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QStringList</ref><sp/>suppliedOptionNames<sp/>=<sp/>parser.<ref refid="qcommandlineparser_1optionNames" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">optionNames</ref>();</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qstringlist" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QStringList</ref><sp/>supportedOptionNames<sp/>=<sp/><ref refid="classAbstractCommand_1a1ceca3c5b4cb24277dd4d4054f45db18" kindref="member">supportedOptions</ref>(parser);</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref><sp/>&amp;option:<sp/>suppliedOptionNames)<sp/>{</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!supportedOptionNames.<ref refid="qstringlist_1contains-1" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">contains</ref>(option))<sp/>{</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>qCInfo(lc).noquote()<sp/>&lt;&lt;<sp/><ref refid="qobject_1tr" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">tr</ref>(</highlight><highlight class="stringliteral">&quot;Ignoring<sp/>option:<sp/>%1&quot;</highlight><highlight class="normal">).<ref refid="qstring_1arg-14" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">arg</ref>(option);</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="qstringlist" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QStringList</ref><sp/>errors;</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"></highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Parse<sp/>the<sp/>device<sp/>(name/addr/uuid)<sp/>option.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(parser.<ref refid="qcommandlineparser_1isSet-1" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">isSet</ref>(<ref refid="qlatin1string" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QLatin1String</ref>(</highlight><highlight class="stringliteral">&quot;device&quot;</highlight><highlight class="normal">)))<sp/>{</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classAbstractCommand_1a07d979bc039d61f5c720cb1521b31208" kindref="member">deviceToScanFor</ref><sp/>=<sp/>parser.<ref refid="qcommandlineparser_1value-1" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">value</ref>(<ref refid="qlatin1string" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QLatin1String</ref>(</highlight><highlight class="stringliteral">&quot;device&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"></highlight></codeline>
+<codeline lineno="282"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Parse<sp/>the<sp/>output<sp/>format<sp/>options<sp/>(if<sp/>supported,<sp/>and<sp/>supplied).</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="283"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((supportedOptionNames.<ref refid="qstringlist_1contains-1" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">contains</ref>(<ref refid="qlatin1string" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QLatin1String</ref>(</highlight><highlight class="stringliteral">&quot;output&quot;</highlight><highlight class="normal">)))<sp/>&amp;&amp;<sp/></highlight><highlight class="comment">//<sp/>Derived<sp/>classes<sp/>may<sp/>have<sp/>removed.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="284"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(parser.<ref refid="qcommandlineparser_1isSet-1" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">isSet</ref>(<ref refid="qlatin1string" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QLatin1String</ref>(</highlight><highlight class="stringliteral">&quot;output&quot;</highlight><highlight class="normal">))))</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref><sp/>output<sp/>=<sp/>parser.<ref refid="qcommandlineparser_1value-1" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">value</ref>(<ref refid="qlatin1string" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QLatin1String</ref>(</highlight><highlight class="stringliteral">&quot;output&quot;</highlight><highlight class="normal">)).<ref refid="qstring_1toLower" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">toLower</ref>();</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(output<sp/>==<sp/><ref refid="qlatin1string" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QLatin1String</ref>(</highlight><highlight class="stringliteral">&quot;csv&quot;</highlight><highlight class="normal">))<sp/>{</highlight></codeline>
+<codeline lineno="288"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classAbstractCommand_1a881d85cd96b6fcc0652b916c366dda7b" kindref="member">format</ref><sp/>=<sp/><ref refid="classAbstractCommand_1aa2dadc72289ff2b0a02c1fb435f8a4dcab20daea8bfacec3891fcf5b7be4adca0" kindref="member">OutputFormat::Csv</ref>;</highlight></codeline>
+<codeline lineno="289"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(output<sp/>==<sp/><ref refid="qlatin1string" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QLatin1String</ref>(</highlight><highlight class="stringliteral">&quot;json&quot;</highlight><highlight class="normal">))<sp/>{</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classAbstractCommand_1a881d85cd96b6fcc0652b916c366dda7b" kindref="member">format</ref><sp/>=<sp/><ref refid="classAbstractCommand_1aa2dadc72289ff2b0a02c1fb435f8a4dcaeed8d85b888a6c015834240885ee6333" kindref="member">OutputFormat::Json</ref>;</highlight></codeline>
+<codeline lineno="291"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(output<sp/>==<sp/><ref refid="qlatin1string" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QLatin1String</ref>(</highlight><highlight class="stringliteral">&quot;text&quot;</highlight><highlight class="normal">))<sp/>{</highlight></codeline>
+<codeline lineno="292"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classAbstractCommand_1a881d85cd96b6fcc0652b916c366dda7b" kindref="member">format</ref><sp/>=<sp/><ref refid="classAbstractCommand_1aa2dadc72289ff2b0a02c1fb435f8a4dca9dffbf69ffba8bc38bc4e01abf4b1675" kindref="member">OutputFormat::Text</ref>;</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>errors.<ref refid="qlist_1append" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">append</ref>(<ref refid="qobject_1tr" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">tr</ref>(</highlight><highlight class="stringliteral">&quot;Unknown<sp/>output<sp/>format:<sp/>%1&quot;</highlight><highlight class="normal">).arg(output));</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"></highlight></codeline>
+<codeline lineno="298"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Parse<sp/>the<sp/>device<sp/>scan<sp/>timeout<sp/>option.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="299"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(parser.<ref refid="qcommandlineparser_1isSet-1" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">isSet</ref>(<ref refid="qlatin1string" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QLatin1String</ref>(</highlight><highlight class="stringliteral">&quot;timeout&quot;</highlight><highlight class="normal">)))<sp/>{</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>quint32<sp/>timeout<sp/>=<sp/><ref refid="classAbstractCommand_1a29b2a2446ef034195183a2ae9d4bb911" kindref="member">parseNumber&lt;std::milli&gt;</ref>(parser.<ref refid="qcommandlineparser_1value-1" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">value</ref>(<ref refid="qlatin1string" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QLatin1String</ref>(</highlight><highlight class="stringliteral">&quot;timeout&quot;</highlight><highlight class="normal">)),<sp/><ref refid="qlatin1string" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QLatin1String</ref>(</highlight><highlight class="stringliteral">&quot;s&quot;</highlight><highlight class="normal">),<sp/>500);</highlight></codeline>
+<codeline lineno="301"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(timeout<sp/>==<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="302"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>errors.<ref refid="qlist_1append" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">append</ref>(<ref refid="qobject_1tr" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">tr</ref>(</highlight><highlight class="stringliteral">&quot;Invalid<sp/>timeout:<sp/>%1&quot;</highlight><highlight class="normal">).arg(parser.<ref refid="qcommandlineparser_1value-1" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">value</ref>(<ref refid="qlatin1string" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QLatin1String</ref>(</highlight><highlight class="stringliteral">&quot;timeout&quot;</highlight><highlight class="normal">))));</highlight></codeline>
+<codeline lineno="303"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="classAbstractCommand_1a86878df43cd818f4a7f333a97dabac3c" kindref="member">discoveryAgent</ref>-&gt;<ref refid="qbluetoothdevicediscoveryagent_1lowEnergyDiscoveryTimeout" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">lowEnergyDiscoveryTimeout</ref>()<sp/>==<sp/>-1)<sp/>{</highlight></codeline>
+<codeline lineno="304"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>qCWarning(lc).noquote()<sp/>&lt;&lt;<sp/><ref refid="qobject_1tr" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">tr</ref>(</highlight><highlight class="stringliteral">&quot;Platform<sp/>does<sp/>not<sp/>support<sp/>Bluetooth<sp/>scan<sp/>timeout&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="305"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="306"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classAbstractCommand_1a86878df43cd818f4a7f333a97dabac3c" kindref="member">discoveryAgent</ref>-&gt;<ref refid="qbluetoothdevicediscoveryagent_1setLowEnergyDiscoveryTimeout" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">setLowEnergyDiscoveryTimeout</ref>(timeout);</highlight></codeline>
+<codeline lineno="307"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>qCDebug(lc).noquote()<sp/>&lt;&lt;<sp/><ref refid="qobject_1tr" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">tr</ref>(</highlight><highlight class="stringliteral">&quot;Set<sp/>scan<sp/>timeout<sp/>to<sp/>%1&quot;</highlight><highlight class="normal">).<ref refid="qstring_1arg-14" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">arg</ref>(</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classAbstractCommand_1a86878df43cd818f4a7f333a97dabac3c" kindref="member">discoveryAgent</ref>-&gt;<ref refid="qbluetoothdevicediscoveryagent_1lowEnergyDiscoveryTimeout" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">lowEnergyDiscoveryTimeout</ref>());</highlight></codeline>
+<codeline lineno="309"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="310"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"></highlight></codeline>
+<codeline lineno="312"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Return<sp/>errors<sp/>for<sp/>any<sp/>required<sp/>options<sp/>that<sp/>are<sp/>absent.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="313"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qstringlist" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QStringList</ref><sp/>requiredOptionNames<sp/>=<sp/>this-&gt;<ref refid="classAbstractCommand_1afd6f41cfc925751415cfa45e3b2d0b4a" kindref="member">requiredOptions</ref>(parser);</highlight></codeline>
+<codeline lineno="314"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref><sp/>&amp;option:<sp/>requiredOptionNames)<sp/>{</highlight></codeline>
+<codeline lineno="315"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!parser.<ref refid="qcommandlineparser_1isSet-1" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">isSet</ref>(option))<sp/>{</highlight></codeline>
+<codeline lineno="316"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>errors.<ref refid="qlist_1append" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">append</ref>(<ref refid="qobject_1tr" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">tr</ref>(</highlight><highlight class="stringliteral">&quot;Missing<sp/>required<sp/>option:<sp/>%1&quot;</highlight><highlight class="normal">).arg(option));</highlight></codeline>
+<codeline lineno="317"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="318"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="319"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>errors;</highlight></codeline>
+<codeline lineno="320"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="321"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="322"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="323"><highlight class="comment"><sp/>*<sp/>\fn<sp/>virtual<sp/>bool<sp/>AbstractCommand::start()</highlight></codeline>
+<codeline lineno="324"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="325"><highlight class="comment"><sp/>*<sp/>Begins<sp/>the<sp/>functionality<sp/>of<sp/>this<sp/>command,<sp/>and<sp/>returns<sp/>`true`<sp/>if<sp/>begun<sp/>successfully,<sp/>`false`</highlight></codeline>
+<codeline lineno="326"><highlight class="comment"><sp/>*<sp/>otherwise.</highlight></codeline>
+<codeline lineno="327"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="328"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="329"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="330"><highlight class="comment"><sp/>*<sp/>\fn<sp/>virtual<sp/>void<sp/>AbstractCommand::deviceDiscovered(const<sp/>QBluetoothDeviceInfo<sp/>&amp;info)<sp/>=<sp/>0</highlight></codeline>
+<codeline lineno="331"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="332"><highlight class="comment"><sp/>*<sp/>Handles<sp/>PokitDiscoveryAgent::pokitDeviceDiscovered<sp/>signal.<sp/>Derived<sp/>classes<sp/>must</highlight></codeline>
+<codeline lineno="333"><highlight class="comment"><sp/>*<sp/>implement<sp/>this<sp/>slot<sp/>to<sp/>begin<sp/>whatever<sp/>actions<sp/>are<sp/>relevant<sp/>when<sp/>a<sp/>Pokit<sp/>device<sp/>has<sp/>been</highlight></codeline>
+<codeline lineno="334"><highlight class="comment"><sp/>*<sp/>discovered.<sp/>For<sp/>example,<sp/>the<sp/>&apos;scan&apos;<sp/>command<sp/>would<sp/>simply<sp/>output<sp/>the<sp/>\a<sp/>info<sp/>details,<sp/>whereas</highlight></codeline>
+<codeline lineno="335"><highlight class="comment"><sp/>*<sp/>most<sp/>other<sp/>commands<sp/>would<sp/>begin<sp/>connecting<sp/>if<sp/>\a<sp/>info<sp/>is<sp/>the<sp/>device<sp/>they&apos;re<sp/>after.</highlight></codeline>
+<codeline lineno="336"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="337"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="338"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="339"><highlight class="comment"><sp/>*<sp/>\fn<sp/>virtual<sp/>void<sp/>AbstractCommand::deviceDiscoveryFinished()<sp/>=<sp/>0</highlight></codeline>
+<codeline lineno="340"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="341"><highlight class="comment"><sp/>*<sp/>Handles<sp/>PokitDiscoveryAgent::deviceDiscoveryFinished<sp/>signal.<sp/>Derived<sp/>classes<sp/>must</highlight></codeline>
+<codeline lineno="342"><highlight class="comment"><sp/>*<sp/>implement<sp/>this<sp/>slot<sp/>to<sp/>perform<sp/>whatever<sp/>actions<sp/>are<sp/>appropraite<sp/>when<sp/>discovery<sp/>is<sp/>finished.</highlight></codeline>
+<codeline lineno="343"><highlight class="comment"><sp/>*<sp/>For<sp/>example,<sp/>the<sp/>&apos;scan&apos;<sp/>command<sp/>would<sp/>simply<sp/>exit,<sp/>whereas<sp/>most<sp/>other<sp/>commands<sp/>would<sp/>verify<sp/>that</highlight></codeline>
+<codeline lineno="344"><highlight class="comment"><sp/>*<sp/>an<sp/>appropriate<sp/>device<sp/>was<sp/>found.</highlight></codeline>
+<codeline lineno="345"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/paul/src/dokit/src/cli/abstractcommand.cpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,181 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.0" xml:lang="en-US">
+  <compounddef id="structStatusService_1_1CharacteristicUuids" kind="struct" language="C++" prot="public">
+    <compoundname>StatusService::CharacteristicUuids</compoundname>
+    <includes refid="statusservice_8h" local="no">statusservice.h</includes>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="structStatusService_1_1CharacteristicUuids_1ab883f16924c3c325a3400a5146d48ac0" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="qbluetoothuuid" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothUuid</ref></type>
+        <definition>const QBluetoothUuid StatusService::CharacteristicUuids::deviceCharacteristics</definition>
+        <argsstring></argsstring>
+        <name>deviceCharacteristics</name>
+        <qualifiedname>StatusService::CharacteristicUuids::deviceCharacteristics</qualifiedname>
+        <initializer>{ QStringLiteral(&quot;6974f5e5-0e54-45c3-97dd-29e4b5fb0849&quot;) }</initializer>
+        <briefdescription>
+<para>UUID of the <computeroutput>Pokit <ref refid="structStatusService_1_1Status" kindref="compound">Status</ref></computeroutput> service&apos;s <computeroutput>Device Characteristics</computeroutput> characterstic. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/statusservice.h" line="41" column="44" bodyfile="/home/paul/src/dokit/include/qtpokit/statusservice.h" bodystart="41" bodyend="41"/>
+        <referencedby refid="classStatusServicePrivate_1a08d8faee04fb47ac19d3962609606d52" compoundref="statusservice_8cpp" startline="735" endline="786">StatusServicePrivate::characteristicRead</referencedby>
+        <referencedby refid="classStatusServicePrivate_1a8de57b8b27437360d75bd44f74595db1" compoundref="statusservice_8cpp" startline="792" endline="827">StatusServicePrivate::characteristicWritten</referencedby>
+        <referencedby refid="classPokitDevice_1a0a3e6078ce0a7c2d93171ef0f4183d61" compoundref="pokitdevice_8cpp" startline="218" endline="261">PokitDevice::charcteristicToString</referencedby>
+        <referencedby refid="classStatusService_1a008d41a33eedd90e68ccf7a94ed5b65f" compoundref="statusservice_8cpp" startline="252" endline="260">StatusService::deviceCharacteristics</referencedby>
+        <referencedby refid="classStatusService_1adca5ca235e99c7878f8fde507bf487cc" compoundref="statusservice_8cpp" startline="171" endline="175">StatusService::readDeviceCharacteristics</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structStatusService_1_1CharacteristicUuids_1af27d015f60e86b0de464eab455c56f7c" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="qbluetoothuuid" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothUuid</ref></type>
+        <definition>const QBluetoothUuid StatusService::CharacteristicUuids::status</definition>
+        <argsstring></argsstring>
+        <name>status</name>
+        <qualifiedname>StatusService::CharacteristicUuids::status</qualifiedname>
+        <initializer>{ QStringLiteral(&quot;3dba36e1-6120-4706-8dfd-ed9c16e569b6&quot;) }</initializer>
+        <briefdescription>
+<para>UUID of the <computeroutput>Pokit <ref refid="structStatusService_1_1Status" kindref="compound">Status</ref></computeroutput> service&apos;s <computeroutput><ref refid="structStatusService_1_1Status" kindref="compound">Status</ref></computeroutput> characterstic. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/statusservice.h" line="44" column="44" bodyfile="/home/paul/src/dokit/include/qtpokit/statusservice.h" bodystart="44" bodyend="44"/>
+        <referencedby refid="classStatusServicePrivate_1a08d8faee04fb47ac19d3962609606d52" compoundref="statusservice_8cpp" startline="735" endline="786">StatusServicePrivate::characteristicRead</referencedby>
+        <referencedby refid="classStatusServicePrivate_1a8de57b8b27437360d75bd44f74595db1" compoundref="statusservice_8cpp" startline="792" endline="827">StatusServicePrivate::characteristicWritten</referencedby>
+        <referencedby refid="classPokitDevice_1a0a3e6078ce0a7c2d93171ef0f4183d61" compoundref="pokitdevice_8cpp" startline="218" endline="261">PokitDevice::charcteristicToString</referencedby>
+        <referencedby refid="classStatusService_1a1beab67430fc8bc26e9faf3799d537f1" compoundref="statusservice_8cpp" startline="312" endline="316">StatusService::disableStatusNotifications</referencedby>
+        <referencedby refid="classStatusService_1a5d86bed23202402cade7fa8bb09f9c48" compoundref="statusservice_8cpp" startline="299" endline="303">StatusService::enableStatusNotifications</referencedby>
+        <referencedby refid="classStatusService_1a0410049da4a7ac6a64027c733797c578" compoundref="statusservice_8cpp" startline="186" endline="190">StatusService::readStatusCharacteristic</referencedby>
+        <referencedby refid="classStatusService_1ae7be4aae021ae50faef48ed2812eb6a7" compoundref="statusservice_8cpp" startline="280" endline="288">StatusService::status</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structStatusService_1_1CharacteristicUuids_1a3ca6f44f245a642f2a5e9147255a7bd8" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="qbluetoothuuid" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothUuid</ref></type>
+        <definition>const QBluetoothUuid StatusService::CharacteristicUuids::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <qualifiedname>StatusService::CharacteristicUuids::name</qualifiedname>
+        <initializer>{ QStringLiteral(&quot;7f0375de-077e-4555-8f78-800494509cc3&quot;) }</initializer>
+        <briefdescription>
+<para>UUID of the <computeroutput>Pokit <ref refid="structStatusService_1_1Status" kindref="compound">Status</ref></computeroutput> service&apos;s <computeroutput>Device Name</computeroutput> characterstic. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/statusservice.h" line="47" column="44" bodyfile="/home/paul/src/dokit/include/qtpokit/statusservice.h" bodystart="47" bodyend="47"/>
+        <referencedby refid="classStatusServicePrivate_1a08d8faee04fb47ac19d3962609606d52" compoundref="statusservice_8cpp" startline="735" endline="786">StatusServicePrivate::characteristicRead</referencedby>
+        <referencedby refid="classStatusServicePrivate_1a8de57b8b27437360d75bd44f74595db1" compoundref="statusservice_8cpp" startline="792" endline="827">StatusServicePrivate::characteristicWritten</referencedby>
+        <referencedby refid="classPokitDevice_1a0a3e6078ce0a7c2d93171ef0f4183d61" compoundref="pokitdevice_8cpp" startline="218" endline="261">PokitDevice::charcteristicToString</referencedby>
+        <referencedby refid="classStatusService_1a113a7051f70e642d2c1f67124c1f12c7" compoundref="statusservice_8cpp" startline="325" endline="331">StatusService::deviceName</referencedby>
+        <referencedby refid="classStatusService_1a1540af10953c1b4b7d08620ade8c27ea" compoundref="statusservice_8cpp" startline="201" endline="205">StatusService::readNameCharacteristic</referencedby>
+        <referencedby refid="classStatusService_1ada280bc54493f85e6855a2534bf2a02d" compoundref="statusservice_8cpp" startline="340" endline="358">StatusService::setDeviceName</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structStatusService_1_1CharacteristicUuids_1aeb51331d2510873d95a5993e62aa2cf0" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="qbluetoothuuid" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothUuid</ref></type>
+        <definition>const QBluetoothUuid StatusService::CharacteristicUuids::flashLed</definition>
+        <argsstring></argsstring>
+        <name>flashLed</name>
+        <qualifiedname>StatusService::CharacteristicUuids::flashLed</qualifiedname>
+        <initializer>{ QStringLiteral(&quot;ec9bb1f3-05a9-4277-8dd0-60a7896f0d6e&quot;) }</initializer>
+        <briefdescription>
+<para>UUID of the <computeroutput>Pokit <ref refid="structStatusService_1_1Status" kindref="compound">Status</ref></computeroutput> service&apos;s <computeroutput>Flash LED</computeroutput> characterstic. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/statusservice.h" line="50" column="44" bodyfile="/home/paul/src/dokit/include/qtpokit/statusservice.h" bodystart="50" bodyend="50"/>
+        <referencedby refid="classStatusServicePrivate_1a08d8faee04fb47ac19d3962609606d52" compoundref="statusservice_8cpp" startline="735" endline="786">StatusServicePrivate::characteristicRead</referencedby>
+        <referencedby refid="classStatusServicePrivate_1a8de57b8b27437360d75bd44f74595db1" compoundref="statusservice_8cpp" startline="792" endline="827">StatusServicePrivate::characteristicWritten</referencedby>
+        <referencedby refid="classPokitDevice_1a0a3e6078ce0a7c2d93171ef0f4183d61" compoundref="pokitdevice_8cpp" startline="218" endline="261">PokitDevice::charcteristicToString</referencedby>
+        <referencedby refid="classStatusService_1a425bf65d42b24c4a621b312fcd152708" compoundref="statusservice_8cpp" startline="375" endline="391">StatusService::flashLed</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structStatusService_1_1CharacteristicUuids_1a8e558d76deeac993d962763fec80aa3d" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="qbluetoothuuid" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothUuid</ref></type>
+        <definition>const QBluetoothUuid StatusService::CharacteristicUuids::torch</definition>
+        <argsstring></argsstring>
+        <name>torch</name>
+        <qualifiedname>StatusService::CharacteristicUuids::torch</qualifiedname>
+        <initializer>{ QStringLiteral(&quot;aaf3f6d5-43d4-4a83-9510-dff3d858d4cc&quot;) }</initializer>
+        <briefdescription>
+<para>UUID of the <computeroutput>Pokit <ref refid="structStatusService_1_1Status" kindref="compound">Status</ref></computeroutput> service&apos;s (undocumented) <computeroutput>Torch</computeroutput> characterstic. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/statusservice.h" line="53" column="44" bodyfile="/home/paul/src/dokit/include/qtpokit/statusservice.h" bodystart="53" bodyend="53"/>
+        <referencedby refid="classStatusServicePrivate_1a08d8faee04fb47ac19d3962609606d52" compoundref="statusservice_8cpp" startline="735" endline="786">StatusServicePrivate::characteristicRead</referencedby>
+        <referencedby refid="classStatusServicePrivate_1a8de57b8b27437360d75bd44f74595db1" compoundref="statusservice_8cpp" startline="792" endline="827">StatusServicePrivate::characteristicWritten</referencedby>
+        <referencedby refid="classPokitDevice_1a0a3e6078ce0a7c2d93171ef0f4183d61" compoundref="pokitdevice_8cpp" startline="218" endline="261">PokitDevice::charcteristicToString</referencedby>
+        <referencedby refid="classStatusService_1a8c575b15d296c396d7837c6059f10aa8" compoundref="statusservice_8cpp" startline="451" endline="455">StatusService::disableTorchStatusNotifications</referencedby>
+        <referencedby refid="classStatusService_1a698e0ba79ea0e7d489e4acdb58830884" compoundref="statusservice_8cpp" startline="438" endline="442">StatusService::enableTorchStatusNotifications</referencedby>
+        <referencedby refid="classStatusService_1ad73514f6f324ca56dffb844b14eb3bc0" compoundref="statusservice_8cpp" startline="150" endline="160">StatusService::readCharacteristics</referencedby>
+        <referencedby refid="classStatusService_1afeb96c51e64da0265ab7d026233541d4" compoundref="statusservice_8cpp" startline="216" endline="220">StatusService::readTorchCharacteristic</referencedby>
+        <referencedby refid="classStatusService_1a3bc469455e6e704e0643fbc9ad236c70" compoundref="statusservice_8cpp" startline="416" endline="427">StatusService::setTorchStatus</referencedby>
+        <referencedby refid="classStatusService_1acb4787284fb5314ee2085421ad4c1d36" compoundref="statusservice_8cpp" startline="400" endline="405">StatusService::torchStatus</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structStatusService_1_1CharacteristicUuids_1ae2abf1183b8b6f2cd2e0cb5206a3975f" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="qbluetoothuuid" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothUuid</ref></type>
+        <definition>const QBluetoothUuid StatusService::CharacteristicUuids::buttonPress</definition>
+        <argsstring></argsstring>
+        <name>buttonPress</name>
+        <qualifiedname>StatusService::CharacteristicUuids::buttonPress</qualifiedname>
+        <initializer>{ QStringLiteral(&quot;8fe5b5a9-b5b4-4a7b-8ff2-87224b970f89&quot;) }</initializer>
+        <briefdescription>
+<para>UUID of the <computeroutput>Pokit <ref refid="structStatusService_1_1Status" kindref="compound">Status</ref></computeroutput> service&apos;s (undocumented) <computeroutput>Button Press</computeroutput> characterstic. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/statusservice.h" line="56" column="44" bodyfile="/home/paul/src/dokit/include/qtpokit/statusservice.h" bodystart="56" bodyend="56"/>
+        <referencedby refid="classStatusService_1a658e493f2942afd66263a989e99ed633" compoundref="statusservice_8cpp" startline="492" endline="497">StatusService::buttonPress</referencedby>
+        <referencedby refid="classStatusServicePrivate_1a08d8faee04fb47ac19d3962609606d52" compoundref="statusservice_8cpp" startline="735" endline="786">StatusServicePrivate::characteristicRead</referencedby>
+        <referencedby refid="classPokitDevice_1a0a3e6078ce0a7c2d93171ef0f4183d61" compoundref="pokitdevice_8cpp" startline="218" endline="261">PokitDevice::charcteristicToString</referencedby>
+        <referencedby refid="classStatusService_1ab0d571f2729d69375715b3894ec691ee" compoundref="statusservice_8cpp" startline="479" endline="483">StatusService::disableButtonPressedNotifications</referencedby>
+        <referencedby refid="classStatusService_1a031595af37a535074015a121f0b712bb" compoundref="statusservice_8cpp" startline="466" endline="470">StatusService::enableButtonPressedNotifications</referencedby>
+        <referencedby refid="classStatusService_1a29d3830c398e06a59b815c6f5d475fec" compoundref="statusservice_8cpp" startline="231" endline="235">StatusService::readButtonPressCharacteristic</referencedby>
+        <referencedby refid="classStatusService_1ad73514f6f324ca56dffb844b14eb3bc0" compoundref="statusservice_8cpp" startline="150" endline="160">StatusService::readCharacteristics</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Characteristics available via the <computeroutput>Pokit <ref refid="structStatusService_1_1Status" kindref="compound">Status</ref></computeroutput> service. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>QBluetoothUuid</label>
+        <link refid="qbluetoothuuid" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>QUuid</label>
+        <link refid="quuid" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags"/>
+      </node>
+      <node id="1">
+        <label>StatusService::CharacteristicUuids</label>
+        <link refid="structStatusService_1_1CharacteristicUuids"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>buttonPress</edgelabel>
+          <edgelabel>deviceCharacteristics</edgelabel>
+          <edgelabel>flashLed</edgelabel>
+          <edgelabel>name</edgelabel>
+          <edgelabel>status</edgelabel>
+          <edgelabel>torch</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/paul/src/dokit/include/qtpokit/statusservice.h" line="39" column="5" bodyfile="/home/paul/src/dokit/include/qtpokit/statusservice.h" bodystart="39" bodyend="59"/>
+    <listofallmembers>
+      <member refid="structStatusService_1_1CharacteristicUuids_1ae2abf1183b8b6f2cd2e0cb5206a3975f" prot="public" virt="non-virtual"><scope>StatusService::CharacteristicUuids</scope><name>buttonPress</name></member>
+      <member refid="structStatusService_1_1CharacteristicUuids_1ab883f16924c3c325a3400a5146d48ac0" prot="public" virt="non-virtual"><scope>StatusService::CharacteristicUuids</scope><name>deviceCharacteristics</name></member>
+      <member refid="structStatusService_1_1CharacteristicUuids_1aeb51331d2510873d95a5993e62aa2cf0" prot="public" virt="non-virtual"><scope>StatusService::CharacteristicUuids</scope><name>flashLed</name></member>
+      <member refid="structStatusService_1_1CharacteristicUuids_1a3ca6f44f245a642f2a5e9147255a7bd8" prot="public" virt="non-virtual"><scope>StatusService::CharacteristicUuids</scope><name>name</name></member>
+      <member refid="structStatusService_1_1CharacteristicUuids_1af27d015f60e86b0de464eab455c56f7c" prot="public" virt="non-virtual"><scope>StatusService::CharacteristicUuids</scope><name>status</name></member>
+      <member refid="structStatusService_1_1CharacteristicUuids_1a8e558d76deeac993d962763fec80aa3d" prot="public" virt="non-virtual"><scope>StatusService::CharacteristicUuids</scope><name>torch</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

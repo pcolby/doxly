@@ -1,0 +1,349 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.0" xml:lang="en-US">
+  <compounddef id="pokitdiscoveryagent_8cpp" kind="file" language="C++">
+    <compoundname>pokitdiscoveryagent.cpp</compoundname>
+    <includes refid="pokitdiscoveryagent_8h" local="no">qtpokit/pokitdiscoveryagent.h</includes>
+    <includes refid="pokitproducts_8h" local="no">qtpokit/pokitproducts.h</includes>
+    <includes refid="pokitdiscoveryagent__p_8h" local="yes">pokitdiscoveryagent_p.h</includes>
+    <includes refid="statusservice_8h" local="no">qtpokit/statusservice.h</includes>
+    <includes local="no">QBluetoothUuid</includes>
+    <incdepgraph>
+      <node id="13">
+        <label>abstractpokitservice.h</label>
+        <link refid="abstractpokitservice_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>qtpokit/pokitdiscoveryagent.h</label>
+        <link refid="pokitdiscoveryagent_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>qtpokit/pokitproducts.h</label>
+        <link refid="pokitproducts_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>qtpokit_global.h</label>
+        <link refid="qtpokit__global_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>qtpokit/statusservice.h</label>
+        <link refid="statusservice_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>pokitdiscoveryagent.cpp</label>
+        <link refid="pokitdiscoveryagent_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>pokitdiscoveryagent_p.h</label>
+        <link refid="pokitdiscoveryagent__p_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>QBluetoothAddress</label>
+      </node>
+      <node id="5">
+        <label>QBluetoothDeviceDiscoveryAgent</label>
+      </node>
+      <node id="7">
+        <label>QBluetoothDeviceInfo</label>
+      </node>
+      <node id="18">
+        <label>QBluetoothUuid</label>
+      </node>
+      <node id="8">
+        <label>QFlags</label>
+      </node>
+      <node id="11">
+        <label>QLoggingCategory</label>
+      </node>
+      <node id="14">
+        <label>QLowEnergyService</label>
+      </node>
+      <node id="15">
+        <label>QObject</label>
+      </node>
+      <node id="9">
+        <label>QString</label>
+      </node>
+      <node id="19">
+        <label>QVersionNumber</label>
+      </node>
+      <node id="4">
+        <label>QtGlobal</label>
+      </node>
+      <node id="16">
+        <label>optional</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+<para>Defines the <ref refid="classPokitDiscoveryAgent" kindref="compound">PokitDiscoveryAgent</ref> and <ref refid="classPokitDiscoveryAgentPrivate" kindref="compound">PokitDiscoveryAgentPrivate</ref> classes. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>SPDX-FileCopyrightText:<sp/>2022-2024<sp/>Paul<sp/>Colby<sp/>&lt;git@colby.id.au&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>SPDX-License-Identifier:<sp/>LGPL-3.0-or-later</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="4"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>\file</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>Defines<sp/>the<sp/>PokitDiscoveryAgent<sp/>and<sp/>PokitDiscoveryAgentPrivate<sp/>classes.</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="pokitdiscoveryagent_8h" kindref="compound">qtpokit/pokitdiscoveryagent.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="pokitproducts_8h" kindref="compound">qtpokit/pokitproducts.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="pokitdiscoveryagent__p_8h" kindref="compound">pokitdiscoveryagent_p.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="statusservice_8h" kindref="compound">qtpokit/statusservice.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QBluetoothUuid&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="17"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>\class<sp/>PokitDiscoveryAgent</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/>The<sp/>PokitDiscoveryAgent<sp/>class<sp/>discovers<sp/>nearby<sp/>Pokit<sp/>devices.</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/>After<sp/>constructing<sp/>a<sp/>PokitDiscoveryAgent<sp/>object,<sp/>and<sp/>subscribing<sp/>to<sp/>the<sp/>relevant<sp/>signals,</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/>invoke<sp/>start()<sp/>to<sp/>begin<sp/>discovery.</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="26"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/>*<sp/>Constructs<sp/>a<sp/>new<sp/>Pokit<sp/>device<sp/>discovery<sp/>agent<sp/>with<sp/>\a<sp/>parent,<sp/>using<sp/>\a<sp/>deviceAdapter<sp/>for<sp/>the</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/>*<sp/>search<sp/>device.</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="classPokitDiscoveryAgent_1a03d6f7080957f3435c1644302854e303" refkind="member"><highlight class="normal"><ref refid="classPokitDiscoveryAgent_1a03d6f7080957f3435c1644302854e303" kindref="member">PokitDiscoveryAgent::PokitDiscoveryAgent</ref>(</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qbluetoothaddress" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothAddress</ref><sp/>&amp;deviceAdapter,<sp/><ref refid="qobject" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QObject</ref><sp/>*parent)</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/><ref refid="qbluetoothdevicediscoveryagent" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothDeviceDiscoveryAgent</ref>(deviceAdapter,<sp/>parent),</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>d_ptr(new<sp/><ref refid="classPokitDiscoveryAgentPrivate" kindref="compound">PokitDiscoveryAgentPrivate</ref>(this))</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="38"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="39"><highlight class="comment"><sp/>*<sp/>Constructs<sp/>a<sp/>new<sp/>Pokit<sp/>device<sp/>discovery<sp/>agent<sp/>with<sp/>\a<sp/>parent.</highlight></codeline>
+<codeline lineno="40"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="classPokitDiscoveryAgent_1a9f057a22c00501860a7142d143d5c55b" refkind="member"><highlight class="normal"><ref refid="classPokitDiscoveryAgent_1a03d6f7080957f3435c1644302854e303" kindref="member">PokitDiscoveryAgent::PokitDiscoveryAgent</ref>(<ref refid="qobject" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QObject</ref><sp/>*<sp/>parent)</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/><ref refid="qbluetoothdevicediscoveryagent" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothDeviceDiscoveryAgent</ref>(parent),</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>d_ptr(new<sp/><ref refid="classPokitDiscoveryAgentPrivate" kindref="compound">PokitDiscoveryAgentPrivate</ref>(this))</highlight></codeline>
+<codeline lineno="44"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="48"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="49"><highlight class="comment"><sp/>*<sp/>\cond<sp/>internal</highlight></codeline>
+<codeline lineno="50"><highlight class="comment"><sp/>*<sp/>Constructs<sp/>a<sp/>new<sp/>Pokit<sp/>device<sp/>discovery<sp/>agent<sp/>with<sp/>\a<sp/>parent,<sp/>using<sp/>\a<sp/>deviceAdapter<sp/>for<sp/>the</highlight></codeline>
+<codeline lineno="51"><highlight class="comment"><sp/>*<sp/>search<sp/>device,<sp/>and<sp/>private<sp/>implementation<sp/>\a<sp/>d.</highlight></codeline>
+<codeline lineno="52"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="classPokitDiscoveryAgent_1adf15272f71e409d291e38ece3f833769" refkind="member"><highlight class="normal"><ref refid="classPokitDiscoveryAgent_1a03d6f7080957f3435c1644302854e303" kindref="member">PokitDiscoveryAgent::PokitDiscoveryAgent</ref>(</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classPokitDiscoveryAgentPrivate" kindref="compound">PokitDiscoveryAgentPrivate</ref><sp/>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>d,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qbluetoothaddress" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothAddress</ref><sp/>&amp;deviceAdapter,</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="qobject" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QObject</ref><sp/>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>parent)</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/><ref refid="qbluetoothdevicediscoveryagent" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothDeviceDiscoveryAgent</ref>(deviceAdapter,<sp/>parent),<sp/>d_ptr(d)</highlight></codeline>
+<codeline lineno="57"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="61"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="62"><highlight class="comment"><sp/>*<sp/>Constructs<sp/>a<sp/>new<sp/>Pokit<sp/>device<sp/>discovery<sp/>agent<sp/>with<sp/>\a<sp/>parent,<sp/>and<sp/>private<sp/>implementation<sp/>\a<sp/>d.</highlight></codeline>
+<codeline lineno="63"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64" refid="classPokitDiscoveryAgent_1aa14d5dd80f33eca655ae95f320abdcc9" refkind="member"><highlight class="normal"><ref refid="classPokitDiscoveryAgent_1a03d6f7080957f3435c1644302854e303" kindref="member">PokitDiscoveryAgent::PokitDiscoveryAgent</ref>(</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classPokitDiscoveryAgentPrivate" kindref="compound">PokitDiscoveryAgentPrivate</ref><sp/>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>d,<sp/><ref refid="qobject" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QObject</ref><sp/>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>parent)</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/><ref refid="qbluetoothdevicediscoveryagent" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothDeviceDiscoveryAgent</ref>(parent),<sp/>d_ptr(d)</highlight></codeline>
+<codeline lineno="67"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal">}</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="70"><highlight class="comment">///<sp/>\endcond</highlight></codeline>
+<codeline lineno="71"><highlight class="comment"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="72"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="73"><highlight class="comment"><sp/>*<sp/>Destroys<sp/>this<sp/>PokitDiscoveryAgent<sp/>object.</highlight></codeline>
+<codeline lineno="74"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75" refid="classPokitDiscoveryAgent_1a9bb87ea88f1098a4505f547be8e392b4" refkind="member"><highlight class="normal"><ref refid="classPokitDiscoveryAgent_1a9bb87ea88f1098a4505f547be8e392b4" kindref="member">PokitDiscoveryAgent::~PokitDiscoveryAgent</ref>()</highlight></codeline>
+<codeline lineno="76"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/><ref refid="classPokitDiscoveryAgent_1ad42dea538f47317d0465e3320f2d4365" kindref="member">d_ptr</ref>;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="80"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="81"><highlight class="comment"><sp/>*<sp/>Starts<sp/>Pokit<sp/>device<sp/>discovery.</highlight></codeline>
+<codeline lineno="82"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="83"><highlight class="comment"><sp/>*<sp/>This<sp/>override<sp/>simply<sp/>enforces<sp/>that<sp/>\a<sp/>method<sp/>must<sp/>be<sp/>\c<sp/>LowEnergyMethod,<sp/>as<sp/>all<sp/>Pokit<sp/>devices</highlight></codeline>
+<codeline lineno="84"><highlight class="comment"><sp/>*<sp/>used<sp/>Bluetooth<sp/>Low<sp/>Energy<sp/>(BLE).</highlight></codeline>
+<codeline lineno="85"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86" refid="classPokitDiscoveryAgent_1a7a91a09dbbe46327407d69bc04b19fc5" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classPokitDiscoveryAgent_1a612a182a4f6e5f9bc501054df2a4bd02" kindref="member">PokitDiscoveryAgent::start</ref>(<ref refid="qbluetoothdevicediscoveryagent_1DiscoveryMethod-enum" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothDeviceDiscoveryAgent::DiscoveryMethods</ref><sp/>methods)</highlight></codeline>
+<codeline lineno="87"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_D(<ref refid="classPokitDiscoveryAgent" kindref="compound">PokitDiscoveryAgent</ref>);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_ASSERT(methods<sp/>==<sp/><ref refid="qbluetoothdevicediscoveryagent_1DiscoveryMethod-enum" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothDeviceDiscoveryAgent::LowEnergyMethod</ref>);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>qCDebug(d-&gt;lc).noquote()<sp/>&lt;&lt;<sp/><ref refid="qobject_1tr" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">tr</ref>(</highlight><highlight class="stringliteral">&quot;Scanning<sp/>for<sp/>Bluetooth<sp/>Low<sp/>Energy<sp/>devices.&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="qbluetoothdevicediscoveryagent_1start" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothDeviceDiscoveryAgent::start</ref>(<ref refid="qbluetoothdevicediscoveryagent_1DiscoveryMethod-enum" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothDeviceDiscoveryAgent::LowEnergyMethod</ref>);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="94"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="95"><highlight class="comment"><sp/>*<sp/>Starts<sp/>Pokit<sp/>device<sp/>discovery.</highlight></codeline>
+<codeline lineno="96"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97" refid="classPokitDiscoveryAgent_1a612a182a4f6e5f9bc501054df2a4bd02" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classPokitDiscoveryAgent_1a612a182a4f6e5f9bc501054df2a4bd02" kindref="member">PokitDiscoveryAgent::start</ref>()</highlight></codeline>
+<codeline lineno="98"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_D(<ref refid="classPokitDiscoveryAgent" kindref="compound">PokitDiscoveryAgent</ref>);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>qCDebug(d-&gt;lc).noquote()<sp/>&lt;&lt;<sp/><ref refid="qobject_1tr" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">tr</ref>(</highlight><highlight class="stringliteral">&quot;Scanning<sp/>for<sp/>Bluetooth<sp/>Low<sp/>Energy<sp/>devices.&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="qbluetoothdevicediscoveryagent_1start" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothDeviceDiscoveryAgent::start</ref>(<ref refid="qbluetoothdevicediscoveryagent_1DiscoveryMethod-enum" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothDeviceDiscoveryAgent::LowEnergyMethod</ref>);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="104"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="105"><highlight class="comment"><sp/>*<sp/>\fn<sp/>void<sp/>PokitDiscoveryAgent::pokitDeviceDiscovered(const<sp/>QBluetoothDeviceInfo<sp/>&amp;info)</highlight></codeline>
+<codeline lineno="106"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="107"><highlight class="comment"><sp/>*<sp/>This<sp/>signal<sp/>is<sp/>emitted<sp/>when<sp/>the<sp/>Pokit<sp/>device<sp/>described<sp/>by<sp/>\a<sp/>info<sp/>is<sp/>discovered.</highlight></codeline>
+<codeline lineno="108"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="110"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="111"><highlight class="comment"><sp/>*<sp/>\fn<sp/>void<sp/>PokitDiscoveryAgent::pokitDeviceUpdated(const<sp/>QBluetoothDeviceInfo<sp/>&amp;info,<sp/>QBluetoothDeviceInfo::Fields<sp/>updatedFields)</highlight></codeline>
+<codeline lineno="112"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="113"><highlight class="comment"><sp/>*<sp/>This<sp/>signal<sp/>is<sp/>emitted<sp/>when<sp/>the<sp/>Pokit<sp/>device<sp/>described<sp/>by<sp/>\a<sp/>info<sp/>is<sp/>updated.<sp/>The</highlight></codeline>
+<codeline lineno="114"><highlight class="comment"><sp/>*<sp/>\a<sp/>updatedFields<sp/>flags<sp/>tell<sp/>which<sp/>information<sp/>has<sp/>been<sp/>updated.</highlight></codeline>
+<codeline lineno="115"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="117"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="118"><highlight class="comment"><sp/>*<sp/>\cond<sp/>internal</highlight></codeline>
+<codeline lineno="119"><highlight class="comment"><sp/>*<sp/>\class<sp/>PokitDiscoveryAgentPrivate</highlight></codeline>
+<codeline lineno="120"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="121"><highlight class="comment"><sp/>*<sp/>The<sp/>PokitDiscoveryAgentPrivate<sp/>class<sp/>provides<sp/>private<sp/>implementation<sp/>for</highlight></codeline>
+<codeline lineno="122"><highlight class="comment"><sp/>*<sp/>PokitDiscoveryAgent.</highlight></codeline>
+<codeline lineno="123"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="125"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="126"><highlight class="comment"><sp/>*<sp/>\internal</highlight></codeline>
+<codeline lineno="127"><highlight class="comment"><sp/>*<sp/>Constructs<sp/>a<sp/>new<sp/>PokitDiscoveryAgentPrivate<sp/>object<sp/>with<sp/>public<sp/>implementation<sp/>\a<sp/>q.</highlight></codeline>
+<codeline lineno="128"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="129" refid="classPokitDiscoveryAgentPrivate_1a0efe6e89767d8c982d181aee05f3f392" refkind="member"><highlight class="normal"><ref refid="classPokitDiscoveryAgentPrivate_1a0efe6e89767d8c982d181aee05f3f392" kindref="member">PokitDiscoveryAgentPrivate::PokitDiscoveryAgentPrivate</ref>(<ref refid="classPokitDiscoveryAgent" kindref="compound">PokitDiscoveryAgent</ref><sp/>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>q)</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/>q_ptr(q)</highlight></codeline>
+<codeline lineno="131"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="qobject_1connect-4" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">connect</ref>(q,<sp/>&amp;<ref refid="qbluetoothdevicediscoveryagent_1canceled" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothDeviceDiscoveryAgent::canceled</ref>,</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>&amp;<ref refid="classPokitDiscoveryAgentPrivate_1a0e965d6b721e5800d575e47016c7a37d" kindref="member">PokitDiscoveryAgentPrivate::canceled</ref>);</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="qobject_1connect-4" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">connect</ref>(q,<sp/>&amp;<ref refid="qbluetoothdevicediscoveryagent_1deviceDiscovered" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothDeviceDiscoveryAgent::deviceDiscovered</ref>,</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>&amp;<ref refid="classPokitDiscoveryAgentPrivate_1af96c8bec6557e8ac44006081a7f82caf" kindref="member">PokitDiscoveryAgentPrivate::deviceDiscovered</ref>);</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#if<sp/>(QT_VERSION<sp/>&gt;=<sp/>QT_VERSION_CHECK(5,<sp/>12,<sp/>0))<sp/></highlight><highlight class="comment">//<sp/>Signal<sp/>added<sp/>in<sp/>Qt<sp/>5.12.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="qobject_1connect-4" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">connect</ref>(q,<sp/>&amp;<ref refid="qbluetoothdevicediscoveryagent_1deviceUpdated" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothDeviceDiscoveryAgent::deviceUpdated</ref>,</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>&amp;<ref refid="classPokitDiscoveryAgentPrivate_1afc40fda129c4f54986bf8c31fd803fb6" kindref="member">PokitDiscoveryAgentPrivate::deviceUpdated</ref>);</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="qobject_1connect-4" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">connect</ref>(q,</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#</highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(QT_VERSION<sp/>&lt;<sp/>QT_VERSION_CHECK(6,<sp/>2,<sp/>0))</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QOverload&lt;PokitDiscoveryAgent::Error&gt;::of(&amp;<ref refid="qbluetoothdevicediscoveryagent_1error" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">PokitDiscoveryAgent::error</ref>),</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#</highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;<ref refid="qbluetoothdevicediscoveryagent_1errorOccurred" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothDeviceDiscoveryAgent::errorOccurred</ref>,</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#endif</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>&amp;<ref refid="classPokitDiscoveryAgentPrivate_1ae1542948a66d68f1435337fe3121a614" kindref="member">PokitDiscoveryAgentPrivate::error</ref>);</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="qobject_1connect-4" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">connect</ref>(q,<sp/>&amp;<ref refid="qbluetoothdevicediscoveryagent_1finished" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothDeviceDiscoveryAgent::finished</ref>,</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>&amp;<ref refid="classPokitDiscoveryAgentPrivate_1ade8a64a3a7840eea1bf43fa1361ee541" kindref="member">PokitDiscoveryAgentPrivate::finished</ref>);</highlight></codeline>
+<codeline lineno="153"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="155"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="156"><highlight class="comment"><sp/>*<sp/>Handle<sp/>scan<sp/>canceled<sp/>signals,<sp/>by<sp/>simply<sp/>logging<sp/>the<sp/>event<sp/>for<sp/>diagnostic<sp/>purposes.</highlight></codeline>
+<codeline lineno="157"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="158" refid="classPokitDiscoveryAgentPrivate_1a0e965d6b721e5800d575e47016c7a37d" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classPokitDiscoveryAgentPrivate_1a0e965d6b721e5800d575e47016c7a37d" kindref="member">PokitDiscoveryAgentPrivate::canceled</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="159"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/>qCDebug(lc).noquote()<sp/>&lt;&lt;<sp/><ref refid="qobject_1tr" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">tr</ref>(</highlight><highlight class="stringliteral">&quot;Pokit<sp/>device<sp/>scan<sp/>cancelled.&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="161"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="163"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="164"><highlight class="comment"><sp/>*<sp/>Handle<sp/>deviceDiscovered<sp/>signals.</highlight></codeline>
+<codeline lineno="165"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="166"><highlight class="comment"><sp/>*<sp/>Here<sp/>we<sp/>simply<sp/>check<sp/>if<sp/>\a<sp/>info<sp/>describes<sp/>a<sp/>Pokit<sp/>device,<sp/>and<sp/>if<sp/>so,<sp/>emit<sp/>pokitDeviceDiscovered().</highlight></codeline>
+<codeline lineno="167"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="168" refid="classPokitDiscoveryAgentPrivate_1af96c8bec6557e8ac44006081a7f82caf" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classPokitDiscoveryAgentPrivate_1af96c8bec6557e8ac44006081a7f82caf" kindref="member">PokitDiscoveryAgentPrivate::deviceDiscovered</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qbluetoothdeviceinfo" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothDeviceInfo</ref><sp/>&amp;info)</highlight></codeline>
+<codeline lineno="169"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_Q(<ref refid="classPokitDiscoveryAgent" kindref="compound">PokitDiscoveryAgent</ref>);</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!<ref refid="pokitproducts_8h_1adb8bb3a07e937158a294997e60868297" kindref="member">isPokitProduct</ref>(info))<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/>qCDebug(lc).noquote()<sp/>&lt;&lt;<sp/><ref refid="qobject_1tr" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">tr</ref>(R</highlight><highlight class="stringliteral">&quot;(Discovered<sp/>Pokit<sp/>device<sp/>&quot;%1&quot;<sp/>at<sp/>%2.)&quot;)</highlight></codeline>
+<codeline lineno="173"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.<ref refid="qstring_1arg-14" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">arg</ref>(info.<ref refid="qbluetoothdeviceinfo_1name" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">name</ref>(),<sp/>info.<ref refid="qbluetoothdeviceinfo_1address" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">address</ref>().<ref refid="qbluetoothaddress_1toString" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">toString</ref>());</highlight></codeline>
+<codeline lineno="174"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><ref refid="qobject_1Q_EMIT" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">Q_EMIT</ref><sp/>q-&gt;pokitDeviceDiscovered(info);</highlight></codeline>
+<codeline lineno="175"><highlight class="stringliteral">}</highlight></codeline>
+<codeline lineno="176"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="177"><highlight class="stringliteral"></highlight><highlight class="preprocessor">#if<sp/>(QT_VERSION<sp/>&gt;=<sp/>QT_VERSION_CHECK(5,<sp/>12,<sp/>0))<sp/></highlight><highlight class="comment">//<sp/>Required<sp/>signal,<sp/>and<sp/>Fields,<sp/>added<sp/>in<sp/>Qt<sp/>5.12.</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="178"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="179"><highlight class="comment"><sp/>*<sp/>Handle<sp/>deviceUpdated<sp/>signals.</highlight></codeline>
+<codeline lineno="180"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="181"><highlight class="comment"><sp/>*<sp/>Here<sp/>we<sp/>simply<sp/>check<sp/>if<sp/>\a<sp/>info<sp/>describes<sp/>a<sp/>Pokit<sp/>device,<sp/>and<sp/>if<sp/>so,<sp/>emit<sp/>pokitDeviceUpdated().</highlight></codeline>
+<codeline lineno="182"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="183"><highlight class="comment"><sp/>*<sp/>\since<sp/>Qt<sp/>5.12.0</highlight></codeline>
+<codeline lineno="184"><highlight class="comment"><sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="185" refid="classPokitDiscoveryAgentPrivate_1afc40fda129c4f54986bf8c31fd803fb6" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classPokitDiscoveryAgentPrivate_1afc40fda129c4f54986bf8c31fd803fb6" kindref="member">PokitDiscoveryAgentPrivate::deviceUpdated</ref>(</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qbluetoothdeviceinfo" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothDeviceInfo</ref><sp/>&amp;info,<sp/><ref refid="qbluetoothdeviceinfo_1Field-enum" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothDeviceInfo::Fields</ref><sp/>updatedFields)</highlight></codeline>
+<codeline lineno="187"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_Q(<ref refid="classPokitDiscoveryAgent" kindref="compound">PokitDiscoveryAgent</ref>);</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!<ref refid="pokitproducts_8h_1adb8bb3a07e937158a294997e60868297" kindref="member">isPokitProduct</ref>(info))<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/>qCDebug(lc).noquote()<sp/>&lt;&lt;<sp/><ref refid="qobject_1tr" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">tr</ref>(R</highlight><highlight class="stringliteral">&quot;(Pokit<sp/>device<sp/>&quot;%1&quot;<sp/>at<sp/>%2<sp/>updated<sp/>with<sp/>RSSI<sp/>%3.)&quot;)</highlight></codeline>
+<codeline lineno="191"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.<ref refid="qstring_1arg-14" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">arg</ref>(info.<ref refid="qbluetoothdeviceinfo_1name" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">name</ref>(),<sp/>info.<ref refid="qbluetoothdeviceinfo_1address" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">address</ref>().<ref refid="qbluetoothaddress_1toString" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">toString</ref>()).<ref refid="qstring_1arg-14" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">arg</ref>(info.<ref refid="qbluetoothdeviceinfo_1rssi" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">rssi</ref>());</highlight></codeline>
+<codeline lineno="192"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><ref refid="qobject_1Q_EMIT" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">Q_EMIT</ref><sp/>q-&gt;pokitDeviceUpdated(info,<sp/>updatedFields);</highlight></codeline>
+<codeline lineno="193"><highlight class="stringliteral">}</highlight></codeline>
+<codeline lineno="194"><highlight class="stringliteral"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="196"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="197"><highlight class="comment"><sp/>*<sp/>Handle<sp/>scan<sp/>errors,<sp/>by<sp/>simply<sp/>logging<sp/>\a<sp/>error<sp/>for<sp/>diagnostic<sp/>purposes.</highlight></codeline>
+<codeline lineno="198"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="199" refid="classPokitDiscoveryAgentPrivate_1ae1542948a66d68f1435337fe3121a614" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classPokitDiscoveryAgentPrivate_1ae1542948a66d68f1435337fe3121a614" kindref="member">PokitDiscoveryAgentPrivate::error</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qbluetoothdevicediscoveryagent_1Error-enum" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothDeviceDiscoveryAgent::Error</ref><sp/>error)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="200"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/>qCWarning(lc).noquote()<sp/>&lt;&lt;<sp/><ref refid="qobject_1tr" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">tr</ref>(</highlight><highlight class="stringliteral">&quot;Pokit<sp/>device<sp/>scan<sp/>error:&quot;</highlight><highlight class="normal">)<sp/>&lt;&lt;<sp/><ref refid="classPokitDiscoveryAgentPrivate_1ae1542948a66d68f1435337fe3121a614" kindref="member">error</ref>;</highlight></codeline>
+<codeline lineno="202"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="204"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="205"><highlight class="comment"><sp/>*<sp/>Handle<sp/>scan<sp/>finished<sp/>signals,<sp/>by<sp/>simply<sp/>logging<sp/>the<sp/>event<sp/>for<sp/>diagnostic<sp/>purposes.</highlight></codeline>
+<codeline lineno="206"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="207" refid="classPokitDiscoveryAgentPrivate_1ade8a64a3a7840eea1bf43fa1361ee541" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classPokitDiscoveryAgentPrivate_1ade8a64a3a7840eea1bf43fa1361ee541" kindref="member">PokitDiscoveryAgentPrivate::finished</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="208"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/>qCDebug(lc).noquote()<sp/>&lt;&lt;<sp/><ref refid="qobject_1tr" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">tr</ref>(</highlight><highlight class="stringliteral">&quot;Pokit<sp/>device<sp/>scan<sp/>finished.&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="210"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="212"><highlight class="comment">///<sp/>\endcond</highlight></codeline>
+    </programlisting>
+    <location file="/home/paul/src/dokit/src/lib/pokitdiscoveryagent.cpp"/>
+  </compounddef>
+</doxygen>

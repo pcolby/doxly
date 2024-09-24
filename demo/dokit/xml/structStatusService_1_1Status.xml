@@ -1,0 +1,103 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.0" xml:lang="en-US">
+  <compounddef id="structStatusService_1_1Status" kind="struct" language="C++" prot="public">
+    <compoundname>StatusService::Status</compoundname>
+    <includes refid="statusservice_8h" local="no">statusservice.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structStatusService_1_1Status_1aa5d6fe4e5286126d7604c6ceb4da6d11" prot="public" static="no" mutable="no">
+        <type><ref refid="classStatusService_1a50ae778be2cb8e49b85ef159be19af35" kindref="member">DeviceStatus</ref></type>
+        <definition>DeviceStatus StatusService::Status::deviceStatus</definition>
+        <argsstring></argsstring>
+        <name>deviceStatus</name>
+        <qualifiedname>StatusService::Status::deviceStatus</qualifiedname>
+        <briefdescription>
+<para>Current Pokit device status. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/statusservice.h" line="114" column="22" bodyfile="/home/paul/src/dokit/include/qtpokit/statusservice.h" bodystart="114" bodyend="-1"/>
+        <referencedby refid="classStatusCommand_1ae2349e3d64b1b4db9b80465c0b7dadb7" compoundref="statuscommand_8cpp" startline="89" endline="195">StatusCommand::outputDeviceStatus</referencedby>
+        <referencedby refid="classStatusServicePrivate_1a3a6ff8ca3e9d7c884b269e52dd43aeb0" compoundref="statusservice_8cpp" startline="626" endline="674">StatusServicePrivate::parseStatus</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structStatusService_1_1Status_1a34d5f71da1e356a5f8da381f4b715b46" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float StatusService::Status::batteryVoltage</definition>
+        <argsstring></argsstring>
+        <name>batteryVoltage</name>
+        <qualifiedname>StatusService::Status::batteryVoltage</qualifiedname>
+        <briefdescription>
+<para>Current battery voltage level. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/statusservice.h" line="115" column="15" bodyfile="/home/paul/src/dokit/include/qtpokit/statusservice.h" bodystart="115" bodyend="-1"/>
+        <referencedby refid="classStatusCommand_1ae2349e3d64b1b4db9b80465c0b7dadb7" compoundref="statuscommand_8cpp" startline="89" endline="195">StatusCommand::outputDeviceStatus</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structStatusService_1_1Status_1af2a1fab33ca1e643988bc9976a44940d" prot="public" static="no" mutable="no">
+        <type><ref refid="classStatusService_1a26ca2c6e0c1127261cc28a778512bf68" kindref="member">BatteryStatus</ref></type>
+        <definition>BatteryStatus StatusService::Status::batteryStatus</definition>
+        <argsstring></argsstring>
+        <name>batteryStatus</name>
+        <qualifiedname>StatusService::Status::batteryStatus</qualifiedname>
+        <briefdescription>
+<para>Logical interpretation the battery voltage level. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/statusservice.h" line="116" column="23" bodyfile="/home/paul/src/dokit/include/qtpokit/statusservice.h" bodystart="116" bodyend="-1"/>
+        <referencedby refid="classStatusCommand_1ae2349e3d64b1b4db9b80465c0b7dadb7" compoundref="statuscommand_8cpp" startline="89" endline="195">StatusCommand::outputDeviceStatus</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structStatusService_1_1Status_1afd171243d9bcdfb3c2e354ffb28b3f88" prot="public" static="no" mutable="no">
+        <type>std::optional&lt; <ref refid="classStatusService_1a6bb2f85b6df9942ee108c341f4162e1f" kindref="member">SwitchPosition</ref> &gt;</type>
+        <definition>std::optional&lt;SwitchPosition&gt; StatusService::Status::switchPosition</definition>
+        <argsstring></argsstring>
+        <name>switchPosition</name>
+        <qualifiedname>StatusService::Status::switchPosition</qualifiedname>
+        <briefdescription>
+<para>Position of the Pokit device&apos;s physical mode switch. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/statusservice.h" line="117" column="23" bodyfile="/home/paul/src/dokit/include/qtpokit/statusservice.h" bodystart="117" bodyend="-1"/>
+        <referencedby refid="classStatusCommand_1ae2349e3d64b1b4db9b80465c0b7dadb7" compoundref="statuscommand_8cpp" startline="89" endline="195">StatusCommand::outputDeviceStatus</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structStatusService_1_1Status_1a4c4c144b60207c7e092b83eaf33c3e51" prot="public" static="no" mutable="no">
+        <type>std::optional&lt; <ref refid="classStatusService_1af7f9dcc8c9cfa0a1cd9491b829234dc1" kindref="member">ChargingStatus</ref> &gt;</type>
+        <definition>std::optional&lt;ChargingStatus&gt; StatusService::Status::chargingStatus</definition>
+        <argsstring></argsstring>
+        <name>chargingStatus</name>
+        <qualifiedname>StatusService::Status::chargingStatus</qualifiedname>
+        <briefdescription>
+<para>Current charging status, if supported by the device. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/statusservice.h" line="118" column="23" bodyfile="/home/paul/src/dokit/include/qtpokit/statusservice.h" bodystart="118" bodyend="-1"/>
+        <referencedby refid="classStatusCommand_1ae2349e3d64b1b4db9b80465c0b7dadb7" compoundref="statuscommand_8cpp" startline="89" endline="195">StatusCommand::outputDeviceStatus</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Attributes included in the <computeroutput><ref refid="structStatusService_1_1Status" kindref="compound">Status</ref></computeroutput> characterstic. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/paul/src/dokit/include/qtpokit/statusservice.h" line="113" column="5" bodyfile="/home/paul/src/dokit/include/qtpokit/statusservice.h" bodystart="113" bodyend="119"/>
+    <listofallmembers>
+      <member refid="structStatusService_1_1Status_1af2a1fab33ca1e643988bc9976a44940d" prot="public" virt="non-virtual"><scope>StatusService::Status</scope><name>batteryStatus</name></member>
+      <member refid="structStatusService_1_1Status_1a34d5f71da1e356a5f8da381f4b715b46" prot="public" virt="non-virtual"><scope>StatusService::Status</scope><name>batteryVoltage</name></member>
+      <member refid="structStatusService_1_1Status_1a4c4c144b60207c7e092b83eaf33c3e51" prot="public" virt="non-virtual"><scope>StatusService::Status</scope><name>chargingStatus</name></member>
+      <member refid="structStatusService_1_1Status_1aa5d6fe4e5286126d7604c6ceb4da6d11" prot="public" virt="non-virtual"><scope>StatusService::Status</scope><name>deviceStatus</name></member>
+      <member refid="structStatusService_1_1Status_1afd171243d9bcdfb3c2e354ffb28b3f88" prot="public" virt="non-virtual"><scope>StatusService::Status</scope><name>switchPosition</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

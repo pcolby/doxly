@@ -1,0 +1,108 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.0" xml:lang="en-US">
+  <compounddef id="structDsoService_1_1CharacteristicUuids" kind="struct" language="C++" prot="public">
+    <compoundname>DsoService::CharacteristicUuids</compoundname>
+    <includes refid="dsoservice_8h" local="no">dsoservice.h</includes>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="structDsoService_1_1CharacteristicUuids_1aad3144a47fc1cc7edc705b3e823688a6" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="qbluetoothuuid" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothUuid</ref></type>
+        <definition>const QBluetoothUuid DsoService::CharacteristicUuids::settings</definition>
+        <argsstring></argsstring>
+        <name>settings</name>
+        <qualifiedname>DsoService::CharacteristicUuids::settings</qualifiedname>
+        <initializer>{ QStringLiteral(&quot;a81af1b6-b8b3-4244-8859-3da368d2be39&quot;) }</initializer>
+        <briefdescription>
+<para>UUID of the <computeroutput>DSO</computeroutput> service&apos;s <computeroutput><ref refid="structDsoService_1_1Settings" kindref="compound">Settings</ref></computeroutput> characterstic. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/dsoservice.h" line="34" column="44" bodyfile="/home/paul/src/dokit/include/qtpokit/dsoservice.h" bodystart="34" bodyend="34"/>
+        <referencedby refid="classDsoServicePrivate_1a7de9e2488240903fee3d88b89bf1d5ec" compoundref="dsoservice_8cpp" startline="462" endline="486">DsoServicePrivate::characteristicChanged</referencedby>
+        <referencedby refid="classDsoServicePrivate_1a0eb9af767bd0ec01458d681a5831c07a" compoundref="dsoservice_8cpp" startline="400" endline="425">DsoServicePrivate::characteristicRead</referencedby>
+        <referencedby refid="classDsoServicePrivate_1acd230f4773256fa6cea38cb43ed65df1" compoundref="dsoservice_8cpp" startline="431" endline="456">DsoServicePrivate::characteristicWritten</referencedby>
+        <referencedby refid="classPokitDevice_1a0a3e6078ce0a7c2d93171ef0f4183d61" compoundref="pokitdevice_8cpp" startline="218" endline="261">PokitDevice::charcteristicToString</referencedby>
+        <referencedby refid="classDsoService_1a5714c8ccec6ab1d98241312b28a32e9e" compoundref="dsoservice_8cpp" startline="159" endline="175">DsoService::setSettings</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structDsoService_1_1CharacteristicUuids_1a0640c015d85dba780fcad93990e37afa" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="qbluetoothuuid" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothUuid</ref></type>
+        <definition>const QBluetoothUuid DsoService::CharacteristicUuids::metadata</definition>
+        <argsstring></argsstring>
+        <name>metadata</name>
+        <qualifiedname>DsoService::CharacteristicUuids::metadata</qualifiedname>
+        <initializer>{ QStringLiteral(&quot;970f00ba-f46f-4825-96a8-153a5cd0cda9&quot;) }</initializer>
+        <briefdescription>
+<para>UUID of the <computeroutput>DSO</computeroutput> service&apos;s <computeroutput><ref refid="structDsoService_1_1Metadata" kindref="compound">Metadata</ref></computeroutput> characterstic. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/dsoservice.h" line="37" column="44" bodyfile="/home/paul/src/dokit/include/qtpokit/dsoservice.h" bodystart="37" bodyend="37"/>
+        <referencedby refid="classDsoServicePrivate_1a7de9e2488240903fee3d88b89bf1d5ec" compoundref="dsoservice_8cpp" startline="462" endline="486">DsoServicePrivate::characteristicChanged</referencedby>
+        <referencedby refid="classDsoServicePrivate_1a0eb9af767bd0ec01458d681a5831c07a" compoundref="dsoservice_8cpp" startline="400" endline="425">DsoServicePrivate::characteristicRead</referencedby>
+        <referencedby refid="classDsoServicePrivate_1acd230f4773256fa6cea38cb43ed65df1" compoundref="dsoservice_8cpp" startline="431" endline="456">DsoServicePrivate::characteristicWritten</referencedby>
+        <referencedby refid="classPokitDevice_1a0a3e6078ce0a7c2d93171ef0f4183d61" compoundref="pokitdevice_8cpp" startline="218" endline="261">PokitDevice::charcteristicToString</referencedby>
+        <referencedby refid="classDsoService_1a2c5e40248d6dfe341251093d75ecd60f" compoundref="dsoservice_8cpp" startline="257" endline="261">DsoService::disableMetadataNotifications</referencedby>
+        <referencedby refid="classDsoService_1a67ca97370da5420c62591c3d8614a26d" compoundref="dsoservice_8cpp" startline="244" endline="248">DsoService::enableMetadataNotifications</referencedby>
+        <referencedby refid="classDsoService_1afda4aa4a55ff0af205f10ccf8c77cbf5" compoundref="dsoservice_8cpp" startline="226" endline="233">DsoService::metadata</referencedby>
+        <referencedby refid="classDsoService_1ad8cd148690b9e4fd1b01071e8cfabd0c" compoundref="dsoservice_8cpp" startline="146" endline="150">DsoService::readMetadataCharacteristic</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structDsoService_1_1CharacteristicUuids_1a495b006c71a1b15952e54e1ff0791aa7" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="qbluetoothuuid" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothUuid</ref></type>
+        <definition>const QBluetoothUuid DsoService::CharacteristicUuids::reading</definition>
+        <argsstring></argsstring>
+        <name>reading</name>
+        <qualifiedname>DsoService::CharacteristicUuids::reading</qualifiedname>
+        <initializer>{ QStringLiteral(&quot;98e14f8e-536e-4f24-b4f4-1debfed0a99e&quot;) }</initializer>
+        <briefdescription>
+<para>UUID of the <computeroutput>DSO</computeroutput> service&apos;s <computeroutput>Reading</computeroutput> characterstic. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/dsoservice.h" line="40" column="44" bodyfile="/home/paul/src/dokit/include/qtpokit/dsoservice.h" bodystart="40" bodyend="40"/>
+        <referencedby refid="classDsoServicePrivate_1a7de9e2488240903fee3d88b89bf1d5ec" compoundref="dsoservice_8cpp" startline="462" endline="486">DsoServicePrivate::characteristicChanged</referencedby>
+        <referencedby refid="classDsoServicePrivate_1a0eb9af767bd0ec01458d681a5831c07a" compoundref="dsoservice_8cpp" startline="400" endline="425">DsoServicePrivate::characteristicRead</referencedby>
+        <referencedby refid="classDsoServicePrivate_1acd230f4773256fa6cea38cb43ed65df1" compoundref="dsoservice_8cpp" startline="431" endline="456">DsoServicePrivate::characteristicWritten</referencedby>
+        <referencedby refid="classPokitDevice_1a0a3e6078ce0a7c2d93171ef0f4183d61" compoundref="pokitdevice_8cpp" startline="218" endline="261">PokitDevice::charcteristicToString</referencedby>
+        <referencedby refid="classDsoService_1af55d3574002bee3413f28ab48f007f8c" compoundref="dsoservice_8cpp" startline="281" endline="285">DsoService::disableReadingNotifications</referencedby>
+        <referencedby refid="classDsoService_1ab0d0c4d4b41617bc23556b800dbafe29" compoundref="dsoservice_8cpp" startline="270" endline="274">DsoService::enableReadingNotifications</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Characteristics available via the <computeroutput>DSO</computeroutput> service. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>DsoService::CharacteristicUuids</label>
+        <link refid="structDsoService_1_1CharacteristicUuids"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>metadata</edgelabel>
+          <edgelabel>reading</edgelabel>
+          <edgelabel>settings</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QBluetoothUuid</label>
+        <link refid="qbluetoothuuid" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>QUuid</label>
+        <link refid="quuid" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/paul/src/dokit/include/qtpokit/dsoservice.h" line="32" column="5" bodyfile="/home/paul/src/dokit/include/qtpokit/dsoservice.h" bodystart="32" bodyend="41"/>
+    <listofallmembers>
+      <member refid="structDsoService_1_1CharacteristicUuids_1a0640c015d85dba780fcad93990e37afa" prot="public" virt="non-virtual"><scope>DsoService::CharacteristicUuids</scope><name>metadata</name></member>
+      <member refid="structDsoService_1_1CharacteristicUuids_1a495b006c71a1b15952e54e1ff0791aa7" prot="public" virt="non-virtual"><scope>DsoService::CharacteristicUuids</scope><name>reading</name></member>
+      <member refid="structDsoService_1_1CharacteristicUuids_1aad3144a47fc1cc7edc705b3e823688a6" prot="public" virt="non-virtual"><scope>DsoService::CharacteristicUuids</scope><name>settings</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.0" xml:lang="en-US">
+  <compounddef id="structStatusService_1_1ServiceUuids" kind="struct" language="C++" prot="public">
+    <compoundname>StatusService::ServiceUuids</compoundname>
+    <includes refid="statusservice_8h" local="no">statusservice.h</includes>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="structStatusService_1_1ServiceUuids_1a8fa373d36e9332df30f38411ab3446de" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="qbluetoothuuid" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothUuid</ref></type>
+        <definition>const QBluetoothUuid StatusService::ServiceUuids::pokitMeter</definition>
+        <argsstring></argsstring>
+        <name>pokitMeter</name>
+        <qualifiedname>StatusService::ServiceUuids::pokitMeter</qualifiedname>
+        <initializer>{ QStringLiteral(&quot;57d3a771-267c-4394-8872-78223e92aec4&quot;) }</initializer>
+        <briefdescription>
+<para>UUID of the Pokit Meter&apos;s <computeroutput>Pokit <ref refid="structStatusService_1_1Status" kindref="compound">Status</ref></computeroutput> service. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/statusservice.h" line="32" column="44" bodyfile="/home/paul/src/dokit/include/qtpokit/statusservice.h" bodystart="32" bodyend="32"/>
+        <referencedby refid="pokitproducts_8cpp_1ae0f44a17c5df57e31ee3742b1794fac4" compoundref="pokitproducts_8cpp" startline="67" endline="71">isPokitProduct</referencedby>
+        <referencedby refid="pokitproducts_8cpp_1a98f11fa57086c8c720a0d31c82169477" compoundref="pokitproducts_8cpp" startline="95" endline="107">pokitProduct</referencedby>
+        <referencedby refid="classStatusServicePrivate_1a416f4b2a7e342c39fd667bcf324b4ea4" compoundref="statusservice_8cpp" startline="719" endline="729">StatusServicePrivate::serviceDiscovered</referencedby>
+        <referencedby refid="classPokitDevice_1aca9393595de5676f20e3d0fd795358b5" compoundref="pokitdevice_8cpp" startline="190" endline="210">PokitDevice::serviceToString</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structStatusService_1_1ServiceUuids_1a0a9ca0f9377093ff60b282d4bfe3b0cf" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="qbluetoothuuid" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothUuid</ref></type>
+        <definition>const QBluetoothUuid StatusService::ServiceUuids::pokitPro</definition>
+        <argsstring></argsstring>
+        <name>pokitPro</name>
+        <qualifiedname>StatusService::ServiceUuids::pokitPro</qualifiedname>
+        <initializer>{ QStringLiteral(&quot;57d3a771-267c-4394-8872-78223e92aec5&quot;) }</initializer>
+        <briefdescription>
+<para>UUID of the Pokit Pro&apos;s <computeroutput>Pokit <ref refid="structStatusService_1_1Status" kindref="compound">Status</ref></computeroutput> service. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/statusservice.h" line="35" column="44" bodyfile="/home/paul/src/dokit/include/qtpokit/statusservice.h" bodystart="35" bodyend="35"/>
+        <referencedby refid="pokitproducts_8cpp_1ae0f44a17c5df57e31ee3742b1794fac4" compoundref="pokitproducts_8cpp" startline="67" endline="71">isPokitProduct</referencedby>
+        <referencedby refid="pokitproducts_8cpp_1a98f11fa57086c8c720a0d31c82169477" compoundref="pokitproducts_8cpp" startline="95" endline="107">pokitProduct</referencedby>
+        <referencedby refid="classStatusServicePrivate_1a416f4b2a7e342c39fd667bcf324b4ea4" compoundref="statusservice_8cpp" startline="719" endline="729">StatusServicePrivate::serviceDiscovered</referencedby>
+        <referencedby refid="classPokitDevice_1aca9393595de5676f20e3d0fd795358b5" compoundref="pokitdevice_8cpp" startline="190" endline="210">PokitDevice::serviceToString</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>UUIDs of the <computeroutput>Pokit <ref refid="structStatusService_1_1Status" kindref="compound">Status</ref></computeroutput> service. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><xrefsect id="pokit_1_pokit000009"><xreftitle>Pokit Bluetooth API errata</xreftitle><xrefdescription><para>Pokit API 1.00 (and 0.02) states the <ref refid="structStatusService_1_1Status" kindref="compound">Status</ref> Service UUID as <computeroutput>57d3a771-267c-4394-8872-78223e92aec4</computeroutput> which is correct for the Pokit Meter, but Pokit Pro uses <computeroutput>57d3a771-267c-4394-8872-78223e92aec5</computeroutput> instead, that is the last digit is a <computeroutput>5</computeroutput> not <computeroutput>4</computeroutput>.</para>
+</xrefdescription></xrefsect></para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>QBluetoothUuid</label>
+        <link refid="qbluetoothuuid" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>QUuid</label>
+        <link refid="quuid" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags"/>
+      </node>
+      <node id="1">
+        <label>StatusService::ServiceUuids</label>
+        <link refid="structStatusService_1_1ServiceUuids"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>pokitMeter</edgelabel>
+          <edgelabel>pokitPro</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/paul/src/dokit/include/qtpokit/statusservice.h" line="30" column="5" bodyfile="/home/paul/src/dokit/include/qtpokit/statusservice.h" bodystart="30" bodyend="36"/>
+    <listofallmembers>
+      <member refid="structStatusService_1_1ServiceUuids_1a8fa373d36e9332df30f38411ab3446de" prot="public" virt="non-virtual"><scope>StatusService::ServiceUuids</scope><name>pokitMeter</name></member>
+      <member refid="structStatusService_1_1ServiceUuids_1a0a9ca0f9377093ff60b282d4bfe3b0cf" prot="public" virt="non-virtual"><scope>StatusService::ServiceUuids</scope><name>pokitPro</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

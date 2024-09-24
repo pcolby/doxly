@@ -1,0 +1,174 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.0" xml:lang="en-US">
+  <compounddef id="structStatusService_1_1DeviceCharacteristics" kind="struct" language="C++" prot="public">
+    <compoundname>StatusService::DeviceCharacteristics</compoundname>
+    <includes refid="statusservice_8h" local="no">statusservice.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structStatusService_1_1DeviceCharacteristics_1afdc814d092204ef6f0628253298ae319" prot="public" static="no" mutable="no">
+        <type><ref refid="qversionnumber" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QVersionNumber</ref></type>
+        <definition>QVersionNumber StatusService::DeviceCharacteristics::firmwareVersion</definition>
+        <argsstring></argsstring>
+        <name>firmwareVersion</name>
+        <qualifiedname>StatusService::DeviceCharacteristics::firmwareVersion</qualifiedname>
+        <briefdescription>
+<para>Device&apos;s major and minor firmware version. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/statusservice.h" line="63" column="24" bodyfile="/home/paul/src/dokit/include/qtpokit/statusservice.h" bodystart="63" bodyend="-1"/>
+        <referencedby refid="classStatusCommand_1ae2349e3d64b1b4db9b80465c0b7dadb7" compoundref="statuscommand_8cpp" startline="89" endline="195">StatusCommand::outputDeviceStatus</referencedby>
+        <referencedby refid="classStatusCommand_1af275e3a02032915dd27e0c0e041ff6c1" compoundref="statuscommand_8cpp" startline="74" endline="84">StatusCommand::serviceDetailsDiscovered</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structStatusService_1_1DeviceCharacteristics_1aa254a7737f072c29aeb21b29140c738f" prot="public" static="no" mutable="no">
+        <type>quint16</type>
+        <definition>quint16 StatusService::DeviceCharacteristics::maximumVoltage</definition>
+        <argsstring></argsstring>
+        <name>maximumVoltage</name>
+        <qualifiedname>StatusService::DeviceCharacteristics::maximumVoltage</qualifiedname>
+        <briefdescription>
+<para>Device&apos;s maximum input voltage. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/statusservice.h" line="64" column="17" bodyfile="/home/paul/src/dokit/include/qtpokit/statusservice.h" bodystart="64" bodyend="-1"/>
+        <referencedby refid="classStatusCommand_1ae2349e3d64b1b4db9b80465c0b7dadb7" compoundref="statuscommand_8cpp" startline="89" endline="195">StatusCommand::outputDeviceStatus</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structStatusService_1_1DeviceCharacteristics_1a0b7a8478916ea9229ca98c9d78c96ee3" prot="public" static="no" mutable="no">
+        <type>quint16</type>
+        <definition>quint16 StatusService::DeviceCharacteristics::maximumCurrent</definition>
+        <argsstring></argsstring>
+        <name>maximumCurrent</name>
+        <qualifiedname>StatusService::DeviceCharacteristics::maximumCurrent</qualifiedname>
+        <briefdescription>
+<para>Device&apos;s maximum input current. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/statusservice.h" line="65" column="17" bodyfile="/home/paul/src/dokit/include/qtpokit/statusservice.h" bodystart="65" bodyend="-1"/>
+        <referencedby refid="classStatusCommand_1ae2349e3d64b1b4db9b80465c0b7dadb7" compoundref="statuscommand_8cpp" startline="89" endline="195">StatusCommand::outputDeviceStatus</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structStatusService_1_1DeviceCharacteristics_1ae9154c26eb128b26c0fccb9f653f1420" prot="public" static="no" mutable="no">
+        <type>quint16</type>
+        <definition>quint16 StatusService::DeviceCharacteristics::maximumResistance</definition>
+        <argsstring></argsstring>
+        <name>maximumResistance</name>
+        <qualifiedname>StatusService::DeviceCharacteristics::maximumResistance</qualifiedname>
+        <briefdescription>
+<para>Device&apos;s maximum input resistance. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/statusservice.h" line="66" column="17" bodyfile="/home/paul/src/dokit/include/qtpokit/statusservice.h" bodystart="66" bodyend="-1"/>
+        <referencedby refid="classStatusCommand_1ae2349e3d64b1b4db9b80465c0b7dadb7" compoundref="statuscommand_8cpp" startline="89" endline="195">StatusCommand::outputDeviceStatus</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structStatusService_1_1DeviceCharacteristics_1a20ea5dac3e01c2c333a1c9a77ef02d3c" prot="public" static="no" mutable="no">
+        <type>quint16</type>
+        <definition>quint16 StatusService::DeviceCharacteristics::maximumSamplingRate</definition>
+        <argsstring></argsstring>
+        <name>maximumSamplingRate</name>
+        <qualifiedname>StatusService::DeviceCharacteristics::maximumSamplingRate</qualifiedname>
+        <briefdescription>
+<para>Device&apos;s maximum sampling rate. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/statusservice.h" line="67" column="17" bodyfile="/home/paul/src/dokit/include/qtpokit/statusservice.h" bodystart="67" bodyend="-1"/>
+        <referencedby refid="classStatusCommand_1ae2349e3d64b1b4db9b80465c0b7dadb7" compoundref="statuscommand_8cpp" startline="89" endline="195">StatusCommand::outputDeviceStatus</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structStatusService_1_1DeviceCharacteristics_1a4ddb1ebddb04e6a7b445cff73379e932" prot="public" static="no" mutable="no">
+        <type>quint16</type>
+        <definition>quint16 StatusService::DeviceCharacteristics::samplingBufferSize</definition>
+        <argsstring></argsstring>
+        <name>samplingBufferSize</name>
+        <qualifiedname>StatusService::DeviceCharacteristics::samplingBufferSize</qualifiedname>
+        <briefdescription>
+<para>Device&apos;s sampling buffer size. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/statusservice.h" line="68" column="17" bodyfile="/home/paul/src/dokit/include/qtpokit/statusservice.h" bodystart="68" bodyend="-1"/>
+        <referencedby refid="classStatusCommand_1ae2349e3d64b1b4db9b80465c0b7dadb7" compoundref="statuscommand_8cpp" startline="89" endline="195">StatusCommand::outputDeviceStatus</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structStatusService_1_1DeviceCharacteristics_1ac32620649e1f8a2cf4cc6e25a7859656" prot="public" static="no" mutable="no">
+        <type>quint16</type>
+        <definition>quint16 StatusService::DeviceCharacteristics::capabilityMask</definition>
+        <argsstring></argsstring>
+        <name>capabilityMask</name>
+        <qualifiedname>StatusService::DeviceCharacteristics::capabilityMask</qualifiedname>
+        <briefdescription>
+<para>Reserved. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/statusservice.h" line="69" column="17" bodyfile="/home/paul/src/dokit/include/qtpokit/statusservice.h" bodystart="69" bodyend="-1"/>
+        <referencedby refid="classStatusCommand_1ae2349e3d64b1b4db9b80465c0b7dadb7" compoundref="statuscommand_8cpp" startline="89" endline="195">StatusCommand::outputDeviceStatus</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structStatusService_1_1DeviceCharacteristics_1ac3e0c7d70d55307a49907db75e742348" prot="public" static="no" mutable="no">
+        <type><ref refid="qbluetoothaddress" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothAddress</ref></type>
+        <definition>QBluetoothAddress StatusService::DeviceCharacteristics::macAddress</definition>
+        <argsstring></argsstring>
+        <name>macAddress</name>
+        <qualifiedname>StatusService::DeviceCharacteristics::macAddress</qualifiedname>
+        <briefdescription>
+<para>Device&apos;s MAC address. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/statusservice.h" line="70" column="27" bodyfile="/home/paul/src/dokit/include/qtpokit/statusservice.h" bodystart="70" bodyend="-1"/>
+        <referencedby refid="classStatusCommand_1ae2349e3d64b1b4db9b80465c0b7dadb7" compoundref="statuscommand_8cpp" startline="89" endline="195">StatusCommand::outputDeviceStatus</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Attributes included in the <computeroutput>Device Characteristics</computeroutput> characterstic. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="3">
+        <label>QBluetoothAddress</label>
+        <link refid="qbluetoothaddress" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags"/>
+      </node>
+      <node id="2">
+        <label>QVersionNumber</label>
+        <link refid="qversionnumber" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags"/>
+      </node>
+      <node id="1">
+        <label>StatusService::DeviceCharacteristics</label>
+        <link refid="structStatusService_1_1DeviceCharacteristics"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>firmwareVersion</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>macAddress</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/paul/src/dokit/include/qtpokit/statusservice.h" line="62" column="5" bodyfile="/home/paul/src/dokit/include/qtpokit/statusservice.h" bodystart="62" bodyend="71"/>
+    <listofallmembers>
+      <member refid="structStatusService_1_1DeviceCharacteristics_1ac32620649e1f8a2cf4cc6e25a7859656" prot="public" virt="non-virtual"><scope>StatusService::DeviceCharacteristics</scope><name>capabilityMask</name></member>
+      <member refid="structStatusService_1_1DeviceCharacteristics_1afdc814d092204ef6f0628253298ae319" prot="public" virt="non-virtual"><scope>StatusService::DeviceCharacteristics</scope><name>firmwareVersion</name></member>
+      <member refid="structStatusService_1_1DeviceCharacteristics_1ac3e0c7d70d55307a49907db75e742348" prot="public" virt="non-virtual"><scope>StatusService::DeviceCharacteristics</scope><name>macAddress</name></member>
+      <member refid="structStatusService_1_1DeviceCharacteristics_1a0b7a8478916ea9229ca98c9d78c96ee3" prot="public" virt="non-virtual"><scope>StatusService::DeviceCharacteristics</scope><name>maximumCurrent</name></member>
+      <member refid="structStatusService_1_1DeviceCharacteristics_1ae9154c26eb128b26c0fccb9f653f1420" prot="public" virt="non-virtual"><scope>StatusService::DeviceCharacteristics</scope><name>maximumResistance</name></member>
+      <member refid="structStatusService_1_1DeviceCharacteristics_1a20ea5dac3e01c2c333a1c9a77ef02d3c" prot="public" virt="non-virtual"><scope>StatusService::DeviceCharacteristics</scope><name>maximumSamplingRate</name></member>
+      <member refid="structStatusService_1_1DeviceCharacteristics_1aa254a7737f072c29aeb21b29140c738f" prot="public" virt="non-virtual"><scope>StatusService::DeviceCharacteristics</scope><name>maximumVoltage</name></member>
+      <member refid="structStatusService_1_1DeviceCharacteristics_1a4ddb1ebddb04e6a7b445cff73379e932" prot="public" virt="non-virtual"><scope>StatusService::DeviceCharacteristics</scope><name>samplingBufferSize</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

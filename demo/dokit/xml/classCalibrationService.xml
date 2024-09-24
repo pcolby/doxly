@@ -1,0 +1,377 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.0" xml:lang="en-US">
+  <compounddef id="classCalibrationService" kind="class" language="C++" prot="public">
+    <compoundname>CalibrationService</compoundname>
+    <basecompoundref refid="classAbstractPokitService" prot="public" virt="non-virtual">AbstractPokitService</basecompoundref>
+    <innerclass refid="structCalibrationService_1_1CharacteristicUuids" prot="public">CalibrationService::CharacteristicUuids</innerclass>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classCalibrationService_1a787406e3fbda9e5ad966a3851d2c9fbc" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="qbluetoothuuid" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothUuid</ref></type>
+        <definition>const QBluetoothUuid CalibrationService::serviceUuid</definition>
+        <argsstring></argsstring>
+        <name>serviceUuid</name>
+        <qualifiedname>CalibrationService::serviceUuid</qualifiedname>
+        <initializer>{ QStringLiteral(&quot;6f53be2f-780b-49b8-a7c3-e8a052b3ae2c&quot;) }</initializer>
+        <briefdescription>
+<para>UUID of the <computeroutput>Calibration</computeroutput> service. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/calibrationservice.h" line="28" column="40" bodyfile="/home/paul/src/dokit/include/qtpokit/calibrationservice.h" bodystart="28" bodyend="28"/>
+        <referencedby refid="classPokitDevice_1aca9393595de5676f20e3d0fd795358b5" compoundref="pokitdevice_8cpp" startline="190" endline="210">PokitDevice::serviceToString</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="classCalibrationService_1a7a053e0bfa26f8f7a347e88600097cd5" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class TestCalibrationService</definition>
+        <argsstring></argsstring>
+        <name>TestCalibrationService</name>
+        <qualifiedname>CalibrationService::TestCalibrationService</qualifiedname>
+        <param>
+          <type>TestCalibrationService</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/calibrationservice.h" line="61" column="18" bodyfile="/home/paul/src/dokit/include/qtpokit/calibrationservice.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCalibrationService_1a6116051fc655e706a0a0f120f423c5b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>CalibrationService::CalibrationService</definition>
+        <argsstring>(QLowEnergyController *const pokitDevice, QObject *parent=nullptr)</argsstring>
+        <name>CalibrationService</name>
+        <qualifiedname>CalibrationService::CalibrationService</qualifiedname>
+        <param>
+          <type><ref refid="qlowenergycontroller" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QLowEnergyController</ref> *const</type>
+          <declname>pokitDevice</declname>
+        </param>
+        <param>
+          <type><ref refid="qobject" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QObject</ref> *</type>
+          <declname>parent</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+<para>Constructs a new Pokit service with <emphasis>parent</emphasis>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/calibrationservice.h" line="42" column="5" bodyfile="/home/paul/src/dokit/src/lib/calibrationservice.cpp" bodystart="24" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classCalibrationService_1a6d4d45a1c89fef65090002f3ec26a68e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>CalibrationService::~CalibrationService</definition>
+        <argsstring>() override</argsstring>
+        <name>~CalibrationService</name>
+        <qualifiedname>CalibrationService::~CalibrationService</qualifiedname>
+        <briefdescription>
+<para>Destroys this <ref refid="classCalibrationService" kindref="compound">CalibrationService</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/calibrationservice.h" line="43" column="5" bodyfile="/home/paul/src/dokit/src/lib/calibrationservice.cpp" bodystart="45" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classCalibrationService_1aff98225f4e1c489aec22a5832661c7f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool CalibrationService::readCharacteristics</definition>
+        <argsstring>() override</argsstring>
+        <name>readCharacteristics</name>
+        <qualifiedname>CalibrationService::readCharacteristics</qualifiedname>
+        <reimplements refid="classAbstractPokitService_1ab1de532f20d46803d6e8b8ffea835b48">readCharacteristics</reimplements>
+        <briefdescription>
+<para>Read all characteristics.    </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This implementation always returns <computeroutput>true</computeroutput>, since the Calibration service provides no <emphasis>readable</emphasis> characteristics (they&apos;re all write-only). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/calibrationservice.h" line="45" column="10" bodyfile="/home/paul/src/dokit/src/lib/calibrationservice.cpp" bodystart="56" bodyend="61"/>
+        <references refid="qobject_1tr">QObject::tr</references>
+      </memberdef>
+      <memberdef kind="function" id="classCalibrationService_1a301f5b733cacbebbf24459639f04af52" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CalibrationService::calibrateTemperature</definition>
+        <argsstring>(const float ambientTemperature)</argsstring>
+        <name>calibrateTemperature</name>
+        <qualifiedname>CalibrationService::calibrateTemperature</qualifiedname>
+        <param>
+          <type>const float</type>
+          <declname>ambientTemperature</declname>
+        </param>
+        <briefdescription>
+<para>Calibrates the Pokit device&apos;s temperature to <emphasis>ambientTemperature</emphasis>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns <computeroutput>true</computeroutput> if the write request was successfully queued, <computeroutput>false</computeroutput> otherwise.</para>
+<para>Emits <ref refid="classCalibrationService_1a8a609fb2baf963bd2229ba71d3fceb7e" kindref="member">temperatureCalibrated()</ref> if/when the <emphasis>name</emphasis> has been set. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/calibrationservice.h" line="48" column="10" bodyfile="/home/paul/src/dokit/src/lib/calibrationservice.cpp" bodystart="70" bodyend="85"/>
+        <references refid="qstring_1arg-14">QString::arg</references>
+        <references refid="classCalibrationServicePrivate_1a0da3f9cbe7dfb8a1d8e1cb94845702bc" compoundref="calibrationservice_8cpp" startline="117" endline="123">CalibrationServicePrivate::encodeTemperature</references>
+        <references refid="qlowenergycharacteristic_1isValid">QLowEnergyCharacteristic::isValid</references>
+        <references refid="structCalibrationService_1_1CharacteristicUuids_1aee6c3fbd10b0d2f1c59914f30fe23327" compoundref="calibrationservice_8h" startline="33" endline="33">CalibrationService::CharacteristicUuids::temperature</references>
+        <references refid="qbytearray_1toHex">QByteArray::toHex</references>
+        <references refid="qobject_1tr">QObject::tr</references>
+        <referencedby refid="classCalibrateCommand_1af65b08cf1c44bf97470c9b4033c97e14" compoundref="calibratecommand_8cpp" startline="86" endline="94">CalibrateCommand::serviceDetailsDiscovered</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="signal">
+      <memberdef kind="signal" id="classCalibrationService_1a8a609fb2baf963bd2229ba71d3fceb7e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CalibrationService::temperatureCalibrated</definition>
+        <argsstring>()</argsstring>
+        <name>temperatureCalibrated</name>
+        <qualifiedname>CalibrationService::temperatureCalibrated</qualifiedname>
+        <briefdescription>
+<para>This signal is emitted when the <computeroutput>Temperature</computeroutput> characteristic has been written succesfully. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="classCalibrationService_1a301f5b733cacbebbf24459639f04af52" kindref="member">calibrateTemperature</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/calibrationservice.h" line="51" column="10"/>
+        <referencedby refid="classCalibrateCommand_1aca9b6661db8a9d95ce5bc866772e2a11" compoundref="calibratecommand_8cpp" startline="69" endline="79">CalibrateCommand::getService</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classCalibrationService_1a3e64be1b1296f1150be8d865190a699d" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>CalibrationService::CalibrationService</definition>
+        <argsstring>(CalibrationServicePrivate *const d, QObject *const parent)</argsstring>
+        <name>CalibrationService</name>
+        <qualifiedname>CalibrationService::CalibrationService</qualifiedname>
+        <param>
+          <type><ref refid="classCalibrationServicePrivate" kindref="compound">CalibrationServicePrivate</ref> *const</type>
+          <declname>d</declname>
+        </param>
+        <param>
+          <type><ref refid="qobject" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QObject</ref> *const</type>
+          <declname>parent</declname>
+        </param>
+        <briefdescription>
+<para>Constructs a new Pokit service with <emphasis>parent</emphasis>, and private implementation <emphasis>d</emphasis>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/calibrationservice.h" line="55" column="5" bodyfile="/home/paul/src/dokit/src/lib/calibrationservice.cpp" bodystart="34" bodyend="39"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>The <ref refid="classCalibrationService" kindref="compound">CalibrationService</ref> class accesses the <computeroutput>Calibrartion</computeroutput> service of Pokit devices. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>AbstractPokitService</label>
+        <link refid="classAbstractPokitService"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>CalibrationService</label>
+        <link refid="classCalibrationService"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>QObject</label>
+        <link refid="qobject" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>AbstractPokitService</label>
+        <link refid="classAbstractPokitService"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>d_ptr</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>AbstractPokitServicePrivate</label>
+        <link refid="classAbstractPokitServicePrivate"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>controller</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>service</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>serviceUuid</edgelabel>
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>q_ptr</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>CalibrationService</label>
+        <link refid="classCalibrationService"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>serviceUuid</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>QBluetoothUuid</label>
+        <link refid="qbluetoothuuid" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags"/>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>QLowEnergyController</label>
+        <link refid="qlowenergycontroller" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>QLowEnergyService</label>
+        <link refid="qlowenergyservice" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>QObject</label>
+        <link refid="qobject" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags"/>
+      </node>
+      <node id="8">
+        <label>QUuid</label>
+        <link refid="quuid" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/paul/src/dokit/include/qtpokit/calibrationservice.h" line="22" column="1" bodyfile="/home/paul/src/dokit/include/qtpokit/calibrationservice.h" bodystart="23" bodyend="62"/>
+    <listofallmembers>
+      <member refid="classAbstractPokitService_1aa1309523f169115a7b7a8117ea4ab04f" prot="public" virt="non-virtual"><scope>CalibrationService</scope><name>AbstractPokitService</name></member>
+      <member refid="classAbstractPokitService_1a2d624e58e68663e0420df7d282caf116" prot="protected" virt="non-virtual"><scope>CalibrationService</scope><name>AbstractPokitService</name></member>
+      <member refid="classAbstractPokitService_1a65c2c9c6163744a7cf52de2c6a83f610" prot="public" virt="non-virtual"><scope>CalibrationService</scope><name>autoDiscover</name></member>
+      <member refid="qobject_1objectName-prop" prot="public" virt="non-virtual"><scope>CalibrationService</scope><name>bindableObjectName</name></member>
+      <member refid="qobject_1blockSignals" prot="public" virt="non-virtual"><scope>CalibrationService</scope><name>blockSignals</name></member>
+      <member refid="classCalibrationService_1a301f5b733cacbebbf24459639f04af52" prot="public" virt="non-virtual"><scope>CalibrationService</scope><name>calibrateTemperature</name></member>
+      <member refid="classCalibrationService_1a6116051fc655e706a0a0f120f423c5b3" prot="public" virt="non-virtual"><scope>CalibrationService</scope><name>CalibrationService</name></member>
+      <member refid="classCalibrationService_1a3e64be1b1296f1150be8d865190a699d" prot="protected" virt="non-virtual"><scope>CalibrationService</scope><name>CalibrationService</name></member>
+      <member refid="qobject_1childEvent" prot="protected" virt="virtual"><scope>CalibrationService</scope><name>childEvent</name></member>
+      <member refid="qobject_1children" prot="public" virt="non-virtual"><scope>CalibrationService</scope><name>children</name></member>
+      <member refid="qobject_1connect-4" prot="public" virt="non-virtual"><scope>CalibrationService</scope><name>connect</name></member>
+      <member refid="qobject_1connect-5" prot="public" virt="non-virtual"><scope>CalibrationService</scope><name>connect</name></member>
+      <member refid="qobject_1connect-3" prot="public" virt="non-virtual"><scope>CalibrationService</scope><name>connect</name></member>
+      <member refid="qobject_1connect-1" prot="public" virt="non-virtual"><scope>CalibrationService</scope><name>connect</name></member>
+      <member refid="qobject_1connect" prot="public" virt="non-virtual"><scope>CalibrationService</scope><name>connect</name></member>
+      <member refid="qobject_1connect-2" prot="public" virt="non-virtual"><scope>CalibrationService</scope><name>connect</name></member>
+      <member refid="qobject_1connectNotify" prot="protected" virt="virtual"><scope>CalibrationService</scope><name>connectNotify</name></member>
+      <member refid="qobject_1customEvent" prot="protected" virt="virtual"><scope>CalibrationService</scope><name>customEvent</name></member>
+      <member refid="classAbstractPokitService_1acb832f24262f3f61f74c878dd79f48e8" prot="protected" virt="non-virtual"><scope>CalibrationService</scope><name>d_ptr</name></member>
+      <member refid="qobject_1deleteLater" prot="public" virt="non-virtual"><scope>CalibrationService</scope><name>deleteLater</name></member>
+      <member refid="qobject_1destroyed" prot="public" virt="non-virtual"><scope>CalibrationService</scope><name>destroyed</name></member>
+      <member refid="qobject_1disconnect-4" prot="public" virt="non-virtual"><scope>CalibrationService</scope><name>disconnect</name></member>
+      <member refid="qobject_1disconnect-5" prot="public" virt="non-virtual"><scope>CalibrationService</scope><name>disconnect</name></member>
+      <member refid="qobject_1disconnect-1" prot="public" virt="non-virtual"><scope>CalibrationService</scope><name>disconnect</name></member>
+      <member refid="qobject_1disconnect" prot="public" virt="non-virtual"><scope>CalibrationService</scope><name>disconnect</name></member>
+      <member refid="qobject_1disconnect-3" prot="public" virt="non-virtual"><scope>CalibrationService</scope><name>disconnect</name></member>
+      <member refid="qobject_1disconnect-2" prot="public" virt="non-virtual"><scope>CalibrationService</scope><name>disconnect</name></member>
+      <member refid="qobject_1disconnectNotify" prot="protected" virt="virtual"><scope>CalibrationService</scope><name>disconnectNotify</name></member>
+      <member refid="qobject_1dumpObjectInfo" prot="public" virt="non-virtual"><scope>CalibrationService</scope><name>dumpObjectInfo</name></member>
+      <member refid="qobject_1dumpObjectTree" prot="public" virt="non-virtual"><scope>CalibrationService</scope><name>dumpObjectTree</name></member>
+      <member refid="qobject_1dynamicPropertyNames" prot="public" virt="non-virtual"><scope>CalibrationService</scope><name>dynamicPropertyNames</name></member>
+      <member refid="qobject_1event" prot="public" virt="virtual"><scope>CalibrationService</scope><name>event</name></member>
+      <member refid="qobject_1eventFilter" prot="public" virt="virtual"><scope>CalibrationService</scope><name>eventFilter</name></member>
+      <member refid="qobject_1findChild" prot="public" virt="non-virtual"><scope>CalibrationService</scope><name>findChild</name></member>
+      <member refid="qobject_1findChildren-1" prot="public" virt="non-virtual"><scope>CalibrationService</scope><name>findChildren</name></member>
+      <member refid="qobject_1findChildren-2" prot="public" virt="non-virtual"><scope>CalibrationService</scope><name>findChildren</name></member>
+      <member refid="qobject_1findChildren" prot="public" virt="non-virtual"><scope>CalibrationService</scope><name>findChildren</name></member>
+      <member refid="qobject_1inherits" prot="public" virt="non-virtual"><scope>CalibrationService</scope><name>inherits</name></member>
+      <member refid="qobject_1installEventFilter" prot="public" virt="non-virtual"><scope>CalibrationService</scope><name>installEventFilter</name></member>
+      <member refid="qobject_1isQuickItemType" prot="public" virt="non-virtual"><scope>CalibrationService</scope><name>isQuickItemType</name></member>
+      <member refid="qobject_1isSignalConnected" prot="protected" virt="non-virtual"><scope>CalibrationService</scope><name>isSignalConnected</name></member>
+      <member refid="qobject_1isWidgetType" prot="public" virt="non-virtual"><scope>CalibrationService</scope><name>isWidgetType</name></member>
+      <member refid="qobject_1isWindowType" prot="public" virt="non-virtual"><scope>CalibrationService</scope><name>isWindowType</name></member>
+      <member refid="qobject_1killTimer" prot="public" virt="non-virtual"><scope>CalibrationService</scope><name>killTimer</name></member>
+      <member refid="qobject_1metaObject" prot="public" virt="virtual"><scope>CalibrationService</scope><name>metaObject</name></member>
+      <member refid="qobject_1moveToThread" prot="public" virt="non-virtual"><scope>CalibrationService</scope><name>moveToThread</name></member>
+      <member refid="qobject_1objectName-prop" prot="public" virt="non-virtual"><scope>CalibrationService</scope><name>objectName</name></member>
+      <member refid="qobject_1objectName-prop" prot="public" virt="non-virtual"><scope>CalibrationService</scope><name>objectName</name></member>
+      <member refid="qobject_1objectNameChanged" prot="public" virt="non-virtual"><scope>CalibrationService</scope><name>objectNameChanged</name></member>
+      <member refid="qobject_1parent" prot="public" virt="non-virtual"><scope>CalibrationService</scope><name>parent</name></member>
+      <member refid="classAbstractPokitService_1a039d2f1054788cf586c8decadb53ddc0" prot="public" virt="non-virtual"><scope>CalibrationService</scope><name>pokitProduct</name></member>
+      <member refid="qobject_1property" prot="public" virt="non-virtual"><scope>CalibrationService</scope><name>property</name></member>
+      <member refid="qobject_1Q_CLASSINFO" prot="public" virt="non-virtual"><scope>CalibrationService</scope><name>Q_CLASSINFO</name></member>
+      <member refid="qobject_1Q_EMIT" prot="public" virt="non-virtual"><scope>CalibrationService</scope><name>Q_EMIT</name></member>
+      <member refid="qobject_1Q_ENUM" prot="public" virt="non-virtual"><scope>CalibrationService</scope><name>Q_ENUM</name></member>
+      <member refid="qobject_1Q_ENUM_NS" prot="public" virt="non-virtual"><scope>CalibrationService</scope><name>Q_ENUM_NS</name></member>
+      <member refid="qobject-obsolete_1Q_ENUMS" prot="public" virt="non-virtual"><scope>CalibrationService</scope><name>Q_ENUMS</name></member>
+      <member refid="qobject_1Q_FLAG" prot="public" virt="non-virtual"><scope>CalibrationService</scope><name>Q_FLAG</name></member>
+      <member refid="qobject_1Q_FLAG_NS" prot="public" virt="non-virtual"><scope>CalibrationService</scope><name>Q_FLAG_NS</name></member>
+      <member refid="qobject-obsolete_1Q_FLAGS" prot="public" virt="non-virtual"><scope>CalibrationService</scope><name>Q_FLAGS</name></member>
+      <member refid="qobject_1Q_GADGET" prot="public" virt="non-virtual"><scope>CalibrationService</scope><name>Q_GADGET</name></member>
+      <member refid="qobject_1Q_GADGET_EXPORT" prot="public" virt="non-virtual"><scope>CalibrationService</scope><name>Q_GADGET_EXPORT</name></member>
+      <member refid="qobject_1Q_INTERFACES" prot="public" virt="non-virtual"><scope>CalibrationService</scope><name>Q_INTERFACES</name></member>
+      <member refid="qobject_1Q_INVOKABLE" prot="public" virt="non-virtual"><scope>CalibrationService</scope><name>Q_INVOKABLE</name></member>
+      <member refid="qobject_1Q_MOC_INCLUDE" prot="public" virt="non-virtual"><scope>CalibrationService</scope><name>Q_MOC_INCLUDE</name></member>
+      <member refid="qobject_1Q_NAMESPACE" prot="public" virt="non-virtual"><scope>CalibrationService</scope><name>Q_NAMESPACE</name></member>
+      <member refid="qobject_1Q_NAMESPACE_EXPORT" prot="public" virt="non-virtual"><scope>CalibrationService</scope><name>Q_NAMESPACE_EXPORT</name></member>
+      <member refid="qobject_1Q_OBJECT" prot="public" virt="non-virtual"><scope>CalibrationService</scope><name>Q_OBJECT</name></member>
+      <member refid="qobject_1Q_PROPERTY" prot="public" virt="non-virtual"><scope>CalibrationService</scope><name>Q_PROPERTY</name></member>
+      <member refid="qobject_1Q_REVISION" prot="public" virt="non-virtual"><scope>CalibrationService</scope><name>Q_REVISION</name></member>
+      <member refid="qobject_1Q_SET_OBJECT_NAME" prot="public" virt="non-virtual"><scope>CalibrationService</scope><name>Q_SET_OBJECT_NAME</name></member>
+      <member refid="qobject_1Q_SIGNAL" prot="public" virt="non-virtual"><scope>CalibrationService</scope><name>Q_SIGNAL</name></member>
+      <member refid="qobject_1Q_SIGNALS" prot="public" virt="non-virtual"><scope>CalibrationService</scope><name>Q_SIGNALS</name></member>
+      <member refid="qobject_1Q_SLOT" prot="public" virt="non-virtual"><scope>CalibrationService</scope><name>Q_SLOT</name></member>
+      <member refid="qobject_1Q_SLOTS" prot="public" virt="non-virtual"><scope>CalibrationService</scope><name>Q_SLOTS</name></member>
+      <member refid="qobject_1QObject" prot="public" virt="non-virtual"><scope>CalibrationService</scope><name>QObject</name></member>
+      <member refid="qobject_1qobject_cast" prot="public" virt="non-virtual"><scope>CalibrationService</scope><name>qobject_cast</name></member>
+      <member refid="qobject_1qobject_cast-1" prot="public" virt="non-virtual"><scope>CalibrationService</scope><name>qobject_cast</name></member>
+      <member refid="qobject_1QObjectList-typedef" prot="public" virt="non-virtual"><scope>CalibrationService</scope><name>QObjectList</name></member>
+      <member refid="qobject_1QT_NO_NARROWING_CONVERSIONS_IN_CONNECT" prot="public" virt="non-virtual"><scope>CalibrationService</scope><name>QT_NO_NARROWING_CONVERSIONS_IN_CONNECT</name></member>
+      <member refid="classCalibrationService_1aff98225f4e1c489aec22a5832661c7f7" prot="public" virt="virtual"><scope>CalibrationService</scope><name>readCharacteristics</name></member>
+      <member refid="qobject_1receivers" prot="protected" virt="non-virtual"><scope>CalibrationService</scope><name>receivers</name></member>
+      <member refid="qobject_1removeEventFilter" prot="public" virt="non-virtual"><scope>CalibrationService</scope><name>removeEventFilter</name></member>
+      <member refid="qobject_1sender" prot="protected" virt="non-virtual"><scope>CalibrationService</scope><name>sender</name></member>
+      <member refid="qobject_1senderSignalIndex" prot="protected" virt="non-virtual"><scope>CalibrationService</scope><name>senderSignalIndex</name></member>
+      <member refid="classAbstractPokitService_1a7a4ff74f51ba6ea6c01cbeb9eda15b9b" prot="public" virt="non-virtual"><scope>CalibrationService</scope><name>service</name></member>
+      <member refid="classAbstractPokitService_1ab7161dedf8ae431f723a5e225c2ec9ca" prot="public" virt="non-virtual"><scope>CalibrationService</scope><name>service</name></member>
+      <member refid="classAbstractPokitService_1af67cbea4294ba0a77dcd9540b29528ff" prot="public" virt="non-virtual"><scope>CalibrationService</scope><name>serviceDetailsDiscovered</name></member>
+      <member refid="classAbstractPokitService_1a9e680ebf280361ef82f4b072448d7e9b" prot="public" virt="non-virtual"><scope>CalibrationService</scope><name>serviceErrorOccurred</name></member>
+      <member refid="classCalibrationService_1a787406e3fbda9e5ad966a3851d2c9fbc" prot="public" virt="non-virtual"><scope>CalibrationService</scope><name>serviceUuid</name></member>
+      <member refid="classAbstractPokitService_1a9d6d50cf31bc5859747a134d6cb4c418" prot="public" virt="non-virtual"><scope>CalibrationService</scope><name>setAutoDiscover</name></member>
+      <member refid="qobject_1setObjectName-1" prot="public" virt="non-virtual"><scope>CalibrationService</scope><name>setObjectName</name></member>
+      <member refid="qobject_1setObjectName" prot="public" virt="non-virtual"><scope>CalibrationService</scope><name>setObjectName</name></member>
+      <member refid="qobject_1setParent" prot="public" virt="non-virtual"><scope>CalibrationService</scope><name>setParent</name></member>
+      <member refid="classAbstractPokitService_1aa0e323c5e2380709c5a5fde18520ae3f" prot="public" virt="non-virtual"><scope>CalibrationService</scope><name>setPokitProduct</name></member>
+      <member refid="qobject_1setProperty-1" prot="public" virt="non-virtual"><scope>CalibrationService</scope><name>setProperty</name></member>
+      <member refid="qobject_1setProperty" prot="public" virt="non-virtual"><scope>CalibrationService</scope><name>setProperty</name></member>
+      <member refid="qobject_1signalsBlocked" prot="public" virt="non-virtual"><scope>CalibrationService</scope><name>signalsBlocked</name></member>
+      <member refid="qobject_1startTimer" prot="public" virt="non-virtual"><scope>CalibrationService</scope><name>startTimer</name></member>
+      <member refid="qobject_1startTimer-1" prot="public" virt="non-virtual"><scope>CalibrationService</scope><name>startTimer</name></member>
+      <member refid="classCalibrationService_1a8a609fb2baf963bd2229ba71d3fceb7e" prot="public" virt="non-virtual"><scope>CalibrationService</scope><name>temperatureCalibrated</name></member>
+      <member refid="classCalibrationService_1a7a053e0bfa26f8f7a347e88600097cd5" prot="private" virt="non-virtual"><scope>CalibrationService</scope><name>TestCalibrationService</name></member>
+      <member refid="qobject_1thread" prot="public" virt="non-virtual"><scope>CalibrationService</scope><name>thread</name></member>
+      <member refid="qobject_1timerEvent" prot="protected" virt="virtual"><scope>CalibrationService</scope><name>timerEvent</name></member>
+      <member refid="qobject_1tr" prot="public" virt="non-virtual"><scope>CalibrationService</scope><name>tr</name></member>
+      <member refid="classAbstractPokitService_1af0b962913c8be9b1d69ce1b68a5f9bdd" prot="public" virt="virtual"><scope>CalibrationService</scope><name>~AbstractPokitService</name></member>
+      <member refid="classCalibrationService_1a6d4d45a1c89fef65090002f3ec26a68e" prot="public" virt="non-virtual"><scope>CalibrationService</scope><name>~CalibrationService</name></member>
+      <member refid="qobject_1dtor.QObject" prot="public" virt="virtual"><scope>CalibrationService</scope><name>~QObject</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

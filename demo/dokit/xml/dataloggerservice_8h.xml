@@ -1,0 +1,311 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.0" xml:lang="en-US">
+  <compounddef id="dataloggerservice_8h" kind="file" language="C++">
+    <compoundname>dataloggerservice.h</compoundname>
+    <includes refid="abstractpokitservice_8h" local="yes">abstractpokitservice.h</includes>
+    <includes local="no">QBluetoothAddress</includes>
+    <includes local="no">QBluetoothUuid</includes>
+    <includes local="no">QVersionNumber</includes>
+    <includedby refid="dataloggerservice_8cpp" local="no">dataloggerservice.cpp</includedby>
+    <includedby refid="dataloggerservice__p_8h" local="no">dataloggerservice_p.h</includedby>
+    <includedby refid="loggerfetchcommand_8h" local="no">loggerfetchcommand.h</includedby>
+    <includedby refid="loggerstartcommand_8h" local="no">loggerstartcommand.h</includedby>
+    <includedby refid="loggerstopcommand_8h" local="no">loggerstopcommand.h</includedby>
+    <includedby refid="pokitdevice_8cpp" local="no">pokitdevice.cpp</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>abstractpokitservice.h</label>
+        <link refid="abstractpokitservice_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>dataloggerservice.h</label>
+        <link refid="dataloggerservice_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>pokitproducts.h</label>
+        <link refid="pokitproducts_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>qtpokit_global.h</label>
+        <link refid="qtpokit__global_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>QBluetoothAddress</label>
+      </node>
+      <node id="6">
+        <label>QBluetoothDeviceInfo</label>
+      </node>
+      <node id="13">
+        <label>QBluetoothUuid</label>
+      </node>
+      <node id="7">
+        <label>QFlags</label>
+      </node>
+      <node id="9">
+        <label>QLowEnergyService</label>
+      </node>
+      <node id="10">
+        <label>QObject</label>
+      </node>
+      <node id="8">
+        <label>QString</label>
+      </node>
+      <node id="14">
+        <label>QVersionNumber</label>
+      </node>
+      <node id="4">
+        <label>QtGlobal</label>
+      </node>
+      <node id="11">
+        <label>optional</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>dataloggerservice.h</label>
+        <link refid="dataloggerservice_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>loggerfetchcommand.cpp</label>
+        <link refid="loggerfetchcommand_8cpp_source"/>
+      </node>
+      <node id="4">
+        <label>loggerfetchcommand.h</label>
+        <link refid="loggerfetchcommand_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>loggerstartcommand.cpp</label>
+        <link refid="loggerstartcommand_8cpp_source"/>
+      </node>
+      <node id="7">
+        <label>loggerstartcommand.h</label>
+        <link refid="loggerstartcommand_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>loggerstopcommand.cpp</label>
+        <link refid="loggerstopcommand_8cpp_source"/>
+      </node>
+      <node id="9">
+        <label>loggerstopcommand.h</label>
+        <link refid="loggerstopcommand_8h_source"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>main.cpp</label>
+        <link refid="main_8cpp_source"/>
+      </node>
+      <node id="2">
+        <label>dataloggerservice.cpp</label>
+        <link refid="dataloggerservice_8cpp"/>
+      </node>
+      <node id="3">
+        <label>dataloggerservice_p.h</label>
+        <link refid="dataloggerservice__p_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>pokitdevice.cpp</label>
+        <link refid="pokitdevice_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classDataLoggerService" prot="public">DataLoggerService</innerclass>
+    <innerclass refid="structDataLoggerService_1_1CharacteristicUuids" prot="public">DataLoggerService::CharacteristicUuids</innerclass>
+    <innerclass refid="structDataLoggerService_1_1Settings" prot="public">DataLoggerService::Settings</innerclass>
+    <innerclass refid="structDataLoggerService_1_1Metadata" prot="public">DataLoggerService::Metadata</innerclass>
+    <briefdescription>
+<para>Declares the <ref refid="classDataLoggerService" kindref="compound">DataLoggerService</ref> class. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>SPDX-FileCopyrightText:<sp/>2022-2024<sp/>Paul<sp/>Colby<sp/>&lt;git@colby.id.au&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>SPDX-License-Identifier:<sp/>LGPL-3.0-or-later</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="4"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>\file</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>Declares<sp/>the<sp/>DataLoggerService<sp/>class.</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>QTPOKIT_DATALOGGERSERVICE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>QTPOKIT_DATALOGGERSERVICE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="abstractpokitservice_8h" kindref="compound">abstractpokitservice.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QBluetoothAddress&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QBluetoothUuid&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QVersionNumber&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><ref refid="qtpokit__global_8h_1ac5aca53b48a017f8db467922deee7983" kindref="member">QTPOKIT_BEGIN_NAMESPACE</ref></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classDataLoggerServicePrivate" kindref="compound">DataLoggerServicePrivate</ref>;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="classDataLoggerService" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="qtpokit__global_8h_1aeba02234b4a21ddf98bb8127b8d41759" kindref="member">QTPOKIT_EXPORT</ref><sp/><ref refid="classDataLoggerService" kindref="compound">DataLoggerService</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classAbstractPokitService" kindref="compound">AbstractPokitService</ref></highlight></codeline>
+<codeline lineno="23"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_OBJECT</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>UUID<sp/>of<sp/>the<sp/>&quot;DataLogger&quot;<sp/>service.</highlight></codeline>
+<codeline lineno="28" refid="classDataLoggerService_1a17be902e87a778365fd439fbcc5548d4" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qbluetoothuuid" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothUuid</ref><sp/>serviceUuid<sp/>{<sp/>QStringLiteral(</highlight><highlight class="stringliteral">&quot;a5ff3566-1fd8-4e10-8362-590a578a4121&quot;</highlight><highlight class="normal">)<sp/>};</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="30"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Characteristics<sp/>available<sp/>via<sp/>the<sp/>`DataLogger`<sp/>service.</highlight></codeline>
+<codeline lineno="31" refid="structDataLoggerService_1_1CharacteristicUuids" refkind="compound"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="qtpokit__global_8h_1aeba02234b4a21ddf98bb8127b8d41759" kindref="member">QTPOKIT_EXPORT</ref><sp/><ref refid="structDataLoggerService_1_1CharacteristicUuids" kindref="compound">CharacteristicUuids</ref><sp/>{</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="32"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>UUID<sp/>of<sp/>the<sp/>`DataLogger`<sp/>service&apos;s<sp/>`Settings`<sp/>characterstic.</highlight></codeline>
+<codeline lineno="33" refid="structDataLoggerService_1_1CharacteristicUuids_1ab5fa52ba8b4cacf839abe6d3f8e8a929" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qbluetoothuuid" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothUuid</ref><sp/>settings<sp/>{<sp/>QStringLiteral(</highlight><highlight class="stringliteral">&quot;5f97c62b-a83b-46c6-b9cd-cac59e130a78&quot;</highlight><highlight class="normal">)<sp/>};</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="35"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>UUID<sp/>of<sp/>the<sp/>`DataLogger`<sp/>service&apos;s<sp/>`Metadata`<sp/>characterstic.</highlight></codeline>
+<codeline lineno="36" refid="structDataLoggerService_1_1CharacteristicUuids_1a360ad74780e776a1233d73e5416db0e9" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qbluetoothuuid" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothUuid</ref><sp/>metadata<sp/>{<sp/>QStringLiteral(</highlight><highlight class="stringliteral">&quot;9acada2e-3936-430b-a8f7-da407d97ca6e&quot;</highlight><highlight class="normal">)<sp/>};</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="38"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>UUID<sp/>of<sp/>the<sp/>`DataLogger`<sp/>service&apos;s<sp/>`Reading`<sp/>characterstic.</highlight></codeline>
+<codeline lineno="39" refid="structDataLoggerService_1_1CharacteristicUuids_1ae49f85e600ca4eb2753818bb2ef32d65" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qbluetoothuuid" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothUuid</ref><sp/>reading<sp/><sp/>{<sp/>QStringLiteral(</highlight><highlight class="stringliteral">&quot;3c669dab-fc86-411c-9498-4f9415049cc0&quot;</highlight><highlight class="normal">)<sp/>};</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="42"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Values<sp/>supported<sp/>by<sp/>the<sp/>`Command`<sp/>attribute<sp/>of<sp/>the<sp/>`Settings`<sp/>characteristic.</highlight></codeline>
+<codeline lineno="43" refid="classDataLoggerService_1a8662772916319f96aa7aeb16c87665cc" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/><ref refid="classDataLoggerService_1a8662772916319f96aa7aeb16c87665cc" kindref="member">Command</ref><sp/>:<sp/>quint8<sp/>{</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Start<sp/><sp/><sp/>=<sp/>0,<sp/></highlight><highlight class="comment">///&lt;<sp/>Start<sp/>the<sp/>Data<sp/>Logger.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Stop<sp/><sp/><sp/><sp/>=<sp/>1,<sp/></highlight><highlight class="comment">///&lt;<sp/>Stop<sp/>the<sp/>Data<sp/>Logger.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Refresh<sp/>=<sp/>2,<sp/></highlight><highlight class="comment">///&lt;<sp/>Refresh<sp/>the<sp/>Data<sp/>Logger.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="49"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Values<sp/>supported<sp/>by<sp/>the<sp/>`Mode`<sp/>attribute<sp/>of<sp/>the<sp/>`Settings`<sp/>and<sp/>`Metadata`<sp/>characteristics.</highlight></codeline>
+<codeline lineno="50" refid="classDataLoggerService_1ab7fc5073f8ab9d5e93ba7006df685771" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/><ref refid="classDataLoggerService_1ab7fc5073f8ab9d5e93ba7006df685771" kindref="member">Mode</ref><sp/>:<sp/>quint8<sp/>{</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Idle<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0,<sp/></highlight><highlight class="comment">///&lt;<sp/>Make<sp/>device<sp/>idle.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DcVoltage<sp/><sp/><sp/>=<sp/>1,<sp/></highlight><highlight class="comment">///&lt;<sp/>Measure<sp/>DC<sp/>voltage.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>AcVoltage<sp/><sp/><sp/>=<sp/>2,<sp/></highlight><highlight class="comment">///&lt;<sp/>Measure<sp/>AC<sp/>voltage.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DcCurrent<sp/><sp/><sp/>=<sp/>3,<sp/></highlight><highlight class="comment">///&lt;<sp/>Measure<sp/>DC<sp/>current.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>AcCurrent<sp/><sp/><sp/>=<sp/>4,<sp/></highlight><highlight class="comment">///&lt;<sp/>Measure<sp/>AC<sp/>current.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Temperature<sp/>=<sp/>5,<sp/></highlight><highlight class="comment">///&lt;<sp/>Measure<sp/>temperature.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref><sp/><ref refid="pokitproducts_8h_1abac6d04d602c122e3de08ef55122d635" kindref="member">toString</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Mode<sp/>&amp;mode);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref><sp/><ref refid="pokitproducts_8h_1abac6d04d602c122e3de08ef55122d635" kindref="member">toString</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="pokitproducts_8h_1a0c4f628f68ce0432a6db11681a41fda4" kindref="member">PokitProduct</ref><sp/>product,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>quint8<sp/>range,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Mode<sp/>mode);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref><sp/><ref refid="pokitproducts_8h_1abac6d04d602c122e3de08ef55122d635" kindref="member">toString</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>quint8<sp/>range,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Mode<sp/>mode)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="qvariant" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QVariant</ref><sp/>maxValue(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="pokitproducts_8h_1a0c4f628f68ce0432a6db11681a41fda4" kindref="member">PokitProduct</ref><sp/>product,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>quint8<sp/>range,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Mode<sp/>mode);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="qvariant" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QVariant</ref><sp/>maxValue(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>quint8<sp/>range,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Mode<sp/>mode)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="65"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Attributes<sp/>included<sp/>in<sp/>the<sp/>`Settings`<sp/>characterstic.</highlight></codeline>
+<codeline lineno="66" refid="structDataLoggerService_1_1Settings" refkind="compound"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structDataLoggerService_1_1Settings" kindref="compound">Settings</ref><sp/>{</highlight></codeline>
+<codeline lineno="67" refid="structDataLoggerService_1_1Settings_1a71c4c7e8417ee7a187c09a89057c5ab7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classDataLoggerService_1a8662772916319f96aa7aeb16c87665cc" kindref="member">Command</ref><sp/><ref refid="structDataLoggerService_1_1Settings_1a71c4c7e8417ee7a187c09a89057c5ab7" kindref="member">command</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">///&lt;<sp/>Custom<sp/>operation<sp/>request.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68" refid="structDataLoggerService_1_1Settings_1a5a55213ca7361364642dffa9f8b77ec7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>quint16<sp/><ref refid="structDataLoggerService_1_1Settings_1a5a55213ca7361364642dffa9f8b77ec7" kindref="member">arguments</ref>;<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">///&lt;<sp/>Reserved<sp/>to<sp/>used<sp/>along<sp/>with<sp/>#command<sp/>in<sp/>future.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69" refid="structDataLoggerService_1_1Settings_1ac72c18db4e38d95664c456c527e352f4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classDataLoggerService_1ab7fc5073f8ab9d5e93ba7006df685771" kindref="member">Mode</ref><sp/><ref refid="structDataLoggerService_1_1Settings_1ac72c18db4e38d95664c456c527e352f4" kindref="member">mode</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">///&lt;<sp/>Desired<sp/>operation<sp/>mode.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70" refid="structDataLoggerService_1_1Settings_1a823e19d448e6540ea0bfc6844ffc96f1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>quint8<sp/><ref refid="structDataLoggerService_1_1Settings_1a823e19d448e6540ea0bfc6844ffc96f1" kindref="member">range</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">///&lt;<sp/>Desired<sp/>range.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71" refid="structDataLoggerService_1_1Settings_1afdd04830ac70e2435cfce3d7be601e9c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>quint32<sp/><ref refid="structDataLoggerService_1_1Settings_1afdd04830ac70e2435cfce3d7be601e9c" kindref="member">updateInterval</ref>;<sp/></highlight><highlight class="comment">///&lt;<sp/>Desired<sp/>update<sp/>interval<sp/>in<sp/>milliseconds.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72" refid="structDataLoggerService_1_1Settings_1a4bde857f31f27e5574b9d204c7a5aa48" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>quint32<sp/><ref refid="structDataLoggerService_1_1Settings_1a4bde857f31f27e5574b9d204c7a5aa48" kindref="member">timestamp</ref>;<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">///&lt;<sp/>Custom<sp/>timestamp<sp/>for<sp/>start<sp/>time<sp/>in<sp/>retrieved<sp/>metadata.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="75"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Values<sp/>supported<sp/>by<sp/>the<sp/>`Status`<sp/>attribute<sp/>of<sp/>the<sp/>`Metadata`<sp/>characteristic.</highlight></codeline>
+<codeline lineno="76" refid="classDataLoggerService_1a1a3a38ca8befc3de8121d795879140f6" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/><ref refid="classDataLoggerService_1a1a3a38ca8befc3de8121d795879140f6" kindref="member">LoggerStatus</ref><sp/>:<sp/>quint8<sp/>{</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Done<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0,<sp/><sp/><sp/></highlight><highlight class="comment">///&lt;<sp/>Sampling<sp/>has<sp/>completed.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Sampling<sp/><sp/><sp/>=<sp/>1,<sp/><sp/><sp/></highlight><highlight class="comment">///&lt;<sp/>Actively<sp/>sampling.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BufferFull<sp/>=<sp/>2,<sp/><sp/><sp/></highlight><highlight class="comment">///&lt;<sp/>Buffer<sp/>is<sp/>full.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Error<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>255<sp/><sp/></highlight><highlight class="comment">///&lt;<sp/>An<sp/>error<sp/>has<sp/>occurred.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="83"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Attributes<sp/>included<sp/>in<sp/>the<sp/>`Metadata`<sp/>characterstic.</highlight></codeline>
+<codeline lineno="84" refid="structDataLoggerService_1_1Metadata" refkind="compound"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structDataLoggerService_1_1Metadata" kindref="compound">Metadata</ref><sp/>{</highlight></codeline>
+<codeline lineno="85" refid="structDataLoggerService_1_1Metadata_1a996d2701f1571bbbe51da18d2be3e2b8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classDataLoggerService_1a1a3a38ca8befc3de8121d795879140f6" kindref="member">LoggerStatus</ref><sp/><ref refid="structDataLoggerService_1_1Metadata_1a996d2701f1571bbbe51da18d2be3e2b8" kindref="member">status</ref>;<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">///&lt;<sp/>Current<sp/>data<sp/>logger<sp/>status.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86" refid="structDataLoggerService_1_1Metadata_1a824ce9f37293e435d41af31788145571" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="structDataLoggerService_1_1Metadata_1a824ce9f37293e435d41af31788145571" kindref="member">scale</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">///&lt;<sp/>Scale<sp/>to<sp/>apply<sp/>to<sp/>read<sp/>samples.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87" refid="structDataLoggerService_1_1Metadata_1ac976c83a69d67fbd287d9ae406582d81" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classDataLoggerService_1ab7fc5073f8ab9d5e93ba7006df685771" kindref="member">Mode</ref><sp/><ref refid="structDataLoggerService_1_1Metadata_1ac976c83a69d67fbd287d9ae406582d81" kindref="member">mode</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">///&lt;<sp/>Current<sp/>operation<sp/>mode.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88" refid="structDataLoggerService_1_1Metadata_1a4d54eb6eeb9dd6415f3729bfea2ce3a3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>quint8<sp/><ref refid="structDataLoggerService_1_1Metadata_1a4d54eb6eeb9dd6415f3729bfea2ce3a3" kindref="member">range</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">///&lt;<sp/>Current<sp/>range.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89" refid="structDataLoggerService_1_1Metadata_1a9cc636b875d630cf33d3ddead54e27d2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>quint32<sp/><ref refid="structDataLoggerService_1_1Metadata_1a9cc636b875d630cf33d3ddead54e27d2" kindref="member">updateInterval</ref>;<sp/><sp/></highlight><highlight class="comment">///&lt;<sp/>Current<sp/>logging<sp/>interval<sp/>in<sp/>milliseconds.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90" refid="structDataLoggerService_1_1Metadata_1a5e40e39f2d21dbf609403f111537b2b0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>quint16<sp/><ref refid="structDataLoggerService_1_1Metadata_1a5e40e39f2d21dbf609403f111537b2b0" kindref="member">numberOfSamples</ref>;<sp/></highlight><highlight class="comment">///&lt;<sp/>Number<sp/>of<sp/>samples<sp/>acquired<sp/>(1<sp/>to<sp/>6192).</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91" refid="structDataLoggerService_1_1Metadata_1a67edabb3d6dbd9c9d425bd825f72d23b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>quint32<sp/><ref refid="structDataLoggerService_1_1Metadata_1a67edabb3d6dbd9c9d425bd825f72d23b" kindref="member">timestamp</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">///&lt;<sp/>Timestamp<sp/>stored<sp/>at<sp/>the<sp/>beginning<sp/>of<sp/>the<sp/>logging<sp/>session.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94" refid="classDataLoggerService_1a59612dc26aa6b9a6d57be1014b04581b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="qvector" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QVector&lt;qint16&gt;</ref><sp/><ref refid="classDataLoggerService_1a59612dc26aa6b9a6d57be1014b04581b" kindref="member">Samples</ref>;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classDataLoggerService" kindref="compound">DataLoggerService</ref>(<ref refid="qlowenergycontroller" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QLowEnergyController</ref><sp/>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>pokitDevice,<sp/><ref refid="qobject" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QObject</ref><sp/>*<sp/>parent<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classDataLoggerService" kindref="compound">~DataLoggerService</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classAbstractPokitService_1ab1de532f20d46803d6e8b8ffea835b48" kindref="member">readCharacteristics</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>readMetadataCharacteristic();</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Settings<sp/>characteristic<sp/>(BLE<sp/>write<sp/>only).</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>setSettings(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structDataLoggerService_1_1Settings" kindref="compound">Settings</ref><sp/>&amp;settings);</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>startLogger(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structDataLoggerService_1_1Settings" kindref="compound">Settings</ref><sp/>&amp;settings);</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>stopLogger();</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>fetchSamples();</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Metadata<sp/>characteristic<sp/>(BLE<sp/>read/notify).</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structDataLoggerService_1_1Metadata" kindref="compound">Metadata</ref><sp/>metadata()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>enableMetadataNotifications();</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>disableMetadataNotifications();</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Reading<sp/>characteristic<sp/>(BLE<sp/>notify<sp/>only).</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>enableReadingNotifications();</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>disableReadingNotifications();</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><ref refid="qobject_1Q_SIGNALS" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">Q_SIGNALS</ref>:</highlight></codeline>
+<codeline lineno="118" refid="classDataLoggerService_1ad4588cca08c3eeee40b3f02f16a3998f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classDataLoggerService_1ad4588cca08c3eeee40b3f02f16a3998f" kindref="member">settingsWritten</ref>();</highlight></codeline>
+<codeline lineno="119" refid="classDataLoggerService_1a637460cb26b0d448760544ecba6de468" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classDataLoggerService_1a637460cb26b0d448760544ecba6de468" kindref="member">metadataRead</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structDataLoggerService_1_1Metadata" kindref="compound">DataLoggerService::Metadata</ref><sp/>&amp;meta);</highlight></codeline>
+<codeline lineno="120" refid="classDataLoggerService_1a4f3e86b3300ebd0f0b212cabf8da90a0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classDataLoggerService_1a4f3e86b3300ebd0f0b212cabf8da90a0" kindref="member">samplesRead</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qvector" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">DataLoggerService::Samples</ref><sp/>&amp;samples);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="123"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>\cond<sp/>internal</highlight></codeline>
+<codeline lineno="124"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classDataLoggerService" kindref="compound">DataLoggerService</ref>(<ref refid="classDataLoggerServicePrivate" kindref="compound">DataLoggerServicePrivate</ref><sp/>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>d,<sp/><ref refid="qobject" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QObject</ref><sp/>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>parent);</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="125"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>\endcond</highlight></codeline>
+<codeline lineno="126"><highlight class="comment"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_DECLARE_PRIVATE(<ref refid="classDataLoggerService" kindref="compound">DataLoggerService</ref>)</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_DISABLE_COPY(<ref refid="classDataLoggerService" kindref="compound">DataLoggerService</ref>)</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">TestDataLoggerService;</highlight></codeline>
+<codeline lineno="131"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><ref refid="qtpokit__global_8h_1af2a5fcdf5ad6da4ea4f238aad0d29d65" kindref="member">QTPOKIT_END_NAMESPACE</ref></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>QTPOKIT_DATALOGGERSERVICE_H</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/paul/src/dokit/include/qtpokit/dataloggerservice.h"/>
+  </compounddef>
+</doxygen>

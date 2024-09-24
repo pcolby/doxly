@@ -1,0 +1,126 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.0" xml:lang="en-US">
+  <compounddef id="structDataLoggerService_1_1Settings" kind="struct" language="C++" prot="public">
+    <compoundname>DataLoggerService::Settings</compoundname>
+    <includes refid="dataloggerservice_8h" local="no">dataloggerservice.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structDataLoggerService_1_1Settings_1a71c4c7e8417ee7a187c09a89057c5ab7" prot="public" static="no" mutable="no">
+        <type><ref refid="classDataLoggerService_1a8662772916319f96aa7aeb16c87665cc" kindref="member">Command</ref></type>
+        <definition>Command DataLoggerService::Settings::command</definition>
+        <argsstring></argsstring>
+        <name>command</name>
+        <qualifiedname>DataLoggerService::Settings::command</qualifiedname>
+        <briefdescription>
+<para>Custom operation request. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/dataloggerservice.h" line="67" column="17" bodyfile="/home/paul/src/dokit/include/qtpokit/dataloggerservice.h" bodystart="67" bodyend="-1"/>
+        <referencedby refid="classDataLoggerServicePrivate_1a774d21863bf83168171143ec8492a736" compoundref="dataloggerservice_8cpp" startline="358" endline="388">DataLoggerServicePrivate::encodeSettings</referencedby>
+        <referencedby refid="classDataLoggerService_1a4aac49f9a655408e4b58f05735c5f9ab" compoundref="dataloggerservice_8cpp" startline="192" endline="201">DataLoggerService::startLogger</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structDataLoggerService_1_1Settings_1a5a55213ca7361364642dffa9f8b77ec7" prot="public" static="no" mutable="no">
+        <type>quint16</type>
+        <definition>quint16 DataLoggerService::Settings::arguments</definition>
+        <argsstring></argsstring>
+        <name>arguments</name>
+        <qualifiedname>DataLoggerService::Settings::arguments</qualifiedname>
+        <briefdescription>
+<para>Reserved to used along with <ref refid="structDataLoggerService_1_1Settings_1a71c4c7e8417ee7a187c09a89057c5ab7" kindref="member">command</ref> in future. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/dataloggerservice.h" line="68" column="17" bodyfile="/home/paul/src/dokit/include/qtpokit/dataloggerservice.h" bodystart="68" bodyend="-1"/>
+        <referencedby refid="classDataLoggerServicePrivate_1a774d21863bf83168171143ec8492a736" compoundref="dataloggerservice_8cpp" startline="358" endline="388">DataLoggerServicePrivate::encodeSettings</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structDataLoggerService_1_1Settings_1ac72c18db4e38d95664c456c527e352f4" prot="public" static="no" mutable="no">
+        <type><ref refid="classDataLoggerService_1ab7fc5073f8ab9d5e93ba7006df685771" kindref="member">Mode</ref></type>
+        <definition>Mode DataLoggerService::Settings::mode</definition>
+        <argsstring></argsstring>
+        <name>mode</name>
+        <qualifiedname>DataLoggerService::Settings::mode</qualifiedname>
+        <briefdescription>
+<para>Desired operation mode. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/dataloggerservice.h" line="69" column="14" bodyfile="/home/paul/src/dokit/include/qtpokit/dataloggerservice.h" bodystart="69" bodyend="-1"/>
+        <referencedby refid="classDataLoggerServicePrivate_1a774d21863bf83168171143ec8492a736" compoundref="dataloggerservice_8cpp" startline="358" endline="388">DataLoggerServicePrivate::encodeSettings</referencedby>
+        <referencedby refid="classLoggerStartCommand_1a2dea05a52eab344c52648513e5fecbd3" compoundref="loggerstartcommand_8cpp" startline="50" endline="129">LoggerStartCommand::processOptions</referencedby>
+        <referencedby refid="classLoggerStartCommand_1ab1b0364c6a26ff893d5b58dea381e4d5" compoundref="loggerstartcommand_8cpp" startline="153" endline="162">LoggerStartCommand::serviceDetailsDiscovered</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structDataLoggerService_1_1Settings_1a823e19d448e6540ea0bfc6844ffc96f1" prot="public" static="no" mutable="no">
+        <type>quint8</type>
+        <definition>quint8 DataLoggerService::Settings::range</definition>
+        <argsstring></argsstring>
+        <name>range</name>
+        <qualifiedname>DataLoggerService::Settings::range</qualifiedname>
+        <briefdescription>
+<para>Desired range. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/dataloggerservice.h" line="70" column="16" bodyfile="/home/paul/src/dokit/include/qtpokit/dataloggerservice.h" bodystart="70" bodyend="-1"/>
+        <referencedby refid="classDataLoggerServicePrivate_1a774d21863bf83168171143ec8492a736" compoundref="dataloggerservice_8cpp" startline="358" endline="388">DataLoggerServicePrivate::encodeSettings</referencedby>
+        <referencedby refid="classLoggerStartCommand_1ab1b0364c6a26ff893d5b58dea381e4d5" compoundref="loggerstartcommand_8cpp" startline="153" endline="162">LoggerStartCommand::serviceDetailsDiscovered</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structDataLoggerService_1_1Settings_1afdd04830ac70e2435cfce3d7be601e9c" prot="public" static="no" mutable="no">
+        <type>quint32</type>
+        <definition>quint32 DataLoggerService::Settings::updateInterval</definition>
+        <argsstring></argsstring>
+        <name>updateInterval</name>
+        <qualifiedname>DataLoggerService::Settings::updateInterval</qualifiedname>
+        <briefdescription>
+<para>Desired update interval in milliseconds. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/dataloggerservice.h" line="71" column="17" bodyfile="/home/paul/src/dokit/include/qtpokit/dataloggerservice.h" bodystart="71" bodyend="-1"/>
+        <referencedby refid="classDataLoggerServicePrivate_1a774d21863bf83168171143ec8492a736" compoundref="dataloggerservice_8cpp" startline="358" endline="388">DataLoggerServicePrivate::encodeSettings</referencedby>
+        <referencedby refid="classLoggerStartCommand_1a2dea05a52eab344c52648513e5fecbd3" compoundref="loggerstartcommand_8cpp" startline="50" endline="129">LoggerStartCommand::processOptions</referencedby>
+        <referencedby refid="classLoggerStartCommand_1ab1b0364c6a26ff893d5b58dea381e4d5" compoundref="loggerstartcommand_8cpp" startline="153" endline="162">LoggerStartCommand::serviceDetailsDiscovered</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structDataLoggerService_1_1Settings_1a4bde857f31f27e5574b9d204c7a5aa48" prot="public" static="no" mutable="no">
+        <type>quint32</type>
+        <definition>quint32 DataLoggerService::Settings::timestamp</definition>
+        <argsstring></argsstring>
+        <name>timestamp</name>
+        <qualifiedname>DataLoggerService::Settings::timestamp</qualifiedname>
+        <briefdescription>
+<para>Custom timestamp for start time in retrieved metadata. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/dataloggerservice.h" line="72" column="17" bodyfile="/home/paul/src/dokit/include/qtpokit/dataloggerservice.h" bodystart="72" bodyend="-1"/>
+        <referencedby refid="classDataLoggerServicePrivate_1a774d21863bf83168171143ec8492a736" compoundref="dataloggerservice_8cpp" startline="358" endline="388">DataLoggerServicePrivate::encodeSettings</referencedby>
+        <referencedby refid="classLoggerStartCommand_1a2dea05a52eab344c52648513e5fecbd3" compoundref="loggerstartcommand_8cpp" startline="50" endline="129">LoggerStartCommand::processOptions</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Attributes included in the <computeroutput><ref refid="structDataLoggerService_1_1Settings" kindref="compound">Settings</ref></computeroutput> characterstic. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/paul/src/dokit/include/qtpokit/dataloggerservice.h" line="66" column="5" bodyfile="/home/paul/src/dokit/include/qtpokit/dataloggerservice.h" bodystart="66" bodyend="73"/>
+    <listofallmembers>
+      <member refid="structDataLoggerService_1_1Settings_1a5a55213ca7361364642dffa9f8b77ec7" prot="public" virt="non-virtual"><scope>DataLoggerService::Settings</scope><name>arguments</name></member>
+      <member refid="structDataLoggerService_1_1Settings_1a71c4c7e8417ee7a187c09a89057c5ab7" prot="public" virt="non-virtual"><scope>DataLoggerService::Settings</scope><name>command</name></member>
+      <member refid="structDataLoggerService_1_1Settings_1ac72c18db4e38d95664c456c527e352f4" prot="public" virt="non-virtual"><scope>DataLoggerService::Settings</scope><name>mode</name></member>
+      <member refid="structDataLoggerService_1_1Settings_1a823e19d448e6540ea0bfc6844ffc96f1" prot="public" virt="non-virtual"><scope>DataLoggerService::Settings</scope><name>range</name></member>
+      <member refid="structDataLoggerService_1_1Settings_1a4bde857f31f27e5574b9d204c7a5aa48" prot="public" virt="non-virtual"><scope>DataLoggerService::Settings</scope><name>timestamp</name></member>
+      <member refid="structDataLoggerService_1_1Settings_1afdd04830ac70e2435cfce3d7be601e9c" prot="public" virt="non-virtual"><scope>DataLoggerService::Settings</scope><name>updateInterval</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

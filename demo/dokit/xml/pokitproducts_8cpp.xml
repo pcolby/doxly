@@ -1,0 +1,953 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.0" xml:lang="en-US">
+  <compounddef id="pokitproducts_8cpp" kind="file" language="C++">
+    <compoundname>pokitproducts.cpp</compoundname>
+    <includes refid="pokitmeter_8h" local="no">qtpokit/pokitmeter.h</includes>
+    <includes refid="pokitpro_8h" local="no">qtpokit/pokitpro.h</includes>
+    <includes refid="pokitproducts_8h" local="no">qtpokit/pokitproducts.h</includes>
+    <includes refid="statusservice_8h" local="no">qtpokit/statusservice.h</includes>
+    <includes refid="pokitproducts__p_8h" local="yes">pokitproducts_p.h</includes>
+    <includes local="no">QCoreApplication</includes>
+    <includes local="no">QLoggingCategory</includes>
+    <incdepgraph>
+      <node id="12">
+        <label>abstractpokitservice.h</label>
+        <link refid="abstractpokitservice_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>qtpokit/pokitmeter.h</label>
+        <link refid="pokitmeter_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>qtpokit/pokitpro.h</label>
+        <link refid="pokitpro_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>qtpokit/pokitproducts.h</label>
+        <link refid="pokitproducts_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>qtpokit_global.h</label>
+        <link refid="qtpokit__global_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>qtpokit/statusservice.h</label>
+        <link refid="statusservice_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>pokitproducts.cpp</label>
+        <link refid="pokitproducts_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>pokitproducts_p.h</label>
+        <link refid="pokitproducts__p_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>QBluetoothAddress</label>
+      </node>
+      <node id="8">
+        <label>QBluetoothDeviceInfo</label>
+      </node>
+      <node id="17">
+        <label>QBluetoothUuid</label>
+      </node>
+      <node id="21">
+        <label>QCoreApplication</label>
+      </node>
+      <node id="9">
+        <label>QFlags</label>
+      </node>
+      <node id="22">
+        <label>QLoggingCategory</label>
+      </node>
+      <node id="20">
+        <label>QLowEnergyController</label>
+      </node>
+      <node id="13">
+        <label>QLowEnergyService</label>
+      </node>
+      <node id="14">
+        <label>QObject</label>
+      </node>
+      <node id="10">
+        <label>QString</label>
+      </node>
+      <node id="5">
+        <label>QVariant</label>
+      </node>
+      <node id="18">
+        <label>QVersionNumber</label>
+      </node>
+      <node id="4">
+        <label>QtGlobal</label>
+      </node>
+      <node id="15">
+        <label>optional</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespaceCapacitanceRange">CapacitanceRange</innernamespace>
+    <innernamespace refid="namespaceCurrentRange">CurrentRange</innernamespace>
+    <innernamespace refid="namespaceResistanceRange">ResistanceRange</innernamespace>
+    <innernamespace refid="namespaceVoltageRange">VoltageRange</innernamespace>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="pokitproducts_8cpp_1ae34719c67920c33413ec5a0789f048a5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>static</type>
+        <definition>static Q_LOGGING_CATEGORY</definition>
+        <argsstring>(lc, &quot;dokit.pokit.products&quot;, QtInfoMsg)</argsstring>
+        <name>Q_LOGGING_CATEGORY</name>
+        <param>
+          <type>lc</type>
+        </param>
+        <param>
+          <type>&quot;dokit.pokit.products&quot;</type>
+        </param>
+        <param>
+          <type>QtInfoMsg</type>
+        </param>
+        <briefdescription>
+<para>Logging category for this file. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/lib/pokitproducts.cpp" line="19" column="8" declfile="/home/paul/src/dokit/src/lib/pokitproducts.cpp" declline="19" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="pokitproducts_8cpp_1a51231fc0f3ca18f89fca6f00c4bb6df8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="qtpokit__global_8h_1ac5aca53b48a017f8db467922deee7983" kindref="member">QTPOKIT_BEGIN_NAMESPACE</ref> <ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref></type>
+        <definition>QTPOKIT_BEGIN_NAMESPACE QString toString</definition>
+        <argsstring>(const PokitProduct product)</argsstring>
+        <name>toString</name>
+        <param>
+          <type>const <ref refid="pokitproducts_8h_1a0c4f628f68ce0432a6db11681a41fda4" kindref="member">PokitProduct</ref></type>
+          <declname>product</declname>
+        </param>
+        <briefdescription>
+<para>Returns <computeroutput>product</computeroutput> as user-friendly string. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/lib/pokitproducts.cpp" line="26" column="9" bodyfile="/home/paul/src/dokit/src/lib/pokitproducts.cpp" bodystart="26" bodyend="35"/>
+        <references refid="qstring_1arg-14">QString::arg</references>
+        <references refid="pokitproducts_8h_1a0c4f628f68ce0432a6db11681a41fda4afbb216b5c2f76db3f733c4c5915b3001">PokitMeter</references>
+        <references refid="pokitproducts_8h_1a0c4f628f68ce0432a6db11681a41fda4abf3aeeb41cfa55672113dbb4a86da2ae">PokitPro</references>
+        <references refid="qcoreapplication_1translate">QCoreApplication::translate</references>
+        <referencedby refid="classAbstractPokitServicePrivate_1a2b105802085225fe68254dfdb6754ad9" compoundref="abstractpokitservice_8cpp" startline="193" endline="250">AbstractPokitServicePrivate::createServiceObject</referencedby>
+        <referencedby refid="classDeviceCommand_1acde5a41e646a23c5485b67cf99e402a7" compoundref="devicecommand_8cpp" startline="340" endline="387">DeviceCommand::deviceDiscovered</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="pokitproducts_8cpp_1a4a5ebc5229da2cc0d2d00b43ba199bfb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool isPokitProduct</definition>
+        <argsstring>(const QBluetoothDeviceInfo &amp;info)</argsstring>
+        <name>isPokitProduct</name>
+        <param>
+          <type>const <ref refid="qbluetoothdeviceinfo" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothDeviceInfo</ref> &amp;</type>
+          <declname>info</declname>
+        </param>
+        <briefdescription>
+<para>Returns <computeroutput>true</computeroutput> if <emphasis>info</emphasis> describes a Pokit device. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Currently, this is based on whether or not <emphasis>info&apos;s</emphasis> service UUIDs includes a known Pokit Status service, but this test criteria might be swapped for something else sometime. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/lib/pokitproducts.cpp" line="43" column="6" bodyfile="/home/paul/src/dokit/src/lib/pokitproducts.cpp" bodystart="43" bodyend="46"/>
+        <references refid="pokitproducts_8cpp_1a4a5ebc5229da2cc0d2d00b43ba199bfb" compoundref="pokitproducts_8cpp" startline="43" endline="46">isPokitProduct</references>
+        <references refid="qbluetoothdeviceinfo_1serviceUuids">QBluetoothDeviceInfo::serviceUuids</references>
+        <referencedby refid="classDeviceCommand_1acde5a41e646a23c5485b67cf99e402a7" compoundref="devicecommand_8cpp" startline="340" endline="387">DeviceCommand::deviceDiscovered</referencedby>
+        <referencedby refid="classPokitDiscoveryAgentPrivate_1af96c8bec6557e8ac44006081a7f82caf" compoundref="pokitdiscoveryagent_8cpp" startline="168" endline="175">PokitDiscoveryAgentPrivate::deviceDiscovered</referencedby>
+        <referencedby refid="classPokitDiscoveryAgentPrivate_1afc40fda129c4f54986bf8c31fd803fb6" compoundref="pokitdiscoveryagent_8cpp" startline="185" endline="193">PokitDiscoveryAgentPrivate::deviceUpdated</referencedby>
+        <referencedby refid="pokitproducts_8h_1adb8bb3a07e937158a294997e60868297" compoundref="pokitproducts_8cpp" startline="43" endline="46">isPokitProduct</referencedby>
+        <referencedby refid="pokitproducts_8cpp_1a1e8475fe32ea6fbcbb0bd795448d43c8" compoundref="pokitproducts_8cpp" startline="82" endline="85">isPokitProduct</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="pokitproducts_8cpp_1a3d40e46dc22d896251e8ac089c34b566" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="pokitproducts_8h_1a0c4f628f68ce0432a6db11681a41fda4" kindref="member">PokitProduct</ref></type>
+        <definition>PokitProduct pokitProduct</definition>
+        <argsstring>(const QBluetoothDeviceInfo &amp;info)</argsstring>
+        <name>pokitProduct</name>
+        <param>
+          <type>const <ref refid="qbluetoothdeviceinfo" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothDeviceInfo</ref> &amp;</type>
+          <declname>info</declname>
+        </param>
+        <briefdescription>
+<para>Returns the <ref refid="pokitproducts_8h_1a0c4f628f68ce0432a6db11681a41fda4" kindref="member">PokitProduct</ref> corresponding the Bluetotoh device <emphasis>info</emphasis>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If <emphasis>info</emphasis> is not a Pokit device, then result is undefined.</para>
+<para><simplesect kind="see"><para><ref refid="pokitproducts_8cpp_1a4a5ebc5229da2cc0d2d00b43ba199bfb" kindref="member">isPokitProduct</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/lib/pokitproducts.cpp" line="55" column="14" bodyfile="/home/paul/src/dokit/src/lib/pokitproducts.cpp" bodystart="55" bodyend="58"/>
+        <references refid="pokitproducts_8cpp_1a3d40e46dc22d896251e8ac089c34b566" compoundref="pokitproducts_8cpp" startline="55" endline="58">pokitProduct</references>
+        <references refid="qbluetoothdeviceinfo_1serviceUuids">QBluetoothDeviceInfo::serviceUuids</references>
+        <referencedby refid="classDeviceCommand_1acde5a41e646a23c5485b67cf99e402a7" compoundref="devicecommand_8cpp" startline="340" endline="387">DeviceCommand::deviceDiscovered</referencedby>
+        <referencedby refid="pokitproducts_8h_1a0227e333e3bab67294b49b8b73120943" compoundref="pokitproducts_8cpp" startline="55" endline="58">pokitProduct</referencedby>
+        <referencedby refid="pokitproducts_8cpp_1a9eed245788cc9e68dd314dc5153912b9" compoundref="pokitproducts_8cpp" startline="117" endline="120">pokitProduct</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="pokitproducts_8cpp_1ae0f44a17c5df57e31ee3742b1794fac4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool isPokitProduct</definition>
+        <argsstring>(const QList&lt; QBluetoothUuid &gt; &amp;serviceUuids)</argsstring>
+        <name>isPokitProduct</name>
+        <param>
+          <type>const <ref refid="qlist" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QList</ref>&lt; <ref refid="qbluetoothuuid" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothUuid</ref> &gt; &amp;</type>
+          <declname>serviceUuids</declname>
+        </param>
+        <briefdescription>
+<para>Returns <computeroutput>true</computeroutput> if <emphasis>serviceUuids</emphasis> contains a known Pokit Status service UUID. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Currently, this is the only known way to detect a Pokit device. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/lib/pokitproducts.cpp" line="67" column="6" bodyfile="/home/paul/src/dokit/src/lib/pokitproducts.cpp" bodystart="67" bodyend="71"/>
+        <references refid="qlist_1contains">QList::contains</references>
+        <references refid="structStatusService_1_1ServiceUuids_1a8fa373d36e9332df30f38411ab3446de" compoundref="statusservice_8h" startline="32" endline="32">StatusService::ServiceUuids::pokitMeter</references>
+        <references refid="structStatusService_1_1ServiceUuids_1a0a9ca0f9377093ff60b282d4bfe3b0cf" compoundref="statusservice_8h" startline="35" endline="35">StatusService::ServiceUuids::pokitPro</references>
+      </memberdef>
+      <memberdef kind="function" id="pokitproducts_8cpp_1a1e8475fe32ea6fbcbb0bd795448d43c8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool isPokitProduct</definition>
+        <argsstring>(const QLowEnergyController &amp;controller)</argsstring>
+        <name>isPokitProduct</name>
+        <param>
+          <type>const <ref refid="qlowenergycontroller" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QLowEnergyController</ref> &amp;</type>
+          <declname>controller</declname>
+        </param>
+        <briefdescription>
+<para>Returns <computeroutput>true</computeroutput> if <emphasis>controller</emphasis> describes a Pokit device. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Currently, this is based on whether or not <emphasis>controller&apos;s</emphasis> service UUIDs includes a known Pokit Status service, but this test criteria might be swapped for something else sometime.</para>
+<para><simplesect kind="see"><para><ref refid="pokitproducts_8cpp_1a4a5ebc5229da2cc0d2d00b43ba199bfb" kindref="member">isPokitProduct</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/lib/pokitproducts.cpp" line="82" column="6" bodyfile="/home/paul/src/dokit/src/lib/pokitproducts.cpp" bodystart="82" bodyend="85"/>
+        <references refid="pokitproducts_8cpp_1a4a5ebc5229da2cc0d2d00b43ba199bfb" compoundref="pokitproducts_8cpp" startline="43" endline="46">isPokitProduct</references>
+        <references refid="qlowenergycontroller_1services">QLowEnergyController::services</references>
+      </memberdef>
+      <memberdef kind="function" id="pokitproducts_8cpp_1a98f11fa57086c8c720a0d31c82169477" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="pokitproducts_8h_1a0c4f628f68ce0432a6db11681a41fda4" kindref="member">PokitProduct</ref></type>
+        <definition>PokitProduct pokitProduct</definition>
+        <argsstring>(const QList&lt; QBluetoothUuid &gt; &amp;serviceUuids)</argsstring>
+        <name>pokitProduct</name>
+        <param>
+          <type>const <ref refid="qlist" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QList</ref>&lt; <ref refid="qbluetoothuuid" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothUuid</ref> &gt; &amp;</type>
+          <declname>serviceUuids</declname>
+        </param>
+        <briefdescription>
+<para>Returns the <ref refid="pokitproducts_8h_1a0c4f628f68ce0432a6db11681a41fda4" kindref="member">PokitProduct</ref> corresponding to the Bluetooth <emphasis>serviceUuids</emphasis>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Currently, this is based on whether or not <emphasis>servceUuids</emphasis> includes a known Pokit Status service, but this test criteria might be swapped for something else sometime.</para>
+<para><simplesect kind="see"><para><ref refid="pokitproducts_8cpp_1a4a5ebc5229da2cc0d2d00b43ba199bfb" kindref="member">isPokitProduct</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/lib/pokitproducts.cpp" line="95" column="14" bodyfile="/home/paul/src/dokit/src/lib/pokitproducts.cpp" bodystart="95" bodyend="107"/>
+        <references refid="qlist_1contains">QList::contains</references>
+        <references refid="pokitproducts_8h_1a0c4f628f68ce0432a6db11681a41fda4afbb216b5c2f76db3f733c4c5915b3001">PokitMeter</references>
+        <references refid="structStatusService_1_1ServiceUuids_1a8fa373d36e9332df30f38411ab3446de" compoundref="statusservice_8h" startline="32" endline="32">StatusService::ServiceUuids::pokitMeter</references>
+        <references refid="pokitproducts_8h_1a0c4f628f68ce0432a6db11681a41fda4abf3aeeb41cfa55672113dbb4a86da2ae">PokitPro</references>
+        <references refid="structStatusService_1_1ServiceUuids_1a0a9ca0f9377093ff60b282d4bfe3b0cf" compoundref="statusservice_8h" startline="35" endline="35">StatusService::ServiceUuids::pokitPro</references>
+        <references refid="qcoreapplication_1translate">QCoreApplication::translate</references>
+      </memberdef>
+      <memberdef kind="function" id="pokitproducts_8cpp_1a9eed245788cc9e68dd314dc5153912b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="pokitproducts_8h_1a0c4f628f68ce0432a6db11681a41fda4" kindref="member">PokitProduct</ref></type>
+        <definition>PokitProduct pokitProduct</definition>
+        <argsstring>(const QLowEnergyController &amp;controller)</argsstring>
+        <name>pokitProduct</name>
+        <param>
+          <type>const <ref refid="qlowenergycontroller" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QLowEnergyController</ref> &amp;</type>
+          <declname>controller</declname>
+        </param>
+        <briefdescription>
+<para>Returns the <ref refid="pokitproducts_8h_1a0c4f628f68ce0432a6db11681a41fda4" kindref="member">PokitProduct</ref> corresponding to the Bluetooth <emphasis>controller</emphasis>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Currently, this is based on whether or not <emphasis>controller&apos;s</emphasis> service UUIDs includes a known Pokit Status service, but this test criteria might be swapped for something else sometime.</para>
+<para><simplesect kind="see"><para><ref refid="pokitproducts_8cpp_1a4a5ebc5229da2cc0d2d00b43ba199bfb" kindref="member">isPokitProduct</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/lib/pokitproducts.cpp" line="117" column="14" bodyfile="/home/paul/src/dokit/src/lib/pokitproducts.cpp" bodystart="117" bodyend="120"/>
+        <references refid="pokitproducts_8cpp_1a3d40e46dc22d896251e8ac089c34b566" compoundref="pokitproducts_8cpp" startline="55" endline="58">pokitProduct</references>
+        <references refid="qlowenergycontroller_1services">QLowEnergyController::services</references>
+      </memberdef>
+      <memberdef kind="function" id="namespaceCapacitanceRange_1a14203d0e3a636e5142dccade0c4b5c91" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref></type>
+        <definition>QTPOKIT_EXPORT QString CapacitanceRange::toString</definition>
+        <argsstring>(const PokitProduct product, const quint8 range)</argsstring>
+        <name>toString</name>
+        <qualifiedname>CapacitanceRange::toString</qualifiedname>
+        <param>
+          <type>const <ref refid="pokitproducts_8h_1a0c4f628f68ce0432a6db11681a41fda4" kindref="member">PokitProduct</ref></type>
+          <declname>product</declname>
+        </param>
+        <param>
+          <type>const quint8</type>
+          <declname>range</declname>
+        </param>
+        <briefdescription>
+<para>Returns <emphasis>product&apos;s</emphasis> capacitance <emphasis>range</emphasis> as a human-friendly string. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>Since Pokit Meters do not support capacitance measurement, <emphasis>product</emphasis> should not be <ref refid="pokitproducts_8h_1a0c4f628f68ce0432a6db11681a41fda4afbb216b5c2f76db3f733c4c5915b3001" kindref="member">PokitProduct::PokitMeter</ref>.</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="namespacePokitPro_1a38ce307b844e4d67d94402b31461f7f4" kindref="member">PokitPro::toString(const PokitPro::CapacitanceRange &amp;range)</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/lib/pokitproducts.cpp" line="134" column="9" bodyfile="/home/paul/src/dokit/src/lib/pokitproducts.cpp" bodystart="134" bodyend="147" declfile="/home/paul/src/dokit/src/lib/pokitproducts_p.h" declline="20" declcolumn="28"/>
+        <references refid="qstring_1arg-14">QString::arg</references>
+        <references refid="pokitproducts_8h_1a0c4f628f68ce0432a6db11681a41fda4afbb216b5c2f76db3f733c4c5915b3001">PokitMeter</references>
+        <references refid="pokitproducts_8h_1a0c4f628f68ce0432a6db11681a41fda4abf3aeeb41cfa55672113dbb4a86da2ae">PokitPro</references>
+        <references refid="namespacePokitPro_1a38ce307b844e4d67d94402b31461f7f4" compoundref="pokitpro_8cpp" startline="25" endline="34">PokitPro::toString</references>
+        <references refid="qcoreapplication_1translate">QCoreApplication::translate</references>
+        <referencedby refid="classMultimeterService_1a66e1f404c97d779e284c0a6c7c954c49" compoundref="multimeterservice_8cpp" startline="54" endline="77">MultimeterService::toString</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespaceCapacitanceRange_1ae13fb76d6fab44972334e2b007be4a06" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="qvariant" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QVariant</ref></type>
+        <definition>QTPOKIT_EXPORT QVariant CapacitanceRange::maxValue</definition>
+        <argsstring>(const PokitProduct product, const quint8 range)</argsstring>
+        <name>maxValue</name>
+        <qualifiedname>CapacitanceRange::maxValue</qualifiedname>
+        <param>
+          <type>const <ref refid="pokitproducts_8h_1a0c4f628f68ce0432a6db11681a41fda4" kindref="member">PokitProduct</ref></type>
+          <declname>product</declname>
+        </param>
+        <param>
+          <type>const quint8</type>
+          <declname>range</declname>
+        </param>
+        <briefdescription>
+<para>Returns the maximum value for <emphasis>product&apos;s</emphasis> <emphasis>range</emphasis> in (integer) nanofarads, or the string &quot;Auto&quot;. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If <emphasis>range</emphasis> is not a known valid value, then an null <ref refid="qvariant" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QVariant</ref> is returned.</para>
+<para><simplesect kind="note"><para>Since Pokit Meters do not support capacitance measurement, <emphasis>product</emphasis> should not be <ref refid="pokitproducts_8h_1a0c4f628f68ce0432a6db11681a41fda4afbb216b5c2f76db3f733c4c5915b3001" kindref="member">PokitProduct::PokitMeter</ref>.</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="namespacePokitPro_1a377d083e0bc3e7972ba1476914dda1b5" kindref="member">PokitPro::maxValue(const PokitPro::CapacitanceRange &amp;range)</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/lib/pokitproducts.cpp" line="157" column="10" bodyfile="/home/paul/src/dokit/src/lib/pokitproducts.cpp" bodystart="157" bodyend="170" declfile="/home/paul/src/dokit/src/lib/pokitproducts_p.h" declline="21" declcolumn="29"/>
+        <references refid="qstring_1arg-14">QString::arg</references>
+        <references refid="namespacePokitPro_1a377d083e0bc3e7972ba1476914dda1b5" compoundref="pokitpro_8cpp" startline="40" endline="49">PokitPro::maxValue</references>
+        <references refid="pokitproducts_8h_1a0c4f628f68ce0432a6db11681a41fda4afbb216b5c2f76db3f733c4c5915b3001">PokitMeter</references>
+        <references refid="pokitproducts_8h_1a0c4f628f68ce0432a6db11681a41fda4abf3aeeb41cfa55672113dbb4a86da2ae">PokitPro</references>
+        <references refid="qcoreapplication_1translate">QCoreApplication::translate</references>
+        <referencedby refid="classMultimeterService_1a9d05ef9c2d80a941bfd4f972d3dc6145" compoundref="multimeterservice_8cpp" startline="90" endline="113">MultimeterService::maxValue</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespaceCurrentRange_1a683a82fdd02371d1d6acb4bbbd91e844" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref></type>
+        <definition>QTPOKIT_EXPORT QString CurrentRange::toString</definition>
+        <argsstring>(const PokitProduct product, const quint8 range)</argsstring>
+        <name>toString</name>
+        <qualifiedname>CurrentRange::toString</qualifiedname>
+        <param>
+          <type>const <ref refid="pokitproducts_8h_1a0c4f628f68ce0432a6db11681a41fda4" kindref="member">PokitProduct</ref></type>
+          <declname>product</declname>
+        </param>
+        <param>
+          <type>const quint8</type>
+          <declname>range</declname>
+        </param>
+        <briefdescription>
+<para>Returns <emphasis>product&apos;s</emphasis> current <emphasis>range</emphasis> as a human-friendly string. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="namespacePokitMeter_1a3c3db7b94b6f44af24f4a23e87a3569e" kindref="member">PokitMeter::toString(const PokitMeter::CurrentRange &amp;range)</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="namespacePokitPro_1afd55d7ea5f6a6781dd8416cd8a8c74a3" kindref="member">PokitPro::toString(const PokitPro::CurrentRange &amp;range)</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/lib/pokitproducts.cpp" line="183" column="9" bodyfile="/home/paul/src/dokit/src/lib/pokitproducts.cpp" bodystart="183" bodyend="194" declfile="/home/paul/src/dokit/src/lib/pokitproducts_p.h" declline="25" declcolumn="28"/>
+        <references refid="qstring_1arg-14">QString::arg</references>
+        <references refid="pokitproducts_8h_1a0c4f628f68ce0432a6db11681a41fda4afbb216b5c2f76db3f733c4c5915b3001">PokitMeter</references>
+        <references refid="pokitproducts_8h_1a0c4f628f68ce0432a6db11681a41fda4abf3aeeb41cfa55672113dbb4a86da2ae">PokitPro</references>
+        <references refid="namespacePokitMeter_1a3c3db7b94b6f44af24f4a23e87a3569e" compoundref="pokitmeter_8cpp" startline="16" endline="27">PokitMeter::toString</references>
+        <references refid="namespacePokitPro_1a38ce307b844e4d67d94402b31461f7f4" compoundref="pokitpro_8cpp" startline="25" endline="34">PokitPro::toString</references>
+        <references refid="qcoreapplication_1translate">QCoreApplication::translate</references>
+        <referencedby refid="classDataLoggerService_1acb7b2d9480b2756074571c6b96531337" compoundref="dataloggerservice_8cpp" startline="41" endline="56">DataLoggerService::toString</referencedby>
+        <referencedby refid="classDsoService_1ae30b37a57050beb9f9d36f8dc38b2bb6" compoundref="dsoservice_8cpp" startline="39" endline="52">DsoService::toString</referencedby>
+        <referencedby refid="classMultimeterService_1a66e1f404c97d779e284c0a6c7c954c49" compoundref="multimeterservice_8cpp" startline="54" endline="77">MultimeterService::toString</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespaceCurrentRange_1a340ae103126865c13997adcde5976bd1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="qvariant" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QVariant</ref></type>
+        <definition>QTPOKIT_EXPORT QVariant CurrentRange::maxValue</definition>
+        <argsstring>(const PokitProduct product, const quint8 range)</argsstring>
+        <name>maxValue</name>
+        <qualifiedname>CurrentRange::maxValue</qualifiedname>
+        <param>
+          <type>const <ref refid="pokitproducts_8h_1a0c4f628f68ce0432a6db11681a41fda4" kindref="member">PokitProduct</ref></type>
+          <declname>product</declname>
+        </param>
+        <param>
+          <type>const quint8</type>
+          <declname>range</declname>
+        </param>
+        <briefdescription>
+<para>Returns the maximum value for <emphasis>product&apos;s</emphasis> <emphasis>range</emphasis> in (integer) microamps, or the string &quot;Auto&quot;. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If <emphasis>range</emphasis> is not a known valid value, then an null <ref refid="qvariant" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QVariant</ref> is returned.</para>
+<para><simplesect kind="see"><para><ref refid="namespacePokitMeter_1a86a4eb262b1a9fde417acdee8eea00b7" kindref="member">PokitMeter::maxValue(const PokitMeter::CurrentRange &amp;range)</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="namespacePokitPro_1a4e9682c1346c8ee45c1cfc810cb7e4b6" kindref="member">PokitPro::maxValue(const PokitPro::CurrentRange &amp;range)</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/lib/pokitproducts.cpp" line="203" column="10" bodyfile="/home/paul/src/dokit/src/lib/pokitproducts.cpp" bodystart="203" bodyend="214" declfile="/home/paul/src/dokit/src/lib/pokitproducts_p.h" declline="26" declcolumn="29"/>
+        <references refid="qstring_1arg-14">QString::arg</references>
+        <references refid="namespacePokitMeter_1a86a4eb262b1a9fde417acdee8eea00b7" compoundref="pokitmeter_8cpp" startline="33" endline="44">PokitMeter::maxValue</references>
+        <references refid="namespacePokitPro_1a377d083e0bc3e7972ba1476914dda1b5" compoundref="pokitpro_8cpp" startline="40" endline="49">PokitPro::maxValue</references>
+        <references refid="pokitproducts_8h_1a0c4f628f68ce0432a6db11681a41fda4afbb216b5c2f76db3f733c4c5915b3001">PokitMeter</references>
+        <references refid="pokitproducts_8h_1a0c4f628f68ce0432a6db11681a41fda4abf3aeeb41cfa55672113dbb4a86da2ae">PokitPro</references>
+        <references refid="qcoreapplication_1translate">QCoreApplication::translate</references>
+        <referencedby refid="classDataLoggerService_1ac4d7ef9171f04a4d71b404ba3d99cef4" compoundref="dataloggerservice_8cpp" startline="69" endline="84">DataLoggerService::maxValue</referencedby>
+        <referencedby refid="classDsoService_1a51b27cb93f71a39a69a11d697624fde4" compoundref="dsoservice_8cpp" startline="65" endline="78">DsoService::maxValue</referencedby>
+        <referencedby refid="classMultimeterService_1a9d05ef9c2d80a941bfd4f972d3dc6145" compoundref="multimeterservice_8cpp" startline="90" endline="113">MultimeterService::maxValue</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespaceResistanceRange_1a6f542c3fe27b9c58c03edc92ceab40ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref></type>
+        <definition>QTPOKIT_EXPORT QString ResistanceRange::toString</definition>
+        <argsstring>(const PokitProduct product, const quint8 range)</argsstring>
+        <name>toString</name>
+        <qualifiedname>ResistanceRange::toString</qualifiedname>
+        <param>
+          <type>const <ref refid="pokitproducts_8h_1a0c4f628f68ce0432a6db11681a41fda4" kindref="member">PokitProduct</ref></type>
+          <declname>product</declname>
+        </param>
+        <param>
+          <type>const quint8</type>
+          <declname>range</declname>
+        </param>
+        <briefdescription>
+<para>Returns <emphasis>product&apos;s</emphasis> current <emphasis>range</emphasis> as a human-friendly string. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="namespacePokitMeter_1adf4c2051d0ce0fe5a53fd682cf97f8a8" kindref="member">PokitMeter::toString(const PokitMeter::ResistanceRange &amp;range)</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="namespacePokitPro_1ae6547e17145d57e3b18aa134e090d400" kindref="member">PokitPro::toString(const PokitPro::ResistanceRange &amp;range)</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/lib/pokitproducts.cpp" line="227" column="9" bodyfile="/home/paul/src/dokit/src/lib/pokitproducts.cpp" bodystart="227" bodyend="238" declfile="/home/paul/src/dokit/src/lib/pokitproducts_p.h" declline="30" declcolumn="28"/>
+        <references refid="qstring_1arg-14">QString::arg</references>
+        <references refid="pokitproducts_8h_1a0c4f628f68ce0432a6db11681a41fda4afbb216b5c2f76db3f733c4c5915b3001">PokitMeter</references>
+        <references refid="pokitproducts_8h_1a0c4f628f68ce0432a6db11681a41fda4abf3aeeb41cfa55672113dbb4a86da2ae">PokitPro</references>
+        <references refid="namespacePokitMeter_1a3c3db7b94b6f44af24f4a23e87a3569e" compoundref="pokitmeter_8cpp" startline="16" endline="27">PokitMeter::toString</references>
+        <references refid="namespacePokitPro_1a38ce307b844e4d67d94402b31461f7f4" compoundref="pokitpro_8cpp" startline="25" endline="34">PokitPro::toString</references>
+        <references refid="qcoreapplication_1translate">QCoreApplication::translate</references>
+        <referencedby refid="classMultimeterService_1a66e1f404c97d779e284c0a6c7c954c49" compoundref="multimeterservice_8cpp" startline="54" endline="77">MultimeterService::toString</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespaceResistanceRange_1a30fba7f1c73e7a8b9b3c45aed8b5b3e1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="qvariant" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QVariant</ref></type>
+        <definition>QTPOKIT_EXPORT QVariant ResistanceRange::maxValue</definition>
+        <argsstring>(const PokitProduct product, const quint8 range)</argsstring>
+        <name>maxValue</name>
+        <qualifiedname>ResistanceRange::maxValue</qualifiedname>
+        <param>
+          <type>const <ref refid="pokitproducts_8h_1a0c4f628f68ce0432a6db11681a41fda4" kindref="member">PokitProduct</ref></type>
+          <declname>product</declname>
+        </param>
+        <param>
+          <type>const quint8</type>
+          <declname>range</declname>
+        </param>
+        <briefdescription>
+<para>Returns the maximum value for <emphasis>product&apos;s</emphasis> <emphasis>range</emphasis> in (integer) ohms, or the string &quot;Auto&quot;. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If <emphasis>range</emphasis> is not a known valid value, then an null <ref refid="qvariant" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QVariant</ref> is returned.</para>
+<para><simplesect kind="see"><para><ref refid="namespacePokitMeter_1afdc7a546b276b7533a115aacecc82ff8" kindref="member">PokitMeter::maxValue(const PokitMeter::ResistanceRange &amp;range)</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="namespacePokitPro_1a78ce6ea577673c1a17e0ee773ebd7ebe" kindref="member">PokitPro::maxValue(const PokitPro::ResistanceRange &amp;range)</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/lib/pokitproducts.cpp" line="247" column="10" bodyfile="/home/paul/src/dokit/src/lib/pokitproducts.cpp" bodystart="247" bodyend="258" declfile="/home/paul/src/dokit/src/lib/pokitproducts_p.h" declline="31" declcolumn="29"/>
+        <references refid="qstring_1arg-14">QString::arg</references>
+        <references refid="namespacePokitMeter_1a86a4eb262b1a9fde417acdee8eea00b7" compoundref="pokitmeter_8cpp" startline="33" endline="44">PokitMeter::maxValue</references>
+        <references refid="namespacePokitPro_1a377d083e0bc3e7972ba1476914dda1b5" compoundref="pokitpro_8cpp" startline="40" endline="49">PokitPro::maxValue</references>
+        <references refid="pokitproducts_8h_1a0c4f628f68ce0432a6db11681a41fda4afbb216b5c2f76db3f733c4c5915b3001">PokitMeter</references>
+        <references refid="pokitproducts_8h_1a0c4f628f68ce0432a6db11681a41fda4abf3aeeb41cfa55672113dbb4a86da2ae">PokitPro</references>
+        <references refid="qcoreapplication_1translate">QCoreApplication::translate</references>
+        <referencedby refid="classMultimeterService_1a9d05ef9c2d80a941bfd4f972d3dc6145" compoundref="multimeterservice_8cpp" startline="90" endline="113">MultimeterService::maxValue</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespaceVoltageRange_1a843ef4bfc3538988c695fa643adcd4d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref></type>
+        <definition>QTPOKIT_EXPORT QString VoltageRange::toString</definition>
+        <argsstring>(const PokitProduct product, const quint8 range)</argsstring>
+        <name>toString</name>
+        <qualifiedname>VoltageRange::toString</qualifiedname>
+        <param>
+          <type>const <ref refid="pokitproducts_8h_1a0c4f628f68ce0432a6db11681a41fda4" kindref="member">PokitProduct</ref></type>
+          <declname>product</declname>
+        </param>
+        <param>
+          <type>const quint8</type>
+          <declname>range</declname>
+        </param>
+        <briefdescription>
+<para>Returns <emphasis>product&apos;s</emphasis> current <emphasis>range</emphasis> as a human-friendly string. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="namespacePokitMeter_1a3038daa52676f52266163577f07954e5" kindref="member">PokitMeter::toString(const PokitMeter::VoltageRange &amp;range)</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="namespacePokitPro_1aa054120cc07d4e25439a8b183abcd4ba" kindref="member">PokitPro::toString(const PokitPro::VoltageRange &amp;range)</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/lib/pokitproducts.cpp" line="271" column="9" bodyfile="/home/paul/src/dokit/src/lib/pokitproducts.cpp" bodystart="271" bodyend="282" declfile="/home/paul/src/dokit/src/lib/pokitproducts_p.h" declline="35" declcolumn="28"/>
+        <references refid="qstring_1arg-14">QString::arg</references>
+        <references refid="pokitproducts_8h_1a0c4f628f68ce0432a6db11681a41fda4afbb216b5c2f76db3f733c4c5915b3001">PokitMeter</references>
+        <references refid="pokitproducts_8h_1a0c4f628f68ce0432a6db11681a41fda4abf3aeeb41cfa55672113dbb4a86da2ae">PokitPro</references>
+        <references refid="namespacePokitMeter_1a3c3db7b94b6f44af24f4a23e87a3569e" compoundref="pokitmeter_8cpp" startline="16" endline="27">PokitMeter::toString</references>
+        <references refid="namespacePokitPro_1a38ce307b844e4d67d94402b31461f7f4" compoundref="pokitpro_8cpp" startline="25" endline="34">PokitPro::toString</references>
+        <references refid="qcoreapplication_1translate">QCoreApplication::translate</references>
+        <referencedby refid="classDataLoggerService_1acb7b2d9480b2756074571c6b96531337" compoundref="dataloggerservice_8cpp" startline="41" endline="56">DataLoggerService::toString</referencedby>
+        <referencedby refid="classDsoService_1ae30b37a57050beb9f9d36f8dc38b2bb6" compoundref="dsoservice_8cpp" startline="39" endline="52">DsoService::toString</referencedby>
+        <referencedby refid="classMultimeterService_1a66e1f404c97d779e284c0a6c7c954c49" compoundref="multimeterservice_8cpp" startline="54" endline="77">MultimeterService::toString</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespaceVoltageRange_1adc3a8126ae8dcec8010fc8b037fab885" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="qvariant" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QVariant</ref></type>
+        <definition>QTPOKIT_EXPORT QVariant VoltageRange::maxValue</definition>
+        <argsstring>(const PokitProduct product, const quint8 range)</argsstring>
+        <name>maxValue</name>
+        <qualifiedname>VoltageRange::maxValue</qualifiedname>
+        <param>
+          <type>const <ref refid="pokitproducts_8h_1a0c4f628f68ce0432a6db11681a41fda4" kindref="member">PokitProduct</ref></type>
+          <declname>product</declname>
+        </param>
+        <param>
+          <type>const quint8</type>
+          <declname>range</declname>
+        </param>
+        <briefdescription>
+<para>Returns the maximum value for <emphasis>product&apos;s</emphasis> <emphasis>range</emphasis> in (integer) millivolts, or the string &quot;Auto&quot;. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If <emphasis>range</emphasis> is not a known valid value, then an null <ref refid="qvariant" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QVariant</ref> is returned.</para>
+<para><simplesect kind="see"><para><ref refid="namespacePokitMeter_1a91cdd2d4576e4278be157c6ca12249d3" kindref="member">PokitMeter::maxValue(const PokitMeter::VoltageRange &amp;range)</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="namespacePokitPro_1a96fabdab4ab96dc695135b61d2dff175" kindref="member">PokitPro::maxValue(const PokitPro::VoltageRange &amp;range)</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/lib/pokitproducts.cpp" line="291" column="10" bodyfile="/home/paul/src/dokit/src/lib/pokitproducts.cpp" bodystart="291" bodyend="302" declfile="/home/paul/src/dokit/src/lib/pokitproducts_p.h" declline="36" declcolumn="29"/>
+        <references refid="qstring_1arg-14">QString::arg</references>
+        <references refid="namespacePokitMeter_1a86a4eb262b1a9fde417acdee8eea00b7" compoundref="pokitmeter_8cpp" startline="33" endline="44">PokitMeter::maxValue</references>
+        <references refid="namespacePokitPro_1a377d083e0bc3e7972ba1476914dda1b5" compoundref="pokitpro_8cpp" startline="40" endline="49">PokitPro::maxValue</references>
+        <references refid="pokitproducts_8h_1a0c4f628f68ce0432a6db11681a41fda4afbb216b5c2f76db3f733c4c5915b3001">PokitMeter</references>
+        <references refid="pokitproducts_8h_1a0c4f628f68ce0432a6db11681a41fda4abf3aeeb41cfa55672113dbb4a86da2ae">PokitPro</references>
+        <references refid="qcoreapplication_1translate">QCoreApplication::translate</references>
+        <referencedby refid="classDataLoggerService_1ac4d7ef9171f04a4d71b404ba3d99cef4" compoundref="dataloggerservice_8cpp" startline="69" endline="84">DataLoggerService::maxValue</referencedby>
+        <referencedby refid="classDsoService_1a51b27cb93f71a39a69a11d697624fde4" compoundref="dsoservice_8cpp" startline="65" endline="78">DsoService::maxValue</referencedby>
+        <referencedby refid="classMultimeterService_1a9d05ef9c2d80a941bfd4f972d3dc6145" compoundref="multimeterservice_8cpp" startline="90" endline="113">MultimeterService::maxValue</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Defines the <ref refid="pokitproducts_8h_1a0c4f628f68ce0432a6db11681a41fda4" kindref="member">PokitProduct</ref> helper functions. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>SPDX-FileCopyrightText:<sp/>2022-2024<sp/>Paul<sp/>Colby<sp/>&lt;git@colby.id.au&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>SPDX-License-Identifier:<sp/>LGPL-3.0-or-later</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="4"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>\file</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>Defines<sp/>the<sp/>#PokitProduct<sp/>helper<sp/>functions.</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="pokitmeter_8h" kindref="compound">qtpokit/pokitmeter.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="pokitpro_8h" kindref="compound">qtpokit/pokitpro.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="pokitproducts_8h" kindref="compound">qtpokit/pokitproducts.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="statusservice_8h" kindref="compound">qtpokit/statusservice.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;pokitproducts_p.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QCoreApplication&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QLoggingCategory&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="pokitproducts_8cpp_1ae34719c67920c33413ec5a0789f048a5" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="pokitproducts_8cpp_1ae34719c67920c33413ec5a0789f048a5" kindref="member">Q_LOGGING_CATEGORY</ref>(lc,<sp/></highlight><highlight class="stringliteral">&quot;dokit.pokit.products&quot;</highlight><highlight class="normal">,<sp/>QtInfoMsg);<sp/></highlight><highlight class="comment">///&lt;<sp/>Logging<sp/>category<sp/>for<sp/>this<sp/>file.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><ref refid="qtpokit__global_8h_1ac5aca53b48a017f8db467922deee7983" kindref="member">QTPOKIT_BEGIN_NAMESPACE</ref></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="23"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*<sp/>Returns<sp/>\c<sp/>product<sp/>as<sp/>user-friendly<sp/>string.</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="pokitproducts_8h_1abac6d04d602c122e3de08ef55122d635" refkind="member"><highlight class="normal"><ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref><sp/><ref refid="pokitproducts_8cpp_1a51231fc0f3ca18f89fca6f00c4bb6df8" kindref="member">toString</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="pokitproducts_8h_1a0c4f628f68ce0432a6db11681a41fda4" kindref="member">PokitProduct</ref><sp/>product)</highlight></codeline>
+<codeline lineno="27"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(product)<sp/>{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="pokitproducts_8h_1a0c4f628f68ce0432a6db11681a41fda4afbb216b5c2f76db3f733c4c5915b3001" kindref="member">PokitProduct::PokitMeter</ref>:<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>QStringLiteral(</highlight><highlight class="stringliteral">&quot;Pokit<sp/>Meter&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="pokitproducts_8h_1a0c4f628f68ce0432a6db11681a41fda4abf3aeeb41cfa55672113dbb4a86da2ae" kindref="member">PokitProduct::PokitPro</ref>:<sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>QStringLiteral(</highlight><highlight class="stringliteral">&quot;Pokit<sp/>Pro&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>qCWarning(lc).noquote()<sp/>&lt;&lt;<sp/><ref refid="qcoreapplication_1translate" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCoreApplication::translate</ref>(</highlight><highlight class="stringliteral">&quot;PokitProducts&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;Unknown<sp/>PokitProduct<sp/>value:<sp/>%1&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;toString&quot;</highlight><highlight class="normal">).<ref refid="qstring_1arg-14" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">arg</ref>((</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)product);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref>();</highlight></codeline>
+<codeline lineno="35"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="37"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="38"><highlight class="comment"><sp/>*<sp/>Returns<sp/>\c<sp/>true<sp/>if<sp/>\a<sp/>info<sp/>describes<sp/>a<sp/>Pokit<sp/>device.</highlight></codeline>
+<codeline lineno="39"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="40"><highlight class="comment"><sp/>*<sp/>Currently,<sp/>this<sp/>is<sp/>based<sp/>on<sp/>whether<sp/>or<sp/>not<sp/>\a<sp/>info&apos;s<sp/>service<sp/>UUIDs<sp/>includes<sp/>a<sp/>known<sp/>Pokit</highlight></codeline>
+<codeline lineno="41"><highlight class="comment"><sp/>*<sp/>Status<sp/>service,<sp/>but<sp/>this<sp/>test<sp/>criteria<sp/>might<sp/>be<sp/>swapped<sp/>for<sp/>something<sp/>else<sp/>sometime.</highlight></codeline>
+<codeline lineno="42"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="pokitproducts_8h_1adb8bb3a07e937158a294997e60868297" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="pokitproducts_8cpp_1a4a5ebc5229da2cc0d2d00b43ba199bfb" kindref="member">isPokitProduct</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qbluetoothdeviceinfo" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothDeviceInfo</ref><sp/>&amp;info)</highlight></codeline>
+<codeline lineno="44"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="pokitproducts_8cpp_1a4a5ebc5229da2cc0d2d00b43ba199bfb" kindref="member">isPokitProduct</ref>(info.<ref refid="qbluetoothdeviceinfo_1serviceUuids" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">serviceUuids</ref>());</highlight></codeline>
+<codeline lineno="46"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="48"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="49"><highlight class="comment"><sp/>*<sp/>Returns<sp/>the<sp/>#PokitProduct<sp/>corresponding<sp/>the<sp/>Bluetotoh<sp/>device<sp/>\a<sp/>info.</highlight></codeline>
+<codeline lineno="50"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="51"><highlight class="comment"><sp/>*<sp/>If<sp/>\a<sp/>info<sp/>is<sp/>not<sp/>a<sp/>Pokit<sp/>device,<sp/>then<sp/>result<sp/>is<sp/>undefined.</highlight></codeline>
+<codeline lineno="52"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="53"><highlight class="comment"><sp/>*<sp/>\see<sp/>isPokitProduct</highlight></codeline>
+<codeline lineno="54"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55" refid="pokitproducts_8h_1a0227e333e3bab67294b49b8b73120943" refkind="member"><highlight class="normal"><ref refid="pokitproducts_8h_1a0c4f628f68ce0432a6db11681a41fda4" kindref="member">PokitProduct</ref><sp/><ref refid="pokitproducts_8cpp_1a3d40e46dc22d896251e8ac089c34b566" kindref="member">pokitProduct</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qbluetoothdeviceinfo" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothDeviceInfo</ref><sp/>&amp;info)</highlight></codeline>
+<codeline lineno="56"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="pokitproducts_8cpp_1a3d40e46dc22d896251e8ac089c34b566" kindref="member">pokitProduct</ref>(info.<ref refid="qbluetoothdeviceinfo_1serviceUuids" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">serviceUuids</ref>());</highlight></codeline>
+<codeline lineno="58"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="60"><highlight class="comment">///<sp/>\cond<sp/>internal</highlight></codeline>
+<codeline lineno="61"><highlight class="comment"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="62"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="63"><highlight class="comment"><sp/>*<sp/>Returns<sp/>\c<sp/>true<sp/>if<sp/>\a<sp/>serviceUuids<sp/>contains<sp/>a<sp/>known<sp/>Pokit<sp/>Status<sp/>service<sp/>UUID.</highlight></codeline>
+<codeline lineno="64"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="65"><highlight class="comment"><sp/>*<sp/>Currently,<sp/>this<sp/>is<sp/>the<sp/>only<sp/>known<sp/>way<sp/>to<sp/>detect<sp/>a<sp/>Pokit<sp/>device.</highlight></codeline>
+<codeline lineno="66"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67" refid="pokitproducts_8cpp_1ae0f44a17c5df57e31ee3742b1794fac4" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="pokitproducts_8cpp_1a4a5ebc5229da2cc0d2d00b43ba199bfb" kindref="member">isPokitProduct</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qlist" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QList&lt;QBluetoothUuid&gt;</ref><sp/>&amp;serviceUuids)</highlight></codeline>
+<codeline lineno="68"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(serviceUuids.<ref refid="qlist_1contains" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">contains</ref>(<ref refid="structStatusService_1_1ServiceUuids_1a8fa373d36e9332df30f38411ab3446de" kindref="member">StatusService::ServiceUuids::pokitMeter</ref>)<sp/>||</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>serviceUuids.<ref refid="qlist_1contains" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">contains</ref>(<ref refid="structStatusService_1_1ServiceUuids_1a0a9ca0f9377093ff60b282d4bfe3b0cf" kindref="member">StatusService::ServiceUuids::pokitPro</ref>));</highlight></codeline>
+<codeline lineno="71"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="74"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="75"><highlight class="comment"><sp/>*<sp/>Returns<sp/>\c<sp/>true<sp/>if<sp/>\a<sp/>controller<sp/>describes<sp/>a<sp/>Pokit<sp/>device.</highlight></codeline>
+<codeline lineno="76"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="77"><highlight class="comment"><sp/>*<sp/>Currently,<sp/>this<sp/>is<sp/>based<sp/>on<sp/>whether<sp/>or<sp/>not<sp/>\a<sp/>controller&apos;s<sp/>service<sp/>UUIDs<sp/>includes<sp/>a<sp/>known<sp/>Pokit</highlight></codeline>
+<codeline lineno="78"><highlight class="comment"><sp/>*<sp/>Status<sp/>service,<sp/>but<sp/>this<sp/>test<sp/>criteria<sp/>might<sp/>be<sp/>swapped<sp/>for<sp/>something<sp/>else<sp/>sometime.</highlight></codeline>
+<codeline lineno="79"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="80"><highlight class="comment"><sp/>*<sp/>\see<sp/>isPokitProduct</highlight></codeline>
+<codeline lineno="81"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82" refid="pokitproducts_8cpp_1a1e8475fe32ea6fbcbb0bd795448d43c8" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="pokitproducts_8cpp_1a4a5ebc5229da2cc0d2d00b43ba199bfb" kindref="member">isPokitProduct</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qlowenergycontroller" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QLowEnergyController</ref><sp/>&amp;controller)</highlight></codeline>
+<codeline lineno="83"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="pokitproducts_8cpp_1a4a5ebc5229da2cc0d2d00b43ba199bfb" kindref="member">isPokitProduct</ref>(controller.<ref refid="qlowenergycontroller_1services" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">services</ref>());</highlight></codeline>
+<codeline lineno="85"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="87"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="88"><highlight class="comment"><sp/>*<sp/>Returns<sp/>the<sp/>#PokitProduct<sp/>corresponding<sp/>to<sp/>the<sp/>Bluetooth<sp/>\a<sp/>serviceUuids.</highlight></codeline>
+<codeline lineno="89"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="90"><highlight class="comment"><sp/>*<sp/>Currently,<sp/>this<sp/>is<sp/>based<sp/>on<sp/>whether<sp/>or<sp/>not<sp/>\a<sp/>servceUuids<sp/>includes<sp/>a<sp/>known<sp/>Pokit</highlight></codeline>
+<codeline lineno="91"><highlight class="comment"><sp/>*<sp/>Status<sp/>service,<sp/>but<sp/>this<sp/>test<sp/>criteria<sp/>might<sp/>be<sp/>swapped<sp/>for<sp/>something<sp/>else<sp/>sometime.</highlight></codeline>
+<codeline lineno="92"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="93"><highlight class="comment"><sp/>*<sp/>\see<sp/>isPokitProduct</highlight></codeline>
+<codeline lineno="94"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95" refid="pokitproducts_8cpp_1a98f11fa57086c8c720a0d31c82169477" refkind="member"><highlight class="normal"><ref refid="pokitproducts_8h_1a0c4f628f68ce0432a6db11681a41fda4" kindref="member">PokitProduct</ref><sp/><ref refid="pokitproducts_8cpp_1a3d40e46dc22d896251e8ac089c34b566" kindref="member">pokitProduct</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qlist" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QList&lt;QBluetoothUuid&gt;</ref><sp/>&amp;serviceUuids)</highlight></codeline>
+<codeline lineno="96"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(serviceUuids.<ref refid="qlist_1contains" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">contains</ref>(<ref refid="structStatusService_1_1ServiceUuids_1a8fa373d36e9332df30f38411ab3446de" kindref="member">StatusService::ServiceUuids::pokitMeter</ref>))<sp/>{</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="pokitproducts_8h_1a0c4f628f68ce0432a6db11681a41fda4afbb216b5c2f76db3f733c4c5915b3001" kindref="member">PokitProduct::PokitMeter</ref>;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(serviceUuids.<ref refid="qlist_1contains" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">contains</ref>(<ref refid="structStatusService_1_1ServiceUuids_1a0a9ca0f9377093ff60b282d4bfe3b0cf" kindref="member">StatusService::ServiceUuids::pokitPro</ref>))<sp/>{</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="pokitproducts_8h_1a0c4f628f68ce0432a6db11681a41fda4abf3aeeb41cfa55672113dbb4a86da2ae" kindref="member">PokitProduct::PokitPro</ref>;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>qCWarning(lc).noquote()</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/><ref refid="qcoreapplication_1translate" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCoreApplication::translate</ref>(</highlight><highlight class="stringliteral">&quot;PokitProducts&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Device<sp/>is<sp/>not<sp/>a<sp/>Pokit<sp/>product&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;pokitProduct&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>qCDebug(lc).noquote()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Service<sp/>UUIDs:&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>serviceUuids;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="pokitproducts_8h_1a0c4f628f68ce0432a6db11681a41fda4afbb216b5c2f76db3f733c4c5915b3001" kindref="member">PokitProduct::PokitMeter</ref>;<sp/></highlight><highlight class="comment">//<sp/>Need<sp/>to<sp/>fallback<sp/>to<sp/>something;<sp/>Pokit<sp/>Meter<sp/>is<sp/>just<sp/>the<sp/>lowest<sp/>product.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="107"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="109"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="110"><highlight class="comment"><sp/>*<sp/>Returns<sp/>the<sp/>#PokitProduct<sp/>corresponding<sp/>to<sp/>the<sp/>Bluetooth<sp/>\a<sp/>controller.</highlight></codeline>
+<codeline lineno="111"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="112"><highlight class="comment"><sp/>*<sp/>Currently,<sp/>this<sp/>is<sp/>based<sp/>on<sp/>whether<sp/>or<sp/>not<sp/>\a<sp/>controller&apos;s<sp/>service<sp/>UUIDs<sp/>includes<sp/>a<sp/>known<sp/>Pokit</highlight></codeline>
+<codeline lineno="113"><highlight class="comment"><sp/>*<sp/>Status<sp/>service,<sp/>but<sp/>this<sp/>test<sp/>criteria<sp/>might<sp/>be<sp/>swapped<sp/>for<sp/>something<sp/>else<sp/>sometime.</highlight></codeline>
+<codeline lineno="114"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="115"><highlight class="comment"><sp/>*<sp/>\see<sp/>isPokitProduct</highlight></codeline>
+<codeline lineno="116"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117" refid="pokitproducts_8cpp_1a9eed245788cc9e68dd314dc5153912b9" refkind="member"><highlight class="normal"><ref refid="pokitproducts_8h_1a0c4f628f68ce0432a6db11681a41fda4" kindref="member">PokitProduct</ref><sp/><ref refid="pokitproducts_8cpp_1a3d40e46dc22d896251e8ac089c34b566" kindref="member">pokitProduct</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qlowenergycontroller" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QLowEnergyController</ref><sp/>&amp;controller)</highlight></codeline>
+<codeline lineno="118"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="pokitproducts_8cpp_1a3d40e46dc22d896251e8ac089c34b566" kindref="member">pokitProduct</ref>(controller.<ref refid="qlowenergycontroller_1services" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">services</ref>());</highlight></codeline>
+<codeline lineno="120"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><ref refid="qtpokit__global_8h_1af2a5fcdf5ad6da4ea4f238aad0d29d65" kindref="member">QTPOKIT_END_NAMESPACE</ref></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="124"><highlight class="comment">///<sp/>Encapsulates<sp/>convenience<sp/>functions<sp/>for<sp/>working<sp/>with<sp/>capacitance<sp/>ranges.</highlight></codeline>
+<codeline lineno="125" refid="namespaceCapacitanceRange" refkind="compound"><highlight class="comment"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceCapacitanceRange" kindref="compound">CapacitanceRange</ref><sp/>{</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="127"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="128"><highlight class="comment"><sp/>*<sp/><sp/>Returns<sp/>\a<sp/>product&apos;s<sp/>capacitance<sp/>\a<sp/>range<sp/>as<sp/>a<sp/>human-friendly<sp/>string.</highlight></codeline>
+<codeline lineno="129"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="130"><highlight class="comment"><sp/>*<sp/><sp/>\note<sp/>Since<sp/>Pokit<sp/>Meters<sp/>do<sp/>not<sp/>support<sp/>capacitance<sp/>measurement,<sp/>\a<sp/>product<sp/>should<sp/>not<sp/>be<sp/>PokitProduct::PokitMeter.</highlight></codeline>
+<codeline lineno="131"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="132"><highlight class="comment"><sp/>*<sp/><sp/>\see<sp/>PokitPro::toString(const<sp/>PokitPro::CapacitanceRange<sp/>&amp;range)</highlight></codeline>
+<codeline lineno="133"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="134" refid="namespaceCapacitanceRange_1a14203d0e3a636e5142dccade0c4b5c91" refkind="member"><highlight class="normal"><ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref><sp/><ref refid="namespaceCapacitanceRange_1a14203d0e3a636e5142dccade0c4b5c91" kindref="member">toString</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="pokitproducts_8h_1a0c4f628f68ce0432a6db11681a41fda4" kindref="member">PokitProduct</ref><sp/>product,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>quint8<sp/>range)</highlight></codeline>
+<codeline lineno="135"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(product)<sp/>{</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="pokitproducts_8h_1a0c4f628f68ce0432a6db11681a41fda4afbb216b5c2f76db3f733c4c5915b3001" kindref="member">PokitProduct::PokitMeter</ref>:</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>qCWarning(lc).noquote()</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/><ref refid="qcoreapplication_1translate" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCoreApplication::translate</ref>(</highlight><highlight class="stringliteral">&quot;PokitProducts&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Pokit<sp/>Meter<sp/>has<sp/>no<sp/>capacitance<sp/>support&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;toString&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref>();</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="pokitproducts_8h_1a0c4f628f68ce0432a6db11681a41fda4abf3aeeb41cfa55672113dbb4a86da2ae" kindref="member">PokitProduct::PokitPro</ref>:</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespacePokitPro_1a38ce307b844e4d67d94402b31461f7f4" kindref="member">PokitPro::toString</ref>(</highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal"><ref refid="namespacePokitPro_1adc67ba31bcd650dd7535939e42cec17a" kindref="member">PokitPro::CapacitanceRange</ref></highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(range));</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/>qCWarning(lc).noquote()<sp/>&lt;&lt;<sp/><ref refid="qcoreapplication_1translate" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCoreApplication::translate</ref>(</highlight><highlight class="stringliteral">&quot;CapacitanceRange&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;Unknown<sp/>PokitProduct<sp/>value:<sp/>%1&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;toString&quot;</highlight><highlight class="normal">).<ref refid="qstring_1arg-14" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">arg</ref>((</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)product);</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref>();</highlight></codeline>
+<codeline lineno="147"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="149"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="150"><highlight class="comment"><sp/>*<sp/><sp/>Returns<sp/>the<sp/>maximum<sp/>value<sp/>for<sp/>\a<sp/>product&apos;s<sp/>\a<sp/>range<sp/>in<sp/>(integer)<sp/>nanofarads,<sp/>or<sp/>the<sp/>string<sp/>&quot;Auto&quot;.</highlight></codeline>
+<codeline lineno="151"><highlight class="comment"><sp/>*<sp/><sp/>If<sp/>\a<sp/>range<sp/>is<sp/>not<sp/>a<sp/>known<sp/>valid<sp/>value,<sp/>then<sp/>an<sp/>null<sp/>QVariant<sp/>is<sp/>returned.</highlight></codeline>
+<codeline lineno="152"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="153"><highlight class="comment"><sp/>*<sp/><sp/>\note<sp/>Since<sp/>Pokit<sp/>Meters<sp/>do<sp/>not<sp/>support<sp/>capacitance<sp/>measurement,<sp/>\a<sp/>product<sp/>should<sp/>not<sp/>be<sp/>PokitProduct::PokitMeter.</highlight></codeline>
+<codeline lineno="154"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="155"><highlight class="comment"><sp/>*<sp/><sp/>\see<sp/>PokitPro::maxValue(const<sp/>PokitPro::CapacitanceRange<sp/>&amp;range)</highlight></codeline>
+<codeline lineno="156"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="157" refid="namespaceCapacitanceRange_1ae13fb76d6fab44972334e2b007be4a06" refkind="member"><highlight class="normal"><ref refid="qvariant" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QVariant</ref><sp/><ref refid="namespaceCapacitanceRange_1ae13fb76d6fab44972334e2b007be4a06" kindref="member">maxValue</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="pokitproducts_8h_1a0c4f628f68ce0432a6db11681a41fda4" kindref="member">PokitProduct</ref><sp/>product,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>quint8<sp/>range)</highlight></codeline>
+<codeline lineno="158"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(product)<sp/>{</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="pokitproducts_8h_1a0c4f628f68ce0432a6db11681a41fda4afbb216b5c2f76db3f733c4c5915b3001" kindref="member">PokitProduct::PokitMeter</ref>:</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>qCWarning(lc).noquote()</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/><ref refid="qcoreapplication_1translate" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCoreApplication::translate</ref>(</highlight><highlight class="stringliteral">&quot;PokitProducts&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Pokit<sp/>Meter<sp/>has<sp/>no<sp/>capacitance<sp/>support&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;toString&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="qvariant" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QVariant</ref>();</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="pokitproducts_8h_1a0c4f628f68ce0432a6db11681a41fda4abf3aeeb41cfa55672113dbb4a86da2ae" kindref="member">PokitProduct::PokitPro</ref>:</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespacePokitPro_1a377d083e0bc3e7972ba1476914dda1b5" kindref="member">PokitPro::maxValue</ref>(</highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal"><ref refid="namespacePokitPro_1adc67ba31bcd650dd7535939e42cec17a" kindref="member">PokitPro::CapacitanceRange</ref></highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(range));</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/>qCWarning(lc).noquote()<sp/>&lt;&lt;<sp/><ref refid="qcoreapplication_1translate" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCoreApplication::translate</ref>(</highlight><highlight class="stringliteral">&quot;CapacitanceRange&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;Unknown<sp/>PokitProduct<sp/>value:<sp/>%1&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;maxValue&quot;</highlight><highlight class="normal">).<ref refid="qstring_1arg-14" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">arg</ref>((</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)product);</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="qvariant" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QVariant</ref>();</highlight></codeline>
+<codeline lineno="170"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="174"><highlight class="comment">///<sp/>Encapsulates<sp/>convenience<sp/>functions<sp/>for<sp/>working<sp/>with<sp/>current<sp/>ranges.</highlight></codeline>
+<codeline lineno="175" refid="namespaceCurrentRange" refkind="compound"><highlight class="comment"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceCurrentRange" kindref="compound">CurrentRange</ref><sp/>{</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="177"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="178"><highlight class="comment"><sp/>*<sp/><sp/>Returns<sp/>\a<sp/>product&apos;s<sp/>current<sp/>\a<sp/>range<sp/>as<sp/>a<sp/>human-friendly<sp/>string.</highlight></codeline>
+<codeline lineno="179"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="180"><highlight class="comment"><sp/>*<sp/><sp/>\see<sp/>PokitMeter::toString(const<sp/>PokitMeter::CurrentRange<sp/>&amp;range)</highlight></codeline>
+<codeline lineno="181"><highlight class="comment"><sp/>*<sp/><sp/>\see<sp/>PokitPro::toString(const<sp/>PokitPro::CurrentRange<sp/>&amp;range)</highlight></codeline>
+<codeline lineno="182"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="183" refid="namespaceCurrentRange_1a683a82fdd02371d1d6acb4bbbd91e844" refkind="member"><highlight class="normal"><ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref><sp/><ref refid="namespaceCurrentRange_1a683a82fdd02371d1d6acb4bbbd91e844" kindref="member">toString</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="pokitproducts_8h_1a0c4f628f68ce0432a6db11681a41fda4" kindref="member">PokitProduct</ref><sp/>product,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>quint8<sp/>range)</highlight></codeline>
+<codeline lineno="184"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(product)<sp/>{</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="pokitproducts_8h_1a0c4f628f68ce0432a6db11681a41fda4afbb216b5c2f76db3f733c4c5915b3001" kindref="member">PokitProduct::PokitMeter</ref>:</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespacePokitMeter_1a3c3db7b94b6f44af24f4a23e87a3569e" kindref="member">PokitMeter::toString</ref>(</highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal"><ref refid="namespacePokitMeter_1a22b467360c970e645f6a111b34d50a92" kindref="member">PokitMeter::CurrentRange</ref></highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(range));</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="pokitproducts_8h_1a0c4f628f68ce0432a6db11681a41fda4abf3aeeb41cfa55672113dbb4a86da2ae" kindref="member">PokitProduct::PokitPro</ref>:</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespacePokitPro_1a38ce307b844e4d67d94402b31461f7f4" kindref="member">PokitPro::toString</ref>(</highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal"><ref refid="namespacePokitPro_1ac51059eb5a52fa362da01d4e2f44de21" kindref="member">PokitPro::CurrentRange</ref></highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(range));</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/>qCWarning(lc).noquote()<sp/>&lt;&lt;<sp/><ref refid="qcoreapplication_1translate" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCoreApplication::translate</ref>(</highlight><highlight class="stringliteral">&quot;CurrentRange&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;Unknown<sp/>PokitProduct<sp/>value:<sp/>%1&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;toString&quot;</highlight><highlight class="normal">).<ref refid="qstring_1arg-14" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">arg</ref>((</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)product);</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref>();</highlight></codeline>
+<codeline lineno="194"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="196"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="197"><highlight class="comment"><sp/>*<sp/><sp/>Returns<sp/>the<sp/>maximum<sp/>value<sp/>for<sp/>\a<sp/>product&apos;s<sp/>\a<sp/>range<sp/>in<sp/>(integer)<sp/>microamps,<sp/>or<sp/>the<sp/>string<sp/>&quot;Auto&quot;.</highlight></codeline>
+<codeline lineno="198"><highlight class="comment"><sp/>*<sp/><sp/>If<sp/>\a<sp/>range<sp/>is<sp/>not<sp/>a<sp/>known<sp/>valid<sp/>value,<sp/>then<sp/>an<sp/>null<sp/>QVariant<sp/>is<sp/>returned.</highlight></codeline>
+<codeline lineno="199"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="200"><highlight class="comment"><sp/>*<sp/><sp/>\see<sp/>PokitMeter::maxValue(const<sp/>PokitMeter::CurrentRange<sp/>&amp;range)</highlight></codeline>
+<codeline lineno="201"><highlight class="comment"><sp/>*<sp/><sp/>\see<sp/>PokitPro::maxValue(const<sp/>PokitPro::CurrentRange<sp/>&amp;range)</highlight></codeline>
+<codeline lineno="202"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="203" refid="namespaceCurrentRange_1a340ae103126865c13997adcde5976bd1" refkind="member"><highlight class="normal"><ref refid="qvariant" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QVariant</ref><sp/><ref refid="namespaceCurrentRange_1a340ae103126865c13997adcde5976bd1" kindref="member">maxValue</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="pokitproducts_8h_1a0c4f628f68ce0432a6db11681a41fda4" kindref="member">PokitProduct</ref><sp/>product,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>quint8<sp/>range)</highlight></codeline>
+<codeline lineno="204"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(product)<sp/>{</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="pokitproducts_8h_1a0c4f628f68ce0432a6db11681a41fda4afbb216b5c2f76db3f733c4c5915b3001" kindref="member">PokitProduct::PokitMeter</ref>:</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespacePokitMeter_1a86a4eb262b1a9fde417acdee8eea00b7" kindref="member">PokitMeter::maxValue</ref>(</highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal"><ref refid="namespacePokitMeter_1a22b467360c970e645f6a111b34d50a92" kindref="member">PokitMeter::CurrentRange</ref></highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(range));</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="pokitproducts_8h_1a0c4f628f68ce0432a6db11681a41fda4abf3aeeb41cfa55672113dbb4a86da2ae" kindref="member">PokitProduct::PokitPro</ref>:</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespacePokitPro_1a377d083e0bc3e7972ba1476914dda1b5" kindref="member">PokitPro::maxValue</ref>(</highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal"><ref refid="namespacePokitPro_1ac51059eb5a52fa362da01d4e2f44de21" kindref="member">PokitPro::CurrentRange</ref></highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(range));</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/>qCWarning(lc).noquote()<sp/>&lt;&lt;<sp/><ref refid="qcoreapplication_1translate" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCoreApplication::translate</ref>(</highlight><highlight class="stringliteral">&quot;CurrentRange&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;Unknown<sp/>PokitProduct<sp/>value:<sp/>%1&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;maxValue&quot;</highlight><highlight class="normal">).<ref refid="qstring_1arg-14" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">arg</ref>((</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)product);</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="qvariant" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QVariant</ref>();</highlight></codeline>
+<codeline lineno="214"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"></highlight></codeline>
+<codeline lineno="216"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="218"><highlight class="comment">///<sp/>Encapsulates<sp/>convenience<sp/>functions<sp/>for<sp/>working<sp/>with<sp/>resistance<sp/>ranges.</highlight></codeline>
+<codeline lineno="219" refid="namespaceResistanceRange" refkind="compound"><highlight class="comment"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceResistanceRange" kindref="compound">ResistanceRange</ref><sp/>{</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="221"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="222"><highlight class="comment"><sp/>*<sp/><sp/>Returns<sp/>\a<sp/>product&apos;s<sp/>current<sp/>\a<sp/>range<sp/>as<sp/>a<sp/>human-friendly<sp/>string.</highlight></codeline>
+<codeline lineno="223"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="224"><highlight class="comment"><sp/>*<sp/><sp/>\see<sp/>PokitMeter::toString(const<sp/>PokitMeter::ResistanceRange<sp/>&amp;range)</highlight></codeline>
+<codeline lineno="225"><highlight class="comment"><sp/>*<sp/><sp/>\see<sp/>PokitPro::toString(const<sp/>PokitPro::ResistanceRange<sp/>&amp;range)</highlight></codeline>
+<codeline lineno="226"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="227" refid="namespaceResistanceRange_1a6f542c3fe27b9c58c03edc92ceab40ef" refkind="member"><highlight class="normal"><ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref><sp/><ref refid="namespaceResistanceRange_1a6f542c3fe27b9c58c03edc92ceab40ef" kindref="member">toString</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="pokitproducts_8h_1a0c4f628f68ce0432a6db11681a41fda4" kindref="member">PokitProduct</ref><sp/>product,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>quint8<sp/>range)</highlight></codeline>
+<codeline lineno="228"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(product)<sp/>{</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="pokitproducts_8h_1a0c4f628f68ce0432a6db11681a41fda4afbb216b5c2f76db3f733c4c5915b3001" kindref="member">PokitProduct::PokitMeter</ref>:</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespacePokitMeter_1a3c3db7b94b6f44af24f4a23e87a3569e" kindref="member">PokitMeter::toString</ref>(</highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal"><ref refid="namespacePokitMeter_1aacf3005969c4417f7eaeeeaf83d5e047" kindref="member">PokitMeter::ResistanceRange</ref></highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(range));</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="pokitproducts_8h_1a0c4f628f68ce0432a6db11681a41fda4abf3aeeb41cfa55672113dbb4a86da2ae" kindref="member">PokitProduct::PokitPro</ref>:</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespacePokitPro_1a38ce307b844e4d67d94402b31461f7f4" kindref="member">PokitPro::toString</ref>(</highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal"><ref refid="namespacePokitPro_1ac6fedf42d1268613f25da2b7c82832a7" kindref="member">PokitPro::ResistanceRange</ref></highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(range));</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/>qCWarning(lc).noquote()<sp/>&lt;&lt;<sp/><ref refid="qcoreapplication_1translate" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCoreApplication::translate</ref>(</highlight><highlight class="stringliteral">&quot;ResistanceRange&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;Unknown<sp/>PokitProduct<sp/>value:<sp/>%1&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;toString&quot;</highlight><highlight class="normal">).<ref refid="qstring_1arg-14" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">arg</ref>((</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)product);</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref>();</highlight></codeline>
+<codeline lineno="238"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="240"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="241"><highlight class="comment"><sp/>*<sp/><sp/>Returns<sp/>the<sp/>maximum<sp/>value<sp/>for<sp/>\a<sp/>product&apos;s<sp/>\a<sp/>range<sp/>in<sp/>(integer)<sp/>ohms,<sp/>or<sp/>the<sp/>string<sp/>&quot;Auto&quot;.</highlight></codeline>
+<codeline lineno="242"><highlight class="comment"><sp/>*<sp/><sp/>If<sp/>\a<sp/>range<sp/>is<sp/>not<sp/>a<sp/>known<sp/>valid<sp/>value,<sp/>then<sp/>an<sp/>null<sp/>QVariant<sp/>is<sp/>returned.</highlight></codeline>
+<codeline lineno="243"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="244"><highlight class="comment"><sp/>*<sp/><sp/>\see<sp/>PokitMeter::maxValue(const<sp/>PokitMeter::ResistanceRange<sp/>&amp;range)</highlight></codeline>
+<codeline lineno="245"><highlight class="comment"><sp/>*<sp/><sp/>\see<sp/>PokitPro::maxValue(const<sp/>PokitPro::ResistanceRange<sp/>&amp;range)</highlight></codeline>
+<codeline lineno="246"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="247" refid="namespaceResistanceRange_1a30fba7f1c73e7a8b9b3c45aed8b5b3e1" refkind="member"><highlight class="normal"><ref refid="qvariant" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QVariant</ref><sp/><ref refid="namespaceResistanceRange_1a30fba7f1c73e7a8b9b3c45aed8b5b3e1" kindref="member">maxValue</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="pokitproducts_8h_1a0c4f628f68ce0432a6db11681a41fda4" kindref="member">PokitProduct</ref><sp/>product,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>quint8<sp/>range)</highlight></codeline>
+<codeline lineno="248"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(product)<sp/>{</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="pokitproducts_8h_1a0c4f628f68ce0432a6db11681a41fda4afbb216b5c2f76db3f733c4c5915b3001" kindref="member">PokitProduct::PokitMeter</ref>:</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespacePokitMeter_1a86a4eb262b1a9fde417acdee8eea00b7" kindref="member">PokitMeter::maxValue</ref>(</highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal"><ref refid="namespacePokitMeter_1aacf3005969c4417f7eaeeeaf83d5e047" kindref="member">PokitMeter::ResistanceRange</ref></highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(range));</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="pokitproducts_8h_1a0c4f628f68ce0432a6db11681a41fda4abf3aeeb41cfa55672113dbb4a86da2ae" kindref="member">PokitProduct::PokitPro</ref>:</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespacePokitPro_1a377d083e0bc3e7972ba1476914dda1b5" kindref="member">PokitPro::maxValue</ref>(</highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal"><ref refid="namespacePokitPro_1ac6fedf42d1268613f25da2b7c82832a7" kindref="member">PokitPro::ResistanceRange</ref></highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(range));</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/>qCWarning(lc).noquote()<sp/>&lt;&lt;<sp/><ref refid="qcoreapplication_1translate" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCoreApplication::translate</ref>(</highlight><highlight class="stringliteral">&quot;ResistanceRange&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;Unknown<sp/>PokitProduct<sp/>value:<sp/>%1&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;maxValue&quot;</highlight><highlight class="normal">).<ref refid="qstring_1arg-14" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">arg</ref>((</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)product);</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="qvariant" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QVariant</ref>();</highlight></codeline>
+<codeline lineno="258"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"></highlight></codeline>
+<codeline lineno="260"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="262"><highlight class="comment">///<sp/>Encapsulates<sp/>convenience<sp/>functions<sp/>for<sp/>working<sp/>with<sp/>voltage<sp/>ranges.</highlight></codeline>
+<codeline lineno="263" refid="namespaceVoltageRange" refkind="compound"><highlight class="comment"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceVoltageRange" kindref="compound">VoltageRange</ref><sp/>{</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="265"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="266"><highlight class="comment"><sp/>*<sp/><sp/>Returns<sp/>\a<sp/>product&apos;s<sp/>current<sp/>\a<sp/>range<sp/>as<sp/>a<sp/>human-friendly<sp/>string.</highlight></codeline>
+<codeline lineno="267"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="268"><highlight class="comment"><sp/>*<sp/><sp/>\see<sp/>PokitMeter::toString(const<sp/>PokitMeter::VoltageRange<sp/>&amp;range)</highlight></codeline>
+<codeline lineno="269"><highlight class="comment"><sp/>*<sp/><sp/>\see<sp/>PokitPro::toString(const<sp/>PokitPro::VoltageRange<sp/>&amp;range)</highlight></codeline>
+<codeline lineno="270"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="271" refid="namespaceVoltageRange_1a843ef4bfc3538988c695fa643adcd4d0" refkind="member"><highlight class="normal"><ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref><sp/><ref refid="namespaceVoltageRange_1a843ef4bfc3538988c695fa643adcd4d0" kindref="member">toString</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="pokitproducts_8h_1a0c4f628f68ce0432a6db11681a41fda4" kindref="member">PokitProduct</ref><sp/>product,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>quint8<sp/>range)</highlight></codeline>
+<codeline lineno="272"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(product)<sp/>{</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="pokitproducts_8h_1a0c4f628f68ce0432a6db11681a41fda4afbb216b5c2f76db3f733c4c5915b3001" kindref="member">PokitProduct::PokitMeter</ref>:</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespacePokitMeter_1a3c3db7b94b6f44af24f4a23e87a3569e" kindref="member">PokitMeter::toString</ref>(</highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal"><ref refid="namespacePokitMeter_1ab9abf7a50f13c9cfb1e1b4c49c16dfee" kindref="member">PokitMeter::VoltageRange</ref></highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(range));</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="pokitproducts_8h_1a0c4f628f68ce0432a6db11681a41fda4abf3aeeb41cfa55672113dbb4a86da2ae" kindref="member">PokitProduct::PokitPro</ref>:</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespacePokitPro_1a38ce307b844e4d67d94402b31461f7f4" kindref="member">PokitPro::toString</ref>(</highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal"><ref refid="namespacePokitPro_1a68ddba45fec73a3391f241f2da38e78a" kindref="member">PokitPro::VoltageRange</ref></highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(range));</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/><sp/><sp/>qCWarning(lc).noquote()<sp/>&lt;&lt;<sp/><ref refid="qcoreapplication_1translate" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCoreApplication::translate</ref>(</highlight><highlight class="stringliteral">&quot;VoltageRange&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;Unknown<sp/>PokitProduct<sp/>value:<sp/>%1&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;toString&quot;</highlight><highlight class="normal">).<ref refid="qstring_1arg-14" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">arg</ref>((</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)product);</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref>();</highlight></codeline>
+<codeline lineno="282"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="284"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="285"><highlight class="comment"><sp/>*<sp/><sp/>Returns<sp/>the<sp/>maximum<sp/>value<sp/>for<sp/>\a<sp/>product&apos;s<sp/>\a<sp/>range<sp/>in<sp/>(integer)<sp/>millivolts,<sp/>or<sp/>the<sp/>string<sp/>&quot;Auto&quot;.</highlight></codeline>
+<codeline lineno="286"><highlight class="comment"><sp/>*<sp/><sp/>If<sp/>\a<sp/>range<sp/>is<sp/>not<sp/>a<sp/>known<sp/>valid<sp/>value,<sp/>then<sp/>an<sp/>null<sp/>QVariant<sp/>is<sp/>returned.</highlight></codeline>
+<codeline lineno="287"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="288"><highlight class="comment"><sp/>*<sp/><sp/>\see<sp/>PokitMeter::maxValue(const<sp/>PokitMeter::VoltageRange<sp/>&amp;range)</highlight></codeline>
+<codeline lineno="289"><highlight class="comment"><sp/>*<sp/><sp/>\see<sp/>PokitPro::maxValue(const<sp/>PokitPro::VoltageRange<sp/>&amp;range)</highlight></codeline>
+<codeline lineno="290"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="291" refid="namespaceVoltageRange_1adc3a8126ae8dcec8010fc8b037fab885" refkind="member"><highlight class="normal"><ref refid="qvariant" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QVariant</ref><sp/><ref refid="namespaceVoltageRange_1adc3a8126ae8dcec8010fc8b037fab885" kindref="member">maxValue</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="pokitproducts_8h_1a0c4f628f68ce0432a6db11681a41fda4" kindref="member">PokitProduct</ref><sp/>product,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>quint8<sp/>range)</highlight></codeline>
+<codeline lineno="292"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(product)<sp/>{</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="pokitproducts_8h_1a0c4f628f68ce0432a6db11681a41fda4afbb216b5c2f76db3f733c4c5915b3001" kindref="member">PokitProduct::PokitMeter</ref>:</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespacePokitMeter_1a86a4eb262b1a9fde417acdee8eea00b7" kindref="member">PokitMeter::maxValue</ref>(</highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal"><ref refid="namespacePokitMeter_1ab9abf7a50f13c9cfb1e1b4c49c16dfee" kindref="member">PokitMeter::VoltageRange</ref></highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(range));</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="pokitproducts_8h_1a0c4f628f68ce0432a6db11681a41fda4abf3aeeb41cfa55672113dbb4a86da2ae" kindref="member">PokitProduct::PokitPro</ref>:</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespacePokitPro_1a377d083e0bc3e7972ba1476914dda1b5" kindref="member">PokitPro::maxValue</ref>(</highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal"><ref refid="namespacePokitPro_1a68ddba45fec73a3391f241f2da38e78a" kindref="member">PokitPro::VoltageRange</ref></highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(range));</highlight></codeline>
+<codeline lineno="298"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="299"><highlight class="normal"><sp/><sp/><sp/><sp/>qCWarning(lc).noquote()<sp/>&lt;&lt;<sp/><ref refid="qcoreapplication_1translate" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCoreApplication::translate</ref>(</highlight><highlight class="stringliteral">&quot;VoltageRange&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;Unknown<sp/>PokitProduct<sp/>value:<sp/>%1&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;maxValue&quot;</highlight><highlight class="normal">).<ref refid="qstring_1arg-14" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">arg</ref>((</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)product);</highlight></codeline>
+<codeline lineno="301"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="qvariant" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QVariant</ref>();</highlight></codeline>
+<codeline lineno="302"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="303"><highlight class="normal"></highlight></codeline>
+<codeline lineno="304"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="305"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="306"><highlight class="comment">///<sp/>\endcond</highlight></codeline>
+    </programlisting>
+    <location file="/home/paul/src/dokit/src/lib/pokitproducts.cpp"/>
+  </compounddef>
+</doxygen>

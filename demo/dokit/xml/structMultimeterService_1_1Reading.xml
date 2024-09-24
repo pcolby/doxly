@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.0" xml:lang="en-US">
+  <compounddef id="structMultimeterService_1_1Reading" kind="struct" language="C++" prot="public">
+    <compoundname>MultimeterService::Reading</compoundname>
+    <includes refid="multimeterservice_8h" local="no">multimeterservice.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structMultimeterService_1_1Reading_1a05031630f11f9e6810176211dfabaf18" prot="public" static="no" mutable="no">
+        <type><ref refid="classMultimeterService_1a43c735e6c80c4ada9bc8640d06fbe286" kindref="member">MeterStatus</ref></type>
+        <definition>MeterStatus MultimeterService::Reading::status</definition>
+        <argsstring></argsstring>
+        <name>status</name>
+        <qualifiedname>MultimeterService::Reading::status</qualifiedname>
+        <briefdescription>
+<para>Current multimeter status. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/multimeterservice.h" line="79" column="21" bodyfile="/home/paul/src/dokit/include/qtpokit/multimeterservice.h" bodystart="79" bodyend="-1"/>
+        <referencedby refid="classMeterCommand_1a551a1c3d1c6f10384b5ccf264a640eff" compoundref="metercommand_8cpp" startline="204" endline="288">MeterCommand::outputReading</referencedby>
+        <referencedby refid="classMultimeterServicePrivate_1ac9594dce487207bafd123e1093f399db" compoundref="multimeterservice_8cpp" startline="307" endline="324">MultimeterServicePrivate::parseReading</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structMultimeterService_1_1Reading_1a5b6599355c8ae7e67d57da122256521a" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MultimeterService::Reading::value</definition>
+        <argsstring></argsstring>
+        <name>value</name>
+        <qualifiedname>MultimeterService::Reading::value</qualifiedname>
+        <briefdescription>
+<para>Last acquired value. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/multimeterservice.h" line="80" column="15" bodyfile="/home/paul/src/dokit/include/qtpokit/multimeterservice.h" bodystart="80" bodyend="-1"/>
+        <referencedby refid="classMeterCommand_1a551a1c3d1c6f10384b5ccf264a640eff" compoundref="metercommand_8cpp" startline="204" endline="288">MeterCommand::outputReading</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structMultimeterService_1_1Reading_1a431d32df3541b91edf0c713af9c2cf00" prot="public" static="no" mutable="no">
+        <type><ref refid="classMultimeterService_1a51f66d0b81dace3115c5c68bc931eaea" kindref="member">Mode</ref></type>
+        <definition>Mode MultimeterService::Reading::mode</definition>
+        <argsstring></argsstring>
+        <name>mode</name>
+        <qualifiedname>MultimeterService::Reading::mode</qualifiedname>
+        <briefdescription>
+<para>Current operation mode. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/multimeterservice.h" line="81" column="14" bodyfile="/home/paul/src/dokit/include/qtpokit/multimeterservice.h" bodystart="81" bodyend="-1"/>
+        <referencedby refid="classMeterCommand_1a551a1c3d1c6f10384b5ccf264a640eff" compoundref="metercommand_8cpp" startline="204" endline="288">MeterCommand::outputReading</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structMultimeterService_1_1Reading_1af139db432d92fb885d426e3b30a4a482" prot="public" static="no" mutable="no">
+        <type>quint8</type>
+        <definition>quint8 MultimeterService::Reading::range</definition>
+        <argsstring></argsstring>
+        <name>range</name>
+        <qualifiedname>MultimeterService::Reading::range</qualifiedname>
+        <briefdescription>
+<para>Current range. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/multimeterservice.h" line="82" column="16" bodyfile="/home/paul/src/dokit/include/qtpokit/multimeterservice.h" bodystart="82" bodyend="-1"/>
+        <referencedby refid="classMeterCommand_1a551a1c3d1c6f10384b5ccf264a640eff" compoundref="metercommand_8cpp" startline="204" endline="288">MeterCommand::outputReading</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Attributes included in the <computeroutput><ref refid="structMultimeterService_1_1Reading" kindref="compound">Reading</ref></computeroutput> characterstic. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/paul/src/dokit/include/qtpokit/multimeterservice.h" line="78" column="5" bodyfile="/home/paul/src/dokit/include/qtpokit/multimeterservice.h" bodystart="78" bodyend="83"/>
+    <listofallmembers>
+      <member refid="structMultimeterService_1_1Reading_1a431d32df3541b91edf0c713af9c2cf00" prot="public" virt="non-virtual"><scope>MultimeterService::Reading</scope><name>mode</name></member>
+      <member refid="structMultimeterService_1_1Reading_1af139db432d92fb885d426e3b30a4a482" prot="public" virt="non-virtual"><scope>MultimeterService::Reading</scope><name>range</name></member>
+      <member refid="structMultimeterService_1_1Reading_1a05031630f11f9e6810176211dfabaf18" prot="public" virt="non-virtual"><scope>MultimeterService::Reading</scope><name>status</name></member>
+      <member refid="structMultimeterService_1_1Reading_1a5b6599355c8ae7e67d57da122256521a" prot="public" virt="non-virtual"><scope>MultimeterService::Reading</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

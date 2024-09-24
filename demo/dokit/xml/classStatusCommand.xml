@@ -1,0 +1,623 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.0" xml:lang="en-US">
+  <compounddef id="classStatusCommand" kind="class" language="C++" prot="public">
+    <compoundname>StatusCommand</compoundname>
+    <basecompoundref refid="classDeviceCommand" prot="public" virt="non-virtual">DeviceCommand</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classStatusCommand_1aa51178e795514589b2c75719527ee1b8" prot="private" static="no" mutable="no">
+        <type><ref refid="classStatusService" kindref="compound">StatusService</ref> *</type>
+        <definition>StatusService* StatusCommand::service</definition>
+        <argsstring></argsstring>
+        <name>service</name>
+        <qualifiedname>StatusCommand::service</qualifiedname>
+        <initializer>{ nullptr }</initializer>
+        <briefdescription>
+<para>Bluetooth service this command interracts with. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/statuscommand.h" line="28" column="5" bodyfile="/home/paul/src/dokit/src/cli/statuscommand.h" bodystart="28" bodyend="28"/>
+        <referencedby refid="classStatusCommand_1abeff2e017b4c34cfab1c55addc776a09" compoundref="statuscommand_8cpp" startline="59" endline="67">getService</referencedby>
+        <referencedby refid="classStatusCommand_1ae2349e3d64b1b4db9b80465c0b7dadb7" compoundref="statuscommand_8cpp" startline="89" endline="195">outputDeviceStatus</referencedby>
+        <referencedby refid="classStatusCommand_1af275e3a02032915dd27e0c0e041ff6c1" compoundref="statuscommand_8cpp" startline="74" endline="84">serviceDetailsDiscovered</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="classStatusCommand_1a57f2c364f598964371edc3e2afb50184" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class TestStatusCommand</definition>
+        <argsstring></argsstring>
+        <name>TestStatusCommand</name>
+        <qualifiedname>StatusCommand::TestStatusCommand</qualifiedname>
+        <param>
+          <type>TestStatusCommand</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/statuscommand.h" line="32" column="18" bodyfile="/home/paul/src/dokit/src/cli/statuscommand.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classStatusCommand_1aba377e4a595c15c989e6885b94ef3af0" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>StatusCommand::StatusCommand</definition>
+        <argsstring>(QObject *const parent=nullptr)</argsstring>
+        <name>StatusCommand</name>
+        <qualifiedname>StatusCommand::StatusCommand</qualifiedname>
+        <param>
+          <type><ref refid="qobject" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QObject</ref> *const</type>
+          <declname>parent</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+<para>Construct a new <ref refid="classStatusCommand" kindref="compound">StatusCommand</ref> object with <emphasis>parent</emphasis>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/statuscommand.h" line="13" column="14" bodyfile="/home/paul/src/dokit/src/cli/statuscommand.cpp" bodystart="22" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classStatusCommand_1a0ffa53750dce36026cfd38cb4bfc2170" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="qstringlist" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QStringList</ref></type>
+        <definition>QStringList StatusCommand::requiredOptions</definition>
+        <argsstring>(const QCommandLineParser &amp;parser) const override</argsstring>
+        <name>requiredOptions</name>
+        <qualifiedname>StatusCommand::requiredOptions</qualifiedname>
+        <reimplements refid="classAbstractCommand_1afd6f41cfc925751415cfa45e3b2d0b4a">requiredOptions</reimplements>
+        <param>
+          <type>const <ref refid="qcommandlineparser" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCommandLineParser</ref> &amp;</type>
+          <declname>parser</declname>
+        </param>
+        <briefdescription>
+<para>Returns a list of CLI option names required by this command. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The main console appication may use this list to output an eror (and exit) if any of the returned names are not found in the parsed CLI options.</para>
+<para>The (already parsed) <emphasis>parser</emphasis> may be used adjust the returned required options depending on the value of other options. For example, the <computeroutput>logger</computeroutput> command only requires the <computeroutput>--mode</computeroutput> option if the <computeroutput>--command</computeroutput> option is <computeroutput>start</computeroutput>.</para>
+<para>This base implementation simply returns an empty list. Derived classes should override this function to include any required options. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/statuscommand.h" line="15" column="17" bodyfile="/home/paul/src/dokit/src/cli/statuscommand.cpp" bodystart="27" bodyend="31"/>
+        <references refid="classAbstractCommand_1afd6f41cfc925751415cfa45e3b2d0b4a" compoundref="abstractcommand_8cpp" startline="56" endline="60">AbstractCommand::requiredOptions</references>
+      </memberdef>
+      <memberdef kind="function" id="classStatusCommand_1a0b573e31edcf2aabde2b12d185c62121" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="qstringlist" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QStringList</ref></type>
+        <definition>QStringList StatusCommand::supportedOptions</definition>
+        <argsstring>(const QCommandLineParser &amp;parser) const override</argsstring>
+        <name>supportedOptions</name>
+        <qualifiedname>StatusCommand::supportedOptions</qualifiedname>
+        <reimplements refid="classAbstractCommand_1a1ceca3c5b4cb24277dd4d4054f45db18">supportedOptions</reimplements>
+        <param>
+          <type>const <ref refid="qcommandlineparser" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCommandLineParser</ref> &amp;</type>
+          <declname>parser</declname>
+        </param>
+        <briefdescription>
+<para>Returns a list of CLI option names supported by this command. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The main console appication may use this list to output a warning for any parsed CLI options not included in the returned list.</para>
+<para>The (already parsed) <emphasis>parser</emphasis> may be used adjust the returned supported options depending on the value of other options. For example, the <computeroutput>logger</computeroutput> command only supported the <computeroutput>--timestamp</computeroutput> option if the <computeroutput>--command</computeroutput> option is <computeroutput>start</computeroutput>.</para>
+<para>This base implementation simply returns <ref refid="classStatusCommand_1a0ffa53750dce36026cfd38cb4bfc2170" kindref="member">requiredOptions()</ref>. Derived classes should override this function to include optional options, such as:</para>
+<para><programlisting><codeline><highlight class="normal"><ref refid="qstringlist" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QStringList</ref><sp/>Derived::supportedOptions(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qcommandlineparser" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCommandLineParser</ref><sp/>&amp;parser)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qstringlist" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QStringList</ref><sp/>list<sp/>=<sp/><ref refid="classAbstractCommand_1a1ceca3c5b4cb24277dd4d4054f45db18" kindref="member">AbstractCommand::supportedOptions</ref>(parser)<sp/>+<sp/><ref refid="qstringlist" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QStringList</ref>{<sp/>...<sp/>};</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>list.<ref refid="qstringlist_1sort" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">sort</ref>();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>list.<ref refid="qstringlist_1removeDuplicates" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">removeDuplicates</ref>();<sp/></highlight><highlight class="comment">//<sp/>Optional,<sp/>recommended.</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>list;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/statuscommand.h" line="16" column="17" bodyfile="/home/paul/src/dokit/src/cli/statuscommand.cpp" bodystart="33" bodyend="36"/>
+        <references refid="classAbstractCommand_1a1ceca3c5b4cb24277dd4d4054f45db18" compoundref="abstractcommand_8cpp" startline="83" endline="91">AbstractCommand::supportedOptions</references>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-slot">
+      <memberdef kind="slot" id="classStatusCommand_1a951404b4913fd4b341899d654a2abe72" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="qstringlist" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QStringList</ref></type>
+        <definition>QStringList StatusCommand::processOptions</definition>
+        <argsstring>(const QCommandLineParser &amp;parser) override</argsstring>
+        <name>processOptions</name>
+        <qualifiedname>StatusCommand::processOptions</qualifiedname>
+        <param>
+          <type>const <ref refid="qcommandlineparser" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCommandLineParser</ref> &amp;</type>
+          <declname>parser</declname>
+        </param>
+        <briefdescription>
+<para>Processes the relevant options from the command line <emphasis>parser</emphasis>.    </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This implementation extends <ref refid="classAbstractCommand_1ad827a18a24776efeb955739459d48f7d" kindref="member">DeviceCommand::processOptions</ref> to process additional CLI options supported (or required) by this command. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/statuscommand.h" line="19" column="17" bodyfile="/home/paul/src/dokit/src/cli/statuscommand.cpp" bodystart="44" bodyend="52"/>
+        <references refid="qlist_1isEmpty">QList::isEmpty</references>
+        <references refid="classAbstractCommand_1ad827a18a24776efeb955739459d48f7d" compoundref="abstractcommand_8cpp" startline="265" endline="320">AbstractCommand::processOptions</references>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classStatusCommand_1abeff2e017b4c34cfab1c55addc776a09" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classAbstractPokitService" kindref="compound">AbstractPokitService</ref> *</type>
+        <definition>AbstractPokitService * StatusCommand::getService</definition>
+        <argsstring>() override</argsstring>
+        <name>getService</name>
+        <qualifiedname>StatusCommand::getService</qualifiedname>
+        <reimplements refid="classDeviceCommand_1af7a724ae722462b6fa15dc6269aadd15">getService</reimplements>
+        <briefdescription>
+<para>Returns a Pokit service object for the derived command class.    </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This override returns a pointer to a <ref refid="classStatusService" kindref="compound">StatusService</ref> object. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/statuscommand.h" line="22" column="27" bodyfile="/home/paul/src/dokit/src/cli/statuscommand.cpp" bodystart="59" bodyend="67"/>
+        <references refid="classDeviceCommand_1a2bbf2dc9bb0ba85a2bf29263746c7b57" compoundref="devicecommand_8h" startline="26" endline="26">DeviceCommand::device</references>
+        <references refid="classStatusCommand_1aa51178e795514589b2c75719527ee1b8" compoundref="statuscommand_8h" startline="28" endline="28">service</references>
+        <references refid="classPokitDevice_1adaaaedcb434b3dda9608ad58192e9142" compoundref="pokitdevice_8cpp" startline="178" endline="181">PokitDevice::status</references>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-slot">
+      <memberdef kind="slot" id="classStatusCommand_1af275e3a02032915dd27e0c0e041ff6c1" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void StatusCommand::serviceDetailsDiscovered</definition>
+        <argsstring>() override</argsstring>
+        <name>serviceDetailsDiscovered</name>
+        <qualifiedname>StatusCommand::serviceDetailsDiscovered</qualifiedname>
+        <briefdescription>
+<para>Handles service detail discovery events.    </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This override fetches the current device&apos;s status, and outputs it in the selected format. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/statuscommand.h" line="25" column="10" bodyfile="/home/paul/src/dokit/src/cli/statuscommand.cpp" bodystart="74" bodyend="84"/>
+        <references refid="classStatusService_1a008d41a33eedd90e68ccf7a94ed5b65f" compoundref="statusservice_8cpp" startline="252" endline="260">StatusService::deviceCharacteristics</references>
+        <references refid="qcoreapplication_1exit">QCoreApplication::exit</references>
+        <references refid="structStatusService_1_1DeviceCharacteristics_1afdc814d092204ef6f0628253298ae319" compoundref="statusservice_8h" startline="63">StatusService::DeviceCharacteristics::firmwareVersion</references>
+        <references refid="qversionnumber_1isNull">QVersionNumber::isNull</references>
+        <references refid="classStatusCommand_1ae2349e3d64b1b4db9b80465c0b7dadb7" compoundref="statuscommand_8cpp" startline="89" endline="195">outputDeviceStatus</references>
+        <references refid="classStatusCommand_1aa51178e795514589b2c75719527ee1b8" compoundref="statuscommand_8h" startline="28" endline="28">service</references>
+        <references refid="classDeviceCommand_1a906fd97d832be0e8d2ba1c917fba41db" compoundref="devicecommand_8cpp" startline="331" endline="334">DeviceCommand::serviceDetailsDiscovered</references>
+        <references refid="qobject_1tr">QObject::tr</references>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classStatusCommand_1ae2349e3d64b1b4db9b80465c0b7dadb7" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void StatusCommand::outputDeviceStatus</definition>
+        <argsstring>(const StatusService::DeviceCharacteristics &amp;chrs)</argsstring>
+        <name>outputDeviceStatus</name>
+        <qualifiedname>StatusCommand::outputDeviceStatus</qualifiedname>
+        <param>
+          <type>const <ref refid="structStatusService_1_1DeviceCharacteristics" kindref="compound">StatusService::DeviceCharacteristics</ref> &amp;</type>
+          <declname>chrs</declname>
+        </param>
+        <briefdescription>
+<para>Outputs the Pokit device&apos;s details, including <emphasis>chrs</emphasis>, in the selected format. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/statuscommand.h" line="30" column="10" bodyfile="/home/paul/src/dokit/src/cli/statuscommand.cpp" bodystart="89" bodyend="195"/>
+        <references refid="qstring_1arg-14">QString::arg</references>
+        <references refid="structStatusService_1_1Status_1af2a1fab33ca1e643988bc9976a44940d" compoundref="statusservice_8h" startline="116">StatusService::Status::batteryStatus</references>
+        <references refid="structStatusService_1_1Status_1a34d5f71da1e356a5f8da381f4b715b46" compoundref="statusservice_8h" startline="115">StatusService::Status::batteryVoltage</references>
+        <references refid="classStatusService_1a658e493f2942afd66263a989e99ed633" compoundref="statusservice_8cpp" startline="492" endline="497">StatusService::buttonPress</references>
+        <references refid="structStatusService_1_1DeviceCharacteristics_1ac32620649e1f8a2cf4cc6e25a7859656" compoundref="statusservice_8h" startline="69">StatusService::DeviceCharacteristics::capabilityMask</references>
+        <references refid="structStatusService_1_1Status_1a4c4c144b60207c7e092b83eaf33c3e51" compoundref="statusservice_8h" startline="118">StatusService::Status::chargingStatus</references>
+        <references refid="classAbstractCommand_1aa2dadc72289ff2b0a02c1fb435f8a4dcab20daea8bfacec3891fcf5b7be4adca0">AbstractCommand::Csv</references>
+        <references refid="classDeviceCommand_1a2bbf2dc9bb0ba85a2bf29263746c7b57" compoundref="devicecommand_8h" startline="26" endline="26">DeviceCommand::device</references>
+        <references refid="classStatusService_1a113a7051f70e642d2c1f67124c1f12c7" compoundref="statusservice_8cpp" startline="325" endline="331">StatusService::deviceName</references>
+        <references refid="structStatusService_1_1Status_1aa5d6fe4e5286126d7604c6ceb4da6d11" compoundref="statusservice_8h" startline="114">StatusService::Status::deviceStatus</references>
+        <references refid="classDeviceCommand_1ae619166395b5651f1316fd5336d9fa2c" compoundref="devicecommand_8cpp" startline="42" endline="49">DeviceCommand::disconnect</references>
+        <references refid="classAbstractCommand_1af85c842568f8a3a893e336e449ef7813" compoundref="abstractcommand_8cpp" startline="105" endline="113">AbstractCommand::escapeCsvField</references>
+        <references refid="structStatusService_1_1DeviceCharacteristics_1afdc814d092204ef6f0628253298ae319" compoundref="statusservice_8h" startline="63">StatusService::DeviceCharacteristics::firmwareVersion</references>
+        <references refid="classAbstractCommand_1a881d85cd96b6fcc0652b916c366dda7b" compoundref="abstractcommand_8h" startline="43" endline="43">AbstractCommand::format</references>
+        <references refid="qstring_1fromLatin1-1">QString::fromLatin1</references>
+        <references refid="qstring_1isNull">QString::isNull</references>
+        <references refid="classAbstractCommand_1aa2dadc72289ff2b0a02c1fb435f8a4dcaeed8d85b888a6c015834240885ee6333">AbstractCommand::Json</references>
+        <references refid="structStatusService_1_1DeviceCharacteristics_1ac3e0c7d70d55307a49907db75e742348" compoundref="statusservice_8h" startline="70">StatusService::DeviceCharacteristics::macAddress</references>
+        <references refid="qversionnumber_1majorVersion">QVersionNumber::majorVersion</references>
+        <references refid="structStatusService_1_1DeviceCharacteristics_1a0b7a8478916ea9229ca98c9d78c96ee3" compoundref="statusservice_8h" startline="65">StatusService::DeviceCharacteristics::maximumCurrent</references>
+        <references refid="structStatusService_1_1DeviceCharacteristics_1ae9154c26eb128b26c0fccb9f653f1420" compoundref="statusservice_8h" startline="66">StatusService::DeviceCharacteristics::maximumResistance</references>
+        <references refid="structStatusService_1_1DeviceCharacteristics_1a20ea5dac3e01c2c333a1c9a77ef02d3c" compoundref="statusservice_8h" startline="67">StatusService::DeviceCharacteristics::maximumSamplingRate</references>
+        <references refid="structStatusService_1_1DeviceCharacteristics_1aa254a7737f072c29aeb21b29140c738f" compoundref="statusservice_8h" startline="64">StatusService::DeviceCharacteristics::maximumVoltage</references>
+        <references refid="qversionnumber_1minorVersion">QVersionNumber::minorVersion</references>
+        <references refid="structStatusService_1_1DeviceCharacteristics_1a4ddb1ebddb04e6a7b445cff73379e932" compoundref="statusservice_8h" startline="68">StatusService::DeviceCharacteristics::samplingBufferSize</references>
+        <references refid="classStatusCommand_1aa51178e795514589b2c75719527ee1b8" compoundref="statuscommand_8h" startline="28" endline="28">service</references>
+        <references refid="classStatusService_1ae7be4aae021ae50faef48ed2812eb6a7" compoundref="statusservice_8cpp" startline="280" endline="288">StatusService::status</references>
+        <references refid="structStatusService_1_1Status_1afd171243d9bcdfb3c2e354ffb28b3f88" compoundref="statusservice_8h" startline="117">StatusService::Status::switchPosition</references>
+        <references refid="classAbstractCommand_1aa2dadc72289ff2b0a02c1fb435f8a4dca9dffbf69ffba8bc38bc4e01abf4b1675">AbstractCommand::Text</references>
+        <references refid="qjsondocument_1toJson">QJsonDocument::toJson</references>
+        <references refid="qstring_1toLower">QString::toLower</references>
+        <references refid="classStatusService_1acb4787284fb5314ee2085421ad4c1d36" compoundref="statusservice_8cpp" startline="400" endline="405">StatusService::torchStatus</references>
+        <references refid="qbytearray_1toStdString">QByteArray::toStdString</references>
+        <references refid="qbluetoothaddress_1toString">QBluetoothAddress::toString</references>
+        <references refid="qversionnumber_1toString">QVersionNumber::toString</references>
+        <references refid="classStatusService_1aac79e97cb114be25b2a6771d915f132d" compoundref="statusservice_8cpp" startline="32" endline="48">StatusService::toString</references>
+        <references refid="qobject_1tr">QObject::tr</references>
+        <referencedby refid="classStatusCommand_1af275e3a02032915dd27e0c0e041ff6c1" compoundref="statuscommand_8cpp" startline="74" endline="84">serviceDetailsDiscovered</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>The <ref refid="classStatusCommand" kindref="compound">StatusCommand</ref> class implements the <computeroutput>status</computeroutput> CLI command. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>AbstractCommand</label>
+        <link refid="classAbstractCommand"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>DeviceCommand</label>
+        <link refid="classDeviceCommand"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>QObject</label>
+        <link refid="qobject" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags"/>
+      </node>
+      <node id="1">
+        <label>StatusCommand</label>
+        <link refid="classStatusCommand"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>AbstractCommand</label>
+        <link refid="classAbstractCommand"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>deviceToScanFor</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>discoveryAgent</edgelabel>
+        </childnode>
+      </node>
+      <node id="13">
+        <label>AbstractPokitService</label>
+        <link refid="classAbstractPokitService"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>d_ptr</edgelabel>
+        </childnode>
+      </node>
+      <node id="14">
+        <label>AbstractPokitServicePrivate</label>
+        <link refid="classAbstractPokitServicePrivate"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>controller</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>service</edgelabel>
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>serviceUuid</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>q_ptr</edgelabel>
+        </childnode>
+      </node>
+      <node id="12">
+        <label>CalibrationService</label>
+        <link refid="classCalibrationService"/>
+        <childnode refid="13" relation="public-inheritance">
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>serviceUuid</edgelabel>
+        </childnode>
+      </node>
+      <node id="18">
+        <label>DataLoggerService</label>
+        <link refid="classDataLoggerService"/>
+        <childnode refid="13" relation="public-inheritance">
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>serviceUuid</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>DeviceCommand</label>
+        <link refid="classDeviceCommand"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>device</edgelabel>
+        </childnode>
+      </node>
+      <node id="19">
+        <label>DeviceInfoService</label>
+        <link refid="classDeviceInfoService"/>
+        <childnode refid="13" relation="public-inheritance">
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>serviceUuid</edgelabel>
+        </childnode>
+      </node>
+      <node id="20">
+        <label>DsoService</label>
+        <link refid="classDsoService"/>
+        <childnode refid="13" relation="public-inheritance">
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>serviceUuid</edgelabel>
+        </childnode>
+      </node>
+      <node id="21">
+        <label>MultimeterService</label>
+        <link refid="classMultimeterService"/>
+        <childnode refid="13" relation="public-inheritance">
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>serviceUuid</edgelabel>
+        </childnode>
+      </node>
+      <node id="9">
+        <label>PokitDevice</label>
+        <link refid="classPokitDevice"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>d_ptr</edgelabel>
+        </childnode>
+      </node>
+      <node id="10">
+        <label>PokitDevicePrivate</label>
+        <link refid="classPokitDevicePrivate"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>controller</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>calibration</edgelabel>
+        </childnode>
+        <childnode refid="18" relation="usage">
+          <edgelabel>dataLogger</edgelabel>
+        </childnode>
+        <childnode refid="19" relation="usage">
+          <edgelabel>deviceInfo</edgelabel>
+        </childnode>
+        <childnode refid="20" relation="usage">
+          <edgelabel>dso</edgelabel>
+        </childnode>
+        <childnode refid="21" relation="usage">
+          <edgelabel>multimeter</edgelabel>
+        </childnode>
+        <childnode refid="22" relation="usage">
+          <edgelabel>status</edgelabel>
+        </childnode>
+        <childnode refid="23" relation="usage">
+          <edgelabel>calibrationMutex</edgelabel>
+          <edgelabel>dataLoggerMutex</edgelabel>
+          <edgelabel>deviceInfoMutex</edgelabel>
+          <edgelabel>dsoMutex</edgelabel>
+          <edgelabel>multimeterMutex</edgelabel>
+          <edgelabel>statusMutex</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>q_ptr</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>PokitDiscoveryAgent</label>
+        <link refid="classPokitDiscoveryAgent"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>d_ptr</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>PokitDiscoveryAgentPrivate</label>
+        <link refid="classPokitDiscoveryAgentPrivate"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>q_ptr</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>QBluetoothDeviceDiscoveryAgent</label>
+        <link refid="qbluetoothdevicediscoveryagent" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>QBluetoothUuid</label>
+        <link refid="qbluetoothuuid" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags"/>
+        <childnode refid="17" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>QLowEnergyController</label>
+        <link refid="qlowenergycontroller" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>QLowEnergyService</label>
+        <link refid="qlowenergyservice" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>QMutex</label>
+        <link refid="qmutex" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags"/>
+      </node>
+      <node id="4">
+        <label>QObject</label>
+        <link refid="qobject" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags"/>
+      </node>
+      <node id="5">
+        <label>QString</label>
+        <link refid="qstring" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags"/>
+      </node>
+      <node id="17">
+        <label>QUuid</label>
+        <link refid="quuid" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags"/>
+      </node>
+      <node id="1">
+        <label>StatusCommand</label>
+        <link refid="classStatusCommand"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="22" relation="usage">
+          <edgelabel>service</edgelabel>
+        </childnode>
+      </node>
+      <node id="22">
+        <label>StatusService</label>
+        <link refid="classStatusService"/>
+        <childnode refid="13" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/paul/src/dokit/src/cli/statuscommand.h" line="8" column="1" bodyfile="/home/paul/src/dokit/src/cli/statuscommand.h" bodystart="9" bodyend="33"/>
+    <listofallmembers>
+      <member refid="classAbstractCommand_1a0d6fde269511e87aa6f178c1733073ae" prot="public" virt="non-virtual"><scope>StatusCommand</scope><name>AbstractCommand</name></member>
+      <member refid="qobject_1objectName-prop" prot="public" virt="non-virtual"><scope>StatusCommand</scope><name>bindableObjectName</name></member>
+      <member refid="qobject_1blockSignals" prot="public" virt="non-virtual"><scope>StatusCommand</scope><name>blockSignals</name></member>
+      <member refid="qobject_1childEvent" prot="protected" virt="virtual"><scope>StatusCommand</scope><name>childEvent</name></member>
+      <member refid="qobject_1children" prot="public" virt="non-virtual"><scope>StatusCommand</scope><name>children</name></member>
+      <member refid="qobject_1connect-4" prot="public" virt="non-virtual"><scope>StatusCommand</scope><name>connect</name></member>
+      <member refid="qobject_1connect-5" prot="public" virt="non-virtual"><scope>StatusCommand</scope><name>connect</name></member>
+      <member refid="qobject_1connect-3" prot="public" virt="non-virtual"><scope>StatusCommand</scope><name>connect</name></member>
+      <member refid="qobject_1connect-1" prot="public" virt="non-virtual"><scope>StatusCommand</scope><name>connect</name></member>
+      <member refid="qobject_1connect" prot="public" virt="non-virtual"><scope>StatusCommand</scope><name>connect</name></member>
+      <member refid="qobject_1connect-2" prot="public" virt="non-virtual"><scope>StatusCommand</scope><name>connect</name></member>
+      <member refid="qobject_1connectNotify" prot="protected" virt="virtual"><scope>StatusCommand</scope><name>connectNotify</name></member>
+      <member refid="classDeviceCommand_1a28461c0fe3f2b3398c74298b3df70b93" prot="protected" virt="virtual"><scope>StatusCommand</scope><name>controllerError</name></member>
+      <member refid="qobject_1customEvent" prot="protected" virt="virtual"><scope>StatusCommand</scope><name>customEvent</name></member>
+      <member refid="qobject_1deleteLater" prot="public" virt="non-virtual"><scope>StatusCommand</scope><name>deleteLater</name></member>
+      <member refid="qobject_1destroyed" prot="public" virt="non-virtual"><scope>StatusCommand</scope><name>destroyed</name></member>
+      <member refid="classDeviceCommand_1a2bbf2dc9bb0ba85a2bf29263746c7b57" prot="protected" virt="non-virtual"><scope>StatusCommand</scope><name>device</name></member>
+      <member refid="classDeviceCommand_1a55c623ad1d1e0ad1273604f3f24b1dfc" prot="public" virt="non-virtual"><scope>StatusCommand</scope><name>DeviceCommand</name></member>
+      <member refid="classDeviceCommand_1a525ae4429c2b9a325bad62678409fb5b" prot="protected" virt="virtual"><scope>StatusCommand</scope><name>deviceDisconnected</name></member>
+      <member refid="classDeviceCommand_1acde5a41e646a23c5485b67cf99e402a7" prot="private" virt="non-virtual"><scope>StatusCommand</scope><name>deviceDiscovered</name></member>
+      <member refid="classDeviceCommand_1a7dfdaae89c5f6540af9a5bfbcfd66e5a" prot="private" virt="non-virtual"><scope>StatusCommand</scope><name>deviceDiscoveryFinished</name></member>
+      <member refid="classAbstractCommand_1a07d979bc039d61f5c720cb1521b31208" prot="protected" virt="non-virtual"><scope>StatusCommand</scope><name>deviceToScanFor</name></member>
+      <member refid="classDeviceCommand_1ae619166395b5651f1316fd5336d9fa2c" prot="protected" virt="non-virtual"><scope>StatusCommand</scope><name>disconnect</name></member>
+      <member refid="qobject_1disconnect-4" prot="public" virt="non-virtual" ambiguityscope="AbstractCommand::"><scope>StatusCommand</scope><name>disconnect</name></member>
+      <member refid="qobject_1disconnect-5" prot="public" virt="non-virtual" ambiguityscope="AbstractCommand::"><scope>StatusCommand</scope><name>disconnect</name></member>
+      <member refid="qobject_1disconnect-1" prot="public" virt="non-virtual" ambiguityscope="AbstractCommand::"><scope>StatusCommand</scope><name>disconnect</name></member>
+      <member refid="qobject_1disconnect" prot="public" virt="non-virtual" ambiguityscope="AbstractCommand::"><scope>StatusCommand</scope><name>disconnect</name></member>
+      <member refid="qobject_1disconnect-3" prot="public" virt="non-virtual" ambiguityscope="AbstractCommand::"><scope>StatusCommand</scope><name>disconnect</name></member>
+      <member refid="qobject_1disconnect-2" prot="public" virt="non-virtual" ambiguityscope="AbstractCommand::"><scope>StatusCommand</scope><name>disconnect</name></member>
+      <member refid="qobject_1disconnectNotify" prot="protected" virt="virtual"><scope>StatusCommand</scope><name>disconnectNotify</name></member>
+      <member refid="classAbstractCommand_1a86878df43cd818f4a7f333a97dabac3c" prot="protected" virt="non-virtual"><scope>StatusCommand</scope><name>discoveryAgent</name></member>
+      <member refid="qobject_1dumpObjectInfo" prot="public" virt="non-virtual"><scope>StatusCommand</scope><name>dumpObjectInfo</name></member>
+      <member refid="qobject_1dumpObjectTree" prot="public" virt="non-virtual"><scope>StatusCommand</scope><name>dumpObjectTree</name></member>
+      <member refid="qobject_1dynamicPropertyNames" prot="public" virt="non-virtual"><scope>StatusCommand</scope><name>dynamicPropertyNames</name></member>
+      <member refid="classAbstractCommand_1af85c842568f8a3a893e336e449ef7813" prot="public" virt="non-virtual"><scope>StatusCommand</scope><name>escapeCsvField</name></member>
+      <member refid="qobject_1event" prot="public" virt="virtual"><scope>StatusCommand</scope><name>event</name></member>
+      <member refid="qobject_1eventFilter" prot="public" virt="virtual"><scope>StatusCommand</scope><name>eventFilter</name></member>
+      <member refid="classDeviceCommand_1a792b3771a02cb7f4aff6335045b705bf" prot="protected" virt="non-virtual"><scope>StatusCommand</scope><name>exitCodeOnDisconnect</name></member>
+      <member refid="qobject_1findChild" prot="public" virt="non-virtual"><scope>StatusCommand</scope><name>findChild</name></member>
+      <member refid="qobject_1findChildren-1" prot="public" virt="non-virtual"><scope>StatusCommand</scope><name>findChildren</name></member>
+      <member refid="qobject_1findChildren-2" prot="public" virt="non-virtual"><scope>StatusCommand</scope><name>findChildren</name></member>
+      <member refid="qobject_1findChildren" prot="public" virt="non-virtual"><scope>StatusCommand</scope><name>findChildren</name></member>
+      <member refid="classAbstractCommand_1a881d85cd96b6fcc0652b916c366dda7b" prot="protected" virt="non-virtual"><scope>StatusCommand</scope><name>format</name></member>
+      <member refid="classStatusCommand_1abeff2e017b4c34cfab1c55addc776a09" prot="protected" virt="virtual"><scope>StatusCommand</scope><name>getService</name></member>
+      <member refid="qobject_1inherits" prot="public" virt="non-virtual"><scope>StatusCommand</scope><name>inherits</name></member>
+      <member refid="qobject_1installEventFilter" prot="public" virt="non-virtual"><scope>StatusCommand</scope><name>installEventFilter</name></member>
+      <member refid="qobject_1isQuickItemType" prot="public" virt="non-virtual"><scope>StatusCommand</scope><name>isQuickItemType</name></member>
+      <member refid="qobject_1isSignalConnected" prot="protected" virt="non-virtual"><scope>StatusCommand</scope><name>isSignalConnected</name></member>
+      <member refid="qobject_1isWidgetType" prot="public" virt="non-virtual"><scope>StatusCommand</scope><name>isWidgetType</name></member>
+      <member refid="qobject_1isWindowType" prot="public" virt="non-virtual"><scope>StatusCommand</scope><name>isWindowType</name></member>
+      <member refid="qobject_1killTimer" prot="public" virt="non-virtual"><scope>StatusCommand</scope><name>killTimer</name></member>
+      <member refid="qobject_1metaObject" prot="public" virt="virtual"><scope>StatusCommand</scope><name>metaObject</name></member>
+      <member refid="classDeviceCommand_1a8aa676de2533a687cb369e70bb352a4c" prot="protected" virt="non-virtual"><scope>StatusCommand</scope><name>minCapacitanceRange</name></member>
+      <member refid="classDeviceCommand_1ab5ae0318d3ec2bd4449e710eafafa680" prot="protected" virt="non-virtual"><scope>StatusCommand</scope><name>minCurrentRange</name></member>
+      <member refid="classDeviceCommand_1abb9d2e113e372130dca9360791e7ce5b" prot="protected" virt="non-virtual"><scope>StatusCommand</scope><name>minRange</name></member>
+      <member refid="classDeviceCommand_1a1ce3ce094a91ec500e9d50e620b0cc6d" prot="protected" virt="non-virtual"><scope>StatusCommand</scope><name>minResistanceRange</name></member>
+      <member refid="classDeviceCommand_1a92f7e61dff3d28eda856ea4f95e828fe" prot="protected" virt="non-virtual"><scope>StatusCommand</scope><name>minVoltageRange</name></member>
+      <member refid="qobject_1moveToThread" prot="public" virt="non-virtual"><scope>StatusCommand</scope><name>moveToThread</name></member>
+      <member refid="qobject_1objectName-prop" prot="public" virt="non-virtual"><scope>StatusCommand</scope><name>objectName</name></member>
+      <member refid="qobject_1objectName-prop" prot="public" virt="non-virtual"><scope>StatusCommand</scope><name>objectName</name></member>
+      <member refid="qobject_1objectNameChanged" prot="public" virt="non-virtual"><scope>StatusCommand</scope><name>objectNameChanged</name></member>
+      <member refid="classStatusCommand_1ae2349e3d64b1b4db9b80465c0b7dadb7" prot="private" virt="non-virtual"><scope>StatusCommand</scope><name>outputDeviceStatus</name></member>
+      <member refid="classAbstractCommand_1aa2dadc72289ff2b0a02c1fb435f8a4dc" prot="public" virt="non-virtual"><scope>StatusCommand</scope><name>OutputFormat</name></member>
+      <member refid="qobject_1parent" prot="public" virt="non-virtual"><scope>StatusCommand</scope><name>parent</name></member>
+      <member refid="classAbstractCommand_1a29b2a2446ef034195183a2ae9d4bb911" prot="public" virt="non-virtual"><scope>StatusCommand</scope><name>parseNumber</name></member>
+      <member refid="classStatusCommand_1a951404b4913fd4b341899d654a2abe72" prot="public" virt="non-virtual"><scope>StatusCommand</scope><name>processOptions</name></member>
+      <member refid="qobject_1property" prot="public" virt="non-virtual"><scope>StatusCommand</scope><name>property</name></member>
+      <member refid="qobject_1Q_CLASSINFO" prot="public" virt="non-virtual"><scope>StatusCommand</scope><name>Q_CLASSINFO</name></member>
+      <member refid="qobject_1Q_EMIT" prot="public" virt="non-virtual"><scope>StatusCommand</scope><name>Q_EMIT</name></member>
+      <member refid="qobject_1Q_ENUM" prot="public" virt="non-virtual"><scope>StatusCommand</scope><name>Q_ENUM</name></member>
+      <member refid="qobject_1Q_ENUM_NS" prot="public" virt="non-virtual"><scope>StatusCommand</scope><name>Q_ENUM_NS</name></member>
+      <member refid="qobject-obsolete_1Q_ENUMS" prot="public" virt="non-virtual"><scope>StatusCommand</scope><name>Q_ENUMS</name></member>
+      <member refid="qobject_1Q_FLAG" prot="public" virt="non-virtual"><scope>StatusCommand</scope><name>Q_FLAG</name></member>
+      <member refid="qobject_1Q_FLAG_NS" prot="public" virt="non-virtual"><scope>StatusCommand</scope><name>Q_FLAG_NS</name></member>
+      <member refid="qobject-obsolete_1Q_FLAGS" prot="public" virt="non-virtual"><scope>StatusCommand</scope><name>Q_FLAGS</name></member>
+      <member refid="qobject_1Q_GADGET" prot="public" virt="non-virtual"><scope>StatusCommand</scope><name>Q_GADGET</name></member>
+      <member refid="qobject_1Q_GADGET_EXPORT" prot="public" virt="non-virtual"><scope>StatusCommand</scope><name>Q_GADGET_EXPORT</name></member>
+      <member refid="qobject_1Q_INTERFACES" prot="public" virt="non-virtual"><scope>StatusCommand</scope><name>Q_INTERFACES</name></member>
+      <member refid="qobject_1Q_INVOKABLE" prot="public" virt="non-virtual"><scope>StatusCommand</scope><name>Q_INVOKABLE</name></member>
+      <member refid="classAbstractCommand_1ac8bafb6db670b3c127ab59130584274f" prot="protected" virt="non-virtual"><scope>StatusCommand</scope><name>Q_LOGGING_CATEGORY</name></member>
+      <member refid="qobject_1Q_MOC_INCLUDE" prot="public" virt="non-virtual"><scope>StatusCommand</scope><name>Q_MOC_INCLUDE</name></member>
+      <member refid="qobject_1Q_NAMESPACE" prot="public" virt="non-virtual"><scope>StatusCommand</scope><name>Q_NAMESPACE</name></member>
+      <member refid="qobject_1Q_NAMESPACE_EXPORT" prot="public" virt="non-virtual"><scope>StatusCommand</scope><name>Q_NAMESPACE_EXPORT</name></member>
+      <member refid="qobject_1Q_OBJECT" prot="public" virt="non-virtual"><scope>StatusCommand</scope><name>Q_OBJECT</name></member>
+      <member refid="qobject_1Q_PROPERTY" prot="public" virt="non-virtual"><scope>StatusCommand</scope><name>Q_PROPERTY</name></member>
+      <member refid="qobject_1Q_REVISION" prot="public" virt="non-virtual"><scope>StatusCommand</scope><name>Q_REVISION</name></member>
+      <member refid="qobject_1Q_SET_OBJECT_NAME" prot="public" virt="non-virtual"><scope>StatusCommand</scope><name>Q_SET_OBJECT_NAME</name></member>
+      <member refid="qobject_1Q_SIGNAL" prot="public" virt="non-virtual"><scope>StatusCommand</scope><name>Q_SIGNAL</name></member>
+      <member refid="qobject_1Q_SIGNALS" prot="public" virt="non-virtual"><scope>StatusCommand</scope><name>Q_SIGNALS</name></member>
+      <member refid="qobject_1Q_SLOT" prot="public" virt="non-virtual"><scope>StatusCommand</scope><name>Q_SLOT</name></member>
+      <member refid="qobject_1Q_SLOTS" prot="public" virt="non-virtual"><scope>StatusCommand</scope><name>Q_SLOTS</name></member>
+      <member refid="qobject_1QObject" prot="public" virt="non-virtual"><scope>StatusCommand</scope><name>QObject</name></member>
+      <member refid="qobject_1qobject_cast" prot="public" virt="non-virtual"><scope>StatusCommand</scope><name>qobject_cast</name></member>
+      <member refid="qobject_1qobject_cast-1" prot="public" virt="non-virtual"><scope>StatusCommand</scope><name>qobject_cast</name></member>
+      <member refid="qobject_1QObjectList-typedef" prot="public" virt="non-virtual"><scope>StatusCommand</scope><name>QObjectList</name></member>
+      <member refid="qobject_1QT_NO_NARROWING_CONVERSIONS_IN_CONNECT" prot="public" virt="non-virtual"><scope>StatusCommand</scope><name>QT_NO_NARROWING_CONVERSIONS_IN_CONNECT</name></member>
+      <member refid="qobject_1receivers" prot="protected" virt="non-virtual"><scope>StatusCommand</scope><name>receivers</name></member>
+      <member refid="qobject_1removeEventFilter" prot="public" virt="non-virtual"><scope>StatusCommand</scope><name>removeEventFilter</name></member>
+      <member refid="classStatusCommand_1a0ffa53750dce36026cfd38cb4bfc2170" prot="public" virt="virtual"><scope>StatusCommand</scope><name>requiredOptions</name></member>
+      <member refid="qobject_1sender" prot="protected" virt="non-virtual"><scope>StatusCommand</scope><name>sender</name></member>
+      <member refid="qobject_1senderSignalIndex" prot="protected" virt="non-virtual"><scope>StatusCommand</scope><name>senderSignalIndex</name></member>
+      <member refid="classStatusCommand_1aa51178e795514589b2c75719527ee1b8" prot="private" virt="non-virtual"><scope>StatusCommand</scope><name>service</name></member>
+      <member refid="classStatusCommand_1af275e3a02032915dd27e0c0e041ff6c1" prot="protected" virt="non-virtual"><scope>StatusCommand</scope><name>serviceDetailsDiscovered</name></member>
+      <member refid="classDeviceCommand_1a96208c78728c0068e7a78f961b913751" prot="protected" virt="virtual"><scope>StatusCommand</scope><name>serviceError</name></member>
+      <member refid="qobject_1setObjectName-1" prot="public" virt="non-virtual"><scope>StatusCommand</scope><name>setObjectName</name></member>
+      <member refid="qobject_1setObjectName" prot="public" virt="non-virtual"><scope>StatusCommand</scope><name>setObjectName</name></member>
+      <member refid="qobject_1setParent" prot="public" virt="non-virtual"><scope>StatusCommand</scope><name>setParent</name></member>
+      <member refid="qobject_1setProperty-1" prot="public" virt="non-virtual"><scope>StatusCommand</scope><name>setProperty</name></member>
+      <member refid="qobject_1setProperty" prot="public" virt="non-virtual"><scope>StatusCommand</scope><name>setProperty</name></member>
+      <member refid="qobject_1signalsBlocked" prot="public" virt="non-virtual"><scope>StatusCommand</scope><name>signalsBlocked</name></member>
+      <member refid="classDeviceCommand_1a6cf548752b7ae1084a712b9003b92d0c" prot="public" virt="non-virtual"><scope>StatusCommand</scope><name>start</name></member>
+      <member refid="qobject_1startTimer" prot="public" virt="non-virtual"><scope>StatusCommand</scope><name>startTimer</name></member>
+      <member refid="qobject_1startTimer-1" prot="public" virt="non-virtual"><scope>StatusCommand</scope><name>startTimer</name></member>
+      <member refid="classStatusCommand_1aba377e4a595c15c989e6885b94ef3af0" prot="public" virt="non-virtual"><scope>StatusCommand</scope><name>StatusCommand</name></member>
+      <member refid="classStatusCommand_1a0b573e31edcf2aabde2b12d185c62121" prot="public" virt="virtual"><scope>StatusCommand</scope><name>supportedOptions</name></member>
+      <member refid="classStatusCommand_1a57f2c364f598964371edc3e2afb50184" prot="private" virt="non-virtual"><scope>StatusCommand</scope><name>TestStatusCommand</name></member>
+      <member refid="qobject_1thread" prot="public" virt="non-virtual"><scope>StatusCommand</scope><name>thread</name></member>
+      <member refid="qobject_1timerEvent" prot="protected" virt="virtual"><scope>StatusCommand</scope><name>timerEvent</name></member>
+      <member refid="qobject_1tr" prot="public" virt="non-virtual"><scope>StatusCommand</scope><name>tr</name></member>
+      <member refid="qobject_1dtor.QObject" prot="public" virt="virtual"><scope>StatusCommand</scope><name>~QObject</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

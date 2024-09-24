@@ -1,0 +1,520 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.0" xml:lang="en-US">
+  <compounddef id="classAbstractPokitService" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>AbstractPokitService</compoundname>
+    <basecompoundref refid="qobject" prot="public" virt="non-virtual">QObject</basecompoundref>
+    <derivedcompoundref refid="classCalibrationService" prot="public" virt="non-virtual">CalibrationService</derivedcompoundref>
+    <derivedcompoundref refid="classDataLoggerService" prot="public" virt="non-virtual">DataLoggerService</derivedcompoundref>
+    <derivedcompoundref refid="classDeviceInfoService" prot="public" virt="non-virtual">DeviceInfoService</derivedcompoundref>
+    <derivedcompoundref refid="classDsoService" prot="public" virt="non-virtual">DsoService</derivedcompoundref>
+    <derivedcompoundref refid="classMultimeterService" prot="public" virt="non-virtual">MultimeterService</derivedcompoundref>
+    <derivedcompoundref refid="classStatusService" prot="public" virt="non-virtual">StatusService</derivedcompoundref>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classAbstractPokitService_1acb832f24262f3f61f74c878dd79f48e8" prot="protected" static="no" mutable="no">
+        <type><ref refid="classAbstractPokitServicePrivate" kindref="compound">AbstractPokitServicePrivate</ref> *</type>
+        <definition>AbstractPokitServicePrivate* AbstractPokitService::d_ptr</definition>
+        <argsstring></argsstring>
+        <name>d_ptr</name>
+        <qualifiedname>AbstractPokitService::d_ptr</qualifiedname>
+        <briefdescription>
+<para>Internal d-pointer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/abstractpokitservice.h" line="51" column="34" bodyfile="/home/paul/src/dokit/include/qtpokit/abstractpokitservice.h" bodystart="51" bodyend="-1"/>
+        <referencedby refid="classAbstractPokitService_1af0b962913c8be9b1d69ce1b68a5f9bdd" compoundref="abstractpokitservice_8cpp" startline="38" endline="41">~AbstractPokitService</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="classAbstractPokitService_1a127cc137bfd605debbdf97eec20d08c9" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class TestAbstractPokitService</definition>
+        <argsstring></argsstring>
+        <name>TestAbstractPokitService</name>
+        <qualifiedname>AbstractPokitService::TestAbstractPokitService</qualifiedname>
+        <param>
+          <type>TestAbstractPokitService</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/abstractpokitservice.h" line="58" column="18" bodyfile="/home/paul/src/dokit/include/qtpokit/abstractpokitservice.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classAbstractPokitService_1aa1309523f169115a7b7a8117ea4ab04f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AbstractPokitService::AbstractPokitService</definition>
+        <argsstring>()=delete</argsstring>
+        <name>AbstractPokitService</name>
+        <qualifiedname>AbstractPokitService::AbstractPokitService</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/abstractpokitservice.h" line="31" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classAbstractPokitService_1af0b962913c8be9b1d69ce1b68a5f9bdd" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>AbstractPokitService::~AbstractPokitService</definition>
+        <argsstring>()</argsstring>
+        <name>~AbstractPokitService</name>
+        <qualifiedname>AbstractPokitService::~AbstractPokitService</qualifiedname>
+        <briefdescription>
+<para>Destroys this <ref refid="classAbstractPokitService" kindref="compound">AbstractPokitService</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/abstractpokitservice.h" line="32" column="13" bodyfile="/home/paul/src/dokit/src/lib/abstractpokitservice.cpp" bodystart="38" bodyend="41"/>
+        <references refid="classAbstractPokitService_1acb832f24262f3f61f74c878dd79f48e8" compoundref="abstractpokitservice_8h" startline="51">d_ptr</references>
+      </memberdef>
+      <memberdef kind="function" id="classAbstractPokitService_1ab1de532f20d46803d6e8b8ffea835b48" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool AbstractPokitService::readCharacteristics</definition>
+        <argsstring>()=0</argsstring>
+        <name>readCharacteristics</name>
+        <qualifiedname>AbstractPokitService::readCharacteristics</qualifiedname>
+        <reimplementedby refid="classCalibrationService_1aff98225f4e1c489aec22a5832661c7f7">readCharacteristics</reimplementedby>
+        <reimplementedby refid="classDataLoggerService_1a661ebfee183fa2f9c90f71696d66a8bf">readCharacteristics</reimplementedby>
+        <reimplementedby refid="classDeviceInfoService_1aa10d77cc1df3cf923740332d9a8b97cb">readCharacteristics</reimplementedby>
+        <reimplementedby refid="classDsoService_1aad086e99bfe4fe2e8d35d49c1e4d340b">readCharacteristics</reimplementedby>
+        <reimplementedby refid="classMultimeterService_1a58831d3ca3e6df355fcd6fd1bb8d5e68">readCharacteristics</reimplementedby>
+        <reimplementedby refid="classStatusService_1ad73514f6f324ca56dffb844b14eb3bc0">readCharacteristics</reimplementedby>
+        <briefdescription>
+<para>Read all characteristics. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This convenience function will queue refresh requests of all characteristics supported by this service.</para>
+<para>Relevant <computeroutput>*Service::*Read</computeroutput> signals will be emitted by derived class objects as each characteristic is successfully read. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/abstractpokitservice.h" line="34" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classAbstractPokitService_1a65c2c9c6163744a7cf52de2c6a83f610" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool AbstractPokitService::autoDiscover</definition>
+        <argsstring>() const</argsstring>
+        <name>autoDiscover</name>
+        <qualifiedname>AbstractPokitService::autoDiscover</qualifiedname>
+        <briefdescription>
+<para>Returns <computeroutput>true</computeroutput> if autodiscovery of services and service details is enabled, <computeroutput>false</computeroutput> otherwise. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="classAbstractPokitService_1a9d6d50cf31bc5859747a134d6cb4c418" kindref="member">setAutoDiscover</ref> for more information on what autodiscovery provides. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/abstractpokitservice.h" line="36" column="10" bodyfile="/home/paul/src/dokit/src/lib/abstractpokitservice.cpp" bodystart="60" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="classAbstractPokitService_1a9d6d50cf31bc5859747a134d6cb4c418" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AbstractPokitService::setAutoDiscover</definition>
+        <argsstring>(const bool discover=true)</argsstring>
+        <name>setAutoDiscover</name>
+        <qualifiedname>AbstractPokitService::setAutoDiscover</qualifiedname>
+        <param>
+          <type>const bool</type>
+          <declname>discover</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>If <emphasis>discover</emphasis> is <computeroutput>true</computeroutput>, autodiscovery will be attempted. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifically, this may resulting in automatic invocation of:<itemizedlist>
+<listitem><para><ref refid="qlowenergycontroller_1discoverServices" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QLowEnergyController::discoverServices</ref> if/when the internal controller is connected; and</para>
+</listitem><listitem><para><ref refid="qlowenergyservice_1discoverDetails" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QLowEnergyService::discoverDetails</ref> if/when an internal service object is created.</para>
+</listitem></itemizedlist>
+</para>
+<para><simplesect kind="see"><para><ref refid="classAbstractPokitService_1a65c2c9c6163744a7cf52de2c6a83f610" kindref="member">autoDiscover</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/abstractpokitservice.h" line="37" column="10" bodyfile="/home/paul/src/dokit/src/lib/abstractpokitservice.cpp" bodystart="75" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="classAbstractPokitService_1a039d2f1054788cf586c8decadb53ddc0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::optional&lt; <ref refid="pokitproducts_8h_1a0c4f628f68ce0432a6db11681a41fda4" kindref="member">PokitProduct</ref> &gt;</type>
+        <definition>std::optional&lt; PokitProduct &gt; AbstractPokitService::pokitProduct</definition>
+        <argsstring>() const</argsstring>
+        <name>pokitProduct</name>
+        <qualifiedname>AbstractPokitService::pokitProduct</qualifiedname>
+        <briefdescription>
+<para>Returns the Pokit product this service is attached to. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="classAbstractPokitService_1aa0e323c5e2380709c5a5fde18520ae3f" kindref="member">setPokitProduct</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/abstractpokitservice.h" line="39" column="19" bodyfile="/home/paul/src/dokit/src/lib/abstractpokitservice.cpp" bodystart="86" bodyend="90"/>
+        <referencedby refid="classDeviceCommand_1acde5a41e646a23c5485b67cf99e402a7" compoundref="devicecommand_8cpp" startline="340" endline="387">DeviceCommand::deviceDiscovered</referencedby>
+        <referencedby refid="classDataLoggerService_1ab2fb8703f5724589cdace781b47bb96d" compoundref="dataloggerservice_8cpp" startline="92" endline="95">DataLoggerService::maxValue</referencedby>
+        <referencedby refid="classDsoService_1abd84505a298a555e421d9a80d59c6216" compoundref="dsoservice_8cpp" startline="86" endline="89">DsoService::maxValue</referencedby>
+        <referencedby refid="classMultimeterService_1a80dd2c9eed94973bbc532ee42daee1fb" compoundref="multimeterservice_8cpp" startline="121" endline="124">MultimeterService::maxValue</referencedby>
+        <referencedby refid="classDsoCommand_1a57f3b6be35c7a6fdadfaa737177016a8" compoundref="dsocommand_8cpp" startline="186" endline="195">DsoCommand::serviceDetailsDiscovered</referencedby>
+        <referencedby refid="classLoggerStartCommand_1ab1b0364c6a26ff893d5b58dea381e4d5" compoundref="loggerstartcommand_8cpp" startline="153" endline="162">LoggerStartCommand::serviceDetailsDiscovered</referencedby>
+        <referencedby refid="classMeterCommand_1aca51a018963bc384a24154cdb112a49b" compoundref="metercommand_8cpp" startline="165" endline="174">MeterCommand::serviceDetailsDiscovered</referencedby>
+        <referencedby refid="classDataLoggerService_1a6f92316f5c2c256b17a74c5ad38eeab8" compoundref="dataloggerservice_8cpp" startline="59" endline="62">DataLoggerService::toString</referencedby>
+        <referencedby refid="classDsoService_1aa106091512457325081f1940ad70c9f7" compoundref="dsoservice_8cpp" startline="55" endline="58">DsoService::toString</referencedby>
+        <referencedby refid="classMultimeterService_1ade75432f62ac592509c4583a415ec04b" compoundref="multimeterservice_8cpp" startline="80" endline="83">MultimeterService::toString</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classAbstractPokitService_1aa0e323c5e2380709c5a5fde18520ae3f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AbstractPokitService::setPokitProduct</definition>
+        <argsstring>(const PokitProduct product)</argsstring>
+        <name>setPokitProduct</name>
+        <qualifiedname>AbstractPokitService::setPokitProduct</qualifiedname>
+        <param>
+          <type>const <ref refid="pokitproducts_8h_1a0c4f628f68ce0432a6db11681a41fda4" kindref="member">PokitProduct</ref></type>
+          <declname>product</declname>
+        </param>
+        <briefdescription>
+<para>Sets the current Pokit <emphasis>product</emphasis>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This must be called to set the product before this object&apos;s BLE controller&apos;s services are discovered. If <ref refid="classAbstractPokitService_1a65c2c9c6163744a7cf52de2c6a83f610" kindref="member">autoDiscover()</ref> is enabled, then this should be done before the controller&apos;s <computeroutput>connectToDevice()</computeroutput> is called.</para>
+<para>For example: <programlisting><codeline><highlight class="normal">Q_ASSERT(<ref refid="pokitproducts_8h_1adb8bb3a07e937158a294997e60868297" kindref="member">isPokitProduct</ref>(deviceInfo));</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>controller<sp/>=<sp/><ref refid="qlowenergycontroller_1createCentral" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QLowEnergyController::createCentral</ref>(deviceInfo);</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/><ref refid="classAbstractPokitService_1a7a4ff74f51ba6ea6c01cbeb9eda15b9b" kindref="member">service</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classDsoService" kindref="compound">DsoService</ref>(controller);</highlight></codeline>
+<codeline><highlight class="normal"><ref refid="classAbstractPokitService_1a7a4ff74f51ba6ea6c01cbeb9eda15b9b" kindref="member">service</ref>-&gt;setPokitProduct(<ref refid="classAbstractPokitService_1a039d2f1054788cf586c8decadb53ddc0" kindref="member">pokitProduct</ref>(deviceInfo));</highlight></codeline>
+<codeline><highlight class="normal">controller-&gt;connectToDevice();</highlight></codeline>
+</programlisting></para>
+<para><simplesect kind="see"><para><ref refid="classAbstractPokitService_1a65c2c9c6163744a7cf52de2c6a83f610" kindref="member">autoDiscover</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classAbstractPokitService_1a039d2f1054788cf586c8decadb53ddc0" kindref="member">pokitProduct</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/abstractpokitservice.h" line="40" column="10" bodyfile="/home/paul/src/dokit/src/lib/abstractpokitservice.cpp" bodystart="110" bodyend="114"/>
+        <referencedby refid="classDeviceCommand_1acde5a41e646a23c5485b67cf99e402a7" compoundref="devicecommand_8cpp" startline="340" endline="387">DeviceCommand::deviceDiscovered</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classAbstractPokitService_1a7a4ff74f51ba6ea6c01cbeb9eda15b9b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="qlowenergyservice" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QLowEnergyService</ref> *</type>
+        <definition>QLowEnergyService * AbstractPokitService::service</definition>
+        <argsstring>()</argsstring>
+        <name>service</name>
+        <qualifiedname>AbstractPokitService::service</qualifiedname>
+        <briefdescription>
+<para>Returns a non-const pointer to the internal service object, if any. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/abstractpokitservice.h" line="42" column="24" bodyfile="/home/paul/src/dokit/src/lib/abstractpokitservice.cpp" bodystart="119" bodyend="123"/>
+        <referencedby refid="classDeviceInfoService_1aa10d77cc1df3cf923740332d9a8b97cb" compoundref="deviceinfoservice_8cpp" startline="49" endline="59">DeviceInfoService::readCharacteristics</referencedby>
+        <referencedby refid="classStatusService_1ad73514f6f324ca56dffb844b14eb3bc0" compoundref="statusservice_8cpp" startline="150" endline="160">StatusService::readCharacteristics</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classAbstractPokitService_1ab7161dedf8ae431f723a5e225c2ec9ca" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="qlowenergyservice" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QLowEnergyService</ref> *</type>
+        <definition>const QLowEnergyService * AbstractPokitService::service</definition>
+        <argsstring>() const</argsstring>
+        <name>service</name>
+        <qualifiedname>AbstractPokitService::service</qualifiedname>
+        <briefdescription>
+<para>Returns a const pointer to the internal service object, if any. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/abstractpokitservice.h" line="43" column="30" bodyfile="/home/paul/src/dokit/src/lib/abstractpokitservice.cpp" bodystart="128" bodyend="132"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="signal">
+      <memberdef kind="signal" id="classAbstractPokitService_1af67cbea4294ba0a77dcd9540b29528ff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AbstractPokitService::serviceDetailsDiscovered</definition>
+        <argsstring>()</argsstring>
+        <name>serviceDetailsDiscovered</name>
+        <qualifiedname>AbstractPokitService::serviceDetailsDiscovered</qualifiedname>
+        <briefdescription>
+<para>This signal is emitted when the Pokit service details have been discovered. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Once this signal has been emitted, cached characteristics values should be immediately available via derived classes&apos; accessor functions, and refreshes can be queued via <ref refid="classAbstractPokitService_1ab1de532f20d46803d6e8b8ffea835b48" kindref="member">readCharacteristics()</ref> and any related read functions provided by derived classes. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/abstractpokitservice.h" line="46" column="10"/>
+        <referencedby refid="classDeviceCommand_1acde5a41e646a23c5485b67cf99e402a7" compoundref="devicecommand_8cpp" startline="340" endline="387">DeviceCommand::deviceDiscovered</referencedby>
+      </memberdef>
+      <memberdef kind="signal" id="classAbstractPokitService_1a9e680ebf280361ef82f4b072448d7e9b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AbstractPokitService::serviceErrorOccurred</definition>
+        <argsstring>(QLowEnergyService::ServiceError newError)</argsstring>
+        <name>serviceErrorOccurred</name>
+        <qualifiedname>AbstractPokitService::serviceErrorOccurred</qualifiedname>
+        <param>
+          <type><ref refid="qlowenergyservice_1ServiceError-enum" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QLowEnergyService::ServiceError</ref></type>
+          <declname>newError</declname>
+        </param>
+        <briefdescription>
+<para>This signal is emitted whenever an error occurs on the underlying <ref refid="qlowenergyservice" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QLowEnergyService</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/abstractpokitservice.h" line="47" column="10"/>
+        <referencedby refid="classDeviceCommand_1acde5a41e646a23c5485b67cf99e402a7" compoundref="devicecommand_8cpp" startline="340" endline="387">DeviceCommand::deviceDiscovered</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classAbstractPokitService_1a2d624e58e68663e0420df7d282caf116" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AbstractPokitService::AbstractPokitService</definition>
+        <argsstring>(AbstractPokitServicePrivate *const d, QObject *const parent)</argsstring>
+        <name>AbstractPokitService</name>
+        <qualifiedname>AbstractPokitService::AbstractPokitService</qualifiedname>
+        <param>
+          <type><ref refid="classAbstractPokitServicePrivate" kindref="compound">AbstractPokitServicePrivate</ref> *const</type>
+          <declname>d</declname>
+        </param>
+        <param>
+          <type><ref refid="qobject" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QObject</ref> *const</type>
+          <declname>parent</declname>
+        </param>
+        <briefdescription>
+<para>Constructs a new Pokit service with <emphasis>parent</emphasis>, and private implementation <emphasis>d</emphasis>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/abstractpokitservice.h" line="52" column="5" bodyfile="/home/paul/src/dokit/src/lib/abstractpokitservice.cpp" bodystart="27" bodyend="32"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>The <ref refid="classAbstractPokitService" kindref="compound">AbstractPokitService</ref> class provides a common base for Pokit services classes. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>AbstractPokitService</label>
+        <link refid="classAbstractPokitService"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>CalibrationService</label>
+        <link refid="classCalibrationService"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>DataLoggerService</label>
+        <link refid="classDataLoggerService"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>DeviceInfoService</label>
+        <link refid="classDeviceInfoService"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>DsoService</label>
+        <link refid="classDsoService"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>MultimeterService</label>
+        <link refid="classMultimeterService"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QObject</label>
+        <link refid="qobject" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags"/>
+      </node>
+      <node id="8">
+        <label>StatusService</label>
+        <link refid="classStatusService"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>AbstractPokitService</label>
+        <link refid="classAbstractPokitService"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>d_ptr</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>AbstractPokitServicePrivate</label>
+        <link refid="classAbstractPokitServicePrivate"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>controller</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>service</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>serviceUuid</edgelabel>
+        </childnode>
+        <childnode refid="1" relation="usage">
+          <edgelabel>q_ptr</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>QBluetoothUuid</label>
+        <link refid="qbluetoothuuid" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>QLowEnergyController</label>
+        <link refid="qlowenergycontroller" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>QLowEnergyService</label>
+        <link refid="qlowenergyservice" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QObject</label>
+        <link refid="qobject" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags"/>
+      </node>
+      <node id="7">
+        <label>QUuid</label>
+        <link refid="quuid" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/paul/src/dokit/include/qtpokit/abstractpokitservice.h" line="26" column="1" bodyfile="/home/paul/src/dokit/include/qtpokit/abstractpokitservice.h" bodystart="27" bodyend="59"/>
+    <listofallmembers>
+      <member refid="classAbstractPokitService_1aa1309523f169115a7b7a8117ea4ab04f" prot="public" virt="non-virtual"><scope>AbstractPokitService</scope><name>AbstractPokitService</name></member>
+      <member refid="classAbstractPokitService_1a2d624e58e68663e0420df7d282caf116" prot="protected" virt="non-virtual"><scope>AbstractPokitService</scope><name>AbstractPokitService</name></member>
+      <member refid="classAbstractPokitService_1a65c2c9c6163744a7cf52de2c6a83f610" prot="public" virt="non-virtual"><scope>AbstractPokitService</scope><name>autoDiscover</name></member>
+      <member refid="qobject_1objectName-prop" prot="public" virt="non-virtual"><scope>AbstractPokitService</scope><name>bindableObjectName</name></member>
+      <member refid="qobject_1blockSignals" prot="public" virt="non-virtual"><scope>AbstractPokitService</scope><name>blockSignals</name></member>
+      <member refid="qobject_1childEvent" prot="protected" virt="virtual"><scope>AbstractPokitService</scope><name>childEvent</name></member>
+      <member refid="qobject_1children" prot="public" virt="non-virtual"><scope>AbstractPokitService</scope><name>children</name></member>
+      <member refid="qobject_1connect-4" prot="public" virt="non-virtual"><scope>AbstractPokitService</scope><name>connect</name></member>
+      <member refid="qobject_1connect-5" prot="public" virt="non-virtual"><scope>AbstractPokitService</scope><name>connect</name></member>
+      <member refid="qobject_1connect-3" prot="public" virt="non-virtual"><scope>AbstractPokitService</scope><name>connect</name></member>
+      <member refid="qobject_1connect-1" prot="public" virt="non-virtual"><scope>AbstractPokitService</scope><name>connect</name></member>
+      <member refid="qobject_1connect" prot="public" virt="non-virtual"><scope>AbstractPokitService</scope><name>connect</name></member>
+      <member refid="qobject_1connect-2" prot="public" virt="non-virtual"><scope>AbstractPokitService</scope><name>connect</name></member>
+      <member refid="qobject_1connectNotify" prot="protected" virt="virtual"><scope>AbstractPokitService</scope><name>connectNotify</name></member>
+      <member refid="qobject_1customEvent" prot="protected" virt="virtual"><scope>AbstractPokitService</scope><name>customEvent</name></member>
+      <member refid="classAbstractPokitService_1acb832f24262f3f61f74c878dd79f48e8" prot="protected" virt="non-virtual"><scope>AbstractPokitService</scope><name>d_ptr</name></member>
+      <member refid="qobject_1deleteLater" prot="public" virt="non-virtual"><scope>AbstractPokitService</scope><name>deleteLater</name></member>
+      <member refid="qobject_1destroyed" prot="public" virt="non-virtual"><scope>AbstractPokitService</scope><name>destroyed</name></member>
+      <member refid="qobject_1disconnect-4" prot="public" virt="non-virtual"><scope>AbstractPokitService</scope><name>disconnect</name></member>
+      <member refid="qobject_1disconnect-5" prot="public" virt="non-virtual"><scope>AbstractPokitService</scope><name>disconnect</name></member>
+      <member refid="qobject_1disconnect-1" prot="public" virt="non-virtual"><scope>AbstractPokitService</scope><name>disconnect</name></member>
+      <member refid="qobject_1disconnect" prot="public" virt="non-virtual"><scope>AbstractPokitService</scope><name>disconnect</name></member>
+      <member refid="qobject_1disconnect-3" prot="public" virt="non-virtual"><scope>AbstractPokitService</scope><name>disconnect</name></member>
+      <member refid="qobject_1disconnect-2" prot="public" virt="non-virtual"><scope>AbstractPokitService</scope><name>disconnect</name></member>
+      <member refid="qobject_1disconnectNotify" prot="protected" virt="virtual"><scope>AbstractPokitService</scope><name>disconnectNotify</name></member>
+      <member refid="qobject_1dumpObjectInfo" prot="public" virt="non-virtual"><scope>AbstractPokitService</scope><name>dumpObjectInfo</name></member>
+      <member refid="qobject_1dumpObjectTree" prot="public" virt="non-virtual"><scope>AbstractPokitService</scope><name>dumpObjectTree</name></member>
+      <member refid="qobject_1dynamicPropertyNames" prot="public" virt="non-virtual"><scope>AbstractPokitService</scope><name>dynamicPropertyNames</name></member>
+      <member refid="qobject_1event" prot="public" virt="virtual"><scope>AbstractPokitService</scope><name>event</name></member>
+      <member refid="qobject_1eventFilter" prot="public" virt="virtual"><scope>AbstractPokitService</scope><name>eventFilter</name></member>
+      <member refid="qobject_1findChild" prot="public" virt="non-virtual"><scope>AbstractPokitService</scope><name>findChild</name></member>
+      <member refid="qobject_1findChildren-1" prot="public" virt="non-virtual"><scope>AbstractPokitService</scope><name>findChildren</name></member>
+      <member refid="qobject_1findChildren-2" prot="public" virt="non-virtual"><scope>AbstractPokitService</scope><name>findChildren</name></member>
+      <member refid="qobject_1findChildren" prot="public" virt="non-virtual"><scope>AbstractPokitService</scope><name>findChildren</name></member>
+      <member refid="qobject_1inherits" prot="public" virt="non-virtual"><scope>AbstractPokitService</scope><name>inherits</name></member>
+      <member refid="qobject_1installEventFilter" prot="public" virt="non-virtual"><scope>AbstractPokitService</scope><name>installEventFilter</name></member>
+      <member refid="qobject_1isQuickItemType" prot="public" virt="non-virtual"><scope>AbstractPokitService</scope><name>isQuickItemType</name></member>
+      <member refid="qobject_1isSignalConnected" prot="protected" virt="non-virtual"><scope>AbstractPokitService</scope><name>isSignalConnected</name></member>
+      <member refid="qobject_1isWidgetType" prot="public" virt="non-virtual"><scope>AbstractPokitService</scope><name>isWidgetType</name></member>
+      <member refid="qobject_1isWindowType" prot="public" virt="non-virtual"><scope>AbstractPokitService</scope><name>isWindowType</name></member>
+      <member refid="qobject_1killTimer" prot="public" virt="non-virtual"><scope>AbstractPokitService</scope><name>killTimer</name></member>
+      <member refid="qobject_1metaObject" prot="public" virt="virtual"><scope>AbstractPokitService</scope><name>metaObject</name></member>
+      <member refid="qobject_1moveToThread" prot="public" virt="non-virtual"><scope>AbstractPokitService</scope><name>moveToThread</name></member>
+      <member refid="qobject_1objectName-prop" prot="public" virt="non-virtual"><scope>AbstractPokitService</scope><name>objectName</name></member>
+      <member refid="qobject_1objectName-prop" prot="public" virt="non-virtual"><scope>AbstractPokitService</scope><name>objectName</name></member>
+      <member refid="qobject_1objectNameChanged" prot="public" virt="non-virtual"><scope>AbstractPokitService</scope><name>objectNameChanged</name></member>
+      <member refid="qobject_1parent" prot="public" virt="non-virtual"><scope>AbstractPokitService</scope><name>parent</name></member>
+      <member refid="classAbstractPokitService_1a039d2f1054788cf586c8decadb53ddc0" prot="public" virt="non-virtual"><scope>AbstractPokitService</scope><name>pokitProduct</name></member>
+      <member refid="qobject_1property" prot="public" virt="non-virtual"><scope>AbstractPokitService</scope><name>property</name></member>
+      <member refid="qobject_1Q_CLASSINFO" prot="public" virt="non-virtual"><scope>AbstractPokitService</scope><name>Q_CLASSINFO</name></member>
+      <member refid="qobject_1Q_EMIT" prot="public" virt="non-virtual"><scope>AbstractPokitService</scope><name>Q_EMIT</name></member>
+      <member refid="qobject_1Q_ENUM" prot="public" virt="non-virtual"><scope>AbstractPokitService</scope><name>Q_ENUM</name></member>
+      <member refid="qobject_1Q_ENUM_NS" prot="public" virt="non-virtual"><scope>AbstractPokitService</scope><name>Q_ENUM_NS</name></member>
+      <member refid="qobject-obsolete_1Q_ENUMS" prot="public" virt="non-virtual"><scope>AbstractPokitService</scope><name>Q_ENUMS</name></member>
+      <member refid="qobject_1Q_FLAG" prot="public" virt="non-virtual"><scope>AbstractPokitService</scope><name>Q_FLAG</name></member>
+      <member refid="qobject_1Q_FLAG_NS" prot="public" virt="non-virtual"><scope>AbstractPokitService</scope><name>Q_FLAG_NS</name></member>
+      <member refid="qobject-obsolete_1Q_FLAGS" prot="public" virt="non-virtual"><scope>AbstractPokitService</scope><name>Q_FLAGS</name></member>
+      <member refid="qobject_1Q_GADGET" prot="public" virt="non-virtual"><scope>AbstractPokitService</scope><name>Q_GADGET</name></member>
+      <member refid="qobject_1Q_GADGET_EXPORT" prot="public" virt="non-virtual"><scope>AbstractPokitService</scope><name>Q_GADGET_EXPORT</name></member>
+      <member refid="qobject_1Q_INTERFACES" prot="public" virt="non-virtual"><scope>AbstractPokitService</scope><name>Q_INTERFACES</name></member>
+      <member refid="qobject_1Q_INVOKABLE" prot="public" virt="non-virtual"><scope>AbstractPokitService</scope><name>Q_INVOKABLE</name></member>
+      <member refid="qobject_1Q_MOC_INCLUDE" prot="public" virt="non-virtual"><scope>AbstractPokitService</scope><name>Q_MOC_INCLUDE</name></member>
+      <member refid="qobject_1Q_NAMESPACE" prot="public" virt="non-virtual"><scope>AbstractPokitService</scope><name>Q_NAMESPACE</name></member>
+      <member refid="qobject_1Q_NAMESPACE_EXPORT" prot="public" virt="non-virtual"><scope>AbstractPokitService</scope><name>Q_NAMESPACE_EXPORT</name></member>
+      <member refid="qobject_1Q_OBJECT" prot="public" virt="non-virtual"><scope>AbstractPokitService</scope><name>Q_OBJECT</name></member>
+      <member refid="qobject_1Q_PROPERTY" prot="public" virt="non-virtual"><scope>AbstractPokitService</scope><name>Q_PROPERTY</name></member>
+      <member refid="qobject_1Q_REVISION" prot="public" virt="non-virtual"><scope>AbstractPokitService</scope><name>Q_REVISION</name></member>
+      <member refid="qobject_1Q_SET_OBJECT_NAME" prot="public" virt="non-virtual"><scope>AbstractPokitService</scope><name>Q_SET_OBJECT_NAME</name></member>
+      <member refid="qobject_1Q_SIGNAL" prot="public" virt="non-virtual"><scope>AbstractPokitService</scope><name>Q_SIGNAL</name></member>
+      <member refid="qobject_1Q_SIGNALS" prot="public" virt="non-virtual"><scope>AbstractPokitService</scope><name>Q_SIGNALS</name></member>
+      <member refid="qobject_1Q_SLOT" prot="public" virt="non-virtual"><scope>AbstractPokitService</scope><name>Q_SLOT</name></member>
+      <member refid="qobject_1Q_SLOTS" prot="public" virt="non-virtual"><scope>AbstractPokitService</scope><name>Q_SLOTS</name></member>
+      <member refid="qobject_1QObject" prot="public" virt="non-virtual"><scope>AbstractPokitService</scope><name>QObject</name></member>
+      <member refid="qobject_1qobject_cast" prot="public" virt="non-virtual"><scope>AbstractPokitService</scope><name>qobject_cast</name></member>
+      <member refid="qobject_1qobject_cast-1" prot="public" virt="non-virtual"><scope>AbstractPokitService</scope><name>qobject_cast</name></member>
+      <member refid="qobject_1QObjectList-typedef" prot="public" virt="non-virtual"><scope>AbstractPokitService</scope><name>QObjectList</name></member>
+      <member refid="qobject_1QT_NO_NARROWING_CONVERSIONS_IN_CONNECT" prot="public" virt="non-virtual"><scope>AbstractPokitService</scope><name>QT_NO_NARROWING_CONVERSIONS_IN_CONNECT</name></member>
+      <member refid="classAbstractPokitService_1ab1de532f20d46803d6e8b8ffea835b48" prot="public" virt="pure-virtual"><scope>AbstractPokitService</scope><name>readCharacteristics</name></member>
+      <member refid="qobject_1receivers" prot="protected" virt="non-virtual"><scope>AbstractPokitService</scope><name>receivers</name></member>
+      <member refid="qobject_1removeEventFilter" prot="public" virt="non-virtual"><scope>AbstractPokitService</scope><name>removeEventFilter</name></member>
+      <member refid="qobject_1sender" prot="protected" virt="non-virtual"><scope>AbstractPokitService</scope><name>sender</name></member>
+      <member refid="qobject_1senderSignalIndex" prot="protected" virt="non-virtual"><scope>AbstractPokitService</scope><name>senderSignalIndex</name></member>
+      <member refid="classAbstractPokitService_1a7a4ff74f51ba6ea6c01cbeb9eda15b9b" prot="public" virt="non-virtual"><scope>AbstractPokitService</scope><name>service</name></member>
+      <member refid="classAbstractPokitService_1ab7161dedf8ae431f723a5e225c2ec9ca" prot="public" virt="non-virtual"><scope>AbstractPokitService</scope><name>service</name></member>
+      <member refid="classAbstractPokitService_1af67cbea4294ba0a77dcd9540b29528ff" prot="public" virt="non-virtual"><scope>AbstractPokitService</scope><name>serviceDetailsDiscovered</name></member>
+      <member refid="classAbstractPokitService_1a9e680ebf280361ef82f4b072448d7e9b" prot="public" virt="non-virtual"><scope>AbstractPokitService</scope><name>serviceErrorOccurred</name></member>
+      <member refid="classAbstractPokitService_1a9d6d50cf31bc5859747a134d6cb4c418" prot="public" virt="non-virtual"><scope>AbstractPokitService</scope><name>setAutoDiscover</name></member>
+      <member refid="qobject_1setObjectName-1" prot="public" virt="non-virtual"><scope>AbstractPokitService</scope><name>setObjectName</name></member>
+      <member refid="qobject_1setObjectName" prot="public" virt="non-virtual"><scope>AbstractPokitService</scope><name>setObjectName</name></member>
+      <member refid="qobject_1setParent" prot="public" virt="non-virtual"><scope>AbstractPokitService</scope><name>setParent</name></member>
+      <member refid="classAbstractPokitService_1aa0e323c5e2380709c5a5fde18520ae3f" prot="public" virt="non-virtual"><scope>AbstractPokitService</scope><name>setPokitProduct</name></member>
+      <member refid="qobject_1setProperty-1" prot="public" virt="non-virtual"><scope>AbstractPokitService</scope><name>setProperty</name></member>
+      <member refid="qobject_1setProperty" prot="public" virt="non-virtual"><scope>AbstractPokitService</scope><name>setProperty</name></member>
+      <member refid="qobject_1signalsBlocked" prot="public" virt="non-virtual"><scope>AbstractPokitService</scope><name>signalsBlocked</name></member>
+      <member refid="qobject_1startTimer" prot="public" virt="non-virtual"><scope>AbstractPokitService</scope><name>startTimer</name></member>
+      <member refid="qobject_1startTimer-1" prot="public" virt="non-virtual"><scope>AbstractPokitService</scope><name>startTimer</name></member>
+      <member refid="classAbstractPokitService_1a127cc137bfd605debbdf97eec20d08c9" prot="private" virt="non-virtual"><scope>AbstractPokitService</scope><name>TestAbstractPokitService</name></member>
+      <member refid="qobject_1thread" prot="public" virt="non-virtual"><scope>AbstractPokitService</scope><name>thread</name></member>
+      <member refid="qobject_1timerEvent" prot="protected" virt="virtual"><scope>AbstractPokitService</scope><name>timerEvent</name></member>
+      <member refid="qobject_1tr" prot="public" virt="non-virtual"><scope>AbstractPokitService</scope><name>tr</name></member>
+      <member refid="classAbstractPokitService_1af0b962913c8be9b1d69ce1b68a5f9bdd" prot="public" virt="virtual"><scope>AbstractPokitService</scope><name>~AbstractPokitService</name></member>
+      <member refid="qobject_1dtor.QObject" prot="public" virt="virtual"><scope>AbstractPokitService</scope><name>~QObject</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

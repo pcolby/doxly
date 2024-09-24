@@ -1,0 +1,929 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.0" xml:lang="en-US">
+  <compounddef id="classDsoService" kind="class" language="C++" prot="public">
+    <compoundname>DsoService</compoundname>
+    <basecompoundref refid="classAbstractPokitService" prot="public" virt="non-virtual">AbstractPokitService</basecompoundref>
+    <innerclass refid="structDsoService_1_1CharacteristicUuids" prot="public">DsoService::CharacteristicUuids</innerclass>
+    <innerclass refid="structDsoService_1_1Metadata" prot="public">DsoService::Metadata</innerclass>
+    <innerclass refid="structDsoService_1_1Settings" prot="public">DsoService::Settings</innerclass>
+    <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classDsoService_1af2baee0dc3fa5e308be06c691dece236" prot="public" static="no" strong="yes">
+        <type>quint8</type>
+        <name>Command</name>
+        <qualifiedname>DsoService::Command</qualifiedname>
+        <enumvalue id="classDsoService_1af2baee0dc3fa5e308be06c691dece236a75564fb3d5bebd9283b77cc37a30463f" prot="public">
+          <name>FreeRunning</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>Run free, without waiting for edge triggers. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classDsoService_1af2baee0dc3fa5e308be06c691dece236adbf4d21ae7c8f69c3a9375d0d16613d6" prot="public">
+          <name>RisingEdgeTrigger</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+<para>Trigger on a rising edge. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classDsoService_1af2baee0dc3fa5e308be06c691dece236af8818049ee541da5e1567511eafbe6f1" prot="public">
+          <name>FallingEdgeTrigger</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+<para>Trigger on a falling edge. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classDsoService_1af2baee0dc3fa5e308be06c691dece236a676ab69ae5c380c4f21bf22256fb6ff6" prot="public">
+          <name>ResendData</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+<para>Resend the last acquired data. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Values supported by the <computeroutput>Command</computeroutput> attribute of the <computeroutput><ref refid="structDsoService_1_1Settings" kindref="compound">Settings</ref></computeroutput> characteristic. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/dsoservice.h" line="44" column="5" bodyfile="/home/paul/src/dokit/include/qtpokit/dsoservice.h" bodystart="44" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="enum" id="classDsoService_1ae1414a11556e06b49cea9fadcd6f5b95" prot="public" static="no" strong="yes">
+        <type>quint8</type>
+        <name>Mode</name>
+        <qualifiedname>DsoService::Mode</qualifiedname>
+        <enumvalue id="classDsoService_1ae1414a11556e06b49cea9fadcd6f5b95ae599161956d626eda4cb0a5ffb85271c" prot="public">
+          <name>Idle</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>Make device idle. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classDsoService_1ae1414a11556e06b49cea9fadcd6f5b95a1a18453c20867d5a990479b3716cbbc5" prot="public">
+          <name>DcVoltage</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+<para>Measure DC voltage. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classDsoService_1ae1414a11556e06b49cea9fadcd6f5b95a9f01dfb531bd23d5cb9c2bb2e49d685e" prot="public">
+          <name>AcVoltage</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+<para>Measure AC voltage. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classDsoService_1ae1414a11556e06b49cea9fadcd6f5b95af2a03b2c98a6620d4bf33af69572898e" prot="public">
+          <name>DcCurrent</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+<para>Measure DC current. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classDsoService_1ae1414a11556e06b49cea9fadcd6f5b95a7b39f260051ef745ddba9fc57ac23ff9" prot="public">
+          <name>AcCurrent</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+<para>Measure AC current. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Values supported by the <computeroutput>Mode</computeroutput> attribute of the <computeroutput><ref refid="structDsoService_1_1Settings" kindref="compound">Settings</ref></computeroutput> and <computeroutput><ref refid="structDsoService_1_1Metadata" kindref="compound">Metadata</ref></computeroutput> characteristics. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/dsoservice.h" line="52" column="5" bodyfile="/home/paul/src/dokit/include/qtpokit/dsoservice.h" bodystart="52" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="enum" id="classDsoService_1aaa4e080d3d3e444dabf9d7117561905d" prot="public" static="no" strong="yes">
+        <type>quint8</type>
+        <name>DsoStatus</name>
+        <qualifiedname>DsoService::DsoStatus</qualifiedname>
+        <enumvalue id="classDsoService_1aaa4e080d3d3e444dabf9d7117561905daf92965e2c8a7afb3c1b9a5c09a263636" prot="public">
+          <name>Done</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>Sampling has completed. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classDsoService_1aaa4e080d3d3e444dabf9d7117561905da1d07814d12178c958e4233501cb0bdc7" prot="public">
+          <name>Sampling</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+<para>Actively sampling. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classDsoService_1aaa4e080d3d3e444dabf9d7117561905da902b0d55fddef6f8d651fe1035b7d4bd" prot="public">
+          <name>Error</name>
+          <initializer>= 255</initializer>
+          <briefdescription>
+<para>An error has occurred. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Values supported by the <computeroutput>Status</computeroutput> attribute of the <computeroutput><ref refid="structDsoService_1_1Metadata" kindref="compound">Metadata</ref></computeroutput> characteristic. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/dsoservice.h" line="77" column="5" bodyfile="/home/paul/src/dokit/include/qtpokit/dsoservice.h" bodystart="77" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classDsoService_1a99b8139924e2ef845cca81ca7c340d2c" prot="public" static="no">
+        <type><ref refid="qvector" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QVector</ref>&lt; qint16 &gt;</type>
+        <definition>QVector&lt;qint16&gt; DsoService::Samples</definition>
+        <argsstring></argsstring>
+        <name>Samples</name>
+        <qualifiedname>DsoService::Samples</qualifiedname>
+        <briefdescription>
+<para>Raw samples from the <computeroutput>Reading</computeroutput> characteristic. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>These raw samples are (supposedly) wihtin the range -2048 to +2047, and need to be multiplied by the <ref refid="structDsoService_1_1Metadata_1a6b8a8636619603ff9a52e0ef2eba1085" kindref="member">Metadata::scale</ref> value from the <computeroutput><ref refid="structDsoService_1_1Metadata" kindref="compound">Metadata</ref></computeroutput> characteristc to get the true values.</para>
+<para>Also supposedly, there should be no more than 10 samples at a time, according to Pokit&apos;s current API docs. There is not artificial limitation imposed by QtPokit, so devices may begin batching more samples in future. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/dsoservice.h" line="94" column="21" bodyfile="/home/paul/src/dokit/include/qtpokit/dsoservice.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classDsoService_1a3d9a3fcb52d059fc454fdb71530d9a7d" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="qbluetoothuuid" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothUuid</ref></type>
+        <definition>const QBluetoothUuid DsoService::serviceUuid</definition>
+        <argsstring></argsstring>
+        <name>serviceUuid</name>
+        <qualifiedname>DsoService::serviceUuid</qualifiedname>
+        <initializer>{ QStringLiteral(&quot;1569801e-1425-4a7a-b617-a4f4ed719de6&quot;) }</initializer>
+        <briefdescription>
+<para>UUID of the &quot;DSO&quot; service. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/dsoservice.h" line="29" column="40" bodyfile="/home/paul/src/dokit/include/qtpokit/dsoservice.h" bodystart="29" bodyend="29"/>
+        <referencedby refid="classPokitDevice_1aca9393595de5676f20e3d0fd795358b5" compoundref="pokitdevice_8cpp" startline="190" endline="210">PokitDevice::serviceToString</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="classDsoService_1af13e3e2794266018d133cfd424d7a831" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class TestDsoService</definition>
+        <argsstring></argsstring>
+        <name>TestDsoService</name>
+        <qualifiedname>DsoService::TestDsoService</qualifiedname>
+        <param>
+          <type>TestDsoService</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/dsoservice.h" line="129" column="18" bodyfile="/home/paul/src/dokit/include/qtpokit/dsoservice.h" bodystart="129" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classDsoService_1acc76b93255cf3c5110d90c0df3318afe" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref></type>
+        <definition>QString DsoService::toString</definition>
+        <argsstring>(const Mode &amp;mode)</argsstring>
+        <name>toString</name>
+        <qualifiedname>DsoService::toString</qualifiedname>
+        <param>
+          <type>const <ref refid="classDsoService_1ae1414a11556e06b49cea9fadcd6f5b95" kindref="member">Mode</ref> &amp;</type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+<para>Returns <emphasis>mode</emphasis> as a user-friendly string. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/dsoservice.h" line="59" column="20" bodyfile="/home/paul/src/dokit/src/lib/dsoservice.cpp" bodystart="26" bodyend="36"/>
+        <references refid="classDsoService_1ae1414a11556e06b49cea9fadcd6f5b95a7b39f260051ef745ddba9fc57ac23ff9">AcCurrent</references>
+        <references refid="classDsoService_1ae1414a11556e06b49cea9fadcd6f5b95a9f01dfb531bd23d5cb9c2bb2e49d685e">AcVoltage</references>
+        <references refid="classDsoService_1ae1414a11556e06b49cea9fadcd6f5b95af2a03b2c98a6620d4bf33af69572898e">DcCurrent</references>
+        <references refid="classDsoService_1ae1414a11556e06b49cea9fadcd6f5b95a1a18453c20867d5a990479b3716cbbc5">DcVoltage</references>
+        <references refid="classDsoService_1ae1414a11556e06b49cea9fadcd6f5b95ae599161956d626eda4cb0a5ffb85271c">Idle</references>
+        <references refid="qobject_1tr">QObject::tr</references>
+        <referencedby refid="classDsoCommand_1ae3458da4747f34661ec0ef1d36657e24" compoundref="dsocommand_8cpp" startline="227" endline="238">DsoCommand::metadataRead</referencedby>
+        <referencedby refid="classDsoCommand_1a5ed6988ac93f2964979b8dce1425816e" compoundref="dsocommand_8cpp" startline="243" endline="287">DsoCommand::outputSamples</referencedby>
+        <referencedby refid="classDsoCommand_1a57f3b6be35c7a6fdadfaa737177016a8" compoundref="dsocommand_8cpp" startline="186" endline="195">DsoCommand::serviceDetailsDiscovered</referencedby>
+        <referencedby refid="classDsoService_1aa106091512457325081f1940ad70c9f7" compoundref="dsoservice_8cpp" startline="55" endline="58">toString</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classDsoService_1ae30b37a57050beb9f9d36f8dc38b2bb6" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref></type>
+        <definition>QString DsoService::toString</definition>
+        <argsstring>(const PokitProduct product, const quint8 range, const Mode mode)</argsstring>
+        <name>toString</name>
+        <qualifiedname>DsoService::toString</qualifiedname>
+        <param>
+          <type>const <ref refid="pokitproducts_8h_1a0c4f628f68ce0432a6db11681a41fda4" kindref="member">PokitProduct</ref></type>
+          <declname>product</declname>
+        </param>
+        <param>
+          <type>const quint8</type>
+          <declname>range</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classDsoService_1ae1414a11556e06b49cea9fadcd6f5b95" kindref="member">Mode</ref></type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+<para>Returns <emphasis>range</emphasis> as a user-friendly string, or a null <ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref> if <emphasis>mode</emphasis> has no ranges. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/dsoservice.h" line="61" column="20" bodyfile="/home/paul/src/dokit/src/lib/dsoservice.cpp" bodystart="39" bodyend="52"/>
+        <references refid="classDsoService_1ae1414a11556e06b49cea9fadcd6f5b95a7b39f260051ef745ddba9fc57ac23ff9">AcCurrent</references>
+        <references refid="classDsoService_1ae1414a11556e06b49cea9fadcd6f5b95a9f01dfb531bd23d5cb9c2bb2e49d685e">AcVoltage</references>
+        <references refid="classDsoService_1ae1414a11556e06b49cea9fadcd6f5b95af2a03b2c98a6620d4bf33af69572898e">DcCurrent</references>
+        <references refid="classDsoService_1ae1414a11556e06b49cea9fadcd6f5b95a1a18453c20867d5a990479b3716cbbc5">DcVoltage</references>
+        <references refid="classDsoService_1ae1414a11556e06b49cea9fadcd6f5b95ae599161956d626eda4cb0a5ffb85271c">Idle</references>
+        <references refid="namespaceCurrentRange_1a683a82fdd02371d1d6acb4bbbd91e844" compoundref="pokitproducts_8cpp" startline="183" endline="194">CurrentRange::toString</references>
+        <references refid="namespaceVoltageRange_1a843ef4bfc3538988c695fa643adcd4d0" compoundref="pokitproducts_8cpp" startline="271" endline="282">VoltageRange::toString</references>
+      </memberdef>
+      <memberdef kind="function" id="classDsoService_1a51b27cb93f71a39a69a11d697624fde4" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="qvariant" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QVariant</ref></type>
+        <definition>QVariant DsoService::maxValue</definition>
+        <argsstring>(const PokitProduct product, const quint8 range, const Mode mode)</argsstring>
+        <name>maxValue</name>
+        <qualifiedname>DsoService::maxValue</qualifiedname>
+        <param>
+          <type>const <ref refid="pokitproducts_8h_1a0c4f628f68ce0432a6db11681a41fda4" kindref="member">PokitProduct</ref></type>
+          <declname>product</declname>
+        </param>
+        <param>
+          <type>const quint8</type>
+          <declname>range</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classDsoService_1ae1414a11556e06b49cea9fadcd6f5b95" kindref="member">Mode</ref></type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+<para>Returns the maximum value for <emphasis>range</emphasis>, or the string &quot;Auto&quot;. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If <emphasis>range</emphasis> is not a known valid enumeration value for <emphasis>product&apos;s</emphasis> <emphasis>mode</emphasis>, then a null <ref refid="qvariant" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QVariant</ref> is returned. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/dsoservice.h" line="63" column="21" bodyfile="/home/paul/src/dokit/src/lib/dsoservice.cpp" bodystart="65" bodyend="78"/>
+        <references refid="classDsoService_1ae1414a11556e06b49cea9fadcd6f5b95a7b39f260051ef745ddba9fc57ac23ff9">AcCurrent</references>
+        <references refid="classDsoService_1ae1414a11556e06b49cea9fadcd6f5b95a9f01dfb531bd23d5cb9c2bb2e49d685e">AcVoltage</references>
+        <references refid="classDsoService_1ae1414a11556e06b49cea9fadcd6f5b95af2a03b2c98a6620d4bf33af69572898e">DcCurrent</references>
+        <references refid="classDsoService_1ae1414a11556e06b49cea9fadcd6f5b95a1a18453c20867d5a990479b3716cbbc5">DcVoltage</references>
+        <references refid="classDsoService_1ae1414a11556e06b49cea9fadcd6f5b95ae599161956d626eda4cb0a5ffb85271c">Idle</references>
+        <references refid="namespaceCurrentRange_1a340ae103126865c13997adcde5976bd1" compoundref="pokitproducts_8cpp" startline="203" endline="214">CurrentRange::maxValue</references>
+        <references refid="namespaceVoltageRange_1adc3a8126ae8dcec8010fc8b037fab885" compoundref="pokitproducts_8cpp" startline="291" endline="302">VoltageRange::maxValue</references>
+        <referencedby refid="classDsoService_1abd84505a298a555e421d9a80d59c6216" compoundref="dsoservice_8cpp" startline="86" endline="89">maxValue</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classDsoService_1aa106091512457325081f1940ad70c9f7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref></type>
+        <definition>QString DsoService::toString</definition>
+        <argsstring>(const quint8 range, const Mode mode) const</argsstring>
+        <name>toString</name>
+        <qualifiedname>DsoService::toString</qualifiedname>
+        <param>
+          <type>const quint8</type>
+          <declname>range</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classDsoService_1ae1414a11556e06b49cea9fadcd6f5b95" kindref="member">Mode</ref></type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+<para>Returns <emphasis>range</emphasis> as a user-friendly string, or a null <ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref> if <emphasis>mode</emphasis> has no ranges. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/dsoservice.h" line="62" column="13" bodyfile="/home/paul/src/dokit/src/lib/dsoservice.cpp" bodystart="55" bodyend="58"/>
+        <references refid="classAbstractPokitService_1a039d2f1054788cf586c8decadb53ddc0" compoundref="abstractpokitservice_8cpp" startline="86" endline="90">AbstractPokitService::pokitProduct</references>
+        <references refid="classDsoService_1acc76b93255cf3c5110d90c0df3318afe" compoundref="dsoservice_8cpp" startline="26" endline="36">toString</references>
+      </memberdef>
+      <memberdef kind="function" id="classDsoService_1abd84505a298a555e421d9a80d59c6216" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="qvariant" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QVariant</ref></type>
+        <definition>QVariant DsoService::maxValue</definition>
+        <argsstring>(const quint8 range, const Mode mode) const</argsstring>
+        <name>maxValue</name>
+        <qualifiedname>DsoService::maxValue</qualifiedname>
+        <param>
+          <type>const quint8</type>
+          <declname>range</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classDsoService_1ae1414a11556e06b49cea9fadcd6f5b95" kindref="member">Mode</ref></type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+<para>Returns the maximum value for <emphasis>range</emphasis>, or the string &quot;Auto&quot;. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If <emphasis>range</emphasis> is not a known valid enumeration value for the current <emphasis>product&apos;s</emphasis> <emphasis>mode</emphasis>, then a null <ref refid="qvariant" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QVariant</ref> is returned. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/dsoservice.h" line="64" column="14" bodyfile="/home/paul/src/dokit/src/lib/dsoservice.cpp" bodystart="86" bodyend="89"/>
+        <references refid="classDsoService_1a51b27cb93f71a39a69a11d697624fde4" compoundref="dsoservice_8cpp" startline="65" endline="78">maxValue</references>
+        <references refid="classAbstractPokitService_1a039d2f1054788cf586c8decadb53ddc0" compoundref="abstractpokitservice_8cpp" startline="86" endline="90">AbstractPokitService::pokitProduct</references>
+      </memberdef>
+      <memberdef kind="function" id="classDsoService_1a1dd2b779c611f5d255bedf8f142806b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>DsoService::DsoService</definition>
+        <argsstring>(QLowEnergyController *const pokitDevice, QObject *parent=nullptr)</argsstring>
+        <name>DsoService</name>
+        <qualifiedname>DsoService::DsoService</qualifiedname>
+        <param>
+          <type><ref refid="qlowenergycontroller" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QLowEnergyController</ref> *const</type>
+          <declname>pokitDevice</declname>
+        </param>
+        <param>
+          <type><ref refid="qobject" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QObject</ref> *</type>
+          <declname>parent</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+<para>Constructs a new Pokit service with <emphasis>parent</emphasis>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/dsoservice.h" line="96" column="5" bodyfile="/home/paul/src/dokit/src/lib/dsoservice.cpp" bodystart="106" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="function" id="classDsoService_1ab25812c6409b874e4f61026ab1ac7e40" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>DsoService::~DsoService</definition>
+        <argsstring>() override</argsstring>
+        <name>~DsoService</name>
+        <qualifiedname>DsoService::~DsoService</qualifiedname>
+        <briefdescription>
+<para>Destroys this <ref refid="classDsoService" kindref="compound">DsoService</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/dsoservice.h" line="97" column="5" bodyfile="/home/paul/src/dokit/src/lib/dsoservice.cpp" bodystart="127" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="function" id="classDsoService_1aad086e99bfe4fe2e8d35d49c1e4d340b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool DsoService::readCharacteristics</definition>
+        <argsstring>() override</argsstring>
+        <name>readCharacteristics</name>
+        <qualifiedname>DsoService::readCharacteristics</qualifiedname>
+        <reimplements refid="classAbstractPokitService_1ab1de532f20d46803d6e8b8ffea835b48">readCharacteristics</reimplements>
+        <briefdescription>
+<para>Read all characteristics. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This convenience function will queue refresh requests of all characteristics supported by this service.</para>
+<para>Relevant <computeroutput>*Service::*Read</computeroutput> signals will be emitted by derived class objects as each characteristic is successfully read. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/dsoservice.h" line="99" column="10" bodyfile="/home/paul/src/dokit/src/lib/dsoservice.cpp" bodystart="132" bodyend="135"/>
+        <references refid="classDsoService_1ad8cd148690b9e4fd1b01071e8cfabd0c" compoundref="dsoservice_8cpp" startline="146" endline="150">readMetadataCharacteristic</references>
+      </memberdef>
+      <memberdef kind="function" id="classDsoService_1ad8cd148690b9e4fd1b01071e8cfabd0c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool DsoService::readMetadataCharacteristic</definition>
+        <argsstring>()</argsstring>
+        <name>readMetadataCharacteristic</name>
+        <qualifiedname>DsoService::readMetadataCharacteristic</qualifiedname>
+        <briefdescription>
+<para>Reads the <computeroutput>DSO</computeroutput> service&apos;s <computeroutput><ref refid="structDsoService_1_1Metadata" kindref="compound">Metadata</ref></computeroutput> characteristic. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns <computeroutput>true</computeroutput> is the read request is succesfully queued, <computeroutput>false</computeroutput> otherwise (ie if the underlying controller it not yet connected to the Pokit device, or the device&apos;s services have not yet been discovered).</para>
+<para>Emits <ref refid="classDsoService_1a19e4f10c45794762aa5b692aceee9e6c" kindref="member">metadataRead()</ref> if/when the characteristic has been read successfully. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/dsoservice.h" line="100" column="10" bodyfile="/home/paul/src/dokit/src/lib/dsoservice.cpp" bodystart="146" bodyend="150"/>
+        <references refid="structDsoService_1_1CharacteristicUuids_1a0640c015d85dba780fcad93990e37afa" compoundref="dsoservice_8h" startline="37" endline="37">DsoService::CharacteristicUuids::metadata</references>
+        <referencedby refid="classDsoService_1aad086e99bfe4fe2e8d35d49c1e4d340b" compoundref="dsoservice_8cpp" startline="132" endline="135">readCharacteristics</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classDsoService_1a5714c8ccec6ab1d98241312b28a32e9e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool DsoService::setSettings</definition>
+        <argsstring>(const Settings &amp;settings)</argsstring>
+        <name>setSettings</name>
+        <qualifiedname>DsoService::setSettings</qualifiedname>
+        <param>
+          <type>const <ref refid="structDsoService_1_1Settings" kindref="compound">Settings</ref> &amp;</type>
+          <declname>settings</declname>
+        </param>
+        <briefdescription>
+<para>Configures the Pokit device&apos;s DSO mode. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns <computeroutput>true</computeroutput> if the write request was successfully queued, <computeroutput>false</computeroutput> otherwise.</para>
+<para>Emits <ref refid="classDsoService_1a5d5b1266a63ee479c91c4e048cdf0859" kindref="member">settingsWritten()</ref> if/when the <emphasis>settings</emphasis> have been writtem successfully. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/dsoservice.h" line="103" column="10" bodyfile="/home/paul/src/dokit/src/lib/dsoservice.cpp" bodystart="159" bodyend="175"/>
+        <references refid="classDsoServicePrivate_1af35779b15db5c0e8c027104cc6ce014b" compoundref="dsoservice_8cpp" startline="334" endline="352">DsoServicePrivate::encodeSettings</references>
+        <references refid="qbytearray_1isNull">QByteArray::isNull</references>
+        <references refid="qlowenergycharacteristic_1isValid">QLowEnergyCharacteristic::isValid</references>
+        <references refid="structDsoService_1_1CharacteristicUuids_1aad3144a47fc1cc7edc705b3e823688a6" compoundref="dsoservice_8h" startline="34" endline="34">DsoService::CharacteristicUuids::settings</references>
+        <referencedby refid="classDsoService_1a5da2f9ae60f06d3b904d6d239bacd09e" compoundref="dsoservice_8cpp" startline="204" endline="210">fetchSamples</referencedby>
+        <referencedby refid="classDsoCommand_1a57f3b6be35c7a6fdadfaa737177016a8" compoundref="dsocommand_8cpp" startline="186" endline="195">DsoCommand::serviceDetailsDiscovered</referencedby>
+        <referencedby refid="classDsoService_1a4bd74f90cf6b34172cfeaff8112f22fe" compoundref="dsoservice_8cpp" startline="183" endline="192">startDso</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classDsoService_1a4bd74f90cf6b34172cfeaff8112f22fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool DsoService::startDso</definition>
+        <argsstring>(const Settings &amp;settings)</argsstring>
+        <name>startDso</name>
+        <qualifiedname>DsoService::startDso</qualifiedname>
+        <param>
+          <type>const <ref refid="structDsoService_1_1Settings" kindref="compound">Settings</ref> &amp;</type>
+          <declname>settings</declname>
+        </param>
+        <briefdescription>
+<para>Start the DSO with <emphasis>settings</emphasis>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is just a synonym for <ref refid="classDsoService_1a5714c8ccec6ab1d98241312b28a32e9e" kindref="member">setSettings()</ref> except makes the caller&apos;s intention more explicit, and sanity-checks that the settings&apos;s command is not <ref refid="classDsoService_1af2baee0dc3fa5e308be06c691dece236a676ab69ae5c380c4f21bf22256fb6ff6" kindref="member">DsoService::Command::ResendData</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/dsoservice.h" line="104" column="10" bodyfile="/home/paul/src/dokit/src/lib/dsoservice.cpp" bodystart="183" bodyend="192"/>
+        <references refid="structDsoService_1_1Settings_1a661cb2920a504d5f3fc7437529c37f15" compoundref="dsoservice_8h" startline="68">DsoService::Settings::command</references>
+        <references refid="classDsoService_1af2baee0dc3fa5e308be06c691dece236a676ab69ae5c380c4f21bf22256fb6ff6">ResendData</references>
+        <references refid="classDsoService_1a5714c8ccec6ab1d98241312b28a32e9e" compoundref="dsoservice_8cpp" startline="159" endline="175">setSettings</references>
+        <references refid="qobject_1tr">QObject::tr</references>
+      </memberdef>
+      <memberdef kind="function" id="classDsoService_1a5da2f9ae60f06d3b904d6d239bacd09e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool DsoService::fetchSamples</definition>
+        <argsstring>()</argsstring>
+        <name>fetchSamples</name>
+        <qualifiedname>DsoService::fetchSamples</qualifiedname>
+        <briefdescription>
+<para>Fetch DSO samples. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is just a convenience function equivalent to calling <ref refid="classDsoService_1a5714c8ccec6ab1d98241312b28a32e9e" kindref="member">setSettings()</ref> with the command set to DsoService::Command::Refresh.</para>
+<para>Once the Pokit device has processed this request succesffully, the device will begin notifying the <computeroutput><ref refid="structDsoService_1_1Metadata" kindref="compound">Metadata</ref></computeroutput> and <computeroutput>Reading</computeroutput> characteristic, resulting in emits of metadataRead and samplesRead respectively. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/dsoservice.h" line="105" column="10" bodyfile="/home/paul/src/dokit/src/lib/dsoservice.cpp" bodystart="204" bodyend="210"/>
+        <references refid="classDsoService_1ae1414a11556e06b49cea9fadcd6f5b95ae599161956d626eda4cb0a5ffb85271c">Idle</references>
+        <references refid="classDsoService_1af2baee0dc3fa5e308be06c691dece236a676ab69ae5c380c4f21bf22256fb6ff6">ResendData</references>
+        <references refid="classDsoService_1a5714c8ccec6ab1d98241312b28a32e9e" compoundref="dsoservice_8cpp" startline="159" endline="175">setSettings</references>
+      </memberdef>
+      <memberdef kind="function" id="classDsoService_1afda4aa4a55ff0af205f10ccf8c77cbf5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structDsoService_1_1Metadata" kindref="compound">Metadata</ref></type>
+        <definition>DsoService::Metadata DsoService::metadata</definition>
+        <argsstring>() const</argsstring>
+        <name>metadata</name>
+        <qualifiedname>DsoService::metadata</qualifiedname>
+        <briefdescription>
+<para>Returns the most recent value of the <computeroutput>DSO</computeroutput> service&apos;s <computeroutput><ref refid="structDsoService_1_1Metadata" kindref="compound">Metadata</ref></computeroutput> characteristic. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The returned value, if any, is from the underlying Bluetooth stack&apos;s cache. If no such value is currently available (ie the serviceDetailsDiscovered signal has not been emitted yet), then the returned <ref refid="structDsoService_1_1Metadata_1a6b8a8636619603ff9a52e0ef2eba1085" kindref="member">DsoService::Metadata::scale</ref> member will be a quiet NaN, which can be checked like:</para>
+<para><programlisting><codeline><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structDsoService_1_1Metadata" kindref="compound">DsoService::Metadata</ref><sp/><ref refid="classDsoService_1afda4aa4a55ff0af205f10ccf8c77cbf5" kindref="member">metadata</ref><sp/>=<sp/>multimeterService-&gt;metadata();</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(qIsNaN(<ref refid="classDsoService_1afda4aa4a55ff0af205f10ccf8c77cbf5" kindref="member">metadata</ref>.<ref refid="structDsoService_1_1Metadata_1a6b8a8636619603ff9a52e0ef2eba1085" kindref="member">scale</ref>))<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Handle<sp/>failure.</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/dsoservice.h" line="108" column="14" bodyfile="/home/paul/src/dokit/src/lib/dsoservice.cpp" bodystart="226" bodyend="233"/>
+        <references refid="classDsoService_1aaa4e080d3d3e444dabf9d7117561905da902b0d55fddef6f8d651fe1035b7d4bd">Error</references>
+        <references refid="classDsoService_1ae1414a11556e06b49cea9fadcd6f5b95ae599161956d626eda4cb0a5ffb85271c">Idle</references>
+        <references refid="qlowenergycharacteristic_1isValid">QLowEnergyCharacteristic::isValid</references>
+        <references refid="structDsoService_1_1CharacteristicUuids_1a0640c015d85dba780fcad93990e37afa" compoundref="dsoservice_8h" startline="37" endline="37">DsoService::CharacteristicUuids::metadata</references>
+        <references refid="classDsoServicePrivate_1af869cf5b228bac719545511ba4247b88" compoundref="dsoservice_8cpp" startline="357" endline="376">DsoServicePrivate::parseMetadata</references>
+        <references refid="qlowenergycharacteristic_1value">QLowEnergyCharacteristic::value</references>
+      </memberdef>
+      <memberdef kind="function" id="classDsoService_1a67ca97370da5420c62591c3d8614a26d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool DsoService::enableMetadataNotifications</definition>
+        <argsstring>()</argsstring>
+        <name>enableMetadataNotifications</name>
+        <qualifiedname>DsoService::enableMetadataNotifications</qualifiedname>
+        <briefdescription>
+<para>Enables client-side notifications of DSO metadata changes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is an alternative to manually requesting individual reads via <ref refid="classDsoService_1ad8cd148690b9e4fd1b01071e8cfabd0c" kindref="member">readMetadataCharacteristic()</ref>.</para>
+<para>Returns <computeroutput>true</computeroutput> is the request was successfully submited to the device queue, <computeroutput>false</computeroutput> otherwise.</para>
+<para>Successfully read values (if any) will be emitted via the <ref refid="classDsoService_1a19e4f10c45794762aa5b692aceee9e6c" kindref="member">metadataRead()</ref> signal. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/dsoservice.h" line="109" column="10" bodyfile="/home/paul/src/dokit/src/lib/dsoservice.cpp" bodystart="244" bodyend="248"/>
+        <references refid="structDsoService_1_1CharacteristicUuids_1a0640c015d85dba780fcad93990e37afa" compoundref="dsoservice_8h" startline="37" endline="37">DsoService::CharacteristicUuids::metadata</references>
+        <referencedby refid="classDsoCommand_1a96c56e497f56ab5ed43201ad13aede7b" compoundref="dsocommand_8cpp" startline="214" endline="222">DsoCommand::settingsWritten</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classDsoService_1a2c5e40248d6dfe341251093d75ecd60f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool DsoService::disableMetadataNotifications</definition>
+        <argsstring>()</argsstring>
+        <name>disableMetadataNotifications</name>
+        <qualifiedname>DsoService::disableMetadataNotifications</qualifiedname>
+        <briefdescription>
+<para>Disables client-side notifications of DSO metadata changes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Instantaneous reads can still be fetched by <ref refid="classDsoService_1ad8cd148690b9e4fd1b01071e8cfabd0c" kindref="member">readMetadataCharacteristic()</ref>.</para>
+<para>Returns <computeroutput>true</computeroutput> is the request was successfully submited to the device queue, <computeroutput>false</computeroutput> otherwise. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/dsoservice.h" line="110" column="10" bodyfile="/home/paul/src/dokit/src/lib/dsoservice.cpp" bodystart="257" bodyend="261"/>
+        <references refid="structDsoService_1_1CharacteristicUuids_1a0640c015d85dba780fcad93990e37afa" compoundref="dsoservice_8h" startline="37" endline="37">DsoService::CharacteristicUuids::metadata</references>
+      </memberdef>
+      <memberdef kind="function" id="classDsoService_1ab0d0c4d4b41617bc23556b800dbafe29" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool DsoService::enableReadingNotifications</definition>
+        <argsstring>()</argsstring>
+        <name>enableReadingNotifications</name>
+        <qualifiedname>DsoService::enableReadingNotifications</qualifiedname>
+        <briefdescription>
+<para>Enables client-side notifications of DSO readings. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns <computeroutput>true</computeroutput> is the request was successfully submited to the device queue, <computeroutput>false</computeroutput> otherwise.</para>
+<para>Successfully read samples (if any) will be emitted via the <ref refid="classDsoService_1afafabdcfc2d5812b32eac0e16c437789" kindref="member">samplesRead()</ref> signal. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/dsoservice.h" line="113" column="10" bodyfile="/home/paul/src/dokit/src/lib/dsoservice.cpp" bodystart="270" bodyend="274"/>
+        <references refid="structDsoService_1_1CharacteristicUuids_1a495b006c71a1b15952e54e1ff0791aa7" compoundref="dsoservice_8h" startline="40" endline="40">DsoService::CharacteristicUuids::reading</references>
+        <referencedby refid="classDsoCommand_1a96c56e497f56ab5ed43201ad13aede7b" compoundref="dsocommand_8cpp" startline="214" endline="222">DsoCommand::settingsWritten</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classDsoService_1af55d3574002bee3413f28ab48f007f8c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool DsoService::disableReadingNotifications</definition>
+        <argsstring>()</argsstring>
+        <name>disableReadingNotifications</name>
+        <qualifiedname>DsoService::disableReadingNotifications</qualifiedname>
+        <briefdescription>
+<para>Disables client-side notifications of DSO readings. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns <computeroutput>true</computeroutput> is the request was successfully submited to the device queue, <computeroutput>false</computeroutput> otherwise. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/dsoservice.h" line="114" column="10" bodyfile="/home/paul/src/dokit/src/lib/dsoservice.cpp" bodystart="281" bodyend="285"/>
+        <references refid="structDsoService_1_1CharacteristicUuids_1a495b006c71a1b15952e54e1ff0791aa7" compoundref="dsoservice_8h" startline="40" endline="40">DsoService::CharacteristicUuids::reading</references>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="signal">
+      <memberdef kind="signal" id="classDsoService_1a5d5b1266a63ee479c91c4e048cdf0859" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DsoService::settingsWritten</definition>
+        <argsstring>()</argsstring>
+        <name>settingsWritten</name>
+        <qualifiedname>DsoService::settingsWritten</qualifiedname>
+        <briefdescription>
+<para>This signal is emitted when the <computeroutput><ref refid="structDsoService_1_1Settings" kindref="compound">Settings</ref></computeroutput> characteristic has been written successfully. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="classDsoService_1a5714c8ccec6ab1d98241312b28a32e9e" kindref="member">setSettings</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/dsoservice.h" line="117" column="10"/>
+        <referencedby refid="classDsoCommand_1abdc2af86181151e0c64c655ed265fbe8" compoundref="dsocommand_8cpp" startline="169" endline="179">DsoCommand::getService</referencedby>
+      </memberdef>
+      <memberdef kind="signal" id="classDsoService_1a19e4f10c45794762aa5b692aceee9e6c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DsoService::metadataRead</definition>
+        <argsstring>(const DsoService::Metadata &amp;meta)</argsstring>
+        <name>metadataRead</name>
+        <qualifiedname>DsoService::metadataRead</qualifiedname>
+        <param>
+          <type>const <ref refid="structDsoService_1_1Metadata" kindref="compound">DsoService::Metadata</ref> &amp;</type>
+          <declname>meta</declname>
+        </param>
+        <briefdescription>
+<para>This signal is emitted when the <computeroutput><ref refid="structDsoService_1_1Metadata" kindref="compound">Metadata</ref></computeroutput> characteristic has been read successfully. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="classDsoService_1ad8cd148690b9e4fd1b01071e8cfabd0c" kindref="member">readMetadataCharacteristic</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/dsoservice.h" line="118" column="10"/>
+        <referencedby refid="classDsoCommand_1a96c56e497f56ab5ed43201ad13aede7b" compoundref="dsocommand_8cpp" startline="214" endline="222">DsoCommand::settingsWritten</referencedby>
+      </memberdef>
+      <memberdef kind="signal" id="classDsoService_1afafabdcfc2d5812b32eac0e16c437789" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DsoService::samplesRead</definition>
+        <argsstring>(const DsoService::Samples &amp;samples)</argsstring>
+        <name>samplesRead</name>
+        <qualifiedname>DsoService::samplesRead</qualifiedname>
+        <param>
+          <type>const <ref refid="classDsoService_1a99b8139924e2ef845cca81ca7c340d2c" kindref="member">DsoService::Samples</ref> &amp;</type>
+          <declname>samples</declname>
+        </param>
+        <briefdescription>
+<para>This signal is emitted when the <computeroutput>Reading</computeroutput> characteristic has been notified. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para>beginSampling </para>
+</simplesect>
+<simplesect kind="see"><para>stopSampling </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/dsoservice.h" line="119" column="10"/>
+        <referencedby refid="classDsoCommand_1a96c56e497f56ab5ed43201ad13aede7b" compoundref="dsocommand_8cpp" startline="214" endline="222">DsoCommand::settingsWritten</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classDsoService_1a6c65df8d9babf0ac3203c293730ebd4f" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>DsoService::DsoService</definition>
+        <argsstring>(DsoServicePrivate *const d, QObject *const parent)</argsstring>
+        <name>DsoService</name>
+        <qualifiedname>DsoService::DsoService</qualifiedname>
+        <param>
+          <type><ref refid="classDsoServicePrivate" kindref="compound">DsoServicePrivate</ref> *const</type>
+          <declname>d</declname>
+        </param>
+        <param>
+          <type><ref refid="qobject" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QObject</ref> *const</type>
+          <declname>parent</declname>
+        </param>
+        <briefdescription>
+<para>Constructs a new Pokit service with <emphasis>parent</emphasis>, and private implementation <emphasis>d</emphasis>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/dsoservice.h" line="123" column="5" bodyfile="/home/paul/src/dokit/src/lib/dsoservice.cpp" bodystart="116" bodyend="121"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>The <ref refid="classDsoService" kindref="compound">DsoService</ref> class accesses the <computeroutput>DSO</computeroutput> (Digital Storage Oscilloscope) service of Pokit devices. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>AbstractPokitService</label>
+        <link refid="classAbstractPokitService"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>DsoService</label>
+        <link refid="classDsoService"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>QObject</label>
+        <link refid="qobject" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>AbstractPokitService</label>
+        <link refid="classAbstractPokitService"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>d_ptr</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>AbstractPokitServicePrivate</label>
+        <link refid="classAbstractPokitServicePrivate"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>controller</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>service</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>serviceUuid</edgelabel>
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>q_ptr</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>DsoService</label>
+        <link refid="classDsoService"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>serviceUuid</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>QBluetoothUuid</label>
+        <link refid="qbluetoothuuid" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags"/>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>QLowEnergyController</label>
+        <link refid="qlowenergycontroller" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>QLowEnergyService</label>
+        <link refid="qlowenergyservice" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>QObject</label>
+        <link refid="qobject" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags"/>
+      </node>
+      <node id="8">
+        <label>QUuid</label>
+        <link refid="quuid" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/paul/src/dokit/include/qtpokit/dsoservice.h" line="23" column="1" bodyfile="/home/paul/src/dokit/include/qtpokit/dsoservice.h" bodystart="24" bodyend="130"/>
+    <listofallmembers>
+      <member refid="classAbstractPokitService_1aa1309523f169115a7b7a8117ea4ab04f" prot="public" virt="non-virtual"><scope>DsoService</scope><name>AbstractPokitService</name></member>
+      <member refid="classAbstractPokitService_1a2d624e58e68663e0420df7d282caf116" prot="protected" virt="non-virtual"><scope>DsoService</scope><name>AbstractPokitService</name></member>
+      <member refid="classAbstractPokitService_1a65c2c9c6163744a7cf52de2c6a83f610" prot="public" virt="non-virtual"><scope>DsoService</scope><name>autoDiscover</name></member>
+      <member refid="qobject_1objectName-prop" prot="public" virt="non-virtual"><scope>DsoService</scope><name>bindableObjectName</name></member>
+      <member refid="qobject_1blockSignals" prot="public" virt="non-virtual"><scope>DsoService</scope><name>blockSignals</name></member>
+      <member refid="qobject_1childEvent" prot="protected" virt="virtual"><scope>DsoService</scope><name>childEvent</name></member>
+      <member refid="qobject_1children" prot="public" virt="non-virtual"><scope>DsoService</scope><name>children</name></member>
+      <member refid="classDsoService_1af2baee0dc3fa5e308be06c691dece236" prot="public" virt="non-virtual"><scope>DsoService</scope><name>Command</name></member>
+      <member refid="qobject_1connect-4" prot="public" virt="non-virtual"><scope>DsoService</scope><name>connect</name></member>
+      <member refid="qobject_1connect-5" prot="public" virt="non-virtual"><scope>DsoService</scope><name>connect</name></member>
+      <member refid="qobject_1connect-3" prot="public" virt="non-virtual"><scope>DsoService</scope><name>connect</name></member>
+      <member refid="qobject_1connect-1" prot="public" virt="non-virtual"><scope>DsoService</scope><name>connect</name></member>
+      <member refid="qobject_1connect" prot="public" virt="non-virtual"><scope>DsoService</scope><name>connect</name></member>
+      <member refid="qobject_1connect-2" prot="public" virt="non-virtual"><scope>DsoService</scope><name>connect</name></member>
+      <member refid="qobject_1connectNotify" prot="protected" virt="virtual"><scope>DsoService</scope><name>connectNotify</name></member>
+      <member refid="qobject_1customEvent" prot="protected" virt="virtual"><scope>DsoService</scope><name>customEvent</name></member>
+      <member refid="classAbstractPokitService_1acb832f24262f3f61f74c878dd79f48e8" prot="protected" virt="non-virtual"><scope>DsoService</scope><name>d_ptr</name></member>
+      <member refid="qobject_1deleteLater" prot="public" virt="non-virtual"><scope>DsoService</scope><name>deleteLater</name></member>
+      <member refid="qobject_1destroyed" prot="public" virt="non-virtual"><scope>DsoService</scope><name>destroyed</name></member>
+      <member refid="classDsoService_1a2c5e40248d6dfe341251093d75ecd60f" prot="public" virt="non-virtual"><scope>DsoService</scope><name>disableMetadataNotifications</name></member>
+      <member refid="classDsoService_1af55d3574002bee3413f28ab48f007f8c" prot="public" virt="non-virtual"><scope>DsoService</scope><name>disableReadingNotifications</name></member>
+      <member refid="qobject_1disconnect-4" prot="public" virt="non-virtual"><scope>DsoService</scope><name>disconnect</name></member>
+      <member refid="qobject_1disconnect-5" prot="public" virt="non-virtual"><scope>DsoService</scope><name>disconnect</name></member>
+      <member refid="qobject_1disconnect-1" prot="public" virt="non-virtual"><scope>DsoService</scope><name>disconnect</name></member>
+      <member refid="qobject_1disconnect" prot="public" virt="non-virtual"><scope>DsoService</scope><name>disconnect</name></member>
+      <member refid="qobject_1disconnect-3" prot="public" virt="non-virtual"><scope>DsoService</scope><name>disconnect</name></member>
+      <member refid="qobject_1disconnect-2" prot="public" virt="non-virtual"><scope>DsoService</scope><name>disconnect</name></member>
+      <member refid="qobject_1disconnectNotify" prot="protected" virt="virtual"><scope>DsoService</scope><name>disconnectNotify</name></member>
+      <member refid="classDsoService_1a1dd2b779c611f5d255bedf8f142806b7" prot="public" virt="non-virtual"><scope>DsoService</scope><name>DsoService</name></member>
+      <member refid="classDsoService_1a6c65df8d9babf0ac3203c293730ebd4f" prot="protected" virt="non-virtual"><scope>DsoService</scope><name>DsoService</name></member>
+      <member refid="classDsoService_1aaa4e080d3d3e444dabf9d7117561905d" prot="public" virt="non-virtual"><scope>DsoService</scope><name>DsoStatus</name></member>
+      <member refid="qobject_1dumpObjectInfo" prot="public" virt="non-virtual"><scope>DsoService</scope><name>dumpObjectInfo</name></member>
+      <member refid="qobject_1dumpObjectTree" prot="public" virt="non-virtual"><scope>DsoService</scope><name>dumpObjectTree</name></member>
+      <member refid="qobject_1dynamicPropertyNames" prot="public" virt="non-virtual"><scope>DsoService</scope><name>dynamicPropertyNames</name></member>
+      <member refid="classDsoService_1a67ca97370da5420c62591c3d8614a26d" prot="public" virt="non-virtual"><scope>DsoService</scope><name>enableMetadataNotifications</name></member>
+      <member refid="classDsoService_1ab0d0c4d4b41617bc23556b800dbafe29" prot="public" virt="non-virtual"><scope>DsoService</scope><name>enableReadingNotifications</name></member>
+      <member refid="qobject_1event" prot="public" virt="virtual"><scope>DsoService</scope><name>event</name></member>
+      <member refid="qobject_1eventFilter" prot="public" virt="virtual"><scope>DsoService</scope><name>eventFilter</name></member>
+      <member refid="classDsoService_1a5da2f9ae60f06d3b904d6d239bacd09e" prot="public" virt="non-virtual"><scope>DsoService</scope><name>fetchSamples</name></member>
+      <member refid="qobject_1findChild" prot="public" virt="non-virtual"><scope>DsoService</scope><name>findChild</name></member>
+      <member refid="qobject_1findChildren-1" prot="public" virt="non-virtual"><scope>DsoService</scope><name>findChildren</name></member>
+      <member refid="qobject_1findChildren-2" prot="public" virt="non-virtual"><scope>DsoService</scope><name>findChildren</name></member>
+      <member refid="qobject_1findChildren" prot="public" virt="non-virtual"><scope>DsoService</scope><name>findChildren</name></member>
+      <member refid="qobject_1inherits" prot="public" virt="non-virtual"><scope>DsoService</scope><name>inherits</name></member>
+      <member refid="qobject_1installEventFilter" prot="public" virt="non-virtual"><scope>DsoService</scope><name>installEventFilter</name></member>
+      <member refid="qobject_1isQuickItemType" prot="public" virt="non-virtual"><scope>DsoService</scope><name>isQuickItemType</name></member>
+      <member refid="qobject_1isSignalConnected" prot="protected" virt="non-virtual"><scope>DsoService</scope><name>isSignalConnected</name></member>
+      <member refid="qobject_1isWidgetType" prot="public" virt="non-virtual"><scope>DsoService</scope><name>isWidgetType</name></member>
+      <member refid="qobject_1isWindowType" prot="public" virt="non-virtual"><scope>DsoService</scope><name>isWindowType</name></member>
+      <member refid="qobject_1killTimer" prot="public" virt="non-virtual"><scope>DsoService</scope><name>killTimer</name></member>
+      <member refid="classDsoService_1a51b27cb93f71a39a69a11d697624fde4" prot="public" virt="non-virtual"><scope>DsoService</scope><name>maxValue</name></member>
+      <member refid="classDsoService_1abd84505a298a555e421d9a80d59c6216" prot="public" virt="non-virtual"><scope>DsoService</scope><name>maxValue</name></member>
+      <member refid="classDsoService_1afda4aa4a55ff0af205f10ccf8c77cbf5" prot="public" virt="non-virtual"><scope>DsoService</scope><name>metadata</name></member>
+      <member refid="classDsoService_1a19e4f10c45794762aa5b692aceee9e6c" prot="public" virt="non-virtual"><scope>DsoService</scope><name>metadataRead</name></member>
+      <member refid="qobject_1metaObject" prot="public" virt="virtual"><scope>DsoService</scope><name>metaObject</name></member>
+      <member refid="classDsoService_1ae1414a11556e06b49cea9fadcd6f5b95" prot="public" virt="non-virtual"><scope>DsoService</scope><name>Mode</name></member>
+      <member refid="qobject_1moveToThread" prot="public" virt="non-virtual"><scope>DsoService</scope><name>moveToThread</name></member>
+      <member refid="qobject_1objectName-prop" prot="public" virt="non-virtual"><scope>DsoService</scope><name>objectName</name></member>
+      <member refid="qobject_1objectName-prop" prot="public" virt="non-virtual"><scope>DsoService</scope><name>objectName</name></member>
+      <member refid="qobject_1objectNameChanged" prot="public" virt="non-virtual"><scope>DsoService</scope><name>objectNameChanged</name></member>
+      <member refid="qobject_1parent" prot="public" virt="non-virtual"><scope>DsoService</scope><name>parent</name></member>
+      <member refid="classAbstractPokitService_1a039d2f1054788cf586c8decadb53ddc0" prot="public" virt="non-virtual"><scope>DsoService</scope><name>pokitProduct</name></member>
+      <member refid="qobject_1property" prot="public" virt="non-virtual"><scope>DsoService</scope><name>property</name></member>
+      <member refid="qobject_1Q_CLASSINFO" prot="public" virt="non-virtual"><scope>DsoService</scope><name>Q_CLASSINFO</name></member>
+      <member refid="qobject_1Q_EMIT" prot="public" virt="non-virtual"><scope>DsoService</scope><name>Q_EMIT</name></member>
+      <member refid="qobject_1Q_ENUM" prot="public" virt="non-virtual"><scope>DsoService</scope><name>Q_ENUM</name></member>
+      <member refid="qobject_1Q_ENUM_NS" prot="public" virt="non-virtual"><scope>DsoService</scope><name>Q_ENUM_NS</name></member>
+      <member refid="qobject-obsolete_1Q_ENUMS" prot="public" virt="non-virtual"><scope>DsoService</scope><name>Q_ENUMS</name></member>
+      <member refid="qobject_1Q_FLAG" prot="public" virt="non-virtual"><scope>DsoService</scope><name>Q_FLAG</name></member>
+      <member refid="qobject_1Q_FLAG_NS" prot="public" virt="non-virtual"><scope>DsoService</scope><name>Q_FLAG_NS</name></member>
+      <member refid="qobject-obsolete_1Q_FLAGS" prot="public" virt="non-virtual"><scope>DsoService</scope><name>Q_FLAGS</name></member>
+      <member refid="qobject_1Q_GADGET" prot="public" virt="non-virtual"><scope>DsoService</scope><name>Q_GADGET</name></member>
+      <member refid="qobject_1Q_GADGET_EXPORT" prot="public" virt="non-virtual"><scope>DsoService</scope><name>Q_GADGET_EXPORT</name></member>
+      <member refid="qobject_1Q_INTERFACES" prot="public" virt="non-virtual"><scope>DsoService</scope><name>Q_INTERFACES</name></member>
+      <member refid="qobject_1Q_INVOKABLE" prot="public" virt="non-virtual"><scope>DsoService</scope><name>Q_INVOKABLE</name></member>
+      <member refid="qobject_1Q_MOC_INCLUDE" prot="public" virt="non-virtual"><scope>DsoService</scope><name>Q_MOC_INCLUDE</name></member>
+      <member refid="qobject_1Q_NAMESPACE" prot="public" virt="non-virtual"><scope>DsoService</scope><name>Q_NAMESPACE</name></member>
+      <member refid="qobject_1Q_NAMESPACE_EXPORT" prot="public" virt="non-virtual"><scope>DsoService</scope><name>Q_NAMESPACE_EXPORT</name></member>
+      <member refid="qobject_1Q_OBJECT" prot="public" virt="non-virtual"><scope>DsoService</scope><name>Q_OBJECT</name></member>
+      <member refid="qobject_1Q_PROPERTY" prot="public" virt="non-virtual"><scope>DsoService</scope><name>Q_PROPERTY</name></member>
+      <member refid="qobject_1Q_REVISION" prot="public" virt="non-virtual"><scope>DsoService</scope><name>Q_REVISION</name></member>
+      <member refid="qobject_1Q_SET_OBJECT_NAME" prot="public" virt="non-virtual"><scope>DsoService</scope><name>Q_SET_OBJECT_NAME</name></member>
+      <member refid="qobject_1Q_SIGNAL" prot="public" virt="non-virtual"><scope>DsoService</scope><name>Q_SIGNAL</name></member>
+      <member refid="qobject_1Q_SIGNALS" prot="public" virt="non-virtual"><scope>DsoService</scope><name>Q_SIGNALS</name></member>
+      <member refid="qobject_1Q_SLOT" prot="public" virt="non-virtual"><scope>DsoService</scope><name>Q_SLOT</name></member>
+      <member refid="qobject_1Q_SLOTS" prot="public" virt="non-virtual"><scope>DsoService</scope><name>Q_SLOTS</name></member>
+      <member refid="qobject_1QObject" prot="public" virt="non-virtual"><scope>DsoService</scope><name>QObject</name></member>
+      <member refid="qobject_1qobject_cast" prot="public" virt="non-virtual"><scope>DsoService</scope><name>qobject_cast</name></member>
+      <member refid="qobject_1qobject_cast-1" prot="public" virt="non-virtual"><scope>DsoService</scope><name>qobject_cast</name></member>
+      <member refid="qobject_1QObjectList-typedef" prot="public" virt="non-virtual"><scope>DsoService</scope><name>QObjectList</name></member>
+      <member refid="qobject_1QT_NO_NARROWING_CONVERSIONS_IN_CONNECT" prot="public" virt="non-virtual"><scope>DsoService</scope><name>QT_NO_NARROWING_CONVERSIONS_IN_CONNECT</name></member>
+      <member refid="classDsoService_1aad086e99bfe4fe2e8d35d49c1e4d340b" prot="public" virt="virtual"><scope>DsoService</scope><name>readCharacteristics</name></member>
+      <member refid="classDsoService_1ad8cd148690b9e4fd1b01071e8cfabd0c" prot="public" virt="non-virtual"><scope>DsoService</scope><name>readMetadataCharacteristic</name></member>
+      <member refid="qobject_1receivers" prot="protected" virt="non-virtual"><scope>DsoService</scope><name>receivers</name></member>
+      <member refid="qobject_1removeEventFilter" prot="public" virt="non-virtual"><scope>DsoService</scope><name>removeEventFilter</name></member>
+      <member refid="classDsoService_1a99b8139924e2ef845cca81ca7c340d2c" prot="public" virt="non-virtual"><scope>DsoService</scope><name>Samples</name></member>
+      <member refid="classDsoService_1afafabdcfc2d5812b32eac0e16c437789" prot="public" virt="non-virtual"><scope>DsoService</scope><name>samplesRead</name></member>
+      <member refid="qobject_1sender" prot="protected" virt="non-virtual"><scope>DsoService</scope><name>sender</name></member>
+      <member refid="qobject_1senderSignalIndex" prot="protected" virt="non-virtual"><scope>DsoService</scope><name>senderSignalIndex</name></member>
+      <member refid="classAbstractPokitService_1a7a4ff74f51ba6ea6c01cbeb9eda15b9b" prot="public" virt="non-virtual"><scope>DsoService</scope><name>service</name></member>
+      <member refid="classAbstractPokitService_1ab7161dedf8ae431f723a5e225c2ec9ca" prot="public" virt="non-virtual"><scope>DsoService</scope><name>service</name></member>
+      <member refid="classAbstractPokitService_1af67cbea4294ba0a77dcd9540b29528ff" prot="public" virt="non-virtual"><scope>DsoService</scope><name>serviceDetailsDiscovered</name></member>
+      <member refid="classAbstractPokitService_1a9e680ebf280361ef82f4b072448d7e9b" prot="public" virt="non-virtual"><scope>DsoService</scope><name>serviceErrorOccurred</name></member>
+      <member refid="classDsoService_1a3d9a3fcb52d059fc454fdb71530d9a7d" prot="public" virt="non-virtual"><scope>DsoService</scope><name>serviceUuid</name></member>
+      <member refid="classAbstractPokitService_1a9d6d50cf31bc5859747a134d6cb4c418" prot="public" virt="non-virtual"><scope>DsoService</scope><name>setAutoDiscover</name></member>
+      <member refid="qobject_1setObjectName-1" prot="public" virt="non-virtual"><scope>DsoService</scope><name>setObjectName</name></member>
+      <member refid="qobject_1setObjectName" prot="public" virt="non-virtual"><scope>DsoService</scope><name>setObjectName</name></member>
+      <member refid="qobject_1setParent" prot="public" virt="non-virtual"><scope>DsoService</scope><name>setParent</name></member>
+      <member refid="classAbstractPokitService_1aa0e323c5e2380709c5a5fde18520ae3f" prot="public" virt="non-virtual"><scope>DsoService</scope><name>setPokitProduct</name></member>
+      <member refid="qobject_1setProperty-1" prot="public" virt="non-virtual"><scope>DsoService</scope><name>setProperty</name></member>
+      <member refid="qobject_1setProperty" prot="public" virt="non-virtual"><scope>DsoService</scope><name>setProperty</name></member>
+      <member refid="classDsoService_1a5714c8ccec6ab1d98241312b28a32e9e" prot="public" virt="non-virtual"><scope>DsoService</scope><name>setSettings</name></member>
+      <member refid="classDsoService_1a5d5b1266a63ee479c91c4e048cdf0859" prot="public" virt="non-virtual"><scope>DsoService</scope><name>settingsWritten</name></member>
+      <member refid="qobject_1signalsBlocked" prot="public" virt="non-virtual"><scope>DsoService</scope><name>signalsBlocked</name></member>
+      <member refid="classDsoService_1a4bd74f90cf6b34172cfeaff8112f22fe" prot="public" virt="non-virtual"><scope>DsoService</scope><name>startDso</name></member>
+      <member refid="qobject_1startTimer" prot="public" virt="non-virtual"><scope>DsoService</scope><name>startTimer</name></member>
+      <member refid="qobject_1startTimer-1" prot="public" virt="non-virtual"><scope>DsoService</scope><name>startTimer</name></member>
+      <member refid="classDsoService_1af13e3e2794266018d133cfd424d7a831" prot="private" virt="non-virtual"><scope>DsoService</scope><name>TestDsoService</name></member>
+      <member refid="qobject_1thread" prot="public" virt="non-virtual"><scope>DsoService</scope><name>thread</name></member>
+      <member refid="qobject_1timerEvent" prot="protected" virt="virtual"><scope>DsoService</scope><name>timerEvent</name></member>
+      <member refid="classDsoService_1acc76b93255cf3c5110d90c0df3318afe" prot="public" virt="non-virtual"><scope>DsoService</scope><name>toString</name></member>
+      <member refid="classDsoService_1ae30b37a57050beb9f9d36f8dc38b2bb6" prot="public" virt="non-virtual"><scope>DsoService</scope><name>toString</name></member>
+      <member refid="classDsoService_1aa106091512457325081f1940ad70c9f7" prot="public" virt="non-virtual"><scope>DsoService</scope><name>toString</name></member>
+      <member refid="qobject_1tr" prot="public" virt="non-virtual"><scope>DsoService</scope><name>tr</name></member>
+      <member refid="classAbstractPokitService_1af0b962913c8be9b1d69ce1b68a5f9bdd" prot="public" virt="virtual"><scope>DsoService</scope><name>~AbstractPokitService</name></member>
+      <member refid="classDsoService_1ab25812c6409b874e4f61026ab1ac7e40" prot="public" virt="non-virtual"><scope>DsoService</scope><name>~DsoService</name></member>
+      <member refid="qobject_1dtor.QObject" prot="public" virt="virtual"><scope>DsoService</scope><name>~QObject</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

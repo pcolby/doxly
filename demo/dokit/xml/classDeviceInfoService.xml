@@ -1,0 +1,743 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.0" xml:lang="en-US">
+  <compounddef id="classDeviceInfoService" kind="class" language="C++" prot="public">
+    <compoundname>DeviceInfoService</compoundname>
+    <basecompoundref refid="classAbstractPokitService" prot="public" virt="non-virtual">AbstractPokitService</basecompoundref>
+    <innerclass refid="structDeviceInfoService_1_1CharacteristicUuids" prot="public">DeviceInfoService::CharacteristicUuids</innerclass>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classDeviceInfoService_1a3e790c39794cb40473573555ee485191" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="qbluetoothuuid" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothUuid</ref></type>
+        <definition>const QBluetoothUuid DeviceInfoService::serviceUuid</definition>
+        <argsstring></argsstring>
+        <name>serviceUuid</name>
+        <qualifiedname>DeviceInfoService::serviceUuid</qualifiedname>
+        <initializer>{ QBluetoothUuid::ServiceClassUuid::DeviceInformation }</initializer>
+        <briefdescription>
+<para>UUID of the &quot;Device Info&quot; service. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/deviceinfoservice.h" line="28" column="40" bodyfile="/home/paul/src/dokit/include/qtpokit/deviceinfoservice.h" bodystart="29" bodyend="29"/>
+        <referencedby refid="classPokitDevice_1aca9393595de5676f20e3d0fd795358b5" compoundref="pokitdevice_8cpp" startline="190" endline="210">PokitDevice::serviceToString</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="classDeviceInfoService_1a587ed070049873e090b3b3b81e7c8265" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class TestDeviceInfoService</definition>
+        <argsstring></argsstring>
+        <name>TestDeviceInfoService</name>
+        <qualifiedname>DeviceInfoService::TestDeviceInfoService</qualifiedname>
+        <param>
+          <type>TestDeviceInfoService</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/deviceinfoservice.h" line="93" column="18" bodyfile="/home/paul/src/dokit/include/qtpokit/deviceinfoservice.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classDeviceInfoService_1affdc7eeab6ca48cc3dc118a1c3953a88" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>DeviceInfoService::DeviceInfoService</definition>
+        <argsstring>(QLowEnergyController *const pokitDevice, QObject *parent=nullptr)</argsstring>
+        <name>DeviceInfoService</name>
+        <qualifiedname>DeviceInfoService::DeviceInfoService</qualifiedname>
+        <param>
+          <type><ref refid="qlowenergycontroller" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QLowEnergyController</ref> *const</type>
+          <declname>pokitDevice</declname>
+        </param>
+        <param>
+          <type><ref refid="qobject" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QObject</ref> *</type>
+          <declname>parent</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+<para>Constructs a new Pokit service with <emphasis>parent</emphasis>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/deviceinfoservice.h" line="58" column="5" bodyfile="/home/paul/src/dokit/src/lib/deviceinfoservice.cpp" bodystart="23" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="classDeviceInfoService_1adfc4dcc0af86b50abadebd7c6e00f4e1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>DeviceInfoService::~DeviceInfoService</definition>
+        <argsstring>() override</argsstring>
+        <name>~DeviceInfoService</name>
+        <qualifiedname>DeviceInfoService::~DeviceInfoService</qualifiedname>
+        <briefdescription>
+<para>Destroys this <ref refid="classDeviceInfoService" kindref="compound">DeviceInfoService</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/deviceinfoservice.h" line="59" column="5" bodyfile="/home/paul/src/dokit/src/lib/deviceinfoservice.cpp" bodystart="44" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="classDeviceInfoService_1aa10d77cc1df3cf923740332d9a8b97cb" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool DeviceInfoService::readCharacteristics</definition>
+        <argsstring>() override</argsstring>
+        <name>readCharacteristics</name>
+        <qualifiedname>DeviceInfoService::readCharacteristics</qualifiedname>
+        <reimplements refid="classAbstractPokitService_1ab1de532f20d46803d6e8b8ffea835b48">readCharacteristics</reimplements>
+        <briefdescription>
+<para>Read all characteristics. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This convenience function will queue refresh requests of all characteristics supported by this service.</para>
+<para>Relevant <computeroutput>*Service::*Read</computeroutput> signals will be emitted by derived class objects as each characteristic is successfully read. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/deviceinfoservice.h" line="61" column="10" bodyfile="/home/paul/src/dokit/src/lib/deviceinfoservice.cpp" bodystart="49" bodyend="59"/>
+        <references refid="qlowenergyservice_1characteristic">QLowEnergyService::characteristic</references>
+        <references refid="qlowenergycharacteristic_1isValid">QLowEnergyCharacteristic::isValid</references>
+        <references refid="classDeviceInfoService_1a3a77c71bed9398ca507aa0657b41fd9a" compoundref="deviceinfoservice_8cpp" startline="70" endline="74">readFirmwareRevisionCharacteristic</references>
+        <references refid="classDeviceInfoService_1a0be29e195fea415073d07907e7cf65a6" compoundref="deviceinfoservice_8cpp" startline="85" endline="89">readHardwareRevisionCharacteristic</references>
+        <references refid="classDeviceInfoService_1a5e8128c7432c3ffe4d2ff045e117ab1e" compoundref="deviceinfoservice_8cpp" startline="100" endline="104">readManufacturerCharacteristics</references>
+        <references refid="classDeviceInfoService_1a826dda294fcd640e43509bad3db71b10" compoundref="deviceinfoservice_8cpp" startline="115" endline="119">readModelNumberCharacteristic</references>
+        <references refid="classDeviceInfoService_1a0b2e0b299e03d9c06a45646d042f7843" compoundref="deviceinfoservice_8cpp" startline="145" endline="149">readSerialNumberCharacteristic</references>
+        <references refid="classDeviceInfoService_1a1e08a98402611a2a8301012fd33b069c" compoundref="deviceinfoservice_8cpp" startline="130" endline="134">readSoftwareRevisionCharacteristic</references>
+        <references refid="structDeviceInfoService_1_1CharacteristicUuids_1a410471249dd69e69f7931e245b302612" compoundref="deviceinfoservice_8h" startline="55" endline="55">DeviceInfoService::CharacteristicUuids::serialNumber</references>
+        <references refid="classAbstractPokitService_1a7a4ff74f51ba6ea6c01cbeb9eda15b9b" compoundref="abstractpokitservice_8cpp" startline="119" endline="123">AbstractPokitService::service</references>
+      </memberdef>
+      <memberdef kind="function" id="classDeviceInfoService_1a3a77c71bed9398ca507aa0657b41fd9a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool DeviceInfoService::readFirmwareRevisionCharacteristic</definition>
+        <argsstring>()</argsstring>
+        <name>readFirmwareRevisionCharacteristic</name>
+        <qualifiedname>DeviceInfoService::readFirmwareRevisionCharacteristic</qualifiedname>
+        <briefdescription>
+<para>Read the <computeroutput>Device Info</computeroutput> service&apos;s <computeroutput>Firmware Revision</computeroutput> characteristic. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns <computeroutput>true</computeroutput> is the read request is succesfully queued, <computeroutput>false</computeroutput> otherwise (ie if the underlying controller it not yet connected to the Pokit device, or the device&apos;s services have not yet been discovered).</para>
+<para>Emits <ref refid="classDeviceInfoService_1ab95bd80046937f0473f9bb8aeb3bd07f" kindref="member">firmwareRevisionRead()</ref> if/when the characteristic has been read successfully. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/deviceinfoservice.h" line="62" column="10" bodyfile="/home/paul/src/dokit/src/lib/deviceinfoservice.cpp" bodystart="70" bodyend="74"/>
+        <references refid="structDeviceInfoService_1_1CharacteristicUuids_1a7959177f8c990b2240476746061a236a" compoundref="deviceinfoservice_8h" startline="43" endline="43">DeviceInfoService::CharacteristicUuids::firmwareRevision</references>
+        <referencedby refid="classDeviceInfoService_1aa10d77cc1df3cf923740332d9a8b97cb" compoundref="deviceinfoservice_8cpp" startline="49" endline="59">readCharacteristics</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classDeviceInfoService_1a0be29e195fea415073d07907e7cf65a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool DeviceInfoService::readHardwareRevisionCharacteristic</definition>
+        <argsstring>()</argsstring>
+        <name>readHardwareRevisionCharacteristic</name>
+        <qualifiedname>DeviceInfoService::readHardwareRevisionCharacteristic</qualifiedname>
+        <briefdescription>
+<para>Read the <computeroutput>Device Info</computeroutput> service&apos;s <computeroutput>Hardware Revision</computeroutput> characteristic. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns <computeroutput>true</computeroutput> is the read request is succesfully queued, <computeroutput>false</computeroutput> otherwise (ie if the underlying controller it not yet connected to the Pokit device, or the device&apos;s services have not yet been discovered).</para>
+<para>Emits <ref refid="classDeviceInfoService_1a240cee1fe8db2e7e03e09619ef4173c9" kindref="member">hardwareRevisionRead()</ref> if/when the characteristic has been read successfully. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/deviceinfoservice.h" line="63" column="10" bodyfile="/home/paul/src/dokit/src/lib/deviceinfoservice.cpp" bodystart="85" bodyend="89"/>
+        <references refid="structDeviceInfoService_1_1CharacteristicUuids_1a2e9f6731a3d49d4e08facc0e4811c91b" compoundref="deviceinfoservice_8h" startline="47" endline="47">DeviceInfoService::CharacteristicUuids::hardwareRevision</references>
+        <referencedby refid="classDeviceInfoService_1aa10d77cc1df3cf923740332d9a8b97cb" compoundref="deviceinfoservice_8cpp" startline="49" endline="59">readCharacteristics</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classDeviceInfoService_1a5e8128c7432c3ffe4d2ff045e117ab1e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool DeviceInfoService::readManufacturerCharacteristics</definition>
+        <argsstring>()</argsstring>
+        <name>readManufacturerCharacteristics</name>
+        <qualifiedname>DeviceInfoService::readManufacturerCharacteristics</qualifiedname>
+        <briefdescription>
+<para>Read the <computeroutput>Device Info</computeroutput> service&apos;s <computeroutput>Manufacturer Name</computeroutput> characteristic. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns <computeroutput>true</computeroutput> is the read request is succesfully queued, <computeroutput>false</computeroutput> otherwise (ie if the underlying controller it not yet connected to the Pokit device, or the device&apos;s services have not yet been discovered).</para>
+<para>Emits manufacturerNameRead() if/when the characteristic has been read successfully. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/deviceinfoservice.h" line="64" column="10" bodyfile="/home/paul/src/dokit/src/lib/deviceinfoservice.cpp" bodystart="100" bodyend="104"/>
+        <references refid="structDeviceInfoService_1_1CharacteristicUuids_1a0455d683833dae7fa93ddf08b754136d" compoundref="deviceinfoservice_8h" startline="35" endline="35">DeviceInfoService::CharacteristicUuids::manufacturerName</references>
+        <referencedby refid="classDeviceInfoService_1aa10d77cc1df3cf923740332d9a8b97cb" compoundref="deviceinfoservice_8cpp" startline="49" endline="59">readCharacteristics</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classDeviceInfoService_1a826dda294fcd640e43509bad3db71b10" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool DeviceInfoService::readModelNumberCharacteristic</definition>
+        <argsstring>()</argsstring>
+        <name>readModelNumberCharacteristic</name>
+        <qualifiedname>DeviceInfoService::readModelNumberCharacteristic</qualifiedname>
+        <briefdescription>
+<para>Read the <computeroutput>Device Info</computeroutput> service&apos;s <computeroutput>Model Number</computeroutput> characteristic. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns <computeroutput>true</computeroutput> is the read request is succesfully queued, <computeroutput>false</computeroutput> otherwise (ie if the underlying controller it not yet connected to the Pokit device, or the device&apos;s services have not yet been discovered).</para>
+<para>Emits <ref refid="classDeviceInfoService_1a23fb6c8ccb4bdf249d9db52b79fe04b4" kindref="member">modelNumberRead()</ref> if/when the characteristic has been read successfully. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/deviceinfoservice.h" line="65" column="10" bodyfile="/home/paul/src/dokit/src/lib/deviceinfoservice.cpp" bodystart="115" bodyend="119"/>
+        <references refid="structDeviceInfoService_1_1CharacteristicUuids_1af5c3bd888ca0d9133ff6d844992a7e34" compoundref="deviceinfoservice_8h" startline="39" endline="39">DeviceInfoService::CharacteristicUuids::modelNumber</references>
+        <referencedby refid="classDeviceInfoService_1aa10d77cc1df3cf923740332d9a8b97cb" compoundref="deviceinfoservice_8cpp" startline="49" endline="59">readCharacteristics</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classDeviceInfoService_1a1e08a98402611a2a8301012fd33b069c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool DeviceInfoService::readSoftwareRevisionCharacteristic</definition>
+        <argsstring>()</argsstring>
+        <name>readSoftwareRevisionCharacteristic</name>
+        <qualifiedname>DeviceInfoService::readSoftwareRevisionCharacteristic</qualifiedname>
+        <briefdescription>
+<para>Read the <computeroutput>Device Info</computeroutput> service&apos;s <computeroutput>Software Revision</computeroutput> characteristic. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns <computeroutput>true</computeroutput> is the read request is succesfully queued, <computeroutput>false</computeroutput> otherwise (ie if the underlying controller it not yet connected to the Pokit device, or the device&apos;s services have not yet been discovered).</para>
+<para>Emits <ref refid="classDeviceInfoService_1a3d45d60809c53ad441b25f41f7dc2342" kindref="member">softwareRevisionRead()</ref> if/when the characteristic has been read successfully. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/deviceinfoservice.h" line="66" column="10" bodyfile="/home/paul/src/dokit/src/lib/deviceinfoservice.cpp" bodystart="130" bodyend="134"/>
+        <references refid="structDeviceInfoService_1_1CharacteristicUuids_1a3dcd8fc5858990ac38640acf15ccff69" compoundref="deviceinfoservice_8h" startline="51" endline="51">DeviceInfoService::CharacteristicUuids::softwareRevision</references>
+        <referencedby refid="classDeviceInfoService_1aa10d77cc1df3cf923740332d9a8b97cb" compoundref="deviceinfoservice_8cpp" startline="49" endline="59">readCharacteristics</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classDeviceInfoService_1a0b2e0b299e03d9c06a45646d042f7843" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool DeviceInfoService::readSerialNumberCharacteristic</definition>
+        <argsstring>()</argsstring>
+        <name>readSerialNumberCharacteristic</name>
+        <qualifiedname>DeviceInfoService::readSerialNumberCharacteristic</qualifiedname>
+        <briefdescription>
+<para>Read the <computeroutput>Device Info</computeroutput> service&apos;s (undocumented) <computeroutput>Serial Number</computeroutput> characteristic. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns <computeroutput>true</computeroutput> is the read request is succesfully queued, <computeroutput>false</computeroutput> otherwise (ie if the underlying controller it not yet connected to the Pokit device, or the device&apos;s services have not yet been discovered).</para>
+<para>Emits <ref refid="classDeviceInfoService_1ae5e115003fd8221b86aeacad8a771d3b" kindref="member">serialNumberRead()</ref> if/when the characteristic has been read successfully. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/deviceinfoservice.h" line="67" column="10" bodyfile="/home/paul/src/dokit/src/lib/deviceinfoservice.cpp" bodystart="145" bodyend="149"/>
+        <references refid="structDeviceInfoService_1_1CharacteristicUuids_1a410471249dd69e69f7931e245b302612" compoundref="deviceinfoservice_8h" startline="55" endline="55">DeviceInfoService::CharacteristicUuids::serialNumber</references>
+        <referencedby refid="classDeviceInfoService_1aa10d77cc1df3cf923740332d9a8b97cb" compoundref="deviceinfoservice_8cpp" startline="49" endline="59">readCharacteristics</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classDeviceInfoService_1ab5614d4e47856aa4400d08ae2b71d72b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref></type>
+        <definition>QString DeviceInfoService::manufacturer</definition>
+        <argsstring>() const</argsstring>
+        <name>manufacturer</name>
+        <qualifiedname>DeviceInfoService::manufacturer</qualifiedname>
+        <briefdescription>
+<para>Returns the most recent value of the <computeroutput>Device Info</computeroutput> service&apos;s <computeroutput>Manufacturer Name</computeroutput> characteristic. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The returned value, if any, is from the underlying Bluetooth stack&apos;s cache. If no such value is currently available (ie the serviceDetailsDiscovered signal has not been emitted yet), then a null <ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref> is returned. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/deviceinfoservice.h" line="70" column="13" bodyfile="/home/paul/src/dokit/src/lib/deviceinfoservice.cpp" bodystart="158" bodyend="164"/>
+        <references refid="qstring_1fromUtf8-1">QString::fromUtf8</references>
+        <references refid="qlowenergycharacteristic_1isValid">QLowEnergyCharacteristic::isValid</references>
+        <references refid="structDeviceInfoService_1_1CharacteristicUuids_1a0455d683833dae7fa93ddf08b754136d" compoundref="deviceinfoservice_8h" startline="35" endline="35">DeviceInfoService::CharacteristicUuids::manufacturerName</references>
+        <references refid="qlowenergycharacteristic_1value">QLowEnergyCharacteristic::value</references>
+        <referencedby refid="classInfoCommand_1a06d095d57662fd10b201d6273085c34e" compoundref="infocommand_8cpp" startline="75" endline="138">InfoCommand::serviceDetailsDiscovered</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classDeviceInfoService_1a7402f9a0c2fe3ee052a29e8f872e26ef" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref></type>
+        <definition>QString DeviceInfoService::modelNumber</definition>
+        <argsstring>() const</argsstring>
+        <name>modelNumber</name>
+        <qualifiedname>DeviceInfoService::modelNumber</qualifiedname>
+        <briefdescription>
+<para>Returns the most recent value of the <computeroutput>Device Info</computeroutput> service&apos;s <computeroutput>Model Number</computeroutput> characteristic. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The returned value, if any, is from the underlying Bluetooth stack&apos;s cache. If no such value is currently available (ie the serviceDetailsDiscovered signal has not been emitted yet), then a null <ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref> is returned. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/deviceinfoservice.h" line="71" column="13" bodyfile="/home/paul/src/dokit/src/lib/deviceinfoservice.cpp" bodystart="173" bodyend="179"/>
+        <references refid="qstring_1fromUtf8-1">QString::fromUtf8</references>
+        <references refid="qlowenergycharacteristic_1isValid">QLowEnergyCharacteristic::isValid</references>
+        <references refid="structDeviceInfoService_1_1CharacteristicUuids_1af5c3bd888ca0d9133ff6d844992a7e34" compoundref="deviceinfoservice_8h" startline="39" endline="39">DeviceInfoService::CharacteristicUuids::modelNumber</references>
+        <references refid="qlowenergycharacteristic_1value">QLowEnergyCharacteristic::value</references>
+        <referencedby refid="classInfoCommand_1a06d095d57662fd10b201d6273085c34e" compoundref="infocommand_8cpp" startline="75" endline="138">InfoCommand::serviceDetailsDiscovered</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classDeviceInfoService_1a4d79805ce884ec8d5ac7879ccd499932" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref></type>
+        <definition>QString DeviceInfoService::hardwareRevision</definition>
+        <argsstring>() const</argsstring>
+        <name>hardwareRevision</name>
+        <qualifiedname>DeviceInfoService::hardwareRevision</qualifiedname>
+        <briefdescription>
+<para>Returns the most recent value of the <computeroutput>Device Info</computeroutput> service&apos;s <computeroutput>Hardware Revision</computeroutput> characteristic. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The returned value, if any, is from the underlying Bluetooth stack&apos;s cache. If no such value is currently available (ie the serviceDetailsDiscovered signal has not been emitted yet), then a null <ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref> is returned. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/deviceinfoservice.h" line="72" column="13" bodyfile="/home/paul/src/dokit/src/lib/deviceinfoservice.cpp" bodystart="188" bodyend="194"/>
+        <references refid="qstring_1fromUtf8-1">QString::fromUtf8</references>
+        <references refid="structDeviceInfoService_1_1CharacteristicUuids_1a2e9f6731a3d49d4e08facc0e4811c91b" compoundref="deviceinfoservice_8h" startline="47" endline="47">DeviceInfoService::CharacteristicUuids::hardwareRevision</references>
+        <references refid="qlowenergycharacteristic_1isValid">QLowEnergyCharacteristic::isValid</references>
+        <references refid="qlowenergycharacteristic_1value">QLowEnergyCharacteristic::value</references>
+        <referencedby refid="classInfoCommand_1a06d095d57662fd10b201d6273085c34e" compoundref="infocommand_8cpp" startline="75" endline="138">InfoCommand::serviceDetailsDiscovered</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classDeviceInfoService_1ac896b483c3b54e46658fd04ab4bb864b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref></type>
+        <definition>QString DeviceInfoService::firmwareRevision</definition>
+        <argsstring>() const</argsstring>
+        <name>firmwareRevision</name>
+        <qualifiedname>DeviceInfoService::firmwareRevision</qualifiedname>
+        <briefdescription>
+<para>Returns the most recent value of the <computeroutput>Device Info</computeroutput> service&apos;s <computeroutput>Firmware Revision</computeroutput> characteristic. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The returned value, if any, is from the underlying Bluetooth stack&apos;s cache. If no such value is currently available (ie the serviceDetailsDiscovered signal has not been emitted yet), then a null <ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref> is returned. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/deviceinfoservice.h" line="73" column="13" bodyfile="/home/paul/src/dokit/src/lib/deviceinfoservice.cpp" bodystart="203" bodyend="209"/>
+        <references refid="structDeviceInfoService_1_1CharacteristicUuids_1a7959177f8c990b2240476746061a236a" compoundref="deviceinfoservice_8h" startline="43" endline="43">DeviceInfoService::CharacteristicUuids::firmwareRevision</references>
+        <references refid="qstring_1fromUtf8-1">QString::fromUtf8</references>
+        <references refid="qlowenergycharacteristic_1isValid">QLowEnergyCharacteristic::isValid</references>
+        <references refid="qlowenergycharacteristic_1value">QLowEnergyCharacteristic::value</references>
+        <referencedby refid="classInfoCommand_1a06d095d57662fd10b201d6273085c34e" compoundref="infocommand_8cpp" startline="75" endline="138">InfoCommand::serviceDetailsDiscovered</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classDeviceInfoService_1a3619ac5734e074de11927352b0fd5054" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref></type>
+        <definition>QString DeviceInfoService::softwareRevision</definition>
+        <argsstring>() const</argsstring>
+        <name>softwareRevision</name>
+        <qualifiedname>DeviceInfoService::softwareRevision</qualifiedname>
+        <briefdescription>
+<para>Returns the most recent value of the <computeroutput>Device Info</computeroutput> service&apos;s <computeroutput>Software Revision</computeroutput> characteristic. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The returned value, if any, is from the underlying Bluetooth stack&apos;s cache. If no such value is currently available (ie the serviceDetailsDiscovered signal has not been emitted yet), then a null <ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref> is returned. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/deviceinfoservice.h" line="74" column="13" bodyfile="/home/paul/src/dokit/src/lib/deviceinfoservice.cpp" bodystart="218" bodyend="224"/>
+        <references refid="qstring_1fromUtf8-1">QString::fromUtf8</references>
+        <references refid="qlowenergycharacteristic_1isValid">QLowEnergyCharacteristic::isValid</references>
+        <references refid="structDeviceInfoService_1_1CharacteristicUuids_1a3dcd8fc5858990ac38640acf15ccff69" compoundref="deviceinfoservice_8h" startline="51" endline="51">DeviceInfoService::CharacteristicUuids::softwareRevision</references>
+        <references refid="qlowenergycharacteristic_1value">QLowEnergyCharacteristic::value</references>
+        <referencedby refid="classInfoCommand_1a06d095d57662fd10b201d6273085c34e" compoundref="infocommand_8cpp" startline="75" endline="138">InfoCommand::serviceDetailsDiscovered</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classDeviceInfoService_1a006859d13f7c3d7f4179a0ad9cc04213" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref></type>
+        <definition>QString DeviceInfoService::serialNumber</definition>
+        <argsstring>() const</argsstring>
+        <name>serialNumber</name>
+        <qualifiedname>DeviceInfoService::serialNumber</qualifiedname>
+        <briefdescription>
+<para>Returns the most recent value of the <computeroutput>Device Info</computeroutput> service&apos;s (undocumented) <computeroutput>Serial Number</computeroutput> characteristic. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The returned value, if any, is from the underlying Bluetooth stack&apos;s cache. If no such value is currently available (ie the serviceDetailsDiscovered signal has not been emitted yet), then a null <ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref> is returned. </para>
+        </detaileddescription>
+        <inbodydescription>
+<para><xrefsect id="pokit_1_pokit000003"><xreftitle>Pokit Bluetooth API errata</xreftitle><xrefdescription><para>Unlike other string characteristics, Pokit (Pro) devices always appear to add a trailing <computeroutput>null</computeroutput> byte to serial number strings. So here we strip any that are present.</para>
+</xrefdescription></xrefsect></para>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/deviceinfoservice.h" line="75" column="13" bodyfile="/home/paul/src/dokit/src/lib/deviceinfoservice.cpp" bodystart="234" bodyend="246"/>
+        <references refid="qstring_1fromUtf8-1">QString::fromUtf8</references>
+        <references refid="qlowenergycharacteristic_1isValid">QLowEnergyCharacteristic::isValid</references>
+        <references refid="qstring_1remove-1">QString::remove</references>
+        <references refid="structDeviceInfoService_1_1CharacteristicUuids_1a410471249dd69e69f7931e245b302612" compoundref="deviceinfoservice_8h" startline="55" endline="55">DeviceInfoService::CharacteristicUuids::serialNumber</references>
+        <references refid="qlowenergycharacteristic_1value">QLowEnergyCharacteristic::value</references>
+        <referencedby refid="classInfoCommand_1a06d095d57662fd10b201d6273085c34e" compoundref="infocommand_8cpp" startline="75" endline="138">InfoCommand::serviceDetailsDiscovered</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="signal">
+      <memberdef kind="signal" id="classDeviceInfoService_1a1983c93d6e790a4d8f26a6c92e1c4585" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DeviceInfoService::manufacturerRead</definition>
+        <argsstring>(const QString &amp;name)</argsstring>
+        <name>manufacturerRead</name>
+        <qualifiedname>DeviceInfoService::manufacturerRead</qualifiedname>
+        <param>
+          <type>const <ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>This signal is emitted when the <computeroutput>Manufacturer Name</computeroutput> characteristic has been read successfully. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para>readManufacturerCharacteristic </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classDeviceInfoService_1ab5614d4e47856aa4400d08ae2b71d72b" kindref="member">manufacturer</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/deviceinfoservice.h" line="78" column="10"/>
+      </memberdef>
+      <memberdef kind="signal" id="classDeviceInfoService_1a23fb6c8ccb4bdf249d9db52b79fe04b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DeviceInfoService::modelNumberRead</definition>
+        <argsstring>(const QString &amp;model)</argsstring>
+        <name>modelNumberRead</name>
+        <qualifiedname>DeviceInfoService::modelNumberRead</qualifiedname>
+        <param>
+          <type>const <ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref> &amp;</type>
+          <declname>model</declname>
+        </param>
+        <briefdescription>
+<para>This signal is emitted when the <computeroutput>Model Number</computeroutput> characteristic has been read successfully. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="classDeviceInfoService_1a826dda294fcd640e43509bad3db71b10" kindref="member">readModelNumberCharacteristic</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classDeviceInfoService_1a7402f9a0c2fe3ee052a29e8f872e26ef" kindref="member">modelNumber</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/deviceinfoservice.h" line="79" column="10"/>
+      </memberdef>
+      <memberdef kind="signal" id="classDeviceInfoService_1a240cee1fe8db2e7e03e09619ef4173c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DeviceInfoService::hardwareRevisionRead</definition>
+        <argsstring>(const QString &amp;revision)</argsstring>
+        <name>hardwareRevisionRead</name>
+        <qualifiedname>DeviceInfoService::hardwareRevisionRead</qualifiedname>
+        <param>
+          <type>const <ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref> &amp;</type>
+          <declname>revision</declname>
+        </param>
+        <briefdescription>
+<para>This signal is emitted when the <computeroutput>Hardware Revision</computeroutput> characteristic has been read successfully. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="classDeviceInfoService_1a0be29e195fea415073d07907e7cf65a6" kindref="member">readHardwareRevisionCharacteristic</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classDeviceInfoService_1a4d79805ce884ec8d5ac7879ccd499932" kindref="member">hardwareRevision</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/deviceinfoservice.h" line="80" column="10"/>
+      </memberdef>
+      <memberdef kind="signal" id="classDeviceInfoService_1ab95bd80046937f0473f9bb8aeb3bd07f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DeviceInfoService::firmwareRevisionRead</definition>
+        <argsstring>(const QString &amp;revision)</argsstring>
+        <name>firmwareRevisionRead</name>
+        <qualifiedname>DeviceInfoService::firmwareRevisionRead</qualifiedname>
+        <param>
+          <type>const <ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref> &amp;</type>
+          <declname>revision</declname>
+        </param>
+        <briefdescription>
+<para>This signal is emitted when the <computeroutput>Firmware Revision</computeroutput> characteristic has been read successfully. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="classDeviceInfoService_1a3a77c71bed9398ca507aa0657b41fd9a" kindref="member">readFirmwareRevisionCharacteristic</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classDeviceInfoService_1ac896b483c3b54e46658fd04ab4bb864b" kindref="member">firmwareRevision</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/deviceinfoservice.h" line="81" column="10"/>
+      </memberdef>
+      <memberdef kind="signal" id="classDeviceInfoService_1a3d45d60809c53ad441b25f41f7dc2342" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DeviceInfoService::softwareRevisionRead</definition>
+        <argsstring>(const QString &amp;revision)</argsstring>
+        <name>softwareRevisionRead</name>
+        <qualifiedname>DeviceInfoService::softwareRevisionRead</qualifiedname>
+        <param>
+          <type>const <ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref> &amp;</type>
+          <declname>revision</declname>
+        </param>
+        <briefdescription>
+<para>This signal is emitted when the <computeroutput>Software Revision</computeroutput> characteristic has been read successfully. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="classDeviceInfoService_1a1e08a98402611a2a8301012fd33b069c" kindref="member">readSoftwareRevisionCharacteristic</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classDeviceInfoService_1a3619ac5734e074de11927352b0fd5054" kindref="member">softwareRevision</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/deviceinfoservice.h" line="82" column="10"/>
+      </memberdef>
+      <memberdef kind="signal" id="classDeviceInfoService_1ae5e115003fd8221b86aeacad8a771d3b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DeviceInfoService::serialNumberRead</definition>
+        <argsstring>(const QString &amp;serialNumber)</argsstring>
+        <name>serialNumberRead</name>
+        <qualifiedname>DeviceInfoService::serialNumberRead</qualifiedname>
+        <param>
+          <type>const <ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref> &amp;</type>
+          <declname>serialNumber</declname>
+        </param>
+        <briefdescription>
+<para>This signal is emitted when the <computeroutput>Serial Number</computeroutput> characteristic has been read successfully. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="classDeviceInfoService_1a0b2e0b299e03d9c06a45646d042f7843" kindref="member">readSerialNumberCharacteristic</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classDeviceInfoService_1a006859d13f7c3d7f4179a0ad9cc04213" kindref="member">serialNumber</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/deviceinfoservice.h" line="83" column="10"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classDeviceInfoService_1ab6b5dcfd253161f37c780b8ea9297d7b" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>DeviceInfoService::DeviceInfoService</definition>
+        <argsstring>(DeviceInfoServicePrivate *const d, QObject *const parent)</argsstring>
+        <name>DeviceInfoService</name>
+        <qualifiedname>DeviceInfoService::DeviceInfoService</qualifiedname>
+        <param>
+          <type><ref refid="classDeviceInfoServicePrivate" kindref="compound">DeviceInfoServicePrivate</ref> *const</type>
+          <declname>d</declname>
+        </param>
+        <param>
+          <type><ref refid="qobject" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QObject</ref> *const</type>
+          <declname>parent</declname>
+        </param>
+        <briefdescription>
+<para>Constructs a new Pokit service with <emphasis>parent</emphasis>, and private implementation <emphasis>d</emphasis>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/deviceinfoservice.h" line="87" column="5" bodyfile="/home/paul/src/dokit/src/lib/deviceinfoservice.cpp" bodystart="33" bodyend="38"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>The <ref refid="classDeviceInfoService" kindref="compound">DeviceInfoService</ref> class accesses the <computeroutput>Device Info</computeroutput> service of Pokit devices. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>AbstractPokitService</label>
+        <link refid="classAbstractPokitService"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>DeviceInfoService</label>
+        <link refid="classDeviceInfoService"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>QObject</label>
+        <link refid="qobject" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>AbstractPokitService</label>
+        <link refid="classAbstractPokitService"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>d_ptr</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>AbstractPokitServicePrivate</label>
+        <link refid="classAbstractPokitServicePrivate"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>controller</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>service</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>serviceUuid</edgelabel>
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>q_ptr</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>DeviceInfoService</label>
+        <link refid="classDeviceInfoService"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>serviceUuid</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>QBluetoothUuid</label>
+        <link refid="qbluetoothuuid" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags"/>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>QLowEnergyController</label>
+        <link refid="qlowenergycontroller" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>QLowEnergyService</label>
+        <link refid="qlowenergyservice" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>QObject</label>
+        <link refid="qobject" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags"/>
+      </node>
+      <node id="8">
+        <label>QUuid</label>
+        <link refid="quuid" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/paul/src/dokit/include/qtpokit/deviceinfoservice.h" line="22" column="1" bodyfile="/home/paul/src/dokit/include/qtpokit/deviceinfoservice.h" bodystart="23" bodyend="94"/>
+    <listofallmembers>
+      <member refid="classAbstractPokitService_1aa1309523f169115a7b7a8117ea4ab04f" prot="public" virt="non-virtual"><scope>DeviceInfoService</scope><name>AbstractPokitService</name></member>
+      <member refid="classAbstractPokitService_1a2d624e58e68663e0420df7d282caf116" prot="protected" virt="non-virtual"><scope>DeviceInfoService</scope><name>AbstractPokitService</name></member>
+      <member refid="classAbstractPokitService_1a65c2c9c6163744a7cf52de2c6a83f610" prot="public" virt="non-virtual"><scope>DeviceInfoService</scope><name>autoDiscover</name></member>
+      <member refid="qobject_1objectName-prop" prot="public" virt="non-virtual"><scope>DeviceInfoService</scope><name>bindableObjectName</name></member>
+      <member refid="qobject_1blockSignals" prot="public" virt="non-virtual"><scope>DeviceInfoService</scope><name>blockSignals</name></member>
+      <member refid="qobject_1childEvent" prot="protected" virt="virtual"><scope>DeviceInfoService</scope><name>childEvent</name></member>
+      <member refid="qobject_1children" prot="public" virt="non-virtual"><scope>DeviceInfoService</scope><name>children</name></member>
+      <member refid="qobject_1connect-4" prot="public" virt="non-virtual"><scope>DeviceInfoService</scope><name>connect</name></member>
+      <member refid="qobject_1connect-5" prot="public" virt="non-virtual"><scope>DeviceInfoService</scope><name>connect</name></member>
+      <member refid="qobject_1connect-3" prot="public" virt="non-virtual"><scope>DeviceInfoService</scope><name>connect</name></member>
+      <member refid="qobject_1connect-1" prot="public" virt="non-virtual"><scope>DeviceInfoService</scope><name>connect</name></member>
+      <member refid="qobject_1connect" prot="public" virt="non-virtual"><scope>DeviceInfoService</scope><name>connect</name></member>
+      <member refid="qobject_1connect-2" prot="public" virt="non-virtual"><scope>DeviceInfoService</scope><name>connect</name></member>
+      <member refid="qobject_1connectNotify" prot="protected" virt="virtual"><scope>DeviceInfoService</scope><name>connectNotify</name></member>
+      <member refid="qobject_1customEvent" prot="protected" virt="virtual"><scope>DeviceInfoService</scope><name>customEvent</name></member>
+      <member refid="classAbstractPokitService_1acb832f24262f3f61f74c878dd79f48e8" prot="protected" virt="non-virtual"><scope>DeviceInfoService</scope><name>d_ptr</name></member>
+      <member refid="qobject_1deleteLater" prot="public" virt="non-virtual"><scope>DeviceInfoService</scope><name>deleteLater</name></member>
+      <member refid="qobject_1destroyed" prot="public" virt="non-virtual"><scope>DeviceInfoService</scope><name>destroyed</name></member>
+      <member refid="classDeviceInfoService_1affdc7eeab6ca48cc3dc118a1c3953a88" prot="public" virt="non-virtual"><scope>DeviceInfoService</scope><name>DeviceInfoService</name></member>
+      <member refid="classDeviceInfoService_1ab6b5dcfd253161f37c780b8ea9297d7b" prot="protected" virt="non-virtual"><scope>DeviceInfoService</scope><name>DeviceInfoService</name></member>
+      <member refid="qobject_1disconnect-4" prot="public" virt="non-virtual"><scope>DeviceInfoService</scope><name>disconnect</name></member>
+      <member refid="qobject_1disconnect-5" prot="public" virt="non-virtual"><scope>DeviceInfoService</scope><name>disconnect</name></member>
+      <member refid="qobject_1disconnect-1" prot="public" virt="non-virtual"><scope>DeviceInfoService</scope><name>disconnect</name></member>
+      <member refid="qobject_1disconnect" prot="public" virt="non-virtual"><scope>DeviceInfoService</scope><name>disconnect</name></member>
+      <member refid="qobject_1disconnect-3" prot="public" virt="non-virtual"><scope>DeviceInfoService</scope><name>disconnect</name></member>
+      <member refid="qobject_1disconnect-2" prot="public" virt="non-virtual"><scope>DeviceInfoService</scope><name>disconnect</name></member>
+      <member refid="qobject_1disconnectNotify" prot="protected" virt="virtual"><scope>DeviceInfoService</scope><name>disconnectNotify</name></member>
+      <member refid="qobject_1dumpObjectInfo" prot="public" virt="non-virtual"><scope>DeviceInfoService</scope><name>dumpObjectInfo</name></member>
+      <member refid="qobject_1dumpObjectTree" prot="public" virt="non-virtual"><scope>DeviceInfoService</scope><name>dumpObjectTree</name></member>
+      <member refid="qobject_1dynamicPropertyNames" prot="public" virt="non-virtual"><scope>DeviceInfoService</scope><name>dynamicPropertyNames</name></member>
+      <member refid="qobject_1event" prot="public" virt="virtual"><scope>DeviceInfoService</scope><name>event</name></member>
+      <member refid="qobject_1eventFilter" prot="public" virt="virtual"><scope>DeviceInfoService</scope><name>eventFilter</name></member>
+      <member refid="qobject_1findChild" prot="public" virt="non-virtual"><scope>DeviceInfoService</scope><name>findChild</name></member>
+      <member refid="qobject_1findChildren-1" prot="public" virt="non-virtual"><scope>DeviceInfoService</scope><name>findChildren</name></member>
+      <member refid="qobject_1findChildren-2" prot="public" virt="non-virtual"><scope>DeviceInfoService</scope><name>findChildren</name></member>
+      <member refid="qobject_1findChildren" prot="public" virt="non-virtual"><scope>DeviceInfoService</scope><name>findChildren</name></member>
+      <member refid="classDeviceInfoService_1ac896b483c3b54e46658fd04ab4bb864b" prot="public" virt="non-virtual"><scope>DeviceInfoService</scope><name>firmwareRevision</name></member>
+      <member refid="classDeviceInfoService_1ab95bd80046937f0473f9bb8aeb3bd07f" prot="public" virt="non-virtual"><scope>DeviceInfoService</scope><name>firmwareRevisionRead</name></member>
+      <member refid="classDeviceInfoService_1a4d79805ce884ec8d5ac7879ccd499932" prot="public" virt="non-virtual"><scope>DeviceInfoService</scope><name>hardwareRevision</name></member>
+      <member refid="classDeviceInfoService_1a240cee1fe8db2e7e03e09619ef4173c9" prot="public" virt="non-virtual"><scope>DeviceInfoService</scope><name>hardwareRevisionRead</name></member>
+      <member refid="qobject_1inherits" prot="public" virt="non-virtual"><scope>DeviceInfoService</scope><name>inherits</name></member>
+      <member refid="qobject_1installEventFilter" prot="public" virt="non-virtual"><scope>DeviceInfoService</scope><name>installEventFilter</name></member>
+      <member refid="qobject_1isQuickItemType" prot="public" virt="non-virtual"><scope>DeviceInfoService</scope><name>isQuickItemType</name></member>
+      <member refid="qobject_1isSignalConnected" prot="protected" virt="non-virtual"><scope>DeviceInfoService</scope><name>isSignalConnected</name></member>
+      <member refid="qobject_1isWidgetType" prot="public" virt="non-virtual"><scope>DeviceInfoService</scope><name>isWidgetType</name></member>
+      <member refid="qobject_1isWindowType" prot="public" virt="non-virtual"><scope>DeviceInfoService</scope><name>isWindowType</name></member>
+      <member refid="qobject_1killTimer" prot="public" virt="non-virtual"><scope>DeviceInfoService</scope><name>killTimer</name></member>
+      <member refid="classDeviceInfoService_1ab5614d4e47856aa4400d08ae2b71d72b" prot="public" virt="non-virtual"><scope>DeviceInfoService</scope><name>manufacturer</name></member>
+      <member refid="classDeviceInfoService_1a1983c93d6e790a4d8f26a6c92e1c4585" prot="public" virt="non-virtual"><scope>DeviceInfoService</scope><name>manufacturerRead</name></member>
+      <member refid="qobject_1metaObject" prot="public" virt="virtual"><scope>DeviceInfoService</scope><name>metaObject</name></member>
+      <member refid="classDeviceInfoService_1a7402f9a0c2fe3ee052a29e8f872e26ef" prot="public" virt="non-virtual"><scope>DeviceInfoService</scope><name>modelNumber</name></member>
+      <member refid="classDeviceInfoService_1a23fb6c8ccb4bdf249d9db52b79fe04b4" prot="public" virt="non-virtual"><scope>DeviceInfoService</scope><name>modelNumberRead</name></member>
+      <member refid="qobject_1moveToThread" prot="public" virt="non-virtual"><scope>DeviceInfoService</scope><name>moveToThread</name></member>
+      <member refid="qobject_1objectName-prop" prot="public" virt="non-virtual"><scope>DeviceInfoService</scope><name>objectName</name></member>
+      <member refid="qobject_1objectName-prop" prot="public" virt="non-virtual"><scope>DeviceInfoService</scope><name>objectName</name></member>
+      <member refid="qobject_1objectNameChanged" prot="public" virt="non-virtual"><scope>DeviceInfoService</scope><name>objectNameChanged</name></member>
+      <member refid="qobject_1parent" prot="public" virt="non-virtual"><scope>DeviceInfoService</scope><name>parent</name></member>
+      <member refid="classAbstractPokitService_1a039d2f1054788cf586c8decadb53ddc0" prot="public" virt="non-virtual"><scope>DeviceInfoService</scope><name>pokitProduct</name></member>
+      <member refid="qobject_1property" prot="public" virt="non-virtual"><scope>DeviceInfoService</scope><name>property</name></member>
+      <member refid="qobject_1Q_CLASSINFO" prot="public" virt="non-virtual"><scope>DeviceInfoService</scope><name>Q_CLASSINFO</name></member>
+      <member refid="qobject_1Q_EMIT" prot="public" virt="non-virtual"><scope>DeviceInfoService</scope><name>Q_EMIT</name></member>
+      <member refid="qobject_1Q_ENUM" prot="public" virt="non-virtual"><scope>DeviceInfoService</scope><name>Q_ENUM</name></member>
+      <member refid="qobject_1Q_ENUM_NS" prot="public" virt="non-virtual"><scope>DeviceInfoService</scope><name>Q_ENUM_NS</name></member>
+      <member refid="qobject-obsolete_1Q_ENUMS" prot="public" virt="non-virtual"><scope>DeviceInfoService</scope><name>Q_ENUMS</name></member>
+      <member refid="qobject_1Q_FLAG" prot="public" virt="non-virtual"><scope>DeviceInfoService</scope><name>Q_FLAG</name></member>
+      <member refid="qobject_1Q_FLAG_NS" prot="public" virt="non-virtual"><scope>DeviceInfoService</scope><name>Q_FLAG_NS</name></member>
+      <member refid="qobject-obsolete_1Q_FLAGS" prot="public" virt="non-virtual"><scope>DeviceInfoService</scope><name>Q_FLAGS</name></member>
+      <member refid="qobject_1Q_GADGET" prot="public" virt="non-virtual"><scope>DeviceInfoService</scope><name>Q_GADGET</name></member>
+      <member refid="qobject_1Q_GADGET_EXPORT" prot="public" virt="non-virtual"><scope>DeviceInfoService</scope><name>Q_GADGET_EXPORT</name></member>
+      <member refid="qobject_1Q_INTERFACES" prot="public" virt="non-virtual"><scope>DeviceInfoService</scope><name>Q_INTERFACES</name></member>
+      <member refid="qobject_1Q_INVOKABLE" prot="public" virt="non-virtual"><scope>DeviceInfoService</scope><name>Q_INVOKABLE</name></member>
+      <member refid="qobject_1Q_MOC_INCLUDE" prot="public" virt="non-virtual"><scope>DeviceInfoService</scope><name>Q_MOC_INCLUDE</name></member>
+      <member refid="qobject_1Q_NAMESPACE" prot="public" virt="non-virtual"><scope>DeviceInfoService</scope><name>Q_NAMESPACE</name></member>
+      <member refid="qobject_1Q_NAMESPACE_EXPORT" prot="public" virt="non-virtual"><scope>DeviceInfoService</scope><name>Q_NAMESPACE_EXPORT</name></member>
+      <member refid="qobject_1Q_OBJECT" prot="public" virt="non-virtual"><scope>DeviceInfoService</scope><name>Q_OBJECT</name></member>
+      <member refid="qobject_1Q_PROPERTY" prot="public" virt="non-virtual"><scope>DeviceInfoService</scope><name>Q_PROPERTY</name></member>
+      <member refid="qobject_1Q_REVISION" prot="public" virt="non-virtual"><scope>DeviceInfoService</scope><name>Q_REVISION</name></member>
+      <member refid="qobject_1Q_SET_OBJECT_NAME" prot="public" virt="non-virtual"><scope>DeviceInfoService</scope><name>Q_SET_OBJECT_NAME</name></member>
+      <member refid="qobject_1Q_SIGNAL" prot="public" virt="non-virtual"><scope>DeviceInfoService</scope><name>Q_SIGNAL</name></member>
+      <member refid="qobject_1Q_SIGNALS" prot="public" virt="non-virtual"><scope>DeviceInfoService</scope><name>Q_SIGNALS</name></member>
+      <member refid="qobject_1Q_SLOT" prot="public" virt="non-virtual"><scope>DeviceInfoService</scope><name>Q_SLOT</name></member>
+      <member refid="qobject_1Q_SLOTS" prot="public" virt="non-virtual"><scope>DeviceInfoService</scope><name>Q_SLOTS</name></member>
+      <member refid="qobject_1QObject" prot="public" virt="non-virtual"><scope>DeviceInfoService</scope><name>QObject</name></member>
+      <member refid="qobject_1qobject_cast" prot="public" virt="non-virtual"><scope>DeviceInfoService</scope><name>qobject_cast</name></member>
+      <member refid="qobject_1qobject_cast-1" prot="public" virt="non-virtual"><scope>DeviceInfoService</scope><name>qobject_cast</name></member>
+      <member refid="qobject_1QObjectList-typedef" prot="public" virt="non-virtual"><scope>DeviceInfoService</scope><name>QObjectList</name></member>
+      <member refid="qobject_1QT_NO_NARROWING_CONVERSIONS_IN_CONNECT" prot="public" virt="non-virtual"><scope>DeviceInfoService</scope><name>QT_NO_NARROWING_CONVERSIONS_IN_CONNECT</name></member>
+      <member refid="classDeviceInfoService_1aa10d77cc1df3cf923740332d9a8b97cb" prot="public" virt="virtual"><scope>DeviceInfoService</scope><name>readCharacteristics</name></member>
+      <member refid="classDeviceInfoService_1a3a77c71bed9398ca507aa0657b41fd9a" prot="public" virt="non-virtual"><scope>DeviceInfoService</scope><name>readFirmwareRevisionCharacteristic</name></member>
+      <member refid="classDeviceInfoService_1a0be29e195fea415073d07907e7cf65a6" prot="public" virt="non-virtual"><scope>DeviceInfoService</scope><name>readHardwareRevisionCharacteristic</name></member>
+      <member refid="classDeviceInfoService_1a5e8128c7432c3ffe4d2ff045e117ab1e" prot="public" virt="non-virtual"><scope>DeviceInfoService</scope><name>readManufacturerCharacteristics</name></member>
+      <member refid="classDeviceInfoService_1a826dda294fcd640e43509bad3db71b10" prot="public" virt="non-virtual"><scope>DeviceInfoService</scope><name>readModelNumberCharacteristic</name></member>
+      <member refid="classDeviceInfoService_1a0b2e0b299e03d9c06a45646d042f7843" prot="public" virt="non-virtual"><scope>DeviceInfoService</scope><name>readSerialNumberCharacteristic</name></member>
+      <member refid="classDeviceInfoService_1a1e08a98402611a2a8301012fd33b069c" prot="public" virt="non-virtual"><scope>DeviceInfoService</scope><name>readSoftwareRevisionCharacteristic</name></member>
+      <member refid="qobject_1receivers" prot="protected" virt="non-virtual"><scope>DeviceInfoService</scope><name>receivers</name></member>
+      <member refid="qobject_1removeEventFilter" prot="public" virt="non-virtual"><scope>DeviceInfoService</scope><name>removeEventFilter</name></member>
+      <member refid="qobject_1sender" prot="protected" virt="non-virtual"><scope>DeviceInfoService</scope><name>sender</name></member>
+      <member refid="qobject_1senderSignalIndex" prot="protected" virt="non-virtual"><scope>DeviceInfoService</scope><name>senderSignalIndex</name></member>
+      <member refid="classDeviceInfoService_1a006859d13f7c3d7f4179a0ad9cc04213" prot="public" virt="non-virtual"><scope>DeviceInfoService</scope><name>serialNumber</name></member>
+      <member refid="classDeviceInfoService_1ae5e115003fd8221b86aeacad8a771d3b" prot="public" virt="non-virtual"><scope>DeviceInfoService</scope><name>serialNumberRead</name></member>
+      <member refid="classAbstractPokitService_1a7a4ff74f51ba6ea6c01cbeb9eda15b9b" prot="public" virt="non-virtual"><scope>DeviceInfoService</scope><name>service</name></member>
+      <member refid="classAbstractPokitService_1ab7161dedf8ae431f723a5e225c2ec9ca" prot="public" virt="non-virtual"><scope>DeviceInfoService</scope><name>service</name></member>
+      <member refid="classAbstractPokitService_1af67cbea4294ba0a77dcd9540b29528ff" prot="public" virt="non-virtual"><scope>DeviceInfoService</scope><name>serviceDetailsDiscovered</name></member>
+      <member refid="classAbstractPokitService_1a9e680ebf280361ef82f4b072448d7e9b" prot="public" virt="non-virtual"><scope>DeviceInfoService</scope><name>serviceErrorOccurred</name></member>
+      <member refid="classDeviceInfoService_1a3e790c39794cb40473573555ee485191" prot="public" virt="non-virtual"><scope>DeviceInfoService</scope><name>serviceUuid</name></member>
+      <member refid="classAbstractPokitService_1a9d6d50cf31bc5859747a134d6cb4c418" prot="public" virt="non-virtual"><scope>DeviceInfoService</scope><name>setAutoDiscover</name></member>
+      <member refid="qobject_1setObjectName-1" prot="public" virt="non-virtual"><scope>DeviceInfoService</scope><name>setObjectName</name></member>
+      <member refid="qobject_1setObjectName" prot="public" virt="non-virtual"><scope>DeviceInfoService</scope><name>setObjectName</name></member>
+      <member refid="qobject_1setParent" prot="public" virt="non-virtual"><scope>DeviceInfoService</scope><name>setParent</name></member>
+      <member refid="classAbstractPokitService_1aa0e323c5e2380709c5a5fde18520ae3f" prot="public" virt="non-virtual"><scope>DeviceInfoService</scope><name>setPokitProduct</name></member>
+      <member refid="qobject_1setProperty-1" prot="public" virt="non-virtual"><scope>DeviceInfoService</scope><name>setProperty</name></member>
+      <member refid="qobject_1setProperty" prot="public" virt="non-virtual"><scope>DeviceInfoService</scope><name>setProperty</name></member>
+      <member refid="qobject_1signalsBlocked" prot="public" virt="non-virtual"><scope>DeviceInfoService</scope><name>signalsBlocked</name></member>
+      <member refid="classDeviceInfoService_1a3619ac5734e074de11927352b0fd5054" prot="public" virt="non-virtual"><scope>DeviceInfoService</scope><name>softwareRevision</name></member>
+      <member refid="classDeviceInfoService_1a3d45d60809c53ad441b25f41f7dc2342" prot="public" virt="non-virtual"><scope>DeviceInfoService</scope><name>softwareRevisionRead</name></member>
+      <member refid="qobject_1startTimer" prot="public" virt="non-virtual"><scope>DeviceInfoService</scope><name>startTimer</name></member>
+      <member refid="qobject_1startTimer-1" prot="public" virt="non-virtual"><scope>DeviceInfoService</scope><name>startTimer</name></member>
+      <member refid="classDeviceInfoService_1a587ed070049873e090b3b3b81e7c8265" prot="private" virt="non-virtual"><scope>DeviceInfoService</scope><name>TestDeviceInfoService</name></member>
+      <member refid="qobject_1thread" prot="public" virt="non-virtual"><scope>DeviceInfoService</scope><name>thread</name></member>
+      <member refid="qobject_1timerEvent" prot="protected" virt="virtual"><scope>DeviceInfoService</scope><name>timerEvent</name></member>
+      <member refid="qobject_1tr" prot="public" virt="non-virtual"><scope>DeviceInfoService</scope><name>tr</name></member>
+      <member refid="classAbstractPokitService_1af0b962913c8be9b1d69ce1b68a5f9bdd" prot="public" virt="virtual"><scope>DeviceInfoService</scope><name>~AbstractPokitService</name></member>
+      <member refid="classDeviceInfoService_1adfc4dcc0af86b50abadebd7c6e00f4e1" prot="public" virt="non-virtual"><scope>DeviceInfoService</scope><name>~DeviceInfoService</name></member>
+      <member refid="qobject_1dtor.QObject" prot="public" virt="virtual"><scope>DeviceInfoService</scope><name>~QObject</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

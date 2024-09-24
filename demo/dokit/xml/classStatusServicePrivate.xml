@@ -1,0 +1,476 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.0" xml:lang="en-US">
+  <compounddef id="classStatusServicePrivate" kind="class" language="C++" prot="public">
+    <compoundname>StatusServicePrivate</compoundname>
+    <basecompoundref refid="classAbstractPokitServicePrivate" prot="public" virt="non-virtual">AbstractPokitServicePrivate</basecompoundref>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="classStatusServicePrivate_1a034c6366301706ba6e0ef931798cea4d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class TestStatusService</definition>
+        <argsstring></argsstring>
+        <name>TestStatusService</name>
+        <qualifiedname>StatusServicePrivate::TestStatusService</qualifiedname>
+        <param>
+          <type>TestStatusService</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/lib/statusservice_p.h" line="43" column="18" bodyfile="/home/paul/src/dokit/src/lib/statusservice_p.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classStatusServicePrivate_1a15eb3d0b2529f9c9d4ba506b7492b5d5" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>StatusServicePrivate::StatusServicePrivate</definition>
+        <argsstring>(QLowEnergyController *controller, StatusService *const q)</argsstring>
+        <name>StatusServicePrivate</name>
+        <qualifiedname>StatusServicePrivate::StatusServicePrivate</qualifiedname>
+        <param>
+          <type><ref refid="qlowenergycontroller" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QLowEnergyController</ref> *</type>
+          <declname>controller</declname>
+        </param>
+        <param>
+          <type><ref refid="classStatusService" kindref="compound">StatusService</ref> *const</type>
+          <declname>q</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<internal><para>Constructs a new <ref refid="classStatusServicePrivate" kindref="compound">StatusServicePrivate</ref> object with public implementation <emphasis>q</emphasis>. </para>
+</internal>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/lib/statusservice_p.h" line="25" column="14" bodyfile="/home/paul/src/dokit/src/lib/statusservice.cpp" bodystart="574" bodyend="579"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classStatusServicePrivate_1a7bdbc14dbfe0a29bb0333c01890a6ced" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structStatusService_1_1DeviceCharacteristics" kindref="compound">StatusService::DeviceCharacteristics</ref></type>
+        <definition>StatusService::DeviceCharacteristics StatusServicePrivate::parseDeviceCharacteristics</definition>
+        <argsstring>(const QByteArray &amp;value)</argsstring>
+        <name>parseDeviceCharacteristics</name>
+        <qualifiedname>StatusServicePrivate::parseDeviceCharacteristics</qualifiedname>
+        <param>
+          <type>const <ref refid="qbytearray" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QByteArray</ref> &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Parses the <computeroutput>Device Characteristics</computeroutput> <emphasis>value</emphasis> into a DeviceCharacteristics struct. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/lib/statusservice_p.h" line="27" column="49" bodyfile="/home/paul/src/dokit/src/lib/statusservice.cpp" bodystart="584" bodyend="619"/>
+        <references refid="classAbstractPokitServicePrivate_1af8b480a950244540bfff7fc4b476a0ef" compoundref="abstractpokitservice_8cpp" startline="400" endline="415">AbstractPokitServicePrivate::checkSize</references>
+        <references refid="qbytearray_1constData">QByteArray::constData</references>
+        <references refid="qbytearray_1mid">QByteArray::mid</references>
+        <references refid="qobject_1tr">QObject::tr</references>
+        <referencedby refid="classStatusServicePrivate_1a08d8faee04fb47ac19d3962609606d52" compoundref="statusservice_8cpp" startline="735" endline="786">characteristicRead</referencedby>
+        <referencedby refid="classStatusService_1a008d41a33eedd90e68ccf7a94ed5b65f" compoundref="statusservice_8cpp" startline="252" endline="260">StatusService::deviceCharacteristics</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classStatusServicePrivate_1a3a6ff8ca3e9d7c884b269e52dd43aeb0" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structStatusService_1_1Status" kindref="compound">StatusService::Status</ref></type>
+        <definition>StatusService::Status StatusServicePrivate::parseStatus</definition>
+        <argsstring>(const QByteArray &amp;value)</argsstring>
+        <name>parseStatus</name>
+        <qualifiedname>StatusServicePrivate::parseStatus</qualifiedname>
+        <param>
+          <type>const <ref refid="qbytearray" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QByteArray</ref> &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Parses the <computeroutput>Status</computeroutput> <emphasis>value</emphasis> into a Status struct. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Note, not all Pokit devices support all members in Status. Specifically, the batteryStatus member is not usually set by Pokit Meter devices, so will be an invlalid BatteryStatus enum value (<computeroutput>255</computeroutput>) in that case. </para>
+        </detaileddescription>
+        <inbodydescription>
+<para><xrefsect id="pokit_1_pokit000012"><xreftitle>Pokit Bluetooth API errata</xreftitle><xrefdescription><para>Pokit API 0.02 says the <computeroutput>Status</computeroutput> characteristic is 5 bytes. API 1.00 then added an additional byte for <computeroutput>Battery Status</computeroutput>, for 6 bytes in total. However, Pokit Pro devices return 8 bytes here. It appears that the first of those 2 extra bytes (ie the 7th byte) is used to indicate the physical switch position, while the other extra byte (ie the 8th byte) indicates the device&apos;s current charging status. </para>
+</xrefdescription></xrefsect></para>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/lib/statusservice_p.h" line="28" column="34" bodyfile="/home/paul/src/dokit/src/lib/statusservice.cpp" bodystart="626" bodyend="674"/>
+        <references refid="qstring_1arg-14">QString::arg</references>
+        <references refid="qbytearray_1at">QByteArray::at</references>
+        <references refid="classAbstractPokitServicePrivate_1af8b480a950244540bfff7fc4b476a0ef" compoundref="abstractpokitservice_8cpp" startline="400" endline="415">AbstractPokitServicePrivate::checkSize</references>
+        <references refid="qbytearray_1constData">QByteArray::constData</references>
+        <references refid="structStatusService_1_1Status_1aa5d6fe4e5286126d7604c6ceb4da6d11" compoundref="statusservice_8h" startline="114">StatusService::Status::deviceStatus</references>
+        <references refid="qbytearray_1mid">QByteArray::mid</references>
+        <references refid="qbytearray_1size">QByteArray::size</references>
+        <references refid="classStatusService_1aac79e97cb114be25b2a6771d915f132d" compoundref="statusservice_8cpp" startline="32" endline="48">StatusService::toString</references>
+        <references refid="qobject_1tr">QObject::tr</references>
+        <referencedby refid="classStatusServicePrivate_1a08d8faee04fb47ac19d3962609606d52" compoundref="statusservice_8cpp" startline="735" endline="786">characteristicRead</referencedby>
+        <referencedby refid="classStatusService_1ae7be4aae021ae50faef48ed2812eb6a7" compoundref="statusservice_8cpp" startline="280" endline="288">StatusService::status</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classStatusServicePrivate_1abe408253ab1c7f08e09d7613691befba" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::optional&lt; <ref refid="classStatusService_1ab219dd54284c7299cce14b36ee59e08b" kindref="member">StatusService::TorchStatus</ref> &gt;</type>
+        <definition>std::optional&lt; StatusService::TorchStatus &gt; StatusServicePrivate::parseTorchStatus</definition>
+        <argsstring>(const QByteArray &amp;value)</argsstring>
+        <name>parseTorchStatus</name>
+        <qualifiedname>StatusServicePrivate::parseTorchStatus</qualifiedname>
+        <param>
+          <type>const <ref refid="qbytearray" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QByteArray</ref> &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Parses the torch status <emphasis>value</emphasis>, and returns the corresponding TorchStatus. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/lib/statusservice_p.h" line="29" column="26" bodyfile="/home/paul/src/dokit/src/lib/statusservice.cpp" bodystart="679" bodyend="688"/>
+        <references refid="qstring_1arg-14">QString::arg</references>
+        <references refid="qbytearray_1at">QByteArray::at</references>
+        <references refid="classAbstractPokitServicePrivate_1af8b480a950244540bfff7fc4b476a0ef" compoundref="abstractpokitservice_8cpp" startline="400" endline="415">AbstractPokitServicePrivate::checkSize</references>
+        <references refid="classStatusService_1aac79e97cb114be25b2a6771d915f132d" compoundref="statusservice_8cpp" startline="32" endline="48">StatusService::toString</references>
+        <references refid="qobject_1tr">QObject::tr</references>
+        <referencedby refid="classStatusService_1acb4787284fb5314ee2085421ad4c1d36" compoundref="statusservice_8cpp" startline="400" endline="405">StatusService::torchStatus</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classStatusServicePrivate_1a90d78c3261bea8f23ddf9804ada203c1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::optional&lt; <ref refid="classStatusService_1a14dc19e0faab66a66e89abebe41082eb" kindref="member">StatusService::ButtonStatus</ref> &gt;</type>
+        <definition>std::optional&lt; StatusService::ButtonStatus &gt; StatusServicePrivate::parseButtonPress</definition>
+        <argsstring>(const QByteArray &amp;value)</argsstring>
+        <name>parseButtonPress</name>
+        <qualifiedname>StatusServicePrivate::parseButtonPress</qualifiedname>
+        <param>
+          <type>const <ref refid="qbytearray" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QByteArray</ref> &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Parses the button press <emphasis>value</emphasis>, and returns the corresponding ButtonStatus. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para><xrefsect id="pokit_1_pokit000013"><xreftitle>Pokit Bluetooth API errata</xreftitle><xrefdescription><para>The button event is the second byte, but no idea what the first byte is. In all examples I&apos;ve see it&apos;s always <computeroutput>0x02</computeroutput>. It appears that the Pokit Android app only ever looks at <computeroutput>bytes[1]</computeroutput>.</para>
+</xrefdescription></xrefsect></para>
+<para><xrefsect id="pokit_1_pokit000014"><xreftitle>Pokit Bluetooth API errata</xreftitle><xrefdescription><para>Note, we can actually write to the Button Press characteristic too. If we do, then whatever we set as the first byte persists, and (unsurprisingly) the second byte reverts to the current button state. So still no idea what that first byte is for. </para>
+</xrefdescription></xrefsect></para>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/lib/statusservice_p.h" line="30" column="26" bodyfile="/home/paul/src/dokit/src/lib/statusservice.cpp" bodystart="693" bodyend="711"/>
+        <references refid="qstring_1arg-14">QString::arg</references>
+        <references refid="qbytearray_1at">QByteArray::at</references>
+        <references refid="classAbstractPokitServicePrivate_1af8b480a950244540bfff7fc4b476a0ef" compoundref="abstractpokitservice_8cpp" startline="400" endline="415">AbstractPokitServicePrivate::checkSize</references>
+        <references refid="classStatusService_1aac79e97cb114be25b2a6771d915f132d" compoundref="statusservice_8cpp" startline="32" endline="48">StatusService::toString</references>
+        <references refid="qobject_1tr">QObject::tr</references>
+        <referencedby refid="classStatusService_1a658e493f2942afd66263a989e99ed633" compoundref="statusservice_8cpp" startline="492" endline="497">StatusService::buttonPress</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classStatusServicePrivate_1a416f4b2a7e342c39fd667bcf324b4ea4" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void StatusServicePrivate::serviceDiscovered</definition>
+        <argsstring>(const QBluetoothUuid &amp;newService) override</argsstring>
+        <name>serviceDiscovered</name>
+        <qualifiedname>StatusServicePrivate::serviceDiscovered</qualifiedname>
+        <reimplements refid="classAbstractPokitServicePrivate_1a654255854b4aca7718ef30e10260d89b">serviceDiscovered</reimplements>
+        <param>
+          <type>const <ref refid="qbluetoothuuid" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothUuid</ref> &amp;</type>
+          <declname>newService</declname>
+        </param>
+        <briefdescription>
+<para>Handles <computeroutput><ref refid="qlowenergycontroller_1serviceDiscovered" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QLowEnergyController::serviceDiscovered</ref></computeroutput> events. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Here we override the base implementation to detect if we&apos;re looking at a Pokit Meter, or Pokit Pro device, as the two devices have very slightly different Status Service UUIDs. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/lib/statusservice_p.h" line="33" column="10" bodyfile="/home/paul/src/dokit/src/lib/statusservice.cpp" bodystart="719" bodyend="729"/>
+        <references refid="structStatusService_1_1ServiceUuids_1a8fa373d36e9332df30f38411ab3446de" compoundref="statusservice_8h" startline="32" endline="32">StatusService::ServiceUuids::pokitMeter</references>
+        <references refid="structStatusService_1_1ServiceUuids_1a0a9ca0f9377093ff60b282d4bfe3b0cf" compoundref="statusservice_8h" startline="35" endline="35">StatusService::ServiceUuids::pokitPro</references>
+        <references refid="classAbstractPokitServicePrivate_1a654255854b4aca7718ef30e10260d89b" compoundref="abstractpokitservice_8cpp" startline="499" endline="505">AbstractPokitServicePrivate::serviceDiscovered</references>
+        <references refid="classAbstractPokitServicePrivate_1a37538a1aa1beeb85a041f1735d65cbfd" compoundref="abstractpokitservice__p_8h" startline="38">AbstractPokitServicePrivate::serviceUuid</references>
+        <references refid="qobject_1tr">QObject::tr</references>
+      </memberdef>
+      <memberdef kind="function" id="classStatusServicePrivate_1a08d8faee04fb47ac19d3962609606d52" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void StatusServicePrivate::characteristicRead</definition>
+        <argsstring>(const QLowEnergyCharacteristic &amp;characteristic, const QByteArray &amp;value) override</argsstring>
+        <name>characteristicRead</name>
+        <qualifiedname>StatusServicePrivate::characteristicRead</qualifiedname>
+        <reimplements refid="classAbstractPokitServicePrivate_1a84bef330c6ff124f1e460bb8949d82da">characteristicRead</reimplements>
+        <param>
+          <type>const <ref refid="qlowenergycharacteristic" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QLowEnergyCharacteristic</ref> &amp;</type>
+          <declname>characteristic</declname>
+        </param>
+        <param>
+          <type>const <ref refid="qbytearray" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QByteArray</ref> &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Implements <ref refid="classAbstractPokitServicePrivate_1a84bef330c6ff124f1e460bb8949d82da" kindref="member">AbstractPokitServicePrivate::characteristicRead</ref> to parse <emphasis>value</emphasis>, then emit a specialised signal, for each supported <emphasis>characteristic</emphasis>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/lib/statusservice_p.h" line="35" column="10" bodyfile="/home/paul/src/dokit/src/lib/statusservice.cpp" bodystart="735" bodyend="786"/>
+        <references refid="qstring_1arg-14">QString::arg</references>
+        <references refid="qbytearray_1at">QByteArray::at</references>
+        <references refid="structStatusService_1_1CharacteristicUuids_1ae2abf1183b8b6f2cd2e0cb5206a3975f" compoundref="statusservice_8h" startline="56" endline="56">StatusService::CharacteristicUuids::buttonPress</references>
+        <references refid="classAbstractPokitServicePrivate_1a84bef330c6ff124f1e460bb8949d82da" compoundref="abstractpokitservice_8cpp" startline="562" endline="567">AbstractPokitServicePrivate::characteristicRead</references>
+        <references refid="classAbstractPokitServicePrivate_1af8b480a950244540bfff7fc4b476a0ef" compoundref="abstractpokitservice_8cpp" startline="400" endline="415">AbstractPokitServicePrivate::checkSize</references>
+        <references refid="structStatusService_1_1CharacteristicUuids_1ab883f16924c3c325a3400a5146d48ac0" compoundref="statusservice_8h" startline="41" endline="41">StatusService::CharacteristicUuids::deviceCharacteristics</references>
+        <references refid="structStatusService_1_1CharacteristicUuids_1aeb51331d2510873d95a5993e62aa2cf0" compoundref="statusservice_8h" startline="50" endline="50">StatusService::CharacteristicUuids::flashLed</references>
+        <references refid="qstring_1fromUtf8-1">QString::fromUtf8</references>
+        <references refid="qlowenergycharacteristic_1name">QLowEnergyCharacteristic::name</references>
+        <references refid="structStatusService_1_1CharacteristicUuids_1a3ca6f44f245a642f2a5e9147255a7bd8" compoundref="statusservice_8h" startline="47" endline="47">StatusService::CharacteristicUuids::name</references>
+        <references refid="classStatusServicePrivate_1a7bdbc14dbfe0a29bb0333c01890a6ced" compoundref="statusservice_8cpp" startline="584" endline="619">parseDeviceCharacteristics</references>
+        <references refid="classStatusServicePrivate_1a3a6ff8ca3e9d7c884b269e52dd43aeb0" compoundref="statusservice_8cpp" startline="626" endline="674">parseStatus</references>
+        <references refid="qobject_1Q_EMIT">QObject::Q_EMIT</references>
+        <references refid="classAbstractPokitServicePrivate_1a37538a1aa1beeb85a041f1735d65cbfd" compoundref="abstractpokitservice__p_8h" startline="38">AbstractPokitServicePrivate::serviceUuid</references>
+        <references refid="structStatusService_1_1CharacteristicUuids_1af27d015f60e86b0de464eab455c56f7c" compoundref="statusservice_8h" startline="44" endline="44">StatusService::CharacteristicUuids::status</references>
+        <references refid="structStatusService_1_1CharacteristicUuids_1a8e558d76deeac993d962763fec80aa3d" compoundref="statusservice_8h" startline="53" endline="53">StatusService::CharacteristicUuids::torch</references>
+        <references refid="classStatusService_1aac79e97cb114be25b2a6771d915f132d" compoundref="statusservice_8cpp" startline="32" endline="48">StatusService::toString</references>
+        <references refid="qobject_1tr">QObject::tr</references>
+        <references refid="qlowenergycharacteristic_1uuid">QLowEnergyCharacteristic::uuid</references>
+      </memberdef>
+      <memberdef kind="function" id="classStatusServicePrivate_1a8de57b8b27437360d75bd44f74595db1" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void StatusServicePrivate::characteristicWritten</definition>
+        <argsstring>(const QLowEnergyCharacteristic &amp;characteristic, const QByteArray &amp;newValue) override</argsstring>
+        <name>characteristicWritten</name>
+        <qualifiedname>StatusServicePrivate::characteristicWritten</qualifiedname>
+        <reimplements refid="classAbstractPokitServicePrivate_1aaf4a6cb9f0b1fe537877d615a6634201">characteristicWritten</reimplements>
+        <param>
+          <type>const <ref refid="qlowenergycharacteristic" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QLowEnergyCharacteristic</ref> &amp;</type>
+          <declname>characteristic</declname>
+        </param>
+        <param>
+          <type>const <ref refid="qbytearray" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QByteArray</ref> &amp;</type>
+          <declname>newValue</declname>
+        </param>
+        <briefdescription>
+<para>Implements <ref refid="classAbstractPokitServicePrivate_1aaf4a6cb9f0b1fe537877d615a6634201" kindref="member">AbstractPokitServicePrivate::characteristicWritten</ref> to parse <emphasis>newValue</emphasis>, then emit a specialised signal, for each supported <emphasis>characteristic</emphasis>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/lib/statusservice_p.h" line="37" column="10" bodyfile="/home/paul/src/dokit/src/lib/statusservice.cpp" bodystart="792" bodyend="827"/>
+        <references refid="classAbstractPokitServicePrivate_1aaf4a6cb9f0b1fe537877d615a6634201" compoundref="abstractpokitservice_8cpp" startline="576" endline="581">AbstractPokitServicePrivate::characteristicWritten</references>
+        <references refid="structStatusService_1_1CharacteristicUuids_1ab883f16924c3c325a3400a5146d48ac0" compoundref="statusservice_8h" startline="41" endline="41">StatusService::CharacteristicUuids::deviceCharacteristics</references>
+        <references refid="structStatusService_1_1CharacteristicUuids_1aeb51331d2510873d95a5993e62aa2cf0" compoundref="statusservice_8h" startline="50" endline="50">StatusService::CharacteristicUuids::flashLed</references>
+        <references refid="qlowenergycharacteristic_1name">QLowEnergyCharacteristic::name</references>
+        <references refid="structStatusService_1_1CharacteristicUuids_1a3ca6f44f245a642f2a5e9147255a7bd8" compoundref="statusservice_8h" startline="47" endline="47">StatusService::CharacteristicUuids::name</references>
+        <references refid="qobject_1Q_EMIT">QObject::Q_EMIT</references>
+        <references refid="classAbstractPokitServicePrivate_1a37538a1aa1beeb85a041f1735d65cbfd" compoundref="abstractpokitservice__p_8h" startline="38">AbstractPokitServicePrivate::serviceUuid</references>
+        <references refid="structStatusService_1_1CharacteristicUuids_1af27d015f60e86b0de464eab455c56f7c" compoundref="statusservice_8h" startline="44" endline="44">StatusService::CharacteristicUuids::status</references>
+        <references refid="structStatusService_1_1CharacteristicUuids_1a8e558d76deeac993d962763fec80aa3d" compoundref="statusservice_8h" startline="53" endline="53">StatusService::CharacteristicUuids::torch</references>
+        <references refid="qobject_1tr">QObject::tr</references>
+        <references refid="qlowenergycharacteristic_1uuid">QLowEnergyCharacteristic::uuid</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>The <ref refid="classStatusServicePrivate" kindref="compound">StatusServicePrivate</ref> class provides private implementation for <ref refid="classStatusService" kindref="compound">StatusService</ref>. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>AbstractPokitServicePrivate</label>
+        <link refid="classAbstractPokitServicePrivate"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>QObject</label>
+        <link refid="qobject" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags"/>
+      </node>
+      <node id="1">
+        <label>StatusServicePrivate</label>
+        <link refid="classStatusServicePrivate"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="8">
+        <label>AbstractPokitService</label>
+        <link refid="classAbstractPokitService"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>d_ptr</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>AbstractPokitServicePrivate</label>
+        <link refid="classAbstractPokitServicePrivate"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>controller</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>service</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>serviceUuid</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>q_ptr</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>QBluetoothUuid</label>
+        <link refid="qbluetoothuuid" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>QLowEnergyController</label>
+        <link refid="qlowenergycontroller" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>QLowEnergyService</label>
+        <link refid="qlowenergyservice" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>QObject</label>
+        <link refid="qobject" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags"/>
+      </node>
+      <node id="7">
+        <label>QUuid</label>
+        <link refid="quuid" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags"/>
+      </node>
+      <node id="1">
+        <label>StatusServicePrivate</label>
+        <link refid="classStatusServicePrivate"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/paul/src/dokit/src/lib/statusservice_p.h" line="20" column="1" bodyfile="/home/paul/src/dokit/src/lib/statusservice_p.h" bodystart="21" bodyend="44"/>
+    <listofallmembers>
+      <member refid="classAbstractPokitServicePrivate_1a73d4b6cd1a53f997f78d1c266a1c1871" prot="public" virt="non-virtual"><scope>StatusServicePrivate</scope><name>AbstractPokitServicePrivate</name></member>
+      <member refid="classAbstractPokitServicePrivate_1a21d38af5e7fc69f2c47c219a7ab545c7" prot="public" virt="non-virtual"><scope>StatusServicePrivate</scope><name>autoDiscover</name></member>
+      <member refid="qobject_1objectName-prop" prot="public" virt="non-virtual"><scope>StatusServicePrivate</scope><name>bindableObjectName</name></member>
+      <member refid="qobject_1blockSignals" prot="public" virt="non-virtual"><scope>StatusServicePrivate</scope><name>blockSignals</name></member>
+      <member refid="classAbstractPokitServicePrivate_1a642431b7bfb76baa5d976ae24e90d9ef" prot="protected" virt="virtual"><scope>StatusServicePrivate</scope><name>characteristicChanged</name></member>
+      <member refid="classStatusServicePrivate_1a08d8faee04fb47ac19d3962609606d52" prot="protected" virt="virtual"><scope>StatusServicePrivate</scope><name>characteristicRead</name></member>
+      <member refid="classStatusServicePrivate_1a8de57b8b27437360d75bd44f74595db1" prot="protected" virt="virtual"><scope>StatusServicePrivate</scope><name>characteristicWritten</name></member>
+      <member refid="classAbstractPokitServicePrivate_1af8b480a950244540bfff7fc4b476a0ef" prot="public" virt="non-virtual"><scope>StatusServicePrivate</scope><name>checkSize</name></member>
+      <member refid="qobject_1childEvent" prot="protected" virt="virtual"><scope>StatusServicePrivate</scope><name>childEvent</name></member>
+      <member refid="qobject_1children" prot="public" virt="non-virtual"><scope>StatusServicePrivate</scope><name>children</name></member>
+      <member refid="qobject_1connect-4" prot="public" virt="non-virtual"><scope>StatusServicePrivate</scope><name>connect</name></member>
+      <member refid="qobject_1connect-5" prot="public" virt="non-virtual"><scope>StatusServicePrivate</scope><name>connect</name></member>
+      <member refid="qobject_1connect-3" prot="public" virt="non-virtual"><scope>StatusServicePrivate</scope><name>connect</name></member>
+      <member refid="qobject_1connect-1" prot="public" virt="non-virtual"><scope>StatusServicePrivate</scope><name>connect</name></member>
+      <member refid="qobject_1connect" prot="public" virt="non-virtual"><scope>StatusServicePrivate</scope><name>connect</name></member>
+      <member refid="qobject_1connect-2" prot="public" virt="non-virtual"><scope>StatusServicePrivate</scope><name>connect</name></member>
+      <member refid="classAbstractPokitServicePrivate_1a9eec6d6dfe45c70c2907564940966200" prot="protected" virt="non-virtual"><scope>StatusServicePrivate</scope><name>connected</name></member>
+      <member refid="qobject_1connectNotify" prot="protected" virt="virtual"><scope>StatusServicePrivate</scope><name>connectNotify</name></member>
+      <member refid="classAbstractPokitServicePrivate_1aefc2f27e42be44bf63d9e4f944737da1" prot="public" virt="non-virtual"><scope>StatusServicePrivate</scope><name>controller</name></member>
+      <member refid="classAbstractPokitServicePrivate_1a2b105802085225fe68254dfdb6754ad9" prot="public" virt="non-virtual"><scope>StatusServicePrivate</scope><name>createServiceObject</name></member>
+      <member refid="qobject_1customEvent" prot="protected" virt="virtual"><scope>StatusServicePrivate</scope><name>customEvent</name></member>
+      <member refid="qobject_1deleteLater" prot="public" virt="non-virtual"><scope>StatusServicePrivate</scope><name>deleteLater</name></member>
+      <member refid="qobject_1destroyed" prot="public" virt="non-virtual"><scope>StatusServicePrivate</scope><name>destroyed</name></member>
+      <member refid="classAbstractPokitServicePrivate_1a2922b59e5fc76b0e90ebef2a88adac9d" prot="public" virt="non-virtual"><scope>StatusServicePrivate</scope><name>disableCharacteristicNotificatons</name></member>
+      <member refid="qobject_1disconnect-4" prot="public" virt="non-virtual"><scope>StatusServicePrivate</scope><name>disconnect</name></member>
+      <member refid="qobject_1disconnect-5" prot="public" virt="non-virtual"><scope>StatusServicePrivate</scope><name>disconnect</name></member>
+      <member refid="qobject_1disconnect-1" prot="public" virt="non-virtual"><scope>StatusServicePrivate</scope><name>disconnect</name></member>
+      <member refid="qobject_1disconnect" prot="public" virt="non-virtual"><scope>StatusServicePrivate</scope><name>disconnect</name></member>
+      <member refid="qobject_1disconnect-3" prot="public" virt="non-virtual"><scope>StatusServicePrivate</scope><name>disconnect</name></member>
+      <member refid="qobject_1disconnect-2" prot="public" virt="non-virtual"><scope>StatusServicePrivate</scope><name>disconnect</name></member>
+      <member refid="qobject_1disconnectNotify" prot="protected" virt="virtual"><scope>StatusServicePrivate</scope><name>disconnectNotify</name></member>
+      <member refid="classAbstractPokitServicePrivate_1a2cc16a897908f50e0f3cfc6b876b50ab" prot="protected" virt="non-virtual"><scope>StatusServicePrivate</scope><name>discoveryFinished</name></member>
+      <member refid="qobject_1dumpObjectInfo" prot="public" virt="non-virtual"><scope>StatusServicePrivate</scope><name>dumpObjectInfo</name></member>
+      <member refid="qobject_1dumpObjectTree" prot="public" virt="non-virtual"><scope>StatusServicePrivate</scope><name>dumpObjectTree</name></member>
+      <member refid="qobject_1dynamicPropertyNames" prot="public" virt="non-virtual"><scope>StatusServicePrivate</scope><name>dynamicPropertyNames</name></member>
+      <member refid="classAbstractPokitServicePrivate_1a7a024ab2e783e62b78568f4834eb6159" prot="public" virt="non-virtual"><scope>StatusServicePrivate</scope><name>enableCharacteristicNotificatons</name></member>
+      <member refid="classAbstractPokitServicePrivate_1ab086f2e2e5058bc7978a67e86d579325" prot="protected" virt="non-virtual"><scope>StatusServicePrivate</scope><name>errorOccurred</name></member>
+      <member refid="qobject_1event" prot="public" virt="virtual"><scope>StatusServicePrivate</scope><name>event</name></member>
+      <member refid="qobject_1eventFilter" prot="public" virt="virtual"><scope>StatusServicePrivate</scope><name>eventFilter</name></member>
+      <member refid="qobject_1findChild" prot="public" virt="non-virtual"><scope>StatusServicePrivate</scope><name>findChild</name></member>
+      <member refid="qobject_1findChildren-1" prot="public" virt="non-virtual"><scope>StatusServicePrivate</scope><name>findChildren</name></member>
+      <member refid="qobject_1findChildren-2" prot="public" virt="non-virtual"><scope>StatusServicePrivate</scope><name>findChildren</name></member>
+      <member refid="qobject_1findChildren" prot="public" virt="non-virtual"><scope>StatusServicePrivate</scope><name>findChildren</name></member>
+      <member refid="classAbstractPokitServicePrivate_1aaac3ef8e3590334acdddb2b029865eb0" prot="public" virt="non-virtual"><scope>StatusServicePrivate</scope><name>getCharacteristic</name></member>
+      <member refid="qobject_1inherits" prot="public" virt="non-virtual"><scope>StatusServicePrivate</scope><name>inherits</name></member>
+      <member refid="qobject_1installEventFilter" prot="public" virt="non-virtual"><scope>StatusServicePrivate</scope><name>installEventFilter</name></member>
+      <member refid="qobject_1isQuickItemType" prot="public" virt="non-virtual"><scope>StatusServicePrivate</scope><name>isQuickItemType</name></member>
+      <member refid="qobject_1isSignalConnected" prot="protected" virt="non-virtual"><scope>StatusServicePrivate</scope><name>isSignalConnected</name></member>
+      <member refid="qobject_1isWidgetType" prot="public" virt="non-virtual"><scope>StatusServicePrivate</scope><name>isWidgetType</name></member>
+      <member refid="qobject_1isWindowType" prot="public" virt="non-virtual"><scope>StatusServicePrivate</scope><name>isWindowType</name></member>
+      <member refid="qobject_1killTimer" prot="public" virt="non-virtual"><scope>StatusServicePrivate</scope><name>killTimer</name></member>
+      <member refid="qobject_1metaObject" prot="public" virt="virtual"><scope>StatusServicePrivate</scope><name>metaObject</name></member>
+      <member refid="qobject_1moveToThread" prot="public" virt="non-virtual"><scope>StatusServicePrivate</scope><name>moveToThread</name></member>
+      <member refid="qobject_1objectName-prop" prot="public" virt="non-virtual"><scope>StatusServicePrivate</scope><name>objectName</name></member>
+      <member refid="qobject_1objectName-prop" prot="public" virt="non-virtual"><scope>StatusServicePrivate</scope><name>objectName</name></member>
+      <member refid="qobject_1objectNameChanged" prot="public" virt="non-virtual"><scope>StatusServicePrivate</scope><name>objectNameChanged</name></member>
+      <member refid="qobject_1parent" prot="public" virt="non-virtual"><scope>StatusServicePrivate</scope><name>parent</name></member>
+      <member refid="classStatusServicePrivate_1a90d78c3261bea8f23ddf9804ada203c1" prot="public" virt="non-virtual"><scope>StatusServicePrivate</scope><name>parseButtonPress</name></member>
+      <member refid="classStatusServicePrivate_1a7bdbc14dbfe0a29bb0333c01890a6ced" prot="public" virt="non-virtual"><scope>StatusServicePrivate</scope><name>parseDeviceCharacteristics</name></member>
+      <member refid="classStatusServicePrivate_1a3a6ff8ca3e9d7c884b269e52dd43aeb0" prot="public" virt="non-virtual"><scope>StatusServicePrivate</scope><name>parseStatus</name></member>
+      <member refid="classStatusServicePrivate_1abe408253ab1c7f08e09d7613691befba" prot="public" virt="non-virtual"><scope>StatusServicePrivate</scope><name>parseTorchStatus</name></member>
+      <member refid="classAbstractPokitServicePrivate_1afd4b02970f049753542e539bdf85e218" prot="public" virt="non-virtual"><scope>StatusServicePrivate</scope><name>pokitProduct</name></member>
+      <member refid="qobject_1property" prot="public" virt="non-virtual"><scope>StatusServicePrivate</scope><name>property</name></member>
+      <member refid="qobject_1Q_CLASSINFO" prot="public" virt="non-virtual"><scope>StatusServicePrivate</scope><name>Q_CLASSINFO</name></member>
+      <member refid="qobject_1Q_EMIT" prot="public" virt="non-virtual"><scope>StatusServicePrivate</scope><name>Q_EMIT</name></member>
+      <member refid="qobject_1Q_ENUM" prot="public" virt="non-virtual"><scope>StatusServicePrivate</scope><name>Q_ENUM</name></member>
+      <member refid="qobject_1Q_ENUM_NS" prot="public" virt="non-virtual"><scope>StatusServicePrivate</scope><name>Q_ENUM_NS</name></member>
+      <member refid="qobject-obsolete_1Q_ENUMS" prot="public" virt="non-virtual"><scope>StatusServicePrivate</scope><name>Q_ENUMS</name></member>
+      <member refid="qobject_1Q_FLAG" prot="public" virt="non-virtual"><scope>StatusServicePrivate</scope><name>Q_FLAG</name></member>
+      <member refid="qobject_1Q_FLAG_NS" prot="public" virt="non-virtual"><scope>StatusServicePrivate</scope><name>Q_FLAG_NS</name></member>
+      <member refid="qobject-obsolete_1Q_FLAGS" prot="public" virt="non-virtual"><scope>StatusServicePrivate</scope><name>Q_FLAGS</name></member>
+      <member refid="qobject_1Q_GADGET" prot="public" virt="non-virtual"><scope>StatusServicePrivate</scope><name>Q_GADGET</name></member>
+      <member refid="qobject_1Q_GADGET_EXPORT" prot="public" virt="non-virtual"><scope>StatusServicePrivate</scope><name>Q_GADGET_EXPORT</name></member>
+      <member refid="qobject_1Q_INTERFACES" prot="public" virt="non-virtual"><scope>StatusServicePrivate</scope><name>Q_INTERFACES</name></member>
+      <member refid="qobject_1Q_INVOKABLE" prot="public" virt="non-virtual"><scope>StatusServicePrivate</scope><name>Q_INVOKABLE</name></member>
+      <member refid="classAbstractPokitServicePrivate_1a32f402260c965002c68f7b9191d38af6" prot="public" virt="non-virtual"><scope>StatusServicePrivate</scope><name>Q_LOGGING_CATEGORY</name></member>
+      <member refid="qobject_1Q_MOC_INCLUDE" prot="public" virt="non-virtual"><scope>StatusServicePrivate</scope><name>Q_MOC_INCLUDE</name></member>
+      <member refid="qobject_1Q_NAMESPACE" prot="public" virt="non-virtual"><scope>StatusServicePrivate</scope><name>Q_NAMESPACE</name></member>
+      <member refid="qobject_1Q_NAMESPACE_EXPORT" prot="public" virt="non-virtual"><scope>StatusServicePrivate</scope><name>Q_NAMESPACE_EXPORT</name></member>
+      <member refid="qobject_1Q_OBJECT" prot="public" virt="non-virtual"><scope>StatusServicePrivate</scope><name>Q_OBJECT</name></member>
+      <member refid="qobject_1Q_PROPERTY" prot="public" virt="non-virtual"><scope>StatusServicePrivate</scope><name>Q_PROPERTY</name></member>
+      <member refid="classAbstractPokitServicePrivate_1a68f7ec9c0b34677eb1cf797221eb4845" prot="protected" virt="non-virtual"><scope>StatusServicePrivate</scope><name>q_ptr</name></member>
+      <member refid="qobject_1Q_REVISION" prot="public" virt="non-virtual"><scope>StatusServicePrivate</scope><name>Q_REVISION</name></member>
+      <member refid="qobject_1Q_SET_OBJECT_NAME" prot="public" virt="non-virtual"><scope>StatusServicePrivate</scope><name>Q_SET_OBJECT_NAME</name></member>
+      <member refid="qobject_1Q_SIGNAL" prot="public" virt="non-virtual"><scope>StatusServicePrivate</scope><name>Q_SIGNAL</name></member>
+      <member refid="qobject_1Q_SIGNALS" prot="public" virt="non-virtual"><scope>StatusServicePrivate</scope><name>Q_SIGNALS</name></member>
+      <member refid="qobject_1Q_SLOT" prot="public" virt="non-virtual"><scope>StatusServicePrivate</scope><name>Q_SLOT</name></member>
+      <member refid="qobject_1Q_SLOTS" prot="public" virt="non-virtual"><scope>StatusServicePrivate</scope><name>Q_SLOTS</name></member>
+      <member refid="qobject_1QObject" prot="public" virt="non-virtual"><scope>StatusServicePrivate</scope><name>QObject</name></member>
+      <member refid="qobject_1qobject_cast" prot="public" virt="non-virtual"><scope>StatusServicePrivate</scope><name>qobject_cast</name></member>
+      <member refid="qobject_1qobject_cast-1" prot="public" virt="non-virtual"><scope>StatusServicePrivate</scope><name>qobject_cast</name></member>
+      <member refid="qobject_1QObjectList-typedef" prot="public" virt="non-virtual"><scope>StatusServicePrivate</scope><name>QObjectList</name></member>
+      <member refid="qobject_1QT_NO_NARROWING_CONVERSIONS_IN_CONNECT" prot="public" virt="non-virtual"><scope>StatusServicePrivate</scope><name>QT_NO_NARROWING_CONVERSIONS_IN_CONNECT</name></member>
+      <member refid="classAbstractPokitServicePrivate_1ad58619e237f300294049c82b85d76875" prot="public" virt="non-virtual"><scope>StatusServicePrivate</scope><name>readCharacteristic</name></member>
+      <member refid="qobject_1receivers" prot="protected" virt="non-virtual"><scope>StatusServicePrivate</scope><name>receivers</name></member>
+      <member refid="qobject_1removeEventFilter" prot="public" virt="non-virtual"><scope>StatusServicePrivate</scope><name>removeEventFilter</name></member>
+      <member refid="qobject_1sender" prot="protected" virt="non-virtual"><scope>StatusServicePrivate</scope><name>sender</name></member>
+      <member refid="qobject_1senderSignalIndex" prot="protected" virt="non-virtual"><scope>StatusServicePrivate</scope><name>senderSignalIndex</name></member>
+      <member refid="classAbstractPokitServicePrivate_1adc41ee1de2a4783623aa78d0a8beb85d" prot="public" virt="non-virtual"><scope>StatusServicePrivate</scope><name>service</name></member>
+      <member refid="classStatusServicePrivate_1a416f4b2a7e342c39fd667bcf324b4ea4" prot="protected" virt="virtual"><scope>StatusServicePrivate</scope><name>serviceDiscovered</name></member>
+      <member refid="classAbstractPokitServicePrivate_1a37538a1aa1beeb85a041f1735d65cbfd" prot="public" virt="non-virtual"><scope>StatusServicePrivate</scope><name>serviceUuid</name></member>
+      <member refid="qobject_1setObjectName-1" prot="public" virt="non-virtual"><scope>StatusServicePrivate</scope><name>setObjectName</name></member>
+      <member refid="qobject_1setObjectName" prot="public" virt="non-virtual"><scope>StatusServicePrivate</scope><name>setObjectName</name></member>
+      <member refid="qobject_1setParent" prot="public" virt="non-virtual"><scope>StatusServicePrivate</scope><name>setParent</name></member>
+      <member refid="qobject_1setProperty-1" prot="public" virt="non-virtual"><scope>StatusServicePrivate</scope><name>setProperty</name></member>
+      <member refid="qobject_1setProperty" prot="public" virt="non-virtual"><scope>StatusServicePrivate</scope><name>setProperty</name></member>
+      <member refid="qobject_1signalsBlocked" prot="public" virt="non-virtual"><scope>StatusServicePrivate</scope><name>signalsBlocked</name></member>
+      <member refid="qobject_1startTimer" prot="public" virt="non-virtual"><scope>StatusServicePrivate</scope><name>startTimer</name></member>
+      <member refid="qobject_1startTimer-1" prot="public" virt="non-virtual"><scope>StatusServicePrivate</scope><name>startTimer</name></member>
+      <member refid="classAbstractPokitServicePrivate_1ad4cd6a5700b0b764b3a81f67603dc68f" prot="protected" virt="non-virtual"><scope>StatusServicePrivate</scope><name>stateChanged</name></member>
+      <member refid="classStatusServicePrivate_1a15eb3d0b2529f9c9d4ba506b7492b5d5" prot="public" virt="non-virtual"><scope>StatusServicePrivate</scope><name>StatusServicePrivate</name></member>
+      <member refid="classStatusServicePrivate_1a034c6366301706ba6e0ef931798cea4d" prot="private" virt="non-virtual"><scope>StatusServicePrivate</scope><name>TestStatusService</name></member>
+      <member refid="qobject_1thread" prot="public" virt="non-virtual"><scope>StatusServicePrivate</scope><name>thread</name></member>
+      <member refid="qobject_1timerEvent" prot="protected" virt="virtual"><scope>StatusServicePrivate</scope><name>timerEvent</name></member>
+      <member refid="classAbstractPokitServicePrivate_1af748600fc201fe47f29b58e8e93179d8" prot="public" virt="non-virtual"><scope>StatusServicePrivate</scope><name>toHexString</name></member>
+      <member refid="qobject_1tr" prot="public" virt="non-virtual"><scope>StatusServicePrivate</scope><name>tr</name></member>
+      <member refid="qobject_1dtor.QObject" prot="public" virt="virtual"><scope>StatusServicePrivate</scope><name>~QObject</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

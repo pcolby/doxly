@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.0" xml:lang="en-US">
+  <compounddef id="namespaceResistanceRange" kind="namespace" language="C++">
+    <compoundname>ResistanceRange</compoundname>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="namespaceResistanceRange_1a6f542c3fe27b9c58c03edc92ceab40ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref></type>
+        <definition>QTPOKIT_EXPORT QString ResistanceRange::toString</definition>
+        <argsstring>(const PokitProduct product, const quint8 range)</argsstring>
+        <name>toString</name>
+        <qualifiedname>ResistanceRange::toString</qualifiedname>
+        <param>
+          <type>const <ref refid="pokitproducts_8h_1a0c4f628f68ce0432a6db11681a41fda4" kindref="member">PokitProduct</ref></type>
+          <declname>product</declname>
+        </param>
+        <param>
+          <type>const quint8</type>
+          <declname>range</declname>
+        </param>
+        <briefdescription>
+<para>Returns <emphasis>product&apos;s</emphasis> current <emphasis>range</emphasis> as a human-friendly string. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="namespacePokitMeter_1adf4c2051d0ce0fe5a53fd682cf97f8a8" kindref="member">PokitMeter::toString(const PokitMeter::ResistanceRange &amp;range)</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="namespacePokitPro_1ae6547e17145d57e3b18aa134e090d400" kindref="member">PokitPro::toString(const PokitPro::ResistanceRange &amp;range)</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/lib/pokitproducts.cpp" line="227" column="9" bodyfile="/home/paul/src/dokit/src/lib/pokitproducts.cpp" bodystart="227" bodyend="238" declfile="/home/paul/src/dokit/src/lib/pokitproducts_p.h" declline="30" declcolumn="28"/>
+        <references refid="qstring_1arg-14">QString::arg</references>
+        <references refid="pokitproducts_8h_1a0c4f628f68ce0432a6db11681a41fda4afbb216b5c2f76db3f733c4c5915b3001">PokitMeter</references>
+        <references refid="pokitproducts_8h_1a0c4f628f68ce0432a6db11681a41fda4abf3aeeb41cfa55672113dbb4a86da2ae">PokitPro</references>
+        <references refid="namespacePokitMeter_1a3c3db7b94b6f44af24f4a23e87a3569e" compoundref="pokitmeter_8cpp" startline="16" endline="27">PokitMeter::toString</references>
+        <references refid="namespacePokitPro_1a38ce307b844e4d67d94402b31461f7f4" compoundref="pokitpro_8cpp" startline="25" endline="34">PokitPro::toString</references>
+        <references refid="qcoreapplication_1translate">QCoreApplication::translate</references>
+        <referencedby refid="classMultimeterService_1a66e1f404c97d779e284c0a6c7c954c49" compoundref="multimeterservice_8cpp" startline="54" endline="77">MultimeterService::toString</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespaceResistanceRange_1a30fba7f1c73e7a8b9b3c45aed8b5b3e1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="qvariant" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QVariant</ref></type>
+        <definition>QTPOKIT_EXPORT QVariant ResistanceRange::maxValue</definition>
+        <argsstring>(const PokitProduct product, const quint8 range)</argsstring>
+        <name>maxValue</name>
+        <qualifiedname>ResistanceRange::maxValue</qualifiedname>
+        <param>
+          <type>const <ref refid="pokitproducts_8h_1a0c4f628f68ce0432a6db11681a41fda4" kindref="member">PokitProduct</ref></type>
+          <declname>product</declname>
+        </param>
+        <param>
+          <type>const quint8</type>
+          <declname>range</declname>
+        </param>
+        <briefdescription>
+<para>Returns the maximum value for <emphasis>product&apos;s</emphasis> <emphasis>range</emphasis> in (integer) ohms, or the string &quot;Auto&quot;. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If <emphasis>range</emphasis> is not a known valid value, then an null <ref refid="qvariant" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QVariant</ref> is returned.</para>
+<para><simplesect kind="see"><para><ref refid="namespacePokitMeter_1afdc7a546b276b7533a115aacecc82ff8" kindref="member">PokitMeter::maxValue(const PokitMeter::ResistanceRange &amp;range)</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="namespacePokitPro_1a78ce6ea577673c1a17e0ee773ebd7ebe" kindref="member">PokitPro::maxValue(const PokitPro::ResistanceRange &amp;range)</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/lib/pokitproducts.cpp" line="247" column="10" bodyfile="/home/paul/src/dokit/src/lib/pokitproducts.cpp" bodystart="247" bodyend="258" declfile="/home/paul/src/dokit/src/lib/pokitproducts_p.h" declline="31" declcolumn="29"/>
+        <references refid="qstring_1arg-14">QString::arg</references>
+        <references refid="namespacePokitMeter_1a86a4eb262b1a9fde417acdee8eea00b7" compoundref="pokitmeter_8cpp" startline="33" endline="44">PokitMeter::maxValue</references>
+        <references refid="namespacePokitPro_1a377d083e0bc3e7972ba1476914dda1b5" compoundref="pokitpro_8cpp" startline="40" endline="49">PokitPro::maxValue</references>
+        <references refid="pokitproducts_8h_1a0c4f628f68ce0432a6db11681a41fda4afbb216b5c2f76db3f733c4c5915b3001">PokitMeter</references>
+        <references refid="pokitproducts_8h_1a0c4f628f68ce0432a6db11681a41fda4abf3aeeb41cfa55672113dbb4a86da2ae">PokitPro</references>
+        <references refid="qcoreapplication_1translate">QCoreApplication::translate</references>
+        <referencedby refid="classMultimeterService_1a9d05ef9c2d80a941bfd4f972d3dc6145" compoundref="multimeterservice_8cpp" startline="90" endline="113">MultimeterService::maxValue</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Encapsulates convenience functions for working with resistance ranges. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/paul/src/dokit/src/lib/pokitproducts.cpp" line="219" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,857 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.0" xml:lang="en-US">
+  <compounddef id="classMultimeterService" kind="class" language="C++" prot="public">
+    <compoundname>MultimeterService</compoundname>
+    <basecompoundref refid="classAbstractPokitService" prot="public" virt="non-virtual">AbstractPokitService</basecompoundref>
+    <innerclass refid="structMultimeterService_1_1CharacteristicUuids" prot="public">MultimeterService::CharacteristicUuids</innerclass>
+    <innerclass refid="structMultimeterService_1_1Reading" prot="public">MultimeterService::Reading</innerclass>
+    <innerclass refid="structMultimeterService_1_1Settings" prot="public">MultimeterService::Settings</innerclass>
+    <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classMultimeterService_1a51f66d0b81dace3115c5c68bc931eaea" prot="public" static="no" strong="yes">
+        <type>quint8</type>
+        <name>Mode</name>
+        <qualifiedname>MultimeterService::Mode</qualifiedname>
+        <enumvalue id="classMultimeterService_1a51f66d0b81dace3115c5c68bc931eaeaae599161956d626eda4cb0a5ffb85271c" prot="public">
+          <name>Idle</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>Make device idle. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classMultimeterService_1a51f66d0b81dace3115c5c68bc931eaeaa1a18453c20867d5a990479b3716cbbc5" prot="public">
+          <name>DcVoltage</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+<para>Measure DC voltage. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classMultimeterService_1a51f66d0b81dace3115c5c68bc931eaeaa9f01dfb531bd23d5cb9c2bb2e49d685e" prot="public">
+          <name>AcVoltage</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+<para>Measure AC voltage. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classMultimeterService_1a51f66d0b81dace3115c5c68bc931eaeaaf2a03b2c98a6620d4bf33af69572898e" prot="public">
+          <name>DcCurrent</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+<para>Measure DC current. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classMultimeterService_1a51f66d0b81dace3115c5c68bc931eaeaa7b39f260051ef745ddba9fc57ac23ff9" prot="public">
+          <name>AcCurrent</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+<para>Measure AC current. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classMultimeterService_1a51f66d0b81dace3115c5c68bc931eaeaa9db444f7a3b8ba8f817647de53b7a6fe" prot="public">
+          <name>Resistance</name>
+          <initializer>= 5</initializer>
+          <briefdescription>
+<para>Measure resistance. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classMultimeterService_1a51f66d0b81dace3115c5c68bc931eaeaa0f31a45b6daa6a5478050c36732a2549" prot="public">
+          <name>Diode</name>
+          <initializer>= 6</initializer>
+          <briefdescription>
+<para>Measure diode. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classMultimeterService_1a51f66d0b81dace3115c5c68bc931eaeaaf73d2c55dc3628b7071e45104874c485" prot="public">
+          <name>Continuity</name>
+          <initializer>= 7</initializer>
+          <briefdescription>
+<para>Measure continuity. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classMultimeterService_1a51f66d0b81dace3115c5c68bc931eaeaaee7a8e262285ed49ea1b4e4ae11525bd" prot="public">
+          <name>Temperature</name>
+          <initializer>= 8</initializer>
+          <briefdescription>
+<para>Measure temperature. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classMultimeterService_1a51f66d0b81dace3115c5c68bc931eaeaa22bef5ff8cc5db9cc862164e779f29dc" prot="public">
+          <name>Capacitance</name>
+          <initializer>= 9</initializer>
+          <briefdescription>
+<para>Measure capacitance. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classMultimeterService_1a51f66d0b81dace3115c5c68bc931eaeaa8d6937c3adb213bd7b7beb575aa17687" prot="public">
+          <name>ExternalTemperature</name>
+          <initializer>= 10</initializer>
+          <briefdescription>
+<para>Measure temperature via an external temperature probe. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Values supported by the <computeroutput>Mode</computeroutput> attribute of the <computeroutput><ref refid="structMultimeterService_1_1Settings" kindref="compound">Settings</ref></computeroutput> and <computeroutput><ref refid="structMultimeterService_1_1Reading" kindref="compound">Reading</ref></computeroutput> characteristics. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="pokit_1_pokit000004"><xreftitle>Pokit Bluetooth API errata</xreftitle><xrefdescription><para>The following enumeration values are as-yet undocumented by Pokit Innovations. <ulink url="https://github.com/pcolby">@pcolby</ulink> reverse-engineered them as part of the <ulink url="https://github.com/pcolby/dokit">dokit</ulink> project.<itemizedlist>
+<listitem><para><ref refid="classMultimeterService_1a51f66d0b81dace3115c5c68bc931eaeaa22bef5ff8cc5db9cc862164e779f29dc" kindref="member">Mode::Capacitance</ref></para>
+</listitem><listitem><para><ref refid="classMultimeterService_1a51f66d0b81dace3115c5c68bc931eaeaa8d6937c3adb213bd7b7beb575aa17687" kindref="member">Mode::ExternalTemperature</ref></para>
+</listitem></itemizedlist>
+</para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/multimeterservice.h" line="40" column="5" bodyfile="/home/paul/src/dokit/include/qtpokit/multimeterservice.h" bodystart="40" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="enum" id="classMultimeterService_1a43c735e6c80c4ada9bc8640d06fbe286" prot="public" static="no" strong="yes">
+        <type>quint8</type>
+        <name>MeterStatus</name>
+        <qualifiedname>MultimeterService::MeterStatus</qualifiedname>
+        <enumvalue id="classMultimeterService_1a43c735e6c80c4ada9bc8640d06fbe286a8818f11dac54bd1d102f7ab891d02849" prot="public">
+          <name>AutoRangeOff</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>Auto-range is disabled (voltage, current and resistance modes only). </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classMultimeterService_1a43c735e6c80c4ada9bc8640d06fbe286a5e657c7063a35c1ab8cf463cc74e0541" prot="public">
+          <name>AutoRangeOn</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+<para>Auto-range is enabled (voltage, current and resistance modes only). </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classMultimeterService_1a43c735e6c80c4ada9bc8640d06fbe286aa47e2c0fd15eb75f65390f27f1107a86" prot="public">
+          <name>NoContinuity</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>No continuity (continuity mode only). </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classMultimeterService_1a43c735e6c80c4ada9bc8640d06fbe286af73d2c55dc3628b7071e45104874c485" prot="public">
+          <name>Continuity</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+<para>Continuity (continuity mode only). </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classMultimeterService_1a43c735e6c80c4ada9bc8640d06fbe286aa60852f204ed8028c1c58808b746d115" prot="public">
+          <name>Ok</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>Ok (temperature and diode modes only). </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classMultimeterService_1a43c735e6c80c4ada9bc8640d06fbe286a902b0d55fddef6f8d651fe1035b7d4bd" prot="public">
+          <name>Error</name>
+          <initializer>= 255</initializer>
+          <briefdescription>
+<para>Error (all modes). </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Values supported by the <computeroutput>Status</computeroutput> attribute of the <computeroutput><ref refid="structMultimeterService_1_1Settings" kindref="compound">Settings</ref></computeroutput> characteristic. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/multimeterservice.h" line="68" column="5" bodyfile="/home/paul/src/dokit/include/qtpokit/multimeterservice.h" bodystart="68" bodyend="75"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classMultimeterService_1a552c46066db898a3ba428fdad175327b" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="qbluetoothuuid" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothUuid</ref></type>
+        <definition>const QBluetoothUuid MultimeterService::serviceUuid</definition>
+        <argsstring></argsstring>
+        <name>serviceUuid</name>
+        <qualifiedname>MultimeterService::serviceUuid</qualifiedname>
+        <initializer>{ QStringLiteral(&quot;e7481d2f-5781-442e-bb9a-fd4e3441dadc&quot;) }</initializer>
+        <briefdescription>
+<para>UUID of the <computeroutput>Multimeter</computeroutput> service. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/multimeterservice.h" line="28" column="40" bodyfile="/home/paul/src/dokit/include/qtpokit/multimeterservice.h" bodystart="28" bodyend="28"/>
+        <referencedby refid="classPokitDevice_1aca9393595de5676f20e3d0fd795358b5" compoundref="pokitdevice_8cpp" startline="190" endline="210">PokitDevice::serviceToString</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="classMultimeterService_1a034313a86878163d51d269059f41becb" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class TestMultimeterService</definition>
+        <argsstring></argsstring>
+        <name>TestMultimeterService</name>
+        <qualifiedname>MultimeterService::TestMultimeterService</qualifiedname>
+        <param>
+          <type>TestMultimeterService</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/multimeterservice.h" line="111" column="18" bodyfile="/home/paul/src/dokit/include/qtpokit/multimeterservice.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classMultimeterService_1a58a03dbc0ae216dc60f27d975af92cf8" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref></type>
+        <definition>QString MultimeterService::toString</definition>
+        <argsstring>(const Mode &amp;mode)</argsstring>
+        <name>toString</name>
+        <qualifiedname>MultimeterService::toString</qualifiedname>
+        <param>
+          <type>const <ref refid="classMultimeterService_1a51f66d0b81dace3115c5c68bc931eaea" kindref="member">Mode</ref> &amp;</type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+<para>Returns <emphasis>mode</emphasis> as a user-friendly string. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/multimeterservice.h" line="53" column="20" bodyfile="/home/paul/src/dokit/src/lib/multimeterservice.cpp" bodystart="35" bodyend="51"/>
+        <references refid="classMultimeterService_1a51f66d0b81dace3115c5c68bc931eaeaa7b39f260051ef745ddba9fc57ac23ff9">AcCurrent</references>
+        <references refid="classMultimeterService_1a51f66d0b81dace3115c5c68bc931eaeaa9f01dfb531bd23d5cb9c2bb2e49d685e">AcVoltage</references>
+        <references refid="classMultimeterService_1a51f66d0b81dace3115c5c68bc931eaeaa22bef5ff8cc5db9cc862164e779f29dc">Capacitance</references>
+        <references refid="classMultimeterService_1a51f66d0b81dace3115c5c68bc931eaeaaf73d2c55dc3628b7071e45104874c485">Continuity</references>
+        <references refid="classMultimeterService_1a51f66d0b81dace3115c5c68bc931eaeaaf2a03b2c98a6620d4bf33af69572898e">DcCurrent</references>
+        <references refid="classMultimeterService_1a51f66d0b81dace3115c5c68bc931eaeaa1a18453c20867d5a990479b3716cbbc5">DcVoltage</references>
+        <references refid="classMultimeterService_1a51f66d0b81dace3115c5c68bc931eaeaa0f31a45b6daa6a5478050c36732a2549">Diode</references>
+        <references refid="classMultimeterService_1a51f66d0b81dace3115c5c68bc931eaeaa8d6937c3adb213bd7b7beb575aa17687">ExternalTemperature</references>
+        <references refid="classMultimeterService_1a51f66d0b81dace3115c5c68bc931eaeaae599161956d626eda4cb0a5ffb85271c">Idle</references>
+        <references refid="classMultimeterService_1a51f66d0b81dace3115c5c68bc931eaeaa9db444f7a3b8ba8f817647de53b7a6fe">Resistance</references>
+        <references refid="classMultimeterService_1a51f66d0b81dace3115c5c68bc931eaeaaee7a8e262285ed49ea1b4e4ae11525bd">Temperature</references>
+        <references refid="qobject_1tr">QObject::tr</references>
+        <referencedby refid="classMeterCommand_1a551a1c3d1c6f10384b5ccf264a640eff" compoundref="metercommand_8cpp" startline="204" endline="288">MeterCommand::outputReading</referencedby>
+        <referencedby refid="classMeterCommand_1aca51a018963bc384a24154cdb112a49b" compoundref="metercommand_8cpp" startline="165" endline="174">MeterCommand::serviceDetailsDiscovered</referencedby>
+        <referencedby refid="classMultimeterService_1ade75432f62ac592509c4583a415ec04b" compoundref="multimeterservice_8cpp" startline="80" endline="83">toString</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classMultimeterService_1a66e1f404c97d779e284c0a6c7c954c49" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref></type>
+        <definition>QString MultimeterService::toString</definition>
+        <argsstring>(const PokitProduct product, const quint8 range, const Mode mode)</argsstring>
+        <name>toString</name>
+        <qualifiedname>MultimeterService::toString</qualifiedname>
+        <param>
+          <type>const <ref refid="pokitproducts_8h_1a0c4f628f68ce0432a6db11681a41fda4" kindref="member">PokitProduct</ref></type>
+          <declname>product</declname>
+        </param>
+        <param>
+          <type>const quint8</type>
+          <declname>range</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classMultimeterService_1a51f66d0b81dace3115c5c68bc931eaea" kindref="member">Mode</ref></type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+<para>Returns <emphasis>range</emphasis> as a user-friendly string, or a null <ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref> if <emphasis>mode</emphasis> has no ranges. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/multimeterservice.h" line="55" column="20" bodyfile="/home/paul/src/dokit/src/lib/multimeterservice.cpp" bodystart="54" bodyend="77"/>
+        <references refid="classMultimeterService_1a51f66d0b81dace3115c5c68bc931eaeaa7b39f260051ef745ddba9fc57ac23ff9">AcCurrent</references>
+        <references refid="classMultimeterService_1a51f66d0b81dace3115c5c68bc931eaeaa9f01dfb531bd23d5cb9c2bb2e49d685e">AcVoltage</references>
+        <references refid="classMultimeterService_1a51f66d0b81dace3115c5c68bc931eaeaa22bef5ff8cc5db9cc862164e779f29dc">Capacitance</references>
+        <references refid="classMultimeterService_1a51f66d0b81dace3115c5c68bc931eaeaaf73d2c55dc3628b7071e45104874c485">Continuity</references>
+        <references refid="classMultimeterService_1a51f66d0b81dace3115c5c68bc931eaeaaf2a03b2c98a6620d4bf33af69572898e">DcCurrent</references>
+        <references refid="classMultimeterService_1a51f66d0b81dace3115c5c68bc931eaeaa1a18453c20867d5a990479b3716cbbc5">DcVoltage</references>
+        <references refid="classMultimeterService_1a51f66d0b81dace3115c5c68bc931eaeaa0f31a45b6daa6a5478050c36732a2549">Diode</references>
+        <references refid="classMultimeterService_1a51f66d0b81dace3115c5c68bc931eaeaa8d6937c3adb213bd7b7beb575aa17687">ExternalTemperature</references>
+        <references refid="classMultimeterService_1a51f66d0b81dace3115c5c68bc931eaeaae599161956d626eda4cb0a5ffb85271c">Idle</references>
+        <references refid="classMultimeterService_1a51f66d0b81dace3115c5c68bc931eaeaa9db444f7a3b8ba8f817647de53b7a6fe">Resistance</references>
+        <references refid="classMultimeterService_1a51f66d0b81dace3115c5c68bc931eaeaaee7a8e262285ed49ea1b4e4ae11525bd">Temperature</references>
+        <references refid="namespaceCapacitanceRange_1a14203d0e3a636e5142dccade0c4b5c91" compoundref="pokitproducts_8cpp" startline="134" endline="147">CapacitanceRange::toString</references>
+        <references refid="namespaceCurrentRange_1a683a82fdd02371d1d6acb4bbbd91e844" compoundref="pokitproducts_8cpp" startline="183" endline="194">CurrentRange::toString</references>
+        <references refid="namespaceResistanceRange_1a6f542c3fe27b9c58c03edc92ceab40ef" compoundref="pokitproducts_8cpp" startline="227" endline="238">ResistanceRange::toString</references>
+        <references refid="namespaceVoltageRange_1a843ef4bfc3538988c695fa643adcd4d0" compoundref="pokitproducts_8cpp" startline="271" endline="282">VoltageRange::toString</references>
+      </memberdef>
+      <memberdef kind="function" id="classMultimeterService_1a9d05ef9c2d80a941bfd4f972d3dc6145" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="qvariant" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QVariant</ref></type>
+        <definition>QVariant MultimeterService::maxValue</definition>
+        <argsstring>(const PokitProduct product, const quint8 range, const Mode mode)</argsstring>
+        <name>maxValue</name>
+        <qualifiedname>MultimeterService::maxValue</qualifiedname>
+        <param>
+          <type>const <ref refid="pokitproducts_8h_1a0c4f628f68ce0432a6db11681a41fda4" kindref="member">PokitProduct</ref></type>
+          <declname>product</declname>
+        </param>
+        <param>
+          <type>const quint8</type>
+          <declname>range</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classMultimeterService_1a51f66d0b81dace3115c5c68bc931eaea" kindref="member">Mode</ref></type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+<para>Returns the maximum value for <emphasis>range</emphasis>, or the string &quot;Auto&quot;. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If <emphasis>range</emphasis> is not a known valid enumeration value for <emphasis>product&apos;s</emphasis> <emphasis>mode</emphasis>, then a null <ref refid="qvariant" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QVariant</ref> is returned. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/multimeterservice.h" line="57" column="21" bodyfile="/home/paul/src/dokit/src/lib/multimeterservice.cpp" bodystart="90" bodyend="113"/>
+        <references refid="classMultimeterService_1a51f66d0b81dace3115c5c68bc931eaeaa7b39f260051ef745ddba9fc57ac23ff9">AcCurrent</references>
+        <references refid="classMultimeterService_1a51f66d0b81dace3115c5c68bc931eaeaa9f01dfb531bd23d5cb9c2bb2e49d685e">AcVoltage</references>
+        <references refid="classMultimeterService_1a51f66d0b81dace3115c5c68bc931eaeaa22bef5ff8cc5db9cc862164e779f29dc">Capacitance</references>
+        <references refid="classMultimeterService_1a51f66d0b81dace3115c5c68bc931eaeaaf73d2c55dc3628b7071e45104874c485">Continuity</references>
+        <references refid="classMultimeterService_1a51f66d0b81dace3115c5c68bc931eaeaaf2a03b2c98a6620d4bf33af69572898e">DcCurrent</references>
+        <references refid="classMultimeterService_1a51f66d0b81dace3115c5c68bc931eaeaa1a18453c20867d5a990479b3716cbbc5">DcVoltage</references>
+        <references refid="classMultimeterService_1a51f66d0b81dace3115c5c68bc931eaeaa0f31a45b6daa6a5478050c36732a2549">Diode</references>
+        <references refid="classMultimeterService_1a51f66d0b81dace3115c5c68bc931eaeaa8d6937c3adb213bd7b7beb575aa17687">ExternalTemperature</references>
+        <references refid="classMultimeterService_1a51f66d0b81dace3115c5c68bc931eaeaae599161956d626eda4cb0a5ffb85271c">Idle</references>
+        <references refid="namespaceCapacitanceRange_1ae13fb76d6fab44972334e2b007be4a06" compoundref="pokitproducts_8cpp" startline="157" endline="170">CapacitanceRange::maxValue</references>
+        <references refid="namespaceCurrentRange_1a340ae103126865c13997adcde5976bd1" compoundref="pokitproducts_8cpp" startline="203" endline="214">CurrentRange::maxValue</references>
+        <references refid="namespaceResistanceRange_1a30fba7f1c73e7a8b9b3c45aed8b5b3e1" compoundref="pokitproducts_8cpp" startline="247" endline="258">ResistanceRange::maxValue</references>
+        <references refid="namespaceVoltageRange_1adc3a8126ae8dcec8010fc8b037fab885" compoundref="pokitproducts_8cpp" startline="291" endline="302">VoltageRange::maxValue</references>
+        <references refid="classMultimeterService_1a51f66d0b81dace3115c5c68bc931eaeaa9db444f7a3b8ba8f817647de53b7a6fe">Resistance</references>
+        <references refid="classMultimeterService_1a51f66d0b81dace3115c5c68bc931eaeaaee7a8e262285ed49ea1b4e4ae11525bd">Temperature</references>
+        <referencedby refid="classMultimeterService_1a80dd2c9eed94973bbc532ee42daee1fb" compoundref="multimeterservice_8cpp" startline="121" endline="124">maxValue</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classMultimeterService_1ade75432f62ac592509c4583a415ec04b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref></type>
+        <definition>QString MultimeterService::toString</definition>
+        <argsstring>(const quint8 range, const Mode mode) const</argsstring>
+        <name>toString</name>
+        <qualifiedname>MultimeterService::toString</qualifiedname>
+        <param>
+          <type>const quint8</type>
+          <declname>range</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classMultimeterService_1a51f66d0b81dace3115c5c68bc931eaea" kindref="member">Mode</ref></type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+<para>Returns <emphasis>range</emphasis> as a user-friendly string, or a null <ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref> if <emphasis>mode</emphasis> has no ranges. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/multimeterservice.h" line="56" column="13" bodyfile="/home/paul/src/dokit/src/lib/multimeterservice.cpp" bodystart="80" bodyend="83"/>
+        <references refid="classAbstractPokitService_1a039d2f1054788cf586c8decadb53ddc0" compoundref="abstractpokitservice_8cpp" startline="86" endline="90">AbstractPokitService::pokitProduct</references>
+        <references refid="classMultimeterService_1a58a03dbc0ae216dc60f27d975af92cf8" compoundref="multimeterservice_8cpp" startline="35" endline="51">toString</references>
+      </memberdef>
+      <memberdef kind="function" id="classMultimeterService_1a80dd2c9eed94973bbc532ee42daee1fb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="qvariant" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QVariant</ref></type>
+        <definition>QVariant MultimeterService::maxValue</definition>
+        <argsstring>(const quint8 range, const Mode mode) const</argsstring>
+        <name>maxValue</name>
+        <qualifiedname>MultimeterService::maxValue</qualifiedname>
+        <param>
+          <type>const quint8</type>
+          <declname>range</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classMultimeterService_1a51f66d0b81dace3115c5c68bc931eaea" kindref="member">Mode</ref></type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+<para>Returns the maximum value for <emphasis>range</emphasis>, or the string &quot;Auto&quot;. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If <emphasis>range</emphasis> is not a known valid enumeration value for the current <emphasis>product&apos;s</emphasis> <emphasis>mode</emphasis>, then a null <ref refid="qvariant" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QVariant</ref> is returned. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/multimeterservice.h" line="58" column="14" bodyfile="/home/paul/src/dokit/src/lib/multimeterservice.cpp" bodystart="121" bodyend="124"/>
+        <references refid="classMultimeterService_1a9d05ef9c2d80a941bfd4f972d3dc6145" compoundref="multimeterservice_8cpp" startline="90" endline="113">maxValue</references>
+        <references refid="classAbstractPokitService_1a039d2f1054788cf586c8decadb53ddc0" compoundref="abstractpokitservice_8cpp" startline="86" endline="90">AbstractPokitService::pokitProduct</references>
+      </memberdef>
+      <memberdef kind="function" id="classMultimeterService_1a8121655f13ddf00fc2a65921b5ebc67b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>MultimeterService::MultimeterService</definition>
+        <argsstring>(QLowEnergyController *const pokitDevice, QObject *parent=nullptr)</argsstring>
+        <name>MultimeterService</name>
+        <qualifiedname>MultimeterService::MultimeterService</qualifiedname>
+        <param>
+          <type><ref refid="qlowenergycontroller" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QLowEnergyController</ref> *const</type>
+          <declname>pokitDevice</declname>
+        </param>
+        <param>
+          <type><ref refid="qobject" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QObject</ref> *</type>
+          <declname>parent</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+<para>Constructs a new Pokit service with <emphasis>parent</emphasis>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/multimeterservice.h" line="85" column="5" bodyfile="/home/paul/src/dokit/src/lib/multimeterservice.cpp" bodystart="129" bodyend="133"/>
+      </memberdef>
+      <memberdef kind="function" id="classMultimeterService_1a2bc53e1189ae9ff23d6a557d2a0576b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>MultimeterService::~MultimeterService</definition>
+        <argsstring>() override</argsstring>
+        <name>~MultimeterService</name>
+        <qualifiedname>MultimeterService::~MultimeterService</qualifiedname>
+        <briefdescription>
+<para>Destroys this <ref refid="classMultimeterService" kindref="compound">MultimeterService</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/multimeterservice.h" line="86" column="5" bodyfile="/home/paul/src/dokit/src/lib/multimeterservice.cpp" bodystart="150" bodyend="153"/>
+      </memberdef>
+      <memberdef kind="function" id="classMultimeterService_1a58831d3ca3e6df355fcd6fd1bb8d5e68" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool MultimeterService::readCharacteristics</definition>
+        <argsstring>() override</argsstring>
+        <name>readCharacteristics</name>
+        <qualifiedname>MultimeterService::readCharacteristics</qualifiedname>
+        <reimplements refid="classAbstractPokitService_1ab1de532f20d46803d6e8b8ffea835b48">readCharacteristics</reimplements>
+        <briefdescription>
+<para>Read all characteristics. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This convenience function will queue refresh requests of all characteristics supported by this service.</para>
+<para>Relevant <computeroutput>*Service::*Read</computeroutput> signals will be emitted by derived class objects as each characteristic is successfully read. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/multimeterservice.h" line="88" column="10" bodyfile="/home/paul/src/dokit/src/lib/multimeterservice.cpp" bodystart="155" bodyend="158"/>
+        <references refid="classMultimeterService_1a818612a809f2addc659b44bc537c4428" compoundref="multimeterservice_8cpp" startline="169" endline="173">readReadingCharacteristic</references>
+      </memberdef>
+      <memberdef kind="function" id="classMultimeterService_1a818612a809f2addc659b44bc537c4428" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool MultimeterService::readReadingCharacteristic</definition>
+        <argsstring>()</argsstring>
+        <name>readReadingCharacteristic</name>
+        <qualifiedname>MultimeterService::readReadingCharacteristic</qualifiedname>
+        <briefdescription>
+<para>Read the <computeroutput>Multimeter</computeroutput> service&apos;s <computeroutput><ref refid="structMultimeterService_1_1Reading" kindref="compound">Reading</ref></computeroutput> characteristic. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns <computeroutput>true</computeroutput> is the read request is succesfully queued, <computeroutput>false</computeroutput> otherwise (ie if the underlying controller it not yet connected to the Pokit device, or the device&apos;s services have not yet been discovered).</para>
+<para>Emits <ref refid="classMultimeterService_1a713bc310057b845399ed495ad5df2663" kindref="member">readingRead()</ref> if/when the characteristic has been read successfully. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/multimeterservice.h" line="89" column="10" bodyfile="/home/paul/src/dokit/src/lib/multimeterservice.cpp" bodystart="169" bodyend="173"/>
+        <references refid="structMultimeterService_1_1CharacteristicUuids_1a38e61d8cc1060c1166f11b9d8a5c0643" compoundref="multimeterservice_8h" startline="36" endline="36">MultimeterService::CharacteristicUuids::reading</references>
+        <referencedby refid="classMultimeterService_1a58831d3ca3e6df355fcd6fd1bb8d5e68" compoundref="multimeterservice_8cpp" startline="155" endline="158">readCharacteristics</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classMultimeterService_1ab459a9db42aed973bbc18a2bc9fcd957" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool MultimeterService::setSettings</definition>
+        <argsstring>(const Settings &amp;settings)</argsstring>
+        <name>setSettings</name>
+        <qualifiedname>MultimeterService::setSettings</qualifiedname>
+        <param>
+          <type>const <ref refid="structMultimeterService_1_1Settings" kindref="compound">Settings</ref> &amp;</type>
+          <declname>settings</declname>
+        </param>
+        <briefdescription>
+<para>Configures the Pokit device&apos;s multimeter mode. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns <computeroutput>true</computeroutput> if the write request was successfully queued, <computeroutput>false</computeroutput> otherwise.</para>
+<para>Emits <ref refid="classMultimeterService_1a11b8dc40cfedb636770f2c5b8551ff8b" kindref="member">settingsWritten()</ref> if/when the <emphasis>settings</emphasis> have been writtem successfully. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/multimeterservice.h" line="92" column="10" bodyfile="/home/paul/src/dokit/src/lib/multimeterservice.cpp" bodystart="182" bodyend="198"/>
+        <references refid="classMultimeterServicePrivate_1ab69aec8bf3290ba5037e8d11926fe707" compoundref="multimeterservice_8cpp" startline="288" endline="302">MultimeterServicePrivate::encodeSettings</references>
+        <references refid="qbytearray_1isNull">QByteArray::isNull</references>
+        <references refid="qlowenergycharacteristic_1isValid">QLowEnergyCharacteristic::isValid</references>
+        <references refid="structMultimeterService_1_1CharacteristicUuids_1a502132c1d5922e86256dd70e6935b6d2" compoundref="multimeterservice_8h" startline="33" endline="33">MultimeterService::CharacteristicUuids::settings</references>
+        <referencedby refid="classMeterCommand_1aca51a018963bc384a24154cdb112a49b" compoundref="metercommand_8cpp" startline="165" endline="174">MeterCommand::serviceDetailsDiscovered</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classMultimeterService_1ad7623c59f41fc099bebd3447637a904e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structMultimeterService_1_1Reading" kindref="compound">Reading</ref></type>
+        <definition>MultimeterService::Reading MultimeterService::reading</definition>
+        <argsstring>() const</argsstring>
+        <name>reading</name>
+        <qualifiedname>MultimeterService::reading</qualifiedname>
+        <briefdescription>
+<para>Returns the most recent value of the <computeroutput>Multimeter</computeroutput> service&apos;s <computeroutput><ref refid="structMultimeterService_1_1Reading" kindref="compound">Reading</ref></computeroutput> characteristic. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The returned value, if any, is from the underlying Bluetooth stack&apos;s cache. If no such value is currently available (ie the serviceDetailsDiscovered signal has not been emitted yet), then the returned <ref refid="structMultimeterService_1_1Reading_1a5b6599355c8ae7e67d57da122256521a" kindref="member">MultimeterService::Reading::value</ref> member will be a quiet NaN, which can be checked like:</para>
+<para><programlisting><codeline><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structMultimeterService_1_1Reading" kindref="compound">MultimeterService::Reading</ref><sp/><ref refid="classMultimeterService_1ad7623c59f41fc099bebd3447637a904e" kindref="member">reading</ref><sp/>=<sp/>multimeterService-&gt;reading();</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(qIsNaN(<ref refid="classMultimeterService_1ad7623c59f41fc099bebd3447637a904e" kindref="member">reading</ref>.<ref refid="structMultimeterService_1_1Reading_1a5b6599355c8ae7e67d57da122256521a" kindref="member">value</ref>))<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Handle<sp/>failure.</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/multimeterservice.h" line="95" column="13" bodyfile="/home/paul/src/dokit/src/lib/multimeterservice.cpp" bodystart="214" bodyend="221"/>
+        <references refid="classMultimeterService_1a43c735e6c80c4ada9bc8640d06fbe286a902b0d55fddef6f8d651fe1035b7d4bd">Error</references>
+        <references refid="classMultimeterService_1a51f66d0b81dace3115c5c68bc931eaeaae599161956d626eda4cb0a5ffb85271c">Idle</references>
+        <references refid="qlowenergycharacteristic_1isValid">QLowEnergyCharacteristic::isValid</references>
+        <references refid="classMultimeterServicePrivate_1ac9594dce487207bafd123e1093f399db" compoundref="multimeterservice_8cpp" startline="307" endline="324">MultimeterServicePrivate::parseReading</references>
+        <references refid="structMultimeterService_1_1CharacteristicUuids_1a38e61d8cc1060c1166f11b9d8a5c0643" compoundref="multimeterservice_8h" startline="36" endline="36">MultimeterService::CharacteristicUuids::reading</references>
+        <references refid="qlowenergycharacteristic_1value">QLowEnergyCharacteristic::value</references>
+      </memberdef>
+      <memberdef kind="function" id="classMultimeterService_1a321c4fdade8d934ac2e1daec3be174fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool MultimeterService::enableReadingNotifications</definition>
+        <argsstring>()</argsstring>
+        <name>enableReadingNotifications</name>
+        <qualifiedname>MultimeterService::enableReadingNotifications</qualifiedname>
+        <briefdescription>
+<para>Enables client-side notifications of meter readings. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is an alternative to manually requesting individual reads via <ref refid="classMultimeterService_1a818612a809f2addc659b44bc537c4428" kindref="member">readReadingCharacteristic()</ref>.</para>
+<para>Returns <computeroutput>true</computeroutput> is the request was successfully submited to the device queue, <computeroutput>false</computeroutput> otherwise.</para>
+<para>Successfully read values (if any) will be emitted via the <ref refid="classMultimeterService_1a713bc310057b845399ed495ad5df2663" kindref="member">readingRead()</ref> signal. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/multimeterservice.h" line="96" column="10" bodyfile="/home/paul/src/dokit/src/lib/multimeterservice.cpp" bodystart="232" bodyend="236"/>
+        <references refid="structMultimeterService_1_1CharacteristicUuids_1a38e61d8cc1060c1166f11b9d8a5c0643" compoundref="multimeterservice_8h" startline="36" endline="36">MultimeterService::CharacteristicUuids::reading</references>
+        <referencedby refid="classMeterCommand_1a994e13d73c26eac303fa34b14082c9a4" compoundref="metercommand_8cpp" startline="193" endline="199">MeterCommand::settingsWritten</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classMultimeterService_1ae51553919b7d659cf6d0ce1210503555" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool MultimeterService::disableReadingNotifications</definition>
+        <argsstring>()</argsstring>
+        <name>disableReadingNotifications</name>
+        <qualifiedname>MultimeterService::disableReadingNotifications</qualifiedname>
+        <briefdescription>
+<para>Disables client-side notifications of meter readings. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Instantaneous reads can still be fetched by <ref refid="classMultimeterService_1a818612a809f2addc659b44bc537c4428" kindref="member">readReadingCharacteristic()</ref>.</para>
+<para>Returns <computeroutput>true</computeroutput> is the request was successfully submited to the device queue, <computeroutput>false</computeroutput> otherwise. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/multimeterservice.h" line="97" column="10" bodyfile="/home/paul/src/dokit/src/lib/multimeterservice.cpp" bodystart="245" bodyend="249"/>
+        <references refid="structMultimeterService_1_1CharacteristicUuids_1a38e61d8cc1060c1166f11b9d8a5c0643" compoundref="multimeterservice_8h" startline="36" endline="36">MultimeterService::CharacteristicUuids::reading</references>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="signal">
+      <memberdef kind="signal" id="classMultimeterService_1a11b8dc40cfedb636770f2c5b8551ff8b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MultimeterService::settingsWritten</definition>
+        <argsstring>()</argsstring>
+        <name>settingsWritten</name>
+        <qualifiedname>MultimeterService::settingsWritten</qualifiedname>
+        <briefdescription>
+<para>This signal is emitted when the <computeroutput><ref refid="structMultimeterService_1_1Settings" kindref="compound">Settings</ref></computeroutput> characteristic has been written successfully. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="classMultimeterService_1ab459a9db42aed973bbc18a2bc9fcd957" kindref="member">setSettings</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/multimeterservice.h" line="100" column="10"/>
+        <referencedby refid="classMeterCommand_1abdc90c9cd480caa8ad04281c49a1e9a4" compoundref="metercommand_8cpp" startline="148" endline="158">MeterCommand::getService</referencedby>
+      </memberdef>
+      <memberdef kind="signal" id="classMultimeterService_1a713bc310057b845399ed495ad5df2663" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MultimeterService::readingRead</definition>
+        <argsstring>(const MultimeterService::Reading &amp;reading)</argsstring>
+        <name>readingRead</name>
+        <qualifiedname>MultimeterService::readingRead</qualifiedname>
+        <param>
+          <type>const <ref refid="structMultimeterService_1_1Reading" kindref="compound">MultimeterService::Reading</ref> &amp;</type>
+          <declname>reading</declname>
+        </param>
+        <briefdescription>
+<para>This signal is emitted when the <computeroutput><ref refid="structMultimeterService_1_1Reading" kindref="compound">Reading</ref></computeroutput> characteristic has been read successfully. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="classMultimeterService_1a818612a809f2addc659b44bc537c4428" kindref="member">readReadingCharacteristic</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/multimeterservice.h" line="101" column="10"/>
+        <referencedby refid="classMeterCommand_1a994e13d73c26eac303fa34b14082c9a4" compoundref="metercommand_8cpp" startline="193" endline="199">MeterCommand::settingsWritten</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classMultimeterService_1a244b45bb3b82e37ebfab531dcb2bc55d" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>MultimeterService::MultimeterService</definition>
+        <argsstring>(MultimeterServicePrivate *const d, QObject *const parent)</argsstring>
+        <name>MultimeterService</name>
+        <qualifiedname>MultimeterService::MultimeterService</qualifiedname>
+        <param>
+          <type><ref refid="classMultimeterServicePrivate" kindref="compound">MultimeterServicePrivate</ref> *const</type>
+          <declname>d</declname>
+        </param>
+        <param>
+          <type><ref refid="qobject" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QObject</ref> *const</type>
+          <declname>parent</declname>
+        </param>
+        <briefdescription>
+<para>Constructs a new Pokit service with <emphasis>parent</emphasis>, and private implementation <emphasis>d</emphasis>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/multimeterservice.h" line="105" column="5" bodyfile="/home/paul/src/dokit/src/lib/multimeterservice.cpp" bodystart="139" bodyend="144"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>The <ref refid="classMultimeterService" kindref="compound">MultimeterService</ref> class accesses the <computeroutput>Multimeter</computeroutput> service of Pokit devices. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>AbstractPokitService</label>
+        <link refid="classAbstractPokitService"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>MultimeterService</label>
+        <link refid="classMultimeterService"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>QObject</label>
+        <link refid="qobject" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>AbstractPokitService</label>
+        <link refid="classAbstractPokitService"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>d_ptr</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>AbstractPokitServicePrivate</label>
+        <link refid="classAbstractPokitServicePrivate"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>controller</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>service</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>serviceUuid</edgelabel>
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>q_ptr</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>MultimeterService</label>
+        <link refid="classMultimeterService"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>serviceUuid</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>QBluetoothUuid</label>
+        <link refid="qbluetoothuuid" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags"/>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>QLowEnergyController</label>
+        <link refid="qlowenergycontroller" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>QLowEnergyService</label>
+        <link refid="qlowenergyservice" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>QObject</label>
+        <link refid="qobject" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags"/>
+      </node>
+      <node id="8">
+        <label>QUuid</label>
+        <link refid="quuid" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/paul/src/dokit/include/qtpokit/multimeterservice.h" line="22" column="1" bodyfile="/home/paul/src/dokit/include/qtpokit/multimeterservice.h" bodystart="23" bodyend="112"/>
+    <listofallmembers>
+      <member refid="classAbstractPokitService_1aa1309523f169115a7b7a8117ea4ab04f" prot="public" virt="non-virtual"><scope>MultimeterService</scope><name>AbstractPokitService</name></member>
+      <member refid="classAbstractPokitService_1a2d624e58e68663e0420df7d282caf116" prot="protected" virt="non-virtual"><scope>MultimeterService</scope><name>AbstractPokitService</name></member>
+      <member refid="classAbstractPokitService_1a65c2c9c6163744a7cf52de2c6a83f610" prot="public" virt="non-virtual"><scope>MultimeterService</scope><name>autoDiscover</name></member>
+      <member refid="qobject_1objectName-prop" prot="public" virt="non-virtual"><scope>MultimeterService</scope><name>bindableObjectName</name></member>
+      <member refid="qobject_1blockSignals" prot="public" virt="non-virtual"><scope>MultimeterService</scope><name>blockSignals</name></member>
+      <member refid="qobject_1childEvent" prot="protected" virt="virtual"><scope>MultimeterService</scope><name>childEvent</name></member>
+      <member refid="qobject_1children" prot="public" virt="non-virtual"><scope>MultimeterService</scope><name>children</name></member>
+      <member refid="qobject_1connect-4" prot="public" virt="non-virtual"><scope>MultimeterService</scope><name>connect</name></member>
+      <member refid="qobject_1connect-5" prot="public" virt="non-virtual"><scope>MultimeterService</scope><name>connect</name></member>
+      <member refid="qobject_1connect-3" prot="public" virt="non-virtual"><scope>MultimeterService</scope><name>connect</name></member>
+      <member refid="qobject_1connect-1" prot="public" virt="non-virtual"><scope>MultimeterService</scope><name>connect</name></member>
+      <member refid="qobject_1connect" prot="public" virt="non-virtual"><scope>MultimeterService</scope><name>connect</name></member>
+      <member refid="qobject_1connect-2" prot="public" virt="non-virtual"><scope>MultimeterService</scope><name>connect</name></member>
+      <member refid="qobject_1connectNotify" prot="protected" virt="virtual"><scope>MultimeterService</scope><name>connectNotify</name></member>
+      <member refid="qobject_1customEvent" prot="protected" virt="virtual"><scope>MultimeterService</scope><name>customEvent</name></member>
+      <member refid="classAbstractPokitService_1acb832f24262f3f61f74c878dd79f48e8" prot="protected" virt="non-virtual"><scope>MultimeterService</scope><name>d_ptr</name></member>
+      <member refid="qobject_1deleteLater" prot="public" virt="non-virtual"><scope>MultimeterService</scope><name>deleteLater</name></member>
+      <member refid="qobject_1destroyed" prot="public" virt="non-virtual"><scope>MultimeterService</scope><name>destroyed</name></member>
+      <member refid="classMultimeterService_1ae51553919b7d659cf6d0ce1210503555" prot="public" virt="non-virtual"><scope>MultimeterService</scope><name>disableReadingNotifications</name></member>
+      <member refid="qobject_1disconnect-4" prot="public" virt="non-virtual"><scope>MultimeterService</scope><name>disconnect</name></member>
+      <member refid="qobject_1disconnect-5" prot="public" virt="non-virtual"><scope>MultimeterService</scope><name>disconnect</name></member>
+      <member refid="qobject_1disconnect-1" prot="public" virt="non-virtual"><scope>MultimeterService</scope><name>disconnect</name></member>
+      <member refid="qobject_1disconnect" prot="public" virt="non-virtual"><scope>MultimeterService</scope><name>disconnect</name></member>
+      <member refid="qobject_1disconnect-3" prot="public" virt="non-virtual"><scope>MultimeterService</scope><name>disconnect</name></member>
+      <member refid="qobject_1disconnect-2" prot="public" virt="non-virtual"><scope>MultimeterService</scope><name>disconnect</name></member>
+      <member refid="qobject_1disconnectNotify" prot="protected" virt="virtual"><scope>MultimeterService</scope><name>disconnectNotify</name></member>
+      <member refid="qobject_1dumpObjectInfo" prot="public" virt="non-virtual"><scope>MultimeterService</scope><name>dumpObjectInfo</name></member>
+      <member refid="qobject_1dumpObjectTree" prot="public" virt="non-virtual"><scope>MultimeterService</scope><name>dumpObjectTree</name></member>
+      <member refid="qobject_1dynamicPropertyNames" prot="public" virt="non-virtual"><scope>MultimeterService</scope><name>dynamicPropertyNames</name></member>
+      <member refid="classMultimeterService_1a321c4fdade8d934ac2e1daec3be174fb" prot="public" virt="non-virtual"><scope>MultimeterService</scope><name>enableReadingNotifications</name></member>
+      <member refid="qobject_1event" prot="public" virt="virtual"><scope>MultimeterService</scope><name>event</name></member>
+      <member refid="qobject_1eventFilter" prot="public" virt="virtual"><scope>MultimeterService</scope><name>eventFilter</name></member>
+      <member refid="qobject_1findChild" prot="public" virt="non-virtual"><scope>MultimeterService</scope><name>findChild</name></member>
+      <member refid="qobject_1findChildren-1" prot="public" virt="non-virtual"><scope>MultimeterService</scope><name>findChildren</name></member>
+      <member refid="qobject_1findChildren-2" prot="public" virt="non-virtual"><scope>MultimeterService</scope><name>findChildren</name></member>
+      <member refid="qobject_1findChildren" prot="public" virt="non-virtual"><scope>MultimeterService</scope><name>findChildren</name></member>
+      <member refid="qobject_1inherits" prot="public" virt="non-virtual"><scope>MultimeterService</scope><name>inherits</name></member>
+      <member refid="qobject_1installEventFilter" prot="public" virt="non-virtual"><scope>MultimeterService</scope><name>installEventFilter</name></member>
+      <member refid="qobject_1isQuickItemType" prot="public" virt="non-virtual"><scope>MultimeterService</scope><name>isQuickItemType</name></member>
+      <member refid="qobject_1isSignalConnected" prot="protected" virt="non-virtual"><scope>MultimeterService</scope><name>isSignalConnected</name></member>
+      <member refid="qobject_1isWidgetType" prot="public" virt="non-virtual"><scope>MultimeterService</scope><name>isWidgetType</name></member>
+      <member refid="qobject_1isWindowType" prot="public" virt="non-virtual"><scope>MultimeterService</scope><name>isWindowType</name></member>
+      <member refid="qobject_1killTimer" prot="public" virt="non-virtual"><scope>MultimeterService</scope><name>killTimer</name></member>
+      <member refid="classMultimeterService_1a9d05ef9c2d80a941bfd4f972d3dc6145" prot="public" virt="non-virtual"><scope>MultimeterService</scope><name>maxValue</name></member>
+      <member refid="classMultimeterService_1a80dd2c9eed94973bbc532ee42daee1fb" prot="public" virt="non-virtual"><scope>MultimeterService</scope><name>maxValue</name></member>
+      <member refid="qobject_1metaObject" prot="public" virt="virtual"><scope>MultimeterService</scope><name>metaObject</name></member>
+      <member refid="classMultimeterService_1a43c735e6c80c4ada9bc8640d06fbe286" prot="public" virt="non-virtual"><scope>MultimeterService</scope><name>MeterStatus</name></member>
+      <member refid="classMultimeterService_1a51f66d0b81dace3115c5c68bc931eaea" prot="public" virt="non-virtual"><scope>MultimeterService</scope><name>Mode</name></member>
+      <member refid="qobject_1moveToThread" prot="public" virt="non-virtual"><scope>MultimeterService</scope><name>moveToThread</name></member>
+      <member refid="classMultimeterService_1a8121655f13ddf00fc2a65921b5ebc67b" prot="public" virt="non-virtual"><scope>MultimeterService</scope><name>MultimeterService</name></member>
+      <member refid="classMultimeterService_1a244b45bb3b82e37ebfab531dcb2bc55d" prot="protected" virt="non-virtual"><scope>MultimeterService</scope><name>MultimeterService</name></member>
+      <member refid="qobject_1objectName-prop" prot="public" virt="non-virtual"><scope>MultimeterService</scope><name>objectName</name></member>
+      <member refid="qobject_1objectName-prop" prot="public" virt="non-virtual"><scope>MultimeterService</scope><name>objectName</name></member>
+      <member refid="qobject_1objectNameChanged" prot="public" virt="non-virtual"><scope>MultimeterService</scope><name>objectNameChanged</name></member>
+      <member refid="qobject_1parent" prot="public" virt="non-virtual"><scope>MultimeterService</scope><name>parent</name></member>
+      <member refid="classAbstractPokitService_1a039d2f1054788cf586c8decadb53ddc0" prot="public" virt="non-virtual"><scope>MultimeterService</scope><name>pokitProduct</name></member>
+      <member refid="qobject_1property" prot="public" virt="non-virtual"><scope>MultimeterService</scope><name>property</name></member>
+      <member refid="qobject_1Q_CLASSINFO" prot="public" virt="non-virtual"><scope>MultimeterService</scope><name>Q_CLASSINFO</name></member>
+      <member refid="qobject_1Q_EMIT" prot="public" virt="non-virtual"><scope>MultimeterService</scope><name>Q_EMIT</name></member>
+      <member refid="qobject_1Q_ENUM" prot="public" virt="non-virtual"><scope>MultimeterService</scope><name>Q_ENUM</name></member>
+      <member refid="qobject_1Q_ENUM_NS" prot="public" virt="non-virtual"><scope>MultimeterService</scope><name>Q_ENUM_NS</name></member>
+      <member refid="qobject-obsolete_1Q_ENUMS" prot="public" virt="non-virtual"><scope>MultimeterService</scope><name>Q_ENUMS</name></member>
+      <member refid="qobject_1Q_FLAG" prot="public" virt="non-virtual"><scope>MultimeterService</scope><name>Q_FLAG</name></member>
+      <member refid="qobject_1Q_FLAG_NS" prot="public" virt="non-virtual"><scope>MultimeterService</scope><name>Q_FLAG_NS</name></member>
+      <member refid="qobject-obsolete_1Q_FLAGS" prot="public" virt="non-virtual"><scope>MultimeterService</scope><name>Q_FLAGS</name></member>
+      <member refid="qobject_1Q_GADGET" prot="public" virt="non-virtual"><scope>MultimeterService</scope><name>Q_GADGET</name></member>
+      <member refid="qobject_1Q_GADGET_EXPORT" prot="public" virt="non-virtual"><scope>MultimeterService</scope><name>Q_GADGET_EXPORT</name></member>
+      <member refid="qobject_1Q_INTERFACES" prot="public" virt="non-virtual"><scope>MultimeterService</scope><name>Q_INTERFACES</name></member>
+      <member refid="qobject_1Q_INVOKABLE" prot="public" virt="non-virtual"><scope>MultimeterService</scope><name>Q_INVOKABLE</name></member>
+      <member refid="qobject_1Q_MOC_INCLUDE" prot="public" virt="non-virtual"><scope>MultimeterService</scope><name>Q_MOC_INCLUDE</name></member>
+      <member refid="qobject_1Q_NAMESPACE" prot="public" virt="non-virtual"><scope>MultimeterService</scope><name>Q_NAMESPACE</name></member>
+      <member refid="qobject_1Q_NAMESPACE_EXPORT" prot="public" virt="non-virtual"><scope>MultimeterService</scope><name>Q_NAMESPACE_EXPORT</name></member>
+      <member refid="qobject_1Q_OBJECT" prot="public" virt="non-virtual"><scope>MultimeterService</scope><name>Q_OBJECT</name></member>
+      <member refid="qobject_1Q_PROPERTY" prot="public" virt="non-virtual"><scope>MultimeterService</scope><name>Q_PROPERTY</name></member>
+      <member refid="qobject_1Q_REVISION" prot="public" virt="non-virtual"><scope>MultimeterService</scope><name>Q_REVISION</name></member>
+      <member refid="qobject_1Q_SET_OBJECT_NAME" prot="public" virt="non-virtual"><scope>MultimeterService</scope><name>Q_SET_OBJECT_NAME</name></member>
+      <member refid="qobject_1Q_SIGNAL" prot="public" virt="non-virtual"><scope>MultimeterService</scope><name>Q_SIGNAL</name></member>
+      <member refid="qobject_1Q_SIGNALS" prot="public" virt="non-virtual"><scope>MultimeterService</scope><name>Q_SIGNALS</name></member>
+      <member refid="qobject_1Q_SLOT" prot="public" virt="non-virtual"><scope>MultimeterService</scope><name>Q_SLOT</name></member>
+      <member refid="qobject_1Q_SLOTS" prot="public" virt="non-virtual"><scope>MultimeterService</scope><name>Q_SLOTS</name></member>
+      <member refid="qobject_1QObject" prot="public" virt="non-virtual"><scope>MultimeterService</scope><name>QObject</name></member>
+      <member refid="qobject_1qobject_cast" prot="public" virt="non-virtual"><scope>MultimeterService</scope><name>qobject_cast</name></member>
+      <member refid="qobject_1qobject_cast-1" prot="public" virt="non-virtual"><scope>MultimeterService</scope><name>qobject_cast</name></member>
+      <member refid="qobject_1QObjectList-typedef" prot="public" virt="non-virtual"><scope>MultimeterService</scope><name>QObjectList</name></member>
+      <member refid="qobject_1QT_NO_NARROWING_CONVERSIONS_IN_CONNECT" prot="public" virt="non-virtual"><scope>MultimeterService</scope><name>QT_NO_NARROWING_CONVERSIONS_IN_CONNECT</name></member>
+      <member refid="classMultimeterService_1a58831d3ca3e6df355fcd6fd1bb8d5e68" prot="public" virt="virtual"><scope>MultimeterService</scope><name>readCharacteristics</name></member>
+      <member refid="classMultimeterService_1ad7623c59f41fc099bebd3447637a904e" prot="public" virt="non-virtual"><scope>MultimeterService</scope><name>reading</name></member>
+      <member refid="classMultimeterService_1a713bc310057b845399ed495ad5df2663" prot="public" virt="non-virtual"><scope>MultimeterService</scope><name>readingRead</name></member>
+      <member refid="classMultimeterService_1a818612a809f2addc659b44bc537c4428" prot="public" virt="non-virtual"><scope>MultimeterService</scope><name>readReadingCharacteristic</name></member>
+      <member refid="qobject_1receivers" prot="protected" virt="non-virtual"><scope>MultimeterService</scope><name>receivers</name></member>
+      <member refid="qobject_1removeEventFilter" prot="public" virt="non-virtual"><scope>MultimeterService</scope><name>removeEventFilter</name></member>
+      <member refid="qobject_1sender" prot="protected" virt="non-virtual"><scope>MultimeterService</scope><name>sender</name></member>
+      <member refid="qobject_1senderSignalIndex" prot="protected" virt="non-virtual"><scope>MultimeterService</scope><name>senderSignalIndex</name></member>
+      <member refid="classAbstractPokitService_1a7a4ff74f51ba6ea6c01cbeb9eda15b9b" prot="public" virt="non-virtual"><scope>MultimeterService</scope><name>service</name></member>
+      <member refid="classAbstractPokitService_1ab7161dedf8ae431f723a5e225c2ec9ca" prot="public" virt="non-virtual"><scope>MultimeterService</scope><name>service</name></member>
+      <member refid="classAbstractPokitService_1af67cbea4294ba0a77dcd9540b29528ff" prot="public" virt="non-virtual"><scope>MultimeterService</scope><name>serviceDetailsDiscovered</name></member>
+      <member refid="classAbstractPokitService_1a9e680ebf280361ef82f4b072448d7e9b" prot="public" virt="non-virtual"><scope>MultimeterService</scope><name>serviceErrorOccurred</name></member>
+      <member refid="classMultimeterService_1a552c46066db898a3ba428fdad175327b" prot="public" virt="non-virtual"><scope>MultimeterService</scope><name>serviceUuid</name></member>
+      <member refid="classAbstractPokitService_1a9d6d50cf31bc5859747a134d6cb4c418" prot="public" virt="non-virtual"><scope>MultimeterService</scope><name>setAutoDiscover</name></member>
+      <member refid="qobject_1setObjectName-1" prot="public" virt="non-virtual"><scope>MultimeterService</scope><name>setObjectName</name></member>
+      <member refid="qobject_1setObjectName" prot="public" virt="non-virtual"><scope>MultimeterService</scope><name>setObjectName</name></member>
+      <member refid="qobject_1setParent" prot="public" virt="non-virtual"><scope>MultimeterService</scope><name>setParent</name></member>
+      <member refid="classAbstractPokitService_1aa0e323c5e2380709c5a5fde18520ae3f" prot="public" virt="non-virtual"><scope>MultimeterService</scope><name>setPokitProduct</name></member>
+      <member refid="qobject_1setProperty-1" prot="public" virt="non-virtual"><scope>MultimeterService</scope><name>setProperty</name></member>
+      <member refid="qobject_1setProperty" prot="public" virt="non-virtual"><scope>MultimeterService</scope><name>setProperty</name></member>
+      <member refid="classMultimeterService_1ab459a9db42aed973bbc18a2bc9fcd957" prot="public" virt="non-virtual"><scope>MultimeterService</scope><name>setSettings</name></member>
+      <member refid="classMultimeterService_1a11b8dc40cfedb636770f2c5b8551ff8b" prot="public" virt="non-virtual"><scope>MultimeterService</scope><name>settingsWritten</name></member>
+      <member refid="qobject_1signalsBlocked" prot="public" virt="non-virtual"><scope>MultimeterService</scope><name>signalsBlocked</name></member>
+      <member refid="qobject_1startTimer" prot="public" virt="non-virtual"><scope>MultimeterService</scope><name>startTimer</name></member>
+      <member refid="qobject_1startTimer-1" prot="public" virt="non-virtual"><scope>MultimeterService</scope><name>startTimer</name></member>
+      <member refid="classMultimeterService_1a034313a86878163d51d269059f41becb" prot="private" virt="non-virtual"><scope>MultimeterService</scope><name>TestMultimeterService</name></member>
+      <member refid="qobject_1thread" prot="public" virt="non-virtual"><scope>MultimeterService</scope><name>thread</name></member>
+      <member refid="qobject_1timerEvent" prot="protected" virt="virtual"><scope>MultimeterService</scope><name>timerEvent</name></member>
+      <member refid="classMultimeterService_1a58a03dbc0ae216dc60f27d975af92cf8" prot="public" virt="non-virtual"><scope>MultimeterService</scope><name>toString</name></member>
+      <member refid="classMultimeterService_1a66e1f404c97d779e284c0a6c7c954c49" prot="public" virt="non-virtual"><scope>MultimeterService</scope><name>toString</name></member>
+      <member refid="classMultimeterService_1ade75432f62ac592509c4583a415ec04b" prot="public" virt="non-virtual"><scope>MultimeterService</scope><name>toString</name></member>
+      <member refid="qobject_1tr" prot="public" virt="non-virtual"><scope>MultimeterService</scope><name>tr</name></member>
+      <member refid="classAbstractPokitService_1af0b962913c8be9b1d69ce1b68a5f9bdd" prot="public" virt="virtual"><scope>MultimeterService</scope><name>~AbstractPokitService</name></member>
+      <member refid="classMultimeterService_1a2bc53e1189ae9ff23d6a557d2a0576b0" prot="public" virt="non-virtual"><scope>MultimeterService</scope><name>~MultimeterService</name></member>
+      <member refid="qobject_1dtor.QObject" prot="public" virt="virtual"><scope>MultimeterService</scope><name>~QObject</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

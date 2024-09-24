@@ -1,0 +1,142 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.0" xml:lang="en-US">
+  <compounddef id="structDataLoggerService_1_1Metadata" kind="struct" language="C++" prot="public">
+    <compoundname>DataLoggerService::Metadata</compoundname>
+    <includes refid="dataloggerservice_8h" local="no">dataloggerservice.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structDataLoggerService_1_1Metadata_1a996d2701f1571bbbe51da18d2be3e2b8" prot="public" static="no" mutable="no">
+        <type><ref refid="classDataLoggerService_1a1a3a38ca8befc3de8121d795879140f6" kindref="member">LoggerStatus</ref></type>
+        <definition>LoggerStatus DataLoggerService::Metadata::status</definition>
+        <argsstring></argsstring>
+        <name>status</name>
+        <qualifiedname>DataLoggerService::Metadata::status</qualifiedname>
+        <briefdescription>
+<para>Current data logger status. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/dataloggerservice.h" line="85" column="22" bodyfile="/home/paul/src/dokit/include/qtpokit/dataloggerservice.h" bodystart="85" bodyend="-1"/>
+        <referencedby refid="classLoggerFetchCommand_1ad77b93a8a2ccad9ee9aaacd67f49689e" compoundref="loggerfetchcommand_8cpp" startline="71" endline="84">LoggerFetchCommand::metadataRead</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structDataLoggerService_1_1Metadata_1a824ce9f37293e435d41af31788145571" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float DataLoggerService::Metadata::scale</definition>
+        <argsstring></argsstring>
+        <name>scale</name>
+        <qualifiedname>DataLoggerService::Metadata::scale</qualifiedname>
+        <briefdescription>
+<para>Scale to apply to read samples. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/dataloggerservice.h" line="86" column="15" bodyfile="/home/paul/src/dokit/include/qtpokit/dataloggerservice.h" bodystart="86" bodyend="-1"/>
+        <referencedby refid="classLoggerFetchCommand_1ad77b93a8a2ccad9ee9aaacd67f49689e" compoundref="loggerfetchcommand_8cpp" startline="71" endline="84">LoggerFetchCommand::metadataRead</referencedby>
+        <referencedby refid="classLoggerFetchCommand_1a2f093386853fc6667de091a0e921a665" compoundref="loggerfetchcommand_8cpp" startline="89" endline="140">LoggerFetchCommand::outputSamples</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structDataLoggerService_1_1Metadata_1ac976c83a69d67fbd287d9ae406582d81" prot="public" static="no" mutable="no">
+        <type><ref refid="classDataLoggerService_1ab7fc5073f8ab9d5e93ba7006df685771" kindref="member">Mode</ref></type>
+        <definition>Mode DataLoggerService::Metadata::mode</definition>
+        <argsstring></argsstring>
+        <name>mode</name>
+        <qualifiedname>DataLoggerService::Metadata::mode</qualifiedname>
+        <briefdescription>
+<para>Current operation mode. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/dataloggerservice.h" line="87" column="14" bodyfile="/home/paul/src/dokit/include/qtpokit/dataloggerservice.h" bodystart="87" bodyend="-1"/>
+        <referencedby refid="classLoggerFetchCommand_1ad77b93a8a2ccad9ee9aaacd67f49689e" compoundref="loggerfetchcommand_8cpp" startline="71" endline="84">LoggerFetchCommand::metadataRead</referencedby>
+        <referencedby refid="classLoggerFetchCommand_1a2f093386853fc6667de091a0e921a665" compoundref="loggerfetchcommand_8cpp" startline="89" endline="140">LoggerFetchCommand::outputSamples</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structDataLoggerService_1_1Metadata_1a4d54eb6eeb9dd6415f3729bfea2ce3a3" prot="public" static="no" mutable="no">
+        <type>quint8</type>
+        <definition>quint8 DataLoggerService::Metadata::range</definition>
+        <argsstring></argsstring>
+        <name>range</name>
+        <qualifiedname>DataLoggerService::Metadata::range</qualifiedname>
+        <briefdescription>
+<para>Current range. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/dataloggerservice.h" line="88" column="16" bodyfile="/home/paul/src/dokit/include/qtpokit/dataloggerservice.h" bodystart="88" bodyend="-1"/>
+        <referencedby refid="classLoggerFetchCommand_1ad77b93a8a2ccad9ee9aaacd67f49689e" compoundref="loggerfetchcommand_8cpp" startline="71" endline="84">LoggerFetchCommand::metadataRead</referencedby>
+        <referencedby refid="classLoggerFetchCommand_1a2f093386853fc6667de091a0e921a665" compoundref="loggerfetchcommand_8cpp" startline="89" endline="140">LoggerFetchCommand::outputSamples</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structDataLoggerService_1_1Metadata_1a9cc636b875d630cf33d3ddead54e27d2" prot="public" static="no" mutable="no">
+        <type>quint32</type>
+        <definition>quint32 DataLoggerService::Metadata::updateInterval</definition>
+        <argsstring></argsstring>
+        <name>updateInterval</name>
+        <qualifiedname>DataLoggerService::Metadata::updateInterval</qualifiedname>
+        <briefdescription>
+<para>Current logging interval in milliseconds. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/dataloggerservice.h" line="89" column="17" bodyfile="/home/paul/src/dokit/include/qtpokit/dataloggerservice.h" bodystart="89" bodyend="-1"/>
+        <referencedby refid="classLoggerFetchCommand_1ad77b93a8a2ccad9ee9aaacd67f49689e" compoundref="loggerfetchcommand_8cpp" startline="71" endline="84">LoggerFetchCommand::metadataRead</referencedby>
+        <referencedby refid="classLoggerFetchCommand_1a2f093386853fc6667de091a0e921a665" compoundref="loggerfetchcommand_8cpp" startline="89" endline="140">LoggerFetchCommand::outputSamples</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structDataLoggerService_1_1Metadata_1a5e40e39f2d21dbf609403f111537b2b0" prot="public" static="no" mutable="no">
+        <type>quint16</type>
+        <definition>quint16 DataLoggerService::Metadata::numberOfSamples</definition>
+        <argsstring></argsstring>
+        <name>numberOfSamples</name>
+        <qualifiedname>DataLoggerService::Metadata::numberOfSamples</qualifiedname>
+        <briefdescription>
+<para>Number of samples acquired (1 to 6192). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/dataloggerservice.h" line="90" column="17" bodyfile="/home/paul/src/dokit/include/qtpokit/dataloggerservice.h" bodystart="90" bodyend="-1"/>
+        <referencedby refid="classLoggerFetchCommand_1ad77b93a8a2ccad9ee9aaacd67f49689e" compoundref="loggerfetchcommand_8cpp" startline="71" endline="84">LoggerFetchCommand::metadataRead</referencedby>
+        <referencedby refid="classLoggerFetchCommand_1a2f093386853fc6667de091a0e921a665" compoundref="loggerfetchcommand_8cpp" startline="89" endline="140">LoggerFetchCommand::outputSamples</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structDataLoggerService_1_1Metadata_1a67edabb3d6dbd9c9d425bd825f72d23b" prot="public" static="no" mutable="no">
+        <type>quint32</type>
+        <definition>quint32 DataLoggerService::Metadata::timestamp</definition>
+        <argsstring></argsstring>
+        <name>timestamp</name>
+        <qualifiedname>DataLoggerService::Metadata::timestamp</qualifiedname>
+        <briefdescription>
+<para>Timestamp stored at the beginning of the logging session. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/dataloggerservice.h" line="91" column="17" bodyfile="/home/paul/src/dokit/include/qtpokit/dataloggerservice.h" bodystart="91" bodyend="-1"/>
+        <referencedby refid="classLoggerFetchCommand_1ad77b93a8a2ccad9ee9aaacd67f49689e" compoundref="loggerfetchcommand_8cpp" startline="71" endline="84">LoggerFetchCommand::metadataRead</referencedby>
+        <referencedby refid="classLoggerFetchCommand_1a2f093386853fc6667de091a0e921a665" compoundref="loggerfetchcommand_8cpp" startline="89" endline="140">LoggerFetchCommand::outputSamples</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Attributes included in the <computeroutput><ref refid="structDataLoggerService_1_1Metadata" kindref="compound">Metadata</ref></computeroutput> characterstic. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/paul/src/dokit/include/qtpokit/dataloggerservice.h" line="84" column="5" bodyfile="/home/paul/src/dokit/include/qtpokit/dataloggerservice.h" bodystart="84" bodyend="92"/>
+    <listofallmembers>
+      <member refid="structDataLoggerService_1_1Metadata_1ac976c83a69d67fbd287d9ae406582d81" prot="public" virt="non-virtual"><scope>DataLoggerService::Metadata</scope><name>mode</name></member>
+      <member refid="structDataLoggerService_1_1Metadata_1a5e40e39f2d21dbf609403f111537b2b0" prot="public" virt="non-virtual"><scope>DataLoggerService::Metadata</scope><name>numberOfSamples</name></member>
+      <member refid="structDataLoggerService_1_1Metadata_1a4d54eb6eeb9dd6415f3729bfea2ce3a3" prot="public" virt="non-virtual"><scope>DataLoggerService::Metadata</scope><name>range</name></member>
+      <member refid="structDataLoggerService_1_1Metadata_1a824ce9f37293e435d41af31788145571" prot="public" virt="non-virtual"><scope>DataLoggerService::Metadata</scope><name>scale</name></member>
+      <member refid="structDataLoggerService_1_1Metadata_1a996d2701f1571bbbe51da18d2be3e2b8" prot="public" virt="non-virtual"><scope>DataLoggerService::Metadata</scope><name>status</name></member>
+      <member refid="structDataLoggerService_1_1Metadata_1a67edabb3d6dbd9c9d425bd825f72d23b" prot="public" virt="non-virtual"><scope>DataLoggerService::Metadata</scope><name>timestamp</name></member>
+      <member refid="structDataLoggerService_1_1Metadata_1a9cc636b875d630cf33d3ddead54e27d2" prot="public" virt="non-virtual"><scope>DataLoggerService::Metadata</scope><name>updateInterval</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

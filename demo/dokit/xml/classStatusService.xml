@@ -1,0 +1,1385 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.0" xml:lang="en-US">
+  <compounddef id="classStatusService" kind="class" language="C++" prot="public">
+    <compoundname>StatusService</compoundname>
+    <basecompoundref refid="classAbstractPokitService" prot="public" virt="non-virtual">AbstractPokitService</basecompoundref>
+    <innerclass refid="structStatusService_1_1CharacteristicUuids" prot="public">StatusService::CharacteristicUuids</innerclass>
+    <innerclass refid="structStatusService_1_1DeviceCharacteristics" prot="public">StatusService::DeviceCharacteristics</innerclass>
+    <innerclass refid="structStatusService_1_1ServiceUuids" prot="public">StatusService::ServiceUuids</innerclass>
+    <innerclass refid="structStatusService_1_1Status" prot="public">StatusService::Status</innerclass>
+    <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classStatusService_1a50ae778be2cb8e49b85ef159be19af35" prot="public" static="no" strong="yes">
+        <type>quint8</type>
+        <name>DeviceStatus</name>
+        <qualifiedname>StatusService::DeviceStatus</qualifiedname>
+        <enumvalue id="classStatusService_1a50ae778be2cb8e49b85ef159be19af35ae599161956d626eda4cb0a5ffb85271c" prot="public">
+          <name>Idle</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>Device is idle. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classStatusService_1a50ae778be2cb8e49b85ef159be19af35a460d1e2dcc6882dc5e0557f9ac227442" prot="public">
+          <name>MultimeterDcVoltage</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+<para>Multimeter is measuring DC voltage. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classStatusService_1a50ae778be2cb8e49b85ef159be19af35ac5436b6539f4a0672077f7bc82afe76e" prot="public">
+          <name>MultimeterAcVoltage</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+<para>Multimeter is measuring AC voltage. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classStatusService_1a50ae778be2cb8e49b85ef159be19af35a822a755216a42f263e6b20e8edbd536b" prot="public">
+          <name>MultimeterDcCurrent</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+<para>Multimeter is measuring DC current. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classStatusService_1a50ae778be2cb8e49b85ef159be19af35a2531beafde4cd45ccd7c3cbaa3777681" prot="public">
+          <name>MultimeterAcCurrent</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+<para>Multimeter is measuring AC current. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classStatusService_1a50ae778be2cb8e49b85ef159be19af35aa44739725ce1db60f3612f375b280ac4" prot="public">
+          <name>MultimeterResistance</name>
+          <initializer>= 5</initializer>
+          <briefdescription>
+<para>Multimeter is measuring resistance. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classStatusService_1a50ae778be2cb8e49b85ef159be19af35ab1d9e2e752fecd6a87793d19b0315582" prot="public">
+          <name>MultimeterDiode</name>
+          <initializer>= 6</initializer>
+          <briefdescription>
+<para>Multimeter is measuring diode. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classStatusService_1a50ae778be2cb8e49b85ef159be19af35a08e57a78bddbe890c39f6ea84d9ff697" prot="public">
+          <name>MultimeterContinuity</name>
+          <initializer>= 7</initializer>
+          <briefdescription>
+<para>Multimeter is measuring continuity. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classStatusService_1a50ae778be2cb8e49b85ef159be19af35a8c9853c1b8ace5cb84259e2b72ee1ec5" prot="public">
+          <name>MultimeterTemperature</name>
+          <initializer>= 8</initializer>
+          <briefdescription>
+<para>Multimeter is measuring temperature. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classStatusService_1a50ae778be2cb8e49b85ef159be19af35a8098421ff80cec88fe80fd1bd056ee38" prot="public">
+          <name>DsoModeSampling</name>
+          <initializer>= 9</initializer>
+          <briefdescription>
+<para>DSO is sampling. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classStatusService_1a50ae778be2cb8e49b85ef159be19af35a33c0c04ddb28630380d6e89cc3ef2cca" prot="public">
+          <name>LoggerModeSampling</name>
+          <initializer>= 10</initializer>
+          <briefdescription>
+<para>Data Logger is sampling. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Values supported by the <computeroutput><ref refid="structStatusService_1_1Status" kindref="compound">Status</ref></computeroutput> attribute of the <computeroutput><ref refid="structStatusService_1_1Status" kindref="compound">Status</ref></computeroutput> characteristic. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/statusservice.h" line="74" column="5" bodyfile="/home/paul/src/dokit/include/qtpokit/statusservice.h" bodystart="74" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="enum" id="classStatusService_1a26ca2c6e0c1127261cc28a778512bf68" prot="public" static="no" strong="yes">
+        <type>quint8</type>
+        <name>BatteryStatus</name>
+        <qualifiedname>StatusService::BatteryStatus</qualifiedname>
+        <enumvalue id="classStatusService_1a26ca2c6e0c1127261cc28a778512bf68a28d0edd045e05cf5af64e35ae0c4c6ef" prot="public">
+          <name>Low</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>Low (replace battery). </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classStatusService_1a26ca2c6e0c1127261cc28a778512bf68a0c6ad70beb3a7e76c3fc7adab7c46acc" prot="public">
+          <name>Good</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+<para>Good. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Values supported by the <computeroutput>Battery <ref refid="structStatusService_1_1Status" kindref="compound">Status</ref></computeroutput> attribute of the <computeroutput><ref refid="structStatusService_1_1Status" kindref="compound">Status</ref></computeroutput> characteristic. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/statusservice.h" line="90" column="5" bodyfile="/home/paul/src/dokit/include/qtpokit/statusservice.h" bodystart="90" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="enum" id="classStatusService_1a6bb2f85b6df9942ee108c341f4162e1f" prot="public" static="no" strong="yes">
+        <type>quint8</type>
+        <name>SwitchPosition</name>
+        <qualifiedname>StatusService::SwitchPosition</qualifiedname>
+        <enumvalue id="classStatusService_1a6bb2f85b6df9942ee108c341f4162e1fa4a92fbe41f6463598c39850b8335096c" prot="public">
+          <name>Voltage</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>Device is switched to Voltage position. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classStatusService_1a6bb2f85b6df9942ee108c341f4162e1fa6295e8a4ca812df79186b50cc61f1f11" prot="public">
+          <name>MultiMode</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+<para>Device is switched to Resistance / Low Current / Capacitance / Diode position. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classStatusService_1a6bb2f85b6df9942ee108c341f4162e1fa2470ea40cf88a5215231698770d9c489" prot="public">
+          <name>HighCurrent</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+<para>Device is switched to High Current position. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Values supported by the (undocumented) <computeroutput>Switch Position</computeroutput> attribute of the <computeroutput><ref refid="structStatusService_1_1Status" kindref="compound">Status</ref></computeroutput> characteristic. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="pokit_1_pokit000010"><xreftitle>Pokit Bluetooth API errata</xreftitle><xrefdescription><para>These enum values are undocumented, but easily testable with a physical Pokit Pro device. Internally, Pokit&apos;s Android app calls these: <computeroutput>SWITCH_MODE_VOLTAGE</computeroutput>, <computeroutput>SWITCH_MODE_ALL</computeroutput> and <computeroutput>SWITCH_MODE_CURRENT</computeroutput>.</para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/statusservice.h" line="97" column="5" bodyfile="/home/paul/src/dokit/include/qtpokit/statusservice.h" bodystart="97" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="enum" id="classStatusService_1af7f9dcc8c9cfa0a1cd9491b829234dc1" prot="public" static="no" strong="yes">
+        <type>quint8</type>
+        <name>ChargingStatus</name>
+        <qualifiedname>StatusService::ChargingStatus</qualifiedname>
+        <enumvalue id="classStatusService_1af7f9dcc8c9cfa0a1cd9491b829234dc1a656b8990f73ffbc5dbd823738f3126c9" prot="public">
+          <name>Discharging</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>Battery is dischargin. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classStatusService_1af7f9dcc8c9cfa0a1cd9491b829234dc1ad7b54fc61b65b19c4694a29b6044aacd" prot="public">
+          <name>Charging</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+<para>Battery is being charged. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classStatusService_1af7f9dcc8c9cfa0a1cd9491b829234dc1ab1c2b9d67c3196aa206d0443269ed775" prot="public">
+          <name>Charged</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+<para>Battery is fully charged. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Values supported by the (undocumented) <computeroutput>Charging Statue</computeroutput> attribute of the <computeroutput><ref refid="structStatusService_1_1Status" kindref="compound">Status</ref></computeroutput> characteristic. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/statusservice.h" line="105" column="5" bodyfile="/home/paul/src/dokit/include/qtpokit/statusservice.h" bodystart="105" bodyend="109"/>
+      </memberdef>
+      <memberdef kind="enum" id="classStatusService_1ab219dd54284c7299cce14b36ee59e08b" prot="public" static="no" strong="yes">
+        <type>quint8</type>
+        <name>TorchStatus</name>
+        <qualifiedname>StatusService::TorchStatus</qualifiedname>
+        <enumvalue id="classStatusService_1ab219dd54284c7299cce14b36ee59e08bad15305d7a4e34e02489c74a5ef542f36" prot="public">
+          <name>Off</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>Torch is off. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classStatusService_1ab219dd54284c7299cce14b36ee59e08ba521c36a31c2762741cf0f8890cbe05e3" prot="public">
+          <name>On</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+<para>Torch is on. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Values supported by the single byte of the attribute of the (undocumented) <computeroutput>Torch</computeroutput> characteristic. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/statusservice.h" line="122" column="5" bodyfile="/home/paul/src/dokit/include/qtpokit/statusservice.h" bodystart="122" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="enum" id="classStatusService_1a14dc19e0faab66a66e89abebe41082eb" prot="public" static="no" strong="yes">
+        <type>quint8</type>
+        <name>ButtonStatus</name>
+        <qualifiedname>StatusService::ButtonStatus</qualifiedname>
+        <enumvalue id="classStatusService_1a14dc19e0faab66a66e89abebe41082ebaea1e34304a5d8ffa7c9b0ed8ede4ef1a" prot="public">
+          <name>Released</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>Button was released. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classStatusService_1a14dc19e0faab66a66e89abebe41082ebad78a68f6a85421ae121c2cb5b73a1040" prot="public">
+          <name>Pressed</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+<para>Button was pressed. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classStatusService_1a14dc19e0faab66a66e89abebe41082ebaeffe06cc3bbfdd18fa0d95a403cd2d3f" prot="public">
+          <name>Held</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+<para>Button was held down (for typically 1,500ms). </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Values supported by the second byte of the attribute of the (undocumented) <computeroutput>Button Press</computeroutput> characteristic. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/statusservice.h" line="129" column="5" bodyfile="/home/paul/src/dokit/include/qtpokit/statusservice.h" bodystart="129" bodyend="133"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="classStatusService_1a034c6366301706ba6e0ef931798cea4d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class TestStatusService</definition>
+        <argsstring></argsstring>
+        <name>TestStatusService</name>
+        <qualifiedname>StatusService::TestStatusService</qualifiedname>
+        <param>
+          <type>TestStatusService</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/statusservice.h" line="190" column="18" bodyfile="/home/paul/src/dokit/include/qtpokit/statusservice.h" bodystart="190" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classStatusService_1aac79e97cb114be25b2a6771d915f132d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref></type>
+        <definition>QString StatusService::toString</definition>
+        <argsstring>(const StatusService::DeviceStatus &amp;status)</argsstring>
+        <name>toString</name>
+        <qualifiedname>StatusService::toString</qualifiedname>
+        <param>
+          <type>const <ref refid="classStatusService_1a50ae778be2cb8e49b85ef159be19af35" kindref="member">StatusService::DeviceStatus</ref> &amp;</type>
+          <declname>status</declname>
+        </param>
+        <briefdescription>
+<para>Returns a string version of the <emphasis>status</emphasis> enum label. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/statusservice.h" line="87" column="20" bodyfile="/home/paul/src/dokit/src/lib/statusservice.cpp" bodystart="32" bodyend="48"/>
+        <references refid="classStatusService_1a50ae778be2cb8e49b85ef159be19af35a8098421ff80cec88fe80fd1bd056ee38">DsoModeSampling</references>
+        <references refid="classStatusService_1a50ae778be2cb8e49b85ef159be19af35ae599161956d626eda4cb0a5ffb85271c">Idle</references>
+        <references refid="classStatusService_1a50ae778be2cb8e49b85ef159be19af35a33c0c04ddb28630380d6e89cc3ef2cca">LoggerModeSampling</references>
+        <references refid="classStatusService_1a50ae778be2cb8e49b85ef159be19af35a2531beafde4cd45ccd7c3cbaa3777681">MultimeterAcCurrent</references>
+        <references refid="classStatusService_1a50ae778be2cb8e49b85ef159be19af35ac5436b6539f4a0672077f7bc82afe76e">MultimeterAcVoltage</references>
+        <references refid="classStatusService_1a50ae778be2cb8e49b85ef159be19af35a08e57a78bddbe890c39f6ea84d9ff697">MultimeterContinuity</references>
+        <references refid="classStatusService_1a50ae778be2cb8e49b85ef159be19af35a822a755216a42f263e6b20e8edbd536b">MultimeterDcCurrent</references>
+        <references refid="classStatusService_1a50ae778be2cb8e49b85ef159be19af35a460d1e2dcc6882dc5e0557f9ac227442">MultimeterDcVoltage</references>
+        <references refid="classStatusService_1a50ae778be2cb8e49b85ef159be19af35ab1d9e2e752fecd6a87793d19b0315582">MultimeterDiode</references>
+        <references refid="classStatusService_1a50ae778be2cb8e49b85ef159be19af35aa44739725ce1db60f3612f375b280ac4">MultimeterResistance</references>
+        <references refid="classStatusService_1a50ae778be2cb8e49b85ef159be19af35a8c9853c1b8ace5cb84259e2b72ee1ec5">MultimeterTemperature</references>
+        <references refid="classStatusService_1ae7be4aae021ae50faef48ed2812eb6a7" compoundref="statusservice_8cpp" startline="280" endline="288">status</references>
+        <referencedby refid="classStatusServicePrivate_1a08d8faee04fb47ac19d3962609606d52" compoundref="statusservice_8cpp" startline="735" endline="786">StatusServicePrivate::characteristicRead</referencedby>
+        <referencedby refid="classStatusCommand_1ae2349e3d64b1b4db9b80465c0b7dadb7" compoundref="statuscommand_8cpp" startline="89" endline="195">StatusCommand::outputDeviceStatus</referencedby>
+        <referencedby refid="classStatusServicePrivate_1a90d78c3261bea8f23ddf9804ada203c1" compoundref="statusservice_8cpp" startline="693" endline="711">StatusServicePrivate::parseButtonPress</referencedby>
+        <referencedby refid="classStatusServicePrivate_1a3a6ff8ca3e9d7c884b269e52dd43aeb0" compoundref="statusservice_8cpp" startline="626" endline="674">StatusServicePrivate::parseStatus</referencedby>
+        <referencedby refid="classStatusServicePrivate_1abe408253ab1c7f08e09d7613691befba" compoundref="statusservice_8cpp" startline="679" endline="688">StatusServicePrivate::parseTorchStatus</referencedby>
+        <referencedby refid="classSetTorchCommand_1ae76dcd51a542ff55cf057079c215450e" compoundref="settorchcommand_8cpp" startline="82" endline="88">SetTorchCommand::serviceDetailsDiscovered</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classStatusService_1aab6278d4fe2bedc916fc3d96641eaa30" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref></type>
+        <definition>QString StatusService::toString</definition>
+        <argsstring>(const StatusService::BatteryStatus &amp;status)</argsstring>
+        <name>toString</name>
+        <qualifiedname>StatusService::toString</qualifiedname>
+        <param>
+          <type>const <ref refid="classStatusService_1a26ca2c6e0c1127261cc28a778512bf68" kindref="member">StatusService::BatteryStatus</ref> &amp;</type>
+          <declname>status</declname>
+        </param>
+        <briefdescription>
+<para>Returns a string version of the <emphasis>status</emphasis> enum label. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/statusservice.h" line="94" column="20" bodyfile="/home/paul/src/dokit/src/lib/statusservice.cpp" bodystart="53" bodyend="60"/>
+        <references refid="classStatusService_1a26ca2c6e0c1127261cc28a778512bf68a0c6ad70beb3a7e76c3fc7adab7c46acc">Good</references>
+        <references refid="classStatusService_1a26ca2c6e0c1127261cc28a778512bf68a28d0edd045e05cf5af64e35ae0c4c6ef">Low</references>
+        <references refid="classStatusService_1ae7be4aae021ae50faef48ed2812eb6a7" compoundref="statusservice_8cpp" startline="280" endline="288">status</references>
+      </memberdef>
+      <memberdef kind="function" id="classStatusService_1a619989ef8ed6bb9e91c1326d911e23c9" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref></type>
+        <definition>QString StatusService::toString</definition>
+        <argsstring>(const StatusService::SwitchPosition &amp;position)</argsstring>
+        <name>toString</name>
+        <qualifiedname>StatusService::toString</qualifiedname>
+        <param>
+          <type>const <ref refid="classStatusService_1a6bb2f85b6df9942ee108c341f4162e1f" kindref="member">StatusService::SwitchPosition</ref> &amp;</type>
+          <declname>position</declname>
+        </param>
+        <briefdescription>
+<para>Returns a string version of the <emphasis>position</emphasis> enum label. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/statusservice.h" line="102" column="20" bodyfile="/home/paul/src/dokit/src/lib/statusservice.cpp" bodystart="73" bodyend="81"/>
+        <references refid="classStatusService_1a6bb2f85b6df9942ee108c341f4162e1fa2470ea40cf88a5215231698770d9c489">HighCurrent</references>
+        <references refid="classStatusService_1a6bb2f85b6df9942ee108c341f4162e1fa6295e8a4ca812df79186b50cc61f1f11">MultiMode</references>
+        <references refid="classStatusService_1a6bb2f85b6df9942ee108c341f4162e1fa4a92fbe41f6463598c39850b8335096c">Voltage</references>
+      </memberdef>
+      <memberdef kind="function" id="classStatusService_1a5e5d307e56870f2a65e9ccf79429bff7" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref></type>
+        <definition>QString StatusService::toString</definition>
+        <argsstring>(const StatusService::ChargingStatus &amp;status)</argsstring>
+        <name>toString</name>
+        <qualifiedname>StatusService::toString</qualifiedname>
+        <param>
+          <type>const <ref refid="classStatusService_1af7f9dcc8c9cfa0a1cd9491b829234dc1" kindref="member">StatusService::ChargingStatus</ref> &amp;</type>
+          <declname>status</declname>
+        </param>
+        <briefdescription>
+<para>Returns a string version of the <emphasis>status</emphasis> enum label. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/statusservice.h" line="110" column="20" bodyfile="/home/paul/src/dokit/src/lib/statusservice.cpp" bodystart="86" bodyend="94"/>
+        <references refid="classStatusService_1af7f9dcc8c9cfa0a1cd9491b829234dc1ab1c2b9d67c3196aa206d0443269ed775">Charged</references>
+        <references refid="classStatusService_1af7f9dcc8c9cfa0a1cd9491b829234dc1ad7b54fc61b65b19c4694a29b6044aacd">Charging</references>
+        <references refid="classStatusService_1af7f9dcc8c9cfa0a1cd9491b829234dc1a656b8990f73ffbc5dbd823738f3126c9">Discharging</references>
+        <references refid="classStatusService_1ae7be4aae021ae50faef48ed2812eb6a7" compoundref="statusservice_8cpp" startline="280" endline="288">status</references>
+      </memberdef>
+      <memberdef kind="function" id="classStatusService_1a490e0f1d95063c7e0aabaed33f3f8b22" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref></type>
+        <definition>QString StatusService::toString</definition>
+        <argsstring>(const StatusService::TorchStatus &amp;status)</argsstring>
+        <name>toString</name>
+        <qualifiedname>StatusService::toString</qualifiedname>
+        <param>
+          <type>const <ref refid="classStatusService_1ab219dd54284c7299cce14b36ee59e08b" kindref="member">StatusService::TorchStatus</ref> &amp;</type>
+          <declname>status</declname>
+        </param>
+        <briefdescription>
+<para>Returns a string version of the <emphasis>status</emphasis> enum label. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/statusservice.h" line="126" column="20" bodyfile="/home/paul/src/dokit/src/lib/statusservice.cpp" bodystart="99" bodyend="106"/>
+        <references refid="classStatusService_1ab219dd54284c7299cce14b36ee59e08bad15305d7a4e34e02489c74a5ef542f36">Off</references>
+        <references refid="classStatusService_1ab219dd54284c7299cce14b36ee59e08ba521c36a31c2762741cf0f8890cbe05e3">On</references>
+        <references refid="classStatusService_1ae7be4aae021ae50faef48ed2812eb6a7" compoundref="statusservice_8cpp" startline="280" endline="288">status</references>
+      </memberdef>
+      <memberdef kind="function" id="classStatusService_1a681701df043e0490ed38d127a86f9afb" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref></type>
+        <definition>QString StatusService::toString</definition>
+        <argsstring>(const StatusService::ButtonStatus &amp;status)</argsstring>
+        <name>toString</name>
+        <qualifiedname>StatusService::toString</qualifiedname>
+        <param>
+          <type>const <ref refid="classStatusService_1a14dc19e0faab66a66e89abebe41082eb" kindref="member">StatusService::ButtonStatus</ref> &amp;</type>
+          <declname>status</declname>
+        </param>
+        <briefdescription>
+<para>Returns a string version of the <emphasis>status</emphasis> enum label. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/statusservice.h" line="134" column="20" bodyfile="/home/paul/src/dokit/src/lib/statusservice.cpp" bodystart="111" bodyend="119"/>
+        <references refid="classStatusService_1a14dc19e0faab66a66e89abebe41082ebaeffe06cc3bbfdd18fa0d95a403cd2d3f">Held</references>
+        <references refid="classStatusService_1a14dc19e0faab66a66e89abebe41082ebad78a68f6a85421ae121c2cb5b73a1040">Pressed</references>
+        <references refid="classStatusService_1a14dc19e0faab66a66e89abebe41082ebaea1e34304a5d8ffa7c9b0ed8ede4ef1a">Released</references>
+        <references refid="classStatusService_1ae7be4aae021ae50faef48ed2812eb6a7" compoundref="statusservice_8cpp" startline="280" endline="288">status</references>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classStatusService_1a095254046689e5115ba053c029a2e1b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>StatusService::StatusService</definition>
+        <argsstring>(QLowEnergyController *const pokitDevice, QObject *parent=nullptr)</argsstring>
+        <name>StatusService</name>
+        <qualifiedname>StatusService::StatusService</qualifiedname>
+        <param>
+          <type><ref refid="qlowenergycontroller" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QLowEnergyController</ref> *const</type>
+          <declname>pokitDevice</declname>
+        </param>
+        <param>
+          <type><ref refid="qobject" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QObject</ref> *</type>
+          <declname>parent</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+<para>Constructs a new Pokit service with <emphasis>parent</emphasis>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/statusservice.h" line="136" column="5" bodyfile="/home/paul/src/dokit/src/lib/statusservice.cpp" bodystart="124" bodyend="128"/>
+      </memberdef>
+      <memberdef kind="function" id="classStatusService_1a6140c2723538587220452d6d4a51f001" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>StatusService::~StatusService</definition>
+        <argsstring>() override</argsstring>
+        <name>~StatusService</name>
+        <qualifiedname>StatusService::~StatusService</qualifiedname>
+        <briefdescription>
+<para>Destroys this <ref refid="classStatusService" kindref="compound">StatusService</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/statusservice.h" line="137" column="5" bodyfile="/home/paul/src/dokit/src/lib/statusservice.cpp" bodystart="145" bodyend="148"/>
+      </memberdef>
+      <memberdef kind="function" id="classStatusService_1ad73514f6f324ca56dffb844b14eb3bc0" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool StatusService::readCharacteristics</definition>
+        <argsstring>() override</argsstring>
+        <name>readCharacteristics</name>
+        <qualifiedname>StatusService::readCharacteristics</qualifiedname>
+        <reimplements refid="classAbstractPokitService_1ab1de532f20d46803d6e8b8ffea835b48">readCharacteristics</reimplements>
+        <briefdescription>
+<para>Read all characteristics. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This convenience function will queue refresh requests of all characteristics supported by this service.</para>
+<para>Relevant <computeroutput>*Service::*Read</computeroutput> signals will be emitted by derived class objects as each characteristic is successfully read. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/statusservice.h" line="139" column="10" bodyfile="/home/paul/src/dokit/src/lib/statusservice.cpp" bodystart="150" bodyend="160"/>
+        <references refid="structStatusService_1_1CharacteristicUuids_1ae2abf1183b8b6f2cd2e0cb5206a3975f" compoundref="statusservice_8h" startline="56" endline="56">StatusService::CharacteristicUuids::buttonPress</references>
+        <references refid="qlowenergyservice_1characteristic">QLowEnergyService::characteristic</references>
+        <references refid="qlowenergycharacteristic_1isValid">QLowEnergyCharacteristic::isValid</references>
+        <references refid="classStatusService_1a29d3830c398e06a59b815c6f5d475fec" compoundref="statusservice_8cpp" startline="231" endline="235">readButtonPressCharacteristic</references>
+        <references refid="classStatusService_1adca5ca235e99c7878f8fde507bf487cc" compoundref="statusservice_8cpp" startline="171" endline="175">readDeviceCharacteristics</references>
+        <references refid="classStatusService_1a1540af10953c1b4b7d08620ade8c27ea" compoundref="statusservice_8cpp" startline="201" endline="205">readNameCharacteristic</references>
+        <references refid="classStatusService_1a0410049da4a7ac6a64027c733797c578" compoundref="statusservice_8cpp" startline="186" endline="190">readStatusCharacteristic</references>
+        <references refid="classStatusService_1afeb96c51e64da0265ab7d026233541d4" compoundref="statusservice_8cpp" startline="216" endline="220">readTorchCharacteristic</references>
+        <references refid="classAbstractPokitService_1a7a4ff74f51ba6ea6c01cbeb9eda15b9b" compoundref="abstractpokitservice_8cpp" startline="119" endline="123">AbstractPokitService::service</references>
+        <references refid="structStatusService_1_1CharacteristicUuids_1a8e558d76deeac993d962763fec80aa3d" compoundref="statusservice_8h" startline="53" endline="53">StatusService::CharacteristicUuids::torch</references>
+      </memberdef>
+      <memberdef kind="function" id="classStatusService_1adca5ca235e99c7878f8fde507bf487cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool StatusService::readDeviceCharacteristics</definition>
+        <argsstring>()</argsstring>
+        <name>readDeviceCharacteristics</name>
+        <qualifiedname>StatusService::readDeviceCharacteristics</qualifiedname>
+        <briefdescription>
+<para>Read the <computeroutput><ref refid="structStatusService_1_1Status" kindref="compound">Status</ref></computeroutput> service&apos;s <computeroutput>Device Characteristics</computeroutput> characteristic. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns <computeroutput>true</computeroutput> is the read request is succesfully queued, <computeroutput>false</computeroutput> otherwise (ie if the underlying controller it not yet connected to the Pokit device, or the device&apos;s services have not yet been discovered).</para>
+<para>Emits <ref refid="classStatusService_1aa7078c4dfbf7a7cc843fac160c2d1f09" kindref="member">deviceCharacteristicsRead()</ref> if/when the characteristic has been read successfully. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/statusservice.h" line="140" column="10" bodyfile="/home/paul/src/dokit/src/lib/statusservice.cpp" bodystart="171" bodyend="175"/>
+        <references refid="structStatusService_1_1CharacteristicUuids_1ab883f16924c3c325a3400a5146d48ac0" compoundref="statusservice_8h" startline="41" endline="41">StatusService::CharacteristicUuids::deviceCharacteristics</references>
+        <referencedby refid="classStatusService_1ad73514f6f324ca56dffb844b14eb3bc0" compoundref="statusservice_8cpp" startline="150" endline="160">readCharacteristics</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classStatusService_1a0410049da4a7ac6a64027c733797c578" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool StatusService::readStatusCharacteristic</definition>
+        <argsstring>()</argsstring>
+        <name>readStatusCharacteristic</name>
+        <qualifiedname>StatusService::readStatusCharacteristic</qualifiedname>
+        <briefdescription>
+<para>Read the <computeroutput><ref refid="structStatusService_1_1Status" kindref="compound">Status</ref></computeroutput> service&apos;s <computeroutput><ref refid="structStatusService_1_1Status" kindref="compound">Status</ref></computeroutput> characteristic. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns <computeroutput>true</computeroutput> is the read request is succesfully queued, <computeroutput>false</computeroutput> otherwise (ie if the underlying controller it not yet connected to the Pokit device, or the device&apos;s services have not yet been discovered).</para>
+<para>Emits <ref refid="classStatusService_1a9f89222ee84c2f45c4c21a9c6a0c9d4b" kindref="member">deviceStatusRead()</ref> if/when the characteristic has been read successfully. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/statusservice.h" line="141" column="10" bodyfile="/home/paul/src/dokit/src/lib/statusservice.cpp" bodystart="186" bodyend="190"/>
+        <references refid="structStatusService_1_1CharacteristicUuids_1af27d015f60e86b0de464eab455c56f7c" compoundref="statusservice_8h" startline="44" endline="44">StatusService::CharacteristicUuids::status</references>
+        <referencedby refid="classStatusService_1ad73514f6f324ca56dffb844b14eb3bc0" compoundref="statusservice_8cpp" startline="150" endline="160">readCharacteristics</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classStatusService_1a1540af10953c1b4b7d08620ade8c27ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool StatusService::readNameCharacteristic</definition>
+        <argsstring>()</argsstring>
+        <name>readNameCharacteristic</name>
+        <qualifiedname>StatusService::readNameCharacteristic</qualifiedname>
+        <briefdescription>
+<para>Read the <computeroutput><ref refid="structStatusService_1_1Status" kindref="compound">Status</ref></computeroutput> service&apos;s <computeroutput>Name</computeroutput> characteristic. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns <computeroutput>true</computeroutput> is the read request is succesfully queued, <computeroutput>false</computeroutput> otherwise (ie if the underlying controller it not yet connected to the Pokit device, or the device&apos;s services have not yet been discovered).</para>
+<para>Emits <ref refid="classStatusService_1a7ac0f6b5cf9cfd4acee67df1479a24bf" kindref="member">deviceNameRead()</ref> if/when the characteristic has been read successfully. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/statusservice.h" line="142" column="10" bodyfile="/home/paul/src/dokit/src/lib/statusservice.cpp" bodystart="201" bodyend="205"/>
+        <references refid="structStatusService_1_1CharacteristicUuids_1a3ca6f44f245a642f2a5e9147255a7bd8" compoundref="statusservice_8h" startline="47" endline="47">StatusService::CharacteristicUuids::name</references>
+        <referencedby refid="classStatusService_1ad73514f6f324ca56dffb844b14eb3bc0" compoundref="statusservice_8cpp" startline="150" endline="160">readCharacteristics</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classStatusService_1afeb96c51e64da0265ab7d026233541d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool StatusService::readTorchCharacteristic</definition>
+        <argsstring>()</argsstring>
+        <name>readTorchCharacteristic</name>
+        <qualifiedname>StatusService::readTorchCharacteristic</qualifiedname>
+        <briefdescription>
+<para>Read the <computeroutput><ref refid="structStatusService_1_1Status" kindref="compound">Status</ref></computeroutput> service&apos;s (undocumented) <computeroutput>Torch</computeroutput> characteristic. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns <computeroutput>true</computeroutput> is the read request is succesfully queued, <computeroutput>false</computeroutput> otherwise (ie if the underlying controller it not yet connected to the Pokit device, or the device&apos;s services have not yet been discovered).</para>
+<para>Emits <ref refid="classStatusService_1a1658b06923abd2a4e7f15f2cc56686bb" kindref="member">torchStatusRead()</ref> if/when the characteristic has been read successfully. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/statusservice.h" line="143" column="10" bodyfile="/home/paul/src/dokit/src/lib/statusservice.cpp" bodystart="216" bodyend="220"/>
+        <references refid="structStatusService_1_1CharacteristicUuids_1a8e558d76deeac993d962763fec80aa3d" compoundref="statusservice_8h" startline="53" endline="53">StatusService::CharacteristicUuids::torch</references>
+        <referencedby refid="classStatusService_1ad73514f6f324ca56dffb844b14eb3bc0" compoundref="statusservice_8cpp" startline="150" endline="160">readCharacteristics</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classStatusService_1a29d3830c398e06a59b815c6f5d475fec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool StatusService::readButtonPressCharacteristic</definition>
+        <argsstring>()</argsstring>
+        <name>readButtonPressCharacteristic</name>
+        <qualifiedname>StatusService::readButtonPressCharacteristic</qualifiedname>
+        <briefdescription>
+<para>Read the <computeroutput><ref refid="structStatusService_1_1Status" kindref="compound">Status</ref></computeroutput> service&apos;s (undocumented) <computeroutput>Button Press</computeroutput> characteristic. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns <computeroutput>true</computeroutput> is the read request is succesfully queued, <computeroutput>false</computeroutput> otherwise (ie if the underlying controller it not yet connected to the Pokit device, or the device&apos;s services have not yet been discovered).</para>
+<para>Emits <ref refid="classStatusService_1a2084a26b33dd947723c40839d36b7b94" kindref="member">buttonPressRead()</ref> if/when the characteristic has been read successfully. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/statusservice.h" line="144" column="10" bodyfile="/home/paul/src/dokit/src/lib/statusservice.cpp" bodystart="231" bodyend="235"/>
+        <references refid="structStatusService_1_1CharacteristicUuids_1ae2abf1183b8b6f2cd2e0cb5206a3975f" compoundref="statusservice_8h" startline="56" endline="56">StatusService::CharacteristicUuids::buttonPress</references>
+        <referencedby refid="classStatusService_1ad73514f6f324ca56dffb844b14eb3bc0" compoundref="statusservice_8cpp" startline="150" endline="160">readCharacteristics</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classStatusService_1a008d41a33eedd90e68ccf7a94ed5b65f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structStatusService_1_1DeviceCharacteristics" kindref="compound">DeviceCharacteristics</ref></type>
+        <definition>StatusService::DeviceCharacteristics StatusService::deviceCharacteristics</definition>
+        <argsstring>() const</argsstring>
+        <name>deviceCharacteristics</name>
+        <qualifiedname>StatusService::deviceCharacteristics</qualifiedname>
+        <briefdescription>
+<para>Returns the most recent value of the <computeroutput><ref refid="structStatusService_1_1Status" kindref="compound">Status</ref></computeroutput> service&apos;s <computeroutput>Device Characteristics</computeroutput> characteristic. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The returned value, if any, is from the underlying Bluetooth stack&apos;s cache. If no such value is currently available (ie the serviceDetailsDiscovered signal has not been emitted yet), then a null result is returned, which can be checked via the returned <ref refid="structStatusService_1_1DeviceCharacteristics_1afdc814d092204ef6f0628253298ae319" kindref="member">DeviceCharacteristics::firmwareVersion</ref>, like:</para>
+<para><programlisting><codeline><highlight class="keyword">const</highlight><highlight class="normal"><sp/>DeviceCharacteristics<sp/>characteristics<sp/>=<sp/><ref refid="classAbstractPokitService_1a7a4ff74f51ba6ea6c01cbeb9eda15b9b" kindref="member">service</ref>-&gt;deviceCharacteristics();</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!characteristics.firmwareVersion.isNull())<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>...</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/statusservice.h" line="147" column="27" bodyfile="/home/paul/src/dokit/src/lib/statusservice.cpp" bodystart="252" bodyend="260"/>
+        <references refid="structStatusService_1_1CharacteristicUuids_1ab883f16924c3c325a3400a5146d48ac0" compoundref="statusservice_8h" startline="41" endline="41">StatusService::CharacteristicUuids::deviceCharacteristics</references>
+        <references refid="qlowenergycharacteristic_1isValid">QLowEnergyCharacteristic::isValid</references>
+        <references refid="classStatusServicePrivate_1a7bdbc14dbfe0a29bb0333c01890a6ced" compoundref="statusservice_8cpp" startline="584" endline="619">StatusServicePrivate::parseDeviceCharacteristics</references>
+        <references refid="qlowenergycharacteristic_1value">QLowEnergyCharacteristic::value</references>
+        <referencedby refid="classStatusCommand_1af275e3a02032915dd27e0c0e041ff6c1" compoundref="statuscommand_8cpp" startline="74" endline="84">StatusCommand::serviceDetailsDiscovered</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classStatusService_1ae7be4aae021ae50faef48ed2812eb6a7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structStatusService_1_1Status" kindref="compound">Status</ref></type>
+        <definition>StatusService::Status StatusService::status</definition>
+        <argsstring>() const</argsstring>
+        <name>status</name>
+        <qualifiedname>StatusService::status</qualifiedname>
+        <briefdescription>
+<para>Returns the most recent value of the <computeroutput><ref refid="structStatusService_1_1Status" kindref="compound">Status</ref></computeroutput> service&apos;s <computeroutput><ref refid="structStatusService_1_1Status" kindref="compound">Status</ref></computeroutput> characteristic. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The returned value, if any, is from the underlying Bluetooth stack&apos;s cache. If no such value is currently available (ie the serviceDetailsDiscovered signal has not been emitted yet), then the returned StatusService::Status::batteryLevel member will be a quiet NaN, which can be checked like:</para>
+<para><programlisting><codeline><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structStatusService_1_1Status" kindref="compound">StatusService::Status</ref><sp/><ref refid="classStatusService_1ae7be4aae021ae50faef48ed2812eb6a7" kindref="member">status</ref><sp/>=<sp/>statusService-&gt;status();</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(qIsNaN(<ref refid="classStatusService_1ae7be4aae021ae50faef48ed2812eb6a7" kindref="member">status</ref>.<ref refid="structStatusService_1_1Status_1a34d5f71da1e356a5f8da381f4b715b46" kindref="member">batteryVoltage</ref>))<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Handle<sp/>failure.</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting></para>
+<para>Not all Pokit devices support the <ref refid="structStatusService_1_1Status_1af2a1fab33ca1e643988bc9976a44940d" kindref="member">Status::batteryStatus</ref> member, in which case the member will be initilialised to the maximum value supported by the underlying type (ie <computeroutput>255</computeroutput>) to indicate &quot;not set&quot; </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/statusservice.h" line="150" column="12" bodyfile="/home/paul/src/dokit/src/lib/statusservice.cpp" bodystart="280" bodyend="288"/>
+        <references refid="classStatusService_1a50ae778be2cb8e49b85ef159be19af35ae599161956d626eda4cb0a5ffb85271c">Idle</references>
+        <references refid="qlowenergycharacteristic_1isValid">QLowEnergyCharacteristic::isValid</references>
+        <references refid="classStatusService_1a26ca2c6e0c1127261cc28a778512bf68a28d0edd045e05cf5af64e35ae0c4c6ef">Low</references>
+        <references refid="classStatusServicePrivate_1a3a6ff8ca3e9d7c884b269e52dd43aeb0" compoundref="statusservice_8cpp" startline="626" endline="674">StatusServicePrivate::parseStatus</references>
+        <references refid="structStatusService_1_1CharacteristicUuids_1af27d015f60e86b0de464eab455c56f7c" compoundref="statusservice_8h" startline="44" endline="44">StatusService::CharacteristicUuids::status</references>
+        <references refid="qlowenergycharacteristic_1value">QLowEnergyCharacteristic::value</references>
+        <referencedby refid="classStatusCommand_1ae2349e3d64b1b4db9b80465c0b7dadb7" compoundref="statuscommand_8cpp" startline="89" endline="195">StatusCommand::outputDeviceStatus</referencedby>
+        <referencedby refid="classStatusService_1a3bc469455e6e704e0643fbc9ad236c70" compoundref="statusservice_8cpp" startline="416" endline="427">setTorchStatus</referencedby>
+        <referencedby refid="classStatusService_1aab6278d4fe2bedc916fc3d96641eaa30" compoundref="statusservice_8cpp" startline="53" endline="60">toString</referencedby>
+        <referencedby refid="classStatusService_1a681701df043e0490ed38d127a86f9afb" compoundref="statusservice_8cpp" startline="111" endline="119">toString</referencedby>
+        <referencedby refid="classStatusService_1a5e5d307e56870f2a65e9ccf79429bff7" compoundref="statusservice_8cpp" startline="86" endline="94">toString</referencedby>
+        <referencedby refid="classStatusService_1aac79e97cb114be25b2a6771d915f132d" compoundref="statusservice_8cpp" startline="32" endline="48">toString</referencedby>
+        <referencedby refid="classStatusService_1a490e0f1d95063c7e0aabaed33f3f8b22" compoundref="statusservice_8cpp" startline="99" endline="106">toString</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classStatusService_1a5d86bed23202402cade7fa8bb09f9c48" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool StatusService::enableStatusNotifications</definition>
+        <argsstring>()</argsstring>
+        <name>enableStatusNotifications</name>
+        <qualifiedname>StatusService::enableStatusNotifications</qualifiedname>
+        <briefdescription>
+<para>Enables client-side notifications of device status changes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is an alternative to manually requesting individual reads via <ref refid="classStatusService_1a0410049da4a7ac6a64027c733797c578" kindref="member">readStatusCharacteristic()</ref>.</para>
+<para>Returns <computeroutput>true</computeroutput> is the request was successfully submited to the device queue, <computeroutput>false</computeroutput> otherwise.</para>
+<para>Successfully read values (if any) will be emitted via the <ref refid="classStatusService_1a9f89222ee84c2f45c4c21a9c6a0c9d4b" kindref="member">deviceStatusRead()</ref> signal. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/statusservice.h" line="151" column="10" bodyfile="/home/paul/src/dokit/src/lib/statusservice.cpp" bodystart="299" bodyend="303"/>
+        <references refid="structStatusService_1_1CharacteristicUuids_1af27d015f60e86b0de464eab455c56f7c" compoundref="statusservice_8h" startline="44" endline="44">StatusService::CharacteristicUuids::status</references>
+      </memberdef>
+      <memberdef kind="function" id="classStatusService_1a1beab67430fc8bc26e9faf3799d537f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool StatusService::disableStatusNotifications</definition>
+        <argsstring>()</argsstring>
+        <name>disableStatusNotifications</name>
+        <qualifiedname>StatusService::disableStatusNotifications</qualifiedname>
+        <briefdescription>
+<para>Disables client-side notifications of device status changes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Instantaneous status can still be fetched by <ref refid="classStatusService_1a0410049da4a7ac6a64027c733797c578" kindref="member">readStatusCharacteristic()</ref>.</para>
+<para>Returns <computeroutput>true</computeroutput> is the request was successfully submited to the device queue, <computeroutput>false</computeroutput> otherwise. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/statusservice.h" line="152" column="10" bodyfile="/home/paul/src/dokit/src/lib/statusservice.cpp" bodystart="312" bodyend="316"/>
+        <references refid="structStatusService_1_1CharacteristicUuids_1af27d015f60e86b0de464eab455c56f7c" compoundref="statusservice_8h" startline="44" endline="44">StatusService::CharacteristicUuids::status</references>
+      </memberdef>
+      <memberdef kind="function" id="classStatusService_1a113a7051f70e642d2c1f67124c1f12c7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref></type>
+        <definition>QString StatusService::deviceName</definition>
+        <argsstring>() const</argsstring>
+        <name>deviceName</name>
+        <qualifiedname>StatusService::deviceName</qualifiedname>
+        <briefdescription>
+<para>Returns the most recent value of the <computeroutput><ref refid="structStatusService_1_1Status" kindref="compound">Status</ref></computeroutput> services&apos;s <computeroutput>Device Name</computeroutput> characteristic. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The returned value, if any, is from the underlying Bluetooth stack&apos;s cache. If no such value is currently available (ie the serviceDetailsDiscovered signal has not been emitted yet), then a null <ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref> is returned. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/statusservice.h" line="155" column="13" bodyfile="/home/paul/src/dokit/src/lib/statusservice.cpp" bodystart="325" bodyend="331"/>
+        <references refid="qstring_1fromUtf8-1">QString::fromUtf8</references>
+        <references refid="qlowenergycharacteristic_1isValid">QLowEnergyCharacteristic::isValid</references>
+        <references refid="structStatusService_1_1CharacteristicUuids_1a3ca6f44f245a642f2a5e9147255a7bd8" compoundref="statusservice_8h" startline="47" endline="47">StatusService::CharacteristicUuids::name</references>
+        <references refid="qlowenergycharacteristic_1value">QLowEnergyCharacteristic::value</references>
+        <referencedby refid="classStatusCommand_1ae2349e3d64b1b4db9b80465c0b7dadb7" compoundref="statuscommand_8cpp" startline="89" endline="195">StatusCommand::outputDeviceStatus</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classStatusService_1ada280bc54493f85e6855a2534bf2a02d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool StatusService::setDeviceName</definition>
+        <argsstring>(const QString &amp;name)</argsstring>
+        <name>setDeviceName</name>
+        <qualifiedname>StatusService::setDeviceName</qualifiedname>
+        <param>
+          <type>const <ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Set&apos;s the Pokit device&apos;s name to <emphasis>name</emphasis>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns <computeroutput>true</computeroutput> if the write request was successfully queued, <computeroutput>false</computeroutput> otherwise.</para>
+<para>Emits <ref refid="classStatusService_1ab5d4871d4fae7045dff91f12f8f67d9a" kindref="member">deviceNameWritten()</ref> if/when the <emphasis>name</emphasis> has been set. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/statusservice.h" line="156" column="10" bodyfile="/home/paul/src/dokit/src/lib/statusservice.cpp" bodystart="340" bodyend="358"/>
+        <references refid="qstring_1arg-14">QString::arg</references>
+        <references refid="qlowenergycharacteristic_1isValid">QLowEnergyCharacteristic::isValid</references>
+        <references refid="qbytearray_1length">QByteArray::length</references>
+        <references refid="structStatusService_1_1CharacteristicUuids_1a3ca6f44f245a642f2a5e9147255a7bd8" compoundref="statusservice_8h" startline="47" endline="47">StatusService::CharacteristicUuids::name</references>
+        <references refid="qbytearray_1toHex">QByteArray::toHex</references>
+        <references refid="qstring_1toUtf8">QString::toUtf8</references>
+        <references refid="qobject_1tr">QObject::tr</references>
+        <referencedby refid="classSetNameCommand_1a3d6d88c52edc3fed5d2326c6d0859b82" compoundref="setnamecommand_8cpp" startline="81" endline="87">SetNameCommand::serviceDetailsDiscovered</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classStatusService_1a425bf65d42b24c4a621b312fcd152708" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool StatusService::flashLed</definition>
+        <argsstring>()</argsstring>
+        <name>flashLed</name>
+        <qualifiedname>StatusService::flashLed</qualifiedname>
+        <briefdescription>
+<para>Flash the Pokit device&apos;s LED. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns <computeroutput>true</computeroutput> if the flash request was successfully queued, <computeroutput>false</computeroutput> otherwise.</para>
+<para>Emits <ref refid="classStatusService_1a2fe685dfd1829b7a51db80b324dea77e" kindref="member">deviceLedFlashed()</ref> if/when the LED has flashed successfully.</para>
+<para><simplesect kind="note"><para>This operation is only supported by Pokit Meter devices. Pokit Pro devices will report an Bluetooth ATT error <computeroutput>0x80</computeroutput>.</para>
+</simplesect>
+<xrefsect id="pokit_1_pokit000011"><xreftitle>Pokit Bluetooth API errata</xreftitle><xrefdescription><para>The Android app can turn Pokit Pro LEDs on/off. Perhaps that is handled by an undocumented use of this characteristic. Or perhaps its via some other service.</para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/statusservice.h" line="159" column="10" bodyfile="/home/paul/src/dokit/src/lib/statusservice.cpp" bodystart="375" bodyend="391"/>
+        <references refid="structStatusService_1_1CharacteristicUuids_1aeb51331d2510873d95a5993e62aa2cf0" compoundref="statusservice_8h" startline="50" endline="50">StatusService::CharacteristicUuids::flashLed</references>
+        <references refid="qlowenergycharacteristic_1isValid">QLowEnergyCharacteristic::isValid</references>
+        <referencedby refid="classFlashLedCommand_1af1d7d155b35b4a3d6301b2653c0d7eb7" compoundref="flashledcommand_8cpp" startline="74" endline="81">FlashLedCommand::serviceDetailsDiscovered</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classStatusService_1acb4787284fb5314ee2085421ad4c1d36" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::optional&lt; <ref refid="classStatusService_1ab219dd54284c7299cce14b36ee59e08b" kindref="member">TorchStatus</ref> &gt;</type>
+        <definition>std::optional&lt; StatusService::TorchStatus &gt; StatusService::torchStatus</definition>
+        <argsstring>() const</argsstring>
+        <name>torchStatus</name>
+        <qualifiedname>StatusService::torchStatus</qualifiedname>
+        <briefdescription>
+<para>Returns the most recent value of the <computeroutput><ref refid="structStatusService_1_1Status" kindref="compound">Status</ref></computeroutput> services&apos;s <computeroutput>Torch</computeroutput> characteristic. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The returned value, if any, is from the underlying Bluetooth stack&apos;s cache. If no such value is currently available (eg if the device does not support the Torch characteristic), then <computeroutput>nullopt</computeroutput> is returned. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/statusservice.h" line="162" column="19" bodyfile="/home/paul/src/dokit/src/lib/statusservice.cpp" bodystart="400" bodyend="405"/>
+        <references refid="qlowenergycharacteristic_1isValid">QLowEnergyCharacteristic::isValid</references>
+        <references refid="classStatusServicePrivate_1abe408253ab1c7f08e09d7613691befba" compoundref="statusservice_8cpp" startline="679" endline="688">StatusServicePrivate::parseTorchStatus</references>
+        <references refid="structStatusService_1_1CharacteristicUuids_1a8e558d76deeac993d962763fec80aa3d" compoundref="statusservice_8h" startline="53" endline="53">StatusService::CharacteristicUuids::torch</references>
+        <references refid="qlowenergycharacteristic_1value">QLowEnergyCharacteristic::value</references>
+        <referencedby refid="classStatusCommand_1ae2349e3d64b1b4db9b80465c0b7dadb7" compoundref="statuscommand_8cpp" startline="89" endline="195">StatusCommand::outputDeviceStatus</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classStatusService_1a3bc469455e6e704e0643fbc9ad236c70" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool StatusService::setTorchStatus</definition>
+        <argsstring>(const TorchStatus status)</argsstring>
+        <name>setTorchStatus</name>
+        <qualifiedname>StatusService::setTorchStatus</qualifiedname>
+        <param>
+          <type>const <ref refid="classStatusService_1ab219dd54284c7299cce14b36ee59e08b" kindref="member">TorchStatus</ref></type>
+          <declname>status</declname>
+        </param>
+        <briefdescription>
+<para>Set the Pokit device&apos;s torch to <emphasis>status</emphasis>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns <computeroutput>true</computeroutput> if the request was successfully queued, <computeroutput>false</computeroutput> otherwise.</para>
+<para>Emits <ref refid="classStatusService_1aec3272ddef1ea08f7d6f2a87e41ed197" kindref="member">torchStatusWritten()</ref> if/when the LED has flashed successfully.</para>
+<para><simplesect kind="note"><para>This operation is only supported by Pokit Pro devices, and not Pokit Meter devices. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/statusservice.h" line="163" column="10" bodyfile="/home/paul/src/dokit/src/lib/statusservice.cpp" bodystart="416" bodyend="427"/>
+        <references refid="qlowenergycharacteristic_1isValid">QLowEnergyCharacteristic::isValid</references>
+        <references refid="classStatusService_1ae7be4aae021ae50faef48ed2812eb6a7" compoundref="statusservice_8cpp" startline="280" endline="288">status</references>
+        <references refid="structStatusService_1_1CharacteristicUuids_1a8e558d76deeac993d962763fec80aa3d" compoundref="statusservice_8h" startline="53" endline="53">StatusService::CharacteristicUuids::torch</references>
+        <referencedby refid="classSetTorchCommand_1ae76dcd51a542ff55cf057079c215450e" compoundref="settorchcommand_8cpp" startline="82" endline="88">SetTorchCommand::serviceDetailsDiscovered</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classStatusService_1a698e0ba79ea0e7d489e4acdb58830884" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool StatusService::enableTorchStatusNotifications</definition>
+        <argsstring>()</argsstring>
+        <name>enableTorchStatusNotifications</name>
+        <qualifiedname>StatusService::enableTorchStatusNotifications</qualifiedname>
+        <briefdescription>
+<para>Enables client-side notifications of torch status changes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is an alternative to manually requesting individual reads via <ref refid="classStatusService_1afeb96c51e64da0265ab7d026233541d4" kindref="member">readTorchCharacteristic()</ref>.</para>
+<para>Returns <computeroutput>true</computeroutput> is the request was successfully submited to the device queue, <computeroutput>false</computeroutput> otherwise.</para>
+<para>Successfully read values (if any) will be emitted via the <ref refid="classStatusService_1a1658b06923abd2a4e7f15f2cc56686bb" kindref="member">torchStatusRead()</ref> signal. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/statusservice.h" line="164" column="10" bodyfile="/home/paul/src/dokit/src/lib/statusservice.cpp" bodystart="438" bodyend="442"/>
+        <references refid="structStatusService_1_1CharacteristicUuids_1a8e558d76deeac993d962763fec80aa3d" compoundref="statusservice_8h" startline="53" endline="53">StatusService::CharacteristicUuids::torch</references>
+      </memberdef>
+      <memberdef kind="function" id="classStatusService_1a8c575b15d296c396d7837c6059f10aa8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool StatusService::disableTorchStatusNotifications</definition>
+        <argsstring>()</argsstring>
+        <name>disableTorchStatusNotifications</name>
+        <qualifiedname>StatusService::disableTorchStatusNotifications</qualifiedname>
+        <briefdescription>
+<para>Disables client-side notifications of torch status changes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Instantaneous torch status can still be fetched by <ref refid="classStatusService_1afeb96c51e64da0265ab7d026233541d4" kindref="member">readTorchCharacteristic()</ref>.</para>
+<para>Returns <computeroutput>true</computeroutput> is the request was successfully submited to the device queue, <computeroutput>false</computeroutput> otherwise. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/statusservice.h" line="165" column="10" bodyfile="/home/paul/src/dokit/src/lib/statusservice.cpp" bodystart="451" bodyend="455"/>
+        <references refid="structStatusService_1_1CharacteristicUuids_1a8e558d76deeac993d962763fec80aa3d" compoundref="statusservice_8h" startline="53" endline="53">StatusService::CharacteristicUuids::torch</references>
+      </memberdef>
+      <memberdef kind="function" id="classStatusService_1a658e493f2942afd66263a989e99ed633" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::optional&lt; <ref refid="classStatusService_1a14dc19e0faab66a66e89abebe41082eb" kindref="member">ButtonStatus</ref> &gt;</type>
+        <definition>std::optional&lt; StatusService::ButtonStatus &gt; StatusService::buttonPress</definition>
+        <argsstring>() const</argsstring>
+        <name>buttonPress</name>
+        <qualifiedname>StatusService::buttonPress</qualifiedname>
+        <briefdescription>
+<para>Returns the most recent value of the <computeroutput><ref refid="structStatusService_1_1Status" kindref="compound">Status</ref></computeroutput> services&apos;s <computeroutput>Button Press</computeroutput> characteristic. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The returned value, if any, is from the underlying Bluetooth stack&apos;s cache. If no such value is currently available (eg if the device does not support the Torch characteristic), then <computeroutput>nullopt</computeroutput> is returned. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/statusservice.h" line="168" column="19" bodyfile="/home/paul/src/dokit/src/lib/statusservice.cpp" bodystart="492" bodyend="497"/>
+        <references refid="structStatusService_1_1CharacteristicUuids_1ae2abf1183b8b6f2cd2e0cb5206a3975f" compoundref="statusservice_8h" startline="56" endline="56">StatusService::CharacteristicUuids::buttonPress</references>
+        <references refid="qlowenergycharacteristic_1isValid">QLowEnergyCharacteristic::isValid</references>
+        <references refid="classStatusServicePrivate_1a90d78c3261bea8f23ddf9804ada203c1" compoundref="statusservice_8cpp" startline="693" endline="711">StatusServicePrivate::parseButtonPress</references>
+        <references refid="qlowenergycharacteristic_1value">QLowEnergyCharacteristic::value</references>
+        <referencedby refid="classStatusCommand_1ae2349e3d64b1b4db9b80465c0b7dadb7" compoundref="statuscommand_8cpp" startline="89" endline="195">StatusCommand::outputDeviceStatus</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classStatusService_1a031595af37a535074015a121f0b712bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool StatusService::enableButtonPressedNotifications</definition>
+        <argsstring>()</argsstring>
+        <name>enableButtonPressedNotifications</name>
+        <qualifiedname>StatusService::enableButtonPressedNotifications</qualifiedname>
+        <briefdescription>
+<para>Enables client-side notifications of button presses. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is an alternative to manually requesting individual reads via <ref refid="classStatusService_1a29d3830c398e06a59b815c6f5d475fec" kindref="member">readButtonPressCharacteristic()</ref>.</para>
+<para>Returns <computeroutput>true</computeroutput> is the request was successfully submited to the device queue, <computeroutput>false</computeroutput> otherwise.</para>
+<para>Successfully read values (if any) will be emitted via the <ref refid="classStatusService_1a1658b06923abd2a4e7f15f2cc56686bb" kindref="member">torchStatusRead()</ref> signal. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/statusservice.h" line="169" column="10" bodyfile="/home/paul/src/dokit/src/lib/statusservice.cpp" bodystart="466" bodyend="470"/>
+        <references refid="structStatusService_1_1CharacteristicUuids_1ae2abf1183b8b6f2cd2e0cb5206a3975f" compoundref="statusservice_8h" startline="56" endline="56">StatusService::CharacteristicUuids::buttonPress</references>
+      </memberdef>
+      <memberdef kind="function" id="classStatusService_1ab0d571f2729d69375715b3894ec691ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool StatusService::disableButtonPressedNotifications</definition>
+        <argsstring>()</argsstring>
+        <name>disableButtonPressedNotifications</name>
+        <qualifiedname>StatusService::disableButtonPressedNotifications</qualifiedname>
+        <briefdescription>
+<para>Disables client-side notifications of button presses. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Instantaneous button press statussed can still be fetched by <ref refid="classStatusService_1a29d3830c398e06a59b815c6f5d475fec" kindref="member">readButtonPressCharacteristic()</ref>.</para>
+<para>Returns <computeroutput>true</computeroutput> is the request was successfully submited to the device queue, <computeroutput>false</computeroutput> otherwise. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/statusservice.h" line="170" column="10" bodyfile="/home/paul/src/dokit/src/lib/statusservice.cpp" bodystart="479" bodyend="483"/>
+        <references refid="structStatusService_1_1CharacteristicUuids_1ae2abf1183b8b6f2cd2e0cb5206a3975f" compoundref="statusservice_8h" startline="56" endline="56">StatusService::CharacteristicUuids::buttonPress</references>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="signal">
+      <memberdef kind="signal" id="classStatusService_1aa7078c4dfbf7a7cc843fac160c2d1f09" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void StatusService::deviceCharacteristicsRead</definition>
+        <argsstring>(const StatusService::DeviceCharacteristics &amp;characteristics)</argsstring>
+        <name>deviceCharacteristicsRead</name>
+        <qualifiedname>StatusService::deviceCharacteristicsRead</qualifiedname>
+        <param>
+          <type>const <ref refid="structStatusService_1_1DeviceCharacteristics" kindref="compound">StatusService::DeviceCharacteristics</ref> &amp;</type>
+          <declname>characteristics</declname>
+        </param>
+        <briefdescription>
+<para>This signal is emitted when the <computeroutput>Device Characteristics</computeroutput> characteristic has been read successfully. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="classStatusService_1adca5ca235e99c7878f8fde507bf487cc" kindref="member">readDeviceCharacteristics</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/statusservice.h" line="173" column="10"/>
+      </memberdef>
+      <memberdef kind="signal" id="classStatusService_1a7ac0f6b5cf9cfd4acee67df1479a24bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void StatusService::deviceNameRead</definition>
+        <argsstring>(const QString &amp;deviceName)</argsstring>
+        <name>deviceNameRead</name>
+        <qualifiedname>StatusService::deviceNameRead</qualifiedname>
+        <param>
+          <type>const <ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref> &amp;</type>
+          <declname>deviceName</declname>
+        </param>
+        <briefdescription>
+<para>This signal is emitted when the <computeroutput>Device Name</computeroutput> characteristic has been read successfully. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para>readDeviceName </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/statusservice.h" line="174" column="10"/>
+      </memberdef>
+      <memberdef kind="signal" id="classStatusService_1ab5d4871d4fae7045dff91f12f8f67d9a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void StatusService::deviceNameWritten</definition>
+        <argsstring>()</argsstring>
+        <name>deviceNameWritten</name>
+        <qualifiedname>StatusService::deviceNameWritten</qualifiedname>
+        <briefdescription>
+<para>This signal is emitted when the <computeroutput>Device Name</computeroutput> characteristic has been written successfully. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="classStatusService_1ada280bc54493f85e6855a2534bf2a02d" kindref="member">setDeviceName</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/statusservice.h" line="175" column="10"/>
+        <referencedby refid="classSetNameCommand_1ac57aeeca51642c3ba79e6c6578677210" compoundref="setnamecommand_8cpp" startline="64" endline="74">SetNameCommand::getService</referencedby>
+      </memberdef>
+      <memberdef kind="signal" id="classStatusService_1a9f89222ee84c2f45c4c21a9c6a0c9d4b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void StatusService::deviceStatusRead</definition>
+        <argsstring>(const StatusService::Status &amp;status)</argsstring>
+        <name>deviceStatusRead</name>
+        <qualifiedname>StatusService::deviceStatusRead</qualifiedname>
+        <param>
+          <type>const <ref refid="structStatusService_1_1Status" kindref="compound">StatusService::Status</ref> &amp;</type>
+          <declname>status</declname>
+        </param>
+        <briefdescription>
+<para>This signal is emitted when the <computeroutput><ref refid="structStatusService_1_1Status" kindref="compound">Status</ref></computeroutput> characteristic has been read successfully. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para>readDeviceStatus </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/statusservice.h" line="176" column="10"/>
+      </memberdef>
+      <memberdef kind="signal" id="classStatusService_1a2fe685dfd1829b7a51db80b324dea77e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void StatusService::deviceLedFlashed</definition>
+        <argsstring>()</argsstring>
+        <name>deviceLedFlashed</name>
+        <qualifiedname>StatusService::deviceLedFlashed</qualifiedname>
+        <briefdescription>
+<para>This signal is emitted when device&apos;s LED has flashed in response to a write of the <computeroutput>Flash LED</computeroutput> characteristic. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/statusservice.h" line="177" column="10"/>
+        <referencedby refid="classFlashLedCommand_1ae36389ece2050dd8546c5b379df942a9" compoundref="flashledcommand_8cpp" startline="57" endline="67">FlashLedCommand::getService</referencedby>
+      </memberdef>
+      <memberdef kind="signal" id="classStatusService_1a1658b06923abd2a4e7f15f2cc56686bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void StatusService::torchStatusRead</definition>
+        <argsstring>(const TorchStatus &amp;status)</argsstring>
+        <name>torchStatusRead</name>
+        <qualifiedname>StatusService::torchStatusRead</qualifiedname>
+        <param>
+          <type>const <ref refid="classStatusService_1ab219dd54284c7299cce14b36ee59e08b" kindref="member">TorchStatus</ref> &amp;</type>
+          <declname>status</declname>
+        </param>
+        <briefdescription>
+<para>This signal is emitted when the <computeroutput>Torch</computeroutput> characteristic has been read successfully. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="classStatusService_1a3bc469455e6e704e0643fbc9ad236c70" kindref="member">setTorchStatus</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/statusservice.h" line="178" column="10"/>
+      </memberdef>
+      <memberdef kind="signal" id="classStatusService_1aec3272ddef1ea08f7d6f2a87e41ed197" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void StatusService::torchStatusWritten</definition>
+        <argsstring>()</argsstring>
+        <name>torchStatusWritten</name>
+        <qualifiedname>StatusService::torchStatusWritten</qualifiedname>
+        <briefdescription>
+<para>This signal is emitted when the <computeroutput>Torch</computeroutput> characteristic has been written successfully. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="classStatusService_1afeb96c51e64da0265ab7d026233541d4" kindref="member">readTorchCharacteristic</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/statusservice.h" line="179" column="10"/>
+        <referencedby refid="classSetTorchCommand_1af772b83095447969556df52702d68dd4" compoundref="settorchcommand_8cpp" startline="65" endline="75">SetTorchCommand::getService</referencedby>
+      </memberdef>
+      <memberdef kind="signal" id="classStatusService_1a2084a26b33dd947723c40839d36b7b94" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void StatusService::buttonPressRead</definition>
+        <argsstring>(const quint8 &amp;unknown, const ButtonStatus status)</argsstring>
+        <name>buttonPressRead</name>
+        <qualifiedname>StatusService::buttonPressRead</qualifiedname>
+        <param>
+          <type>const quint8 &amp;</type>
+          <declname>unknown</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classStatusService_1a14dc19e0faab66a66e89abebe41082eb" kindref="member">ButtonStatus</ref></type>
+          <declname>status</declname>
+        </param>
+        <briefdescription>
+<para>This signal is emitted when the <computeroutput>Button Press</computeroutput> characteristic has been read successfully. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="classStatusService_1a29d3830c398e06a59b815c6f5d475fec" kindref="member">readButtonPressCharacteristic</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/statusservice.h" line="180" column="10"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classStatusService_1a8c5a28d187cd6cbb61242ff9fef2d25c" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>StatusService::StatusService</definition>
+        <argsstring>(StatusServicePrivate *const d, QObject *const parent)</argsstring>
+        <name>StatusService</name>
+        <qualifiedname>StatusService::StatusService</qualifiedname>
+        <param>
+          <type><ref refid="classStatusServicePrivate" kindref="compound">StatusServicePrivate</ref> *const</type>
+          <declname>d</declname>
+        </param>
+        <param>
+          <type><ref refid="qobject" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QObject</ref> *const</type>
+          <declname>parent</declname>
+        </param>
+        <briefdescription>
+<para>Constructs a new Pokit service with <emphasis>parent</emphasis>, and private implementation <emphasis>d</emphasis>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/statusservice.h" line="184" column="5" bodyfile="/home/paul/src/dokit/src/lib/statusservice.cpp" bodystart="134" bodyend="139"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>The <ref refid="classStatusService" kindref="compound">StatusService</ref> class accesses the <computeroutput>Pokit <ref refid="structStatusService_1_1Status" kindref="compound">Status</ref></computeroutput> service of Pokit devices. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>AbstractPokitService</label>
+        <link refid="classAbstractPokitService"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>QObject</label>
+        <link refid="qobject" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags"/>
+      </node>
+      <node id="1">
+        <label>StatusService</label>
+        <link refid="classStatusService"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>AbstractPokitService</label>
+        <link refid="classAbstractPokitService"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>d_ptr</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>AbstractPokitServicePrivate</label>
+        <link refid="classAbstractPokitServicePrivate"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>controller</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>service</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>serviceUuid</edgelabel>
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>q_ptr</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>QBluetoothUuid</label>
+        <link refid="qbluetoothuuid" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags"/>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>QLowEnergyController</label>
+        <link refid="qlowenergycontroller" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>QLowEnergyService</label>
+        <link refid="qlowenergyservice" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>QObject</label>
+        <link refid="qobject" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags"/>
+      </node>
+      <node id="8">
+        <label>QUuid</label>
+        <link refid="quuid" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags"/>
+      </node>
+      <node id="1">
+        <label>StatusService</label>
+        <link refid="classStatusService"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/paul/src/dokit/include/qtpokit/statusservice.h" line="24" column="1" bodyfile="/home/paul/src/dokit/include/qtpokit/statusservice.h" bodystart="25" bodyend="191"/>
+    <listofallmembers>
+      <member refid="classAbstractPokitService_1aa1309523f169115a7b7a8117ea4ab04f" prot="public" virt="non-virtual"><scope>StatusService</scope><name>AbstractPokitService</name></member>
+      <member refid="classAbstractPokitService_1a2d624e58e68663e0420df7d282caf116" prot="protected" virt="non-virtual"><scope>StatusService</scope><name>AbstractPokitService</name></member>
+      <member refid="classAbstractPokitService_1a65c2c9c6163744a7cf52de2c6a83f610" prot="public" virt="non-virtual"><scope>StatusService</scope><name>autoDiscover</name></member>
+      <member refid="classStatusService_1a26ca2c6e0c1127261cc28a778512bf68" prot="public" virt="non-virtual"><scope>StatusService</scope><name>BatteryStatus</name></member>
+      <member refid="qobject_1objectName-prop" prot="public" virt="non-virtual"><scope>StatusService</scope><name>bindableObjectName</name></member>
+      <member refid="qobject_1blockSignals" prot="public" virt="non-virtual"><scope>StatusService</scope><name>blockSignals</name></member>
+      <member refid="classStatusService_1a658e493f2942afd66263a989e99ed633" prot="public" virt="non-virtual"><scope>StatusService</scope><name>buttonPress</name></member>
+      <member refid="classStatusService_1a2084a26b33dd947723c40839d36b7b94" prot="public" virt="non-virtual"><scope>StatusService</scope><name>buttonPressRead</name></member>
+      <member refid="classStatusService_1a14dc19e0faab66a66e89abebe41082eb" prot="public" virt="non-virtual"><scope>StatusService</scope><name>ButtonStatus</name></member>
+      <member refid="classStatusService_1af7f9dcc8c9cfa0a1cd9491b829234dc1" prot="public" virt="non-virtual"><scope>StatusService</scope><name>ChargingStatus</name></member>
+      <member refid="qobject_1childEvent" prot="protected" virt="virtual"><scope>StatusService</scope><name>childEvent</name></member>
+      <member refid="qobject_1children" prot="public" virt="non-virtual"><scope>StatusService</scope><name>children</name></member>
+      <member refid="qobject_1connect-4" prot="public" virt="non-virtual"><scope>StatusService</scope><name>connect</name></member>
+      <member refid="qobject_1connect-5" prot="public" virt="non-virtual"><scope>StatusService</scope><name>connect</name></member>
+      <member refid="qobject_1connect-3" prot="public" virt="non-virtual"><scope>StatusService</scope><name>connect</name></member>
+      <member refid="qobject_1connect-1" prot="public" virt="non-virtual"><scope>StatusService</scope><name>connect</name></member>
+      <member refid="qobject_1connect" prot="public" virt="non-virtual"><scope>StatusService</scope><name>connect</name></member>
+      <member refid="qobject_1connect-2" prot="public" virt="non-virtual"><scope>StatusService</scope><name>connect</name></member>
+      <member refid="qobject_1connectNotify" prot="protected" virt="virtual"><scope>StatusService</scope><name>connectNotify</name></member>
+      <member refid="qobject_1customEvent" prot="protected" virt="virtual"><scope>StatusService</scope><name>customEvent</name></member>
+      <member refid="classAbstractPokitService_1acb832f24262f3f61f74c878dd79f48e8" prot="protected" virt="non-virtual"><scope>StatusService</scope><name>d_ptr</name></member>
+      <member refid="qobject_1deleteLater" prot="public" virt="non-virtual"><scope>StatusService</scope><name>deleteLater</name></member>
+      <member refid="qobject_1destroyed" prot="public" virt="non-virtual"><scope>StatusService</scope><name>destroyed</name></member>
+      <member refid="classStatusService_1a008d41a33eedd90e68ccf7a94ed5b65f" prot="public" virt="non-virtual"><scope>StatusService</scope><name>deviceCharacteristics</name></member>
+      <member refid="classStatusService_1aa7078c4dfbf7a7cc843fac160c2d1f09" prot="public" virt="non-virtual"><scope>StatusService</scope><name>deviceCharacteristicsRead</name></member>
+      <member refid="classStatusService_1a2fe685dfd1829b7a51db80b324dea77e" prot="public" virt="non-virtual"><scope>StatusService</scope><name>deviceLedFlashed</name></member>
+      <member refid="classStatusService_1a113a7051f70e642d2c1f67124c1f12c7" prot="public" virt="non-virtual"><scope>StatusService</scope><name>deviceName</name></member>
+      <member refid="classStatusService_1a7ac0f6b5cf9cfd4acee67df1479a24bf" prot="public" virt="non-virtual"><scope>StatusService</scope><name>deviceNameRead</name></member>
+      <member refid="classStatusService_1ab5d4871d4fae7045dff91f12f8f67d9a" prot="public" virt="non-virtual"><scope>StatusService</scope><name>deviceNameWritten</name></member>
+      <member refid="classStatusService_1a50ae778be2cb8e49b85ef159be19af35" prot="public" virt="non-virtual"><scope>StatusService</scope><name>DeviceStatus</name></member>
+      <member refid="classStatusService_1a9f89222ee84c2f45c4c21a9c6a0c9d4b" prot="public" virt="non-virtual"><scope>StatusService</scope><name>deviceStatusRead</name></member>
+      <member refid="classStatusService_1ab0d571f2729d69375715b3894ec691ee" prot="public" virt="non-virtual"><scope>StatusService</scope><name>disableButtonPressedNotifications</name></member>
+      <member refid="classStatusService_1a1beab67430fc8bc26e9faf3799d537f1" prot="public" virt="non-virtual"><scope>StatusService</scope><name>disableStatusNotifications</name></member>
+      <member refid="classStatusService_1a8c575b15d296c396d7837c6059f10aa8" prot="public" virt="non-virtual"><scope>StatusService</scope><name>disableTorchStatusNotifications</name></member>
+      <member refid="qobject_1disconnect-4" prot="public" virt="non-virtual"><scope>StatusService</scope><name>disconnect</name></member>
+      <member refid="qobject_1disconnect-5" prot="public" virt="non-virtual"><scope>StatusService</scope><name>disconnect</name></member>
+      <member refid="qobject_1disconnect-1" prot="public" virt="non-virtual"><scope>StatusService</scope><name>disconnect</name></member>
+      <member refid="qobject_1disconnect" prot="public" virt="non-virtual"><scope>StatusService</scope><name>disconnect</name></member>
+      <member refid="qobject_1disconnect-3" prot="public" virt="non-virtual"><scope>StatusService</scope><name>disconnect</name></member>
+      <member refid="qobject_1disconnect-2" prot="public" virt="non-virtual"><scope>StatusService</scope><name>disconnect</name></member>
+      <member refid="qobject_1disconnectNotify" prot="protected" virt="virtual"><scope>StatusService</scope><name>disconnectNotify</name></member>
+      <member refid="qobject_1dumpObjectInfo" prot="public" virt="non-virtual"><scope>StatusService</scope><name>dumpObjectInfo</name></member>
+      <member refid="qobject_1dumpObjectTree" prot="public" virt="non-virtual"><scope>StatusService</scope><name>dumpObjectTree</name></member>
+      <member refid="qobject_1dynamicPropertyNames" prot="public" virt="non-virtual"><scope>StatusService</scope><name>dynamicPropertyNames</name></member>
+      <member refid="classStatusService_1a031595af37a535074015a121f0b712bb" prot="public" virt="non-virtual"><scope>StatusService</scope><name>enableButtonPressedNotifications</name></member>
+      <member refid="classStatusService_1a5d86bed23202402cade7fa8bb09f9c48" prot="public" virt="non-virtual"><scope>StatusService</scope><name>enableStatusNotifications</name></member>
+      <member refid="classStatusService_1a698e0ba79ea0e7d489e4acdb58830884" prot="public" virt="non-virtual"><scope>StatusService</scope><name>enableTorchStatusNotifications</name></member>
+      <member refid="qobject_1event" prot="public" virt="virtual"><scope>StatusService</scope><name>event</name></member>
+      <member refid="qobject_1eventFilter" prot="public" virt="virtual"><scope>StatusService</scope><name>eventFilter</name></member>
+      <member refid="qobject_1findChild" prot="public" virt="non-virtual"><scope>StatusService</scope><name>findChild</name></member>
+      <member refid="qobject_1findChildren-1" prot="public" virt="non-virtual"><scope>StatusService</scope><name>findChildren</name></member>
+      <member refid="qobject_1findChildren-2" prot="public" virt="non-virtual"><scope>StatusService</scope><name>findChildren</name></member>
+      <member refid="qobject_1findChildren" prot="public" virt="non-virtual"><scope>StatusService</scope><name>findChildren</name></member>
+      <member refid="classStatusService_1a425bf65d42b24c4a621b312fcd152708" prot="public" virt="non-virtual"><scope>StatusService</scope><name>flashLed</name></member>
+      <member refid="qobject_1inherits" prot="public" virt="non-virtual"><scope>StatusService</scope><name>inherits</name></member>
+      <member refid="qobject_1installEventFilter" prot="public" virt="non-virtual"><scope>StatusService</scope><name>installEventFilter</name></member>
+      <member refid="qobject_1isQuickItemType" prot="public" virt="non-virtual"><scope>StatusService</scope><name>isQuickItemType</name></member>
+      <member refid="qobject_1isSignalConnected" prot="protected" virt="non-virtual"><scope>StatusService</scope><name>isSignalConnected</name></member>
+      <member refid="qobject_1isWidgetType" prot="public" virt="non-virtual"><scope>StatusService</scope><name>isWidgetType</name></member>
+      <member refid="qobject_1isWindowType" prot="public" virt="non-virtual"><scope>StatusService</scope><name>isWindowType</name></member>
+      <member refid="qobject_1killTimer" prot="public" virt="non-virtual"><scope>StatusService</scope><name>killTimer</name></member>
+      <member refid="qobject_1metaObject" prot="public" virt="virtual"><scope>StatusService</scope><name>metaObject</name></member>
+      <member refid="qobject_1moveToThread" prot="public" virt="non-virtual"><scope>StatusService</scope><name>moveToThread</name></member>
+      <member refid="qobject_1objectName-prop" prot="public" virt="non-virtual"><scope>StatusService</scope><name>objectName</name></member>
+      <member refid="qobject_1objectName-prop" prot="public" virt="non-virtual"><scope>StatusService</scope><name>objectName</name></member>
+      <member refid="qobject_1objectNameChanged" prot="public" virt="non-virtual"><scope>StatusService</scope><name>objectNameChanged</name></member>
+      <member refid="qobject_1parent" prot="public" virt="non-virtual"><scope>StatusService</scope><name>parent</name></member>
+      <member refid="classAbstractPokitService_1a039d2f1054788cf586c8decadb53ddc0" prot="public" virt="non-virtual"><scope>StatusService</scope><name>pokitProduct</name></member>
+      <member refid="qobject_1property" prot="public" virt="non-virtual"><scope>StatusService</scope><name>property</name></member>
+      <member refid="qobject_1Q_CLASSINFO" prot="public" virt="non-virtual"><scope>StatusService</scope><name>Q_CLASSINFO</name></member>
+      <member refid="qobject_1Q_EMIT" prot="public" virt="non-virtual"><scope>StatusService</scope><name>Q_EMIT</name></member>
+      <member refid="qobject_1Q_ENUM" prot="public" virt="non-virtual"><scope>StatusService</scope><name>Q_ENUM</name></member>
+      <member refid="qobject_1Q_ENUM_NS" prot="public" virt="non-virtual"><scope>StatusService</scope><name>Q_ENUM_NS</name></member>
+      <member refid="qobject-obsolete_1Q_ENUMS" prot="public" virt="non-virtual"><scope>StatusService</scope><name>Q_ENUMS</name></member>
+      <member refid="qobject_1Q_FLAG" prot="public" virt="non-virtual"><scope>StatusService</scope><name>Q_FLAG</name></member>
+      <member refid="qobject_1Q_FLAG_NS" prot="public" virt="non-virtual"><scope>StatusService</scope><name>Q_FLAG_NS</name></member>
+      <member refid="qobject-obsolete_1Q_FLAGS" prot="public" virt="non-virtual"><scope>StatusService</scope><name>Q_FLAGS</name></member>
+      <member refid="qobject_1Q_GADGET" prot="public" virt="non-virtual"><scope>StatusService</scope><name>Q_GADGET</name></member>
+      <member refid="qobject_1Q_GADGET_EXPORT" prot="public" virt="non-virtual"><scope>StatusService</scope><name>Q_GADGET_EXPORT</name></member>
+      <member refid="qobject_1Q_INTERFACES" prot="public" virt="non-virtual"><scope>StatusService</scope><name>Q_INTERFACES</name></member>
+      <member refid="qobject_1Q_INVOKABLE" prot="public" virt="non-virtual"><scope>StatusService</scope><name>Q_INVOKABLE</name></member>
+      <member refid="qobject_1Q_MOC_INCLUDE" prot="public" virt="non-virtual"><scope>StatusService</scope><name>Q_MOC_INCLUDE</name></member>
+      <member refid="qobject_1Q_NAMESPACE" prot="public" virt="non-virtual"><scope>StatusService</scope><name>Q_NAMESPACE</name></member>
+      <member refid="qobject_1Q_NAMESPACE_EXPORT" prot="public" virt="non-virtual"><scope>StatusService</scope><name>Q_NAMESPACE_EXPORT</name></member>
+      <member refid="qobject_1Q_OBJECT" prot="public" virt="non-virtual"><scope>StatusService</scope><name>Q_OBJECT</name></member>
+      <member refid="qobject_1Q_PROPERTY" prot="public" virt="non-virtual"><scope>StatusService</scope><name>Q_PROPERTY</name></member>
+      <member refid="qobject_1Q_REVISION" prot="public" virt="non-virtual"><scope>StatusService</scope><name>Q_REVISION</name></member>
+      <member refid="qobject_1Q_SET_OBJECT_NAME" prot="public" virt="non-virtual"><scope>StatusService</scope><name>Q_SET_OBJECT_NAME</name></member>
+      <member refid="qobject_1Q_SIGNAL" prot="public" virt="non-virtual"><scope>StatusService</scope><name>Q_SIGNAL</name></member>
+      <member refid="qobject_1Q_SIGNALS" prot="public" virt="non-virtual"><scope>StatusService</scope><name>Q_SIGNALS</name></member>
+      <member refid="qobject_1Q_SLOT" prot="public" virt="non-virtual"><scope>StatusService</scope><name>Q_SLOT</name></member>
+      <member refid="qobject_1Q_SLOTS" prot="public" virt="non-virtual"><scope>StatusService</scope><name>Q_SLOTS</name></member>
+      <member refid="qobject_1QObject" prot="public" virt="non-virtual"><scope>StatusService</scope><name>QObject</name></member>
+      <member refid="qobject_1qobject_cast" prot="public" virt="non-virtual"><scope>StatusService</scope><name>qobject_cast</name></member>
+      <member refid="qobject_1qobject_cast-1" prot="public" virt="non-virtual"><scope>StatusService</scope><name>qobject_cast</name></member>
+      <member refid="qobject_1QObjectList-typedef" prot="public" virt="non-virtual"><scope>StatusService</scope><name>QObjectList</name></member>
+      <member refid="qobject_1QT_NO_NARROWING_CONVERSIONS_IN_CONNECT" prot="public" virt="non-virtual"><scope>StatusService</scope><name>QT_NO_NARROWING_CONVERSIONS_IN_CONNECT</name></member>
+      <member refid="classStatusService_1a29d3830c398e06a59b815c6f5d475fec" prot="public" virt="non-virtual"><scope>StatusService</scope><name>readButtonPressCharacteristic</name></member>
+      <member refid="classStatusService_1ad73514f6f324ca56dffb844b14eb3bc0" prot="public" virt="virtual"><scope>StatusService</scope><name>readCharacteristics</name></member>
+      <member refid="classStatusService_1adca5ca235e99c7878f8fde507bf487cc" prot="public" virt="non-virtual"><scope>StatusService</scope><name>readDeviceCharacteristics</name></member>
+      <member refid="classStatusService_1a1540af10953c1b4b7d08620ade8c27ea" prot="public" virt="non-virtual"><scope>StatusService</scope><name>readNameCharacteristic</name></member>
+      <member refid="classStatusService_1a0410049da4a7ac6a64027c733797c578" prot="public" virt="non-virtual"><scope>StatusService</scope><name>readStatusCharacteristic</name></member>
+      <member refid="classStatusService_1afeb96c51e64da0265ab7d026233541d4" prot="public" virt="non-virtual"><scope>StatusService</scope><name>readTorchCharacteristic</name></member>
+      <member refid="qobject_1receivers" prot="protected" virt="non-virtual"><scope>StatusService</scope><name>receivers</name></member>
+      <member refid="qobject_1removeEventFilter" prot="public" virt="non-virtual"><scope>StatusService</scope><name>removeEventFilter</name></member>
+      <member refid="qobject_1sender" prot="protected" virt="non-virtual"><scope>StatusService</scope><name>sender</name></member>
+      <member refid="qobject_1senderSignalIndex" prot="protected" virt="non-virtual"><scope>StatusService</scope><name>senderSignalIndex</name></member>
+      <member refid="classAbstractPokitService_1a7a4ff74f51ba6ea6c01cbeb9eda15b9b" prot="public" virt="non-virtual"><scope>StatusService</scope><name>service</name></member>
+      <member refid="classAbstractPokitService_1ab7161dedf8ae431f723a5e225c2ec9ca" prot="public" virt="non-virtual"><scope>StatusService</scope><name>service</name></member>
+      <member refid="classAbstractPokitService_1af67cbea4294ba0a77dcd9540b29528ff" prot="public" virt="non-virtual"><scope>StatusService</scope><name>serviceDetailsDiscovered</name></member>
+      <member refid="classAbstractPokitService_1a9e680ebf280361ef82f4b072448d7e9b" prot="public" virt="non-virtual"><scope>StatusService</scope><name>serviceErrorOccurred</name></member>
+      <member refid="classAbstractPokitService_1a9d6d50cf31bc5859747a134d6cb4c418" prot="public" virt="non-virtual"><scope>StatusService</scope><name>setAutoDiscover</name></member>
+      <member refid="classStatusService_1ada280bc54493f85e6855a2534bf2a02d" prot="public" virt="non-virtual"><scope>StatusService</scope><name>setDeviceName</name></member>
+      <member refid="qobject_1setObjectName-1" prot="public" virt="non-virtual"><scope>StatusService</scope><name>setObjectName</name></member>
+      <member refid="qobject_1setObjectName" prot="public" virt="non-virtual"><scope>StatusService</scope><name>setObjectName</name></member>
+      <member refid="qobject_1setParent" prot="public" virt="non-virtual"><scope>StatusService</scope><name>setParent</name></member>
+      <member refid="classAbstractPokitService_1aa0e323c5e2380709c5a5fde18520ae3f" prot="public" virt="non-virtual"><scope>StatusService</scope><name>setPokitProduct</name></member>
+      <member refid="qobject_1setProperty-1" prot="public" virt="non-virtual"><scope>StatusService</scope><name>setProperty</name></member>
+      <member refid="qobject_1setProperty" prot="public" virt="non-virtual"><scope>StatusService</scope><name>setProperty</name></member>
+      <member refid="classStatusService_1a3bc469455e6e704e0643fbc9ad236c70" prot="public" virt="non-virtual"><scope>StatusService</scope><name>setTorchStatus</name></member>
+      <member refid="qobject_1signalsBlocked" prot="public" virt="non-virtual"><scope>StatusService</scope><name>signalsBlocked</name></member>
+      <member refid="qobject_1startTimer" prot="public" virt="non-virtual"><scope>StatusService</scope><name>startTimer</name></member>
+      <member refid="qobject_1startTimer-1" prot="public" virt="non-virtual"><scope>StatusService</scope><name>startTimer</name></member>
+      <member refid="classStatusService_1ae7be4aae021ae50faef48ed2812eb6a7" prot="public" virt="non-virtual"><scope>StatusService</scope><name>status</name></member>
+      <member refid="classStatusService_1a095254046689e5115ba053c029a2e1b8" prot="public" virt="non-virtual"><scope>StatusService</scope><name>StatusService</name></member>
+      <member refid="classStatusService_1a8c5a28d187cd6cbb61242ff9fef2d25c" prot="protected" virt="non-virtual"><scope>StatusService</scope><name>StatusService</name></member>
+      <member refid="classStatusService_1a6bb2f85b6df9942ee108c341f4162e1f" prot="public" virt="non-virtual"><scope>StatusService</scope><name>SwitchPosition</name></member>
+      <member refid="classStatusService_1a034c6366301706ba6e0ef931798cea4d" prot="private" virt="non-virtual"><scope>StatusService</scope><name>TestStatusService</name></member>
+      <member refid="qobject_1thread" prot="public" virt="non-virtual"><scope>StatusService</scope><name>thread</name></member>
+      <member refid="qobject_1timerEvent" prot="protected" virt="virtual"><scope>StatusService</scope><name>timerEvent</name></member>
+      <member refid="classStatusService_1ab219dd54284c7299cce14b36ee59e08b" prot="public" virt="non-virtual"><scope>StatusService</scope><name>TorchStatus</name></member>
+      <member refid="classStatusService_1acb4787284fb5314ee2085421ad4c1d36" prot="public" virt="non-virtual"><scope>StatusService</scope><name>torchStatus</name></member>
+      <member refid="classStatusService_1a1658b06923abd2a4e7f15f2cc56686bb" prot="public" virt="non-virtual"><scope>StatusService</scope><name>torchStatusRead</name></member>
+      <member refid="classStatusService_1aec3272ddef1ea08f7d6f2a87e41ed197" prot="public" virt="non-virtual"><scope>StatusService</scope><name>torchStatusWritten</name></member>
+      <member refid="classStatusService_1aac79e97cb114be25b2a6771d915f132d" prot="public" virt="non-virtual"><scope>StatusService</scope><name>toString</name></member>
+      <member refid="classStatusService_1aab6278d4fe2bedc916fc3d96641eaa30" prot="public" virt="non-virtual"><scope>StatusService</scope><name>toString</name></member>
+      <member refid="classStatusService_1a619989ef8ed6bb9e91c1326d911e23c9" prot="public" virt="non-virtual"><scope>StatusService</scope><name>toString</name></member>
+      <member refid="classStatusService_1a5e5d307e56870f2a65e9ccf79429bff7" prot="public" virt="non-virtual"><scope>StatusService</scope><name>toString</name></member>
+      <member refid="classStatusService_1a490e0f1d95063c7e0aabaed33f3f8b22" prot="public" virt="non-virtual"><scope>StatusService</scope><name>toString</name></member>
+      <member refid="classStatusService_1a681701df043e0490ed38d127a86f9afb" prot="public" virt="non-virtual"><scope>StatusService</scope><name>toString</name></member>
+      <member refid="qobject_1tr" prot="public" virt="non-virtual"><scope>StatusService</scope><name>tr</name></member>
+      <member refid="classAbstractPokitService_1af0b962913c8be9b1d69ce1b68a5f9bdd" prot="public" virt="virtual"><scope>StatusService</scope><name>~AbstractPokitService</name></member>
+      <member refid="qobject_1dtor.QObject" prot="public" virt="virtual"><scope>StatusService</scope><name>~QObject</name></member>
+      <member refid="classStatusService_1a6140c2723538587220452d6d4a51f001" prot="public" virt="non-virtual"><scope>StatusService</scope><name>~StatusService</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

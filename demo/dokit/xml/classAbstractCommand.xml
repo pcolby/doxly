@@ -1,0 +1,748 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.0" xml:lang="en-US">
+  <compounddef id="classAbstractCommand" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>AbstractCommand</compoundname>
+    <basecompoundref refid="qobject" prot="public" virt="non-virtual">QObject</basecompoundref>
+    <derivedcompoundref refid="classDeviceCommand" prot="public" virt="non-virtual">DeviceCommand</derivedcompoundref>
+    <derivedcompoundref refid="classScanCommand" prot="public" virt="non-virtual">ScanCommand</derivedcompoundref>
+    <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classAbstractCommand_1aa2dadc72289ff2b0a02c1fb435f8a4dc" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>OutputFormat</name>
+        <qualifiedname>AbstractCommand::OutputFormat</qualifiedname>
+        <enumvalue id="classAbstractCommand_1aa2dadc72289ff2b0a02c1fb435f8a4dcab20daea8bfacec3891fcf5b7be4adca0" prot="public">
+          <name>Csv</name>
+          <briefdescription>
+<para>RFC 4180 compliant CSV text. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classAbstractCommand_1aa2dadc72289ff2b0a02c1fb435f8a4dcaeed8d85b888a6c015834240885ee6333" prot="public">
+          <name>Json</name>
+          <briefdescription>
+<para>RFC 8259 compliant JSON text. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classAbstractCommand_1aa2dadc72289ff2b0a02c1fb435f8a4dca9dffbf69ffba8bc38bc4e01abf4b1675" prot="public">
+          <name>Text</name>
+          <briefdescription>
+<para>Plain unstructured text. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Supported output formats. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/abstractcommand.h" line="20" column="5" bodyfile="/home/paul/src/dokit/src/cli/abstractcommand.h" bodystart="20" bodyend="24"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classAbstractCommand_1a07d979bc039d61f5c720cb1521b31208" prot="protected" static="no" mutable="no">
+        <type><ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref></type>
+        <definition>QString AbstractCommand::deviceToScanFor</definition>
+        <argsstring></argsstring>
+        <name>deviceToScanFor</name>
+        <qualifiedname>AbstractCommand::deviceToScanFor</qualifiedname>
+        <briefdescription>
+<para>Device (if any) that were passed to <ref refid="classAbstractCommand_1ad827a18a24776efeb955739459d48f7d" kindref="member">processOptions()</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/abstractcommand.h" line="41" column="13" bodyfile="/home/paul/src/dokit/src/cli/abstractcommand.h" bodystart="41" bodyend="-1"/>
+        <referencedby refid="classDeviceCommand_1acde5a41e646a23c5485b67cf99e402a7" compoundref="devicecommand_8cpp" startline="340" endline="387">DeviceCommand::deviceDiscovered</referencedby>
+        <referencedby refid="classDeviceCommand_1a7dfdaae89c5f6540af9a5bfbcfd66e5a" compoundref="devicecommand_8cpp" startline="392" endline="400">DeviceCommand::deviceDiscoveryFinished</referencedby>
+        <referencedby refid="classAbstractCommand_1ad827a18a24776efeb955739459d48f7d" compoundref="abstractcommand_8cpp" startline="265" endline="320">processOptions</referencedby>
+        <referencedby refid="classDeviceCommand_1a6cf548752b7ae1084a712b9003b92d0c" compoundref="devicecommand_8cpp" startline="29" endline="36">DeviceCommand::start</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classAbstractCommand_1a86878df43cd818f4a7f333a97dabac3c" prot="protected" static="no" mutable="no">
+        <type><ref refid="classPokitDiscoveryAgent" kindref="compound">PokitDiscoveryAgent</ref> *</type>
+        <definition>PokitDiscoveryAgent* AbstractCommand::discoveryAgent</definition>
+        <argsstring></argsstring>
+        <name>discoveryAgent</name>
+        <qualifiedname>AbstractCommand::discoveryAgent</qualifiedname>
+        <briefdescription>
+<para>Agent for Pokit device descovery. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/abstractcommand.h" line="42" column="26" bodyfile="/home/paul/src/dokit/src/cli/abstractcommand.h" bodystart="42" bodyend="-1"/>
+        <referencedby refid="classAbstractCommand_1a0d6fde269511e87aa6f178c1733073ae" compoundref="abstractcommand_8cpp" startline="23" endline="42">AbstractCommand</referencedby>
+        <referencedby refid="classDeviceCommand_1acde5a41e646a23c5485b67cf99e402a7" compoundref="devicecommand_8cpp" startline="340" endline="387">DeviceCommand::deviceDiscovered</referencedby>
+        <referencedby refid="classAbstractCommand_1ad827a18a24776efeb955739459d48f7d" compoundref="abstractcommand_8cpp" startline="265" endline="320">processOptions</referencedby>
+        <referencedby refid="classScanCommand_1a3e809c3a97ec08aecf2dc0f2cf99a837" compoundref="scancommand_8cpp" startline="25" endline="31">ScanCommand::ScanCommand</referencedby>
+        <referencedby refid="classDeviceCommand_1a6cf548752b7ae1084a712b9003b92d0c" compoundref="devicecommand_8cpp" startline="29" endline="36">DeviceCommand::start</referencedby>
+        <referencedby refid="classScanCommand_1a5fe99205591ced024ad2676f377cc845" compoundref="scancommand_8cpp" startline="58" endline="64">ScanCommand::start</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classAbstractCommand_1a881d85cd96b6fcc0652b916c366dda7b" prot="protected" static="no" mutable="no">
+        <type><ref refid="classAbstractCommand_1aa2dadc72289ff2b0a02c1fb435f8a4dc" kindref="member">OutputFormat</ref></type>
+        <definition>OutputFormat AbstractCommand::format</definition>
+        <argsstring></argsstring>
+        <name>format</name>
+        <qualifiedname>AbstractCommand::format</qualifiedname>
+        <initializer>{ <ref refid="classAbstractCommand_1aa2dadc72289ff2b0a02c1fb435f8a4dca9dffbf69ffba8bc38bc4e01abf4b1675" kindref="member">OutputFormat::Text</ref> }</initializer>
+        <briefdescription>
+<para>Selected output format. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/abstractcommand.h" line="43" column="18" bodyfile="/home/paul/src/dokit/src/cli/abstractcommand.h" bodystart="43" bodyend="43"/>
+        <referencedby refid="classScanCommand_1ac9f53dee63d2dfaa3acf82e71db01d64" compoundref="scancommand_8cpp" startline="69" endline="88">ScanCommand::deviceDiscovered</referencedby>
+        <referencedby refid="classFlashLedCommand_1af7a5897fc7657f70466c82f5ed538ccb" compoundref="flashledcommand_8cpp" startline="86" endline="100">FlashLedCommand::deviceLedFlashed</referencedby>
+        <referencedby refid="classSetNameCommand_1a6488980e62ffb16274644152a1364bce" compoundref="setnamecommand_8cpp" startline="92" endline="106">SetNameCommand::deviceNameWritten</referencedby>
+        <referencedby refid="classStatusCommand_1ae2349e3d64b1b4db9b80465c0b7dadb7" compoundref="statuscommand_8cpp" startline="89" endline="195">StatusCommand::outputDeviceStatus</referencedby>
+        <referencedby refid="classMeterCommand_1a551a1c3d1c6f10384b5ccf264a640eff" compoundref="metercommand_8cpp" startline="204" endline="288">MeterCommand::outputReading</referencedby>
+        <referencedby refid="classDsoCommand_1a5ed6988ac93f2964979b8dce1425816e" compoundref="dsocommand_8cpp" startline="243" endline="287">DsoCommand::outputSamples</referencedby>
+        <referencedby refid="classLoggerFetchCommand_1a2f093386853fc6667de091a0e921a665" compoundref="loggerfetchcommand_8cpp" startline="89" endline="140">LoggerFetchCommand::outputSamples</referencedby>
+        <referencedby refid="classAbstractCommand_1ad827a18a24776efeb955739459d48f7d" compoundref="abstractcommand_8cpp" startline="265" endline="320">processOptions</referencedby>
+        <referencedby refid="classInfoCommand_1a06d095d57662fd10b201d6273085c34e" compoundref="infocommand_8cpp" startline="75" endline="138">InfoCommand::serviceDetailsDiscovered</referencedby>
+        <referencedby refid="classLoggerStartCommand_1a6b0922cf2e55e23c2df85cddf35e0b12" compoundref="loggerstartcommand_8cpp" startline="181" endline="196">LoggerStartCommand::settingsWritten</referencedby>
+        <referencedby refid="classLoggerStopCommand_1a0fc328ff975018ca87c14c38a56a2412" compoundref="loggerstopcommand_8cpp" startline="59" endline="74">LoggerStopCommand::settingsWritten</referencedby>
+        <referencedby refid="classCalibrateCommand_1afaf2c6153a3d409c06318dc809df1c78" compoundref="calibratecommand_8cpp" startline="99" endline="113">CalibrateCommand::temperatureCalibrated</referencedby>
+        <referencedby refid="classSetTorchCommand_1af4c7f99da529f36d29555565c814b82b" compoundref="settorchcommand_8cpp" startline="93" endline="107">SetTorchCommand::torchStatusWritten</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="classAbstractCommand_1aac51102b6b2db37c5c7c6a0373d55023" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class TestAbstractCommand</definition>
+        <argsstring></argsstring>
+        <name>TestAbstractCommand</name>
+        <qualifiedname>AbstractCommand::TestAbstractCommand</qualifiedname>
+        <param>
+          <type>TestAbstractCommand</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/abstractcommand.h" line="50" column="18" bodyfile="/home/paul/src/dokit/src/cli/abstractcommand.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classAbstractCommand_1a0d6fde269511e87aa6f178c1733073ae" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AbstractCommand::AbstractCommand</definition>
+        <argsstring>(QObject *const parent=nullptr)</argsstring>
+        <name>AbstractCommand</name>
+        <qualifiedname>AbstractCommand::AbstractCommand</qualifiedname>
+        <param>
+          <type><ref refid="qobject" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QObject</ref> *const</type>
+          <declname>parent</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+<para>Constructs a new command with <emphasis>parent</emphasis>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/abstractcommand.h" line="26" column="14" bodyfile="/home/paul/src/dokit/src/cli/abstractcommand.cpp" bodystart="23" bodyend="42"/>
+        <references refid="qobject_1connect-4">QObject::connect</references>
+        <references refid="classAbstractCommand_1a6ea2745014149145e803d64ca51057d9">deviceDiscovered</references>
+        <references refid="classAbstractCommand_1adb456a44bfe2f353e3a16aa720aeb299">deviceDiscoveryFinished</references>
+        <references refid="classAbstractCommand_1a86878df43cd818f4a7f333a97dabac3c" compoundref="abstractcommand_8h" startline="42">discoveryAgent</references>
+        <references refid="qbluetoothdevicediscoveryagent_1error">QBluetoothDeviceDiscoveryAgent::error</references>
+        <references refid="qbluetoothdevicediscoveryagent_1errorOccurred">QBluetoothDeviceDiscoveryAgent::errorOccurred</references>
+        <references refid="qcoreapplication_1exit">QCoreApplication::exit</references>
+        <references refid="qbluetoothdevicediscoveryagent_1finished">QBluetoothDeviceDiscoveryAgent::finished</references>
+        <references refid="qcoreapplication_1instance">QCoreApplication::instance</references>
+        <references refid="classPokitDiscoveryAgent_1af38e511ae250a745cc900c0c4f356972">PokitDiscoveryAgent::pokitDeviceDiscovered</references>
+        <references refid="qtimer_1singleShot-prop">QTimer::singleShot</references>
+        <references refid="qobject_1tr">QObject::tr</references>
+      </memberdef>
+      <memberdef kind="function" id="classAbstractCommand_1afd6f41cfc925751415cfa45e3b2d0b4a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="qstringlist" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QStringList</ref></type>
+        <definition>QStringList AbstractCommand::requiredOptions</definition>
+        <argsstring>(const QCommandLineParser &amp;parser) const</argsstring>
+        <name>requiredOptions</name>
+        <qualifiedname>AbstractCommand::requiredOptions</qualifiedname>
+        <reimplementedby refid="classCalibrateCommand_1af7e1febbafa251ff5b6991df2e97a100">requiredOptions</reimplementedby>
+        <reimplementedby refid="classDsoCommand_1abbdf205b4b6ca5271e8e8c6b633b0462">requiredOptions</reimplementedby>
+        <reimplementedby refid="classFlashLedCommand_1a24e230231849718572cad0d15ce1b0fb">requiredOptions</reimplementedby>
+        <reimplementedby refid="classInfoCommand_1a0464815b82409a3f99a98b94344057f2">requiredOptions</reimplementedby>
+        <reimplementedby refid="classLoggerStartCommand_1a12f7fe32eef2a07ebd30a647a7cb2dc0">requiredOptions</reimplementedby>
+        <reimplementedby refid="classMeterCommand_1a088f95f4012a564ccf690d42f480aeb7">requiredOptions</reimplementedby>
+        <reimplementedby refid="classScanCommand_1a1fbef848493eb849ba6382c00463f275">requiredOptions</reimplementedby>
+        <reimplementedby refid="classSetNameCommand_1abcffd0ec969f0b8b21bcfa4d55a6aac6">requiredOptions</reimplementedby>
+        <reimplementedby refid="classSetTorchCommand_1aa0516eddc57ee44761fd567831390734">requiredOptions</reimplementedby>
+        <reimplementedby refid="classStatusCommand_1a0ffa53750dce36026cfd38cb4bfc2170">requiredOptions</reimplementedby>
+        <param>
+          <type>const <ref refid="qcommandlineparser" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCommandLineParser</ref> &amp;</type>
+          <declname>parser</declname>
+        </param>
+        <briefdescription>
+<para>Returns a list of CLI option names required by this command. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The main console appication may use this list to output an eror (and exit) if any of the returned names are not found in the parsed CLI options.</para>
+<para>The (already parsed) <emphasis>parser</emphasis> may be used adjust the returned required options depending on the value of other options. For example, the <computeroutput>logger</computeroutput> command only requires the <computeroutput>--mode</computeroutput> option if the <computeroutput>--command</computeroutput> option is <computeroutput>start</computeroutput>.</para>
+<para>This base implementation simply returns an empty list. Derived classes should override this function to include any required options. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/abstractcommand.h" line="28" column="25" bodyfile="/home/paul/src/dokit/src/cli/abstractcommand.cpp" bodystart="56" bodyend="60"/>
+        <referencedby refid="classAbstractCommand_1ad827a18a24776efeb955739459d48f7d" compoundref="abstractcommand_8cpp" startline="265" endline="320">processOptions</referencedby>
+        <referencedby refid="classCalibrateCommand_1af7e1febbafa251ff5b6991df2e97a100" compoundref="calibratecommand_8cpp" startline="28" endline="33">CalibrateCommand::requiredOptions</referencedby>
+        <referencedby refid="classDsoCommand_1abbdf205b4b6ca5271e8e8c6b633b0462" compoundref="dsocommand_8cpp" startline="27" endline="33">DsoCommand::requiredOptions</referencedby>
+        <referencedby refid="classFlashLedCommand_1a24e230231849718572cad0d15ce1b0fb" compoundref="flashledcommand_8cpp" startline="25" endline="29">FlashLedCommand::requiredOptions</referencedby>
+        <referencedby refid="classInfoCommand_1a0464815b82409a3f99a98b94344057f2" compoundref="infocommand_8cpp" startline="28" endline="32">InfoCommand::requiredOptions</referencedby>
+        <referencedby refid="classLoggerStartCommand_1a12f7fe32eef2a07ebd30a647a7cb2dc0" compoundref="loggerstartcommand_8cpp" startline="28" endline="33">LoggerStartCommand::requiredOptions</referencedby>
+        <referencedby refid="classMeterCommand_1a088f95f4012a564ccf690d42f480aeb7" compoundref="metercommand_8cpp" startline="27" endline="32">MeterCommand::requiredOptions</referencedby>
+        <referencedby refid="classScanCommand_1a1fbef848493eb849ba6382c00463f275" compoundref="scancommand_8cpp" startline="33" endline="36">ScanCommand::requiredOptions</referencedby>
+        <referencedby refid="classSetNameCommand_1abcffd0ec969f0b8b21bcfa4d55a6aac6" compoundref="setnamecommand_8cpp" startline="25" endline="30">SetNameCommand::requiredOptions</referencedby>
+        <referencedby refid="classSetTorchCommand_1aa0516eddc57ee44761fd567831390734" compoundref="settorchcommand_8cpp" startline="24" endline="29">SetTorchCommand::requiredOptions</referencedby>
+        <referencedby refid="classStatusCommand_1a0ffa53750dce36026cfd38cb4bfc2170" compoundref="statuscommand_8cpp" startline="27" endline="31">StatusCommand::requiredOptions</referencedby>
+        <referencedby refid="classAbstractCommand_1a1ceca3c5b4cb24277dd4d4054f45db18" compoundref="abstractcommand_8cpp" startline="83" endline="91">supportedOptions</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classAbstractCommand_1a1ceca3c5b4cb24277dd4d4054f45db18" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="qstringlist" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QStringList</ref></type>
+        <definition>QStringList AbstractCommand::supportedOptions</definition>
+        <argsstring>(const QCommandLineParser &amp;parser) const</argsstring>
+        <name>supportedOptions</name>
+        <qualifiedname>AbstractCommand::supportedOptions</qualifiedname>
+        <reimplementedby refid="classCalibrateCommand_1ad5141714588ce39495c303ad65998ccd">supportedOptions</reimplementedby>
+        <reimplementedby refid="classDsoCommand_1a6569d0fd7b8307d6098e93092859301a">supportedOptions</reimplementedby>
+        <reimplementedby refid="classFlashLedCommand_1a1caaabf1668fac270ab1701e4daa0456">supportedOptions</reimplementedby>
+        <reimplementedby refid="classInfoCommand_1a1567186bd098ebc9141d3670f9e276ef">supportedOptions</reimplementedby>
+        <reimplementedby refid="classLoggerStartCommand_1ae36a761e489d15f3add5c661bc948a0a">supportedOptions</reimplementedby>
+        <reimplementedby refid="classMeterCommand_1aa32c65d3e27b6193af5a3bf802d7cccf">supportedOptions</reimplementedby>
+        <reimplementedby refid="classScanCommand_1afde6034e9362b2986aa5084b638930d6">supportedOptions</reimplementedby>
+        <reimplementedby refid="classSetNameCommand_1aacb8d820d9a4803f243c3def1a99ecd0">supportedOptions</reimplementedby>
+        <reimplementedby refid="classSetTorchCommand_1ae1806354bd1d14c3b4b9a212661f6eb9">supportedOptions</reimplementedby>
+        <reimplementedby refid="classStatusCommand_1a0b573e31edcf2aabde2b12d185c62121">supportedOptions</reimplementedby>
+        <param>
+          <type>const <ref refid="qcommandlineparser" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCommandLineParser</ref> &amp;</type>
+          <declname>parser</declname>
+        </param>
+        <briefdescription>
+<para>Returns a list of CLI option names supported by this command. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The main console appication may use this list to output a warning for any parsed CLI options not included in the returned list.</para>
+<para>The (already parsed) <emphasis>parser</emphasis> may be used adjust the returned supported options depending on the value of other options. For example, the <computeroutput>logger</computeroutput> command only supported the <computeroutput>--timestamp</computeroutput> option if the <computeroutput>--command</computeroutput> option is <computeroutput>start</computeroutput>.</para>
+<para>This base implementation simply returns <ref refid="classAbstractCommand_1afd6f41cfc925751415cfa45e3b2d0b4a" kindref="member">requiredOptions()</ref>. Derived classes should override this function to include optional options, such as:</para>
+<para><programlisting><codeline><highlight class="normal"><ref refid="qstringlist" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QStringList</ref><sp/>Derived::supportedOptions(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qcommandlineparser" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCommandLineParser</ref><sp/>&amp;parser)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qstringlist" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QStringList</ref><sp/>list<sp/>=<sp/><ref refid="classAbstractCommand_1a1ceca3c5b4cb24277dd4d4054f45db18" kindref="member">AbstractCommand::supportedOptions</ref>(parser)<sp/>+<sp/><ref refid="qstringlist" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QStringList</ref>{<sp/>...<sp/>};</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>list.<ref refid="qstringlist_1sort" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">sort</ref>();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>list.<ref refid="qstringlist_1removeDuplicates" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">removeDuplicates</ref>();<sp/></highlight><highlight class="comment">//<sp/>Optional,<sp/>recommended.</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>list;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/abstractcommand.h" line="29" column="25" bodyfile="/home/paul/src/dokit/src/cli/abstractcommand.cpp" bodystart="83" bodyend="91"/>
+        <references refid="classAbstractCommand_1afd6f41cfc925751415cfa45e3b2d0b4a" compoundref="abstractcommand_8cpp" startline="56" endline="60">requiredOptions</references>
+        <referencedby refid="classAbstractCommand_1ad827a18a24776efeb955739459d48f7d" compoundref="abstractcommand_8cpp" startline="265" endline="320">processOptions</referencedby>
+        <referencedby refid="classCalibrateCommand_1ad5141714588ce39495c303ad65998ccd" compoundref="calibratecommand_8cpp" startline="35" endline="38">CalibrateCommand::supportedOptions</referencedby>
+        <referencedby refid="classDsoCommand_1a6569d0fd7b8307d6098e93092859301a" compoundref="dsocommand_8cpp" startline="35" endline="43">DsoCommand::supportedOptions</referencedby>
+        <referencedby refid="classFlashLedCommand_1a1caaabf1668fac270ab1701e4daa0456" compoundref="flashledcommand_8cpp" startline="31" endline="34">FlashLedCommand::supportedOptions</referencedby>
+        <referencedby refid="classInfoCommand_1a1567186bd098ebc9141d3670f9e276ef" compoundref="infocommand_8cpp" startline="34" endline="37">InfoCommand::supportedOptions</referencedby>
+        <referencedby refid="classLoggerStartCommand_1ae36a761e489d15f3add5c661bc948a0a" compoundref="loggerstartcommand_8cpp" startline="35" endline="42">LoggerStartCommand::supportedOptions</referencedby>
+        <referencedby refid="classMeterCommand_1aa32c65d3e27b6193af5a3bf802d7cccf" compoundref="metercommand_8cpp" startline="34" endline="41">MeterCommand::supportedOptions</referencedby>
+        <referencedby refid="classScanCommand_1afde6034e9362b2986aa5084b638930d6" compoundref="scancommand_8cpp" startline="38" endline="42">ScanCommand::supportedOptions</referencedby>
+        <referencedby refid="classSetNameCommand_1aacb8d820d9a4803f243c3def1a99ecd0" compoundref="setnamecommand_8cpp" startline="32" endline="35">SetNameCommand::supportedOptions</referencedby>
+        <referencedby refid="classSetTorchCommand_1ae1806354bd1d14c3b4b9a212661f6eb9" compoundref="settorchcommand_8cpp" startline="31" endline="34">SetTorchCommand::supportedOptions</referencedby>
+        <referencedby refid="classStatusCommand_1a0b573e31edcf2aabde2b12d185c62121" compoundref="statuscommand_8cpp" startline="33" endline="36">StatusCommand::supportedOptions</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classAbstractCommand_1af85c842568f8a3a893e336e449ef7813" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref></type>
+        <definition>QString AbstractCommand::escapeCsvField</definition>
+        <argsstring>(const QString &amp;field)</argsstring>
+        <name>escapeCsvField</name>
+        <qualifiedname>AbstractCommand::escapeCsvField</qualifiedname>
+        <param>
+          <type>const <ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref> &amp;</type>
+          <declname>field</declname>
+        </param>
+        <briefdescription>
+<para>Returns an RFC 4180 compliant version of <emphasis>field</emphasis>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>That is, if <emphasis>field</emphasis> contains any of the the below four characters, than any double quotes are escaped (by addition double-quotes), and the string itself surrounded in double-quotes. Otherwise, <emphasis>field</emphasis> is returned verbatim.</para>
+<para>Some examples: <programlisting><codeline><highlight class="normal">QCOMPARE(<ref refid="classAbstractCommand_1af85c842568f8a3a893e336e449ef7813" kindref="member">escapeCsvField</ref>(</highlight><highlight class="stringliteral">&quot;abc&quot;</highlight><highlight class="normal">),<sp/></highlight><highlight class="stringliteral">&quot;abc&quot;</highlight><highlight class="normal">);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Returned<sp/>unchanged.</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">QCOMPARE(<ref refid="classAbstractCommand_1af85c842568f8a3a893e336e449ef7813" kindref="member">escapeCsvField</ref>(</highlight><highlight class="stringliteral">&quot;a,c&quot;</highlight><highlight class="normal">),<sp/>R</highlight><highlight class="stringliteral">&quot;(&quot;a,c&quot;)&quot;);<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Wrapped<sp/>in<sp/>double-quotes.</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">QCOMPARE(<ref refid="classAbstractCommand_1af85c842568f8a3a893e336e449ef7813" kindref="member">escapeCsvField</ref>(R</highlight><highlight class="stringliteral">&quot;(a&quot;c)&quot;),<sp/>R(</highlight><highlight class="stringliteral">&quot;(&quot;</highlight><highlight class="normal">a</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">c</highlight><highlight class="stringliteral">&quot;)&quot;</highlight><highlight class="normal">);<sp/></highlight><highlight class="comment">//<sp/>Existing<sp/>double-quotes<sp/>doubled,<sp/>then<sp/>wrapped.</highlight></codeline>
+</programlisting> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/abstractcommand.h" line="31" column="20" bodyfile="/home/paul/src/dokit/src/cli/abstractcommand.cpp" bodystart="105" bodyend="113"/>
+        <references refid="qstring_1arg-14">QString::arg</references>
+        <references refid="qstring_1contains-1">QString::contains</references>
+        <references refid="qstring_1fromLatin1-1">QString::fromLatin1</references>
+        <referencedby refid="classScanCommand_1ac9f53dee63d2dfaa3acf82e71db01d64" compoundref="scancommand_8cpp" startline="69" endline="88">ScanCommand::deviceDiscovered</referencedby>
+        <referencedby refid="classStatusCommand_1ae2349e3d64b1b4db9b80465c0b7dadb7" compoundref="statuscommand_8cpp" startline="89" endline="195">StatusCommand::outputDeviceStatus</referencedby>
+        <referencedby refid="classMeterCommand_1a551a1c3d1c6f10384b5ccf264a640eff" compoundref="metercommand_8cpp" startline="204" endline="288">MeterCommand::outputReading</referencedby>
+        <referencedby refid="classInfoCommand_1a06d095d57662fd10b201d6273085c34e" compoundref="infocommand_8cpp" startline="75" endline="138">InfoCommand::serviceDetailsDiscovered</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classAbstractCommand_1a29b2a2446ef034195183a2ae9d4bb911" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename R</type>
+          </param>
+        </templateparamlist>
+        <type>quint32</type>
+        <definition>quint32 AbstractCommand::parseNumber</definition>
+        <argsstring>(const QString &amp;value, const QString &amp;unit, const quint32 sensibleMinimum=0)</argsstring>
+        <name>parseNumber</name>
+        <qualifiedname>AbstractCommand::parseNumber</qualifiedname>
+        <param>
+          <type>const <ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref> &amp;</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>const <ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref> &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <param>
+          <type>const quint32</type>
+          <declname>sensibleMinimum</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Returns <emphasis>value</emphasis> as an integer multiple of the ratio <emphasis>R</emphasis>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The string <emphasis>value</emphasis> may end with the optional <emphasis>unit</emphasis>, such as <computeroutput>V</computeroutput> or <computeroutput>s</computeroutput>, which may also be preceded with a SI unit prefix such as <computeroutput>m</computeroutput> for <computeroutput>milli</computeroutput>. If <emphasis>value</emphasis> contains no SI unit prefix, then the result will be multiplied by 1,000 enough times to be greater than <emphasis>sensibleMinimum</emphasis>. This allows for convenient use like:</para>
+<para><programlisting><codeline><highlight class="keyword">const</highlight><highlight class="normal"><sp/>quint32<sp/>timeout<sp/>=<sp/><ref refid="classAbstractCommand_1a29b2a2446ef034195183a2ae9d4bb911" kindref="member">parseNumber&lt;std::milli&gt;</ref>(parser.value(</highlight><highlight class="stringliteral">&quot;window&quot;</highlight><highlight class="normal">),<sp/></highlight><highlight class="charliteral">&apos;s&apos;</highlight><highlight class="normal">,<sp/>500&apos;000);</highlight></codeline>
+</programlisting></para>
+<para>So that an unqalified period like &quot;300&quot; will be assumed to be 300 milliseconds, and not 300 microseconds, while a period like &quot;1000&quot; will be assume to be 1 second.</para>
+<para>If conversion fails for any reason, 0 is returned. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/abstractcommand.h" line="34" column="20" bodyfile="/home/paul/src/dokit/src/cli/abstractcommand.cpp" bodystart="149" bodyend="218"/>
+        <references refid="qstring_1at">QString::at</references>
+        <references refid="qstring_1back-1">QString::back</references>
+        <references refid="qt_1CaseSensitivity-enum">Qt::CaseInsensitive</references>
+        <references refid="qstring_1chop">QString::chop</references>
+        <references refid="qstring_1endsWith-3">QString::endsWith</references>
+        <references refid="qstring_1isEmpty">QString::isEmpty</references>
+        <references refid="structRatio_1abbfb48e8ebeec5666385f38b31f94215" compoundref="abstractcommand_8cpp" startline="123" endline="123">Ratio::isValid</references>
+        <references refid="qstring_1length">QString::length</references>
+        <references refid="structRatio_1a8e07dbd09bf3610c9e3f2d7ddf3f4691" compoundref="abstractcommand_8cpp" startline="120" endline="120">Ratio::num</references>
+        <references refid="qstring_1size">QString::size</references>
+        <references refid="qlocale_1toDouble-1">QLocale::toDouble</references>
+        <references refid="qlocale_1toULongLong-1">QLocale::toULongLong</references>
+        <references refid="qstring_1trimmed">QString::trimmed</references>
+        <referencedby refid="classAbstractCommand_1ad827a18a24776efeb955739459d48f7d" compoundref="abstractcommand_8cpp" startline="265" endline="320">processOptions</referencedby>
+        <referencedby refid="classDsoCommand_1a87db950042b5ea7707bd76648536c943" compoundref="dsocommand_8cpp" startline="51" endline="162">DsoCommand::processOptions</referencedby>
+        <referencedby refid="classLoggerStartCommand_1a2dea05a52eab344c52648513e5fecbd3" compoundref="loggerstartcommand_8cpp" startline="50" endline="129">LoggerStartCommand::processOptions</referencedby>
+        <referencedby refid="classMeterCommand_1a7252ac9a772bc45e374da30bbc23ed85" compoundref="metercommand_8cpp" startline="49" endline="141">MeterCommand::processOptions</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-slot">
+      <memberdef kind="slot" id="classAbstractCommand_1ad827a18a24776efeb955739459d48f7d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="qstringlist" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QStringList</ref></type>
+        <definition>QStringList AbstractCommand::processOptions</definition>
+        <argsstring>(const QCommandLineParser &amp;parser)</argsstring>
+        <name>processOptions</name>
+        <qualifiedname>AbstractCommand::processOptions</qualifiedname>
+        <param>
+          <type>const <ref refid="qcommandlineparser" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCommandLineParser</ref> &amp;</type>
+          <declname>parser</declname>
+        </param>
+        <briefdescription>
+<para>Processes the relevant options from the command line <emphasis>parser</emphasis>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>On success, returns an empty <ref refid="qstringlist" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QStringList</ref>, otherwise returns a list of CLI errors that the caller should report appropriately before exiting.</para>
+<para>This base implementations performs some common checks, such as ensuring that required options are present. Derived classes should override this function to perform further processing, typically inovking this base implementation as a first step, such as:</para>
+<para><programlisting><codeline><highlight class="normal"><ref refid="qstringlist" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QStringList</ref><sp/>CustomCommand::processOptions(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qcommandlineparser" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCommandLineParser</ref><sp/>&amp;parser)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="qstringlist" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QStringList</ref><sp/>errors<sp/>=<sp/><ref refid="classAbstractCommand_1ad827a18a24776efeb955739459d48f7d" kindref="member">AbstractCommand::processOptions</ref>(parser);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!errors.<ref refid="qlist_1isEmpty" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">isEmpty</ref>())<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>errors;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Do<sp/>further<sp/>procession<sp/>of<sp/>options.</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>errors;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/abstractcommand.h" line="37" column="25" bodyfile="/home/paul/src/dokit/src/cli/abstractcommand.cpp" bodystart="265" bodyend="320"/>
+        <references refid="qlist_1append">QList::append</references>
+        <references refid="qstring_1arg-14">QString::arg</references>
+        <references refid="qstringlist_1contains-1">QStringList::contains</references>
+        <references refid="classAbstractCommand_1aa2dadc72289ff2b0a02c1fb435f8a4dcab20daea8bfacec3891fcf5b7be4adca0">Csv</references>
+        <references refid="classAbstractCommand_1a07d979bc039d61f5c720cb1521b31208" compoundref="abstractcommand_8h" startline="41">deviceToScanFor</references>
+        <references refid="classAbstractCommand_1a86878df43cd818f4a7f333a97dabac3c" compoundref="abstractcommand_8h" startline="42">discoveryAgent</references>
+        <references refid="classAbstractCommand_1a881d85cd96b6fcc0652b916c366dda7b" compoundref="abstractcommand_8h" startline="43" endline="43">format</references>
+        <references refid="qcommandlineparser_1isSet-1">QCommandLineParser::isSet</references>
+        <references refid="classAbstractCommand_1aa2dadc72289ff2b0a02c1fb435f8a4dcaeed8d85b888a6c015834240885ee6333">Json</references>
+        <references refid="qbluetoothdevicediscoveryagent_1lowEnergyDiscoveryTimeout">QBluetoothDeviceDiscoveryAgent::lowEnergyDiscoveryTimeout</references>
+        <references refid="qcommandlineparser_1optionNames">QCommandLineParser::optionNames</references>
+        <references refid="classAbstractCommand_1a29b2a2446ef034195183a2ae9d4bb911" compoundref="abstractcommand_8cpp" startline="149" endline="218">parseNumber</references>
+        <references refid="classAbstractCommand_1afd6f41cfc925751415cfa45e3b2d0b4a" compoundref="abstractcommand_8cpp" startline="56" endline="60">requiredOptions</references>
+        <references refid="qbluetoothdevicediscoveryagent_1setLowEnergyDiscoveryTimeout">QBluetoothDeviceDiscoveryAgent::setLowEnergyDiscoveryTimeout</references>
+        <references refid="classAbstractCommand_1a1ceca3c5b4cb24277dd4d4054f45db18" compoundref="abstractcommand_8cpp" startline="83" endline="91">supportedOptions</references>
+        <references refid="classAbstractCommand_1aa2dadc72289ff2b0a02c1fb435f8a4dca9dffbf69ffba8bc38bc4e01abf4b1675">Text</references>
+        <references refid="qstring_1toLower">QString::toLower</references>
+        <references refid="qobject_1tr">QObject::tr</references>
+        <references refid="qcommandlineparser_1value-1">QCommandLineParser::value</references>
+        <referencedby refid="classCalibrateCommand_1a34d413f046b88ee5881981f41205801a" compoundref="calibratecommand_8cpp" startline="46" endline="62">CalibrateCommand::processOptions</referencedby>
+        <referencedby refid="classDsoCommand_1a87db950042b5ea7707bd76648536c943" compoundref="dsocommand_8cpp" startline="51" endline="162">DsoCommand::processOptions</referencedby>
+        <referencedby refid="classFlashLedCommand_1ab2062e5ec29315ca83589a7302f7ae6f" compoundref="flashledcommand_8cpp" startline="42" endline="50">FlashLedCommand::processOptions</referencedby>
+        <referencedby refid="classInfoCommand_1a7d815cb4b0133025e4354649e2cd7a6a" compoundref="infocommand_8cpp" startline="45" endline="53">InfoCommand::processOptions</referencedby>
+        <referencedby refid="classLoggerStartCommand_1a2dea05a52eab344c52648513e5fecbd3" compoundref="loggerstartcommand_8cpp" startline="50" endline="129">LoggerStartCommand::processOptions</referencedby>
+        <referencedby refid="classMeterCommand_1a7252ac9a772bc45e374da30bbc23ed85" compoundref="metercommand_8cpp" startline="49" endline="141">MeterCommand::processOptions</referencedby>
+        <referencedby refid="classScanCommand_1a9998ef360fde53be932dc3059e86578e" compoundref="scancommand_8cpp" startline="45" endline="53">ScanCommand::processOptions</referencedby>
+        <referencedby refid="classSetNameCommand_1aac72587ddb035857cd224d843fc3d00c" compoundref="setnamecommand_8cpp" startline="43" endline="57">SetNameCommand::processOptions</referencedby>
+        <referencedby refid="classSetTorchCommand_1a87329864f3038af5f53f2707cad1506e" compoundref="settorchcommand_8cpp" startline="42" endline="58">SetTorchCommand::processOptions</referencedby>
+        <referencedby refid="classStatusCommand_1a951404b4913fd4b341899d654a2abe72" compoundref="statuscommand_8cpp" startline="44" endline="52">StatusCommand::processOptions</referencedby>
+      </memberdef>
+      <memberdef kind="slot" id="classAbstractCommand_1ad4664b6dc4dd3d45d20a5f16f2d21610" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool AbstractCommand::start</definition>
+        <argsstring>()=0</argsstring>
+        <name>start</name>
+        <qualifiedname>AbstractCommand::start</qualifiedname>
+        <briefdescription>
+<para>Begins the functionality of this command, and returns <computeroutput>true</computeroutput> if begun successfully, <computeroutput>false</computeroutput> otherwise. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/abstractcommand.h" line="38" column="18"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-static-func">
+      <memberdef kind="function" id="classAbstractCommand_1ac8bafb6db670b3c127ab59130584274f" prot="protected" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>static</type>
+        <definition>static AbstractCommand::Q_LOGGING_CATEGORY</definition>
+        <argsstring>(lc, &quot;dokit.cli.command&quot;, QtInfoMsg)</argsstring>
+        <name>Q_LOGGING_CATEGORY</name>
+        <qualifiedname>AbstractCommand::Q_LOGGING_CATEGORY</qualifiedname>
+        <param>
+          <type>lc</type>
+        </param>
+        <param>
+          <type>&quot;dokit.cli.command&quot;</type>
+        </param>
+        <param>
+          <type>QtInfoMsg</type>
+        </param>
+        <briefdescription>
+<para>Logging category for UI commands. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/abstractcommand.h" line="44" column="12"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-slot">
+      <memberdef kind="slot" id="classAbstractCommand_1a6ea2745014149145e803d64ca51057d9" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void AbstractCommand::deviceDiscovered</definition>
+        <argsstring>(const QBluetoothDeviceInfo &amp;info)=0</argsstring>
+        <name>deviceDiscovered</name>
+        <qualifiedname>AbstractCommand::deviceDiscovered</qualifiedname>
+        <param>
+          <type>const <ref refid="qbluetoothdeviceinfo" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothDeviceInfo</ref> &amp;</type>
+          <declname>info</declname>
+        </param>
+        <briefdescription>
+<para>Handles <ref refid="classPokitDiscoveryAgent_1af38e511ae250a745cc900c0c4f356972" kindref="member">PokitDiscoveryAgent::pokitDeviceDiscovered</ref> signal. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Derived classes must implement this slot to begin whatever actions are relevant when a Pokit device has been discovered. For example, the &apos;scan&apos; command would simply output the <emphasis>info</emphasis> details, whereas most other commands would begin connecting if <emphasis>info</emphasis> is the device they&apos;re after. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/abstractcommand.h" line="47" column="18"/>
+        <referencedby refid="classAbstractCommand_1a0d6fde269511e87aa6f178c1733073ae" compoundref="abstractcommand_8cpp" startline="23" endline="42">AbstractCommand</referencedby>
+      </memberdef>
+      <memberdef kind="slot" id="classAbstractCommand_1adb456a44bfe2f353e3a16aa720aeb299" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void AbstractCommand::deviceDiscoveryFinished</definition>
+        <argsstring>()=0</argsstring>
+        <name>deviceDiscoveryFinished</name>
+        <qualifiedname>AbstractCommand::deviceDiscoveryFinished</qualifiedname>
+        <briefdescription>
+<para>Handles PokitDiscoveryAgent::deviceDiscoveryFinished signal. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Derived classes must implement this slot to perform whatever actions are appropraite when discovery is finished. For example, the &apos;scan&apos; command would simply exit, whereas most other commands would verify that an appropriate device was found. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/abstractcommand.h" line="48" column="18"/>
+        <referencedby refid="classAbstractCommand_1a0d6fde269511e87aa6f178c1733073ae" compoundref="abstractcommand_8cpp" startline="23" endline="42">AbstractCommand</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>The <ref refid="classAbstractCommand" kindref="compound">AbstractCommand</ref> class provides a consistent base for the classes that implement CLI commands. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>AbstractCommand</label>
+        <link refid="classAbstractCommand"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>CalibrateCommand</label>
+        <link refid="classCalibrateCommand"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>DeviceCommand</label>
+        <link refid="classDeviceCommand"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>DsoCommand</label>
+        <link refid="classDsoCommand"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>FlashLedCommand</label>
+        <link refid="classFlashLedCommand"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>InfoCommand</label>
+        <link refid="classInfoCommand"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>LoggerFetchCommand</label>
+        <link refid="classLoggerFetchCommand"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>LoggerStartCommand</label>
+        <link refid="classLoggerStartCommand"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>LoggerStopCommand</label>
+        <link refid="classLoggerStopCommand"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>MeterCommand</label>
+        <link refid="classMeterCommand"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QObject</label>
+        <link refid="qobject" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags"/>
+      </node>
+      <node id="15">
+        <label>ScanCommand</label>
+        <link refid="classScanCommand"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>SetNameCommand</label>
+        <link refid="classSetNameCommand"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>SetTorchCommand</label>
+        <link refid="classSetTorchCommand"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>StatusCommand</label>
+        <link refid="classStatusCommand"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>AbstractCommand</label>
+        <link refid="classAbstractCommand"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>deviceToScanFor</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>discoveryAgent</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>PokitDiscoveryAgent</label>
+        <link refid="classPokitDiscoveryAgent"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>d_ptr</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>PokitDiscoveryAgentPrivate</label>
+        <link refid="classPokitDiscoveryAgentPrivate"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>q_ptr</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>QBluetoothDeviceDiscoveryAgent</label>
+        <link refid="qbluetoothdevicediscoveryagent" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QObject</label>
+        <link refid="qobject" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags"/>
+      </node>
+      <node id="3">
+        <label>QString</label>
+        <link refid="qstring" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/paul/src/dokit/src/cli/abstractcommand.h" line="14" column="1" bodyfile="/home/paul/src/dokit/src/cli/abstractcommand.h" bodystart="15" bodyend="51"/>
+    <listofallmembers>
+      <member refid="classAbstractCommand_1a0d6fde269511e87aa6f178c1733073ae" prot="public" virt="non-virtual"><scope>AbstractCommand</scope><name>AbstractCommand</name></member>
+      <member refid="qobject_1objectName-prop" prot="public" virt="non-virtual"><scope>AbstractCommand</scope><name>bindableObjectName</name></member>
+      <member refid="qobject_1blockSignals" prot="public" virt="non-virtual"><scope>AbstractCommand</scope><name>blockSignals</name></member>
+      <member refid="qobject_1childEvent" prot="protected" virt="virtual"><scope>AbstractCommand</scope><name>childEvent</name></member>
+      <member refid="qobject_1children" prot="public" virt="non-virtual"><scope>AbstractCommand</scope><name>children</name></member>
+      <member refid="qobject_1connect-4" prot="public" virt="non-virtual"><scope>AbstractCommand</scope><name>connect</name></member>
+      <member refid="qobject_1connect-5" prot="public" virt="non-virtual"><scope>AbstractCommand</scope><name>connect</name></member>
+      <member refid="qobject_1connect-3" prot="public" virt="non-virtual"><scope>AbstractCommand</scope><name>connect</name></member>
+      <member refid="qobject_1connect-1" prot="public" virt="non-virtual"><scope>AbstractCommand</scope><name>connect</name></member>
+      <member refid="qobject_1connect" prot="public" virt="non-virtual"><scope>AbstractCommand</scope><name>connect</name></member>
+      <member refid="qobject_1connect-2" prot="public" virt="non-virtual"><scope>AbstractCommand</scope><name>connect</name></member>
+      <member refid="qobject_1connectNotify" prot="protected" virt="virtual"><scope>AbstractCommand</scope><name>connectNotify</name></member>
+      <member refid="qobject_1customEvent" prot="protected" virt="virtual"><scope>AbstractCommand</scope><name>customEvent</name></member>
+      <member refid="qobject_1deleteLater" prot="public" virt="non-virtual"><scope>AbstractCommand</scope><name>deleteLater</name></member>
+      <member refid="qobject_1destroyed" prot="public" virt="non-virtual"><scope>AbstractCommand</scope><name>destroyed</name></member>
+      <member refid="classAbstractCommand_1a6ea2745014149145e803d64ca51057d9" prot="protected" virt="pure-virtual"><scope>AbstractCommand</scope><name>deviceDiscovered</name></member>
+      <member refid="classAbstractCommand_1adb456a44bfe2f353e3a16aa720aeb299" prot="protected" virt="pure-virtual"><scope>AbstractCommand</scope><name>deviceDiscoveryFinished</name></member>
+      <member refid="classAbstractCommand_1a07d979bc039d61f5c720cb1521b31208" prot="protected" virt="non-virtual"><scope>AbstractCommand</scope><name>deviceToScanFor</name></member>
+      <member refid="qobject_1disconnect-4" prot="public" virt="non-virtual"><scope>AbstractCommand</scope><name>disconnect</name></member>
+      <member refid="qobject_1disconnect-5" prot="public" virt="non-virtual"><scope>AbstractCommand</scope><name>disconnect</name></member>
+      <member refid="qobject_1disconnect-1" prot="public" virt="non-virtual"><scope>AbstractCommand</scope><name>disconnect</name></member>
+      <member refid="qobject_1disconnect" prot="public" virt="non-virtual"><scope>AbstractCommand</scope><name>disconnect</name></member>
+      <member refid="qobject_1disconnect-3" prot="public" virt="non-virtual"><scope>AbstractCommand</scope><name>disconnect</name></member>
+      <member refid="qobject_1disconnect-2" prot="public" virt="non-virtual"><scope>AbstractCommand</scope><name>disconnect</name></member>
+      <member refid="qobject_1disconnectNotify" prot="protected" virt="virtual"><scope>AbstractCommand</scope><name>disconnectNotify</name></member>
+      <member refid="classAbstractCommand_1a86878df43cd818f4a7f333a97dabac3c" prot="protected" virt="non-virtual"><scope>AbstractCommand</scope><name>discoveryAgent</name></member>
+      <member refid="qobject_1dumpObjectInfo" prot="public" virt="non-virtual"><scope>AbstractCommand</scope><name>dumpObjectInfo</name></member>
+      <member refid="qobject_1dumpObjectTree" prot="public" virt="non-virtual"><scope>AbstractCommand</scope><name>dumpObjectTree</name></member>
+      <member refid="qobject_1dynamicPropertyNames" prot="public" virt="non-virtual"><scope>AbstractCommand</scope><name>dynamicPropertyNames</name></member>
+      <member refid="classAbstractCommand_1af85c842568f8a3a893e336e449ef7813" prot="public" virt="non-virtual"><scope>AbstractCommand</scope><name>escapeCsvField</name></member>
+      <member refid="qobject_1event" prot="public" virt="virtual"><scope>AbstractCommand</scope><name>event</name></member>
+      <member refid="qobject_1eventFilter" prot="public" virt="virtual"><scope>AbstractCommand</scope><name>eventFilter</name></member>
+      <member refid="qobject_1findChild" prot="public" virt="non-virtual"><scope>AbstractCommand</scope><name>findChild</name></member>
+      <member refid="qobject_1findChildren-1" prot="public" virt="non-virtual"><scope>AbstractCommand</scope><name>findChildren</name></member>
+      <member refid="qobject_1findChildren-2" prot="public" virt="non-virtual"><scope>AbstractCommand</scope><name>findChildren</name></member>
+      <member refid="qobject_1findChildren" prot="public" virt="non-virtual"><scope>AbstractCommand</scope><name>findChildren</name></member>
+      <member refid="classAbstractCommand_1a881d85cd96b6fcc0652b916c366dda7b" prot="protected" virt="non-virtual"><scope>AbstractCommand</scope><name>format</name></member>
+      <member refid="qobject_1inherits" prot="public" virt="non-virtual"><scope>AbstractCommand</scope><name>inherits</name></member>
+      <member refid="qobject_1installEventFilter" prot="public" virt="non-virtual"><scope>AbstractCommand</scope><name>installEventFilter</name></member>
+      <member refid="qobject_1isQuickItemType" prot="public" virt="non-virtual"><scope>AbstractCommand</scope><name>isQuickItemType</name></member>
+      <member refid="qobject_1isSignalConnected" prot="protected" virt="non-virtual"><scope>AbstractCommand</scope><name>isSignalConnected</name></member>
+      <member refid="qobject_1isWidgetType" prot="public" virt="non-virtual"><scope>AbstractCommand</scope><name>isWidgetType</name></member>
+      <member refid="qobject_1isWindowType" prot="public" virt="non-virtual"><scope>AbstractCommand</scope><name>isWindowType</name></member>
+      <member refid="qobject_1killTimer" prot="public" virt="non-virtual"><scope>AbstractCommand</scope><name>killTimer</name></member>
+      <member refid="qobject_1metaObject" prot="public" virt="virtual"><scope>AbstractCommand</scope><name>metaObject</name></member>
+      <member refid="qobject_1moveToThread" prot="public" virt="non-virtual"><scope>AbstractCommand</scope><name>moveToThread</name></member>
+      <member refid="qobject_1objectName-prop" prot="public" virt="non-virtual"><scope>AbstractCommand</scope><name>objectName</name></member>
+      <member refid="qobject_1objectName-prop" prot="public" virt="non-virtual"><scope>AbstractCommand</scope><name>objectName</name></member>
+      <member refid="qobject_1objectNameChanged" prot="public" virt="non-virtual"><scope>AbstractCommand</scope><name>objectNameChanged</name></member>
+      <member refid="classAbstractCommand_1aa2dadc72289ff2b0a02c1fb435f8a4dc" prot="public" virt="non-virtual"><scope>AbstractCommand</scope><name>OutputFormat</name></member>
+      <member refid="qobject_1parent" prot="public" virt="non-virtual"><scope>AbstractCommand</scope><name>parent</name></member>
+      <member refid="classAbstractCommand_1a29b2a2446ef034195183a2ae9d4bb911" prot="public" virt="non-virtual"><scope>AbstractCommand</scope><name>parseNumber</name></member>
+      <member refid="classAbstractCommand_1ad827a18a24776efeb955739459d48f7d" prot="public" virt="virtual"><scope>AbstractCommand</scope><name>processOptions</name></member>
+      <member refid="qobject_1property" prot="public" virt="non-virtual"><scope>AbstractCommand</scope><name>property</name></member>
+      <member refid="qobject_1Q_CLASSINFO" prot="public" virt="non-virtual"><scope>AbstractCommand</scope><name>Q_CLASSINFO</name></member>
+      <member refid="qobject_1Q_EMIT" prot="public" virt="non-virtual"><scope>AbstractCommand</scope><name>Q_EMIT</name></member>
+      <member refid="qobject_1Q_ENUM" prot="public" virt="non-virtual"><scope>AbstractCommand</scope><name>Q_ENUM</name></member>
+      <member refid="qobject_1Q_ENUM_NS" prot="public" virt="non-virtual"><scope>AbstractCommand</scope><name>Q_ENUM_NS</name></member>
+      <member refid="qobject-obsolete_1Q_ENUMS" prot="public" virt="non-virtual"><scope>AbstractCommand</scope><name>Q_ENUMS</name></member>
+      <member refid="qobject_1Q_FLAG" prot="public" virt="non-virtual"><scope>AbstractCommand</scope><name>Q_FLAG</name></member>
+      <member refid="qobject_1Q_FLAG_NS" prot="public" virt="non-virtual"><scope>AbstractCommand</scope><name>Q_FLAG_NS</name></member>
+      <member refid="qobject-obsolete_1Q_FLAGS" prot="public" virt="non-virtual"><scope>AbstractCommand</scope><name>Q_FLAGS</name></member>
+      <member refid="qobject_1Q_GADGET" prot="public" virt="non-virtual"><scope>AbstractCommand</scope><name>Q_GADGET</name></member>
+      <member refid="qobject_1Q_GADGET_EXPORT" prot="public" virt="non-virtual"><scope>AbstractCommand</scope><name>Q_GADGET_EXPORT</name></member>
+      <member refid="qobject_1Q_INTERFACES" prot="public" virt="non-virtual"><scope>AbstractCommand</scope><name>Q_INTERFACES</name></member>
+      <member refid="qobject_1Q_INVOKABLE" prot="public" virt="non-virtual"><scope>AbstractCommand</scope><name>Q_INVOKABLE</name></member>
+      <member refid="classAbstractCommand_1ac8bafb6db670b3c127ab59130584274f" prot="protected" virt="non-virtual"><scope>AbstractCommand</scope><name>Q_LOGGING_CATEGORY</name></member>
+      <member refid="qobject_1Q_MOC_INCLUDE" prot="public" virt="non-virtual"><scope>AbstractCommand</scope><name>Q_MOC_INCLUDE</name></member>
+      <member refid="qobject_1Q_NAMESPACE" prot="public" virt="non-virtual"><scope>AbstractCommand</scope><name>Q_NAMESPACE</name></member>
+      <member refid="qobject_1Q_NAMESPACE_EXPORT" prot="public" virt="non-virtual"><scope>AbstractCommand</scope><name>Q_NAMESPACE_EXPORT</name></member>
+      <member refid="qobject_1Q_OBJECT" prot="public" virt="non-virtual"><scope>AbstractCommand</scope><name>Q_OBJECT</name></member>
+      <member refid="qobject_1Q_PROPERTY" prot="public" virt="non-virtual"><scope>AbstractCommand</scope><name>Q_PROPERTY</name></member>
+      <member refid="qobject_1Q_REVISION" prot="public" virt="non-virtual"><scope>AbstractCommand</scope><name>Q_REVISION</name></member>
+      <member refid="qobject_1Q_SET_OBJECT_NAME" prot="public" virt="non-virtual"><scope>AbstractCommand</scope><name>Q_SET_OBJECT_NAME</name></member>
+      <member refid="qobject_1Q_SIGNAL" prot="public" virt="non-virtual"><scope>AbstractCommand</scope><name>Q_SIGNAL</name></member>
+      <member refid="qobject_1Q_SIGNALS" prot="public" virt="non-virtual"><scope>AbstractCommand</scope><name>Q_SIGNALS</name></member>
+      <member refid="qobject_1Q_SLOT" prot="public" virt="non-virtual"><scope>AbstractCommand</scope><name>Q_SLOT</name></member>
+      <member refid="qobject_1Q_SLOTS" prot="public" virt="non-virtual"><scope>AbstractCommand</scope><name>Q_SLOTS</name></member>
+      <member refid="qobject_1QObject" prot="public" virt="non-virtual"><scope>AbstractCommand</scope><name>QObject</name></member>
+      <member refid="qobject_1qobject_cast" prot="public" virt="non-virtual"><scope>AbstractCommand</scope><name>qobject_cast</name></member>
+      <member refid="qobject_1qobject_cast-1" prot="public" virt="non-virtual"><scope>AbstractCommand</scope><name>qobject_cast</name></member>
+      <member refid="qobject_1QObjectList-typedef" prot="public" virt="non-virtual"><scope>AbstractCommand</scope><name>QObjectList</name></member>
+      <member refid="qobject_1QT_NO_NARROWING_CONVERSIONS_IN_CONNECT" prot="public" virt="non-virtual"><scope>AbstractCommand</scope><name>QT_NO_NARROWING_CONVERSIONS_IN_CONNECT</name></member>
+      <member refid="qobject_1receivers" prot="protected" virt="non-virtual"><scope>AbstractCommand</scope><name>receivers</name></member>
+      <member refid="qobject_1removeEventFilter" prot="public" virt="non-virtual"><scope>AbstractCommand</scope><name>removeEventFilter</name></member>
+      <member refid="classAbstractCommand_1afd6f41cfc925751415cfa45e3b2d0b4a" prot="public" virt="virtual"><scope>AbstractCommand</scope><name>requiredOptions</name></member>
+      <member refid="qobject_1sender" prot="protected" virt="non-virtual"><scope>AbstractCommand</scope><name>sender</name></member>
+      <member refid="qobject_1senderSignalIndex" prot="protected" virt="non-virtual"><scope>AbstractCommand</scope><name>senderSignalIndex</name></member>
+      <member refid="qobject_1setObjectName-1" prot="public" virt="non-virtual"><scope>AbstractCommand</scope><name>setObjectName</name></member>
+      <member refid="qobject_1setObjectName" prot="public" virt="non-virtual"><scope>AbstractCommand</scope><name>setObjectName</name></member>
+      <member refid="qobject_1setParent" prot="public" virt="non-virtual"><scope>AbstractCommand</scope><name>setParent</name></member>
+      <member refid="qobject_1setProperty-1" prot="public" virt="non-virtual"><scope>AbstractCommand</scope><name>setProperty</name></member>
+      <member refid="qobject_1setProperty" prot="public" virt="non-virtual"><scope>AbstractCommand</scope><name>setProperty</name></member>
+      <member refid="qobject_1signalsBlocked" prot="public" virt="non-virtual"><scope>AbstractCommand</scope><name>signalsBlocked</name></member>
+      <member refid="classAbstractCommand_1ad4664b6dc4dd3d45d20a5f16f2d21610" prot="public" virt="pure-virtual"><scope>AbstractCommand</scope><name>start</name></member>
+      <member refid="qobject_1startTimer" prot="public" virt="non-virtual"><scope>AbstractCommand</scope><name>startTimer</name></member>
+      <member refid="qobject_1startTimer-1" prot="public" virt="non-virtual"><scope>AbstractCommand</scope><name>startTimer</name></member>
+      <member refid="classAbstractCommand_1a1ceca3c5b4cb24277dd4d4054f45db18" prot="public" virt="virtual"><scope>AbstractCommand</scope><name>supportedOptions</name></member>
+      <member refid="classAbstractCommand_1aac51102b6b2db37c5c7c6a0373d55023" prot="protected" virt="non-virtual"><scope>AbstractCommand</scope><name>TestAbstractCommand</name></member>
+      <member refid="qobject_1thread" prot="public" virt="non-virtual"><scope>AbstractCommand</scope><name>thread</name></member>
+      <member refid="qobject_1timerEvent" prot="protected" virt="virtual"><scope>AbstractCommand</scope><name>timerEvent</name></member>
+      <member refid="qobject_1tr" prot="public" virt="non-virtual"><scope>AbstractCommand</scope><name>tr</name></member>
+      <member refid="qobject_1dtor.QObject" prot="public" virt="virtual"><scope>AbstractCommand</scope><name>~QObject</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

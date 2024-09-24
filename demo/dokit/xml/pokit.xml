@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.0" xml:lang="en-US">
+  <compounddef id="pokit" kind="page">
+    <compoundname>pokit</compoundname>
+    <title>Pokit API Errata</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><variablelist>
+<varlistentry><term>Member <ref refid="classDataLoggerServicePrivate_1a774d21863bf83168171143ec8492a736" kindref="member">DataLoggerServicePrivate::encodeSettings</ref>  (const <ref refid="structDataLoggerService_1_1Settings" kindref="compound">DataLoggerService::Settings</ref> &amp;settings, const bool updateIntervalIs32bit)</term></varlistentry>
+<listitem><para><anchor id="pokit_1_pokit000001"/> For Pokit Meter, <computeroutput>updateInterval</computeroutput> is <computeroutput>uint16</computeroutput> seconds (as per the Pokit API 1.00), however for Pokit Pro it&apos;s <computeroutput>uint32</computeroutput> milliseconds, even though that&apos;s not officially documented anywhere.  </para>
+</listitem>
+<varlistentry><term>Member <ref refid="classDataLoggerServicePrivate_1aed59b28db53cea0757289a0960bed3fd" kindref="member">DataLoggerServicePrivate::parseMetadata</ref>  (const <ref refid="qbytearray" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QByteArray</ref> &amp;value)</term></varlistentry>
+<listitem><para><anchor id="pokit_1_pokit000002"/> For Pokit Meter, <computeroutput>updateInterval</computeroutput> is <computeroutput>uint16</computeroutput> (as per the Pokit API 1.00), however for Pokit Pro it&apos;s <computeroutput>uint32</computeroutput>, even though that&apos;s not officially documented anywhere. Also note, the doc claims &apos;microseconds&apos; (ie 10^-6), but clearly the value is &apos;milliseconds&apos; (ie 10^-3) for Pokit Pro, and whole seconds for Pokit Meter.  </para>
+</listitem>
+<varlistentry><term>Member <ref refid="classDeviceInfoService_1a006859d13f7c3d7f4179a0ad9cc04213" kindref="member">DeviceInfoService::serialNumber</ref>  () const</term></varlistentry>
+<listitem><para><anchor id="pokit_1_pokit000003"/> Unlike other string characteristics, Pokit (Pro) devices always appear to add a trailing <computeroutput>null</computeroutput> byte to serial number strings. So here we strip any that are present. </para>
+</listitem>
+<varlistentry><term>Member <ref refid="classMultimeterService_1a51f66d0b81dace3115c5c68bc931eaea" kindref="member">MultimeterService::Mode</ref>  </term></varlistentry>
+<listitem><para><anchor id="pokit_1_pokit000004"/> The following enumeration values are as-yet undocumented by Pokit Innovations. <ulink url="https://github.com/pcolby">@pcolby</ulink> reverse-engineered them as part of the <ulink url="https://github.com/pcolby/dokit">dokit</ulink> project.<itemizedlist>
+<listitem><para><ref refid="classMultimeterService_1a51f66d0b81dace3115c5c68bc931eaeaa22bef5ff8cc5db9cc862164e779f29dc" kindref="member">Mode::Capacitance</ref></para>
+</listitem><listitem><para><ref refid="classMultimeterService_1a51f66d0b81dace3115c5c68bc931eaeaa8d6937c3adb213bd7b7beb575aa17687" kindref="member">Mode::ExternalTemperature</ref></para>
+</listitem></itemizedlist>
+</para>
+</listitem>
+<varlistentry><term>Member <ref refid="namespacePokitPro_1adc67ba31bcd650dd7535939e42cec17a" kindref="member">PokitPro::CapacitanceRange</ref>  </term></varlistentry>
+<listitem><para><anchor id="pokit_1_pokit000005"/> These Pokit Pro enumeration values are as-yet undocumented by Pokit Innovations. <ulink url="https://github.com/pcolby">@pcolby</ulink> reverse-engineered them as part of the <ulink url="https://github.com/pcolby/dokit">dokit</ulink> project. </para>
+</listitem>
+<varlistentry><term>Member <ref refid="namespacePokitPro_1ac51059eb5a52fa362da01d4e2f44de21" kindref="member">PokitPro::CurrentRange</ref>  </term></varlistentry>
+<listitem><para><anchor id="pokit_1_pokit000006"/> These Pokit Pro enumeration values are as-yet undocumented by Pokit Innovations. <ulink url="https://github.com/pcolby">@pcolby</ulink> reverse-engineered them as part of the <ulink url="https://github.com/pcolby/dokit">dokit</ulink> project. </para>
+</listitem>
+<varlistentry><term>Member <ref refid="namespacePokitPro_1ac6fedf42d1268613f25da2b7c82832a7" kindref="member">PokitPro::ResistanceRange</ref>  </term></varlistentry>
+<listitem><para><anchor id="pokit_1_pokit000007"/> These Pokit Pro enumeration values are as-yet undocumented by Pokit Innovations. <ulink url="https://github.com/pcolby">@pcolby</ulink> reverse-engineered them as part of the <ulink url="https://github.com/pcolby/dokit">dokit</ulink> project. </para>
+</listitem>
+<varlistentry><term>Member <ref refid="namespacePokitPro_1a68ddba45fec73a3391f241f2da38e78a" kindref="member">PokitPro::VoltageRange</ref>  </term></varlistentry>
+<listitem><para><anchor id="pokit_1_pokit000008"/> These Pokit Pro enumeration values are as-yet undocumented by Pokit Innovations. <ulink url="https://github.com/pcolby">@pcolby</ulink> reverse-engineered them as part of the <ulink url="https://github.com/pcolby/dokit">dokit</ulink> project. </para>
+</listitem>
+<varlistentry><term>Member <ref refid="classStatusService_1a425bf65d42b24c4a621b312fcd152708" kindref="member">StatusService::flashLed</ref>  ()</term></varlistentry>
+<listitem><para><anchor id="pokit_1_pokit000011"/> The Android app can turn Pokit Pro LEDs on/off. Perhaps that is handled by an undocumented use of this characteristic. Or perhaps its via some other service. </para>
+</listitem>
+<varlistentry><term>Struct <ref refid="structStatusService_1_1ServiceUuids" kindref="compound">StatusService::ServiceUuids</ref>  </term></varlistentry>
+<listitem><para><anchor id="pokit_1_pokit000009"/> Pokit API 1.00 (and 0.02) states the <ref refid="structStatusService_1_1Status" kindref="compound">Status</ref> Service UUID as <computeroutput>57d3a771-267c-4394-8872-78223e92aec4</computeroutput> which is correct for the Pokit Meter, but Pokit Pro uses <computeroutput>57d3a771-267c-4394-8872-78223e92aec5</computeroutput> instead, that is the last digit is a <computeroutput>5</computeroutput> not <computeroutput>4</computeroutput>. </para>
+</listitem>
+<varlistentry><term>Member <ref refid="classStatusService_1a6bb2f85b6df9942ee108c341f4162e1f" kindref="member">StatusService::SwitchPosition</ref>  </term></varlistentry>
+<listitem><para><anchor id="pokit_1_pokit000010"/> These enum values are undocumented, but easily testable with a physical Pokit Pro device. Internally, Pokit&apos;s Android app calls these: <computeroutput>SWITCH_MODE_VOLTAGE</computeroutput>, <computeroutput>SWITCH_MODE_ALL</computeroutput> and <computeroutput>SWITCH_MODE_CURRENT</computeroutput>. </para>
+</listitem>
+<varlistentry><term>Member <ref refid="classStatusServicePrivate_1a90d78c3261bea8f23ddf9804ada203c1" kindref="member">StatusServicePrivate::parseButtonPress</ref>  (const <ref refid="qbytearray" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QByteArray</ref> &amp;value)</term></varlistentry>
+<listitem><para><anchor id="pokit_1_pokit000013"/> The button event is the second byte, but no idea what the first byte is. In all examples I&apos;ve see it&apos;s always <computeroutput>0x02</computeroutput>. It appears that the Pokit Android app only ever looks at <computeroutput>bytes[1]</computeroutput>.</para>
+<para><anchor id="pokit_1_pokit000014"/> Note, we can actually write to the Button Press characteristic too. If we do, then whatever we set as the first byte persists, and (unsurprisingly) the second byte reverts to the current button state. So still no idea what that first byte is for.  </para>
+</listitem>
+<varlistentry><term>Member <ref refid="classStatusServicePrivate_1a3a6ff8ca3e9d7c884b269e52dd43aeb0" kindref="member">StatusServicePrivate::parseStatus</ref>  (const <ref refid="qbytearray" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QByteArray</ref> &amp;value)</term></varlistentry>
+<listitem><para><anchor id="pokit_1_pokit000012"/> Pokit API 0.02 says the <computeroutput>Status</computeroutput> characteristic is 5 bytes. API 1.00 then added an additional byte for <computeroutput>Battery Status</computeroutput>, for 6 bytes in total. However, Pokit Pro devices return 8 bytes here. It appears that the first of those 2 extra bytes (ie the 7th byte) is used to indicate the physical switch position, while the other extra byte (ie the 8th byte) indicates the device&apos;s current charging status. </para>
+</listitem>
+</variablelist>
+</para>
+    </detaileddescription>
+    <location file="pokit"/>
+  </compounddef>
+</doxygen>

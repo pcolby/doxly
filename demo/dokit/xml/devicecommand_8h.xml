@@ -1,0 +1,317 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.0" xml:lang="en-US">
+  <compounddef id="devicecommand_8h" kind="file" language="C++">
+    <compoundname>devicecommand.h</compoundname>
+    <includes refid="abstractcommand_8h" local="yes">abstractcommand.h</includes>
+    <includes refid="pokitproducts_8h" local="yes">qtpokit/pokitproducts.h</includes>
+    <includes local="no">QLowEnergyController</includes>
+    <includedby refid="calibratecommand_8h" local="yes">calibratecommand.h</includedby>
+    <includedby refid="devicecommand_8cpp" local="yes">devicecommand.cpp</includedby>
+    <includedby refid="dsocommand_8h" local="yes">dsocommand.h</includedby>
+    <includedby refid="flashledcommand_8h" local="yes">flashledcommand.h</includedby>
+    <includedby refid="infocommand_8h" local="yes">infocommand.h</includedby>
+    <includedby refid="loggerfetchcommand_8h" local="yes">loggerfetchcommand.h</includedby>
+    <includedby refid="loggerstartcommand_8h" local="yes">loggerstartcommand.h</includedby>
+    <includedby refid="loggerstopcommand_8h" local="yes">loggerstopcommand.h</includedby>
+    <includedby refid="metercommand_8h" local="yes">metercommand.h</includedby>
+    <includedby refid="setnamecommand_8h" local="yes">setnamecommand.h</includedby>
+    <includedby refid="settorchcommand_8h" local="yes">settorchcommand.h</includedby>
+    <includedby refid="statuscommand_8h" local="yes">statuscommand.h</includedby>
+    <incdepgraph>
+      <node id="7">
+        <label>qtpokit/pokitproducts.h</label>
+        <link refid="pokitproducts_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>qtpokit_global.h</label>
+        <link refid="qtpokit__global_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>abstractcommand.h</label>
+        <link refid="abstractcommand_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>devicecommand.h</label>
+        <link refid="devicecommand_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>QBluetoothDeviceInfo</label>
+      </node>
+      <node id="4">
+        <label>QCommandLineParser</label>
+      </node>
+      <node id="10">
+        <label>QFlags</label>
+      </node>
+      <node id="5">
+        <label>QLoggingCategory</label>
+      </node>
+      <node id="12">
+        <label>QLowEnergyController</label>
+      </node>
+      <node id="6">
+        <label>QObject</label>
+      </node>
+      <node id="11">
+        <label>QString</label>
+      </node>
+      <node id="9">
+        <label>QtGlobal</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="3">
+        <label>calibratecommand.cpp</label>
+        <link refid="calibratecommand_8cpp_source"/>
+      </node>
+      <node id="2">
+        <label>calibratecommand.h</label>
+        <link refid="calibratecommand_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>devicecommand.cpp</label>
+        <link refid="devicecommand_8cpp_source"/>
+      </node>
+      <node id="1">
+        <label>devicecommand.h</label>
+        <link refid="devicecommand_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>dsocommand.cpp</label>
+        <link refid="dsocommand_8cpp_source"/>
+      </node>
+      <node id="6">
+        <label>dsocommand.h</label>
+        <link refid="dsocommand_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>flashledcommand.cpp</label>
+        <link refid="flashledcommand_8cpp_source"/>
+      </node>
+      <node id="8">
+        <label>flashledcommand.h</label>
+        <link refid="flashledcommand_8h_source"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>infocommand.cpp</label>
+        <link refid="infocommand_8cpp_source"/>
+      </node>
+      <node id="10">
+        <label>infocommand.h</label>
+        <link refid="infocommand_8h_source"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>loggerfetchcommand.cpp</label>
+        <link refid="loggerfetchcommand_8cpp_source"/>
+      </node>
+      <node id="12">
+        <label>loggerfetchcommand.h</label>
+        <link refid="loggerfetchcommand_8h_source"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>loggerstartcommand.cpp</label>
+        <link refid="loggerstartcommand_8cpp_source"/>
+      </node>
+      <node id="14">
+        <label>loggerstartcommand.h</label>
+        <link refid="loggerstartcommand_8h_source"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>loggerstopcommand.cpp</label>
+        <link refid="loggerstopcommand_8cpp_source"/>
+      </node>
+      <node id="16">
+        <label>loggerstopcommand.h</label>
+        <link refid="loggerstopcommand_8h_source"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>main.cpp</label>
+        <link refid="main_8cpp_source"/>
+      </node>
+      <node id="19">
+        <label>metercommand.cpp</label>
+        <link refid="metercommand_8cpp_source"/>
+      </node>
+      <node id="18">
+        <label>metercommand.h</label>
+        <link refid="metercommand_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>setnamecommand.cpp</label>
+        <link refid="setnamecommand_8cpp_source"/>
+      </node>
+      <node id="20">
+        <label>setnamecommand.h</label>
+        <link refid="setnamecommand_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>settorchcommand.cpp</label>
+        <link refid="settorchcommand_8cpp_source"/>
+      </node>
+      <node id="22">
+        <label>settorchcommand.h</label>
+        <link refid="settorchcommand_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>statuscommand.cpp</label>
+        <link refid="statuscommand_8cpp_source"/>
+      </node>
+      <node id="24">
+        <label>statuscommand.h</label>
+        <link refid="statuscommand_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classDeviceCommand" prot="public">DeviceCommand</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>SPDX-FileCopyrightText:<sp/>2022-2024<sp/>Paul<sp/>Colby<sp/>&lt;git@colby.id.au&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>SPDX-License-Identifier:<sp/>LGPL-3.0-or-later</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>DOKIT_DEVICECOMMAND_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DOKIT_DEVICECOMMAND_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;abstractcommand.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="pokitproducts_8h" kindref="compound">qtpokit/pokitproducts.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QLowEnergyController&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classAbstractPokitService" kindref="compound">AbstractPokitService</ref>;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classPokitDevice" kindref="compound">PokitDevice</ref>;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="classDeviceCommand" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classDeviceCommand" kindref="compound">DeviceCommand</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classAbstractCommand" kindref="compound">AbstractCommand</ref></highlight></codeline>
+<codeline lineno="16"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="qobject_1Q_OBJECT" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">Q_OBJECT</ref></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="classDeviceCommand_1a55c623ad1d1e0ad1273604f3f24b1dfc" kindref="member">DeviceCommand</ref>(<ref refid="qobject" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QObject</ref><sp/>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qobject_1parent" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">parent</ref><sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>slots:</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classDeviceCommand_1a6cf548752b7ae1084a712b9003b92d0c" kindref="member">start</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="26" refid="classDeviceCommand_1a2bbf2dc9bb0ba85a2bf29263746c7b57" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classPokitDevice" kindref="compound">PokitDevice</ref><sp/>*<sp/><ref refid="classDeviceCommand_1a2bbf2dc9bb0ba85a2bf29263746c7b57" kindref="member">device</ref><sp/>{<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal"><sp/>};<sp/></highlight><highlight class="comment">///&lt;<sp/>Pokit<sp/>Bluetooth<sp/>device<sp/>(if<sp/>any)<sp/>this<sp/>command<sp/>interracts<sp/>with.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="classDeviceCommand_1a792b3771a02cb7f4aff6335045b705bf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classDeviceCommand_1a792b3771a02cb7f4aff6335045b705bf" kindref="member">exitCodeOnDisconnect</ref><sp/>{<sp/>EXIT_FAILURE<sp/>};<sp/></highlight><highlight class="comment">///&lt;<sp/>Exit<sp/>code<sp/>to<sp/>return<sp/>on<sp/>device<sp/>disconnection.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classDeviceCommand_1ae619166395b5651f1316fd5336d9fa2c" kindref="member">disconnect</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>exitCode=EXIT_SUCCESS);</highlight></codeline>
+<codeline lineno="30" refid="classDeviceCommand_1af7a724ae722462b6fa15dc6269aadd15" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classAbstractPokitService" kindref="compound">AbstractPokitService</ref><sp/>*<sp/><ref refid="classDeviceCommand_1af7a724ae722462b6fa15dc6269aadd15" kindref="member">getService</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32" refid="classDeviceCommand_1abb9d2e113e372130dca9360791e7ce5b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;<sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>T<sp/><ref refid="classDeviceCommand_1abb9d2e113e372130dca9360791e7ce5b" kindref="member">minRange</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>quint32<sp/>maxValue);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>quint8<sp/><ref refid="classDeviceCommand_1a8aa676de2533a687cb369e70bb352a4c" kindref="member">minCapacitanceRange</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="pokitproducts_8h_1a0c4f628f68ce0432a6db11681a41fda4" kindref="member">PokitProduct</ref><sp/>product,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>quint32<sp/>maxValue);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>quint8<sp/><ref refid="classDeviceCommand_1ab5ae0318d3ec2bd4449e710eafafa680" kindref="member">minCurrentRange</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="pokitproducts_8h_1a0c4f628f68ce0432a6db11681a41fda4" kindref="member">PokitProduct</ref><sp/>product,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>quint32<sp/>maxValue);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>quint8<sp/><ref refid="classDeviceCommand_1a1ce3ce094a91ec500e9d50e620b0cc6d" kindref="member">minResistanceRange</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="pokitproducts_8h_1a0c4f628f68ce0432a6db11681a41fda4" kindref="member">PokitProduct</ref><sp/>product,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>quint32<sp/>maxValue);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>quint8<sp/><ref refid="classDeviceCommand_1a92f7e61dff3d28eda856ea4f95e828fe" kindref="member">minVoltageRange</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="pokitproducts_8h_1a0c4f628f68ce0432a6db11681a41fda4" kindref="member">PokitProduct</ref><sp/>product,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>quint32<sp/>maxValue);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal"><sp/>slots:</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classDeviceCommand_1a28461c0fe3f2b3398c74298b3df70b93" kindref="member">controllerError</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qlowenergycontroller_1Error-enum" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QLowEnergyController::Error</ref><sp/>error);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classDeviceCommand_1a525ae4429c2b9a325bad62678409fb5b" kindref="member">deviceDisconnected</ref>();</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classDeviceCommand_1a96208c78728c0068e7a78f961b913751" kindref="member">serviceError</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qlowenergyservice_1ServiceError-enum" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QLowEnergyService::ServiceError</ref><sp/>error);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classDeviceCommand_1a906fd97d832be0e8d2ba1c917fba41db" kindref="member">serviceDetailsDiscovered</ref>();</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/>slots:</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>These<sp/>are<sp/>protected<sp/>in<sp/>the<sp/>base<sp/>class,<sp/>but<sp/>hidden<sp/>(private)<sp/>for<sp/>our<sp/>descendents.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classDeviceCommand_1acde5a41e646a23c5485b67cf99e402a7" kindref="member">deviceDiscovered</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qbluetoothdeviceinfo" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothDeviceInfo</ref><sp/>&amp;info)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classDeviceCommand_1a7dfdaae89c5f6540af9a5bfbcfd66e5a" kindref="member">deviceDiscoveryFinished</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">TestDeviceCommand;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>DOKIT_DEVICECOMMAND_H</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/paul/src/dokit/src/cli/devicecommand.h"/>
+  </compounddef>
+</doxygen>

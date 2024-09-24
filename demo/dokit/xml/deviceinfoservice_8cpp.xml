@@ -1,0 +1,509 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.0" xml:lang="en-US">
+  <compounddef id="deviceinfoservice_8cpp" kind="file" language="C++">
+    <compoundname>deviceinfoservice.cpp</compoundname>
+    <includes refid="deviceinfoservice_8h" local="no">qtpokit/deviceinfoservice.h</includes>
+    <includes refid="deviceinfoservice__p_8h" local="yes">deviceinfoservice_p.h</includes>
+    <includes local="no">QtEndian</includes>
+    <incdepgraph>
+      <node id="3">
+        <label>abstractpokitservice.h</label>
+        <link refid="abstractpokitservice_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>qtpokit/deviceinfoservice.h</label>
+        <link refid="deviceinfoservice_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>pokitproducts.h</label>
+        <link refid="pokitproducts_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>qtpokit_global.h</label>
+        <link refid="qtpokit__global_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>abstractpokitservice_p.h</label>
+        <link refid="abstractpokitservice__p_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>deviceinfoservice.cpp</label>
+        <link refid="deviceinfoservice_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>deviceinfoservice_p.h</label>
+        <link refid="deviceinfoservice__p_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>QBluetoothAddress</label>
+      </node>
+      <node id="7">
+        <label>QBluetoothDeviceInfo</label>
+      </node>
+      <node id="14">
+        <label>QBluetoothUuid</label>
+      </node>
+      <node id="8">
+        <label>QFlags</label>
+      </node>
+      <node id="18">
+        <label>QLoggingCategory</label>
+      </node>
+      <node id="10">
+        <label>QLowEnergyService</label>
+      </node>
+      <node id="11">
+        <label>QObject</label>
+      </node>
+      <node id="9">
+        <label>QString</label>
+      </node>
+      <node id="15">
+        <label>QVersionNumber</label>
+      </node>
+      <node id="19">
+        <label>QtEndian</label>
+      </node>
+      <node id="5">
+        <label>QtGlobal</label>
+      </node>
+      <node id="12">
+        <label>optional</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+<para>Defines the <ref refid="classDeviceInfoService" kindref="compound">DeviceInfoService</ref> and <ref refid="classDeviceInfoServicePrivate" kindref="compound">DeviceInfoServicePrivate</ref> classes. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>SPDX-FileCopyrightText:<sp/>2022-2024<sp/>Paul<sp/>Colby<sp/>&lt;git@colby.id.au&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>SPDX-License-Identifier:<sp/>LGPL-3.0-or-later</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="4"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>\file</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>Defines<sp/>the<sp/>DeviceInfoService<sp/>and<sp/>DeviceInfoServicePrivate<sp/>classes.</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="deviceinfoservice_8h" kindref="compound">qtpokit/deviceinfoservice.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="deviceinfoservice__p_8h" kindref="compound">deviceinfoservice_p.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QtEndian&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="14"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>\class<sp/>DeviceInfoService</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>The<sp/>DeviceInfoService<sp/>class<sp/>accesses<sp/>the<sp/>`Device<sp/>Info`<sp/>service<sp/>of<sp/>Pokit<sp/>devices.</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="20"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/>Constructs<sp/>a<sp/>new<sp/>Pokit<sp/>service<sp/>with<sp/>\a<sp/>parent.</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="classDeviceInfoService_1affdc7eeab6ca48cc3dc118a1c3953a88" refkind="member"><highlight class="normal"><ref refid="classDeviceInfoService_1affdc7eeab6ca48cc3dc118a1c3953a88" kindref="member">DeviceInfoService::DeviceInfoService</ref>(<ref refid="qlowenergycontroller" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QLowEnergyController</ref><sp/>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>controller,<sp/><ref refid="qobject" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QObject</ref><sp/>*<sp/>parent)</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/><ref refid="classAbstractPokitService" kindref="compound">AbstractPokitService</ref>(new<sp/><ref refid="classDeviceInfoServicePrivate" kindref="compound">DeviceInfoServicePrivate</ref>(controller,<sp/>this),<sp/>parent)</highlight></codeline>
+<codeline lineno="25"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="29"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="30"><highlight class="comment"><sp/>*<sp/>\cond<sp/>internal</highlight></codeline>
+<codeline lineno="31"><highlight class="comment"><sp/>*<sp/>Constructs<sp/>a<sp/>new<sp/>Pokit<sp/>service<sp/>with<sp/>\a<sp/>parent,<sp/>and<sp/>private<sp/>implementation<sp/>\a<sp/>d.</highlight></codeline>
+<codeline lineno="32"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="classDeviceInfoService_1ab6b5dcfd253161f37c780b8ea9297d7b" refkind="member"><highlight class="normal"><ref refid="classDeviceInfoService_1affdc7eeab6ca48cc3dc118a1c3953a88" kindref="member">DeviceInfoService::DeviceInfoService</ref>(</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classDeviceInfoServicePrivate" kindref="compound">DeviceInfoServicePrivate</ref><sp/>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>d,<sp/><ref refid="qobject" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QObject</ref><sp/>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>parent)</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/><ref refid="classAbstractPokitService" kindref="compound">AbstractPokitService</ref>(d,<sp/>parent)</highlight></codeline>
+<codeline lineno="36"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal">}</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="39"><highlight class="comment">///<sp/>\endcond</highlight></codeline>
+<codeline lineno="40"><highlight class="comment"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="41"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="42"><highlight class="comment"><sp/>*<sp/>Destroys<sp/>this<sp/>DeviceInfoService<sp/>object.</highlight></codeline>
+<codeline lineno="43"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="classDeviceInfoService_1adfc4dcc0af86b50abadebd7c6e00f4e1" refkind="member"><highlight class="normal"><ref refid="classDeviceInfoService_1adfc4dcc0af86b50abadebd7c6e00f4e1" kindref="member">DeviceInfoService::~DeviceInfoService</ref>()</highlight></codeline>
+<codeline lineno="45"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="classDeviceInfoService_1aa10d77cc1df3cf923740332d9a8b97cb" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classDeviceInfoService_1aa10d77cc1df3cf923740332d9a8b97cb" kindref="member">DeviceInfoService::readCharacteristics</ref>()</highlight></codeline>
+<codeline lineno="50"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>r1<sp/>=<sp/><ref refid="classDeviceInfoService_1a3a77c71bed9398ca507aa0657b41fd9a" kindref="member">readFirmwareRevisionCharacteristic</ref>();</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>r2<sp/>=<sp/><ref refid="classDeviceInfoService_1a0be29e195fea415073d07907e7cf65a6" kindref="member">readHardwareRevisionCharacteristic</ref>();</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>r3<sp/>=<sp/><ref refid="classDeviceInfoService_1a1e08a98402611a2a8301012fd33b069c" kindref="member">readSoftwareRevisionCharacteristic</ref>();</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>r4<sp/>=<sp/><ref refid="classDeviceInfoService_1a5e8128c7432c3ffe4d2ff045e117ab1e" kindref="member">readManufacturerCharacteristics</ref>();</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>r5<sp/>=<sp/><ref refid="classDeviceInfoService_1a826dda294fcd640e43509bad3db71b10" kindref="member">readModelNumberCharacteristic</ref>();</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>r6<sp/>=<sp/>((<ref refid="classAbstractPokitService_1a7a4ff74f51ba6ea6c01cbeb9eda15b9b" kindref="member">service</ref>()<sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)<sp/>&amp;&amp;<sp/>(<ref refid="classAbstractPokitService_1a7a4ff74f51ba6ea6c01cbeb9eda15b9b" kindref="member">service</ref>()-&gt;<ref refid="qlowenergyservice_1characteristic" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">characteristic</ref>(<ref refid="structDeviceInfoService_1_1CharacteristicUuids_1a410471249dd69e69f7931e245b302612" kindref="member">CharacteristicUuids::serialNumber</ref>).<ref refid="qlowenergycharacteristic_1isValid" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">isValid</ref>()))</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>?<sp/><ref refid="classDeviceInfoService_1a0b2e0b299e03d9c06a45646d042f7843" kindref="member">readSerialNumberCharacteristic</ref>()<sp/>:<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(r1<sp/>&amp;&amp;<sp/>r2<sp/>&amp;&amp;<sp/>r3<sp/>&amp;&amp;<sp/>r4<sp/>&amp;&amp;<sp/>r5<sp/>&amp;&amp;<sp/>r6);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="61"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="62"><highlight class="comment"><sp/>*<sp/>Read<sp/>the<sp/>`Device<sp/>Info`<sp/>service&apos;s<sp/>`Firmware<sp/>Revision`<sp/>characteristic.</highlight></codeline>
+<codeline lineno="63"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="64"><highlight class="comment"><sp/>*<sp/>Returns<sp/>`true`<sp/>is<sp/>the<sp/>read<sp/>request<sp/>is<sp/>succesfully<sp/>queued,<sp/>`false`<sp/>otherwise<sp/>(ie<sp/>if<sp/>the</highlight></codeline>
+<codeline lineno="65"><highlight class="comment"><sp/>*<sp/>underlying<sp/>controller<sp/>it<sp/>not<sp/>yet<sp/>connected<sp/>to<sp/>the<sp/>Pokit<sp/>device,<sp/>or<sp/>the<sp/>device&apos;s<sp/>services<sp/>have</highlight></codeline>
+<codeline lineno="66"><highlight class="comment"><sp/>*<sp/>not<sp/>yet<sp/>been<sp/>discovered).</highlight></codeline>
+<codeline lineno="67"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="68"><highlight class="comment"><sp/>*<sp/>Emits<sp/>firmwareRevisionRead()<sp/>if/when<sp/>the<sp/>characteristic<sp/>has<sp/>been<sp/>read<sp/>successfully.</highlight></codeline>
+<codeline lineno="69"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70" refid="classDeviceInfoService_1a3a77c71bed9398ca507aa0657b41fd9a" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classDeviceInfoService_1a3a77c71bed9398ca507aa0657b41fd9a" kindref="member">DeviceInfoService::readFirmwareRevisionCharacteristic</ref>()</highlight></codeline>
+<codeline lineno="71"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_D(<ref refid="classDeviceInfoService" kindref="compound">DeviceInfoService</ref>);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>d-&gt;readCharacteristic(<ref refid="structDeviceInfoService_1_1CharacteristicUuids_1a7959177f8c990b2240476746061a236a" kindref="member">CharacteristicUuids::firmwareRevision</ref>);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="76"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="77"><highlight class="comment"><sp/>*<sp/>Read<sp/>the<sp/>`Device<sp/>Info`<sp/>service&apos;s<sp/>`Hardware<sp/>Revision`<sp/>characteristic.</highlight></codeline>
+<codeline lineno="78"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="79"><highlight class="comment"><sp/>*<sp/>Returns<sp/>`true`<sp/>is<sp/>the<sp/>read<sp/>request<sp/>is<sp/>succesfully<sp/>queued,<sp/>`false`<sp/>otherwise<sp/>(ie<sp/>if<sp/>the</highlight></codeline>
+<codeline lineno="80"><highlight class="comment"><sp/>*<sp/>underlying<sp/>controller<sp/>it<sp/>not<sp/>yet<sp/>connected<sp/>to<sp/>the<sp/>Pokit<sp/>device,<sp/>or<sp/>the<sp/>device&apos;s<sp/>services<sp/>have</highlight></codeline>
+<codeline lineno="81"><highlight class="comment"><sp/>*<sp/>not<sp/>yet<sp/>been<sp/>discovered).</highlight></codeline>
+<codeline lineno="82"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="83"><highlight class="comment"><sp/>*<sp/>Emits<sp/>hardwareRevisionRead()<sp/>if/when<sp/>the<sp/>characteristic<sp/>has<sp/>been<sp/>read<sp/>successfully.</highlight></codeline>
+<codeline lineno="84"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85" refid="classDeviceInfoService_1a0be29e195fea415073d07907e7cf65a6" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classDeviceInfoService_1a0be29e195fea415073d07907e7cf65a6" kindref="member">DeviceInfoService::readHardwareRevisionCharacteristic</ref>()</highlight></codeline>
+<codeline lineno="86"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_D(<ref refid="classDeviceInfoService" kindref="compound">DeviceInfoService</ref>);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>d-&gt;readCharacteristic(<ref refid="structDeviceInfoService_1_1CharacteristicUuids_1a2e9f6731a3d49d4e08facc0e4811c91b" kindref="member">CharacteristicUuids::hardwareRevision</ref>);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="91"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="92"><highlight class="comment"><sp/>*<sp/>Read<sp/>the<sp/>`Device<sp/>Info`<sp/>service&apos;s<sp/>`Manufacturer<sp/>Name`<sp/>characteristic.</highlight></codeline>
+<codeline lineno="93"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="94"><highlight class="comment"><sp/>*<sp/>Returns<sp/>`true`<sp/>is<sp/>the<sp/>read<sp/>request<sp/>is<sp/>succesfully<sp/>queued,<sp/>`false`<sp/>otherwise<sp/>(ie<sp/>if<sp/>the</highlight></codeline>
+<codeline lineno="95"><highlight class="comment"><sp/>*<sp/>underlying<sp/>controller<sp/>it<sp/>not<sp/>yet<sp/>connected<sp/>to<sp/>the<sp/>Pokit<sp/>device,<sp/>or<sp/>the<sp/>device&apos;s<sp/>services<sp/>have</highlight></codeline>
+<codeline lineno="96"><highlight class="comment"><sp/>*<sp/>not<sp/>yet<sp/>been<sp/>discovered).</highlight></codeline>
+<codeline lineno="97"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="98"><highlight class="comment"><sp/>*<sp/>Emits<sp/>manufacturerNameRead()<sp/>if/when<sp/>the<sp/>characteristic<sp/>has<sp/>been<sp/>read<sp/>successfully.</highlight></codeline>
+<codeline lineno="99"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100" refid="classDeviceInfoService_1a5e8128c7432c3ffe4d2ff045e117ab1e" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classDeviceInfoService_1a5e8128c7432c3ffe4d2ff045e117ab1e" kindref="member">DeviceInfoService::readManufacturerCharacteristics</ref>()</highlight></codeline>
+<codeline lineno="101"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_D(<ref refid="classDeviceInfoService" kindref="compound">DeviceInfoService</ref>);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>d-&gt;readCharacteristic(<ref refid="structDeviceInfoService_1_1CharacteristicUuids_1a0455d683833dae7fa93ddf08b754136d" kindref="member">CharacteristicUuids::manufacturerName</ref>);</highlight></codeline>
+<codeline lineno="104"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="106"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="107"><highlight class="comment"><sp/>*<sp/>Read<sp/>the<sp/>`Device<sp/>Info`<sp/>service&apos;s<sp/>`Model<sp/>Number`<sp/>characteristic.</highlight></codeline>
+<codeline lineno="108"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="109"><highlight class="comment"><sp/>*<sp/>Returns<sp/>`true`<sp/>is<sp/>the<sp/>read<sp/>request<sp/>is<sp/>succesfully<sp/>queued,<sp/>`false`<sp/>otherwise<sp/>(ie<sp/>if<sp/>the</highlight></codeline>
+<codeline lineno="110"><highlight class="comment"><sp/>*<sp/>underlying<sp/>controller<sp/>it<sp/>not<sp/>yet<sp/>connected<sp/>to<sp/>the<sp/>Pokit<sp/>device,<sp/>or<sp/>the<sp/>device&apos;s<sp/>services<sp/>have</highlight></codeline>
+<codeline lineno="111"><highlight class="comment"><sp/>*<sp/>not<sp/>yet<sp/>been<sp/>discovered).</highlight></codeline>
+<codeline lineno="112"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="113"><highlight class="comment"><sp/>*<sp/>Emits<sp/>modelNumberRead()<sp/>if/when<sp/>the<sp/>characteristic<sp/>has<sp/>been<sp/>read<sp/>successfully.</highlight></codeline>
+<codeline lineno="114"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115" refid="classDeviceInfoService_1a826dda294fcd640e43509bad3db71b10" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classDeviceInfoService_1a826dda294fcd640e43509bad3db71b10" kindref="member">DeviceInfoService::readModelNumberCharacteristic</ref>()</highlight></codeline>
+<codeline lineno="116"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_D(<ref refid="classDeviceInfoService" kindref="compound">DeviceInfoService</ref>);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>d-&gt;readCharacteristic(<ref refid="structDeviceInfoService_1_1CharacteristicUuids_1af5c3bd888ca0d9133ff6d844992a7e34" kindref="member">CharacteristicUuids::modelNumber</ref>);</highlight></codeline>
+<codeline lineno="119"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="121"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="122"><highlight class="comment"><sp/>*<sp/>Read<sp/>the<sp/>`Device<sp/>Info`<sp/>service&apos;s<sp/>`Software<sp/>Revision`<sp/>characteristic.</highlight></codeline>
+<codeline lineno="123"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="124"><highlight class="comment"><sp/>*<sp/>Returns<sp/>`true`<sp/>is<sp/>the<sp/>read<sp/>request<sp/>is<sp/>succesfully<sp/>queued,<sp/>`false`<sp/>otherwise<sp/>(ie<sp/>if<sp/>the</highlight></codeline>
+<codeline lineno="125"><highlight class="comment"><sp/>*<sp/>underlying<sp/>controller<sp/>it<sp/>not<sp/>yet<sp/>connected<sp/>to<sp/>the<sp/>Pokit<sp/>device,<sp/>or<sp/>the<sp/>device&apos;s<sp/>services<sp/>have</highlight></codeline>
+<codeline lineno="126"><highlight class="comment"><sp/>*<sp/>not<sp/>yet<sp/>been<sp/>discovered).</highlight></codeline>
+<codeline lineno="127"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="128"><highlight class="comment"><sp/>*<sp/>Emits<sp/>softwareRevisionRead()<sp/>if/when<sp/>the<sp/>characteristic<sp/>has<sp/>been<sp/>read<sp/>successfully.</highlight></codeline>
+<codeline lineno="129"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="130" refid="classDeviceInfoService_1a1e08a98402611a2a8301012fd33b069c" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classDeviceInfoService_1a1e08a98402611a2a8301012fd33b069c" kindref="member">DeviceInfoService::readSoftwareRevisionCharacteristic</ref>()</highlight></codeline>
+<codeline lineno="131"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_D(<ref refid="classDeviceInfoService" kindref="compound">DeviceInfoService</ref>);</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>d-&gt;readCharacteristic(<ref refid="structDeviceInfoService_1_1CharacteristicUuids_1a3dcd8fc5858990ac38640acf15ccff69" kindref="member">CharacteristicUuids::softwareRevision</ref>);</highlight></codeline>
+<codeline lineno="134"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="136"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="137"><highlight class="comment"><sp/>*<sp/>Read<sp/>the<sp/>`Device<sp/>Info`<sp/>service&apos;s<sp/>(undocumented)<sp/>`Serial<sp/>Number`<sp/>characteristic.</highlight></codeline>
+<codeline lineno="138"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="139"><highlight class="comment"><sp/>*<sp/>Returns<sp/>`true`<sp/>is<sp/>the<sp/>read<sp/>request<sp/>is<sp/>succesfully<sp/>queued,<sp/>`false`<sp/>otherwise<sp/>(ie<sp/>if<sp/>the</highlight></codeline>
+<codeline lineno="140"><highlight class="comment"><sp/>*<sp/>underlying<sp/>controller<sp/>it<sp/>not<sp/>yet<sp/>connected<sp/>to<sp/>the<sp/>Pokit<sp/>device,<sp/>or<sp/>the<sp/>device&apos;s<sp/>services<sp/>have</highlight></codeline>
+<codeline lineno="141"><highlight class="comment"><sp/>*<sp/>not<sp/>yet<sp/>been<sp/>discovered).</highlight></codeline>
+<codeline lineno="142"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="143"><highlight class="comment"><sp/>*<sp/>Emits<sp/>serialNumberRead()<sp/>if/when<sp/>the<sp/>characteristic<sp/>has<sp/>been<sp/>read<sp/>successfully.</highlight></codeline>
+<codeline lineno="144"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="145" refid="classDeviceInfoService_1a0b2e0b299e03d9c06a45646d042f7843" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classDeviceInfoService_1a0b2e0b299e03d9c06a45646d042f7843" kindref="member">DeviceInfoService::readSerialNumberCharacteristic</ref>()</highlight></codeline>
+<codeline lineno="146"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_D(<ref refid="classDeviceInfoService" kindref="compound">DeviceInfoService</ref>);</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>d-&gt;readCharacteristic(<ref refid="structDeviceInfoService_1_1CharacteristicUuids_1a410471249dd69e69f7931e245b302612" kindref="member">CharacteristicUuids::serialNumber</ref>);</highlight></codeline>
+<codeline lineno="149"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="151"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="152"><highlight class="comment"><sp/>*<sp/>Returns<sp/>the<sp/>most<sp/>recent<sp/>value<sp/>of<sp/>the<sp/>`Device<sp/>Info`<sp/>service&apos;s<sp/>`Manufacturer<sp/>Name`<sp/>characteristic.</highlight></codeline>
+<codeline lineno="153"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="154"><highlight class="comment"><sp/>*<sp/>The<sp/>returned<sp/>value,<sp/>if<sp/>any,<sp/>is<sp/>from<sp/>the<sp/>underlying<sp/>Bluetooth<sp/>stack&apos;s<sp/>cache.<sp/>If<sp/>no<sp/>such<sp/>value<sp/>is</highlight></codeline>
+<codeline lineno="155"><highlight class="comment"><sp/>*<sp/>currently<sp/>available<sp/>(ie<sp/>the<sp/>serviceDetailsDiscovered<sp/>signal<sp/>has<sp/>not<sp/>been<sp/>emitted<sp/>yet),<sp/>then<sp/>a</highlight></codeline>
+<codeline lineno="156"><highlight class="comment"><sp/>*<sp/>null<sp/>QString<sp/>is<sp/>returned.</highlight></codeline>
+<codeline lineno="157"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="158" refid="classDeviceInfoService_1ab5614d4e47856aa4400d08ae2b71d72b" refkind="member"><highlight class="normal"><ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref><sp/><ref refid="classDeviceInfoService_1ab5614d4e47856aa4400d08ae2b71d72b" kindref="member">DeviceInfoService::manufacturer</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="159"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_D(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classDeviceInfoService" kindref="compound">DeviceInfoService</ref>);</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qlowenergycharacteristic" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QLowEnergyCharacteristic</ref><sp/>characteristic<sp/>=</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>d-&gt;getCharacteristic(<ref refid="structDeviceInfoService_1_1CharacteristicUuids_1a0455d683833dae7fa93ddf08b754136d" kindref="member">CharacteristicUuids::manufacturerName</ref>);</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(characteristic.<ref refid="qlowenergycharacteristic_1isValid" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">isValid</ref>())<sp/>?<sp/><ref refid="qstring_1fromUtf8-1" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString::fromUtf8</ref>(characteristic.<ref refid="qlowenergycharacteristic_1value" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">value</ref>())<sp/>:<sp/><ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref>();</highlight></codeline>
+<codeline lineno="164"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="166"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="167"><highlight class="comment"><sp/>*<sp/>Returns<sp/>the<sp/>most<sp/>recent<sp/>value<sp/>of<sp/>the<sp/>`Device<sp/>Info`<sp/>service&apos;s<sp/>`Model<sp/>Number`<sp/>characteristic.</highlight></codeline>
+<codeline lineno="168"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="169"><highlight class="comment"><sp/>*<sp/>The<sp/>returned<sp/>value,<sp/>if<sp/>any,<sp/>is<sp/>from<sp/>the<sp/>underlying<sp/>Bluetooth<sp/>stack&apos;s<sp/>cache.<sp/>If<sp/>no<sp/>such<sp/>value<sp/>is</highlight></codeline>
+<codeline lineno="170"><highlight class="comment"><sp/>*<sp/>currently<sp/>available<sp/>(ie<sp/>the<sp/>serviceDetailsDiscovered<sp/>signal<sp/>has<sp/>not<sp/>been<sp/>emitted<sp/>yet),<sp/>then<sp/>a</highlight></codeline>
+<codeline lineno="171"><highlight class="comment"><sp/>*<sp/>null<sp/>QString<sp/>is<sp/>returned.</highlight></codeline>
+<codeline lineno="172"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="173" refid="classDeviceInfoService_1a7402f9a0c2fe3ee052a29e8f872e26ef" refkind="member"><highlight class="normal"><ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref><sp/><ref refid="classDeviceInfoService_1a7402f9a0c2fe3ee052a29e8f872e26ef" kindref="member">DeviceInfoService::modelNumber</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="174"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_D(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classDeviceInfoService" kindref="compound">DeviceInfoService</ref>);</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qlowenergycharacteristic" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QLowEnergyCharacteristic</ref><sp/>characteristic<sp/>=</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>d-&gt;getCharacteristic(<ref refid="structDeviceInfoService_1_1CharacteristicUuids_1af5c3bd888ca0d9133ff6d844992a7e34" kindref="member">CharacteristicUuids::modelNumber</ref>);</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(characteristic.<ref refid="qlowenergycharacteristic_1isValid" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">isValid</ref>())<sp/>?<sp/><ref refid="qstring_1fromUtf8-1" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString::fromUtf8</ref>(characteristic.<ref refid="qlowenergycharacteristic_1value" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">value</ref>())<sp/>:<sp/><ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref>();</highlight></codeline>
+<codeline lineno="179"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="181"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="182"><highlight class="comment"><sp/>*<sp/>Returns<sp/>the<sp/>most<sp/>recent<sp/>value<sp/>of<sp/>the<sp/>`Device<sp/>Info`<sp/>service&apos;s<sp/>`Hardware<sp/>Revision`<sp/>characteristic.</highlight></codeline>
+<codeline lineno="183"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="184"><highlight class="comment"><sp/>*<sp/>The<sp/>returned<sp/>value,<sp/>if<sp/>any,<sp/>is<sp/>from<sp/>the<sp/>underlying<sp/>Bluetooth<sp/>stack&apos;s<sp/>cache.<sp/>If<sp/>no<sp/>such<sp/>value<sp/>is</highlight></codeline>
+<codeline lineno="185"><highlight class="comment"><sp/>*<sp/>currently<sp/>available<sp/>(ie<sp/>the<sp/>serviceDetailsDiscovered<sp/>signal<sp/>has<sp/>not<sp/>been<sp/>emitted<sp/>yet),<sp/>then<sp/>a</highlight></codeline>
+<codeline lineno="186"><highlight class="comment"><sp/>*<sp/>null<sp/>QString<sp/>is<sp/>returned.</highlight></codeline>
+<codeline lineno="187"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="188" refid="classDeviceInfoService_1a4d79805ce884ec8d5ac7879ccd499932" refkind="member"><highlight class="normal"><ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref><sp/><ref refid="classDeviceInfoService_1a4d79805ce884ec8d5ac7879ccd499932" kindref="member">DeviceInfoService::hardwareRevision</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="189"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_D(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classDeviceInfoService" kindref="compound">DeviceInfoService</ref>);</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qlowenergycharacteristic" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QLowEnergyCharacteristic</ref><sp/>characteristic<sp/>=</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>d-&gt;getCharacteristic(<ref refid="structDeviceInfoService_1_1CharacteristicUuids_1a2e9f6731a3d49d4e08facc0e4811c91b" kindref="member">CharacteristicUuids::hardwareRevision</ref>);</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(characteristic.<ref refid="qlowenergycharacteristic_1isValid" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">isValid</ref>())<sp/>?<sp/><ref refid="qstring_1fromUtf8-1" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString::fromUtf8</ref>(characteristic.<ref refid="qlowenergycharacteristic_1value" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">value</ref>())<sp/>:<sp/><ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref>();</highlight></codeline>
+<codeline lineno="194"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="196"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="197"><highlight class="comment"><sp/>*<sp/>Returns<sp/>the<sp/>most<sp/>recent<sp/>value<sp/>of<sp/>the<sp/>`Device<sp/>Info`<sp/>service&apos;s<sp/>`Firmware<sp/>Revision`<sp/>characteristic.</highlight></codeline>
+<codeline lineno="198"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="199"><highlight class="comment"><sp/>*<sp/>The<sp/>returned<sp/>value,<sp/>if<sp/>any,<sp/>is<sp/>from<sp/>the<sp/>underlying<sp/>Bluetooth<sp/>stack&apos;s<sp/>cache.<sp/>If<sp/>no<sp/>such<sp/>value<sp/>is</highlight></codeline>
+<codeline lineno="200"><highlight class="comment"><sp/>*<sp/>currently<sp/>available<sp/>(ie<sp/>the<sp/>serviceDetailsDiscovered<sp/>signal<sp/>has<sp/>not<sp/>been<sp/>emitted<sp/>yet),<sp/>then<sp/>a</highlight></codeline>
+<codeline lineno="201"><highlight class="comment"><sp/>*<sp/>null<sp/>QString<sp/>is<sp/>returned.</highlight></codeline>
+<codeline lineno="202"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="203" refid="classDeviceInfoService_1ac896b483c3b54e46658fd04ab4bb864b" refkind="member"><highlight class="normal"><ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref><sp/><ref refid="classDeviceInfoService_1ac896b483c3b54e46658fd04ab4bb864b" kindref="member">DeviceInfoService::firmwareRevision</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="204"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_D(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classDeviceInfoService" kindref="compound">DeviceInfoService</ref>);</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qlowenergycharacteristic" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QLowEnergyCharacteristic</ref><sp/>characteristic<sp/>=</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>d-&gt;getCharacteristic(<ref refid="structDeviceInfoService_1_1CharacteristicUuids_1a7959177f8c990b2240476746061a236a" kindref="member">CharacteristicUuids::firmwareRevision</ref>);</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(characteristic.<ref refid="qlowenergycharacteristic_1isValid" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">isValid</ref>())<sp/>?<sp/><ref refid="qstring_1fromUtf8-1" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString::fromUtf8</ref>(characteristic.<ref refid="qlowenergycharacteristic_1value" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">value</ref>())<sp/>:<sp/><ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref>();</highlight></codeline>
+<codeline lineno="209"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="211"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="212"><highlight class="comment"><sp/>*<sp/>Returns<sp/>the<sp/>most<sp/>recent<sp/>value<sp/>of<sp/>the<sp/>`Device<sp/>Info`<sp/>service&apos;s<sp/>`Software<sp/>Revision`<sp/>characteristic.</highlight></codeline>
+<codeline lineno="213"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="214"><highlight class="comment"><sp/>*<sp/>The<sp/>returned<sp/>value,<sp/>if<sp/>any,<sp/>is<sp/>from<sp/>the<sp/>underlying<sp/>Bluetooth<sp/>stack&apos;s<sp/>cache.<sp/>If<sp/>no<sp/>such<sp/>value<sp/>is</highlight></codeline>
+<codeline lineno="215"><highlight class="comment"><sp/>*<sp/>currently<sp/>available<sp/>(ie<sp/>the<sp/>serviceDetailsDiscovered<sp/>signal<sp/>has<sp/>not<sp/>been<sp/>emitted<sp/>yet),<sp/>then<sp/>a</highlight></codeline>
+<codeline lineno="216"><highlight class="comment"><sp/>*<sp/>null<sp/>QString<sp/>is<sp/>returned.</highlight></codeline>
+<codeline lineno="217"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="218" refid="classDeviceInfoService_1a3619ac5734e074de11927352b0fd5054" refkind="member"><highlight class="normal"><ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref><sp/><ref refid="classDeviceInfoService_1a3619ac5734e074de11927352b0fd5054" kindref="member">DeviceInfoService::softwareRevision</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="219"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_D(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classDeviceInfoService" kindref="compound">DeviceInfoService</ref>);</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qlowenergycharacteristic" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QLowEnergyCharacteristic</ref><sp/>characteristic<sp/>=</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>d-&gt;getCharacteristic(<ref refid="structDeviceInfoService_1_1CharacteristicUuids_1a3dcd8fc5858990ac38640acf15ccff69" kindref="member">CharacteristicUuids::softwareRevision</ref>);</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(characteristic.<ref refid="qlowenergycharacteristic_1isValid" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">isValid</ref>())<sp/>?<sp/><ref refid="qstring_1fromUtf8-1" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString::fromUtf8</ref>(characteristic.<ref refid="qlowenergycharacteristic_1value" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">value</ref>())<sp/>:<sp/><ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref>();</highlight></codeline>
+<codeline lineno="224"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="226"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="227"><highlight class="comment"><sp/>*<sp/>Returns<sp/>the<sp/>most<sp/>recent<sp/>value<sp/>of<sp/>the<sp/>`Device<sp/>Info`<sp/>service&apos;s<sp/>(undocumented)<sp/>`Serial<sp/>Number`</highlight></codeline>
+<codeline lineno="228"><highlight class="comment"><sp/>*<sp/>characteristic.</highlight></codeline>
+<codeline lineno="229"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="230"><highlight class="comment"><sp/>*<sp/>The<sp/>returned<sp/>value,<sp/>if<sp/>any,<sp/>is<sp/>from<sp/>the<sp/>underlying<sp/>Bluetooth<sp/>stack&apos;s<sp/>cache.<sp/>If<sp/>no<sp/>such<sp/>value<sp/>is</highlight></codeline>
+<codeline lineno="231"><highlight class="comment"><sp/>*<sp/>currently<sp/>available<sp/>(ie<sp/>the<sp/>serviceDetailsDiscovered<sp/>signal<sp/>has<sp/>not<sp/>been<sp/>emitted<sp/>yet),<sp/>then<sp/>a</highlight></codeline>
+<codeline lineno="232"><highlight class="comment"><sp/>*<sp/>null<sp/>QString<sp/>is<sp/>returned.</highlight></codeline>
+<codeline lineno="233"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="234" refid="classDeviceInfoService_1a006859d13f7c3d7f4179a0ad9cc04213" refkind="member"><highlight class="normal"><ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref><sp/><ref refid="classDeviceInfoService_1a006859d13f7c3d7f4179a0ad9cc04213" kindref="member">DeviceInfoService::serialNumber</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="235"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_D(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classDeviceInfoService" kindref="compound">DeviceInfoService</ref>);</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qlowenergycharacteristic" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QLowEnergyCharacteristic</ref><sp/>characteristic<sp/>=</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>d-&gt;getCharacteristic(<ref refid="structDeviceInfoService_1_1CharacteristicUuids_1a410471249dd69e69f7931e245b302612" kindref="member">CharacteristicUuids::serialNumber</ref>);</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="239"><highlight class="comment"><sp/><sp/><sp/><sp/>/*!</highlight></codeline>
+<codeline lineno="240"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>\cond<sp/>internal</highlight></codeline>
+<codeline lineno="241"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>\pokitApi<sp/>Unlike<sp/>other<sp/>string<sp/>characteristics,<sp/>Pokit<sp/>(Pro)<sp/>devices<sp/>always<sp/>appear<sp/>to<sp/>add<sp/>a<sp/>trailing</highlight></codeline>
+<codeline lineno="242"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>`null`<sp/>byte<sp/>to<sp/>serial<sp/>number<sp/>strings.<sp/>So<sp/>here<sp/>we<sp/>strip<sp/>any<sp/>that<sp/>are<sp/>present.</highlight></codeline>
+<codeline lineno="243"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>\endcond</highlight></codeline>
+<codeline lineno="244"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(characteristic.<ref refid="qlowenergycharacteristic_1isValid" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">isValid</ref>())<sp/>?<sp/><ref refid="qstring_1fromUtf8-1" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString::fromUtf8</ref>(characteristic.<ref refid="qlowenergycharacteristic_1value" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">value</ref>()).<ref refid="qstring_1remove-1" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">remove</ref>(<ref refid="qlatin1char" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QLatin1Char</ref>(</highlight><highlight class="charliteral">&apos;\0&apos;</highlight><highlight class="normal">))<sp/>:<sp/><ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref>();</highlight></codeline>
+<codeline lineno="246"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="248"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="249"><highlight class="comment"><sp/>*<sp/>\fn<sp/>DeviceInfoService::manufacturerRead</highlight></codeline>
+<codeline lineno="250"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="251"><highlight class="comment"><sp/>*<sp/>This<sp/>signal<sp/>is<sp/>emitted<sp/>when<sp/>the<sp/>`Manufacturer<sp/>Name`<sp/>characteristic<sp/>has<sp/>been<sp/>read<sp/>successfully.</highlight></codeline>
+<codeline lineno="252"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="253"><highlight class="comment"><sp/>*<sp/>\see<sp/>readManufacturerCharacteristic</highlight></codeline>
+<codeline lineno="254"><highlight class="comment"><sp/>*<sp/>\see<sp/>manufacturer</highlight></codeline>
+<codeline lineno="255"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="256"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="257"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="258"><highlight class="comment"><sp/>*<sp/>\fn<sp/>DeviceInfoService::modelNumberRead</highlight></codeline>
+<codeline lineno="259"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="260"><highlight class="comment"><sp/>*<sp/>This<sp/>signal<sp/>is<sp/>emitted<sp/>when<sp/>the<sp/>`Model<sp/>Number`<sp/>characteristic<sp/>has<sp/>been<sp/>read<sp/>successfully.</highlight></codeline>
+<codeline lineno="261"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="262"><highlight class="comment"><sp/>*<sp/>\see<sp/>readModelNumberCharacteristic</highlight></codeline>
+<codeline lineno="263"><highlight class="comment"><sp/>*<sp/>\see<sp/>modelNumber</highlight></codeline>
+<codeline lineno="264"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="265"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="266"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="267"><highlight class="comment"><sp/>*<sp/>\fn<sp/>DeviceInfoService::hardwareRevisionRead</highlight></codeline>
+<codeline lineno="268"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="269"><highlight class="comment"><sp/>*<sp/>This<sp/>signal<sp/>is<sp/>emitted<sp/>when<sp/>the<sp/>`Hardware<sp/>Revision`<sp/>characteristic<sp/>has<sp/>been<sp/>read<sp/>successfully.</highlight></codeline>
+<codeline lineno="270"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="271"><highlight class="comment"><sp/>*<sp/>\see<sp/>readHardwareRevisionCharacteristic</highlight></codeline>
+<codeline lineno="272"><highlight class="comment"><sp/>*<sp/>\see<sp/>hardwareRevision</highlight></codeline>
+<codeline lineno="273"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="274"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="275"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="276"><highlight class="comment"><sp/>*<sp/>\fn<sp/>DeviceInfoService::firmwareRevisionRead</highlight></codeline>
+<codeline lineno="277"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="278"><highlight class="comment"><sp/>*<sp/>This<sp/>signal<sp/>is<sp/>emitted<sp/>when<sp/>the<sp/>`Firmware<sp/>Revision`<sp/>characteristic<sp/>has<sp/>been<sp/>read<sp/>successfully.</highlight></codeline>
+<codeline lineno="279"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="280"><highlight class="comment"><sp/>*<sp/>\see<sp/>readFirmwareRevisionCharacteristic</highlight></codeline>
+<codeline lineno="281"><highlight class="comment"><sp/>*<sp/>\see<sp/>firmwareRevision</highlight></codeline>
+<codeline lineno="282"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="283"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="284"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="285"><highlight class="comment"><sp/>*<sp/>\fn<sp/>DeviceInfoService::softwareRevisionRead</highlight></codeline>
+<codeline lineno="286"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="287"><highlight class="comment"><sp/>*<sp/>This<sp/>signal<sp/>is<sp/>emitted<sp/>when<sp/>the<sp/>`Software<sp/>Revision`<sp/>characteristic<sp/>has<sp/>been<sp/>read<sp/>successfully.</highlight></codeline>
+<codeline lineno="288"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="289"><highlight class="comment"><sp/>*<sp/>\see<sp/>readSoftwareRevisionCharacteristic</highlight></codeline>
+<codeline lineno="290"><highlight class="comment"><sp/>*<sp/>\see<sp/>softwareRevision</highlight></codeline>
+<codeline lineno="291"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="292"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="293"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="294"><highlight class="comment"><sp/>*<sp/>\fn<sp/>DeviceInfoService::serialNumberRead</highlight></codeline>
+<codeline lineno="295"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="296"><highlight class="comment"><sp/>*<sp/>This<sp/>signal<sp/>is<sp/>emitted<sp/>when<sp/>the<sp/>`Serial<sp/>Number`<sp/>characteristic<sp/>has<sp/>been<sp/>read<sp/>successfully.</highlight></codeline>
+<codeline lineno="297"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="298"><highlight class="comment"><sp/>*<sp/>\see<sp/>readSerialNumberCharacteristic</highlight></codeline>
+<codeline lineno="299"><highlight class="comment"><sp/>*<sp/>\see<sp/>serialNumber</highlight></codeline>
+<codeline lineno="300"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="301"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="302"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="303"><highlight class="comment"><sp/>*<sp/>\cond<sp/>internal</highlight></codeline>
+<codeline lineno="304"><highlight class="comment"><sp/>*<sp/>\class<sp/>DeviceInfoServicePrivate</highlight></codeline>
+<codeline lineno="305"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="306"><highlight class="comment"><sp/>*<sp/>The<sp/>DeviceInfoServicePrivate<sp/>class<sp/>provides<sp/>private<sp/>implementation<sp/>for<sp/>DeviceInfoService.</highlight></codeline>
+<codeline lineno="307"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="308"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="309"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="310"><highlight class="comment"><sp/>*<sp/>\internal</highlight></codeline>
+<codeline lineno="311"><highlight class="comment"><sp/>*<sp/>Constructs<sp/>a<sp/>new<sp/>DeviceInfoServicePrivate<sp/>object<sp/>with<sp/>public<sp/>implementation<sp/>\a<sp/>q.</highlight></codeline>
+<codeline lineno="312"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="313" refid="classDeviceInfoServicePrivate_1adf611f70ba673572f7bdbb305e8adfca" refkind="member"><highlight class="normal"><ref refid="classDeviceInfoServicePrivate_1adf611f70ba673572f7bdbb305e8adfca" kindref="member">DeviceInfoServicePrivate::DeviceInfoServicePrivate</ref>(</highlight></codeline>
+<codeline lineno="314"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="qlowenergycontroller" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QLowEnergyController</ref><sp/>*<sp/>controller,<sp/><ref refid="classDeviceInfoService" kindref="compound">DeviceInfoService</ref><sp/>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>q)</highlight></codeline>
+<codeline lineno="315"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/><ref refid="classAbstractPokitServicePrivate" kindref="compound">AbstractPokitServicePrivate</ref>(<ref refid="classDeviceInfoService" kindref="compound">DeviceInfoService</ref>::serviceUuid,<sp/>controller,<sp/>q)</highlight></codeline>
+<codeline lineno="316"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="317"><highlight class="normal"></highlight></codeline>
+<codeline lineno="318"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="319"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="320"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="321"><highlight class="comment"><sp/>*<sp/>Implements<sp/>AbstractPokitServicePrivate::characteristicRead<sp/>to<sp/>parse<sp/>\a<sp/>value,<sp/>then<sp/>emit<sp/>a</highlight></codeline>
+<codeline lineno="322"><highlight class="comment"><sp/>*<sp/>specialised<sp/>signal,<sp/>for<sp/>each<sp/>supported<sp/>\a<sp/>characteristic.</highlight></codeline>
+<codeline lineno="323"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="324" refid="classDeviceInfoServicePrivate_1a5ca3ccfe6cc8231247fed820e41551a1" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classDeviceInfoServicePrivate_1a5ca3ccfe6cc8231247fed820e41551a1" kindref="member">DeviceInfoServicePrivate::characteristicRead</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qlowenergycharacteristic" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QLowEnergyCharacteristic</ref><sp/>&amp;characteristic,</highlight></codeline>
+<codeline lineno="325"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qbytearray" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QByteArray</ref><sp/>&amp;value)</highlight></codeline>
+<codeline lineno="326"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="327"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classAbstractPokitServicePrivate_1a84bef330c6ff124f1e460bb8949d82da" kindref="member">AbstractPokitServicePrivate::characteristicRead</ref>(characteristic,<sp/>value);</highlight></codeline>
+<codeline lineno="328"><highlight class="normal"></highlight></codeline>
+<codeline lineno="329"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_Q(<ref refid="classDeviceInfoService" kindref="compound">DeviceInfoService</ref>);</highlight></codeline>
+<codeline lineno="330"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(characteristic.<ref refid="qlowenergycharacteristic_1uuid" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">uuid</ref>()<sp/>==<sp/><ref refid="structDeviceInfoService_1_1CharacteristicUuids_1a0455d683833dae7fa93ddf08b754136d" kindref="member">DeviceInfoService::CharacteristicUuids::manufacturerName</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="331"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref><sp/>name<sp/>=<sp/><ref refid="qstring_1fromUtf8-1" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString::fromUtf8</ref>(value);</highlight></codeline>
+<codeline lineno="332"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>qCDebug(lc).noquote()<sp/>&lt;&lt;<sp/><ref refid="qobject_1tr" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">tr</ref>(R</highlight><highlight class="stringliteral">&quot;(Manufacturer<sp/>name:<sp/>&quot;%1&quot;)&quot;).<ref refid="qstring_1arg-14" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">arg</ref>(name);</highlight></codeline>
+<codeline lineno="333"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="qobject_1Q_EMIT" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">Q_EMIT</ref><sp/>q-&gt;manufacturerRead(name);</highlight></codeline>
+<codeline lineno="334"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="335"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="336"><highlight class="normal"></highlight></codeline>
+<codeline lineno="337"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(characteristic.<ref refid="qlowenergycharacteristic_1uuid" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">uuid</ref>()<sp/>==<sp/><ref refid="structDeviceInfoService_1_1CharacteristicUuids_1af5c3bd888ca0d9133ff6d844992a7e34" kindref="member">DeviceInfoService::CharacteristicUuids::modelNumber</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="338"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref><sp/>model<sp/>=<sp/><ref refid="qstring_1fromUtf8-1" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString::fromUtf8</ref>(value);</highlight></codeline>
+<codeline lineno="339"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>qCDebug(lc).noquote()<sp/>&lt;&lt;<sp/><ref refid="qobject_1tr" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">tr</ref>(R</highlight><highlight class="stringliteral">&quot;(Model<sp/>number:<sp/>&quot;%1&quot;)&quot;).<ref refid="qstring_1arg-14" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">arg</ref>(model);</highlight></codeline>
+<codeline lineno="340"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="qobject_1Q_EMIT" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">Q_EMIT</ref><sp/>q-&gt;modelNumberRead(model);</highlight></codeline>
+<codeline lineno="341"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="342"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="343"><highlight class="normal"></highlight></codeline>
+<codeline lineno="344"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(characteristic.<ref refid="qlowenergycharacteristic_1uuid" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">uuid</ref>()<sp/>==<sp/><ref refid="structDeviceInfoService_1_1CharacteristicUuids_1a2e9f6731a3d49d4e08facc0e4811c91b" kindref="member">DeviceInfoService::CharacteristicUuids::hardwareRevision</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="345"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref><sp/>revision<sp/>=<sp/><ref refid="qstring_1fromUtf8-1" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString::fromUtf8</ref>(value);</highlight></codeline>
+<codeline lineno="346"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>qCDebug(lc).noquote()<sp/>&lt;&lt;<sp/><ref refid="qobject_1tr" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">tr</ref>(R</highlight><highlight class="stringliteral">&quot;(Hardware<sp/>revision:<sp/>&quot;%1&quot;)&quot;).<ref refid="qstring_1arg-14" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">arg</ref>(revision);</highlight></codeline>
+<codeline lineno="347"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="qobject_1Q_EMIT" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">Q_EMIT</ref><sp/>q-&gt;hardwareRevisionRead(revision);</highlight></codeline>
+<codeline lineno="348"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="349"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="350"><highlight class="normal"></highlight></codeline>
+<codeline lineno="351"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(characteristic.<ref refid="qlowenergycharacteristic_1uuid" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">uuid</ref>()<sp/>==<sp/><ref refid="structDeviceInfoService_1_1CharacteristicUuids_1a7959177f8c990b2240476746061a236a" kindref="member">DeviceInfoService::CharacteristicUuids::firmwareRevision</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="352"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref><sp/>revision<sp/>=<sp/><ref refid="qstring_1fromUtf8-1" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString::fromUtf8</ref>(value);</highlight></codeline>
+<codeline lineno="353"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>qCDebug(lc).noquote()<sp/>&lt;&lt;<sp/><ref refid="qobject_1tr" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">tr</ref>(R</highlight><highlight class="stringliteral">&quot;(Firmware<sp/>revision:<sp/>&quot;%1&quot;)&quot;).<ref refid="qstring_1arg-14" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">arg</ref>(revision);</highlight></codeline>
+<codeline lineno="354"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="qobject_1Q_EMIT" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">Q_EMIT</ref><sp/>q-&gt;firmwareRevisionRead(revision);</highlight></codeline>
+<codeline lineno="355"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="356"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="357"><highlight class="normal"></highlight></codeline>
+<codeline lineno="358"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(characteristic.<ref refid="qlowenergycharacteristic_1uuid" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">uuid</ref>()<sp/>==<sp/><ref refid="structDeviceInfoService_1_1CharacteristicUuids_1a3dcd8fc5858990ac38640acf15ccff69" kindref="member">DeviceInfoService::CharacteristicUuids::softwareRevision</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="359"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref><sp/>revision<sp/>=<sp/><ref refid="qstring_1fromUtf8-1" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString::fromUtf8</ref>(value);</highlight></codeline>
+<codeline lineno="360"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>qCDebug(lc).noquote()<sp/>&lt;&lt;<sp/><ref refid="qobject_1tr" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">tr</ref>(R</highlight><highlight class="stringliteral">&quot;(Software<sp/>revision:<sp/>&quot;%1&quot;)&quot;).<ref refid="qstring_1arg-14" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">arg</ref>(revision);</highlight></codeline>
+<codeline lineno="361"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="qobject_1Q_EMIT" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">Q_EMIT</ref><sp/>q-&gt;softwareRevisionRead(revision);</highlight></codeline>
+<codeline lineno="362"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="363"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="364"><highlight class="normal"></highlight></codeline>
+<codeline lineno="365"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(characteristic.<ref refid="qlowenergycharacteristic_1uuid" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">uuid</ref>()<sp/>==<sp/><ref refid="structDeviceInfoService_1_1CharacteristicUuids_1a410471249dd69e69f7931e245b302612" kindref="member">DeviceInfoService::CharacteristicUuids::serialNumber</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="366"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref><sp/>serialNumber<sp/>=<sp/><ref refid="qstring_1fromUtf8-1" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString::fromUtf8</ref>(value);</highlight></codeline>
+<codeline lineno="367"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>qCDebug(lc).noquote()<sp/>&lt;&lt;<sp/><ref refid="qobject_1tr" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">tr</ref>(R</highlight><highlight class="stringliteral">&quot;(Serial<sp/>number:<sp/>&quot;%1&quot;)&quot;).<ref refid="qstring_1arg-14" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">arg</ref>(serialNumber);</highlight></codeline>
+<codeline lineno="368"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="qobject_1Q_EMIT" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">Q_EMIT</ref><sp/>q-&gt;serialNumberRead(serialNumber);</highlight></codeline>
+<codeline lineno="369"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="370"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="371"><highlight class="normal"></highlight></codeline>
+<codeline lineno="372"><highlight class="normal"><sp/><sp/><sp/><sp/>qCWarning(lc).noquote()<sp/>&lt;&lt;<sp/><ref refid="qobject_1tr" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">tr</ref>(</highlight><highlight class="stringliteral">&quot;Unknown<sp/>characteristic<sp/>read<sp/>for<sp/>Device<sp/>Info<sp/>service&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="373"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/><ref refid="classAbstractPokitServicePrivate_1a37538a1aa1beeb85a041f1735d65cbfd" kindref="member">serviceUuid</ref><sp/>&lt;&lt;<sp/>characteristic.<ref refid="qlowenergycharacteristic_1name" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">name</ref>()<sp/>&lt;&lt;<sp/>characteristic.<ref refid="qlowenergycharacteristic_1uuid" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">uuid</ref>();</highlight></codeline>
+<codeline lineno="374"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="375"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="376"><highlight class="comment">///<sp/>\endcond</highlight></codeline>
+    </programlisting>
+    <location file="/home/paul/src/dokit/src/lib/deviceinfoservice.cpp"/>
+  </compounddef>
+</doxygen>

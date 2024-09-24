@@ -1,0 +1,141 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.0" xml:lang="en-US">
+  <compounddef id="structDsoService_1_1Metadata" kind="struct" language="C++" prot="public">
+    <compoundname>DsoService::Metadata</compoundname>
+    <includes refid="dsoservice_8h" local="no">dsoservice.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structDsoService_1_1Metadata_1a49968d71997c4a744061b547e9c4778e" prot="public" static="no" mutable="no">
+        <type><ref refid="classDsoService_1aaa4e080d3d3e444dabf9d7117561905d" kindref="member">DsoStatus</ref></type>
+        <definition>DsoStatus DsoService::Metadata::status</definition>
+        <argsstring></argsstring>
+        <name>status</name>
+        <qualifiedname>DsoService::Metadata::status</qualifiedname>
+        <briefdescription>
+<para>Current DSO status. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/dsoservice.h" line="85" column="19" bodyfile="/home/paul/src/dokit/include/qtpokit/dsoservice.h" bodystart="85" bodyend="-1"/>
+        <referencedby refid="classDsoCommand_1ae3458da4747f34661ec0ef1d36657e24" compoundref="dsocommand_8cpp" startline="227" endline="238">DsoCommand::metadataRead</referencedby>
+        <referencedby refid="classDsoServicePrivate_1af869cf5b228bac719545511ba4247b88" compoundref="dsoservice_8cpp" startline="357" endline="376">DsoServicePrivate::parseMetadata</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structDsoService_1_1Metadata_1a6b8a8636619603ff9a52e0ef2eba1085" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float DsoService::Metadata::scale</definition>
+        <argsstring></argsstring>
+        <name>scale</name>
+        <qualifiedname>DsoService::Metadata::scale</qualifiedname>
+        <briefdescription>
+<para>Scale to apply to read samples. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/dsoservice.h" line="86" column="15" bodyfile="/home/paul/src/dokit/include/qtpokit/dsoservice.h" bodystart="86" bodyend="-1"/>
+        <referencedby refid="classDsoCommand_1ae3458da4747f34661ec0ef1d36657e24" compoundref="dsocommand_8cpp" startline="227" endline="238">DsoCommand::metadataRead</referencedby>
+        <referencedby refid="classDsoCommand_1a5ed6988ac93f2964979b8dce1425816e" compoundref="dsocommand_8cpp" startline="243" endline="287">DsoCommand::outputSamples</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structDsoService_1_1Metadata_1ad0109534b3e7035a93abd47b1028f8ca" prot="public" static="no" mutable="no">
+        <type><ref refid="classDsoService_1ae1414a11556e06b49cea9fadcd6f5b95" kindref="member">Mode</ref></type>
+        <definition>Mode DsoService::Metadata::mode</definition>
+        <argsstring></argsstring>
+        <name>mode</name>
+        <qualifiedname>DsoService::Metadata::mode</qualifiedname>
+        <briefdescription>
+<para>Operation mode used during last acquisition. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/dsoservice.h" line="87" column="14" bodyfile="/home/paul/src/dokit/include/qtpokit/dsoservice.h" bodystart="87" bodyend="-1"/>
+        <referencedby refid="classDsoCommand_1ae3458da4747f34661ec0ef1d36657e24" compoundref="dsocommand_8cpp" startline="227" endline="238">DsoCommand::metadataRead</referencedby>
+        <referencedby refid="classDsoCommand_1a5ed6988ac93f2964979b8dce1425816e" compoundref="dsocommand_8cpp" startline="243" endline="287">DsoCommand::outputSamples</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structDsoService_1_1Metadata_1acb41b394f9fc234072f0c977eedb162f" prot="public" static="no" mutable="no">
+        <type>quint8</type>
+        <definition>quint8 DsoService::Metadata::range</definition>
+        <argsstring></argsstring>
+        <name>range</name>
+        <qualifiedname>DsoService::Metadata::range</qualifiedname>
+        <briefdescription>
+<para>Range used during last acquisition. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/dsoservice.h" line="88" column="16" bodyfile="/home/paul/src/dokit/include/qtpokit/dsoservice.h" bodystart="88" bodyend="-1"/>
+        <referencedby refid="classDsoCommand_1ae3458da4747f34661ec0ef1d36657e24" compoundref="dsocommand_8cpp" startline="227" endline="238">DsoCommand::metadataRead</referencedby>
+        <referencedby refid="classDsoCommand_1a5ed6988ac93f2964979b8dce1425816e" compoundref="dsocommand_8cpp" startline="243" endline="287">DsoCommand::outputSamples</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structDsoService_1_1Metadata_1adef86fc5e8e8ef5b2348251e2cc419d1" prot="public" static="no" mutable="no">
+        <type>quint32</type>
+        <definition>quint32 DsoService::Metadata::samplingWindow</definition>
+        <argsstring></argsstring>
+        <name>samplingWindow</name>
+        <qualifiedname>DsoService::Metadata::samplingWindow</qualifiedname>
+        <briefdescription>
+<para>Sampling window (microseconds) used during last acquisition. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/dsoservice.h" line="89" column="17" bodyfile="/home/paul/src/dokit/include/qtpokit/dsoservice.h" bodystart="89" bodyend="-1"/>
+        <referencedby refid="classDsoCommand_1ae3458da4747f34661ec0ef1d36657e24" compoundref="dsocommand_8cpp" startline="227" endline="238">DsoCommand::metadataRead</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structDsoService_1_1Metadata_1aa2c92c1dd91d2351dbe06c1e7910c78d" prot="public" static="no" mutable="no">
+        <type>quint16</type>
+        <definition>quint16 DsoService::Metadata::numberOfSamples</definition>
+        <argsstring></argsstring>
+        <name>numberOfSamples</name>
+        <qualifiedname>DsoService::Metadata::numberOfSamples</qualifiedname>
+        <briefdescription>
+<para>Number of samples acquired (1 to 8192). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/dsoservice.h" line="90" column="17" bodyfile="/home/paul/src/dokit/include/qtpokit/dsoservice.h" bodystart="90" bodyend="-1"/>
+        <referencedby refid="classDsoCommand_1ae3458da4747f34661ec0ef1d36657e24" compoundref="dsocommand_8cpp" startline="227" endline="238">DsoCommand::metadataRead</referencedby>
+        <referencedby refid="classDsoCommand_1a5ed6988ac93f2964979b8dce1425816e" compoundref="dsocommand_8cpp" startline="243" endline="287">DsoCommand::outputSamples</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structDsoService_1_1Metadata_1a1ee78a173e219e8224f4db3d4bc5ee97" prot="public" static="no" mutable="no">
+        <type>quint32</type>
+        <definition>quint32 DsoService::Metadata::samplingRate</definition>
+        <argsstring></argsstring>
+        <name>samplingRate</name>
+        <qualifiedname>DsoService::Metadata::samplingRate</qualifiedname>
+        <briefdescription>
+<para>Sampling rate used during last acquisition (1 to 1MHz). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/dsoservice.h" line="91" column="17" bodyfile="/home/paul/src/dokit/include/qtpokit/dsoservice.h" bodystart="91" bodyend="-1"/>
+        <referencedby refid="classDsoCommand_1ae3458da4747f34661ec0ef1d36657e24" compoundref="dsocommand_8cpp" startline="227" endline="238">DsoCommand::metadataRead</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Attributes included in the <computeroutput><ref refid="structDsoService_1_1Metadata" kindref="compound">Metadata</ref></computeroutput> characterstic. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/paul/src/dokit/include/qtpokit/dsoservice.h" line="84" column="5" bodyfile="/home/paul/src/dokit/include/qtpokit/dsoservice.h" bodystart="84" bodyend="92"/>
+    <listofallmembers>
+      <member refid="structDsoService_1_1Metadata_1ad0109534b3e7035a93abd47b1028f8ca" prot="public" virt="non-virtual"><scope>DsoService::Metadata</scope><name>mode</name></member>
+      <member refid="structDsoService_1_1Metadata_1aa2c92c1dd91d2351dbe06c1e7910c78d" prot="public" virt="non-virtual"><scope>DsoService::Metadata</scope><name>numberOfSamples</name></member>
+      <member refid="structDsoService_1_1Metadata_1acb41b394f9fc234072f0c977eedb162f" prot="public" virt="non-virtual"><scope>DsoService::Metadata</scope><name>range</name></member>
+      <member refid="structDsoService_1_1Metadata_1a1ee78a173e219e8224f4db3d4bc5ee97" prot="public" virt="non-virtual"><scope>DsoService::Metadata</scope><name>samplingRate</name></member>
+      <member refid="structDsoService_1_1Metadata_1adef86fc5e8e8ef5b2348251e2cc419d1" prot="public" virt="non-virtual"><scope>DsoService::Metadata</scope><name>samplingWindow</name></member>
+      <member refid="structDsoService_1_1Metadata_1a6b8a8636619603ff9a52e0ef2eba1085" prot="public" virt="non-virtual"><scope>DsoService::Metadata</scope><name>scale</name></member>
+      <member refid="structDsoService_1_1Metadata_1a49968d71997c4a744061b547e9c4778e" prot="public" virt="non-virtual"><scope>DsoService::Metadata</scope><name>status</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

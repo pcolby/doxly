@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.0" xml:lang="en-US">
+  <compounddef id="dir_dad62831f6347b6888b7e4953aff15e6" kind="dir">
+    <compoundname>cli</compoundname>
+    <innerfile refid="abstractcommand_8cpp">abstractcommand.cpp</innerfile>
+    <innerfile refid="abstractcommand_8h">abstractcommand.h</innerfile>
+    <innerfile refid="calibratecommand_8cpp">calibratecommand.cpp</innerfile>
+    <innerfile refid="calibratecommand_8h">calibratecommand.h</innerfile>
+    <innerfile refid="devicecommand_8cpp">devicecommand.cpp</innerfile>
+    <innerfile refid="devicecommand_8h">devicecommand.h</innerfile>
+    <innerfile refid="dsocommand_8cpp">dsocommand.cpp</innerfile>
+    <innerfile refid="dsocommand_8h">dsocommand.h</innerfile>
+    <innerfile refid="flashledcommand_8cpp">flashledcommand.cpp</innerfile>
+    <innerfile refid="flashledcommand_8h">flashledcommand.h</innerfile>
+    <innerfile refid="infocommand_8cpp">infocommand.cpp</innerfile>
+    <innerfile refid="infocommand_8h">infocommand.h</innerfile>
+    <innerfile refid="loggerfetchcommand_8cpp">loggerfetchcommand.cpp</innerfile>
+    <innerfile refid="loggerfetchcommand_8h">loggerfetchcommand.h</innerfile>
+    <innerfile refid="loggerstartcommand_8cpp">loggerstartcommand.cpp</innerfile>
+    <innerfile refid="loggerstartcommand_8h">loggerstartcommand.h</innerfile>
+    <innerfile refid="loggerstopcommand_8cpp">loggerstopcommand.cpp</innerfile>
+    <innerfile refid="loggerstopcommand_8h">loggerstopcommand.h</innerfile>
+    <innerfile refid="main_8cpp">main.cpp</innerfile>
+    <innerfile refid="metercommand_8cpp">metercommand.cpp</innerfile>
+    <innerfile refid="metercommand_8h">metercommand.h</innerfile>
+    <innerfile refid="scancommand_8cpp">scancommand.cpp</innerfile>
+    <innerfile refid="scancommand_8h">scancommand.h</innerfile>
+    <innerfile refid="setnamecommand_8cpp">setnamecommand.cpp</innerfile>
+    <innerfile refid="setnamecommand_8h">setnamecommand.h</innerfile>
+    <innerfile refid="settorchcommand_8cpp">settorchcommand.cpp</innerfile>
+    <innerfile refid="settorchcommand_8h">settorchcommand.h</innerfile>
+    <innerfile refid="statuscommand_8cpp">statuscommand.cpp</innerfile>
+    <innerfile refid="statuscommand_8h">statuscommand.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/paul/src/dokit/src/cli/"/>
+  </compounddef>
+</doxygen>

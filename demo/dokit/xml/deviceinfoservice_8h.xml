@@ -1,0 +1,230 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.0" xml:lang="en-US">
+  <compounddef id="deviceinfoservice_8h" kind="file" language="C++">
+    <compoundname>deviceinfoservice.h</compoundname>
+    <includes refid="abstractpokitservice_8h" local="yes">abstractpokitservice.h</includes>
+    <includes local="no">QBluetoothAddress</includes>
+    <includes local="no">QBluetoothUuid</includes>
+    <includes local="no">QVersionNumber</includes>
+    <includedby refid="deviceinfoservice_8cpp" local="no">deviceinfoservice.cpp</includedby>
+    <includedby refid="deviceinfoservice__p_8h" local="no">deviceinfoservice_p.h</includedby>
+    <includedby refid="infocommand_8cpp" local="no">infocommand.cpp</includedby>
+    <includedby refid="pokitdevice_8cpp" local="no">pokitdevice.cpp</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>abstractpokitservice.h</label>
+        <link refid="abstractpokitservice_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>deviceinfoservice.h</label>
+        <link refid="deviceinfoservice_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>pokitproducts.h</label>
+        <link refid="pokitproducts_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>qtpokit_global.h</label>
+        <link refid="qtpokit__global_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>QBluetoothAddress</label>
+      </node>
+      <node id="6">
+        <label>QBluetoothDeviceInfo</label>
+      </node>
+      <node id="13">
+        <label>QBluetoothUuid</label>
+      </node>
+      <node id="7">
+        <label>QFlags</label>
+      </node>
+      <node id="9">
+        <label>QLowEnergyService</label>
+      </node>
+      <node id="10">
+        <label>QObject</label>
+      </node>
+      <node id="8">
+        <label>QString</label>
+      </node>
+      <node id="14">
+        <label>QVersionNumber</label>
+      </node>
+      <node id="4">
+        <label>QtGlobal</label>
+      </node>
+      <node id="11">
+        <label>optional</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>deviceinfoservice.h</label>
+        <link refid="deviceinfoservice_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>infocommand.cpp</label>
+        <link refid="infocommand_8cpp_source"/>
+      </node>
+      <node id="2">
+        <label>deviceinfoservice.cpp</label>
+        <link refid="deviceinfoservice_8cpp"/>
+      </node>
+      <node id="3">
+        <label>deviceinfoservice_p.h</label>
+        <link refid="deviceinfoservice__p_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>pokitdevice.cpp</label>
+        <link refid="pokitdevice_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classDeviceInfoService" prot="public">DeviceInfoService</innerclass>
+    <innerclass refid="structDeviceInfoService_1_1CharacteristicUuids" prot="public">DeviceInfoService::CharacteristicUuids</innerclass>
+    <briefdescription>
+<para>Declares the <ref refid="classDeviceInfoService" kindref="compound">DeviceInfoService</ref> class. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>SPDX-FileCopyrightText:<sp/>2022-2024<sp/>Paul<sp/>Colby<sp/>&lt;git@colby.id.au&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>SPDX-License-Identifier:<sp/>LGPL-3.0-or-later</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="4"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>\file</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>Declares<sp/>the<sp/>DeviceInfoService<sp/>class.</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>QTPOKIT_INFOSERVICE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>QTPOKIT_INFOSERVICE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="abstractpokitservice_8h" kindref="compound">abstractpokitservice.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QBluetoothAddress&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QBluetoothUuid&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QVersionNumber&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><ref refid="qtpokit__global_8h_1ac5aca53b48a017f8db467922deee7983" kindref="member">QTPOKIT_BEGIN_NAMESPACE</ref></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classDeviceInfoServicePrivate" kindref="compound">DeviceInfoServicePrivate</ref>;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="classDeviceInfoService" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="qtpokit__global_8h_1aeba02234b4a21ddf98bb8127b8d41759" kindref="member">QTPOKIT_EXPORT</ref><sp/><ref refid="classDeviceInfoService" kindref="compound">DeviceInfoService</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classAbstractPokitService" kindref="compound">AbstractPokitService</ref></highlight></codeline>
+<codeline lineno="23"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_OBJECT</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>UUID<sp/>of<sp/>the<sp/>&quot;Device<sp/>Info&quot;<sp/>service.</highlight></codeline>
+<codeline lineno="28" refid="classDeviceInfoService_1a3e790c39794cb40473573555ee485191" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qbluetoothuuid" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothUuid</ref><sp/>serviceUuid</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/>QBluetoothUuid::ServiceClassUuid::DeviceInformation<sp/>};</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="31"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Characteristics<sp/>available<sp/>via<sp/>the<sp/>`Device<sp/>Info`<sp/>service.</highlight></codeline>
+<codeline lineno="32" refid="structDeviceInfoService_1_1CharacteristicUuids" refkind="compound"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="qtpokit__global_8h_1aeba02234b4a21ddf98bb8127b8d41759" kindref="member">QTPOKIT_EXPORT</ref><sp/><ref refid="structDeviceInfoService_1_1CharacteristicUuids" kindref="compound">CharacteristicUuids</ref><sp/>{</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="33"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>UUID<sp/>of<sp/>the<sp/>`Device<sp/>Info`<sp/>service&apos;s<sp/>`Manufacturer<sp/>Name<sp/>String`<sp/>characterstic.</highlight></codeline>
+<codeline lineno="34" refid="structDeviceInfoService_1_1CharacteristicUuids_1a0455d683833dae7fa93ddf08b754136d" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qbluetoothuuid" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothUuid</ref><sp/>manufacturerName</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/>QBluetoothUuid::CharacteristicType::ManufacturerNameString<sp/>};</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="37"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>UUID<sp/>of<sp/>the<sp/>`Device<sp/>Info`<sp/>service&apos;s<sp/>`Model<sp/>Number<sp/>String`<sp/>characterstic.</highlight></codeline>
+<codeline lineno="38" refid="structDeviceInfoService_1_1CharacteristicUuids_1af5c3bd888ca0d9133ff6d844992a7e34" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qbluetoothuuid" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothUuid</ref><sp/>modelNumber</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/>QBluetoothUuid::CharacteristicType::ModelNumberString<sp/>};</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="41"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>UUID<sp/>of<sp/>the<sp/>`Device<sp/>Info`<sp/>service&apos;s<sp/>`Firmware<sp/>Revision<sp/>String`<sp/>characterstic.</highlight></codeline>
+<codeline lineno="42" refid="structDeviceInfoService_1_1CharacteristicUuids_1a7959177f8c990b2240476746061a236a" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qbluetoothuuid" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothUuid</ref><sp/>firmwareRevision</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/>QBluetoothUuid::CharacteristicType::FirmwareRevisionString<sp/>};</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="45"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>UUID<sp/>of<sp/>the<sp/>`Device<sp/>Info`<sp/>service&apos;s<sp/>`Hardware<sp/>Revision<sp/>String`<sp/>characterstic.</highlight></codeline>
+<codeline lineno="46" refid="structDeviceInfoService_1_1CharacteristicUuids_1a2e9f6731a3d49d4e08facc0e4811c91b" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qbluetoothuuid" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothUuid</ref><sp/>hardwareRevision</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/>QBluetoothUuid::CharacteristicType::HardwareRevisionString<sp/>};</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="49"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>UUID<sp/>of<sp/>the<sp/>`Device<sp/>Info`<sp/>service&apos;s<sp/>`Software<sp/>Revision<sp/>String`<sp/>characterstic.</highlight></codeline>
+<codeline lineno="50" refid="structDeviceInfoService_1_1CharacteristicUuids_1a3dcd8fc5858990ac38640acf15ccff69" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qbluetoothuuid" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothUuid</ref><sp/>softwareRevision</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/>QBluetoothUuid::CharacteristicType::SoftwareRevisionString<sp/>};</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="53"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>UUID<sp/>of<sp/>the<sp/>`Device<sp/>Info`<sp/>service&apos;s<sp/>`Serial<sp/>Number<sp/>String`<sp/>characterstic.</highlight></codeline>
+<codeline lineno="54" refid="structDeviceInfoService_1_1CharacteristicUuids_1a410471249dd69e69f7931e245b302612" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qbluetoothuuid" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothUuid</ref><sp/>serialNumber</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/>QBluetoothUuid::CharacteristicType::SerialNumberString<sp/>};</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classDeviceInfoService" kindref="compound">DeviceInfoService</ref>(<ref refid="qlowenergycontroller" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QLowEnergyController</ref><sp/>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>pokitDevice,<sp/><ref refid="qobject" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QObject</ref><sp/>*<sp/>parent<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classDeviceInfoService" kindref="compound">~DeviceInfoService</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classAbstractPokitService_1ab1de532f20d46803d6e8b8ffea835b48" kindref="member">readCharacteristics</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>readFirmwareRevisionCharacteristic();</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>readHardwareRevisionCharacteristic();</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>readManufacturerCharacteristics();</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>readModelNumberCharacteristic();</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>readSoftwareRevisionCharacteristic();</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>readSerialNumberCharacteristic();</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>All<sp/>Device<sp/>Info<sp/>characteristics<sp/>are<sp/>read-only,<sp/>single<sp/>values.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref><sp/>manufacturer()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref><sp/>modelNumber()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref><sp/>hardwareRevision()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref><sp/>firmwareRevision()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref><sp/>softwareRevision()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref><sp/>serialNumber()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><ref refid="qobject_1Q_SIGNALS" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">Q_SIGNALS</ref>:</highlight></codeline>
+<codeline lineno="78" refid="classDeviceInfoService_1a1983c93d6e790a4d8f26a6c92e1c4585" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classDeviceInfoService_1a1983c93d6e790a4d8f26a6c92e1c4585" kindref="member">manufacturerRead</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref><sp/>&amp;name);</highlight></codeline>
+<codeline lineno="79" refid="classDeviceInfoService_1a23fb6c8ccb4bdf249d9db52b79fe04b4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classDeviceInfoService_1a23fb6c8ccb4bdf249d9db52b79fe04b4" kindref="member">modelNumberRead</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref><sp/>&amp;model);</highlight></codeline>
+<codeline lineno="80" refid="classDeviceInfoService_1a240cee1fe8db2e7e03e09619ef4173c9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classDeviceInfoService_1a240cee1fe8db2e7e03e09619ef4173c9" kindref="member">hardwareRevisionRead</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref><sp/>&amp;revision);</highlight></codeline>
+<codeline lineno="81" refid="classDeviceInfoService_1ab95bd80046937f0473f9bb8aeb3bd07f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classDeviceInfoService_1ab95bd80046937f0473f9bb8aeb3bd07f" kindref="member">firmwareRevisionRead</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref><sp/>&amp;revision);</highlight></codeline>
+<codeline lineno="82" refid="classDeviceInfoService_1a3d45d60809c53ad441b25f41f7dc2342" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classDeviceInfoService_1a3d45d60809c53ad441b25f41f7dc2342" kindref="member">softwareRevisionRead</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref><sp/>&amp;revision);</highlight></codeline>
+<codeline lineno="83" refid="classDeviceInfoService_1ae5e115003fd8221b86aeacad8a771d3b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classDeviceInfoService_1ae5e115003fd8221b86aeacad8a771d3b" kindref="member">serialNumberRead</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref><sp/>&amp;serialNumber);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="86"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>\cond<sp/>internal</highlight></codeline>
+<codeline lineno="87"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classDeviceInfoService" kindref="compound">DeviceInfoService</ref>(<ref refid="classDeviceInfoServicePrivate" kindref="compound">DeviceInfoServicePrivate</ref><sp/>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>d,<sp/><ref refid="qobject" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QObject</ref><sp/>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>parent);</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="88"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>\endcond</highlight></codeline>
+<codeline lineno="89"><highlight class="comment"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_DECLARE_PRIVATE(<ref refid="classDeviceInfoService" kindref="compound">DeviceInfoService</ref>)</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_DISABLE_COPY(<ref refid="classDeviceInfoService" kindref="compound">DeviceInfoService</ref>)</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">TestDeviceInfoService;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><ref refid="qtpokit__global_8h_1af2a5fcdf5ad6da4ea4f238aad0d29d65" kindref="member">QTPOKIT_END_NAMESPACE</ref></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>QTPOKIT_INFOSERVICE_H</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/paul/src/dokit/include/qtpokit/deviceinfoservice.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,373 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.0" xml:lang="en-US">
+  <compounddef id="classPokitDiscoveryAgentPrivate" kind="class" language="C++" prot="public">
+    <compoundname>PokitDiscoveryAgentPrivate</compoundname>
+    <basecompoundref refid="qobject" prot="public" virt="non-virtual">QObject</basecompoundref>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classPokitDiscoveryAgentPrivate_1a82fa30e9b52381bff5c5c15ff351ac62" prot="protected" static="no" mutable="no">
+        <type><ref refid="classPokitDiscoveryAgent" kindref="compound">PokitDiscoveryAgent</ref> *</type>
+        <definition>PokitDiscoveryAgent* PokitDiscoveryAgentPrivate::q_ptr</definition>
+        <argsstring></argsstring>
+        <name>q_ptr</name>
+        <qualifiedname>PokitDiscoveryAgentPrivate::q_ptr</qualifiedname>
+        <briefdescription>
+<para>Internal q-pointer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/lib/pokitdiscoveryagent_p.h" line="41" column="26" bodyfile="/home/paul/src/dokit/src/lib/pokitdiscoveryagent_p.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="classPokitDiscoveryAgentPrivate_1adab84de4430e038cc3c56d9d81c6b7e6" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class TestPokitDiscoveryAgent</definition>
+        <argsstring></argsstring>
+        <name>TestPokitDiscoveryAgent</name>
+        <qualifiedname>PokitDiscoveryAgentPrivate::TestPokitDiscoveryAgent</qualifiedname>
+        <param>
+          <type>TestPokitDiscoveryAgent</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/lib/pokitdiscoveryagent_p.h" line="46" column="18" bodyfile="/home/paul/src/dokit/src/lib/pokitdiscoveryagent_p.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classPokitDiscoveryAgentPrivate_1a1a66593d6568865989a13cba288010cf" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>static</type>
+        <definition>static PokitDiscoveryAgentPrivate::Q_LOGGING_CATEGORY</definition>
+        <argsstring>(lc, &quot;pokit.ble.discovery&quot;, QtInfoMsg)</argsstring>
+        <name>Q_LOGGING_CATEGORY</name>
+        <qualifiedname>PokitDiscoveryAgentPrivate::Q_LOGGING_CATEGORY</qualifiedname>
+        <param>
+          <type>lc</type>
+        </param>
+        <param>
+          <type>&quot;pokit.ble.discovery&quot;</type>
+        </param>
+        <param>
+          <type>QtInfoMsg</type>
+        </param>
+        <briefdescription>
+<para>Logging category. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/lib/pokitdiscoveryagent_p.h" line="27" column="12"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classPokitDiscoveryAgentPrivate_1a0efe6e89767d8c982d181aee05f3f392" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PokitDiscoveryAgentPrivate::PokitDiscoveryAgentPrivate</definition>
+        <argsstring>(PokitDiscoveryAgent *const q)</argsstring>
+        <name>PokitDiscoveryAgentPrivate</name>
+        <qualifiedname>PokitDiscoveryAgentPrivate::PokitDiscoveryAgentPrivate</qualifiedname>
+        <param>
+          <type><ref refid="classPokitDiscoveryAgent" kindref="compound">PokitDiscoveryAgent</ref> *const</type>
+          <declname>q</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<internal><para>Constructs a new <ref refid="classPokitDiscoveryAgentPrivate" kindref="compound">PokitDiscoveryAgentPrivate</ref> object with public implementation <emphasis>q</emphasis>. </para>
+</internal>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/lib/pokitdiscoveryagent_p.h" line="29" column="14" bodyfile="/home/paul/src/dokit/src/lib/pokitdiscoveryagent.cpp" bodystart="129" bodyend="153"/>
+        <references refid="classPokitDiscoveryAgentPrivate_1a0e965d6b721e5800d575e47016c7a37d" compoundref="pokitdiscoveryagent_8cpp" startline="158" endline="161">canceled</references>
+        <references refid="qbluetoothdevicediscoveryagent_1canceled">QBluetoothDeviceDiscoveryAgent::canceled</references>
+        <references refid="qobject_1connect-4">QObject::connect</references>
+        <references refid="classPokitDiscoveryAgentPrivate_1af96c8bec6557e8ac44006081a7f82caf" compoundref="pokitdiscoveryagent_8cpp" startline="168" endline="175">deviceDiscovered</references>
+        <references refid="qbluetoothdevicediscoveryagent_1deviceDiscovered">QBluetoothDeviceDiscoveryAgent::deviceDiscovered</references>
+        <references refid="classPokitDiscoveryAgentPrivate_1afc40fda129c4f54986bf8c31fd803fb6" compoundref="pokitdiscoveryagent_8cpp" startline="185" endline="193">deviceUpdated</references>
+        <references refid="qbluetoothdevicediscoveryagent_1deviceUpdated">QBluetoothDeviceDiscoveryAgent::deviceUpdated</references>
+        <references refid="classPokitDiscoveryAgentPrivate_1ae1542948a66d68f1435337fe3121a614" compoundref="pokitdiscoveryagent_8cpp" startline="199" endline="202">error</references>
+        <references refid="qbluetoothdevicediscoveryagent_1error">QBluetoothDeviceDiscoveryAgent::error</references>
+        <references refid="qbluetoothdevicediscoveryagent_1errorOccurred">QBluetoothDeviceDiscoveryAgent::errorOccurred</references>
+        <references refid="classPokitDiscoveryAgentPrivate_1ade8a64a3a7840eea1bf43fa1361ee541" compoundref="pokitdiscoveryagent_8cpp" startline="207" endline="210">finished</references>
+        <references refid="qbluetoothdevicediscoveryagent_1finished">QBluetoothDeviceDiscoveryAgent::finished</references>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-slot">
+      <memberdef kind="slot" id="classPokitDiscoveryAgentPrivate_1a0e965d6b721e5800d575e47016c7a37d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PokitDiscoveryAgentPrivate::canceled</definition>
+        <argsstring>() const</argsstring>
+        <name>canceled</name>
+        <qualifiedname>PokitDiscoveryAgentPrivate::canceled</qualifiedname>
+        <briefdescription>
+<para>Handle scan canceled signals, by simply logging the event for diagnostic purposes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/lib/pokitdiscoveryagent_p.h" line="32" column="10" bodyfile="/home/paul/src/dokit/src/lib/pokitdiscoveryagent.cpp" bodystart="158" bodyend="161"/>
+        <references refid="qobject_1tr">QObject::tr</references>
+        <referencedby refid="classPokitDiscoveryAgentPrivate_1a0efe6e89767d8c982d181aee05f3f392" compoundref="pokitdiscoveryagent_8cpp" startline="129" endline="153">PokitDiscoveryAgentPrivate</referencedby>
+      </memberdef>
+      <memberdef kind="slot" id="classPokitDiscoveryAgentPrivate_1af96c8bec6557e8ac44006081a7f82caf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PokitDiscoveryAgentPrivate::deviceDiscovered</definition>
+        <argsstring>(const QBluetoothDeviceInfo &amp;info)</argsstring>
+        <name>deviceDiscovered</name>
+        <qualifiedname>PokitDiscoveryAgentPrivate::deviceDiscovered</qualifiedname>
+        <param>
+          <type>const <ref refid="qbluetoothdeviceinfo" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothDeviceInfo</ref> &amp;</type>
+          <declname>info</declname>
+        </param>
+        <briefdescription>
+<para>Handle deviceDiscovered signals. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Here we simply check if <emphasis>info</emphasis> describes a Pokit device, and if so, emit pokitDeviceDiscovered(). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/lib/pokitdiscoveryagent_p.h" line="33" column="10" bodyfile="/home/paul/src/dokit/src/lib/pokitdiscoveryagent.cpp" bodystart="168" bodyend="175"/>
+        <references refid="qbluetoothdeviceinfo_1address">QBluetoothDeviceInfo::address</references>
+        <references refid="qstring_1arg-14">QString::arg</references>
+        <references refid="pokitproducts_8h_1adb8bb3a07e937158a294997e60868297" compoundref="pokitproducts_8cpp" startline="43" endline="46">isPokitProduct</references>
+        <references refid="qbluetoothdeviceinfo_1name">QBluetoothDeviceInfo::name</references>
+        <references refid="qobject_1Q_EMIT">QObject::Q_EMIT</references>
+        <references refid="qbluetoothaddress_1toString">QBluetoothAddress::toString</references>
+        <references refid="qobject_1tr">QObject::tr</references>
+        <referencedby refid="classPokitDiscoveryAgentPrivate_1a0efe6e89767d8c982d181aee05f3f392" compoundref="pokitdiscoveryagent_8cpp" startline="129" endline="153">PokitDiscoveryAgentPrivate</referencedby>
+      </memberdef>
+      <memberdef kind="slot" id="classPokitDiscoveryAgentPrivate_1afc40fda129c4f54986bf8c31fd803fb6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PokitDiscoveryAgentPrivate::deviceUpdated</definition>
+        <argsstring>(const QBluetoothDeviceInfo &amp;info, QBluetoothDeviceInfo::Fields updatedFields)</argsstring>
+        <name>deviceUpdated</name>
+        <qualifiedname>PokitDiscoveryAgentPrivate::deviceUpdated</qualifiedname>
+        <param>
+          <type>const <ref refid="qbluetoothdeviceinfo" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothDeviceInfo</ref> &amp;</type>
+          <declname>info</declname>
+        </param>
+        <param>
+          <type><ref refid="qbluetoothdeviceinfo_1Field-enum" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothDeviceInfo::Fields</ref></type>
+          <declname>updatedFields</declname>
+        </param>
+        <briefdescription>
+<para>Handle deviceUpdated signals. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Here we simply check if <emphasis>info</emphasis> describes a Pokit device, and if so, emit pokitDeviceUpdated().</para>
+<para><simplesect kind="since"><para><ref refid="qt" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">Qt</ref> 5.12.0 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/lib/pokitdiscoveryagent_p.h" line="35" column="10" bodyfile="/home/paul/src/dokit/src/lib/pokitdiscoveryagent.cpp" bodystart="185" bodyend="193"/>
+        <references refid="qbluetoothdeviceinfo_1address">QBluetoothDeviceInfo::address</references>
+        <references refid="qstring_1arg-14">QString::arg</references>
+        <references refid="pokitproducts_8h_1adb8bb3a07e937158a294997e60868297" compoundref="pokitproducts_8cpp" startline="43" endline="46">isPokitProduct</references>
+        <references refid="qbluetoothdeviceinfo_1name">QBluetoothDeviceInfo::name</references>
+        <references refid="qobject_1Q_EMIT">QObject::Q_EMIT</references>
+        <references refid="qbluetoothdeviceinfo_1rssi">QBluetoothDeviceInfo::rssi</references>
+        <references refid="qbluetoothaddress_1toString">QBluetoothAddress::toString</references>
+        <references refid="qobject_1tr">QObject::tr</references>
+        <referencedby refid="classPokitDiscoveryAgentPrivate_1a0efe6e89767d8c982d181aee05f3f392" compoundref="pokitdiscoveryagent_8cpp" startline="129" endline="153">PokitDiscoveryAgentPrivate</referencedby>
+      </memberdef>
+      <memberdef kind="slot" id="classPokitDiscoveryAgentPrivate_1ae1542948a66d68f1435337fe3121a614" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PokitDiscoveryAgentPrivate::error</definition>
+        <argsstring>(const QBluetoothDeviceDiscoveryAgent::Error error) const</argsstring>
+        <name>error</name>
+        <qualifiedname>PokitDiscoveryAgentPrivate::error</qualifiedname>
+        <param>
+          <type>const <ref refid="qbluetoothdevicediscoveryagent_1Error-enum" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothDeviceDiscoveryAgent::Error</ref></type>
+          <declname>error</declname>
+        </param>
+        <briefdescription>
+<para>Handle scan errors, by simply logging <emphasis>error</emphasis> for diagnostic purposes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/lib/pokitdiscoveryagent_p.h" line="37" column="10" bodyfile="/home/paul/src/dokit/src/lib/pokitdiscoveryagent.cpp" bodystart="199" bodyend="202"/>
+        <references refid="classPokitDiscoveryAgentPrivate_1ae1542948a66d68f1435337fe3121a614" compoundref="pokitdiscoveryagent_8cpp" startline="199" endline="202">error</references>
+        <references refid="qobject_1tr">QObject::tr</references>
+        <referencedby refid="classPokitDiscoveryAgentPrivate_1ae1542948a66d68f1435337fe3121a614" compoundref="pokitdiscoveryagent_8cpp" startline="199" endline="202">error</referencedby>
+        <referencedby refid="classPokitDiscoveryAgentPrivate_1a0efe6e89767d8c982d181aee05f3f392" compoundref="pokitdiscoveryagent_8cpp" startline="129" endline="153">PokitDiscoveryAgentPrivate</referencedby>
+      </memberdef>
+      <memberdef kind="slot" id="classPokitDiscoveryAgentPrivate_1ade8a64a3a7840eea1bf43fa1361ee541" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PokitDiscoveryAgentPrivate::finished</definition>
+        <argsstring>() const</argsstring>
+        <name>finished</name>
+        <qualifiedname>PokitDiscoveryAgentPrivate::finished</qualifiedname>
+        <briefdescription>
+<para>Handle scan finished signals, by simply logging the event for diagnostic purposes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/lib/pokitdiscoveryagent_p.h" line="38" column="10" bodyfile="/home/paul/src/dokit/src/lib/pokitdiscoveryagent.cpp" bodystart="207" bodyend="210"/>
+        <references refid="qobject_1tr">QObject::tr</references>
+        <referencedby refid="classPokitDiscoveryAgentPrivate_1a0efe6e89767d8c982d181aee05f3f392" compoundref="pokitdiscoveryagent_8cpp" startline="129" endline="153">PokitDiscoveryAgentPrivate</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>The <ref refid="classPokitDiscoveryAgentPrivate" kindref="compound">PokitDiscoveryAgentPrivate</ref> class provides private implementation for <ref refid="classPokitDiscoveryAgent" kindref="compound">PokitDiscoveryAgent</ref>. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>PokitDiscoveryAgentPrivate</label>
+        <link refid="classPokitDiscoveryAgentPrivate"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QObject</label>
+        <link refid="qobject" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>PokitDiscoveryAgent</label>
+        <link refid="classPokitDiscoveryAgent"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1" relation="usage">
+          <edgelabel>d_ptr</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>PokitDiscoveryAgentPrivate</label>
+        <link refid="classPokitDiscoveryAgentPrivate"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>q_ptr</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>QBluetoothDeviceDiscoveryAgent</label>
+        <link refid="qbluetoothdevicediscoveryagent" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QObject</label>
+        <link refid="qobject" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/paul/src/dokit/src/lib/pokitdiscoveryagent_p.h" line="22" column="1" bodyfile="/home/paul/src/dokit/src/lib/pokitdiscoveryagent_p.h" bodystart="23" bodyend="47"/>
+    <listofallmembers>
+      <member refid="qobject_1objectName-prop" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgentPrivate</scope><name>bindableObjectName</name></member>
+      <member refid="qobject_1blockSignals" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgentPrivate</scope><name>blockSignals</name></member>
+      <member refid="classPokitDiscoveryAgentPrivate_1a0e965d6b721e5800d575e47016c7a37d" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgentPrivate</scope><name>canceled</name></member>
+      <member refid="qobject_1childEvent" prot="protected" virt="virtual"><scope>PokitDiscoveryAgentPrivate</scope><name>childEvent</name></member>
+      <member refid="qobject_1children" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgentPrivate</scope><name>children</name></member>
+      <member refid="qobject_1connect-4" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgentPrivate</scope><name>connect</name></member>
+      <member refid="qobject_1connect-5" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgentPrivate</scope><name>connect</name></member>
+      <member refid="qobject_1connect-3" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgentPrivate</scope><name>connect</name></member>
+      <member refid="qobject_1connect-1" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgentPrivate</scope><name>connect</name></member>
+      <member refid="qobject_1connect" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgentPrivate</scope><name>connect</name></member>
+      <member refid="qobject_1connect-2" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgentPrivate</scope><name>connect</name></member>
+      <member refid="qobject_1connectNotify" prot="protected" virt="virtual"><scope>PokitDiscoveryAgentPrivate</scope><name>connectNotify</name></member>
+      <member refid="qobject_1customEvent" prot="protected" virt="virtual"><scope>PokitDiscoveryAgentPrivate</scope><name>customEvent</name></member>
+      <member refid="qobject_1deleteLater" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgentPrivate</scope><name>deleteLater</name></member>
+      <member refid="qobject_1destroyed" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgentPrivate</scope><name>destroyed</name></member>
+      <member refid="classPokitDiscoveryAgentPrivate_1af96c8bec6557e8ac44006081a7f82caf" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgentPrivate</scope><name>deviceDiscovered</name></member>
+      <member refid="classPokitDiscoveryAgentPrivate_1afc40fda129c4f54986bf8c31fd803fb6" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgentPrivate</scope><name>deviceUpdated</name></member>
+      <member refid="qobject_1disconnect-4" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgentPrivate</scope><name>disconnect</name></member>
+      <member refid="qobject_1disconnect-5" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgentPrivate</scope><name>disconnect</name></member>
+      <member refid="qobject_1disconnect-1" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgentPrivate</scope><name>disconnect</name></member>
+      <member refid="qobject_1disconnect" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgentPrivate</scope><name>disconnect</name></member>
+      <member refid="qobject_1disconnect-3" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgentPrivate</scope><name>disconnect</name></member>
+      <member refid="qobject_1disconnect-2" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgentPrivate</scope><name>disconnect</name></member>
+      <member refid="qobject_1disconnectNotify" prot="protected" virt="virtual"><scope>PokitDiscoveryAgentPrivate</scope><name>disconnectNotify</name></member>
+      <member refid="qobject_1dumpObjectInfo" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgentPrivate</scope><name>dumpObjectInfo</name></member>
+      <member refid="qobject_1dumpObjectTree" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgentPrivate</scope><name>dumpObjectTree</name></member>
+      <member refid="qobject_1dynamicPropertyNames" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgentPrivate</scope><name>dynamicPropertyNames</name></member>
+      <member refid="classPokitDiscoveryAgentPrivate_1ae1542948a66d68f1435337fe3121a614" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgentPrivate</scope><name>error</name></member>
+      <member refid="qobject_1event" prot="public" virt="virtual"><scope>PokitDiscoveryAgentPrivate</scope><name>event</name></member>
+      <member refid="qobject_1eventFilter" prot="public" virt="virtual"><scope>PokitDiscoveryAgentPrivate</scope><name>eventFilter</name></member>
+      <member refid="qobject_1findChild" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgentPrivate</scope><name>findChild</name></member>
+      <member refid="qobject_1findChildren-1" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgentPrivate</scope><name>findChildren</name></member>
+      <member refid="qobject_1findChildren-2" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgentPrivate</scope><name>findChildren</name></member>
+      <member refid="qobject_1findChildren" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgentPrivate</scope><name>findChildren</name></member>
+      <member refid="classPokitDiscoveryAgentPrivate_1ade8a64a3a7840eea1bf43fa1361ee541" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgentPrivate</scope><name>finished</name></member>
+      <member refid="qobject_1inherits" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgentPrivate</scope><name>inherits</name></member>
+      <member refid="qobject_1installEventFilter" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgentPrivate</scope><name>installEventFilter</name></member>
+      <member refid="qobject_1isQuickItemType" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgentPrivate</scope><name>isQuickItemType</name></member>
+      <member refid="qobject_1isSignalConnected" prot="protected" virt="non-virtual"><scope>PokitDiscoveryAgentPrivate</scope><name>isSignalConnected</name></member>
+      <member refid="qobject_1isWidgetType" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgentPrivate</scope><name>isWidgetType</name></member>
+      <member refid="qobject_1isWindowType" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgentPrivate</scope><name>isWindowType</name></member>
+      <member refid="qobject_1killTimer" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgentPrivate</scope><name>killTimer</name></member>
+      <member refid="qobject_1metaObject" prot="public" virt="virtual"><scope>PokitDiscoveryAgentPrivate</scope><name>metaObject</name></member>
+      <member refid="qobject_1moveToThread" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgentPrivate</scope><name>moveToThread</name></member>
+      <member refid="qobject_1objectName-prop" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgentPrivate</scope><name>objectName</name></member>
+      <member refid="qobject_1objectName-prop" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgentPrivate</scope><name>objectName</name></member>
+      <member refid="qobject_1objectNameChanged" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgentPrivate</scope><name>objectNameChanged</name></member>
+      <member refid="qobject_1parent" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgentPrivate</scope><name>parent</name></member>
+      <member refid="classPokitDiscoveryAgentPrivate_1a0efe6e89767d8c982d181aee05f3f392" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgentPrivate</scope><name>PokitDiscoveryAgentPrivate</name></member>
+      <member refid="qobject_1property" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgentPrivate</scope><name>property</name></member>
+      <member refid="qobject_1Q_CLASSINFO" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgentPrivate</scope><name>Q_CLASSINFO</name></member>
+      <member refid="qobject_1Q_EMIT" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgentPrivate</scope><name>Q_EMIT</name></member>
+      <member refid="qobject_1Q_ENUM" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgentPrivate</scope><name>Q_ENUM</name></member>
+      <member refid="qobject_1Q_ENUM_NS" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgentPrivate</scope><name>Q_ENUM_NS</name></member>
+      <member refid="qobject-obsolete_1Q_ENUMS" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgentPrivate</scope><name>Q_ENUMS</name></member>
+      <member refid="qobject_1Q_FLAG" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgentPrivate</scope><name>Q_FLAG</name></member>
+      <member refid="qobject_1Q_FLAG_NS" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgentPrivate</scope><name>Q_FLAG_NS</name></member>
+      <member refid="qobject-obsolete_1Q_FLAGS" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgentPrivate</scope><name>Q_FLAGS</name></member>
+      <member refid="qobject_1Q_GADGET" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgentPrivate</scope><name>Q_GADGET</name></member>
+      <member refid="qobject_1Q_GADGET_EXPORT" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgentPrivate</scope><name>Q_GADGET_EXPORT</name></member>
+      <member refid="qobject_1Q_INTERFACES" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgentPrivate</scope><name>Q_INTERFACES</name></member>
+      <member refid="qobject_1Q_INVOKABLE" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgentPrivate</scope><name>Q_INVOKABLE</name></member>
+      <member refid="classPokitDiscoveryAgentPrivate_1a1a66593d6568865989a13cba288010cf" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgentPrivate</scope><name>Q_LOGGING_CATEGORY</name></member>
+      <member refid="qobject_1Q_MOC_INCLUDE" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgentPrivate</scope><name>Q_MOC_INCLUDE</name></member>
+      <member refid="qobject_1Q_NAMESPACE" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgentPrivate</scope><name>Q_NAMESPACE</name></member>
+      <member refid="qobject_1Q_NAMESPACE_EXPORT" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgentPrivate</scope><name>Q_NAMESPACE_EXPORT</name></member>
+      <member refid="qobject_1Q_OBJECT" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgentPrivate</scope><name>Q_OBJECT</name></member>
+      <member refid="qobject_1Q_PROPERTY" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgentPrivate</scope><name>Q_PROPERTY</name></member>
+      <member refid="classPokitDiscoveryAgentPrivate_1a82fa30e9b52381bff5c5c15ff351ac62" prot="protected" virt="non-virtual"><scope>PokitDiscoveryAgentPrivate</scope><name>q_ptr</name></member>
+      <member refid="qobject_1Q_REVISION" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgentPrivate</scope><name>Q_REVISION</name></member>
+      <member refid="qobject_1Q_SET_OBJECT_NAME" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgentPrivate</scope><name>Q_SET_OBJECT_NAME</name></member>
+      <member refid="qobject_1Q_SIGNAL" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgentPrivate</scope><name>Q_SIGNAL</name></member>
+      <member refid="qobject_1Q_SIGNALS" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgentPrivate</scope><name>Q_SIGNALS</name></member>
+      <member refid="qobject_1Q_SLOT" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgentPrivate</scope><name>Q_SLOT</name></member>
+      <member refid="qobject_1Q_SLOTS" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgentPrivate</scope><name>Q_SLOTS</name></member>
+      <member refid="qobject_1QObject" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgentPrivate</scope><name>QObject</name></member>
+      <member refid="qobject_1qobject_cast" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgentPrivate</scope><name>qobject_cast</name></member>
+      <member refid="qobject_1qobject_cast-1" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgentPrivate</scope><name>qobject_cast</name></member>
+      <member refid="qobject_1QObjectList-typedef" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgentPrivate</scope><name>QObjectList</name></member>
+      <member refid="qobject_1QT_NO_NARROWING_CONVERSIONS_IN_CONNECT" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgentPrivate</scope><name>QT_NO_NARROWING_CONVERSIONS_IN_CONNECT</name></member>
+      <member refid="qobject_1receivers" prot="protected" virt="non-virtual"><scope>PokitDiscoveryAgentPrivate</scope><name>receivers</name></member>
+      <member refid="qobject_1removeEventFilter" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgentPrivate</scope><name>removeEventFilter</name></member>
+      <member refid="qobject_1sender" prot="protected" virt="non-virtual"><scope>PokitDiscoveryAgentPrivate</scope><name>sender</name></member>
+      <member refid="qobject_1senderSignalIndex" prot="protected" virt="non-virtual"><scope>PokitDiscoveryAgentPrivate</scope><name>senderSignalIndex</name></member>
+      <member refid="qobject_1setObjectName-1" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgentPrivate</scope><name>setObjectName</name></member>
+      <member refid="qobject_1setObjectName" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgentPrivate</scope><name>setObjectName</name></member>
+      <member refid="qobject_1setParent" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgentPrivate</scope><name>setParent</name></member>
+      <member refid="qobject_1setProperty-1" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgentPrivate</scope><name>setProperty</name></member>
+      <member refid="qobject_1setProperty" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgentPrivate</scope><name>setProperty</name></member>
+      <member refid="qobject_1signalsBlocked" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgentPrivate</scope><name>signalsBlocked</name></member>
+      <member refid="qobject_1startTimer" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgentPrivate</scope><name>startTimer</name></member>
+      <member refid="qobject_1startTimer-1" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgentPrivate</scope><name>startTimer</name></member>
+      <member refid="classPokitDiscoveryAgentPrivate_1adab84de4430e038cc3c56d9d81c6b7e6" prot="private" virt="non-virtual"><scope>PokitDiscoveryAgentPrivate</scope><name>TestPokitDiscoveryAgent</name></member>
+      <member refid="qobject_1thread" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgentPrivate</scope><name>thread</name></member>
+      <member refid="qobject_1timerEvent" prot="protected" virt="virtual"><scope>PokitDiscoveryAgentPrivate</scope><name>timerEvent</name></member>
+      <member refid="qobject_1tr" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgentPrivate</scope><name>tr</name></member>
+      <member refid="qobject_1dtor.QObject" prot="public" virt="virtual"><scope>PokitDiscoveryAgentPrivate</scope><name>~QObject</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

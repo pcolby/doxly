@@ -1,0 +1,579 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.0" xml:lang="en-US">
+  <compounddef id="devicecommand_8cpp" kind="file" language="C++">
+    <compoundname>devicecommand.cpp</compoundname>
+    <includes refid="devicecommand_8h" local="yes">devicecommand.h</includes>
+    <includes refid="abstractpokitservice_8h" local="no">qtpokit/abstractpokitservice.h</includes>
+    <includes refid="pokitdevice_8h" local="no">qtpokit/pokitdevice.h</includes>
+    <includes refid="pokitdiscoveryagent_8h" local="no">qtpokit/pokitdiscoveryagent.h</includes>
+    <includes refid="pokitmeter_8h" local="yes">qtpokit/pokitmeter.h</includes>
+    <includes refid="pokitpro_8h" local="yes">qtpokit/pokitpro.h</includes>
+    <incdepgraph>
+      <node id="14">
+        <label>qtpokit/abstractpokitservice.h</label>
+        <link refid="abstractpokitservice_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>qtpokit/pokitdevice.h</label>
+        <link refid="pokitdevice_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>qtpokit/pokitdiscoveryagent.h</label>
+        <link refid="pokitdiscoveryagent_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>qtpokit/pokitmeter.h</label>
+        <link refid="pokitmeter_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>qtpokit/pokitpro.h</label>
+        <link refid="pokitpro_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>qtpokit/pokitproducts.h</label>
+        <link refid="pokitproducts_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>qtpokit_global.h</label>
+        <link refid="qtpokit__global_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>abstractcommand.h</label>
+        <link refid="abstractcommand_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>devicecommand.cpp</label>
+        <link refid="devicecommand_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>devicecommand.h</label>
+        <link refid="devicecommand_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>QBluetoothDeviceDiscoveryAgent</label>
+      </node>
+      <node id="4">
+        <label>QBluetoothDeviceInfo</label>
+      </node>
+      <node id="5">
+        <label>QCommandLineParser</label>
+      </node>
+      <node id="11">
+        <label>QFlags</label>
+      </node>
+      <node id="6">
+        <label>QLoggingCategory</label>
+      </node>
+      <node id="13">
+        <label>QLowEnergyController</label>
+      </node>
+      <node id="15">
+        <label>QLowEnergyService</label>
+      </node>
+      <node id="7">
+        <label>QObject</label>
+      </node>
+      <node id="12">
+        <label>QString</label>
+      </node>
+      <node id="21">
+        <label>QVariant</label>
+      </node>
+      <node id="10">
+        <label>QtGlobal</label>
+      </node>
+      <node id="16">
+        <label>optional</label>
+      </node>
+    </incdepgraph>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="devicecommand_8cpp_1ae000a749f1f18b3388b034e47a93f279" prot="public" static="no">
+        <name>DOKIT_CLI_IF_LESS_THAN_RETURN</name>
+        <param><defname>value</defname></param>
+        <param><defname>ns</defname></param>
+        <param><defname>label</defname></param>
+        <initializer>if (value &lt;= ns::maxValue(label).toUInt()) { \
+        return label; \
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/devicecommand.cpp" line="60" column="9" bodyfile="/home/paul/src/dokit/src/cli/devicecommand.cpp" bodystart="60" bodyend="63"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>SPDX-FileCopyrightText:<sp/>2022-2024<sp/>Paul<sp/>Colby<sp/>&lt;git@colby.id.au&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>SPDX-License-Identifier:<sp/>LGPL-3.0-or-later</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;devicecommand.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="abstractpokitservice_8h" kindref="compound">qtpokit/abstractpokitservice.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="pokitdevice_8h" kindref="compound">qtpokit/pokitdevice.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="pokitdiscoveryagent_8h" kindref="compound">qtpokit/pokitdiscoveryagent.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="pokitmeter_8h" kindref="compound">qtpokit/pokitmeter.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="pokitpro_8h" kindref="compound">qtpokit/pokitpro.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="12"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>\class<sp/>DeviceCommand</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>The<sp/>AbstractCommand<sp/>class<sp/>extends<sp/>AbstractCommand<sp/>to<sp/>add<sp/>a<sp/>PokitDevice<sp/>instance.</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="18"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/>Construct<sp/>a<sp/>new<sp/>DeviceCommand<sp/>object<sp/>with<sp/>\a<sp/>parent.</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="classDeviceCommand_1a55c623ad1d1e0ad1273604f3f24b1dfc" refkind="member"><highlight class="normal"><ref refid="classDeviceCommand_1a55c623ad1d1e0ad1273604f3f24b1dfc" kindref="member">DeviceCommand::DeviceCommand</ref>(<ref refid="qobject" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QObject</ref><sp/>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>parent)<sp/>:<sp/><ref refid="classAbstractCommand" kindref="compound">AbstractCommand</ref>(parent)</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="26"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/>*<sp/>Begins<sp/>scanning<sp/>for<sp/>the<sp/>Pokit<sp/>device.</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="classDeviceCommand_1a6cf548752b7ae1084a712b9003b92d0c" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classDeviceCommand_1a6cf548752b7ae1084a712b9003b92d0c" kindref="member">DeviceCommand::start</ref>()</highlight></codeline>
+<codeline lineno="30"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>qCInfo(lc).noquote()<sp/>&lt;&lt;<sp/>((<ref refid="classAbstractCommand_1a07d979bc039d61f5c720cb1521b31208" kindref="member">deviceToScanFor</ref>.<ref refid="qstring_1isNull" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">isNull</ref>())</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>?<sp/><ref refid="qobject_1tr" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">tr</ref>(</highlight><highlight class="stringliteral">&quot;Looking<sp/>for<sp/>first<sp/>available<sp/>Pokit<sp/>device...&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/><ref refid="qobject_1tr" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">tr</ref>(R</highlight><highlight class="stringliteral">&quot;(Looking<sp/>for<sp/>device<sp/>&quot;%1&quot;...)&quot;).arg(<ref refid="classAbstractCommand_1a07d979bc039d61f5c720cb1521b31208" kindref="member">deviceToScanFor</ref>));</highlight></codeline>
+<codeline lineno="34"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><ref refid="classAbstractCommand_1a86878df43cd818f4a7f333a97dabac3c" kindref="member">discoveryAgent</ref>-&gt;<ref refid="classPokitDiscoveryAgent_1a7a91a09dbbe46327407d69bc04b19fc5" kindref="member">start</ref>();</highlight></codeline>
+<codeline lineno="35"><highlight class="stringliteral"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="38"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="39"><highlight class="comment"><sp/>*<sp/>Disconnects<sp/>the<sp/>underlying<sp/>Pokit<sp/>device,<sp/>and<sp/>sets<sp/>\a<sp/>exitCode<sp/>to<sp/>be<sp/>return<sp/>to<sp/>the<sp/>OS<sp/>once<sp/>the</highlight></codeline>
+<codeline lineno="40"><highlight class="comment"><sp/>*<sp/>disconnection<sp/>has<sp/>taken<sp/>place.</highlight></codeline>
+<codeline lineno="41"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="classDeviceCommand_1ae619166395b5651f1316fd5336d9fa2c" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classDeviceCommand_1ae619166395b5651f1316fd5336d9fa2c" kindref="member">DeviceCommand::disconnect</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>exitCode)</highlight></codeline>
+<codeline lineno="43"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>qCDebug(lc).noquote()<sp/>&lt;&lt;<sp/><ref refid="qobject_1tr" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">tr</ref>(</highlight><highlight class="stringliteral">&quot;Disconnecting<sp/>Pokit<sp/>device...&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_ASSERT(<ref refid="classDeviceCommand_1a2bbf2dc9bb0ba85a2bf29263746c7b57" kindref="member">device</ref>);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_ASSERT(<ref refid="classDeviceCommand_1a2bbf2dc9bb0ba85a2bf29263746c7b57" kindref="member">device</ref>-&gt;<ref refid="classPokitDevice_1a2e2fb6b30e6f5f0d7bc6cd8f806d6423" kindref="member">controller</ref>());</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classDeviceCommand_1a792b3771a02cb7f4aff6335045b705bf" kindref="member">exitCodeOnDisconnect</ref><sp/>=<sp/>exitCode;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classDeviceCommand_1a2bbf2dc9bb0ba85a2bf29263746c7b57" kindref="member">device</ref>-&gt;<ref refid="classPokitDevice_1a2e2fb6b30e6f5f0d7bc6cd8f806d6423" kindref="member">controller</ref>()-&gt;<ref refid="qlowenergycontroller_1disconnectFromDevice" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">disconnectFromDevice</ref>();</highlight></codeline>
+<codeline lineno="49"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="51"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="52"><highlight class="comment"><sp/>*<sp/>\fn<sp/>virtual<sp/>AbstractPokitService<sp/>*<sp/>DeviceCommand::getService()<sp/>=<sp/>0</highlight></codeline>
+<codeline lineno="53"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="54"><highlight class="comment"><sp/>*<sp/>Returns<sp/>a<sp/>Pokit<sp/>service<sp/>object<sp/>for<sp/>the<sp/>derived<sp/>command<sp/>class.<sp/>This<sp/>will<sp/>be<sp/>called<sp/>by</highlight></codeline>
+<codeline lineno="55"><highlight class="comment"><sp/>*<sp/>deviceDiscovered()<sp/>when<sp/>the<sp/>requested<sp/>Pokit<sp/>device<sp/>has<sp/>been<sp/>found,<sp/>after<sp/>which</highlight></codeline>
+<codeline lineno="56"><highlight class="comment"><sp/>*<sp/>deviceDiscovered()<sp/>will<sp/>connect<sp/>the<sp/>returned<sp/>service&apos;s<sp/>common<sp/>signals,<sp/>and<sp/>kick<sp/>off<sp/>the</highlight></codeline>
+<codeline lineno="57"><highlight class="comment"><sp/>*<sp/>device&apos;s<sp/>connection<sp/>process.</highlight></codeline>
+<codeline lineno="58"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DOKIT_CLI_IF_LESS_THAN_RETURN(value,<sp/>ns,<sp/>label)<sp/>\</highlight></codeline>
+<codeline lineno="61"><highlight class="preprocessor">if<sp/>(value<sp/>&lt;=<sp/>ns::maxValue(label).toUInt())<sp/>{<sp/>\</highlight></codeline>
+<codeline lineno="62"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>return<sp/>label;<sp/>\</highlight></codeline>
+<codeline lineno="63"><highlight class="preprocessor">}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="65"><highlight class="comment">/**</highlight></codeline>
+<codeline lineno="66"><highlight class="comment"><sp/>*<sp/>\fn<sp/>template&lt;typename<sp/>T&gt;<sp/>static<sp/>T<sp/>DeviceCommand::minRange(const<sp/>quint32<sp/>maxValue)</highlight></codeline>
+<codeline lineno="67"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="68"><highlight class="comment"><sp/>*<sp/>Returns<sp/>the<sp/>lowest<sp/>\a<sp/>T<sp/>range<sp/>that<sp/>can<sp/>measure<sp/>at<sp/>least<sp/>up<sp/>to<sp/>\a<sp/>maxValue,<sp/>or<sp/>AutoRange<sp/>if<sp/>no<sp/>such<sp/>range<sp/>is</highlight></codeline>
+<codeline lineno="69"><highlight class="comment"><sp/>*<sp/>available.</highlight></codeline>
+<codeline lineno="70"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="71"><highlight class="comment"><sp/>*<sp/>\tparam<sp/>T<sp/>Range<sp/>enumerator<sp/>to<sp/>evaluate<sp/>ranges<sp/>for.<sp/>Must<sp/>be<sp/>one<sp/>of:</highlight></codeline>
+<codeline lineno="72"><highlight class="comment"><sp/>*<sp/><sp/><sp/>*<sp/>PokitMeter::CurrentRange</highlight></codeline>
+<codeline lineno="73"><highlight class="comment"><sp/>*<sp/><sp/><sp/>*<sp/>PokitMeter::ResistanceRange</highlight></codeline>
+<codeline lineno="74"><highlight class="comment"><sp/>*<sp/><sp/><sp/>*<sp/>PokitMeter::VoltageRange</highlight></codeline>
+<codeline lineno="75"><highlight class="comment"><sp/>*<sp/><sp/><sp/>*<sp/>PokitPro::CapacitanceRange</highlight></codeline>
+<codeline lineno="76"><highlight class="comment"><sp/>*<sp/><sp/><sp/>*<sp/>PokitPro::CurrentRange</highlight></codeline>
+<codeline lineno="77"><highlight class="comment"><sp/>*<sp/><sp/><sp/>*<sp/>PokitPro::ResistanceRange</highlight></codeline>
+<codeline lineno="78"><highlight class="comment"><sp/>*<sp/><sp/><sp/>*<sp/>PokitPro::VoltageRange</highlight></codeline>
+<codeline lineno="79"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="80"><highlight class="comment"><sp/>*<sp/>\cond<sp/>Doxygen<sp/>has<sp/>&quot;only<sp/>very<sp/>limited<sp/>support<sp/>for<sp/>member<sp/>specialization<sp/>at<sp/>the<sp/>moment&quot;,<sp/>so<sp/>hide<sp/>these<sp/>from<sp/>Doxygen.</highlight></codeline>
+<codeline lineno="81"><highlight class="comment"><sp/>*<sp/>Specifically,<sp/>if<sp/>we<sp/>don&apos;t<sp/>hide<sp/>them,<sp/>then<sp/>Doxygen<sp/>(at<sp/>least<sp/>the<sp/>current<sp/>version:<sp/>v1.9.6)<sp/>sees<sp/>the<sp/>following</highlight></codeline>
+<codeline lineno="82"><highlight class="comment"><sp/>*<sp/>specialisations<sp/>as<sp/>new,<sp/>public,<sp/>non-static<sp/>members.</highlight></codeline>
+<codeline lineno="83"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="85"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="86"><highlight class="comment"><sp/>*<sp/>Returns<sp/>the<sp/>lowest<sp/>PokitMeter::CurrentRange<sp/>value<sp/>that<sp/>can<sp/>measure<sp/>at<sp/>least<sp/>up<sp/>to<sp/>\a<sp/>maxValue,<sp/>or<sp/>AutoRange<sp/>if</highlight></codeline>
+<codeline lineno="87"><highlight class="comment"><sp/>*<sp/>the<sp/>Pokit<sp/>Meter<sp/>cannot<sp/>measure<sp/>as<sp/>high<sp/>as<sp/>\a<sp/>maxValue.</highlight></codeline>
+<codeline lineno="88"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;&gt;<sp/><ref refid="namespacePokitMeter_1a22b467360c970e645f6a111b34d50a92" kindref="member">PokitMeter::CurrentRange</ref><sp/><ref refid="classDeviceCommand_1abb9d2e113e372130dca9360791e7ce5b" kindref="member">DeviceCommand::minRange&lt;&gt;</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>quint32<sp/>maxValue)</highlight></codeline>
+<codeline lineno="90"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(maxValue<sp/>==<sp/>0)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespacePokitMeter_1a22b467360c970e645f6a111b34d50a92a5c8523b038abf04d86fcc5358cd893cf" kindref="member">PokitMeter::CurrentRange::AutoRange</ref>;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>DOKIT_CLI_IF_LESS_THAN_RETURN(maxValue,<sp/><ref refid="namespacePokitMeter" kindref="compound">PokitMeter</ref>,<sp/><ref refid="namespacePokitMeter_1a22b467360c970e645f6a111b34d50a92a828fc0744dbf6304160fefea4b5f9265" kindref="member">PokitMeter::CurrentRange::_10mA</ref>)</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/>DOKIT_CLI_IF_LESS_THAN_RETURN(maxValue,<sp/><ref refid="namespacePokitMeter" kindref="compound">PokitMeter</ref>,<sp/><ref refid="namespacePokitMeter_1a22b467360c970e645f6a111b34d50a92a6cf453011c81d39c2418e95c9cd9c9df" kindref="member">PokitMeter::CurrentRange::_30mA</ref>)</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/>DOKIT_CLI_IF_LESS_THAN_RETURN(maxValue,<sp/><ref refid="namespacePokitMeter" kindref="compound">PokitMeter</ref>,<sp/><ref refid="namespacePokitMeter_1a22b467360c970e645f6a111b34d50a92ac599cead1dac0dc8c78c0d593dd9df76" kindref="member">PokitMeter::CurrentRange::_150mA</ref>)</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>DOKIT_CLI_IF_LESS_THAN_RETURN(maxValue,<sp/><ref refid="namespacePokitMeter" kindref="compound">PokitMeter</ref>,<sp/><ref refid="namespacePokitMeter_1a22b467360c970e645f6a111b34d50a92ab728c73ce23f33f3a68ab57720a5ea77" kindref="member">PokitMeter::CurrentRange::_300mA</ref>)</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/>DOKIT_CLI_IF_LESS_THAN_RETURN(maxValue,<sp/><ref refid="namespacePokitMeter" kindref="compound">PokitMeter</ref>,<sp/><ref refid="namespacePokitMeter_1a22b467360c970e645f6a111b34d50a92a4e21b9650f4279211a4e7180c97b8480" kindref="member">PokitMeter::CurrentRange::_2A</ref>)</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespacePokitMeter_1a22b467360c970e645f6a111b34d50a92a5c8523b038abf04d86fcc5358cd893cf" kindref="member">PokitMeter::CurrentRange::AutoRange</ref>;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="100"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="101"><highlight class="comment"><sp/>*<sp/>Returns<sp/>the<sp/>lowest<sp/>PokitMeter::ResistanceRange<sp/>value<sp/>that<sp/>can<sp/>measure<sp/>at<sp/>least<sp/>up<sp/>to<sp/>\a<sp/>maxValue,<sp/>or<sp/>AutoRange<sp/>if</highlight></codeline>
+<codeline lineno="102"><highlight class="comment"><sp/>*<sp/>the<sp/>Pokit<sp/>Meter<sp/>cannot<sp/>measure<sp/>as<sp/>high<sp/>as<sp/>\a<sp/>maxValue.</highlight></codeline>
+<codeline lineno="103"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;&gt;<sp/><ref refid="namespacePokitMeter_1aacf3005969c4417f7eaeeeaf83d5e047" kindref="member">PokitMeter::ResistanceRange</ref><sp/><ref refid="classDeviceCommand_1abb9d2e113e372130dca9360791e7ce5b" kindref="member">DeviceCommand::minRange</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>quint32<sp/>maxValue)</highlight></codeline>
+<codeline lineno="105"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(maxValue<sp/>==<sp/>0)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespacePokitMeter_1aacf3005969c4417f7eaeeeaf83d5e047a5c8523b038abf04d86fcc5358cd893cf" kindref="member">PokitMeter::ResistanceRange::AutoRange</ref>;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/>DOKIT_CLI_IF_LESS_THAN_RETURN(maxValue,<sp/><ref refid="namespacePokitMeter" kindref="compound">PokitMeter</ref>,<sp/><ref refid="namespacePokitMeter_1aacf3005969c4417f7eaeeeaf83d5e047a900ae15226aa8c0d4fa29e2add4a08c4" kindref="member">PokitMeter::ResistanceRange::_160</ref>)</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/>DOKIT_CLI_IF_LESS_THAN_RETURN(maxValue,<sp/><ref refid="namespacePokitMeter" kindref="compound">PokitMeter</ref>,<sp/><ref refid="namespacePokitMeter_1aacf3005969c4417f7eaeeeaf83d5e047a44c86547d0ddac7860e857aba92608ea" kindref="member">PokitMeter::ResistanceRange::_330</ref>)</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/>DOKIT_CLI_IF_LESS_THAN_RETURN(maxValue,<sp/><ref refid="namespacePokitMeter" kindref="compound">PokitMeter</ref>,<sp/><ref refid="namespacePokitMeter_1aacf3005969c4417f7eaeeeaf83d5e047a1565efe7464a002ba8253cea19fb2c16" kindref="member">PokitMeter::ResistanceRange::_890</ref>)</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/>DOKIT_CLI_IF_LESS_THAN_RETURN(maxValue,<sp/><ref refid="namespacePokitMeter" kindref="compound">PokitMeter</ref>,<sp/><ref refid="namespacePokitMeter_1aacf3005969c4417f7eaeeeaf83d5e047aef1eecc4af34ef7f92e309dfd8b9721a" kindref="member">PokitMeter::ResistanceRange::_1K5</ref>)</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/>DOKIT_CLI_IF_LESS_THAN_RETURN(maxValue,<sp/><ref refid="namespacePokitMeter" kindref="compound">PokitMeter</ref>,<sp/><ref refid="namespacePokitMeter_1aacf3005969c4417f7eaeeeaf83d5e047a2d0af3ed810f0eb7edb0c6b8a19c1fc3" kindref="member">PokitMeter::ResistanceRange::_10K</ref>)</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/>DOKIT_CLI_IF_LESS_THAN_RETURN(maxValue,<sp/><ref refid="namespacePokitMeter" kindref="compound">PokitMeter</ref>,<sp/><ref refid="namespacePokitMeter_1aacf3005969c4417f7eaeeeaf83d5e047a83cfa36debb22f738bf971d42a0f58f7" kindref="member">PokitMeter::ResistanceRange::_100K</ref>)</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/>DOKIT_CLI_IF_LESS_THAN_RETURN(maxValue,<sp/><ref refid="namespacePokitMeter" kindref="compound">PokitMeter</ref>,<sp/><ref refid="namespacePokitMeter_1aacf3005969c4417f7eaeeeaf83d5e047a04fe3f2ffbf0343e5e67caca5fdd0069" kindref="member">PokitMeter::ResistanceRange::_470K</ref>)</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/>DOKIT_CLI_IF_LESS_THAN_RETURN(maxValue,<sp/><ref refid="namespacePokitMeter" kindref="compound">PokitMeter</ref>,<sp/><ref refid="namespacePokitMeter_1aacf3005969c4417f7eaeeeaf83d5e047a46a66baf429b6426d9ce1b133845d2a8" kindref="member">PokitMeter::ResistanceRange::_1M</ref>)</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespacePokitMeter_1aacf3005969c4417f7eaeeeaf83d5e047a5c8523b038abf04d86fcc5358cd893cf" kindref="member">PokitMeter::ResistanceRange::AutoRange</ref>;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="118"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="119"><highlight class="comment"><sp/>*<sp/>Returns<sp/>the<sp/>lowest<sp/>PokitMeter::VoltageRange<sp/>value<sp/>that<sp/>can<sp/>measure<sp/>at<sp/>least<sp/>up<sp/>to<sp/>\a<sp/>maxValue,<sp/>or<sp/>AutoRange<sp/>if</highlight></codeline>
+<codeline lineno="120"><highlight class="comment"><sp/>*<sp/>the<sp/>Pokit<sp/>Meter<sp/>cannot<sp/>measure<sp/>as<sp/>high<sp/>as<sp/>\a<sp/>maxValue.</highlight></codeline>
+<codeline lineno="121"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;&gt;<sp/><ref refid="namespacePokitMeter_1ab9abf7a50f13c9cfb1e1b4c49c16dfee" kindref="member">PokitMeter::VoltageRange</ref><sp/><ref refid="classDeviceCommand_1abb9d2e113e372130dca9360791e7ce5b" kindref="member">DeviceCommand::minRange</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>quint32<sp/>maxValue)</highlight></codeline>
+<codeline lineno="123"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(maxValue<sp/>==<sp/>0)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespacePokitMeter_1ab9abf7a50f13c9cfb1e1b4c49c16dfeea5c8523b038abf04d86fcc5358cd893cf" kindref="member">PokitMeter::VoltageRange::AutoRange</ref>;</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/>DOKIT_CLI_IF_LESS_THAN_RETURN(maxValue,<sp/><ref refid="namespacePokitMeter" kindref="compound">PokitMeter</ref>,<sp/><ref refid="namespacePokitMeter_1ab9abf7a50f13c9cfb1e1b4c49c16dfeea59e644560a28139459f614bc629df71b" kindref="member">PokitMeter::VoltageRange::_300mV</ref>)</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/>DOKIT_CLI_IF_LESS_THAN_RETURN(maxValue,<sp/><ref refid="namespacePokitMeter" kindref="compound">PokitMeter</ref>,<sp/><ref refid="namespacePokitMeter_1ab9abf7a50f13c9cfb1e1b4c49c16dfeea848192caa654906dae3d719e1368e0c2" kindref="member">PokitMeter::VoltageRange::_2V</ref>)</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/>DOKIT_CLI_IF_LESS_THAN_RETURN(maxValue,<sp/><ref refid="namespacePokitMeter" kindref="compound">PokitMeter</ref>,<sp/><ref refid="namespacePokitMeter_1ab9abf7a50f13c9cfb1e1b4c49c16dfeeaa77ff71c31e6c3cde192b1baf7d8c663" kindref="member">PokitMeter::VoltageRange::_6V</ref>)</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/>DOKIT_CLI_IF_LESS_THAN_RETURN(maxValue,<sp/><ref refid="namespacePokitMeter" kindref="compound">PokitMeter</ref>,<sp/><ref refid="namespacePokitMeter_1ab9abf7a50f13c9cfb1e1b4c49c16dfeea308ad507e84478351cd8b6f8b09c7490" kindref="member">PokitMeter::VoltageRange::_12V</ref>)</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/>DOKIT_CLI_IF_LESS_THAN_RETURN(maxValue,<sp/><ref refid="namespacePokitMeter" kindref="compound">PokitMeter</ref>,<sp/><ref refid="namespacePokitMeter_1ab9abf7a50f13c9cfb1e1b4c49c16dfeea8e75785537c9af6adcd60131c680cdab" kindref="member">PokitMeter::VoltageRange::_30V</ref>)</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/>DOKIT_CLI_IF_LESS_THAN_RETURN(maxValue,<sp/><ref refid="namespacePokitMeter" kindref="compound">PokitMeter</ref>,<sp/><ref refid="namespacePokitMeter_1ab9abf7a50f13c9cfb1e1b4c49c16dfeea4c8cbd97f19afa487f3b6c98342fd09d" kindref="member">PokitMeter::VoltageRange::_60V</ref>)</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespacePokitMeter_1ab9abf7a50f13c9cfb1e1b4c49c16dfeea5c8523b038abf04d86fcc5358cd893cf" kindref="member">PokitMeter::VoltageRange::AutoRange</ref>;</highlight></codeline>
+<codeline lineno="132"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="134"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="135"><highlight class="comment"><sp/>*<sp/>Returns<sp/>the<sp/>lowest<sp/>PokitPro::CapacitanceRange<sp/>value<sp/>that<sp/>can<sp/>measure<sp/>at<sp/>least<sp/>up<sp/>to<sp/>\a<sp/>maxValue,<sp/>or<sp/>AutoRange<sp/>if</highlight></codeline>
+<codeline lineno="136"><highlight class="comment"><sp/>*<sp/>the<sp/>Pokit<sp/>Pro<sp/>cannot<sp/>measure<sp/>as<sp/>high<sp/>as<sp/>\a<sp/>maxValue.</highlight></codeline>
+<codeline lineno="137"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;&gt;<sp/><ref refid="namespacePokitPro_1adc67ba31bcd650dd7535939e42cec17a" kindref="member">PokitPro::CapacitanceRange</ref><sp/><ref refid="classDeviceCommand_1abb9d2e113e372130dca9360791e7ce5b" kindref="member">DeviceCommand::minRange</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>quint32<sp/>maxValue)</highlight></codeline>
+<codeline lineno="139"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(maxValue<sp/>==<sp/>0)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespacePokitPro_1adc67ba31bcd650dd7535939e42cec17aa5c8523b038abf04d86fcc5358cd893cf" kindref="member">PokitPro::CapacitanceRange::AutoRange</ref>;</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/>DOKIT_CLI_IF_LESS_THAN_RETURN(maxValue,<sp/><ref refid="namespacePokitPro" kindref="compound">PokitPro</ref>,<sp/><ref refid="namespacePokitPro_1adc67ba31bcd650dd7535939e42cec17aa68fced4643296b01a486c942c4d2aadc" kindref="member">PokitPro::CapacitanceRange::_100nF</ref>)</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/>DOKIT_CLI_IF_LESS_THAN_RETURN(maxValue,<sp/><ref refid="namespacePokitPro" kindref="compound">PokitPro</ref>,<sp/><ref refid="namespacePokitPro_1adc67ba31bcd650dd7535939e42cec17aa3a62ceb0bde1ea913ffcd1aceec836fa" kindref="member">PokitPro::CapacitanceRange::_10uF</ref>)</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/>DOKIT_CLI_IF_LESS_THAN_RETURN(maxValue,<sp/><ref refid="namespacePokitPro" kindref="compound">PokitPro</ref>,<sp/><ref refid="namespacePokitPro_1adc67ba31bcd650dd7535939e42cec17aa362fd0550b52dd45127f1048786f2d76" kindref="member">PokitPro::CapacitanceRange::_1mF</ref>)</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespacePokitPro_1adc67ba31bcd650dd7535939e42cec17aa5c8523b038abf04d86fcc5358cd893cf" kindref="member">PokitPro::CapacitanceRange::AutoRange</ref>;</highlight></codeline>
+<codeline lineno="145"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="147"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="148"><highlight class="comment"><sp/>*<sp/>Returns<sp/>the<sp/>lowest<sp/>PokitPro::CurrentRange<sp/>value<sp/>that<sp/>can<sp/>measure<sp/>at<sp/>least<sp/>up<sp/>to<sp/>\a<sp/>maxValue,<sp/>or<sp/>AutoRange<sp/>if</highlight></codeline>
+<codeline lineno="149"><highlight class="comment"><sp/>*<sp/>the<sp/>Pokit<sp/>Pro<sp/>cannot<sp/>measure<sp/>as<sp/>high<sp/>as<sp/>\a<sp/>maxValue.</highlight></codeline>
+<codeline lineno="150"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;&gt;<sp/><ref refid="namespacePokitPro_1ac51059eb5a52fa362da01d4e2f44de21" kindref="member">PokitPro::CurrentRange</ref><sp/><ref refid="classDeviceCommand_1abb9d2e113e372130dca9360791e7ce5b" kindref="member">DeviceCommand::minRange</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>quint32<sp/>maxValue)</highlight></codeline>
+<codeline lineno="152"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(maxValue<sp/>==<sp/>0)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespacePokitPro_1ac51059eb5a52fa362da01d4e2f44de21a5c8523b038abf04d86fcc5358cd893cf" kindref="member">PokitPro::CurrentRange::AutoRange</ref>;</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/>DOKIT_CLI_IF_LESS_THAN_RETURN(maxValue,<sp/><ref refid="namespacePokitPro" kindref="compound">PokitPro</ref>,<sp/><ref refid="namespacePokitPro_1ac51059eb5a52fa362da01d4e2f44de21a2fe16a3d6f34821435e0a2c34dbc293c" kindref="member">PokitPro::CurrentRange::_500uA</ref>)</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/>DOKIT_CLI_IF_LESS_THAN_RETURN(maxValue,<sp/><ref refid="namespacePokitPro" kindref="compound">PokitPro</ref>,<sp/><ref refid="namespacePokitPro_1ac51059eb5a52fa362da01d4e2f44de21ab456211adccac69002c6b4ff43386669" kindref="member">PokitPro::CurrentRange::_2mA</ref>)</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/>DOKIT_CLI_IF_LESS_THAN_RETURN(maxValue,<sp/><ref refid="namespacePokitPro" kindref="compound">PokitPro</ref>,<sp/><ref refid="namespacePokitPro_1ac51059eb5a52fa362da01d4e2f44de21a828fc0744dbf6304160fefea4b5f9265" kindref="member">PokitPro::CurrentRange::_10mA</ref>)</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/>DOKIT_CLI_IF_LESS_THAN_RETURN(maxValue,<sp/><ref refid="namespacePokitPro" kindref="compound">PokitPro</ref>,<sp/><ref refid="namespacePokitPro_1ac51059eb5a52fa362da01d4e2f44de21af728aa2bafbe9c6fb70f418c454ea30c" kindref="member">PokitPro::CurrentRange::_125mA</ref>)</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/>DOKIT_CLI_IF_LESS_THAN_RETURN(maxValue,<sp/><ref refid="namespacePokitPro" kindref="compound">PokitPro</ref>,<sp/><ref refid="namespacePokitPro_1ac51059eb5a52fa362da01d4e2f44de21ab728c73ce23f33f3a68ab57720a5ea77" kindref="member">PokitPro::CurrentRange::_300mA</ref>)</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/>DOKIT_CLI_IF_LESS_THAN_RETURN(maxValue,<sp/><ref refid="namespacePokitPro" kindref="compound">PokitPro</ref>,<sp/><ref refid="namespacePokitPro_1ac51059eb5a52fa362da01d4e2f44de21ae6b57d9fc160a83b9724e98c18fd2382" kindref="member">PokitPro::CurrentRange::_3A</ref>)</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/>DOKIT_CLI_IF_LESS_THAN_RETURN(maxValue,<sp/><ref refid="namespacePokitPro" kindref="compound">PokitPro</ref>,<sp/><ref refid="namespacePokitPro_1ac51059eb5a52fa362da01d4e2f44de21a1f19d2da4ce053031b834f59343db831" kindref="member">PokitPro::CurrentRange::_10A</ref>)</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespacePokitPro_1ac51059eb5a52fa362da01d4e2f44de21a5c8523b038abf04d86fcc5358cd893cf" kindref="member">PokitPro::CurrentRange::AutoRange</ref>;</highlight></codeline>
+<codeline lineno="162"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="164"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="165"><highlight class="comment"><sp/>*<sp/>Returns<sp/>the<sp/>lowest<sp/>PokitPro::ResistanceRange<sp/>value<sp/>that<sp/>can<sp/>measure<sp/>at<sp/>least<sp/>up<sp/>to<sp/>\a<sp/>maxValue,<sp/>or<sp/>AutoRange<sp/>if</highlight></codeline>
+<codeline lineno="166"><highlight class="comment"><sp/>*<sp/>the<sp/>Pokit<sp/>Pro<sp/>cannot<sp/>measure<sp/>as<sp/>high<sp/>as<sp/>\a<sp/>maxValue.</highlight></codeline>
+<codeline lineno="167"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;&gt;<sp/><ref refid="namespacePokitPro_1ac6fedf42d1268613f25da2b7c82832a7" kindref="member">PokitPro::ResistanceRange</ref><sp/><ref refid="classDeviceCommand_1abb9d2e113e372130dca9360791e7ce5b" kindref="member">DeviceCommand::minRange</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>quint32<sp/>maxValue)</highlight></codeline>
+<codeline lineno="169"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(maxValue<sp/>==<sp/>0)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespacePokitPro_1ac6fedf42d1268613f25da2b7c82832a7a5c8523b038abf04d86fcc5358cd893cf" kindref="member">PokitPro::ResistanceRange::AutoRange</ref>;</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/>DOKIT_CLI_IF_LESS_THAN_RETURN(maxValue,<sp/><ref refid="namespacePokitPro" kindref="compound">PokitPro</ref>,<sp/><ref refid="namespacePokitPro_1ac6fedf42d1268613f25da2b7c82832a7aa614778d33ecf3d4b5a4696a57abe2ca" kindref="member">PokitPro::ResistanceRange::_30</ref>)</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/>DOKIT_CLI_IF_LESS_THAN_RETURN(maxValue,<sp/><ref refid="namespacePokitPro" kindref="compound">PokitPro</ref>,<sp/><ref refid="namespacePokitPro_1ac6fedf42d1268613f25da2b7c82832a7ad3c06aadde4ff40fc9f14337872fd640" kindref="member">PokitPro::ResistanceRange::_75</ref>)</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/>DOKIT_CLI_IF_LESS_THAN_RETURN(maxValue,<sp/><ref refid="namespacePokitPro" kindref="compound">PokitPro</ref>,<sp/><ref refid="namespacePokitPro_1ac6fedf42d1268613f25da2b7c82832a7a2479cf6f0d78265fcd778452855fd664" kindref="member">PokitPro::ResistanceRange::_400</ref>)</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/>DOKIT_CLI_IF_LESS_THAN_RETURN(maxValue,<sp/><ref refid="namespacePokitPro" kindref="compound">PokitPro</ref>,<sp/><ref refid="namespacePokitPro_1ac6fedf42d1268613f25da2b7c82832a7a89d7c5ebe7e809991d0642ad50d6d134" kindref="member">PokitPro::ResistanceRange::_5K</ref>)</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/>DOKIT_CLI_IF_LESS_THAN_RETURN(maxValue,<sp/><ref refid="namespacePokitPro" kindref="compound">PokitPro</ref>,<sp/><ref refid="namespacePokitPro_1ac6fedf42d1268613f25da2b7c82832a7a2d0af3ed810f0eb7edb0c6b8a19c1fc3" kindref="member">PokitPro::ResistanceRange::_10K</ref>)</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/>DOKIT_CLI_IF_LESS_THAN_RETURN(maxValue,<sp/><ref refid="namespacePokitPro" kindref="compound">PokitPro</ref>,<sp/><ref refid="namespacePokitPro_1ac6fedf42d1268613f25da2b7c82832a7a0bb9238c41bb7c4fe61fe1fd0e8c98e0" kindref="member">PokitPro::ResistanceRange::_15K</ref>)</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/>DOKIT_CLI_IF_LESS_THAN_RETURN(maxValue,<sp/><ref refid="namespacePokitPro" kindref="compound">PokitPro</ref>,<sp/><ref refid="namespacePokitPro_1ac6fedf42d1268613f25da2b7c82832a7a2768cb3d353c2d0e5ccc21d33ba8116e" kindref="member">PokitPro::ResistanceRange::_40K</ref>)</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/>DOKIT_CLI_IF_LESS_THAN_RETURN(maxValue,<sp/><ref refid="namespacePokitPro" kindref="compound">PokitPro</ref>,<sp/><ref refid="namespacePokitPro_1ac6fedf42d1268613f25da2b7c82832a7a54b59f2d52a00ae74f1034e770e2859f" kindref="member">PokitPro::ResistanceRange::_500K</ref>)</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/>DOKIT_CLI_IF_LESS_THAN_RETURN(maxValue,<sp/><ref refid="namespacePokitPro" kindref="compound">PokitPro</ref>,<sp/><ref refid="namespacePokitPro_1ac6fedf42d1268613f25da2b7c82832a7a7a47a3b1c5e88cdee8448f083fc6a028" kindref="member">PokitPro::ResistanceRange::_700K</ref>)</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/>DOKIT_CLI_IF_LESS_THAN_RETURN(maxValue,<sp/><ref refid="namespacePokitPro" kindref="compound">PokitPro</ref>,<sp/><ref refid="namespacePokitPro_1ac6fedf42d1268613f25da2b7c82832a7a46a66baf429b6426d9ce1b133845d2a8" kindref="member">PokitPro::ResistanceRange::_1M</ref>)</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/>DOKIT_CLI_IF_LESS_THAN_RETURN(maxValue,<sp/><ref refid="namespacePokitPro" kindref="compound">PokitPro</ref>,<sp/><ref refid="namespacePokitPro_1ac6fedf42d1268613f25da2b7c82832a7a625cf61f7dcdb6ff09fdc0163cc16915" kindref="member">PokitPro::ResistanceRange::_3M</ref>)</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespacePokitPro_1ac6fedf42d1268613f25da2b7c82832a7a5c8523b038abf04d86fcc5358cd893cf" kindref="member">PokitPro::ResistanceRange::AutoRange</ref>;</highlight></codeline>
+<codeline lineno="183"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="185"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="186"><highlight class="comment"><sp/>*<sp/>Returns<sp/>the<sp/>lowest<sp/>PokitPro::VoltageRange<sp/>value<sp/>that<sp/>can<sp/>measure<sp/>at<sp/>least<sp/>up<sp/>to<sp/>\a<sp/>maxValue,<sp/>or<sp/>AutoRange<sp/>if</highlight></codeline>
+<codeline lineno="187"><highlight class="comment"><sp/>*<sp/>the<sp/>Pokit<sp/>Pro<sp/>cannot<sp/>measure<sp/>as<sp/>high<sp/>as<sp/>\a<sp/>maxValue.</highlight></codeline>
+<codeline lineno="188"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;&gt;<sp/><ref refid="namespacePokitPro_1a68ddba45fec73a3391f241f2da38e78a" kindref="member">PokitPro::VoltageRange</ref><sp/><ref refid="classDeviceCommand_1abb9d2e113e372130dca9360791e7ce5b" kindref="member">DeviceCommand::minRange</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>quint32<sp/>maxValue)</highlight></codeline>
+<codeline lineno="190"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(maxValue<sp/>==<sp/>0)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespacePokitPro_1a68ddba45fec73a3391f241f2da38e78aa5c8523b038abf04d86fcc5358cd893cf" kindref="member">PokitPro::VoltageRange::AutoRange</ref>;</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/>DOKIT_CLI_IF_LESS_THAN_RETURN(maxValue,<sp/><ref refid="namespacePokitPro" kindref="compound">PokitPro</ref>,<sp/><ref refid="namespacePokitPro_1a68ddba45fec73a3391f241f2da38e78aa7e5e700a5795197157fb14f5a107ffca" kindref="member">PokitPro::VoltageRange::_250mV</ref>)</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/>DOKIT_CLI_IF_LESS_THAN_RETURN(maxValue,<sp/><ref refid="namespacePokitPro" kindref="compound">PokitPro</ref>,<sp/><ref refid="namespacePokitPro_1a68ddba45fec73a3391f241f2da38e78aa848192caa654906dae3d719e1368e0c2" kindref="member">PokitPro::VoltageRange::_2V</ref>)</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/>DOKIT_CLI_IF_LESS_THAN_RETURN(maxValue,<sp/><ref refid="namespacePokitPro" kindref="compound">PokitPro</ref>,<sp/><ref refid="namespacePokitPro_1a68ddba45fec73a3391f241f2da38e78aa26bf873b8c4713f975a976cd921c2708" kindref="member">PokitPro::VoltageRange::_10V</ref>)</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/>DOKIT_CLI_IF_LESS_THAN_RETURN(maxValue,<sp/><ref refid="namespacePokitPro" kindref="compound">PokitPro</ref>,<sp/><ref refid="namespacePokitPro_1a68ddba45fec73a3391f241f2da38e78aa8e75785537c9af6adcd60131c680cdab" kindref="member">PokitPro::VoltageRange::_30V</ref>)</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/>DOKIT_CLI_IF_LESS_THAN_RETURN(maxValue,<sp/><ref refid="namespacePokitPro" kindref="compound">PokitPro</ref>,<sp/><ref refid="namespacePokitPro_1a68ddba45fec73a3391f241f2da38e78aa4c8cbd97f19afa487f3b6c98342fd09d" kindref="member">PokitPro::VoltageRange::_60V</ref>)</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/>DOKIT_CLI_IF_LESS_THAN_RETURN(maxValue,<sp/><ref refid="namespacePokitPro" kindref="compound">PokitPro</ref>,<sp/><ref refid="namespacePokitPro_1a68ddba45fec73a3391f241f2da38e78aad8441d8666d9293c6b6143e6d355706d" kindref="member">PokitPro::VoltageRange::_125V</ref>)</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/>DOKIT_CLI_IF_LESS_THAN_RETURN(maxValue,<sp/><ref refid="namespacePokitPro" kindref="compound">PokitPro</ref>,<sp/><ref refid="namespacePokitPro_1a68ddba45fec73a3391f241f2da38e78aac2750c095195ff5584b07fc9f3c69869" kindref="member">PokitPro::VoltageRange::_400V</ref>)</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/>DOKIT_CLI_IF_LESS_THAN_RETURN(maxValue,<sp/><ref refid="namespacePokitPro" kindref="compound">PokitPro</ref>,<sp/><ref refid="namespacePokitPro_1a68ddba45fec73a3391f241f2da38e78aad442483cf36c44fc3e34a968be25cbb0" kindref="member">PokitPro::VoltageRange::_600V</ref>)</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespacePokitPro_1a68ddba45fec73a3391f241f2da38e78aa5c8523b038abf04d86fcc5358cd893cf" kindref="member">PokitPro::VoltageRange::AutoRange</ref>;</highlight></codeline>
+<codeline lineno="201"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="203"><highlight class="comment">///<sp/>\endcond</highlight></codeline>
+<codeline lineno="204"><highlight class="comment"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="205"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="206"><highlight class="comment"><sp/>*<sp/>Returns<sp/>the<sp/>\a<sp/>product&apos;s<sp/>lowest<sp/>capacitance<sp/>range<sp/>that<sp/>can<sp/>measure<sp/>at<sp/>least<sp/>up<sp/>to<sp/>\a<sp/>maxValue<sp/>(nF),<sp/>or<sp/>AutoRange<sp/>if</highlight></codeline>
+<codeline lineno="207"><highlight class="comment"><sp/>*<sp/>no<sp/>such<sp/>range<sp/>is<sp/>available.</highlight></codeline>
+<codeline lineno="208"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="209"><highlight class="comment"><sp/>*<sp/>\note<sp/>Since<sp/>Pokit<sp/>Meters<sp/>do<sp/>not<sp/>support<sp/>capacitance<sp/>measurement,<sp/>\a<sp/>product<sp/>should<sp/>not<sp/>be<sp/>PokitProduct::PokitMeter.</highlight></codeline>
+<codeline lineno="210"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="211"><highlight class="comment"><sp/>*<sp/>\see<sp/>minRange&lt;PokitPro::CapacitanceRange&gt;</highlight></codeline>
+<codeline lineno="212"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="213" refid="classDeviceCommand_1a8aa676de2533a687cb369e70bb352a4c" refkind="member"><highlight class="normal">quint8<sp/><ref refid="classDeviceCommand_1a8aa676de2533a687cb369e70bb352a4c" kindref="member">DeviceCommand::minCapacitanceRange</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="pokitproducts_8h_1a0c4f628f68ce0432a6db11681a41fda4" kindref="member">PokitProduct</ref><sp/>product,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>quint32<sp/>maxValue)</highlight></codeline>
+<codeline lineno="214"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(product)<sp/>{</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="pokitproducts_8h_1a0c4f628f68ce0432a6db11681a41fda4afbb216b5c2f76db3f733c4c5915b3001" kindref="member">PokitProduct::PokitMeter</ref>:</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Q_ASSERT_X(</highlight><highlight class="keyword">false</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;DeviceCommand::minCapacitanceRange&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Pokit<sp/>Meter<sp/>has<sp/>no<sp/>capacitance<sp/>support.&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>255;</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="pokitproducts_8h_1a0c4f628f68ce0432a6db11681a41fda4abf3aeeb41cfa55672113dbb4a86da2ae" kindref="member">PokitProduct::PokitPro</ref>:</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>+<ref refid="classDeviceCommand_1abb9d2e113e372130dca9360791e7ce5b" kindref="member">minRange&lt;PokitPro::CapacitanceRange&gt;</ref>(maxValue);</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_ASSERT_X(</highlight><highlight class="keyword">false</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;DeviceCommand::minCapacitanceRange&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Unknown<sp/>PokitProduct<sp/>enum<sp/>value&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>255;</highlight></codeline>
+<codeline lineno="224"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="226"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="227"><highlight class="comment"><sp/>*<sp/>Returns<sp/>the<sp/>\a<sp/>product&apos;s<sp/>lowest<sp/>current<sp/>range<sp/>that<sp/>can<sp/>measure<sp/>at<sp/>least<sp/>up<sp/>to<sp/>\a<sp/>maxValue<sp/>(µA),<sp/>or<sp/>AutoRange<sp/>if<sp/>no</highlight></codeline>
+<codeline lineno="228"><highlight class="comment"><sp/>*<sp/>such<sp/>range<sp/>is<sp/>available.</highlight></codeline>
+<codeline lineno="229"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="230"><highlight class="comment"><sp/>*<sp/>\see<sp/>DeviceCommand::minRange&lt;PokitMeter::CurrentRange&gt;(const<sp/>quint32<sp/>maxValue)</highlight></codeline>
+<codeline lineno="231"><highlight class="comment"><sp/>*<sp/>\see<sp/>minRange&lt;PokitPro::CurrentRange&gt;(const<sp/>quint32<sp/>maxValue)</highlight></codeline>
+<codeline lineno="232"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="233" refid="classDeviceCommand_1ab5ae0318d3ec2bd4449e710eafafa680" refkind="member"><highlight class="normal">quint8<sp/><ref refid="classDeviceCommand_1ab5ae0318d3ec2bd4449e710eafafa680" kindref="member">DeviceCommand::minCurrentRange</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="pokitproducts_8h_1a0c4f628f68ce0432a6db11681a41fda4" kindref="member">PokitProduct</ref><sp/>product,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>quint32<sp/>maxValue)</highlight></codeline>
+<codeline lineno="234"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(product)<sp/>{</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="pokitproducts_8h_1a0c4f628f68ce0432a6db11681a41fda4afbb216b5c2f76db3f733c4c5915b3001" kindref="member">PokitProduct::PokitMeter</ref>:</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>+<ref refid="classDeviceCommand_1abb9d2e113e372130dca9360791e7ce5b" kindref="member">minRange&lt;PokitMeter::CurrentRange&gt;</ref>(maxValue);</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="pokitproducts_8h_1a0c4f628f68ce0432a6db11681a41fda4abf3aeeb41cfa55672113dbb4a86da2ae" kindref="member">PokitProduct::PokitPro</ref>:</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>+<ref refid="classDeviceCommand_1abb9d2e113e372130dca9360791e7ce5b" kindref="member">minRange&lt;PokitPro::CurrentRange&gt;</ref>(maxValue);</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_ASSERT_X(</highlight><highlight class="keyword">false</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;DeviceCommand::minCurrentRange&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Unknown<sp/>PokitProduct<sp/>enum<sp/>value&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>255;</highlight></codeline>
+<codeline lineno="243"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="245"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="246"><highlight class="comment"><sp/>*<sp/>Returns<sp/>the<sp/>\a<sp/>product&apos;s<sp/>lowest<sp/>resistance<sp/>range<sp/>that<sp/>can<sp/>measure<sp/>at<sp/>least<sp/>up<sp/>to<sp/>\a<sp/>maxValue<sp/>(Ω),<sp/>or<sp/>AutoRange<sp/>if<sp/>no</highlight></codeline>
+<codeline lineno="247"><highlight class="comment"><sp/>*<sp/>such<sp/>range<sp/>is<sp/>available.</highlight></codeline>
+<codeline lineno="248"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="249"><highlight class="comment"><sp/>*<sp/>\see<sp/>DeviceCommand::minRange&lt;PokitMeter::ResistanceRange&gt;(const<sp/>quint32<sp/>maxValue)</highlight></codeline>
+<codeline lineno="250"><highlight class="comment"><sp/>*<sp/>\see<sp/>minRange&lt;PokitPro::ResistanceRange&gt;(const<sp/>quint32<sp/>maxValue)</highlight></codeline>
+<codeline lineno="251"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="252" refid="classDeviceCommand_1a1ce3ce094a91ec500e9d50e620b0cc6d" refkind="member"><highlight class="normal">quint8<sp/><ref refid="classDeviceCommand_1a1ce3ce094a91ec500e9d50e620b0cc6d" kindref="member">DeviceCommand::minResistanceRange</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="pokitproducts_8h_1a0c4f628f68ce0432a6db11681a41fda4" kindref="member">PokitProduct</ref><sp/>product,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>quint32<sp/>maxValue)</highlight></codeline>
+<codeline lineno="253"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(product)<sp/>{</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="pokitproducts_8h_1a0c4f628f68ce0432a6db11681a41fda4afbb216b5c2f76db3f733c4c5915b3001" kindref="member">PokitProduct::PokitMeter</ref>:</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>+<ref refid="classDeviceCommand_1abb9d2e113e372130dca9360791e7ce5b" kindref="member">minRange&lt;PokitMeter::ResistanceRange&gt;</ref>(maxValue);</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="pokitproducts_8h_1a0c4f628f68ce0432a6db11681a41fda4abf3aeeb41cfa55672113dbb4a86da2ae" kindref="member">PokitProduct::PokitPro</ref>:</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>+<ref refid="classDeviceCommand_1abb9d2e113e372130dca9360791e7ce5b" kindref="member">minRange&lt;PokitPro::ResistanceRange&gt;</ref>(maxValue);</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_ASSERT_X(</highlight><highlight class="keyword">false</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;DeviceCommand::minResistanceRange&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Unknown<sp/>PokitProduct<sp/>enum<sp/>value&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>255;</highlight></codeline>
+<codeline lineno="262"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="264"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="265"><highlight class="comment"><sp/>t</highlight></codeline>
+<codeline lineno="266"><highlight class="comment">*<sp/>Returns<sp/>the<sp/>\a<sp/>product&apos;s<sp/>lowest<sp/>voltage<sp/>range<sp/>that<sp/>can<sp/>measure<sp/>at<sp/>least<sp/>up<sp/>to<sp/>\a<sp/>maxValue<sp/>(mV),<sp/>or<sp/>AutoRange<sp/>if<sp/>no</highlight></codeline>
+<codeline lineno="267"><highlight class="comment"><sp/>*<sp/>such<sp/>range<sp/>is<sp/>available.</highlight></codeline>
+<codeline lineno="268"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="269"><highlight class="comment"><sp/>*<sp/>\see<sp/>DeviceCommand::minRange&lt;PokitMeter::VoltageRange&gt;(const<sp/>quint32<sp/>maxValue)</highlight></codeline>
+<codeline lineno="270"><highlight class="comment"><sp/>*<sp/>\see<sp/>minRange&lt;PokitPro::VoltageRange&gt;(const<sp/>quint32<sp/>maxValue)</highlight></codeline>
+<codeline lineno="271"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="272" refid="classDeviceCommand_1a92f7e61dff3d28eda856ea4f95e828fe" refkind="member"><highlight class="normal">quint8<sp/><ref refid="classDeviceCommand_1a92f7e61dff3d28eda856ea4f95e828fe" kindref="member">DeviceCommand::minVoltageRange</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="pokitproducts_8h_1a0c4f628f68ce0432a6db11681a41fda4" kindref="member">PokitProduct</ref><sp/>product,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>quint32<sp/>maxValue)</highlight></codeline>
+<codeline lineno="273"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(product)<sp/>{</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="pokitproducts_8h_1a0c4f628f68ce0432a6db11681a41fda4afbb216b5c2f76db3f733c4c5915b3001" kindref="member">PokitProduct::PokitMeter</ref>:</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>+<ref refid="classDeviceCommand_1abb9d2e113e372130dca9360791e7ce5b" kindref="member">minRange&lt;PokitMeter::VoltageRange&gt;</ref>(maxValue);</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="pokitproducts_8h_1a0c4f628f68ce0432a6db11681a41fda4abf3aeeb41cfa55672113dbb4a86da2ae" kindref="member">PokitProduct::PokitPro</ref>:</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>+<ref refid="classDeviceCommand_1abb9d2e113e372130dca9360791e7ce5b" kindref="member">minRange&lt;PokitPro::VoltageRange&gt;</ref>(maxValue);</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_ASSERT_X(</highlight><highlight class="keyword">false</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;DeviceCommand::minVoltageRange&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Unknown<sp/>PokitProduct<sp/>enum<sp/>value&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>255;</highlight></codeline>
+<codeline lineno="282"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"></highlight></codeline>
+<codeline lineno="284"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>DOKIT_CLI_IF_LESS_THAN_RETURN</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="285"><highlight class="normal"></highlight></codeline>
+<codeline lineno="286"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="287"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="288"><highlight class="comment"><sp/>*<sp/>Handles<sp/>controller<sp/>error<sp/>events.<sp/>This<sp/>base<sp/>implementation<sp/>simply<sp/>logs<sp/>\a<sp/>error<sp/>and<sp/>then<sp/>exits</highlight></codeline>
+<codeline lineno="289"><highlight class="comment"><sp/>*<sp/>with<sp/>`EXIT_FAILURE`.<sp/>Derived<sp/>classes<sp/>may<sp/>override<sp/>this<sp/>slot<sp/>to<sp/>implement<sp/>their<sp/>own<sp/>error</highlight></codeline>
+<codeline lineno="290"><highlight class="comment"><sp/>*<sp/>handing<sp/>if<sp/>desired.</highlight></codeline>
+<codeline lineno="291"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="292" refid="classDeviceCommand_1a28461c0fe3f2b3398c74298b3df70b93" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classDeviceCommand_1a28461c0fe3f2b3398c74298b3df70b93" kindref="member">DeviceCommand::controllerError</ref>(<ref refid="qlowenergycontroller_1Error-enum" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QLowEnergyController::Error</ref><sp/>error)</highlight></codeline>
+<codeline lineno="293"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"><sp/><sp/><sp/><sp/>qCWarning(lc).noquote()<sp/>&lt;&lt;<sp/><ref refid="qobject_1tr" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">tr</ref>(</highlight><highlight class="stringliteral">&quot;Bluetooth<sp/>controller<sp/>error:&quot;</highlight><highlight class="normal">)<sp/>&lt;&lt;<sp/>error;</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="qcoreapplication_1exit" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCoreApplication::exit</ref>(EXIT_FAILURE);</highlight></codeline>
+<codeline lineno="296"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="298"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="299"><highlight class="comment"><sp/>*<sp/>Handles<sp/>devics<sp/>disconnection<sp/>events.<sp/>This<sp/>base<sp/>implementation<sp/>simply<sp/>logs<sp/>and<sp/>exits<sp/>the</highlight></codeline>
+<codeline lineno="300"><highlight class="comment"><sp/>*<sp/>application<sp/>(via<sp/>QCoreApplication::exit)<sp/>with<sp/>the<sp/>current<sp/>exitCodeOnDisconnect<sp/>value,<sp/>which<sp/>is</highlight></codeline>
+<codeline lineno="301"><highlight class="comment"><sp/>*<sp/>initialise<sp/>to<sp/>`EXIT_FAILURE`<sp/>in<sp/>the<sp/>constructor,<sp/>but<sp/>should<sp/>be<sp/>set<sp/>to<sp/>`EXIT_SUCESS`<sp/>if/when</highlight></codeline>
+<codeline lineno="302"><highlight class="comment"><sp/>*<sp/>the<sp/>derived<sp/>command<sp/>class<sp/>has<sp/>completed<sp/>its<sp/>actions<sp/>and<sp/>requested<sp/>the<sp/>disconnection<sp/>(as<sp/>opposed</highlight></codeline>
+<codeline lineno="303"><highlight class="comment"><sp/>*<sp/>to<sp/>a<sp/>spontaneous<sp/>disconnection<sp/>on<sp/>error).</highlight></codeline>
+<codeline lineno="304"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="305" refid="classDeviceCommand_1a525ae4429c2b9a325bad62678409fb5b" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classDeviceCommand_1a525ae4429c2b9a325bad62678409fb5b" kindref="member">DeviceCommand::deviceDisconnected</ref>()</highlight></codeline>
+<codeline lineno="306"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="307"><highlight class="normal"><sp/><sp/><sp/><sp/>qCDebug(lc).noquote()<sp/>&lt;&lt;<sp/><ref refid="qobject_1tr" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">tr</ref>(</highlight><highlight class="stringliteral">&quot;Pokit<sp/>device<sp/>disconnected.<sp/>Exiting<sp/>with<sp/>code<sp/>%1.&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.<ref refid="qstring_1arg-14" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">arg</ref>(<ref refid="classDeviceCommand_1a792b3771a02cb7f4aff6335045b705bf" kindref="member">exitCodeOnDisconnect</ref>);</highlight></codeline>
+<codeline lineno="309"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="qcoreapplication_1exit" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCoreApplication::exit</ref>(<ref refid="classDeviceCommand_1a792b3771a02cb7f4aff6335045b705bf" kindref="member">exitCodeOnDisconnect</ref>);</highlight></codeline>
+<codeline lineno="310"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="312"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="313"><highlight class="comment"><sp/>*<sp/>Handles<sp/>service<sp/>error<sp/>events.<sp/>This<sp/>base<sp/>implementation<sp/>simply<sp/>logs<sp/>\a<sp/>error<sp/>and<sp/>then<sp/>exits</highlight></codeline>
+<codeline lineno="314"><highlight class="comment"><sp/>*<sp/>with<sp/>`EXIT_FAILURE`.<sp/>Derived<sp/>classes<sp/>may<sp/>override<sp/>this<sp/>slot<sp/>to<sp/>implement<sp/>their<sp/>own<sp/>error</highlight></codeline>
+<codeline lineno="315"><highlight class="comment"><sp/>*<sp/>handing<sp/>if<sp/>desired.</highlight></codeline>
+<codeline lineno="316"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="317"><highlight class="comment"><sp/>*<sp/>\note<sp/>As<sp/>this<sp/>base<sp/>class<sp/>does<sp/>not<sp/>construct<sp/>services<sp/>(derived<sp/>classed<sp/>do),<sp/>its<sp/>up<sp/>to<sp/>the<sp/>derived</highlight></codeline>
+<codeline lineno="318"><highlight class="comment"><sp/>*<sp/>classed<sp/>to<sp/>connect<sp/>this<sp/>slot<sp/>to<sp/>the<sp/>relevant<sp/>service&apos;s<sp/>error<sp/>signal<sp/>if<sp/>desired.</highlight></codeline>
+<codeline lineno="319"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="320" refid="classDeviceCommand_1a96208c78728c0068e7a78f961b913751" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classDeviceCommand_1a96208c78728c0068e7a78f961b913751" kindref="member">DeviceCommand::serviceError</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qlowenergyservice_1ServiceError-enum" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QLowEnergyService::ServiceError</ref><sp/>error)</highlight></codeline>
+<codeline lineno="321"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="322"><highlight class="normal"><sp/><sp/><sp/><sp/>qCWarning(lc).noquote()<sp/>&lt;&lt;<sp/><ref refid="qobject_1tr" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">tr</ref>(</highlight><highlight class="stringliteral">&quot;Bluetooth<sp/>service<sp/>error:&quot;</highlight><highlight class="normal">)<sp/>&lt;&lt;<sp/>error;</highlight></codeline>
+<codeline lineno="323"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="qcoreapplication_1exit" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCoreApplication::exit</ref>(EXIT_FAILURE);</highlight></codeline>
+<codeline lineno="324"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="325"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="326"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="327"><highlight class="comment"><sp/>*<sp/>Handles<sp/>service<sp/>detail<sp/>discovery<sp/>events.<sp/>This<sp/>base<sp/>implementation<sp/>simply<sp/>logs<sp/>the<sp/>event,<sp/>and</highlight></codeline>
+<codeline lineno="328"><highlight class="comment"><sp/>*<sp/>nothing<sp/>more.<sp/>Derived<sp/>classes<sp/>may<sp/>(usually<sp/>do)<sp/>override<sp/>this<sp/>slot<sp/>to<sp/>provide<sp/>their<sp/>own<sp/>processing</highlight></codeline>
+<codeline lineno="329"><highlight class="comment"><sp/>*<sp/>when<sp/>a<sp/>services<sp/>details<sp/>have<sp/>been<sp/>discovered.</highlight></codeline>
+<codeline lineno="330"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="331" refid="classDeviceCommand_1a906fd97d832be0e8d2ba1c917fba41db" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classDeviceCommand_1a906fd97d832be0e8d2ba1c917fba41db" kindref="member">DeviceCommand::serviceDetailsDiscovered</ref>()</highlight></codeline>
+<codeline lineno="332"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="333"><highlight class="normal"><sp/><sp/><sp/><sp/>qCDebug(lc).noquote()<sp/>&lt;&lt;<sp/><ref refid="qobject_1tr" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">tr</ref>(</highlight><highlight class="stringliteral">&quot;Service<sp/>details<sp/>discovered.&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="334"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="335"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="336"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="337"><highlight class="comment"><sp/>*<sp/>Checks<sp/>if<sp/>\a<sp/>info<sp/>is<sp/>the<sp/>device<sp/>(if<sp/>any)<sp/>we&apos;re<sp/>looking<sp/>for,<sp/>and<sp/>if<sp/>so,<sp/>create<sp/>a<sp/>contoller<sp/>and</highlight></codeline>
+<codeline lineno="338"><highlight class="comment"><sp/>*<sp/>service,<sp/>and<sp/>begins<sp/>connecting<sp/>to<sp/>the<sp/>device.</highlight></codeline>
+<codeline lineno="339"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="340" refid="classDeviceCommand_1acde5a41e646a23c5485b67cf99e402a7" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classDeviceCommand_1acde5a41e646a23c5485b67cf99e402a7" kindref="member">DeviceCommand::deviceDiscovered</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qbluetoothdeviceinfo" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothDeviceInfo</ref><sp/>&amp;info)</highlight></codeline>
+<codeline lineno="341"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="342"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_ASSERT(<ref refid="pokitproducts_8h_1adb8bb3a07e937158a294997e60868297" kindref="member">isPokitProduct</ref>(info));</highlight></codeline>
+<codeline lineno="343"><highlight class="normal"></highlight></codeline>
+<codeline lineno="344"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="classDeviceCommand_1a2bbf2dc9bb0ba85a2bf29263746c7b57" kindref="member">device</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="345"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>qCDebug(lc).noquote()<sp/>&lt;&lt;<sp/><ref refid="qobject_1tr" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">tr</ref>(R</highlight><highlight class="stringliteral">&quot;(Ignoring<sp/>additional<sp/>Pokit<sp/>device<sp/>&quot;%1&quot;<sp/>(%2)<sp/>at<sp/>(%3).)&quot;)</highlight></codeline>
+<codeline lineno="346"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.<ref refid="qstring_1arg-14" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">arg</ref>(info.<ref refid="qbluetoothdeviceinfo_1name" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">name</ref>(),<sp/>info.<ref refid="qbluetoothdeviceinfo_1deviceUuid" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">deviceUuid</ref>().<ref refid="quuid_1toString" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">toString</ref>(),<sp/>info.<ref refid="qbluetoothdeviceinfo_1address" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">address</ref>().<ref refid="qbluetoothaddress_1toString" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">toString</ref>());</highlight></codeline>
+<codeline lineno="347"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="348"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="349"><highlight class="normal"></highlight></codeline>
+<codeline lineno="350"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((<ref refid="classAbstractCommand_1a07d979bc039d61f5c720cb1521b31208" kindref="member">deviceToScanFor</ref>.<ref refid="qstring_1isEmpty" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">isEmpty</ref>())<sp/>||<sp/>(<ref refid="classAbstractCommand_1a07d979bc039d61f5c720cb1521b31208" kindref="member">deviceToScanFor</ref><sp/>==<sp/>info.<ref refid="qbluetoothdeviceinfo_1name" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">name</ref>())<sp/>||</highlight></codeline>
+<codeline lineno="351"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((!info.<ref refid="qbluetoothdeviceinfo_1address" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">address</ref>().<ref refid="qbluetoothaddress_1isNull" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">isNull</ref>())<sp/>&amp;&amp;<sp/>(info.<ref refid="qbluetoothdeviceinfo_1address" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">address</ref>()<sp/>==<sp/><ref refid="qbluetoothaddress" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothAddress</ref>(<ref refid="classAbstractCommand_1a07d979bc039d61f5c720cb1521b31208" kindref="member">deviceToScanFor</ref>)))<sp/>||</highlight></codeline>
+<codeline lineno="352"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((!info.<ref refid="qbluetoothdeviceinfo_1deviceUuid" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">deviceUuid</ref>().<ref refid="quuid_1isNull" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">isNull</ref>())<sp/>&amp;&amp;<sp/>(info.<ref refid="qbluetoothdeviceinfo_1deviceUuid" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">deviceUuid</ref>()<sp/>==<sp/><ref refid="qbluetoothuuid" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothUuid</ref>(<ref refid="classAbstractCommand_1a07d979bc039d61f5c720cb1521b31208" kindref="member">deviceToScanFor</ref>))))</highlight></codeline>
+<codeline lineno="353"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="354"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>qCDebug(lc).noquote()<sp/>&lt;&lt;<sp/><ref refid="qobject_1tr" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">tr</ref>(R</highlight><highlight class="stringliteral">&quot;(Found<sp/>Pokit<sp/>device<sp/>&quot;%1&quot;<sp/>(%2)<sp/>at<sp/>(%3).)&quot;)</highlight></codeline>
+<codeline lineno="355"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.<ref refid="qstring_1arg-14" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">arg</ref>(info.<ref refid="qbluetoothdeviceinfo_1name" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">name</ref>(),<sp/>info.<ref refid="qbluetoothdeviceinfo_1deviceUuid" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">deviceUuid</ref>().<ref refid="quuid_1toString" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">toString</ref>(),<sp/>info.<ref refid="qbluetoothdeviceinfo_1address" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">address</ref>().<ref refid="qbluetoothaddress_1toString" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">toString</ref>());</highlight></codeline>
+<codeline lineno="356"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classAbstractCommand_1a86878df43cd818f4a7f333a97dabac3c" kindref="member">discoveryAgent</ref>-&gt;<ref refid="qbluetoothdevicediscoveryagent_1stop" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">stop</ref>();</highlight></codeline>
+<codeline lineno="357"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="358"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classDeviceCommand_1a2bbf2dc9bb0ba85a2bf29263746c7b57" kindref="member">device</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classPokitDevice" kindref="compound">PokitDevice</ref>(info,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="359"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="qobject_1connect-4" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">connect</ref>(<ref refid="classDeviceCommand_1a2bbf2dc9bb0ba85a2bf29263746c7b57" kindref="member">device</ref>-&gt;<ref refid="classPokitDevice_1a2e2fb6b30e6f5f0d7bc6cd8f806d6423" kindref="member">controller</ref>(),<sp/>&amp;<ref refid="qlowenergycontroller_1disconnected" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QLowEnergyController::disconnected</ref>,</highlight></codeline>
+<codeline lineno="360"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>&amp;<ref refid="classDeviceCommand_1a525ae4429c2b9a325bad62678409fb5b" kindref="member">DeviceCommand::deviceDisconnected</ref>);</highlight></codeline>
+<codeline lineno="361"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="qobject_1connect-4" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">connect</ref>(<ref refid="classDeviceCommand_1a2bbf2dc9bb0ba85a2bf29263746c7b57" kindref="member">device</ref>-&gt;<ref refid="classPokitDevice_1a2e2fb6b30e6f5f0d7bc6cd8f806d6423" kindref="member">controller</ref>(),</highlight></codeline>
+<codeline lineno="362"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#if<sp/>(QT_VERSION<sp/>&lt;<sp/>QT_VERSION_CHECK(6,<sp/>2,<sp/>0))</highlight></codeline>
+<codeline lineno="363"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QOverload&lt;QLowEnergyController::Error&gt;::of(&amp;<ref refid="qlowenergycontroller_1error" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QLowEnergyController::error</ref>),</highlight></codeline>
+<codeline lineno="364"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#</highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="365"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;<ref refid="qlowenergycontroller_1errorOccurred" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QLowEnergyController::errorOccurred</ref>,</highlight></codeline>
+<codeline lineno="366"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#endif</highlight></codeline>
+<codeline lineno="367"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>&amp;<ref refid="classDeviceCommand_1a28461c0fe3f2b3398c74298b3df70b93" kindref="member">DeviceCommand::controllerError</ref>,<sp/><ref refid="qt_1ConnectionType-enum" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">Qt::QueuedConnection</ref>);</highlight></codeline>
+<codeline lineno="368"><highlight class="normal"></highlight></codeline>
+<codeline lineno="369"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classAbstractPokitService" kindref="compound">AbstractPokitService</ref><sp/>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>service<sp/>=<sp/><ref refid="classDeviceCommand_1af7a724ae722462b6fa15dc6269aadd15" kindref="member">getService</ref>();</highlight></codeline>
+<codeline lineno="370"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>service-&gt;<ref refid="classAbstractPokitService_1aa0e323c5e2380709c5a5fde18520ae3f" kindref="member">setPokitProduct</ref>(<ref refid="pokitproducts_8h_1a0227e333e3bab67294b49b8b73120943" kindref="member">pokitProduct</ref>(info));</highlight></codeline>
+<codeline lineno="371"><highlight class="normal"></highlight></codeline>
+<codeline lineno="372"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Q_ASSERT(service);</highlight></codeline>
+<codeline lineno="373"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="qobject_1connect-4" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">connect</ref>(service,<sp/>&amp;<ref refid="classAbstractPokitService_1af67cbea4294ba0a77dcd9540b29528ff" kindref="member">AbstractPokitService::serviceDetailsDiscovered</ref>,</highlight></codeline>
+<codeline lineno="374"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>&amp;<ref refid="classDeviceCommand_1a906fd97d832be0e8d2ba1c917fba41db" kindref="member">DeviceCommand::serviceDetailsDiscovered</ref>);</highlight></codeline>
+<codeline lineno="375"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="qobject_1connect-4" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">connect</ref>(service,<sp/>&amp;<ref refid="classAbstractPokitService_1a9e680ebf280361ef82f4b072448d7e9b" kindref="member">AbstractPokitService::serviceErrorOccurred</ref>,</highlight></codeline>
+<codeline lineno="376"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>&amp;<ref refid="classDeviceCommand_1a96208c78728c0068e7a78f961b913751" kindref="member">DeviceCommand::serviceError</ref>);</highlight></codeline>
+<codeline lineno="377"><highlight class="normal"></highlight></codeline>
+<codeline lineno="378"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>qCDebug(lc).noquote()<sp/>&lt;&lt;<sp/><ref refid="qobject_1tr" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">tr</ref>(R</highlight><highlight class="stringliteral">&quot;(Connecting<sp/>to<sp/>%1<sp/>device<sp/>&quot;%2&quot;<sp/>(%3)<sp/>at<sp/>(%4).)&quot;).<ref refid="qstring_1arg-14" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">arg</ref>(</highlight></codeline>
+<codeline lineno="379"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="pokitproducts_8h_1abac6d04d602c122e3de08ef55122d635" kindref="member">toString</ref>(*service-&gt;<ref refid="classAbstractPokitService_1a039d2f1054788cf586c8decadb53ddc0" kindref="member">pokitProduct</ref>()),<sp/>info.<ref refid="qbluetoothdeviceinfo_1name" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">name</ref>(),<sp/>info.<ref refid="qbluetoothdeviceinfo_1deviceUuid" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">deviceUuid</ref>().<ref refid="quuid_1toString" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">toString</ref>(),<sp/>info.<ref refid="qbluetoothdeviceinfo_1address" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">address</ref>().<ref refid="qbluetoothaddress_1toString" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">toString</ref>());</highlight></codeline>
+<codeline lineno="380"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classDeviceCommand_1a2bbf2dc9bb0ba85a2bf29263746c7b57" kindref="member">device</ref>-&gt;<ref refid="classPokitDevice_1a2e2fb6b30e6f5f0d7bc6cd8f806d6423" kindref="member">controller</ref>()-&gt;<ref refid="qlowenergycontroller_1connectToDevice" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">connectToDevice</ref>();</highlight></codeline>
+<codeline lineno="381"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="382"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="383"><highlight class="normal"></highlight></codeline>
+<codeline lineno="384"><highlight class="normal"><sp/><sp/><sp/><sp/>qCDebug(lc).noquote()<sp/>&lt;&lt;<sp/><ref refid="qobject_1tr" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">tr</ref>(R</highlight><highlight class="stringliteral">&quot;(Ignoring<sp/>non-matching<sp/>Pokit<sp/>device<sp/>&quot;%1&quot;<sp/>(%2)<sp/>at<sp/>(%3).)&quot;)</highlight></codeline>
+<codeline lineno="385"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.<ref refid="qstring_1arg-14" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">arg</ref>(info.<ref refid="qbluetoothdeviceinfo_1name" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">name</ref>(),<sp/>info.<ref refid="qbluetoothdeviceinfo_1deviceUuid" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">deviceUuid</ref>().<ref refid="quuid_1toString" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">toString</ref>(),<sp/>info.<ref refid="qbluetoothdeviceinfo_1address" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">address</ref>().<ref refid="qbluetoothaddress_1toString" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">toString</ref>());</highlight></codeline>
+<codeline lineno="386"><highlight class="stringliteral"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="387"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="388"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="389"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="390"><highlight class="comment"><sp/>*<sp/>Checks<sp/>that<sp/>the<sp/>requested<sp/>device<sp/>was<sp/>discovered,<sp/>and<sp/>if<sp/>not,<sp/>reports<sp/>and<sp/>error<sp/>and<sp/>exits.</highlight></codeline>
+<codeline lineno="391"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="392" refid="classDeviceCommand_1a7dfdaae89c5f6540af9a5bfbcfd66e5a" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classDeviceCommand_1a7dfdaae89c5f6540af9a5bfbcfd66e5a" kindref="member">DeviceCommand::deviceDiscoveryFinished</ref>()</highlight></codeline>
+<codeline lineno="393"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="394"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!<ref refid="classDeviceCommand_1a2bbf2dc9bb0ba85a2bf29263746c7b57" kindref="member">device</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="395"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>qCWarning(lc).noquote()<sp/>&lt;&lt;<sp/>((<ref refid="classAbstractCommand_1a07d979bc039d61f5c720cb1521b31208" kindref="member">deviceToScanFor</ref>.<ref refid="qstring_1isNull" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">isNull</ref>())</highlight></codeline>
+<codeline lineno="396"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>?<sp/><ref refid="qobject_1tr" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">tr</ref>(</highlight><highlight class="stringliteral">&quot;Failed<sp/>to<sp/>find<sp/>any<sp/>Pokit<sp/>device.&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="397"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/><ref refid="qobject_1tr" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">tr</ref>(R</highlight><highlight class="stringliteral">&quot;(Failed<sp/>to<sp/>find<sp/>device<sp/>&quot;%1&quot;.)&quot;).arg(<ref refid="classAbstractCommand_1a07d979bc039d61f5c720cb1521b31208" kindref="member">deviceToScanFor</ref>));</highlight></codeline>
+<codeline lineno="398"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="qcoreapplication_1exit" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCoreApplication::exit</ref>(EXIT_FAILURE);</highlight></codeline>
+<codeline lineno="399"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="400"><highlight class="stringliteral">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/paul/src/dokit/src/cli/devicecommand.cpp"/>
+  </compounddef>
+</doxygen>

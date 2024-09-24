@@ -1,0 +1,109 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.0" xml:lang="en-US">
+  <compounddef id="structDataLoggerService_1_1CharacteristicUuids" kind="struct" language="C++" prot="public">
+    <compoundname>DataLoggerService::CharacteristicUuids</compoundname>
+    <includes refid="dataloggerservice_8h" local="no">dataloggerservice.h</includes>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="structDataLoggerService_1_1CharacteristicUuids_1ab5fa52ba8b4cacf839abe6d3f8e8a929" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="qbluetoothuuid" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothUuid</ref></type>
+        <definition>const QBluetoothUuid DataLoggerService::CharacteristicUuids::settings</definition>
+        <argsstring></argsstring>
+        <name>settings</name>
+        <qualifiedname>DataLoggerService::CharacteristicUuids::settings</qualifiedname>
+        <initializer>{ QStringLiteral(&quot;5f97c62b-a83b-46c6-b9cd-cac59e130a78&quot;) }</initializer>
+        <briefdescription>
+<para>UUID of the <computeroutput>DataLogger</computeroutput> service&apos;s <computeroutput><ref refid="structDataLoggerService_1_1Settings" kindref="compound">Settings</ref></computeroutput> characterstic. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/dataloggerservice.h" line="33" column="44" bodyfile="/home/paul/src/dokit/include/qtpokit/dataloggerservice.h" bodystart="33" bodyend="33"/>
+        <referencedby refid="classDataLoggerServicePrivate_1a687b443e1e36e2c07a9776a6ca02e688" compoundref="dataloggerservice_8cpp" startline="517" endline="541">DataLoggerServicePrivate::characteristicChanged</referencedby>
+        <referencedby refid="classDataLoggerServicePrivate_1a91ded6976e79e6054954eebe591214be" compoundref="dataloggerservice_8cpp" startline="455" endline="480">DataLoggerServicePrivate::characteristicRead</referencedby>
+        <referencedby refid="classDataLoggerServicePrivate_1a6988cc8bf165d4bf1fcdacf7124ea6f9" compoundref="dataloggerservice_8cpp" startline="486" endline="511">DataLoggerServicePrivate::characteristicWritten</referencedby>
+        <referencedby refid="classPokitDevice_1a0a3e6078ce0a7c2d93171ef0f4183d61" compoundref="pokitdevice_8cpp" startline="218" endline="261">PokitDevice::charcteristicToString</referencedby>
+        <referencedby refid="classDataLoggerService_1a3b933a1a161a390eb08e5019685f449c" compoundref="dataloggerservice_8cpp" startline="166" endline="184">DataLoggerService::setSettings</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structDataLoggerService_1_1CharacteristicUuids_1a360ad74780e776a1233d73e5416db0e9" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="qbluetoothuuid" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothUuid</ref></type>
+        <definition>const QBluetoothUuid DataLoggerService::CharacteristicUuids::metadata</definition>
+        <argsstring></argsstring>
+        <name>metadata</name>
+        <qualifiedname>DataLoggerService::CharacteristicUuids::metadata</qualifiedname>
+        <initializer>{ QStringLiteral(&quot;9acada2e-3936-430b-a8f7-da407d97ca6e&quot;) }</initializer>
+        <briefdescription>
+<para>UUID of the <computeroutput>DataLogger</computeroutput> service&apos;s <computeroutput><ref refid="structDataLoggerService_1_1Metadata" kindref="compound">Metadata</ref></computeroutput> characterstic. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/dataloggerservice.h" line="36" column="44" bodyfile="/home/paul/src/dokit/include/qtpokit/dataloggerservice.h" bodystart="36" bodyend="36"/>
+        <referencedby refid="classDataLoggerServicePrivate_1a687b443e1e36e2c07a9776a6ca02e688" compoundref="dataloggerservice_8cpp" startline="517" endline="541">DataLoggerServicePrivate::characteristicChanged</referencedby>
+        <referencedby refid="classDataLoggerServicePrivate_1a91ded6976e79e6054954eebe591214be" compoundref="dataloggerservice_8cpp" startline="455" endline="480">DataLoggerServicePrivate::characteristicRead</referencedby>
+        <referencedby refid="classDataLoggerServicePrivate_1a6988cc8bf165d4bf1fcdacf7124ea6f9" compoundref="dataloggerservice_8cpp" startline="486" endline="511">DataLoggerServicePrivate::characteristicWritten</referencedby>
+        <referencedby refid="classPokitDevice_1a0a3e6078ce0a7c2d93171ef0f4183d61" compoundref="pokitdevice_8cpp" startline="218" endline="261">PokitDevice::charcteristicToString</referencedby>
+        <referencedby refid="classDataLoggerService_1a1e007dc2f934757d8b28cdd9939bcaa5" compoundref="dataloggerservice_8cpp" startline="280" endline="284">DataLoggerService::disableMetadataNotifications</referencedby>
+        <referencedby refid="classDataLoggerService_1a0c63e3cdbc6b39ab68b8442b77938049" compoundref="dataloggerservice_8cpp" startline="267" endline="271">DataLoggerService::enableMetadataNotifications</referencedby>
+        <referencedby refid="classDataLoggerService_1aa94364928c317c1769e66eaf8635db92" compoundref="dataloggerservice_8cpp" startline="249" endline="256">DataLoggerService::metadata</referencedby>
+        <referencedby refid="classDataLoggerService_1a03ef6028ed40b095540dd45ba744c0f5" compoundref="dataloggerservice_8cpp" startline="153" endline="157">DataLoggerService::readMetadataCharacteristic</referencedby>
+        <referencedby refid="classDataLoggerService_1a3b933a1a161a390eb08e5019685f449c" compoundref="dataloggerservice_8cpp" startline="166" endline="184">DataLoggerService::setSettings</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structDataLoggerService_1_1CharacteristicUuids_1ae49f85e600ca4eb2753818bb2ef32d65" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="qbluetoothuuid" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothUuid</ref></type>
+        <definition>const QBluetoothUuid DataLoggerService::CharacteristicUuids::reading</definition>
+        <argsstring></argsstring>
+        <name>reading</name>
+        <qualifiedname>DataLoggerService::CharacteristicUuids::reading</qualifiedname>
+        <initializer>{ QStringLiteral(&quot;3c669dab-fc86-411c-9498-4f9415049cc0&quot;) }</initializer>
+        <briefdescription>
+<para>UUID of the <computeroutput>DataLogger</computeroutput> service&apos;s <computeroutput>Reading</computeroutput> characterstic. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/dataloggerservice.h" line="39" column="44" bodyfile="/home/paul/src/dokit/include/qtpokit/dataloggerservice.h" bodystart="39" bodyend="39"/>
+        <referencedby refid="classDataLoggerServicePrivate_1a687b443e1e36e2c07a9776a6ca02e688" compoundref="dataloggerservice_8cpp" startline="517" endline="541">DataLoggerServicePrivate::characteristicChanged</referencedby>
+        <referencedby refid="classDataLoggerServicePrivate_1a91ded6976e79e6054954eebe591214be" compoundref="dataloggerservice_8cpp" startline="455" endline="480">DataLoggerServicePrivate::characteristicRead</referencedby>
+        <referencedby refid="classDataLoggerServicePrivate_1a6988cc8bf165d4bf1fcdacf7124ea6f9" compoundref="dataloggerservice_8cpp" startline="486" endline="511">DataLoggerServicePrivate::characteristicWritten</referencedby>
+        <referencedby refid="classPokitDevice_1a0a3e6078ce0a7c2d93171ef0f4183d61" compoundref="pokitdevice_8cpp" startline="218" endline="261">PokitDevice::charcteristicToString</referencedby>
+        <referencedby refid="classDataLoggerService_1a8b144b31de4aa3d33c6e9fcb7e606bae" compoundref="dataloggerservice_8cpp" startline="304" endline="308">DataLoggerService::disableReadingNotifications</referencedby>
+        <referencedby refid="classDataLoggerService_1a2b9d2cad9b7b937a2fd20517c5ba825e" compoundref="dataloggerservice_8cpp" startline="293" endline="297">DataLoggerService::enableReadingNotifications</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Characteristics available via the <computeroutput>DataLogger</computeroutput> service. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>DataLoggerService::CharacteristicUuids</label>
+        <link refid="structDataLoggerService_1_1CharacteristicUuids"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>metadata</edgelabel>
+          <edgelabel>reading</edgelabel>
+          <edgelabel>settings</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QBluetoothUuid</label>
+        <link refid="qbluetoothuuid" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>QUuid</label>
+        <link refid="quuid" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/paul/src/dokit/include/qtpokit/dataloggerservice.h" line="31" column="5" bodyfile="/home/paul/src/dokit/include/qtpokit/dataloggerservice.h" bodystart="31" bodyend="40"/>
+    <listofallmembers>
+      <member refid="structDataLoggerService_1_1CharacteristicUuids_1a360ad74780e776a1233d73e5416db0e9" prot="public" virt="non-virtual"><scope>DataLoggerService::CharacteristicUuids</scope><name>metadata</name></member>
+      <member refid="structDataLoggerService_1_1CharacteristicUuids_1ae49f85e600ca4eb2753818bb2ef32d65" prot="public" virt="non-virtual"><scope>DataLoggerService::CharacteristicUuids</scope><name>reading</name></member>
+      <member refid="structDataLoggerService_1_1CharacteristicUuids_1ab5fa52ba8b4cacf839abe6d3f8e8a929" prot="public" virt="non-virtual"><scope>DataLoggerService::CharacteristicUuids</scope><name>settings</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

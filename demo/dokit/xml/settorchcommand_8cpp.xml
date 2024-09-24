@@ -1,0 +1,263 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.0" xml:lang="en-US">
+  <compounddef id="settorchcommand_8cpp" kind="file" language="C++">
+    <compoundname>settorchcommand.cpp</compoundname>
+    <includes refid="settorchcommand_8h" local="yes">settorchcommand.h</includes>
+    <includes refid="pokitdevice_8h" local="no">qtpokit/pokitdevice.h</includes>
+    <includes local="no">iostream</includes>
+    <incdepgraph>
+      <node id="16">
+        <label>abstractpokitservice.h</label>
+        <link refid="abstractpokitservice_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>qtpokit/pokitdevice.h</label>
+        <link refid="pokitdevice_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>qtpokit/pokitproducts.h</label>
+        <link refid="pokitproducts_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>qtpokit_global.h</label>
+        <link refid="qtpokit__global_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>qtpokit/statusservice.h</label>
+        <link refid="statusservice_8h"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>abstractcommand.h</label>
+        <link refid="abstractcommand_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>devicecommand.h</label>
+        <link refid="devicecommand_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>settorchcommand.cpp</label>
+        <link refid="settorchcommand_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>settorchcommand.h</label>
+        <link refid="settorchcommand_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>QBluetoothAddress</label>
+      </node>
+      <node id="5">
+        <label>QBluetoothDeviceInfo</label>
+      </node>
+      <node id="20">
+        <label>QBluetoothUuid</label>
+      </node>
+      <node id="6">
+        <label>QCommandLineParser</label>
+      </node>
+      <node id="12">
+        <label>QFlags</label>
+      </node>
+      <node id="7">
+        <label>QLoggingCategory</label>
+      </node>
+      <node id="14">
+        <label>QLowEnergyController</label>
+      </node>
+      <node id="17">
+        <label>QLowEnergyService</label>
+      </node>
+      <node id="8">
+        <label>QObject</label>
+      </node>
+      <node id="13">
+        <label>QString</label>
+      </node>
+      <node id="21">
+        <label>QVersionNumber</label>
+      </node>
+      <node id="11">
+        <label>QtGlobal</label>
+      </node>
+      <node id="23">
+        <label>iostream</label>
+      </node>
+      <node id="18">
+        <label>optional</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>SPDX-FileCopyrightText:<sp/>2022-2024<sp/>Paul<sp/>Colby<sp/>&lt;git@colby.id.au&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>SPDX-License-Identifier:<sp/>LGPL-3.0-or-later</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;settorchcommand.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="pokitdevice_8h" kindref="compound">qtpokit/pokitdevice.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="10"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>\class<sp/>SetTorchCommand</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>The<sp/>SetTorchCommand<sp/>class<sp/>implements<sp/>the<sp/>`set-torch`<sp/>CLI<sp/>command.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="16"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>Construct<sp/>a<sp/>new<sp/>SetTorchCommand<sp/>object<sp/>with<sp/>\a<sp/>parent.</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="classSetTorchCommand_1a3ae45d352b29c0a3d36e35d7fe78f3d8" refkind="member"><highlight class="normal"><ref refid="classSetTorchCommand_1a3ae45d352b29c0a3d36e35d7fe78f3d8" kindref="member">SetTorchCommand::SetTorchCommand</ref>(<ref refid="qobject" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QObject</ref><sp/>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>parent)<sp/>:<sp/><ref refid="classDeviceCommand" kindref="compound">DeviceCommand</ref>(parent)</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="classSetTorchCommand_1aa0516eddc57ee44761fd567831390734" refkind="member"><highlight class="normal"><ref refid="qstringlist" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QStringList</ref><sp/><ref refid="classSetTorchCommand_1aa0516eddc57ee44761fd567831390734" kindref="member">SetTorchCommand::requiredOptions</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qcommandlineparser" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCommandLineParser</ref><sp/>&amp;parser)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="25"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classAbstractCommand_1afd6f41cfc925751415cfa45e3b2d0b4a" kindref="member">DeviceCommand::requiredOptions</ref>(parser)<sp/>+<sp/><ref refid="qstringlist" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QStringList</ref>{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="qlatin1string" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QLatin1String</ref>(</highlight><highlight class="stringliteral">&quot;mode&quot;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="classSetTorchCommand_1ae1806354bd1d14c3b4b9a212661f6eb9" refkind="member"><highlight class="normal"><ref refid="qstringlist" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QStringList</ref><sp/><ref refid="classSetTorchCommand_1ae1806354bd1d14c3b4b9a212661f6eb9" kindref="member">SetTorchCommand::supportedOptions</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qcommandlineparser" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCommandLineParser</ref><sp/>&amp;parser)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="32"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classAbstractCommand_1a1ceca3c5b4cb24277dd4d4054f45db18" kindref="member">DeviceCommand::supportedOptions</ref>(parser);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="36"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="37"><highlight class="comment"><sp/>*<sp/>\copybrief<sp/>DeviceCommand::processOptions</highlight></codeline>
+<codeline lineno="38"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="39"><highlight class="comment"><sp/>*<sp/>This<sp/>implementation<sp/>extends<sp/>DeviceCommand::processOptions<sp/>to<sp/>process<sp/>additional<sp/>CLI<sp/>options</highlight></codeline>
+<codeline lineno="40"><highlight class="comment"><sp/>*<sp/>supported<sp/>(or<sp/>required)<sp/>by<sp/>this<sp/>command.</highlight></codeline>
+<codeline lineno="41"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="classSetTorchCommand_1a87329864f3038af5f53f2707cad1506e" refkind="member"><highlight class="normal"><ref refid="qstringlist" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QStringList</ref><sp/><ref refid="classSetTorchCommand_1a87329864f3038af5f53f2707cad1506e" kindref="member">SetTorchCommand::processOptions</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qcommandlineparser" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCommandLineParser</ref><sp/>&amp;parser)</highlight></codeline>
+<codeline lineno="43"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="qstringlist" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QStringList</ref><sp/>errors<sp/>=<sp/><ref refid="classAbstractCommand_1ad827a18a24776efeb955739459d48f7d" kindref="member">DeviceCommand::processOptions</ref>(parser);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!errors.<ref refid="qlist_1isEmpty" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">isEmpty</ref>())<sp/>{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>errors;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref><sp/>value<sp/>=<sp/>parser.<ref refid="qcommandlineparser_1value-1" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">value</ref>(<ref refid="qlatin1string" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QLatin1String</ref>(</highlight><highlight class="stringliteral">&quot;mode&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(value.<ref refid="qstring_1trimmed" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">trimmed</ref>().<ref refid="qstring_1compare-6" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">compare</ref>(<ref refid="qlatin1string" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QLatin1String</ref>(</highlight><highlight class="stringliteral">&quot;on&quot;</highlight><highlight class="normal">),<sp/><ref refid="qt_1CaseSensitivity-enum" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">Qt::CaseInsensitive</ref>)<sp/>==<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classSetTorchCommand_1a285ff040bed3b13968feaa060d0ae318" kindref="member">newStatus</ref><sp/>=<sp/><ref refid="classStatusService_1ab219dd54284c7299cce14b36ee59e08ba521c36a31c2762741cf0f8890cbe05e3" kindref="member">StatusService::TorchStatus::On</ref>;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(value.<ref refid="qstring_1trimmed" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">trimmed</ref>().<ref refid="qstring_1compare-6" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">compare</ref>(<ref refid="qlatin1string" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QLatin1String</ref>(</highlight><highlight class="stringliteral">&quot;off&quot;</highlight><highlight class="normal">),<sp/><ref refid="qt_1CaseSensitivity-enum" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">Qt::CaseInsensitive</ref>)<sp/>==<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classSetTorchCommand_1a285ff040bed3b13968feaa060d0ae318" kindref="member">newStatus</ref><sp/>=<sp/><ref refid="classStatusService_1ab219dd54284c7299cce14b36ee59e08bad15305d7a4e34e02489c74a5ef542f36" kindref="member">StatusService::TorchStatus::Off</ref>;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>errors.<ref refid="qlist_1append" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">append</ref>(<ref refid="qobject_1tr" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">tr</ref>(</highlight><highlight class="stringliteral">&quot;Invalid<sp/>status<sp/>value:<sp/>%1&quot;</highlight><highlight class="normal">).arg(value));</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>errors;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="60"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="61"><highlight class="comment"><sp/>*<sp/>\copybrief<sp/>DeviceCommand::getService</highlight></codeline>
+<codeline lineno="62"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="63"><highlight class="comment"><sp/>*<sp/>This<sp/>override<sp/>returns<sp/>a<sp/>pointer<sp/>to<sp/>a<sp/>StatusService<sp/>object.</highlight></codeline>
+<codeline lineno="64"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65" refid="classSetTorchCommand_1af772b83095447969556df52702d68dd4" refkind="member"><highlight class="normal"><ref refid="classAbstractPokitService" kindref="compound">AbstractPokitService</ref><sp/>*<sp/><ref refid="classSetTorchCommand_1af772b83095447969556df52702d68dd4" kindref="member">SetTorchCommand::getService</ref>()</highlight></codeline>
+<codeline lineno="66"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_ASSERT(<ref refid="classDeviceCommand_1a2bbf2dc9bb0ba85a2bf29263746c7b57" kindref="member">device</ref>);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!<ref refid="classSetTorchCommand_1aa4c245671b60323792e39d39de437f7d" kindref="member">service</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classSetTorchCommand_1aa4c245671b60323792e39d39de437f7d" kindref="member">service</ref><sp/>=<sp/><ref refid="classDeviceCommand_1a2bbf2dc9bb0ba85a2bf29263746c7b57" kindref="member">device</ref>-&gt;<ref refid="classPokitDevice_1adaaaedcb434b3dda9608ad58192e9142" kindref="member">status</ref>();</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Q_ASSERT(<ref refid="classSetTorchCommand_1aa4c245671b60323792e39d39de437f7d" kindref="member">service</ref>);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="qobject_1connect-4" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">connect</ref>(<ref refid="classSetTorchCommand_1aa4c245671b60323792e39d39de437f7d" kindref="member">service</ref>,<sp/>&amp;<ref refid="classStatusService_1aec3272ddef1ea08f7d6f2a87e41ed197" kindref="member">StatusService::torchStatusWritten</ref>,</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>&amp;<ref refid="classSetTorchCommand_1af4c7f99da529f36d29555565c814b82b" kindref="member">SetTorchCommand::torchStatusWritten</ref>);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classSetTorchCommand_1aa4c245671b60323792e39d39de437f7d" kindref="member">service</ref>;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="77"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="78"><highlight class="comment"><sp/>*<sp/>\copybrief<sp/>DeviceCommand::serviceDetailsDiscovered</highlight></codeline>
+<codeline lineno="79"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="80"><highlight class="comment"><sp/>*<sp/>This<sp/>override<sp/>sets<sp/>the<sp/>device&apos;s<sp/>name,<sp/>via<sp/>the<sp/>Pokit<sp/>Status<sp/>service.</highlight></codeline>
+<codeline lineno="81"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82" refid="classSetTorchCommand_1ae76dcd51a542ff55cf057079c215450e" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classSetTorchCommand_1ae76dcd51a542ff55cf057079c215450e" kindref="member">SetTorchCommand::serviceDetailsDiscovered</ref>()</highlight></codeline>
+<codeline lineno="83"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>qCInfo(lc).noquote()<sp/>&lt;&lt;<sp/><ref refid="qobject_1tr" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">tr</ref>(</highlight><highlight class="stringliteral">&quot;Setting<sp/>torch<sp/>%1&quot;</highlight><highlight class="normal">).<ref refid="qstring_1arg-14" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">arg</ref>(<ref refid="classStatusService_1aac79e97cb114be25b2a6771d915f132d" kindref="member">StatusService::toString</ref>(<ref refid="classSetTorchCommand_1a285ff040bed3b13968feaa060d0ae318" kindref="member">newStatus</ref>).toLower());</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!<ref refid="classSetTorchCommand_1aa4c245671b60323792e39d39de437f7d" kindref="member">service</ref>-&gt;<ref refid="classStatusService_1a3bc469455e6e704e0643fbc9ad236c70" kindref="member">setTorchStatus</ref>(<ref refid="classSetTorchCommand_1a285ff040bed3b13968feaa060d0ae318" kindref="member">newStatus</ref>))<sp/>{</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="qcoreapplication_1exit" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCoreApplication::exit</ref>(EXIT_FAILURE);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="88"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="90"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="91"><highlight class="comment"><sp/>*<sp/>Handles<sp/>StatusService::torchStatusWritten<sp/>events,<sp/>by<sp/>outputting<sp/>the<sp/>result<sp/>and<sp/>exiting.</highlight></codeline>
+<codeline lineno="92"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93" refid="classSetTorchCommand_1af4c7f99da529f36d29555565c814b82b" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classSetTorchCommand_1af4c7f99da529f36d29555565c814b82b" kindref="member">SetTorchCommand::torchStatusWritten</ref>()</highlight></codeline>
+<codeline lineno="94"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(<ref refid="classAbstractCommand_1a881d85cd96b6fcc0652b916c366dda7b" kindref="member">format</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="classAbstractCommand_1aa2dadc72289ff2b0a02c1fb435f8a4dcab20daea8bfacec3891fcf5b7be4adca0" kindref="member">OutputFormat::Csv</ref>:</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/>qUtf8Printable(<ref refid="qobject_1tr" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">tr</ref>(</highlight><highlight class="stringliteral">&quot;set_torch_result\nsuccess\n&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="classAbstractCommand_1aa2dadc72289ff2b0a02c1fb435f8a4dcaeed8d85b888a6c015834240885ee6333" kindref="member">OutputFormat::Json</ref>:</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/>qUtf8Printable(<ref refid="qlatin1string" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QLatin1String</ref>(</highlight><highlight class="stringliteral">&quot;true\n&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="classAbstractCommand_1aa2dadc72289ff2b0a02c1fb435f8a4dca9dffbf69ffba8bc38bc4e01abf4b1675" kindref="member">OutputFormat::Text</ref>:</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/>qUtf8Printable(<ref refid="qobject_1tr" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">tr</ref>(</highlight><highlight class="stringliteral">&quot;Done.\n&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="classDeviceCommand_1a2bbf2dc9bb0ba85a2bf29263746c7b57" kindref="member">device</ref>)<sp/><ref refid="classDeviceCommand_1ae619166395b5651f1316fd5336d9fa2c" kindref="member">disconnect</ref>();<sp/></highlight><highlight class="comment">//<sp/>Will<sp/>exit<sp/>the<sp/>application<sp/>once<sp/>disconnected.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/paul/src/dokit/src/cli/settorchcommand.cpp"/>
+  </compounddef>
+</doxygen>

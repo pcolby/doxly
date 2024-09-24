@@ -1,0 +1,115 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.0" xml:lang="en-US">
+  <compounddef id="pokitdiscoveryagent__p_8h" kind="file" language="C++">
+    <compoundname>pokitdiscoveryagent_p.h</compoundname>
+    <includes refid="qtpokit__global_8h" local="no">qtpokit/qtpokit_global.h</includes>
+    <includes local="no">QBluetoothDeviceDiscoveryAgent</includes>
+    <includes local="no">QBluetoothDeviceInfo</includes>
+    <includes local="no">QLoggingCategory</includes>
+    <includedby refid="pokitdiscoveryagent_8cpp" local="yes">pokitdiscoveryagent.cpp</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>qtpokit/qtpokit_global.h</label>
+        <link refid="qtpokit__global_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>pokitdiscoveryagent_p.h</label>
+        <link refid="pokitdiscoveryagent__p_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>QBluetoothDeviceDiscoveryAgent</label>
+      </node>
+      <node id="5">
+        <label>QBluetoothDeviceInfo</label>
+      </node>
+      <node id="6">
+        <label>QLoggingCategory</label>
+      </node>
+      <node id="3">
+        <label>QtGlobal</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>pokitdiscoveryagent.cpp</label>
+        <link refid="pokitdiscoveryagent_8cpp"/>
+      </node>
+      <node id="1">
+        <label>pokitdiscoveryagent_p.h</label>
+        <link refid="pokitdiscoveryagent__p_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classPokitDiscoveryAgentPrivate" prot="public">PokitDiscoveryAgentPrivate</innerclass>
+    <briefdescription>
+<para>Declares the <ref refid="classPokitDiscoveryAgentPrivate" kindref="compound">PokitDiscoveryAgentPrivate</ref> class. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>SPDX-FileCopyrightText:<sp/>2022-2024<sp/>Paul<sp/>Colby<sp/>&lt;git@colby.id.au&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>SPDX-License-Identifier:<sp/>LGPL-3.0-or-later</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="4"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>\file</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>Declares<sp/>the<sp/>PokitDiscoveryAgentPrivate<sp/>class.</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>QTPOKIT_POKITDISCOVERYAGENT_P_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>QTPOKIT_POKITDISCOVERYAGENT_P_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="qtpokit__global_8h" kindref="compound">qtpokit/qtpokit_global.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QBluetoothDeviceDiscoveryAgent&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QBluetoothDeviceInfo&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QLoggingCategory&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><ref refid="qtpokit__global_8h_1ac5aca53b48a017f8db467922deee7983" kindref="member">QTPOKIT_BEGIN_NAMESPACE</ref></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classPokitDiscoveryAgent" kindref="compound">PokitDiscoveryAgent</ref>;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="classPokitDiscoveryAgentPrivate" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="qtpokit__global_8h_1aeba02234b4a21ddf98bb8127b8d41759" kindref="member">QTPOKIT_EXPORT</ref><sp/><ref refid="classPokitDiscoveryAgentPrivate" kindref="compound">PokitDiscoveryAgentPrivate</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="qobject" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QObject</ref></highlight></codeline>
+<codeline lineno="23"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_OBJECT</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="27" refid="classPokitDiscoveryAgentPrivate_1a1a66593d6568865989a13cba288010cf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="classPokitDiscoveryAgentPrivate_1a1a66593d6568865989a13cba288010cf" kindref="member">Q_LOGGING_CATEGORY</ref>(lc,<sp/></highlight><highlight class="stringliteral">&quot;pokit.ble.discovery&quot;</highlight><highlight class="normal">,<sp/>QtInfoMsg);<sp/></highlight><highlight class="comment">///&lt;<sp/>Logging<sp/>category.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="classPokitDiscoveryAgentPrivate" kindref="compound">PokitDiscoveryAgentPrivate</ref>(<ref refid="classPokitDiscoveryAgent" kindref="compound">PokitDiscoveryAgent</ref><sp/>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>q);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="qobject_1Q_SLOTS" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">Q_SLOTS</ref>:</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>canceled()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>deviceDiscovered(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qbluetoothdeviceinfo" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothDeviceInfo</ref><sp/>&amp;info);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#if<sp/>(QT_VERSION<sp/>&gt;=<sp/>QT_VERSION_CHECK(5,<sp/>12,<sp/>0))<sp/></highlight><highlight class="comment">//<sp/>Required<sp/>signal,<sp/>and<sp/>Fields,<sp/>added<sp/>in<sp/>Qt<sp/>5.12.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>deviceUpdated(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qbluetoothdeviceinfo" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothDeviceInfo</ref><sp/>&amp;info,<sp/><ref refid="qbluetoothdeviceinfo_1Field-enum" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothDeviceInfo::Fields</ref><sp/>updatedFields);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>error(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qbluetoothdevicediscoveryagent_1Error-enum" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothDeviceDiscoveryAgent::Error</ref><sp/>error)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>finished()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="41" refid="classPokitDiscoveryAgentPrivate_1a82fa30e9b52381bff5c5c15ff351ac62" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classPokitDiscoveryAgent" kindref="compound">PokitDiscoveryAgent</ref><sp/>*<sp/><ref refid="classPokitDiscoveryAgentPrivate_1a82fa30e9b52381bff5c5c15ff351ac62" kindref="member">q_ptr</ref>;<sp/></highlight><highlight class="comment">///&lt;<sp/>Internal<sp/>q-pointer.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_DECLARE_PUBLIC(<ref refid="classPokitDiscoveryAgent" kindref="compound">PokitDiscoveryAgent</ref>)</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_DISABLE_COPY(<ref refid="classPokitDiscoveryAgentPrivate" kindref="compound">PokitDiscoveryAgentPrivate</ref>)</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">TestPokitDiscoveryAgent;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><ref refid="qtpokit__global_8h_1af2a5fcdf5ad6da4ea4f238aad0d29d65" kindref="member">QTPOKIT_END_NAMESPACE</ref></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>QTPOKIT_POKITDISCOVERYAGENT_P_H</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/paul/src/dokit/src/lib/pokitdiscoveryagent_p.h"/>
+  </compounddef>
+</doxygen>

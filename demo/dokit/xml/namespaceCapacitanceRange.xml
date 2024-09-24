@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.0" xml:lang="en-US">
+  <compounddef id="namespaceCapacitanceRange" kind="namespace" language="C++">
+    <compoundname>CapacitanceRange</compoundname>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="namespaceCapacitanceRange_1a14203d0e3a636e5142dccade0c4b5c91" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref></type>
+        <definition>QTPOKIT_EXPORT QString CapacitanceRange::toString</definition>
+        <argsstring>(const PokitProduct product, const quint8 range)</argsstring>
+        <name>toString</name>
+        <qualifiedname>CapacitanceRange::toString</qualifiedname>
+        <param>
+          <type>const <ref refid="pokitproducts_8h_1a0c4f628f68ce0432a6db11681a41fda4" kindref="member">PokitProduct</ref></type>
+          <declname>product</declname>
+        </param>
+        <param>
+          <type>const quint8</type>
+          <declname>range</declname>
+        </param>
+        <briefdescription>
+<para>Returns <emphasis>product&apos;s</emphasis> capacitance <emphasis>range</emphasis> as a human-friendly string. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>Since Pokit Meters do not support capacitance measurement, <emphasis>product</emphasis> should not be <ref refid="pokitproducts_8h_1a0c4f628f68ce0432a6db11681a41fda4afbb216b5c2f76db3f733c4c5915b3001" kindref="member">PokitProduct::PokitMeter</ref>.</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="namespacePokitPro_1a38ce307b844e4d67d94402b31461f7f4" kindref="member">PokitPro::toString(const PokitPro::CapacitanceRange &amp;range)</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/lib/pokitproducts.cpp" line="134" column="9" bodyfile="/home/paul/src/dokit/src/lib/pokitproducts.cpp" bodystart="134" bodyend="147" declfile="/home/paul/src/dokit/src/lib/pokitproducts_p.h" declline="20" declcolumn="28"/>
+        <references refid="qstring_1arg-14">QString::arg</references>
+        <references refid="pokitproducts_8h_1a0c4f628f68ce0432a6db11681a41fda4afbb216b5c2f76db3f733c4c5915b3001">PokitMeter</references>
+        <references refid="pokitproducts_8h_1a0c4f628f68ce0432a6db11681a41fda4abf3aeeb41cfa55672113dbb4a86da2ae">PokitPro</references>
+        <references refid="namespacePokitPro_1a38ce307b844e4d67d94402b31461f7f4" compoundref="pokitpro_8cpp" startline="25" endline="34">PokitPro::toString</references>
+        <references refid="qcoreapplication_1translate">QCoreApplication::translate</references>
+        <referencedby refid="classMultimeterService_1a66e1f404c97d779e284c0a6c7c954c49" compoundref="multimeterservice_8cpp" startline="54" endline="77">MultimeterService::toString</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespaceCapacitanceRange_1ae13fb76d6fab44972334e2b007be4a06" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="qvariant" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QVariant</ref></type>
+        <definition>QTPOKIT_EXPORT QVariant CapacitanceRange::maxValue</definition>
+        <argsstring>(const PokitProduct product, const quint8 range)</argsstring>
+        <name>maxValue</name>
+        <qualifiedname>CapacitanceRange::maxValue</qualifiedname>
+        <param>
+          <type>const <ref refid="pokitproducts_8h_1a0c4f628f68ce0432a6db11681a41fda4" kindref="member">PokitProduct</ref></type>
+          <declname>product</declname>
+        </param>
+        <param>
+          <type>const quint8</type>
+          <declname>range</declname>
+        </param>
+        <briefdescription>
+<para>Returns the maximum value for <emphasis>product&apos;s</emphasis> <emphasis>range</emphasis> in (integer) nanofarads, or the string &quot;Auto&quot;. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If <emphasis>range</emphasis> is not a known valid value, then an null <ref refid="qvariant" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QVariant</ref> is returned.</para>
+<para><simplesect kind="note"><para>Since Pokit Meters do not support capacitance measurement, <emphasis>product</emphasis> should not be <ref refid="pokitproducts_8h_1a0c4f628f68ce0432a6db11681a41fda4afbb216b5c2f76db3f733c4c5915b3001" kindref="member">PokitProduct::PokitMeter</ref>.</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="namespacePokitPro_1a377d083e0bc3e7972ba1476914dda1b5" kindref="member">PokitPro::maxValue(const PokitPro::CapacitanceRange &amp;range)</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/lib/pokitproducts.cpp" line="157" column="10" bodyfile="/home/paul/src/dokit/src/lib/pokitproducts.cpp" bodystart="157" bodyend="170" declfile="/home/paul/src/dokit/src/lib/pokitproducts_p.h" declline="21" declcolumn="29"/>
+        <references refid="qstring_1arg-14">QString::arg</references>
+        <references refid="namespacePokitPro_1a377d083e0bc3e7972ba1476914dda1b5" compoundref="pokitpro_8cpp" startline="40" endline="49">PokitPro::maxValue</references>
+        <references refid="pokitproducts_8h_1a0c4f628f68ce0432a6db11681a41fda4afbb216b5c2f76db3f733c4c5915b3001">PokitMeter</references>
+        <references refid="pokitproducts_8h_1a0c4f628f68ce0432a6db11681a41fda4abf3aeeb41cfa55672113dbb4a86da2ae">PokitPro</references>
+        <references refid="qcoreapplication_1translate">QCoreApplication::translate</references>
+        <referencedby refid="classMultimeterService_1a9d05ef9c2d80a941bfd4f972d3dc6145" compoundref="multimeterservice_8cpp" startline="90" endline="113">MultimeterService::maxValue</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Encapsulates convenience functions for working with capacitance ranges. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/paul/src/dokit/src/lib/pokitproducts.cpp" line="125" column="1"/>
+  </compounddef>
+</doxygen>

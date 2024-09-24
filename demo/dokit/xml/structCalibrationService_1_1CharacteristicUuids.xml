@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.0" xml:lang="en-US">
+  <compounddef id="structCalibrationService_1_1CharacteristicUuids" kind="struct" language="C++" prot="public">
+    <compoundname>CalibrationService::CharacteristicUuids</compoundname>
+    <includes refid="calibrationservice_8h" local="no">calibrationservice.h</includes>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="structCalibrationService_1_1CharacteristicUuids_1aee6c3fbd10b0d2f1c59914f30fe23327" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="qbluetoothuuid" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothUuid</ref></type>
+        <definition>const QBluetoothUuid CalibrationService::CharacteristicUuids::temperature</definition>
+        <argsstring></argsstring>
+        <name>temperature</name>
+        <qualifiedname>CalibrationService::CharacteristicUuids::temperature</qualifiedname>
+        <initializer>{ QStringLiteral(&quot;0cd0f713-f5aa-4572-9e23-f8049f6bcaaa&quot;) }</initializer>
+        <briefdescription>
+<para>UUID of the <computeroutput>Calibration</computeroutput> service&apos;s <computeroutput>Temperature</computeroutput> characterstic. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/calibrationservice.h" line="33" column="44" bodyfile="/home/paul/src/dokit/include/qtpokit/calibrationservice.h" bodystart="33" bodyend="33"/>
+        <referencedby refid="classCalibrationService_1a301f5b733cacbebbf24459639f04af52" compoundref="calibrationservice_8cpp" startline="70" endline="85">CalibrationService::calibrateTemperature</referencedby>
+        <referencedby refid="classCalibrationServicePrivate_1a1319763f3101ba47ad5e3dedacb630ac" compoundref="calibrationservice_8cpp" startline="129" endline="142">CalibrationServicePrivate::characteristicWritten</referencedby>
+        <referencedby refid="classPokitDevice_1a0a3e6078ce0a7c2d93171ef0f4183d61" compoundref="pokitdevice_8cpp" startline="218" endline="261">PokitDevice::charcteristicToString</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structCalibrationService_1_1CharacteristicUuids_1ac6aec925ef048583058493cb820edd34" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="qbluetoothuuid" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothUuid</ref></type>
+        <definition>const QBluetoothUuid CalibrationService::CharacteristicUuids::getParam</definition>
+        <argsstring></argsstring>
+        <name>getParam</name>
+        <qualifiedname>CalibrationService::CharacteristicUuids::getParam</qualifiedname>
+        <initializer>{ QStringLiteral(&quot;b6728f91-409c-4d6c-864e-272a6a7a0204&quot;) }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="todo_1_todo000001"><xreftitle>Todo</xreftitle><xrefdescription><para>UUID of the <computeroutput>Calibration</computeroutput> service&apos;s (undocumented) <computeroutput>Get Parameter</computeroutput> characterstic. </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/calibrationservice.h" line="36" column="44" bodyfile="/home/paul/src/dokit/include/qtpokit/calibrationservice.h" bodystart="36" bodyend="36"/>
+        <referencedby refid="classPokitDevice_1a0a3e6078ce0a7c2d93171ef0f4183d61" compoundref="pokitdevice_8cpp" startline="218" endline="261">PokitDevice::charcteristicToString</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structCalibrationService_1_1CharacteristicUuids_1a03a5bb3dc948f18b0c87b5bb9e0120f5" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="qbluetoothuuid" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothUuid</ref></type>
+        <definition>const QBluetoothUuid CalibrationService::CharacteristicUuids::setParam</definition>
+        <argsstring></argsstring>
+        <name>setParam</name>
+        <qualifiedname>CalibrationService::CharacteristicUuids::setParam</qualifiedname>
+        <initializer>{ QStringLiteral(&quot;5588e47b-cb81-4f7b-acc4-6029a3f39f72&quot;) }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="todo_1_todo000002"><xreftitle>Todo</xreftitle><xrefdescription><para>UUID of the <computeroutput>Calibration</computeroutput> service&apos;s (undocumented) <computeroutput>Set Parameter</computeroutput> characterstic. </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/calibrationservice.h" line="39" column="44" bodyfile="/home/paul/src/dokit/include/qtpokit/calibrationservice.h" bodystart="39" bodyend="39"/>
+        <referencedby refid="classPokitDevice_1a0a3e6078ce0a7c2d93171ef0f4183d61" compoundref="pokitdevice_8cpp" startline="218" endline="261">PokitDevice::charcteristicToString</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Characteristics available via the <computeroutput>Calibration</computeroutput> service. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>CalibrationService::CharacteristicUuids</label>
+        <link refid="structCalibrationService_1_1CharacteristicUuids"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>getParam</edgelabel>
+          <edgelabel>setParam</edgelabel>
+          <edgelabel>temperature</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QBluetoothUuid</label>
+        <link refid="qbluetoothuuid" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>QUuid</label>
+        <link refid="quuid" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/paul/src/dokit/include/qtpokit/calibrationservice.h" line="31" column="5" bodyfile="/home/paul/src/dokit/include/qtpokit/calibrationservice.h" bodystart="31" bodyend="40"/>
+    <listofallmembers>
+      <member refid="structCalibrationService_1_1CharacteristicUuids_1ac6aec925ef048583058493cb820edd34" prot="public" virt="non-virtual"><scope>CalibrationService::CharacteristicUuids</scope><name>getParam</name></member>
+      <member refid="structCalibrationService_1_1CharacteristicUuids_1a03a5bb3dc948f18b0c87b5bb9e0120f5" prot="public" virt="non-virtual"><scope>CalibrationService::CharacteristicUuids</scope><name>setParam</name></member>
+      <member refid="structCalibrationService_1_1CharacteristicUuids_1aee6c3fbd10b0d2f1c59914f30fe23327" prot="public" virt="non-virtual"><scope>CalibrationService::CharacteristicUuids</scope><name>temperature</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

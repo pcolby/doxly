@@ -1,0 +1,283 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.0" xml:lang="en-US">
+  <compounddef id="dsoservice_8h" kind="file" language="C++">
+    <compoundname>dsoservice.h</compoundname>
+    <includes refid="abstractpokitservice_8h" local="yes">abstractpokitservice.h</includes>
+    <includes refid="pokitproducts_8h" local="yes">pokitproducts.h</includes>
+    <includes local="no">QBluetoothAddress</includes>
+    <includes local="no">QBluetoothUuid</includes>
+    <includes local="no">QVersionNumber</includes>
+    <includedby refid="dsocommand_8h" local="no">dsocommand.h</includedby>
+    <includedby refid="dsoservice_8cpp" local="no">dsoservice.cpp</includedby>
+    <includedby refid="dsoservice__p_8h" local="no">dsoservice_p.h</includedby>
+    <includedby refid="pokitdevice_8cpp" local="no">pokitdevice.cpp</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>abstractpokitservice.h</label>
+        <link refid="abstractpokitservice_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>dsoservice.h</label>
+        <link refid="dsoservice_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>pokitproducts.h</label>
+        <link refid="pokitproducts_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>qtpokit_global.h</label>
+        <link refid="qtpokit__global_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>QBluetoothAddress</label>
+      </node>
+      <node id="6">
+        <label>QBluetoothDeviceInfo</label>
+      </node>
+      <node id="13">
+        <label>QBluetoothUuid</label>
+      </node>
+      <node id="7">
+        <label>QFlags</label>
+      </node>
+      <node id="9">
+        <label>QLowEnergyService</label>
+      </node>
+      <node id="10">
+        <label>QObject</label>
+      </node>
+      <node id="8">
+        <label>QString</label>
+      </node>
+      <node id="14">
+        <label>QVersionNumber</label>
+      </node>
+      <node id="4">
+        <label>QtGlobal</label>
+      </node>
+      <node id="11">
+        <label>optional</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>dsoservice.h</label>
+        <link refid="dsoservice_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>dsocommand.cpp</label>
+        <link refid="dsocommand_8cpp_source"/>
+      </node>
+      <node id="2">
+        <label>dsocommand.h</label>
+        <link refid="dsocommand_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>main.cpp</label>
+        <link refid="main_8cpp_source"/>
+      </node>
+      <node id="5">
+        <label>dsoservice.cpp</label>
+        <link refid="dsoservice_8cpp"/>
+      </node>
+      <node id="6">
+        <label>dsoservice_p.h</label>
+        <link refid="dsoservice__p_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>pokitdevice.cpp</label>
+        <link refid="pokitdevice_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classDsoService" prot="public">DsoService</innerclass>
+    <innerclass refid="structDsoService_1_1CharacteristicUuids" prot="public">DsoService::CharacteristicUuids</innerclass>
+    <innerclass refid="structDsoService_1_1Settings" prot="public">DsoService::Settings</innerclass>
+    <innerclass refid="structDsoService_1_1Metadata" prot="public">DsoService::Metadata</innerclass>
+    <briefdescription>
+<para>Declares the <ref refid="classDsoService" kindref="compound">DsoService</ref> class. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>SPDX-FileCopyrightText:<sp/>2022-2024<sp/>Paul<sp/>Colby<sp/>&lt;git@colby.id.au&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>SPDX-License-Identifier:<sp/>LGPL-3.0-or-later</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="4"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>\file</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>Declares<sp/>the<sp/>DsoService<sp/>class.</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>QTPOKIT_DSOSERVICE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>QTPOKIT_DSOSERVICE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="abstractpokitservice_8h" kindref="compound">abstractpokitservice.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="pokitproducts_8h" kindref="compound">pokitproducts.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QBluetoothAddress&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QBluetoothUuid&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QVersionNumber&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><ref refid="qtpokit__global_8h_1ac5aca53b48a017f8db467922deee7983" kindref="member">QTPOKIT_BEGIN_NAMESPACE</ref></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classDsoServicePrivate" kindref="compound">DsoServicePrivate</ref>;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="classDsoService" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="qtpokit__global_8h_1aeba02234b4a21ddf98bb8127b8d41759" kindref="member">QTPOKIT_EXPORT</ref><sp/><ref refid="classDsoService" kindref="compound">DsoService</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classAbstractPokitService" kindref="compound">AbstractPokitService</ref></highlight></codeline>
+<codeline lineno="24"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_OBJECT</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>UUID<sp/>of<sp/>the<sp/>&quot;DSO&quot;<sp/>service.</highlight></codeline>
+<codeline lineno="29" refid="classDsoService_1a3d9a3fcb52d059fc454fdb71530d9a7d" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qbluetoothuuid" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothUuid</ref><sp/>serviceUuid<sp/>{<sp/>QStringLiteral(</highlight><highlight class="stringliteral">&quot;1569801e-1425-4a7a-b617-a4f4ed719de6&quot;</highlight><highlight class="normal">)<sp/>};</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="31"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Characteristics<sp/>available<sp/>via<sp/>the<sp/>`DSO`<sp/>service.</highlight></codeline>
+<codeline lineno="32" refid="structDsoService_1_1CharacteristicUuids" refkind="compound"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="qtpokit__global_8h_1aeba02234b4a21ddf98bb8127b8d41759" kindref="member">QTPOKIT_EXPORT</ref><sp/><ref refid="structDsoService_1_1CharacteristicUuids" kindref="compound">CharacteristicUuids</ref><sp/>{</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="33"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>UUID<sp/>of<sp/>the<sp/>`DSO`<sp/>service&apos;s<sp/>`Settings`<sp/>characterstic.</highlight></codeline>
+<codeline lineno="34" refid="structDsoService_1_1CharacteristicUuids_1aad3144a47fc1cc7edc705b3e823688a6" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qbluetoothuuid" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothUuid</ref><sp/>settings<sp/>{<sp/>QStringLiteral(</highlight><highlight class="stringliteral">&quot;a81af1b6-b8b3-4244-8859-3da368d2be39&quot;</highlight><highlight class="normal">)<sp/>};</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="36"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>UUID<sp/>of<sp/>the<sp/>`DSO`<sp/>service&apos;s<sp/>`Metadata`<sp/>characterstic.</highlight></codeline>
+<codeline lineno="37" refid="structDsoService_1_1CharacteristicUuids_1a0640c015d85dba780fcad93990e37afa" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qbluetoothuuid" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothUuid</ref><sp/>metadata<sp/>{<sp/>QStringLiteral(</highlight><highlight class="stringliteral">&quot;970f00ba-f46f-4825-96a8-153a5cd0cda9&quot;</highlight><highlight class="normal">)<sp/>};</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="39"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>UUID<sp/>of<sp/>the<sp/>`DSO`<sp/>service&apos;s<sp/>`Reading`<sp/>characterstic.</highlight></codeline>
+<codeline lineno="40" refid="structDsoService_1_1CharacteristicUuids_1a495b006c71a1b15952e54e1ff0791aa7" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qbluetoothuuid" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothUuid</ref><sp/>reading<sp/><sp/>{<sp/>QStringLiteral(</highlight><highlight class="stringliteral">&quot;98e14f8e-536e-4f24-b4f4-1debfed0a99e&quot;</highlight><highlight class="normal">)<sp/>};</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="43"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Values<sp/>supported<sp/>by<sp/>the<sp/>`Command`<sp/>attribute<sp/>of<sp/>the<sp/>`Settings`<sp/>characteristic.</highlight></codeline>
+<codeline lineno="44" refid="classDsoService_1af2baee0dc3fa5e308be06c691dece236" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/><ref refid="classDsoService_1af2baee0dc3fa5e308be06c691dece236" kindref="member">Command</ref><sp/>:<sp/>quint8<sp/>{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FreeRunning<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0,<sp/></highlight><highlight class="comment">///&lt;<sp/>Run<sp/>free,<sp/>without<sp/>waiting<sp/>for<sp/>edge<sp/>triggers.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>RisingEdgeTrigger<sp/><sp/>=<sp/>1,<sp/></highlight><highlight class="comment">///&lt;<sp/>Trigger<sp/>on<sp/>a<sp/>rising<sp/>edge.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FallingEdgeTrigger<sp/>=<sp/>2,<sp/></highlight><highlight class="comment">///&lt;<sp/>Trigger<sp/>on<sp/>a<sp/>falling<sp/>edge.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ResendData<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>3<sp/><sp/></highlight><highlight class="comment">///&lt;<sp/>Resend<sp/>the<sp/>last<sp/>acquired<sp/>data.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="51"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Values<sp/>supported<sp/>by<sp/>the<sp/>`Mode`<sp/>attribute<sp/>of<sp/>the<sp/>`Settings`<sp/>and<sp/>`Metadata`<sp/>characteristics.</highlight></codeline>
+<codeline lineno="52" refid="classDsoService_1ae1414a11556e06b49cea9fadcd6f5b95" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/><ref refid="classDsoService_1ae1414a11556e06b49cea9fadcd6f5b95" kindref="member">Mode</ref><sp/>:<sp/>quint8<sp/>{</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Idle<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0,<sp/></highlight><highlight class="comment">///&lt;<sp/>Make<sp/>device<sp/>idle.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DcVoltage<sp/><sp/><sp/>=<sp/>1,<sp/></highlight><highlight class="comment">///&lt;<sp/>Measure<sp/>DC<sp/>voltage.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>AcVoltage<sp/><sp/><sp/>=<sp/>2,<sp/></highlight><highlight class="comment">///&lt;<sp/>Measure<sp/>AC<sp/>voltage.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DcCurrent<sp/><sp/><sp/>=<sp/>3,<sp/></highlight><highlight class="comment">///&lt;<sp/>Measure<sp/>DC<sp/>current.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>AcCurrent<sp/><sp/><sp/>=<sp/>4,<sp/></highlight><highlight class="comment">///&lt;<sp/>Measure<sp/>AC<sp/>current.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref><sp/><ref refid="pokitproducts_8h_1abac6d04d602c122e3de08ef55122d635" kindref="member">toString</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Mode<sp/>&amp;mode);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref><sp/><ref refid="pokitproducts_8h_1abac6d04d602c122e3de08ef55122d635" kindref="member">toString</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="pokitproducts_8h_1a0c4f628f68ce0432a6db11681a41fda4" kindref="member">PokitProduct</ref><sp/>product,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>quint8<sp/>range,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Mode<sp/>mode);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref><sp/><ref refid="pokitproducts_8h_1abac6d04d602c122e3de08ef55122d635" kindref="member">toString</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>quint8<sp/>range,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Mode<sp/>mode)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="qvariant" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QVariant</ref><sp/>maxValue(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="pokitproducts_8h_1a0c4f628f68ce0432a6db11681a41fda4" kindref="member">PokitProduct</ref><sp/>product,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>quint8<sp/>range,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Mode<sp/>mode);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="qvariant" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QVariant</ref><sp/>maxValue(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>quint8<sp/>range,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Mode<sp/>mode)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="66"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Attributes<sp/>included<sp/>in<sp/>the<sp/>`Settings`<sp/>characterstic.</highlight></codeline>
+<codeline lineno="67" refid="structDsoService_1_1Settings" refkind="compound"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structDsoService_1_1Settings" kindref="compound">Settings</ref><sp/>{</highlight></codeline>
+<codeline lineno="68" refid="structDsoService_1_1Settings_1a661cb2920a504d5f3fc7437529c37f15" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classDsoService_1af2baee0dc3fa5e308be06c691dece236" kindref="member">Command</ref><sp/><ref refid="structDsoService_1_1Settings_1a661cb2920a504d5f3fc7437529c37f15" kindref="member">command</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">///&lt;<sp/>Custom<sp/>operation<sp/>request.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69" refid="structDsoService_1_1Settings_1a98deec20d34aa9f0e1567bce8ff24bc8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="structDsoService_1_1Settings_1a98deec20d34aa9f0e1567bce8ff24bc8" kindref="member">triggerLevel</ref>;<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">///&lt;<sp/>Trigger<sp/>threshold<sp/>level<sp/>in<sp/>Volts<sp/>or<sp/>Amps,<sp/>depending<sp/>on<sp/>#mode.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70" refid="structDsoService_1_1Settings_1a1a66d9c5ab84eb3d046c1c5842f87faf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classDsoService_1ae1414a11556e06b49cea9fadcd6f5b95" kindref="member">Mode</ref><sp/><ref refid="structDsoService_1_1Settings_1a1a66d9c5ab84eb3d046c1c5842f87faf" kindref="member">mode</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">///&lt;<sp/>Desired<sp/>operation<sp/>mode.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71" refid="structDsoService_1_1Settings_1a3868828fd33d6f555c25b7b7eadb767e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>quint8<sp/><ref refid="structDsoService_1_1Settings_1a3868828fd33d6f555c25b7b7eadb767e" kindref="member">range</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">///&lt;<sp/>Desired<sp/>range,<sp/>eg<sp/>settings.range<sp/>=<sp/>+PokitPro::CurrentRange::AutoRange;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72" refid="structDsoService_1_1Settings_1a85067aa6f3ad5a734414e97aa623763b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>quint32<sp/><ref refid="structDsoService_1_1Settings_1a85067aa6f3ad5a734414e97aa623763b" kindref="member">samplingWindow</ref>;<sp/><sp/></highlight><highlight class="comment">///&lt;<sp/>Desired<sp/>sampling<sp/>window<sp/>in<sp/>microseconds.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73" refid="structDsoService_1_1Settings_1ad118943a951c606915bd12c45ded6cd6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>quint16<sp/><ref refid="structDsoService_1_1Settings_1ad118943a951c606915bd12c45ded6cd6" kindref="member">numberOfSamples</ref>;<sp/></highlight><highlight class="comment">///&lt;<sp/>Desired<sp/>number<sp/>of<sp/>samples<sp/>to<sp/>acquire.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="76"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Values<sp/>supported<sp/>by<sp/>the<sp/>`Status`<sp/>attribute<sp/>of<sp/>the<sp/>`Metadata`<sp/>characteristic.</highlight></codeline>
+<codeline lineno="77" refid="classDsoService_1aaa4e080d3d3e444dabf9d7117561905d" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/><ref refid="classDsoService_1aaa4e080d3d3e444dabf9d7117561905d" kindref="member">DsoStatus</ref><sp/>:<sp/>quint8<sp/>{</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Done<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0,<sp/><sp/></highlight><highlight class="comment">///&lt;<sp/>Sampling<sp/>has<sp/>completed.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Sampling<sp/><sp/><sp/>=<sp/>1,<sp/><sp/></highlight><highlight class="comment">///&lt;<sp/>Actively<sp/>sampling.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Error<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>255<sp/></highlight><highlight class="comment">///&lt;<sp/>An<sp/>error<sp/>has<sp/>occurred.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="83"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Attributes<sp/>included<sp/>in<sp/>the<sp/>`Metadata`<sp/>characterstic.</highlight></codeline>
+<codeline lineno="84" refid="structDsoService_1_1Metadata" refkind="compound"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structDsoService_1_1Metadata" kindref="compound">Metadata</ref><sp/>{</highlight></codeline>
+<codeline lineno="85" refid="structDsoService_1_1Metadata_1a49968d71997c4a744061b547e9c4778e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classDsoService_1aaa4e080d3d3e444dabf9d7117561905d" kindref="member">DsoStatus</ref><sp/><ref refid="structDsoService_1_1Metadata_1a49968d71997c4a744061b547e9c4778e" kindref="member">status</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">///&lt;<sp/>Current<sp/>DSO<sp/>status.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86" refid="structDsoService_1_1Metadata_1a6b8a8636619603ff9a52e0ef2eba1085" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="structDsoService_1_1Metadata_1a6b8a8636619603ff9a52e0ef2eba1085" kindref="member">scale</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">///&lt;<sp/>Scale<sp/>to<sp/>apply<sp/>to<sp/>read<sp/>samples.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87" refid="structDsoService_1_1Metadata_1ad0109534b3e7035a93abd47b1028f8ca" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classDsoService_1ae1414a11556e06b49cea9fadcd6f5b95" kindref="member">Mode</ref><sp/><ref refid="structDsoService_1_1Metadata_1ad0109534b3e7035a93abd47b1028f8ca" kindref="member">mode</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">///&lt;<sp/>Operation<sp/>mode<sp/>used<sp/>during<sp/>last<sp/>acquisition.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88" refid="structDsoService_1_1Metadata_1acb41b394f9fc234072f0c977eedb162f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>quint8<sp/><ref refid="structDsoService_1_1Metadata_1acb41b394f9fc234072f0c977eedb162f" kindref="member">range</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">///&lt;<sp/>Range<sp/>used<sp/>during<sp/>last<sp/>acquisition.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89" refid="structDsoService_1_1Metadata_1adef86fc5e8e8ef5b2348251e2cc419d1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>quint32<sp/><ref refid="structDsoService_1_1Metadata_1adef86fc5e8e8ef5b2348251e2cc419d1" kindref="member">samplingWindow</ref>;<sp/><sp/></highlight><highlight class="comment">///&lt;<sp/>Sampling<sp/>window<sp/>(microseconds)<sp/>used<sp/>during<sp/>last<sp/>acquisition.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90" refid="structDsoService_1_1Metadata_1aa2c92c1dd91d2351dbe06c1e7910c78d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>quint16<sp/><ref refid="structDsoService_1_1Metadata_1aa2c92c1dd91d2351dbe06c1e7910c78d" kindref="member">numberOfSamples</ref>;<sp/></highlight><highlight class="comment">///&lt;<sp/>Number<sp/>of<sp/>samples<sp/>acquired<sp/>(1<sp/>to<sp/>8192).</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91" refid="structDsoService_1_1Metadata_1a1ee78a173e219e8224f4db3d4bc5ee97" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>quint32<sp/><ref refid="structDsoService_1_1Metadata_1a1ee78a173e219e8224f4db3d4bc5ee97" kindref="member">samplingRate</ref>;<sp/><sp/><sp/><sp/></highlight><highlight class="comment">///&lt;<sp/>Sampling<sp/>rate<sp/><sp/>used<sp/>during<sp/>last<sp/>acquisition<sp/>(1<sp/>to<sp/>1MHz).</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94" refid="classDsoService_1a99b8139924e2ef845cca81ca7c340d2c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="qvector" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QVector&lt;qint16&gt;</ref><sp/><ref refid="classDsoService_1a99b8139924e2ef845cca81ca7c340d2c" kindref="member">Samples</ref>;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classDsoService" kindref="compound">DsoService</ref>(<ref refid="qlowenergycontroller" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QLowEnergyController</ref><sp/>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>pokitDevice,<sp/><ref refid="qobject" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QObject</ref><sp/>*<sp/>parent<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classDsoService" kindref="compound">~DsoService</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classAbstractPokitService_1ab1de532f20d46803d6e8b8ffea835b48" kindref="member">readCharacteristics</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>readMetadataCharacteristic();</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Settings<sp/>characteristic<sp/>(BLE<sp/>write<sp/>only).</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>setSettings(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structDsoService_1_1Settings" kindref="compound">Settings</ref><sp/>&amp;settings);</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>startDso(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structDsoService_1_1Settings" kindref="compound">Settings</ref><sp/>&amp;settings);</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>fetchSamples();</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Metadata<sp/>characteristic<sp/>(BLE<sp/>read/notify).</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structDsoService_1_1Metadata" kindref="compound">Metadata</ref><sp/>metadata()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>enableMetadataNotifications();</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>disableMetadataNotifications();</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Reading<sp/>characteristic<sp/>(BLE<sp/>notify<sp/>only).</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>enableReadingNotifications();</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>disableReadingNotifications();</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><ref refid="qobject_1Q_SIGNALS" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">Q_SIGNALS</ref>:</highlight></codeline>
+<codeline lineno="117" refid="classDsoService_1a5d5b1266a63ee479c91c4e048cdf0859" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classDsoService_1a5d5b1266a63ee479c91c4e048cdf0859" kindref="member">settingsWritten</ref>();</highlight></codeline>
+<codeline lineno="118" refid="classDsoService_1a19e4f10c45794762aa5b692aceee9e6c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classDsoService_1a19e4f10c45794762aa5b692aceee9e6c" kindref="member">metadataRead</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structDsoService_1_1Metadata" kindref="compound">DsoService::Metadata</ref><sp/>&amp;meta);</highlight></codeline>
+<codeline lineno="119" refid="classDsoService_1afafabdcfc2d5812b32eac0e16c437789" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classDsoService_1afafabdcfc2d5812b32eac0e16c437789" kindref="member">samplesRead</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qvector" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">DsoService::Samples</ref><sp/>&amp;samples);</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="122"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>\cond<sp/>internal</highlight></codeline>
+<codeline lineno="123"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classDsoService" kindref="compound">DsoService</ref>(<ref refid="classDsoServicePrivate" kindref="compound">DsoServicePrivate</ref><sp/>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>d,<sp/><ref refid="qobject" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QObject</ref><sp/>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>parent);</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="124"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>\endcond</highlight></codeline>
+<codeline lineno="125"><highlight class="comment"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_DECLARE_PRIVATE(<ref refid="classDsoService" kindref="compound">DsoService</ref>)</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_DISABLE_COPY(<ref refid="classDsoService" kindref="compound">DsoService</ref>)</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">TestDsoService;</highlight></codeline>
+<codeline lineno="130"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><ref refid="qtpokit__global_8h_1af2a5fcdf5ad6da4ea4f238aad0d29d65" kindref="member">QTPOKIT_END_NAMESPACE</ref></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>QTPOKIT_DSOSERVICE_H</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/paul/src/dokit/include/qtpokit/dsoservice.h"/>
+  </compounddef>
+</doxygen>

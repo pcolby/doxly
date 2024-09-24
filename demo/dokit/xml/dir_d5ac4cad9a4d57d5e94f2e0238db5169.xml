@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.0" xml:lang="en-US">
+  <compounddef id="dir_d5ac4cad9a4d57d5e94f2e0238db5169" kind="dir">
+    <compoundname>src</compoundname>
+    <innerdir refid="dir_dad62831f6347b6888b7e4953aff15e6">cli</innerdir>
+    <innerdir refid="dir_50a37931ba53bab1227e676b964746aa">lib</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/paul/src/dokit/src/"/>
+  </compounddef>
+</doxygen>

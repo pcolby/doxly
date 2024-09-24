@@ -1,0 +1,946 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.0" xml:lang="en-US">
+  <compounddef id="main_8cpp" kind="file" language="C++">
+    <compoundname>main.cpp</compoundname>
+    <includes refid="calibratecommand_8h" local="yes">calibratecommand.h</includes>
+    <includes refid="dsocommand_8h" local="yes">dsocommand.h</includes>
+    <includes refid="flashledcommand_8h" local="yes">flashledcommand.h</includes>
+    <includes refid="infocommand_8h" local="yes">infocommand.h</includes>
+    <includes refid="loggerfetchcommand_8h" local="yes">loggerfetchcommand.h</includes>
+    <includes refid="loggerstartcommand_8h" local="yes">loggerstartcommand.h</includes>
+    <includes refid="loggerstopcommand_8h" local="yes">loggerstopcommand.h</includes>
+    <includes refid="metercommand_8h" local="yes">metercommand.h</includes>
+    <includes refid="scancommand_8h" local="yes">scancommand.h</includes>
+    <includes refid="setnamecommand_8h" local="yes">setnamecommand.h</includes>
+    <includes refid="settorchcommand_8h" local="yes">settorchcommand.h</includes>
+    <includes refid="statuscommand_8h" local="yes">statuscommand.h</includes>
+    <includes local="no">QCommandLineParser</includes>
+    <includes local="no">QCoreApplication</includes>
+    <includes local="no">QLocale</includes>
+    <includes local="no">QLoggingCategory</includes>
+    <includes local="no">QTranslator</includes>
+    <includes local="no">iostream</includes>
+    <incdepgraph>
+      <node id="17">
+        <label>abstractpokitservice.h</label>
+        <link refid="abstractpokitservice_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>qtpokit/dataloggerservice.h</label>
+        <link refid="dataloggerservice_8h"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>qtpokit/dsoservice.h</label>
+        <link refid="dsoservice_8h"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>qtpokit/multimeterservice.h</label>
+        <link refid="multimeterservice_8h"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>qtpokit/pokitmeter.h</label>
+        <link refid="pokitmeter_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>qtpokit/pokitpro.h</label>
+        <link refid="pokitpro_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>qtpokit/pokitproducts.h</label>
+        <link refid="pokitproducts_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>qtpokit_global.h</label>
+        <link refid="qtpokit__global_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>qtpokit/statusservice.h</label>
+        <link refid="statusservice_8h"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>abstractcommand.h</label>
+        <link refid="abstractcommand_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>calibratecommand.h</label>
+        <link refid="calibratecommand_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>devicecommand.h</label>
+        <link refid="devicecommand_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>dsocommand.h</label>
+        <link refid="dsocommand_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>flashledcommand.h</label>
+        <link refid="flashledcommand_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>infocommand.h</label>
+        <link refid="infocommand_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>loggerfetchcommand.h</label>
+        <link refid="loggerfetchcommand_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>loggerstartcommand.h</label>
+        <link refid="loggerstartcommand_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>loggerstopcommand.h</label>
+        <link refid="loggerstopcommand_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>main.cpp</label>
+        <link refid="main_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>metercommand.h</label>
+        <link refid="metercommand_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>scancommand.h</label>
+        <link refid="scancommand_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>setnamecommand.h</label>
+        <link refid="setnamecommand_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>settorchcommand.h</label>
+        <link refid="settorchcommand_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>statuscommand.h</label>
+        <link refid="statuscommand_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>QBluetoothAddress</label>
+      </node>
+      <node id="5">
+        <label>QBluetoothDeviceInfo</label>
+      </node>
+      <node id="21">
+        <label>QBluetoothUuid</label>
+      </node>
+      <node id="6">
+        <label>QCommandLineParser</label>
+      </node>
+      <node id="39">
+        <label>QCoreApplication</label>
+      </node>
+      <node id="12">
+        <label>QFlags</label>
+      </node>
+      <node id="40">
+        <label>QLocale</label>
+      </node>
+      <node id="7">
+        <label>QLoggingCategory</label>
+      </node>
+      <node id="14">
+        <label>QLowEnergyController</label>
+      </node>
+      <node id="18">
+        <label>QLowEnergyService</label>
+      </node>
+      <node id="8">
+        <label>QObject</label>
+      </node>
+      <node id="13">
+        <label>QString</label>
+      </node>
+      <node id="41">
+        <label>QTranslator</label>
+      </node>
+      <node id="24">
+        <label>QVariant</label>
+      </node>
+      <node id="22">
+        <label>QVersionNumber</label>
+      </node>
+      <node id="11">
+        <label>QtGlobal</label>
+      </node>
+      <node id="42">
+        <label>iostream</label>
+      </node>
+      <node id="19">
+        <label>optional</label>
+      </node>
+    </incdepgraph>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="main_8cpp_1a2afce0a47a93eee73a314d53e4890153" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>Command</name>
+        <enumvalue id="main_8cpp_1a2afce0a47a93eee73a314d53e4890153a6adf97f83acf6453d4a6a4b1070f3754" prot="public">
+          <name>None</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="main_8cpp_1a2afce0a47a93eee73a314d53e4890153a4059b0251f66a18cb56f544728796875" prot="public">
+          <name>Info</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="main_8cpp_1a2afce0a47a93eee73a314d53e4890153aec53a8c4f07baed5d8825072c89799be" prot="public">
+          <name>Status</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="main_8cpp_1a2afce0a47a93eee73a314d53e4890153a17c9c40b9db5a0983d1075a012c1f90a" prot="public">
+          <name>Meter</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="main_8cpp_1a2afce0a47a93eee73a314d53e4890153ae57117e2b29a6ef186b2fe8e1676c37d" prot="public">
+          <name>DSO</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="main_8cpp_1a2afce0a47a93eee73a314d53e4890153ab1f17c225bd98e743fd2f452016a24ae" prot="public">
+          <name>LoggerStart</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="main_8cpp_1a2afce0a47a93eee73a314d53e4890153ad9c019a069da0e0c1b355f1b0c8525a2" prot="public">
+          <name>LoggerStop</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="main_8cpp_1a2afce0a47a93eee73a314d53e4890153a623c5b631017ebcf7ff8bcad2ac14b7f" prot="public">
+          <name>LoggerFetch</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="main_8cpp_1a2afce0a47a93eee73a314d53e4890153a22efdbe132eabc102306bd7a334fb434" prot="public">
+          <name>Scan</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="main_8cpp_1a2afce0a47a93eee73a314d53e4890153aef2fb8d828ac4ea82e0944b58c34627f" prot="public">
+          <name>SetName</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="main_8cpp_1a2afce0a47a93eee73a314d53e4890153ada305f1e6dc141ab95ac253d5ded6615" prot="public">
+          <name>SetTorch</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="main_8cpp_1a2afce0a47a93eee73a314d53e4890153ac881b21b6e4aa3de326566300453954b" prot="public">
+          <name>FlashLed</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="main_8cpp_1a2afce0a47a93eee73a314d53e4890153a9085d91abc5facbfc7acba881354cdb0" prot="public">
+          <name>Calibrate</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/main.cpp" line="72" column="1" bodyfile="/home/paul/src/dokit/src/cli/main.cpp" bodystart="72" bodyend="86"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="main_8cpp_1ae9eea91e24c35d5d488d93fd663d65da" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>static</type>
+        <definition>static Q_LOGGING_CATEGORY</definition>
+        <argsstring>(lc, &quot;dokit.cli.main&quot;, QtInfoMsg)</argsstring>
+        <name>Q_LOGGING_CATEGORY</name>
+        <param>
+          <type>lc</type>
+        </param>
+        <param>
+          <type>&quot;dokit.cli.main&quot;</type>
+        </param>
+        <param>
+          <type>QtInfoMsg</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/main.cpp" line="31" column="8" declfile="/home/paul/src/dokit/src/cli/main.cpp" declline="31" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="main_8cpp_1af6c7fbeca3045bfe5324ee34aa91bb19" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool haveConsole</definition>
+        <argsstring>()</argsstring>
+        <name>haveConsole</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/main.cpp" line="33" column="13" bodyfile="/home/paul/src/dokit/src/cli/main.cpp" bodystart="33" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="main_8cpp_1a47c37c45bdc87999f88849a2374bd1fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void configureLogging</definition>
+        <argsstring>(const QCommandLineParser &amp;parser)</argsstring>
+        <name>configureLogging</name>
+        <param>
+          <type>const <ref refid="qcommandlineparser" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCommandLineParser</ref> &amp;</type>
+          <declname>parser</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/main.cpp" line="44" column="6" bodyfile="/home/paul/src/dokit/src/cli/main.cpp" bodystart="44" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="main_8cpp_1ae6dbf388bf764104369f525bf4758943" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void showCliError</definition>
+        <argsstring>(const QString &amp;errorText)</argsstring>
+        <name>showCliError</name>
+        <param>
+          <type>const <ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref> &amp;</type>
+          <declname>errorText</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/main.cpp" line="88" column="6" bodyfile="/home/paul/src/dokit/src/cli/main.cpp" bodystart="88" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="main_8cpp_1a16c7e5713006651956b5ad0351823912" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Command</type>
+        <definition>Command getCliCommand</definition>
+        <argsstring>(const QStringList &amp;posArguments)</argsstring>
+        <name>getCliCommand</name>
+        <param>
+          <type>const <ref refid="qstringlist" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QStringList</ref> &amp;</type>
+          <declname>posArguments</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/main.cpp" line="96" column="9" bodyfile="/home/paul/src/dokit/src/cli/main.cpp" bodystart="96" bodyend="127"/>
+      </memberdef>
+      <memberdef kind="function" id="main_8cpp_1a6edee271918275e2801009abdebefe0a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Command</type>
+        <definition>Command parseCommandLine</definition>
+        <argsstring>(const QStringList &amp;appArguments, QCommandLineParser &amp;parser)</argsstring>
+        <name>parseCommandLine</name>
+        <param>
+          <type>const <ref refid="qstringlist" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QStringList</ref> &amp;</type>
+          <declname>appArguments</declname>
+        </param>
+        <param>
+          <type><ref refid="qcommandlineparser" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCommandLineParser</ref> &amp;</type>
+          <declname>parser</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/main.cpp" line="129" column="9" bodyfile="/home/paul/src/dokit/src/cli/main.cpp" bodystart="129" bodyend="268"/>
+      </memberdef>
+      <memberdef kind="function" id="main_8cpp_1a50cc51d8ef63a493e3b19c40aae0a4cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classAbstractCommand" kindref="compound">AbstractCommand</ref> *</type>
+        <definition>AbstractCommand * getCommandObject</definition>
+        <argsstring>(const Command command, QObject *const parent)</argsstring>
+        <name>getCommandObject</name>
+        <param>
+          <type>const Command</type>
+          <declname>command</declname>
+        </param>
+        <param>
+          <type><ref refid="qobject" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QObject</ref> *const</type>
+          <declname>parent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/main.cpp" line="270" column="18" bodyfile="/home/paul/src/dokit/src/cli/main.cpp" bodystart="270" bodyend="292"/>
+      </memberdef>
+      <memberdef kind="function" id="main_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int main</definition>
+        <argsstring>(int argc, char *argv[])</argsstring>
+        <name>main</name>
+        <param>
+          <type>int</type>
+          <declname>argc</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>argv</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/main.cpp" line="294" column="5" bodyfile="/home/paul/src/dokit/src/cli/main.cpp" bodystart="294" bodyend="343"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>SPDX-FileCopyrightText:<sp/>2022-2024<sp/>Paul<sp/>Colby<sp/>&lt;git@colby.id.au&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>SPDX-License-Identifier:<sp/>LGPL-3.0-or-later</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;calibratecommand.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;dsocommand.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;flashledcommand.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;infocommand.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;loggerfetchcommand.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;loggerstartcommand.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;loggerstopcommand.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;metercommand.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;scancommand.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;setnamecommand.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;settorchcommand.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;statuscommand.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QCommandLineParser&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QCoreApplication&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QLocale&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QLoggingCategory&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QTranslator&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(Q_OS_UNIX)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;unistd.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>defined(Q_OS_WIN)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;Windows.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>Q_LOGGING_CATEGORY(lc,<sp/></highlight><highlight class="stringliteral">&quot;dokit.cli.main&quot;</highlight><highlight class="normal">,<sp/>QtInfoMsg);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>haveConsole()</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#if<sp/>defined(Q_OS_UNIX)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>isatty(STDERR_FILENO);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#elif<sp/>defined(Q_OS_WIN)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>GetConsoleWindow();</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>configureLogging(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qcommandlineparser" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCommandLineParser</ref><sp/>&amp;parser)</highlight></codeline>
+<codeline lineno="45"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Start<sp/>with<sp/>the<sp/>Qt<sp/>default<sp/>message<sp/>pattern<sp/>(see<sp/>qtbase:::qlogging.cpp:defaultPattern)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref><sp/>messagePattern<sp/>=<sp/>QStringLiteral(</highlight><highlight class="stringliteral">&quot;%{if-category}%{category}:<sp/>%{endif}%{message}&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(parser.<ref refid="qcommandlineparser_1isSet-1" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">isSet</ref>(QStringLiteral(</highlight><highlight class="stringliteral">&quot;debug&quot;</highlight><highlight class="normal">)))<sp/>{</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#ifdef<sp/>QT_MESSAGELOGCONTEXT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>%{file},<sp/>%{line}<sp/>and<sp/>%{function}<sp/>are<sp/>only<sp/>available<sp/>when<sp/>QT_MESSAGELOGCONTEXT<sp/>is<sp/>set.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>messagePattern.<ref refid="qstring_1prepend-1" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">prepend</ref>(QStringLiteral(</highlight><highlight class="stringliteral">&quot;%{function}<sp/>&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>messagePattern.<ref refid="qstring_1prepend-1" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">prepend</ref>(QStringLiteral(</highlight><highlight class="stringliteral">&quot;%{time<sp/>process}<sp/>%{threadid}<sp/>%{type}<sp/>&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="qloggingcategory_1setFilterRules" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QLoggingCategory::setFilterRules</ref>(QStringLiteral(</highlight><highlight class="stringliteral">&quot;dokit.*.debug=true\npokit.*.debug=true&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref><sp/>color<sp/>=<sp/>parser.<ref refid="qcommandlineparser_1value-1" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">value</ref>(QStringLiteral(</highlight><highlight class="stringliteral">&quot;color&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((color<sp/>==<sp/>QStringLiteral(</highlight><highlight class="stringliteral">&quot;yes&quot;</highlight><highlight class="normal">))<sp/>||<sp/>(color<sp/>==<sp/>QStringLiteral(</highlight><highlight class="stringliteral">&quot;auto&quot;</highlight><highlight class="normal">)<sp/>&amp;&amp;<sp/>haveConsole()))<sp/>{</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>messagePattern.<ref refid="qstring_1prepend-1" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">prepend</ref>(QStringLiteral(</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;%{if-debug}\x1b[37m%{endif}&quot;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>White</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;%{if-info}\x1b[32m%{endif}&quot;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Green</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;%{if-warning}\x1b[35m%{endif}&quot;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Magenta</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;%{if-critical}\x1b[31m%{endif}&quot;</highlight><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Red</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;%{if-fatal}\x1b[31;1m%{endif}&quot;</highlight><highlight class="normal">));<sp/></highlight><highlight class="comment">//<sp/>Red<sp/>and<sp/>bold</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>messagePattern.<ref refid="qstring_1append-1" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">append</ref>(QStringLiteral(</highlight><highlight class="stringliteral">&quot;\x1b[0m&quot;</highlight><highlight class="normal">));<sp/></highlight><highlight class="comment">//<sp/>Reset.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>qSetMessagePattern(messagePattern);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/>Command<sp/>{</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="qtandroidprivate_1BindFlag-enum" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">None</ref>,</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>Info,</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>Status,</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>Meter,</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>DSO,</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>LoggerStart,</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>LoggerStop,</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>LoggerFetch,</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>Scan,</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>SetName,</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>SetTorch,</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>FlashLed,</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>Calibrate</highlight></codeline>
+<codeline lineno="86"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>showCliError(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref><sp/>&amp;errorText)</highlight></codeline>
+<codeline lineno="89"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Output<sp/>the<sp/>same<sp/>way<sp/>QCommandLineParser<sp/>does<sp/>(qcommandlineparser.cpp::showParserMessage).</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref><sp/>message<sp/>=<sp/><ref refid="qcoreapplication_1applicationName-prop" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCoreApplication::applicationName</ref>()<sp/>+<sp/><ref refid="qlatin1string" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QLatin1String</ref>(</highlight><highlight class="stringliteral">&quot;:<sp/>&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>+<sp/>errorText<sp/>+<sp/><ref refid="qlatin1char" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QLatin1Char</ref>(</highlight><highlight class="charliteral">&apos;\n&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cerr<sp/>&lt;&lt;<sp/>qUtf8Printable(message);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal">Command<sp/>getCliCommand(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qstringlist" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QStringList</ref><sp/>&amp;posArguments)</highlight></codeline>
+<codeline lineno="97"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(posArguments.<ref refid="qlist_1isEmpty" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">isEmpty</ref>())<sp/>{</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>Command::None;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(posArguments.<ref refid="qlist_1size" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">size</ref>()<sp/>&gt;<sp/>1)<sp/>{</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>showCliError(<ref refid="qcoreapplication_1translate" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCoreApplication::translate</ref>(</highlight><highlight class="stringliteral">&quot;getCliCommand&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;More<sp/>than<sp/>one<sp/>command:<sp/>%1&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.arg(posArguments.<ref refid="qstringlist_1join-3" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">join</ref>(QStringLiteral(</highlight><highlight class="stringliteral">&quot;,<sp/>&quot;</highlight><highlight class="normal">))));</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>::exit(EXIT_FAILURE);</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qmap" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QMap&lt;QString, Command&gt;</ref><sp/>supportedCommands<sp/>{</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/>QStringLiteral(</highlight><highlight class="stringliteral">&quot;info&quot;</highlight><highlight class="normal">),<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Command::Info<sp/>},</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/>QStringLiteral(</highlight><highlight class="stringliteral">&quot;status&quot;</highlight><highlight class="normal">),<sp/><sp/><sp/><sp/><sp/><sp/><sp/>Command::Status<sp/>},</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/>QStringLiteral(</highlight><highlight class="stringliteral">&quot;meter&quot;</highlight><highlight class="normal">),<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Command::Meter<sp/>},</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/>QStringLiteral(</highlight><highlight class="stringliteral">&quot;dso&quot;</highlight><highlight class="normal">),<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Command::DSO<sp/>},</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/>QStringLiteral(</highlight><highlight class="stringliteral">&quot;logger-start&quot;</highlight><highlight class="normal">),<sp/>Command::LoggerStart<sp/>},</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/>QStringLiteral(</highlight><highlight class="stringliteral">&quot;logger-stop&quot;</highlight><highlight class="normal">),<sp/><sp/>Command::LoggerStop<sp/>},</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/>QStringLiteral(</highlight><highlight class="stringliteral">&quot;logger-fetch&quot;</highlight><highlight class="normal">),<sp/>Command::LoggerFetch<sp/>},</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/>QStringLiteral(</highlight><highlight class="stringliteral">&quot;scan&quot;</highlight><highlight class="normal">),<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Command::Scan<sp/>},</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/>QStringLiteral(</highlight><highlight class="stringliteral">&quot;set-name&quot;</highlight><highlight class="normal">),<sp/><sp/><sp/><sp/><sp/>Command::SetName<sp/>},</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/>QStringLiteral(</highlight><highlight class="stringliteral">&quot;set-torch&quot;</highlight><highlight class="normal">),<sp/><sp/><sp/><sp/>Command::SetTorch<sp/>},</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/>QStringLiteral(</highlight><highlight class="stringliteral">&quot;flash-led&quot;</highlight><highlight class="normal">),<sp/><sp/><sp/><sp/>Command::FlashLed<sp/>},</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/>QStringLiteral(</highlight><highlight class="stringliteral">&quot;calibrate&quot;</highlight><highlight class="normal">),<sp/><sp/><sp/><sp/>Command::Calibrate<sp/>},</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Command<sp/>command<sp/>=<sp/>supportedCommands.<ref refid="qmap_1value" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">value</ref>(posArguments.<ref refid="qlist_1first" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">first</ref>().toLower(),<sp/>Command::None);</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(command<sp/>==<sp/>Command::None)<sp/>{</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>showCliError(<ref refid="qcoreapplication_1translate" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCoreApplication::translate</ref>(</highlight><highlight class="stringliteral">&quot;getCliCommand&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Unknown<sp/>command:<sp/>%1&quot;</highlight><highlight class="normal">).arg(posArguments.<ref refid="qlist_1first" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">first</ref>()));</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>::exit(EXIT_FAILURE);</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>command;</highlight></codeline>
+<codeline lineno="127"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal">Command<sp/>parseCommandLine(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qstringlist" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QStringList</ref><sp/>&amp;appArguments,<sp/><ref refid="qcommandlineparser" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCommandLineParser</ref><sp/>&amp;parser)</highlight></codeline>
+<codeline lineno="130"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Setup<sp/>the<sp/>command<sp/>line<sp/>options.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/>parser.<ref refid="qcommandlineparser_1addOptions" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">addOptions</ref>({</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/>QStringLiteral(</highlight><highlight class="stringliteral">&quot;color&quot;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="qcoreapplication_1translate" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCoreApplication::translate</ref>(</highlight><highlight class="stringliteral">&quot;parseCommandLine&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Colors<sp/>the<sp/>console<sp/>output.<sp/>Valid<sp/>options<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;are:<sp/>yes,<sp/>no<sp/>and<sp/>auto.<sp/>The<sp/>default<sp/>is<sp/>auto.&quot;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QStringLiteral(</highlight><highlight class="stringliteral">&quot;yes|no|auto&quot;</highlight><highlight class="normal">),<sp/>QStringLiteral(</highlight><highlight class="stringliteral">&quot;auto&quot;</highlight><highlight class="normal">)},</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{{QStringLiteral(</highlight><highlight class="stringliteral">&quot;debug&quot;</highlight><highlight class="normal">)},</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="qcoreapplication_1translate" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCoreApplication::translate</ref>(</highlight><highlight class="stringliteral">&quot;parseCommandLine&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Enable<sp/>debug<sp/>output.&quot;</highlight><highlight class="normal">)},</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{{QStringLiteral(</highlight><highlight class="stringliteral">&quot;d&quot;</highlight><highlight class="normal">),<sp/>QStringLiteral(</highlight><highlight class="stringliteral">&quot;device&quot;</highlight><highlight class="normal">)},</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="qcoreapplication_1translate" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCoreApplication::translate</ref>(</highlight><highlight class="stringliteral">&quot;parseCommandLine&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;Set<sp/>the<sp/>name,<sp/>hardware<sp/>address<sp/>or<sp/>macOS<sp/>UUID<sp/>of<sp/>Pokit<sp/>device<sp/>to<sp/>use.<sp/>If<sp/>not<sp/>specified,<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;the<sp/>first<sp/>discovered<sp/>Pokit<sp/>device<sp/>will<sp/>be<sp/>used.&quot;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="qcoreapplication_1translate" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCoreApplication::translate</ref>(</highlight><highlight class="stringliteral">&quot;parseCommandLine&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;device&quot;</highlight><highlight class="normal">)},</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/>});</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/>parser.<ref refid="qcommandlineparser_1addHelpOption" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">addHelpOption</ref>();</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/>parser.<ref refid="qcommandlineparser_1addOptions" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">addOptions</ref>({</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{{QStringLiteral(</highlight><highlight class="stringliteral">&quot;interval&quot;</highlight><highlight class="normal">)},</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="qcoreapplication_1translate" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCoreApplication::translate</ref>(</highlight><highlight class="stringliteral">&quot;parseCommandLine&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Set<sp/>the<sp/>update<sp/>interval<sp/>for<sp/>DOS,<sp/>meter<sp/>and<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;logger<sp/>modes.<sp/>Suffixes<sp/>such<sp/>as<sp/>&apos;s&apos;<sp/>and<sp/>&apos;ms&apos;<sp/>(for<sp/>seconds<sp/>and<sp/>milliseconds)<sp/>may<sp/>be<sp/>used.<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;If<sp/>no<sp/>suffix<sp/>is<sp/>present,<sp/>the<sp/>units<sp/>will<sp/>be<sp/>inferred<sp/>from<sp/>the<sp/>magnitide<sp/>of<sp/>the<sp/>given<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;interval.<sp/>If<sp/>the<sp/>option<sp/>itself<sp/>is<sp/>not<sp/>specified,<sp/>a<sp/>sensible<sp/>default<sp/>will<sp/>be<sp/>chosen<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;according<sp/>to<sp/>the<sp/>selected<sp/>command.&quot;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="qcoreapplication_1translate" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCoreApplication::translate</ref>(</highlight><highlight class="stringliteral">&quot;parseCommandLine&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;interval&quot;</highlight><highlight class="normal">)},</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{{QStringLiteral(</highlight><highlight class="stringliteral">&quot;mode&quot;</highlight><highlight class="normal">)},</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="qcoreapplication_1translate" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCoreApplication::translate</ref>(</highlight><highlight class="stringliteral">&quot;parseCommandLine&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Set<sp/>the<sp/>desired<sp/>operation<sp/>mode.<sp/>For<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;meter,<sp/>dso,<sp/>and<sp/>logger<sp/>commands,<sp/>the<sp/>supported<sp/>modes<sp/>are:<sp/>AC<sp/>Voltage,<sp/>DC<sp/>Voltage,<sp/>AC<sp/>Current,<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;DC<sp/>Current,<sp/>Resistance,<sp/>Diode,<sp/>Continuity,<sp/>and<sp/>Temperature.<sp/>All<sp/>are<sp/>case<sp/>insensitive.<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;Only<sp/>the<sp/>first<sp/>four<sp/>options<sp/>are<sp/>available<sp/>for<sp/>dso<sp/>and<sp/>logger<sp/>commands;<sp/>the<sp/>rest<sp/>are<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;available<sp/>in<sp/>meter<sp/>mode<sp/>only.<sp/>Temperature<sp/>is<sp/>also<sp/>available<sp/>for<sp/>logger<sp/>commands,<sp/>but<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;requires<sp/>firmware<sp/>v1.5<sp/>or<sp/>later<sp/>for<sp/>Pokit<sp/>devices<sp/>to<sp/>support<sp/>it.<sp/>For<sp/>the<sp/>set-torch<sp/>command<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;supported<sp/>modes<sp/>are<sp/>On<sp/>and<sp/>Off.&quot;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="qcoreapplication_1translate" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCoreApplication::translate</ref>(</highlight><highlight class="stringliteral">&quot;parseCommandLine&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;mode&quot;</highlight><highlight class="normal">)},</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{{QStringLiteral(</highlight><highlight class="stringliteral">&quot;new-name&quot;</highlight><highlight class="normal">)},</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="qcoreapplication_1translate" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCoreApplication::translate</ref>(</highlight><highlight class="stringliteral">&quot;parseCommandLine&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;Give<sp/>the<sp/>desired<sp/>new<sp/>name<sp/>for<sp/>the<sp/>set-&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;name<sp/>command.&quot;</highlight><highlight class="normal">),<sp/><ref refid="qcoreapplication_1translate" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCoreApplication::translate</ref>(</highlight><highlight class="stringliteral">&quot;parseCommandLine&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;name&quot;</highlight><highlight class="normal">)},</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{{QStringLiteral(</highlight><highlight class="stringliteral">&quot;output&quot;</highlight><highlight class="normal">)},</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="qcoreapplication_1translate" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCoreApplication::translate</ref>(</highlight><highlight class="stringliteral">&quot;parseCommandLine&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;Set<sp/>the<sp/>format<sp/>for<sp/>output.<sp/>Supported<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;formats<sp/>are:<sp/>CSV,<sp/>JSON<sp/>and<sp/>Text.<sp/>All<sp/>are<sp/>case<sp/>insenstitve.<sp/>The<sp/>default<sp/>is<sp/>Text.&quot;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="qcoreapplication_1translate" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCoreApplication::translate</ref>(</highlight><highlight class="stringliteral">&quot;parseCommandLine&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;format&quot;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="qcoreapplication_1translate" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCoreApplication::translate</ref>(</highlight><highlight class="stringliteral">&quot;parseCommandLine&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;text&quot;</highlight><highlight class="normal">)},</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{{QStringLiteral(</highlight><highlight class="stringliteral">&quot;range&quot;</highlight><highlight class="normal">)},</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="qcoreapplication_1translate" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCoreApplication::translate</ref>(</highlight><highlight class="stringliteral">&quot;parseCommandLine&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;Set<sp/>the<sp/>desired<sp/>measurement<sp/>range.<sp/>Pokit<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;devices<sp/>support<sp/>specific<sp/>ranges,<sp/>such<sp/>as<sp/>0<sp/>to<sp/>300mV.<sp/>Specify<sp/>the<sp/>desired<sp/>upper<sp/>limit,<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;and<sp/>the<sp/>best<sp/>range<sp/>will<sp/>be<sp/>selected,<sp/>or<sp/>use<sp/>&apos;auto&apos;<sp/>to<sp/>enable<sp/>the<sp/>Pokit<sp/>device&apos;s<sp/>auto-&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;range<sp/>feature.<sp/>The<sp/>default<sp/>is<sp/>&apos;auto&apos;.&quot;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="qcoreapplication_1translate" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCoreApplication::translate</ref>(</highlight><highlight class="stringliteral">&quot;parseCommandLine&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;range&quot;</highlight><highlight class="normal">),<sp/>QStringLiteral(</highlight><highlight class="stringliteral">&quot;auto&quot;</highlight><highlight class="normal">)},</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{{QStringLiteral(</highlight><highlight class="stringliteral">&quot;samples&quot;</highlight><highlight class="normal">)},</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="qcoreapplication_1translate" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCoreApplication::translate</ref>(</highlight><highlight class="stringliteral">&quot;parseCommandLine&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;Set<sp/>the<sp/>number<sp/>of<sp/>samples<sp/>to<sp/>acquire.&quot;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="qcoreapplication_1translate" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCoreApplication::translate</ref>(</highlight><highlight class="stringliteral">&quot;parseCommandLine&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;count&quot;</highlight><highlight class="normal">)},</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{{QStringLiteral(</highlight><highlight class="stringliteral">&quot;temperature&quot;</highlight><highlight class="normal">)},</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="qcoreapplication_1translate" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCoreApplication::translate</ref>(</highlight><highlight class="stringliteral">&quot;parseCommandLine&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;Set<sp/>the<sp/>current<sp/>ambient<sp/>temperature<sp/>for<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;the<sp/>calibration<sp/>command.&quot;</highlight><highlight class="normal">),<sp/><ref refid="qcoreapplication_1translate" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCoreApplication::translate</ref>(</highlight><highlight class="stringliteral">&quot;parseCommandLine&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;degrees&quot;</highlight><highlight class="normal">)},</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{{QStringLiteral(</highlight><highlight class="stringliteral">&quot;timeout&quot;</highlight><highlight class="normal">)},</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="qcoreapplication_1translate" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCoreApplication::translate</ref>(</highlight><highlight class="stringliteral">&quot;parseCommandLine&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;Set<sp/>the<sp/>device<sp/>discovery<sp/>scan<sp/>timeout.&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;Suffixes<sp/>such<sp/>as<sp/>&apos;s&apos;<sp/>and<sp/>&apos;ms&apos;<sp/>(for<sp/>seconds<sp/>and<sp/>milliseconds)<sp/>may<sp/>be<sp/>used.<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;If<sp/>no<sp/>suffix<sp/>is<sp/>present,<sp/>the<sp/>units<sp/>will<sp/>be<sp/>inferred<sp/>from<sp/>the<sp/>magnitide<sp/>of<sp/>the<sp/>given<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;interval.<sp/>The<sp/>default<sp/>behaviour<sp/>is<sp/>no<sp/>timeout.&quot;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="qcoreapplication_1translate" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCoreApplication::translate</ref>(</highlight><highlight class="stringliteral">&quot;parseCommandLine&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;period&quot;</highlight><highlight class="normal">)},</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{{QStringLiteral(</highlight><highlight class="stringliteral">&quot;timestamp&quot;</highlight><highlight class="normal">)},</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="qcoreapplication_1translate" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCoreApplication::translate</ref>(</highlight><highlight class="stringliteral">&quot;parseCommandLine&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;Set<sp/>the<sp/>optional<sp/>starting<sp/>timestamp<sp/>for<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;data<sp/>logging.<sp/>Default<sp/>to<sp/>&apos;now&apos;.&quot;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="qcoreapplication_1translate" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCoreApplication::translate</ref>(</highlight><highlight class="stringliteral">&quot;parseCommandLine&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;period&quot;</highlight><highlight class="normal">)},</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{{QStringLiteral(</highlight><highlight class="stringliteral">&quot;trigger-level&quot;</highlight><highlight class="normal">)},</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="qcoreapplication_1translate" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCoreApplication::translate</ref>(</highlight><highlight class="stringliteral">&quot;parseCommandLine&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;Set<sp/>the<sp/>DSO<sp/>trigger<sp/>level.&quot;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="qcoreapplication_1translate" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCoreApplication::translate</ref>(</highlight><highlight class="stringliteral">&quot;parseCommandLine&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;level&quot;</highlight><highlight class="normal">)},</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{{QStringLiteral(</highlight><highlight class="stringliteral">&quot;trigger-mode&quot;</highlight><highlight class="normal">)},</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="qcoreapplication_1translate" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCoreApplication::translate</ref>(</highlight><highlight class="stringliteral">&quot;parseCommandLine&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;Set<sp/>the<sp/>DSO<sp/>trigger<sp/>mode.<sp/>Supported<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;modes<sp/>are:<sp/>free,<sp/>rising<sp/>and<sp/>falling.<sp/>The<sp/>default<sp/>is<sp/>free.&quot;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="qcoreapplication_1translate" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCoreApplication::translate</ref>(</highlight><highlight class="stringliteral">&quot;parseCommandLine&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;mode&quot;</highlight><highlight class="normal">),<sp/>QStringLiteral(</highlight><highlight class="stringliteral">&quot;free&quot;</highlight><highlight class="normal">)},</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/>});</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/>parser.<ref refid="qcommandlineparser_1addVersionOption" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">addVersionOption</ref>();</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"></highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Add<sp/>supported<sp/>&apos;commands&apos;<sp/>(as<sp/>positional<sp/>arguments,<sp/>so<sp/>they&apos;ll<sp/>appear<sp/>in<sp/>the<sp/>help<sp/>text).</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/>parser.<ref refid="qcommandlineparser_1addPositionalArgument" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">addPositionalArgument</ref>(QStringLiteral(</highlight><highlight class="stringliteral">&quot;info&quot;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="qcoreapplication_1translate" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCoreApplication::translate</ref>(</highlight><highlight class="stringliteral">&quot;parseCommandLine&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Get<sp/>Pokit<sp/>device<sp/>information&quot;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QStringLiteral(</highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/>parser.<ref refid="qcommandlineparser_1addPositionalArgument" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">addPositionalArgument</ref>(QStringLiteral(</highlight><highlight class="stringliteral">&quot;status&quot;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="qcoreapplication_1translate" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCoreApplication::translate</ref>(</highlight><highlight class="stringliteral">&quot;parseCommandLine&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Get<sp/>Pokit<sp/>device<sp/>status&quot;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QStringLiteral(</highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/>parser.<ref refid="qcommandlineparser_1addPositionalArgument" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">addPositionalArgument</ref>(QStringLiteral(</highlight><highlight class="stringliteral">&quot;meter&quot;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="qcoreapplication_1translate" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCoreApplication::translate</ref>(</highlight><highlight class="stringliteral">&quot;parseCommandLine&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Access<sp/>Pokit<sp/>device&apos;s<sp/>multimeter<sp/>mode&quot;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QStringLiteral(</highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/>parser.<ref refid="qcommandlineparser_1addPositionalArgument" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">addPositionalArgument</ref>(QStringLiteral(</highlight><highlight class="stringliteral">&quot;dso&quot;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="qcoreapplication_1translate" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCoreApplication::translate</ref>(</highlight><highlight class="stringliteral">&quot;parseCommandLine&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Access<sp/>Pokit<sp/>device&apos;s<sp/>DSO<sp/>mode&quot;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QStringLiteral(</highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/>parser.<ref refid="qcommandlineparser_1addPositionalArgument" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">addPositionalArgument</ref>(QStringLiteral(</highlight><highlight class="stringliteral">&quot;logger-start&quot;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="qcoreapplication_1translate" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCoreApplication::translate</ref>(</highlight><highlight class="stringliteral">&quot;parseCommandLine&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Start<sp/>Pokit<sp/>device&apos;s<sp/>data<sp/>logger<sp/>mode&quot;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QStringLiteral(</highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/>parser.<ref refid="qcommandlineparser_1addPositionalArgument" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">addPositionalArgument</ref>(QStringLiteral(</highlight><highlight class="stringliteral">&quot;logger-stop&quot;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="qcoreapplication_1translate" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCoreApplication::translate</ref>(</highlight><highlight class="stringliteral">&quot;parseCommandLine&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Stop<sp/>Pokit<sp/>device&apos;s<sp/>data<sp/>logger<sp/>mode&quot;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QStringLiteral(</highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/>parser.<ref refid="qcommandlineparser_1addPositionalArgument" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">addPositionalArgument</ref>(QStringLiteral(</highlight><highlight class="stringliteral">&quot;logger-fetch&quot;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="qcoreapplication_1translate" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCoreApplication::translate</ref>(</highlight><highlight class="stringliteral">&quot;parseCommandLine&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Fetch<sp/>Pokit<sp/>device&apos;s<sp/>data<sp/>logger<sp/>samples&quot;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QStringLiteral(</highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/>parser.<ref refid="qcommandlineparser_1addPositionalArgument" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">addPositionalArgument</ref>(QStringLiteral(</highlight><highlight class="stringliteral">&quot;scan&quot;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="qcoreapplication_1translate" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCoreApplication::translate</ref>(</highlight><highlight class="stringliteral">&quot;parseCommandLine&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Scan<sp/>Bluetooth<sp/>for<sp/>Pokit<sp/>devices&quot;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QStringLiteral(</highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/>parser.<ref refid="qcommandlineparser_1addPositionalArgument" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">addPositionalArgument</ref>(QStringLiteral(</highlight><highlight class="stringliteral">&quot;set-name&quot;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="qcoreapplication_1translate" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCoreApplication::translate</ref>(</highlight><highlight class="stringliteral">&quot;parseCommandLine&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Set<sp/>Pokit<sp/>device&apos;s<sp/>name&quot;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QStringLiteral(</highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/>parser.<ref refid="qcommandlineparser_1addPositionalArgument" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">addPositionalArgument</ref>(QStringLiteral(</highlight><highlight class="stringliteral">&quot;set-torch&quot;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="qcoreapplication_1translate" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCoreApplication::translate</ref>(</highlight><highlight class="stringliteral">&quot;parseCommandLine&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Set<sp/>Pokit<sp/>device&apos;s<sp/>torch<sp/>on<sp/>or<sp/>off&quot;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QStringLiteral(</highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/>parser.<ref refid="qcommandlineparser_1addPositionalArgument" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">addPositionalArgument</ref>(QStringLiteral(</highlight><highlight class="stringliteral">&quot;flash-led&quot;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="qcoreapplication_1translate" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCoreApplication::translate</ref>(</highlight><highlight class="stringliteral">&quot;parseCommandLine&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Flash<sp/>Pokit<sp/>device&apos;s<sp/>LED<sp/>(Pokit<sp/>Meter<sp/>only)&quot;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QStringLiteral(</highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/>parser.<ref refid="qcommandlineparser_1addPositionalArgument" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">addPositionalArgument</ref>(QStringLiteral(</highlight><highlight class="stringliteral">&quot;calibrate&quot;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="qcoreapplication_1translate" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCoreApplication::translate</ref>(</highlight><highlight class="stringliteral">&quot;parseCommandLine&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Calibrate<sp/>Pokit<sp/>device<sp/>temperature&quot;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QStringLiteral(</highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"></highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Do<sp/>the<sp/>initial<sp/>parse,<sp/>the<sp/>see<sp/>if<sp/>we<sp/>have<sp/>a<sp/>command<sp/>specified<sp/>yet.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/>parser.<ref refid="qcommandlineparser_1parse" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">parse</ref>(appArguments);</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/>configureLogging(parser);</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/>qCDebug(lc).noquote()<sp/>&lt;&lt;<sp/><ref refid="qcoreapplication_1applicationName-prop" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCoreApplication::applicationName</ref>()<sp/>&lt;&lt;<sp/><ref refid="qcoreapplication_1applicationVersion-prop" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCoreApplication::applicationVersion</ref>();</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/>qCDebug(lc).noquote()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Qt<sp/>&quot;</highlight><highlight class="normal"><sp/>QT_VERSION_STR<sp/></highlight><highlight class="stringliteral">&quot;<sp/>compile-time&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/>qCDebug(lc).noquote()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Qt&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>qVersion()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;runtime&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Command<sp/>command<sp/>=<sp/>getCliCommand(parser.<ref refid="qcommandlineparser_1positionalArguments" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">positionalArguments</ref>());</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"></highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>If<sp/>we<sp/>have<sp/>a<sp/>(single,<sp/>valid)<sp/>command,<sp/>then<sp/>remove<sp/>the<sp/>commands<sp/>list<sp/>from<sp/>the<sp/>help<sp/>text.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(command<sp/>!=<sp/>Command::None)<sp/>{</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>parser.<ref refid="qcommandlineparser_1clearPositionalArguments" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">clearPositionalArguments</ref>();</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"></highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Handle<sp/>-h|--help<sp/>explicitly,<sp/>so<sp/>we<sp/>can<sp/>tweak<sp/>the<sp/>output<sp/>to<sp/>include<sp/>the<sp/>&lt;command&gt;<sp/>info.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(parser.<ref refid="qcommandlineparser_1isSet-1" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">isSet</ref>(QStringLiteral(</highlight><highlight class="stringliteral">&quot;help&quot;</highlight><highlight class="normal">)))<sp/>{</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref><sp/>commandString<sp/>=<sp/>(command<sp/>==<sp/>Command::None)<sp/>?<sp/>QStringLiteral(</highlight><highlight class="stringliteral">&quot;&lt;command&gt;&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>parser.<ref refid="qcommandlineparser_1positionalArguments" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">positionalArguments</ref>().<ref refid="qlist_1constFirst" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">constFirst</ref>();</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/>qUtf8Printable(parser.<ref refid="qcommandlineparser_1helpText" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">helpText</ref>()</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.<ref refid="qstring_1replace-3" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">replace</ref>(QStringLiteral(</highlight><highlight class="stringliteral">&quot;[options]&quot;</highlight><highlight class="normal">),<sp/>commandString<sp/>+<sp/>QStringLiteral(</highlight><highlight class="stringliteral">&quot;<sp/>[options]&quot;</highlight><highlight class="normal">))</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.replace(QStringLiteral(</highlight><highlight class="stringliteral">&quot;Arguments:&quot;</highlight><highlight class="normal">),<sp/><sp/>QStringLiteral(</highlight><highlight class="stringliteral">&quot;Command:&quot;</highlight><highlight class="normal">))</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>);</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>::exit(EXIT_SUCCESS);</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"></highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Process<sp/>the<sp/>command<sp/>for<sp/>real<sp/>(ie<sp/>throw<sp/>errors<sp/>for<sp/>unknown<sp/>options,<sp/>etc).</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/>parser.<ref refid="qcommandlineparser_1process-1" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">process</ref>(appArguments);</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>command;</highlight></codeline>
+<codeline lineno="268"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"></highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><ref refid="classAbstractCommand" kindref="compound">AbstractCommand</ref><sp/>*<sp/>getCommandObject(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Command<sp/>command,<sp/><ref refid="qobject" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QObject</ref><sp/>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>parent)</highlight></codeline>
+<codeline lineno="271"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(command)<sp/>{</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>Command::None:</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>showCliError(<ref refid="qcoreapplication_1translate" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCoreApplication::translate</ref>(</highlight><highlight class="stringliteral">&quot;main&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;Missing<sp/>argument:<sp/>&lt;command&gt;\nSee<sp/>--help<sp/>for<sp/>usage<sp/>information.&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>Command::Calibrate:<sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classCalibrateCommand" kindref="compound">CalibrateCommand</ref>(parent);</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>Command::DSO:<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classDsoCommand" kindref="compound">DsoCommand</ref>(parent);</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>Command::FlashLed:<sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classFlashLedCommand" kindref="compound">FlashLedCommand</ref>(parent);</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>Command::Info:<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classInfoCommand" kindref="compound">InfoCommand</ref>(parent);</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>Command::LoggerStart:<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classLoggerStartCommand" kindref="compound">LoggerStartCommand</ref>(parent);</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>Command::LoggerStop:<sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classLoggerStopCommand" kindref="compound">LoggerStopCommand</ref>(parent);</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>Command::LoggerFetch:<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classLoggerFetchCommand" kindref="compound">LoggerFetchCommand</ref>(parent);</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>Command::Meter:<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classMeterCommand" kindref="compound">MeterCommand</ref>(parent);</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>Command::Scan:<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classScanCommand" kindref="compound">ScanCommand</ref>(parent);</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>Command::Status:<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classStatusCommand" kindref="compound">StatusCommand</ref>(parent);</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>Command::SetName:<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classSetNameCommand" kindref="compound">SetNameCommand</ref>(parent);</highlight></codeline>
+<codeline lineno="288"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>Command::SetTorch:<sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classSetTorchCommand" kindref="compound">SetTorchCommand</ref>(parent);</highlight></codeline>
+<codeline lineno="289"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/><sp/><sp/>showCliError(<ref refid="qcoreapplication_1translate" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCoreApplication::translate</ref>(</highlight><highlight class="stringliteral">&quot;main&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Unknown<sp/>command<sp/>(%1)&quot;</highlight><highlight class="normal">).arg((</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)command));</highlight></codeline>
+<codeline lineno="291"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="292"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"></highlight></codeline>
+<codeline lineno="294"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>main(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*argv[])</highlight></codeline>
+<codeline lineno="295"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Setup<sp/>the<sp/>core<sp/>application.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="297"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="qcoreapplication" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCoreApplication</ref><sp/>app(argc,<sp/>argv);</highlight></codeline>
+<codeline lineno="298"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="qcoreapplication_1applicationName-prop" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCoreApplication::setApplicationName</ref>(QStringLiteral(PROJECT_NAME));</highlight></codeline>
+<codeline lineno="299"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="qcoreapplication_1applicationVersion-prop" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCoreApplication::setApplicationVersion</ref>(<ref refid="qstring_1fromLatin1-1" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString::fromLatin1</ref>(PROJECT_VERSION</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#ifdef<sp/>PROJECT_PRE_RELEASE</highlight></codeline>
+<codeline lineno="301"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;-&quot;</highlight><highlight class="normal"><sp/>PROJECT_PRE_RELEASE</highlight></codeline>
+<codeline lineno="302"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#endif</highlight></codeline>
+<codeline lineno="303"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#ifdef<sp/>PROJECT_BUILD_ID</highlight></codeline>
+<codeline lineno="304"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;+&quot;</highlight><highlight class="normal"><sp/>PROJECT_BUILD_ID</highlight></codeline>
+<codeline lineno="305"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#endif</highlight></codeline>
+<codeline lineno="306"><highlight class="normal"><sp/><sp/><sp/><sp/>));</highlight></codeline>
+<codeline lineno="307"><highlight class="normal"></highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Install<sp/>localised<sp/>translators,<sp/>if<sp/>we<sp/>have<sp/>translations<sp/>for<sp/>the<sp/>current<sp/>locale.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="309"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="qtranslator" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QTranslator</ref><sp/>appTranslator,<sp/>libTranslator;</highlight></codeline>
+<codeline lineno="310"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(appTranslator.<ref refid="qtranslator_1load-1" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">load</ref>(<ref refid="qlocale" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QLocale</ref>(),<sp/>QStringLiteral(</highlight><highlight class="stringliteral">&quot;cli&quot;</highlight><highlight class="normal">),<sp/>QStringLiteral(</highlight><highlight class="stringliteral">&quot;/&quot;</highlight><highlight class="normal">),<sp/>QStringLiteral(</highlight><highlight class="stringliteral">&quot;:/i18n&quot;</highlight><highlight class="normal">)))<sp/>{</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="qcoreapplication_1installTranslator" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCoreApplication::installTranslator</ref>(&amp;appTranslator);</highlight></codeline>
+<codeline lineno="312"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="313"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(libTranslator.<ref refid="qtranslator_1load-1" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">load</ref>(<ref refid="qlocale" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QLocale</ref>(),<sp/>QStringLiteral(</highlight><highlight class="stringliteral">&quot;lib&quot;</highlight><highlight class="normal">),<sp/>QStringLiteral(</highlight><highlight class="stringliteral">&quot;/&quot;</highlight><highlight class="normal">),<sp/>QStringLiteral(</highlight><highlight class="stringliteral">&quot;:/i18n&quot;</highlight><highlight class="normal">)))<sp/>{</highlight></codeline>
+<codeline lineno="314"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="qcoreapplication_1installTranslator" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCoreApplication::installTranslator</ref>(&amp;libTranslator);</highlight></codeline>
+<codeline lineno="315"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="316"><highlight class="normal"></highlight></codeline>
+<codeline lineno="317"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Parse<sp/>the<sp/>command<sp/>line.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="318"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qstringlist" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QStringList</ref><sp/>appArguments<sp/>=<sp/><ref refid="qcoreapplication_1arguments" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCoreApplication::arguments</ref>();</highlight></codeline>
+<codeline lineno="319"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="qcommandlineparser" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCommandLineParser</ref><sp/>parser;</highlight></codeline>
+<codeline lineno="320"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Command<sp/>commandType<sp/>=<sp/>parseCommandLine(appArguments,<sp/>parser);</highlight></codeline>
+<codeline lineno="321"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>(QT_VERSION<sp/>&gt;=<sp/>QT_VERSION_CHECK(5,<sp/>15,<sp/>0))<sp/></highlight><highlight class="comment">//<sp/>QTranslator::filePath()<sp/>added<sp/>in<sp/>Qt<sp/>5.15.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="322"><highlight class="normal"><sp/><sp/><sp/><sp/>qCDebug(lc).noquote()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;App<sp/>translations:&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;</highlight></codeline>
+<codeline lineno="323"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(appTranslator.<ref refid="qtranslator_1filePath" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">filePath</ref>().isEmpty()<sp/>?<sp/>QStringLiteral(</highlight><highlight class="stringliteral">&quot;&lt;none&gt;&quot;</highlight><highlight class="normal">)<sp/>:<sp/>appTranslator.<ref refid="qtranslator_1filePath" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">filePath</ref>());</highlight></codeline>
+<codeline lineno="324"><highlight class="normal"><sp/><sp/><sp/><sp/>qCDebug(lc).noquote()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Library<sp/>translations:&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;</highlight></codeline>
+<codeline lineno="325"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(libTranslator.<ref refid="qtranslator_1filePath" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">filePath</ref>().isEmpty()<sp/>?<sp/>QStringLiteral(</highlight><highlight class="stringliteral">&quot;&lt;none&gt;&quot;</highlight><highlight class="normal">)<sp/>:<sp/>libTranslator.<ref refid="qtranslator_1filePath" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">filePath</ref>());</highlight></codeline>
+<codeline lineno="326"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="327"><highlight class="normal"><sp/><sp/><sp/><sp/>qCDebug(lc).noquote()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;App<sp/>translations:&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>(!appTranslator.<ref refid="qtranslator_1isEmpty" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">isEmpty</ref>());</highlight></codeline>
+<codeline lineno="328"><highlight class="normal"><sp/><sp/><sp/><sp/>qCDebug(lc).noquote()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Lib<sp/>translations:&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>(!libTranslator.<ref refid="qtranslator_1isEmpty" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">isEmpty</ref>());</highlight></codeline>
+<codeline lineno="329"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="330"><highlight class="normal"></highlight></codeline>
+<codeline lineno="331"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Handle<sp/>the<sp/>given<sp/>command.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="332"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classAbstractCommand" kindref="compound">AbstractCommand</ref><sp/>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>command<sp/>=<sp/>getCommandObject(commandType,<sp/>&amp;app);</highlight></codeline>
+<codeline lineno="333"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(command<sp/>==<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="334"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>EXIT_FAILURE;<sp/></highlight><highlight class="comment">//<sp/>getCommandObject<sp/>will<sp/>have<sp/>logged<sp/>the<sp/>reason<sp/>already.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="335"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="336"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qstringlist" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QStringList</ref><sp/>cliErrors<sp/>=<sp/>command-&gt;<ref refid="classAbstractCommand_1ad827a18a24776efeb955739459d48f7d" kindref="member">processOptions</ref>(parser);</highlight></codeline>
+<codeline lineno="337"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref><sp/>&amp;error:<sp/>cliErrors)<sp/>{</highlight></codeline>
+<codeline lineno="338"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>showCliError(error);</highlight></codeline>
+<codeline lineno="339"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="340"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>result<sp/>=<sp/>((cliErrors.isEmpty())<sp/>&amp;&amp;<sp/>(command-&gt;<ref refid="classAbstractCommand_1ad4664b6dc4dd3d45d20a5f16f2d21610" kindref="member">start</ref>()))<sp/>?<sp/><ref refid="qcoreapplication_1exec" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCoreApplication::exec</ref>()<sp/>:<sp/>EXIT_FAILURE;</highlight></codeline>
+<codeline lineno="341"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>command;<sp/></highlight><highlight class="comment">//<sp/>We<sp/>don&apos;t<sp/>strictly<sp/>need<sp/>to<sp/>do<sp/>this,<sp/>but<sp/>it<sp/>does<sp/>fix<sp/>QTBUG-119063,<sp/>and<sp/>is<sp/>probably<sp/>good<sp/>practice.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="342"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>result;</highlight></codeline>
+<codeline lineno="343"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/paul/src/dokit/src/cli/main.cpp"/>
+  </compounddef>
+</doxygen>

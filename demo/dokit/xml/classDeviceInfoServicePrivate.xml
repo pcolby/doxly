@@ -1,0 +1,292 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.0" xml:lang="en-US">
+  <compounddef id="classDeviceInfoServicePrivate" kind="class" language="C++" prot="public">
+    <compoundname>DeviceInfoServicePrivate</compoundname>
+    <basecompoundref refid="classAbstractPokitServicePrivate" prot="public" virt="non-virtual">AbstractPokitServicePrivate</basecompoundref>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="classDeviceInfoServicePrivate_1a587ed070049873e090b3b3b81e7c8265" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class TestDeviceInfoService</definition>
+        <argsstring></argsstring>
+        <name>TestDeviceInfoService</name>
+        <qualifiedname>DeviceInfoServicePrivate::TestDeviceInfoService</qualifiedname>
+        <param>
+          <type>TestDeviceInfoService</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/lib/deviceinfoservice_p.h" line="32" column="18" bodyfile="/home/paul/src/dokit/src/lib/deviceinfoservice_p.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classDeviceInfoServicePrivate_1adf611f70ba673572f7bdbb305e8adfca" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>DeviceInfoServicePrivate::DeviceInfoServicePrivate</definition>
+        <argsstring>(QLowEnergyController *controller, DeviceInfoService *const q)</argsstring>
+        <name>DeviceInfoServicePrivate</name>
+        <qualifiedname>DeviceInfoServicePrivate::DeviceInfoServicePrivate</qualifiedname>
+        <param>
+          <type><ref refid="qlowenergycontroller" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QLowEnergyController</ref> *</type>
+          <declname>controller</declname>
+        </param>
+        <param>
+          <type><ref refid="classDeviceInfoService" kindref="compound">DeviceInfoService</ref> *const</type>
+          <declname>q</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<internal><para>Constructs a new <ref refid="classDeviceInfoServicePrivate" kindref="compound">DeviceInfoServicePrivate</ref> object with public implementation <emphasis>q</emphasis>. </para>
+</internal>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/lib/deviceinfoservice_p.h" line="23" column="14" bodyfile="/home/paul/src/dokit/src/lib/deviceinfoservice.cpp" bodystart="313" bodyend="318"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classDeviceInfoServicePrivate_1a5ca3ccfe6cc8231247fed820e41551a1" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void DeviceInfoServicePrivate::characteristicRead</definition>
+        <argsstring>(const QLowEnergyCharacteristic &amp;characteristic, const QByteArray &amp;value) override</argsstring>
+        <name>characteristicRead</name>
+        <qualifiedname>DeviceInfoServicePrivate::characteristicRead</qualifiedname>
+        <reimplements refid="classAbstractPokitServicePrivate_1a84bef330c6ff124f1e460bb8949d82da">characteristicRead</reimplements>
+        <param>
+          <type>const <ref refid="qlowenergycharacteristic" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QLowEnergyCharacteristic</ref> &amp;</type>
+          <declname>characteristic</declname>
+        </param>
+        <param>
+          <type>const <ref refid="qbytearray" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QByteArray</ref> &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Implements <ref refid="classAbstractPokitServicePrivate_1a84bef330c6ff124f1e460bb8949d82da" kindref="member">AbstractPokitServicePrivate::characteristicRead</ref> to parse <emphasis>value</emphasis>, then emit a specialised signal, for each supported <emphasis>characteristic</emphasis>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/lib/deviceinfoservice_p.h" line="26" column="10" bodyfile="/home/paul/src/dokit/src/lib/deviceinfoservice.cpp" bodystart="324" bodyend="374"/>
+        <references refid="qstring_1arg-14">QString::arg</references>
+        <references refid="classAbstractPokitServicePrivate_1a84bef330c6ff124f1e460bb8949d82da" compoundref="abstractpokitservice_8cpp" startline="562" endline="567">AbstractPokitServicePrivate::characteristicRead</references>
+        <references refid="structDeviceInfoService_1_1CharacteristicUuids_1a7959177f8c990b2240476746061a236a" compoundref="deviceinfoservice_8h" startline="43" endline="43">DeviceInfoService::CharacteristicUuids::firmwareRevision</references>
+        <references refid="qstring_1fromUtf8-1">QString::fromUtf8</references>
+        <references refid="structDeviceInfoService_1_1CharacteristicUuids_1a2e9f6731a3d49d4e08facc0e4811c91b" compoundref="deviceinfoservice_8h" startline="47" endline="47">DeviceInfoService::CharacteristicUuids::hardwareRevision</references>
+        <references refid="structDeviceInfoService_1_1CharacteristicUuids_1a0455d683833dae7fa93ddf08b754136d" compoundref="deviceinfoservice_8h" startline="35" endline="35">DeviceInfoService::CharacteristicUuids::manufacturerName</references>
+        <references refid="structDeviceInfoService_1_1CharacteristicUuids_1af5c3bd888ca0d9133ff6d844992a7e34" compoundref="deviceinfoservice_8h" startline="39" endline="39">DeviceInfoService::CharacteristicUuids::modelNumber</references>
+        <references refid="qlowenergycharacteristic_1name">QLowEnergyCharacteristic::name</references>
+        <references refid="qobject_1Q_EMIT">QObject::Q_EMIT</references>
+        <references refid="structDeviceInfoService_1_1CharacteristicUuids_1a410471249dd69e69f7931e245b302612" compoundref="deviceinfoservice_8h" startline="55" endline="55">DeviceInfoService::CharacteristicUuids::serialNumber</references>
+        <references refid="classAbstractPokitServicePrivate_1a37538a1aa1beeb85a041f1735d65cbfd" compoundref="abstractpokitservice__p_8h" startline="38">AbstractPokitServicePrivate::serviceUuid</references>
+        <references refid="structDeviceInfoService_1_1CharacteristicUuids_1a3dcd8fc5858990ac38640acf15ccff69" compoundref="deviceinfoservice_8h" startline="51" endline="51">DeviceInfoService::CharacteristicUuids::softwareRevision</references>
+        <references refid="qobject_1tr">QObject::tr</references>
+        <references refid="qlowenergycharacteristic_1uuid">QLowEnergyCharacteristic::uuid</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>The <ref refid="classDeviceInfoServicePrivate" kindref="compound">DeviceInfoServicePrivate</ref> class provides private implementation for <ref refid="classDeviceInfoService" kindref="compound">DeviceInfoService</ref>. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>AbstractPokitServicePrivate</label>
+        <link refid="classAbstractPokitServicePrivate"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>DeviceInfoServicePrivate</label>
+        <link refid="classDeviceInfoServicePrivate"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>QObject</label>
+        <link refid="qobject" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="8">
+        <label>AbstractPokitService</label>
+        <link refid="classAbstractPokitService"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>d_ptr</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>AbstractPokitServicePrivate</label>
+        <link refid="classAbstractPokitServicePrivate"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>controller</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>service</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>serviceUuid</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>q_ptr</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>DeviceInfoServicePrivate</label>
+        <link refid="classDeviceInfoServicePrivate"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>QBluetoothUuid</label>
+        <link refid="qbluetoothuuid" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>QLowEnergyController</label>
+        <link refid="qlowenergycontroller" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>QLowEnergyService</label>
+        <link refid="qlowenergyservice" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>QObject</label>
+        <link refid="qobject" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags"/>
+      </node>
+      <node id="7">
+        <label>QUuid</label>
+        <link refid="quuid" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/paul/src/dokit/src/lib/deviceinfoservice_p.h" line="18" column="1" bodyfile="/home/paul/src/dokit/src/lib/deviceinfoservice_p.h" bodystart="19" bodyend="33"/>
+    <listofallmembers>
+      <member refid="classAbstractPokitServicePrivate_1a73d4b6cd1a53f997f78d1c266a1c1871" prot="public" virt="non-virtual"><scope>DeviceInfoServicePrivate</scope><name>AbstractPokitServicePrivate</name></member>
+      <member refid="classAbstractPokitServicePrivate_1a21d38af5e7fc69f2c47c219a7ab545c7" prot="public" virt="non-virtual"><scope>DeviceInfoServicePrivate</scope><name>autoDiscover</name></member>
+      <member refid="qobject_1objectName-prop" prot="public" virt="non-virtual"><scope>DeviceInfoServicePrivate</scope><name>bindableObjectName</name></member>
+      <member refid="qobject_1blockSignals" prot="public" virt="non-virtual"><scope>DeviceInfoServicePrivate</scope><name>blockSignals</name></member>
+      <member refid="classAbstractPokitServicePrivate_1a642431b7bfb76baa5d976ae24e90d9ef" prot="protected" virt="virtual"><scope>DeviceInfoServicePrivate</scope><name>characteristicChanged</name></member>
+      <member refid="classDeviceInfoServicePrivate_1a5ca3ccfe6cc8231247fed820e41551a1" prot="protected" virt="virtual"><scope>DeviceInfoServicePrivate</scope><name>characteristicRead</name></member>
+      <member refid="classAbstractPokitServicePrivate_1aaf4a6cb9f0b1fe537877d615a6634201" prot="protected" virt="virtual"><scope>DeviceInfoServicePrivate</scope><name>characteristicWritten</name></member>
+      <member refid="classAbstractPokitServicePrivate_1af8b480a950244540bfff7fc4b476a0ef" prot="public" virt="non-virtual"><scope>DeviceInfoServicePrivate</scope><name>checkSize</name></member>
+      <member refid="qobject_1childEvent" prot="protected" virt="virtual"><scope>DeviceInfoServicePrivate</scope><name>childEvent</name></member>
+      <member refid="qobject_1children" prot="public" virt="non-virtual"><scope>DeviceInfoServicePrivate</scope><name>children</name></member>
+      <member refid="qobject_1connect-4" prot="public" virt="non-virtual"><scope>DeviceInfoServicePrivate</scope><name>connect</name></member>
+      <member refid="qobject_1connect-5" prot="public" virt="non-virtual"><scope>DeviceInfoServicePrivate</scope><name>connect</name></member>
+      <member refid="qobject_1connect-3" prot="public" virt="non-virtual"><scope>DeviceInfoServicePrivate</scope><name>connect</name></member>
+      <member refid="qobject_1connect-1" prot="public" virt="non-virtual"><scope>DeviceInfoServicePrivate</scope><name>connect</name></member>
+      <member refid="qobject_1connect" prot="public" virt="non-virtual"><scope>DeviceInfoServicePrivate</scope><name>connect</name></member>
+      <member refid="qobject_1connect-2" prot="public" virt="non-virtual"><scope>DeviceInfoServicePrivate</scope><name>connect</name></member>
+      <member refid="classAbstractPokitServicePrivate_1a9eec6d6dfe45c70c2907564940966200" prot="protected" virt="non-virtual"><scope>DeviceInfoServicePrivate</scope><name>connected</name></member>
+      <member refid="qobject_1connectNotify" prot="protected" virt="virtual"><scope>DeviceInfoServicePrivate</scope><name>connectNotify</name></member>
+      <member refid="classAbstractPokitServicePrivate_1aefc2f27e42be44bf63d9e4f944737da1" prot="public" virt="non-virtual"><scope>DeviceInfoServicePrivate</scope><name>controller</name></member>
+      <member refid="classAbstractPokitServicePrivate_1a2b105802085225fe68254dfdb6754ad9" prot="public" virt="non-virtual"><scope>DeviceInfoServicePrivate</scope><name>createServiceObject</name></member>
+      <member refid="qobject_1customEvent" prot="protected" virt="virtual"><scope>DeviceInfoServicePrivate</scope><name>customEvent</name></member>
+      <member refid="qobject_1deleteLater" prot="public" virt="non-virtual"><scope>DeviceInfoServicePrivate</scope><name>deleteLater</name></member>
+      <member refid="qobject_1destroyed" prot="public" virt="non-virtual"><scope>DeviceInfoServicePrivate</scope><name>destroyed</name></member>
+      <member refid="classDeviceInfoServicePrivate_1adf611f70ba673572f7bdbb305e8adfca" prot="public" virt="non-virtual"><scope>DeviceInfoServicePrivate</scope><name>DeviceInfoServicePrivate</name></member>
+      <member refid="classAbstractPokitServicePrivate_1a2922b59e5fc76b0e90ebef2a88adac9d" prot="public" virt="non-virtual"><scope>DeviceInfoServicePrivate</scope><name>disableCharacteristicNotificatons</name></member>
+      <member refid="qobject_1disconnect-4" prot="public" virt="non-virtual"><scope>DeviceInfoServicePrivate</scope><name>disconnect</name></member>
+      <member refid="qobject_1disconnect-5" prot="public" virt="non-virtual"><scope>DeviceInfoServicePrivate</scope><name>disconnect</name></member>
+      <member refid="qobject_1disconnect-1" prot="public" virt="non-virtual"><scope>DeviceInfoServicePrivate</scope><name>disconnect</name></member>
+      <member refid="qobject_1disconnect" prot="public" virt="non-virtual"><scope>DeviceInfoServicePrivate</scope><name>disconnect</name></member>
+      <member refid="qobject_1disconnect-3" prot="public" virt="non-virtual"><scope>DeviceInfoServicePrivate</scope><name>disconnect</name></member>
+      <member refid="qobject_1disconnect-2" prot="public" virt="non-virtual"><scope>DeviceInfoServicePrivate</scope><name>disconnect</name></member>
+      <member refid="qobject_1disconnectNotify" prot="protected" virt="virtual"><scope>DeviceInfoServicePrivate</scope><name>disconnectNotify</name></member>
+      <member refid="classAbstractPokitServicePrivate_1a2cc16a897908f50e0f3cfc6b876b50ab" prot="protected" virt="non-virtual"><scope>DeviceInfoServicePrivate</scope><name>discoveryFinished</name></member>
+      <member refid="qobject_1dumpObjectInfo" prot="public" virt="non-virtual"><scope>DeviceInfoServicePrivate</scope><name>dumpObjectInfo</name></member>
+      <member refid="qobject_1dumpObjectTree" prot="public" virt="non-virtual"><scope>DeviceInfoServicePrivate</scope><name>dumpObjectTree</name></member>
+      <member refid="qobject_1dynamicPropertyNames" prot="public" virt="non-virtual"><scope>DeviceInfoServicePrivate</scope><name>dynamicPropertyNames</name></member>
+      <member refid="classAbstractPokitServicePrivate_1a7a024ab2e783e62b78568f4834eb6159" prot="public" virt="non-virtual"><scope>DeviceInfoServicePrivate</scope><name>enableCharacteristicNotificatons</name></member>
+      <member refid="classAbstractPokitServicePrivate_1ab086f2e2e5058bc7978a67e86d579325" prot="protected" virt="non-virtual"><scope>DeviceInfoServicePrivate</scope><name>errorOccurred</name></member>
+      <member refid="qobject_1event" prot="public" virt="virtual"><scope>DeviceInfoServicePrivate</scope><name>event</name></member>
+      <member refid="qobject_1eventFilter" prot="public" virt="virtual"><scope>DeviceInfoServicePrivate</scope><name>eventFilter</name></member>
+      <member refid="qobject_1findChild" prot="public" virt="non-virtual"><scope>DeviceInfoServicePrivate</scope><name>findChild</name></member>
+      <member refid="qobject_1findChildren-1" prot="public" virt="non-virtual"><scope>DeviceInfoServicePrivate</scope><name>findChildren</name></member>
+      <member refid="qobject_1findChildren-2" prot="public" virt="non-virtual"><scope>DeviceInfoServicePrivate</scope><name>findChildren</name></member>
+      <member refid="qobject_1findChildren" prot="public" virt="non-virtual"><scope>DeviceInfoServicePrivate</scope><name>findChildren</name></member>
+      <member refid="classAbstractPokitServicePrivate_1aaac3ef8e3590334acdddb2b029865eb0" prot="public" virt="non-virtual"><scope>DeviceInfoServicePrivate</scope><name>getCharacteristic</name></member>
+      <member refid="qobject_1inherits" prot="public" virt="non-virtual"><scope>DeviceInfoServicePrivate</scope><name>inherits</name></member>
+      <member refid="qobject_1installEventFilter" prot="public" virt="non-virtual"><scope>DeviceInfoServicePrivate</scope><name>installEventFilter</name></member>
+      <member refid="qobject_1isQuickItemType" prot="public" virt="non-virtual"><scope>DeviceInfoServicePrivate</scope><name>isQuickItemType</name></member>
+      <member refid="qobject_1isSignalConnected" prot="protected" virt="non-virtual"><scope>DeviceInfoServicePrivate</scope><name>isSignalConnected</name></member>
+      <member refid="qobject_1isWidgetType" prot="public" virt="non-virtual"><scope>DeviceInfoServicePrivate</scope><name>isWidgetType</name></member>
+      <member refid="qobject_1isWindowType" prot="public" virt="non-virtual"><scope>DeviceInfoServicePrivate</scope><name>isWindowType</name></member>
+      <member refid="qobject_1killTimer" prot="public" virt="non-virtual"><scope>DeviceInfoServicePrivate</scope><name>killTimer</name></member>
+      <member refid="qobject_1metaObject" prot="public" virt="virtual"><scope>DeviceInfoServicePrivate</scope><name>metaObject</name></member>
+      <member refid="qobject_1moveToThread" prot="public" virt="non-virtual"><scope>DeviceInfoServicePrivate</scope><name>moveToThread</name></member>
+      <member refid="qobject_1objectName-prop" prot="public" virt="non-virtual"><scope>DeviceInfoServicePrivate</scope><name>objectName</name></member>
+      <member refid="qobject_1objectName-prop" prot="public" virt="non-virtual"><scope>DeviceInfoServicePrivate</scope><name>objectName</name></member>
+      <member refid="qobject_1objectNameChanged" prot="public" virt="non-virtual"><scope>DeviceInfoServicePrivate</scope><name>objectNameChanged</name></member>
+      <member refid="qobject_1parent" prot="public" virt="non-virtual"><scope>DeviceInfoServicePrivate</scope><name>parent</name></member>
+      <member refid="classAbstractPokitServicePrivate_1afd4b02970f049753542e539bdf85e218" prot="public" virt="non-virtual"><scope>DeviceInfoServicePrivate</scope><name>pokitProduct</name></member>
+      <member refid="qobject_1property" prot="public" virt="non-virtual"><scope>DeviceInfoServicePrivate</scope><name>property</name></member>
+      <member refid="qobject_1Q_CLASSINFO" prot="public" virt="non-virtual"><scope>DeviceInfoServicePrivate</scope><name>Q_CLASSINFO</name></member>
+      <member refid="qobject_1Q_EMIT" prot="public" virt="non-virtual"><scope>DeviceInfoServicePrivate</scope><name>Q_EMIT</name></member>
+      <member refid="qobject_1Q_ENUM" prot="public" virt="non-virtual"><scope>DeviceInfoServicePrivate</scope><name>Q_ENUM</name></member>
+      <member refid="qobject_1Q_ENUM_NS" prot="public" virt="non-virtual"><scope>DeviceInfoServicePrivate</scope><name>Q_ENUM_NS</name></member>
+      <member refid="qobject-obsolete_1Q_ENUMS" prot="public" virt="non-virtual"><scope>DeviceInfoServicePrivate</scope><name>Q_ENUMS</name></member>
+      <member refid="qobject_1Q_FLAG" prot="public" virt="non-virtual"><scope>DeviceInfoServicePrivate</scope><name>Q_FLAG</name></member>
+      <member refid="qobject_1Q_FLAG_NS" prot="public" virt="non-virtual"><scope>DeviceInfoServicePrivate</scope><name>Q_FLAG_NS</name></member>
+      <member refid="qobject-obsolete_1Q_FLAGS" prot="public" virt="non-virtual"><scope>DeviceInfoServicePrivate</scope><name>Q_FLAGS</name></member>
+      <member refid="qobject_1Q_GADGET" prot="public" virt="non-virtual"><scope>DeviceInfoServicePrivate</scope><name>Q_GADGET</name></member>
+      <member refid="qobject_1Q_GADGET_EXPORT" prot="public" virt="non-virtual"><scope>DeviceInfoServicePrivate</scope><name>Q_GADGET_EXPORT</name></member>
+      <member refid="qobject_1Q_INTERFACES" prot="public" virt="non-virtual"><scope>DeviceInfoServicePrivate</scope><name>Q_INTERFACES</name></member>
+      <member refid="qobject_1Q_INVOKABLE" prot="public" virt="non-virtual"><scope>DeviceInfoServicePrivate</scope><name>Q_INVOKABLE</name></member>
+      <member refid="classAbstractPokitServicePrivate_1a32f402260c965002c68f7b9191d38af6" prot="public" virt="non-virtual"><scope>DeviceInfoServicePrivate</scope><name>Q_LOGGING_CATEGORY</name></member>
+      <member refid="qobject_1Q_MOC_INCLUDE" prot="public" virt="non-virtual"><scope>DeviceInfoServicePrivate</scope><name>Q_MOC_INCLUDE</name></member>
+      <member refid="qobject_1Q_NAMESPACE" prot="public" virt="non-virtual"><scope>DeviceInfoServicePrivate</scope><name>Q_NAMESPACE</name></member>
+      <member refid="qobject_1Q_NAMESPACE_EXPORT" prot="public" virt="non-virtual"><scope>DeviceInfoServicePrivate</scope><name>Q_NAMESPACE_EXPORT</name></member>
+      <member refid="qobject_1Q_OBJECT" prot="public" virt="non-virtual"><scope>DeviceInfoServicePrivate</scope><name>Q_OBJECT</name></member>
+      <member refid="qobject_1Q_PROPERTY" prot="public" virt="non-virtual"><scope>DeviceInfoServicePrivate</scope><name>Q_PROPERTY</name></member>
+      <member refid="classAbstractPokitServicePrivate_1a68f7ec9c0b34677eb1cf797221eb4845" prot="protected" virt="non-virtual"><scope>DeviceInfoServicePrivate</scope><name>q_ptr</name></member>
+      <member refid="qobject_1Q_REVISION" prot="public" virt="non-virtual"><scope>DeviceInfoServicePrivate</scope><name>Q_REVISION</name></member>
+      <member refid="qobject_1Q_SET_OBJECT_NAME" prot="public" virt="non-virtual"><scope>DeviceInfoServicePrivate</scope><name>Q_SET_OBJECT_NAME</name></member>
+      <member refid="qobject_1Q_SIGNAL" prot="public" virt="non-virtual"><scope>DeviceInfoServicePrivate</scope><name>Q_SIGNAL</name></member>
+      <member refid="qobject_1Q_SIGNALS" prot="public" virt="non-virtual"><scope>DeviceInfoServicePrivate</scope><name>Q_SIGNALS</name></member>
+      <member refid="qobject_1Q_SLOT" prot="public" virt="non-virtual"><scope>DeviceInfoServicePrivate</scope><name>Q_SLOT</name></member>
+      <member refid="qobject_1Q_SLOTS" prot="public" virt="non-virtual"><scope>DeviceInfoServicePrivate</scope><name>Q_SLOTS</name></member>
+      <member refid="qobject_1QObject" prot="public" virt="non-virtual"><scope>DeviceInfoServicePrivate</scope><name>QObject</name></member>
+      <member refid="qobject_1qobject_cast" prot="public" virt="non-virtual"><scope>DeviceInfoServicePrivate</scope><name>qobject_cast</name></member>
+      <member refid="qobject_1qobject_cast-1" prot="public" virt="non-virtual"><scope>DeviceInfoServicePrivate</scope><name>qobject_cast</name></member>
+      <member refid="qobject_1QObjectList-typedef" prot="public" virt="non-virtual"><scope>DeviceInfoServicePrivate</scope><name>QObjectList</name></member>
+      <member refid="qobject_1QT_NO_NARROWING_CONVERSIONS_IN_CONNECT" prot="public" virt="non-virtual"><scope>DeviceInfoServicePrivate</scope><name>QT_NO_NARROWING_CONVERSIONS_IN_CONNECT</name></member>
+      <member refid="classAbstractPokitServicePrivate_1ad58619e237f300294049c82b85d76875" prot="public" virt="non-virtual"><scope>DeviceInfoServicePrivate</scope><name>readCharacteristic</name></member>
+      <member refid="qobject_1receivers" prot="protected" virt="non-virtual"><scope>DeviceInfoServicePrivate</scope><name>receivers</name></member>
+      <member refid="qobject_1removeEventFilter" prot="public" virt="non-virtual"><scope>DeviceInfoServicePrivate</scope><name>removeEventFilter</name></member>
+      <member refid="qobject_1sender" prot="protected" virt="non-virtual"><scope>DeviceInfoServicePrivate</scope><name>sender</name></member>
+      <member refid="qobject_1senderSignalIndex" prot="protected" virt="non-virtual"><scope>DeviceInfoServicePrivate</scope><name>senderSignalIndex</name></member>
+      <member refid="classAbstractPokitServicePrivate_1adc41ee1de2a4783623aa78d0a8beb85d" prot="public" virt="non-virtual"><scope>DeviceInfoServicePrivate</scope><name>service</name></member>
+      <member refid="classAbstractPokitServicePrivate_1a654255854b4aca7718ef30e10260d89b" prot="protected" virt="virtual"><scope>DeviceInfoServicePrivate</scope><name>serviceDiscovered</name></member>
+      <member refid="classAbstractPokitServicePrivate_1a37538a1aa1beeb85a041f1735d65cbfd" prot="public" virt="non-virtual"><scope>DeviceInfoServicePrivate</scope><name>serviceUuid</name></member>
+      <member refid="qobject_1setObjectName-1" prot="public" virt="non-virtual"><scope>DeviceInfoServicePrivate</scope><name>setObjectName</name></member>
+      <member refid="qobject_1setObjectName" prot="public" virt="non-virtual"><scope>DeviceInfoServicePrivate</scope><name>setObjectName</name></member>
+      <member refid="qobject_1setParent" prot="public" virt="non-virtual"><scope>DeviceInfoServicePrivate</scope><name>setParent</name></member>
+      <member refid="qobject_1setProperty-1" prot="public" virt="non-virtual"><scope>DeviceInfoServicePrivate</scope><name>setProperty</name></member>
+      <member refid="qobject_1setProperty" prot="public" virt="non-virtual"><scope>DeviceInfoServicePrivate</scope><name>setProperty</name></member>
+      <member refid="qobject_1signalsBlocked" prot="public" virt="non-virtual"><scope>DeviceInfoServicePrivate</scope><name>signalsBlocked</name></member>
+      <member refid="qobject_1startTimer" prot="public" virt="non-virtual"><scope>DeviceInfoServicePrivate</scope><name>startTimer</name></member>
+      <member refid="qobject_1startTimer-1" prot="public" virt="non-virtual"><scope>DeviceInfoServicePrivate</scope><name>startTimer</name></member>
+      <member refid="classAbstractPokitServicePrivate_1ad4cd6a5700b0b764b3a81f67603dc68f" prot="protected" virt="non-virtual"><scope>DeviceInfoServicePrivate</scope><name>stateChanged</name></member>
+      <member refid="classDeviceInfoServicePrivate_1a587ed070049873e090b3b3b81e7c8265" prot="private" virt="non-virtual"><scope>DeviceInfoServicePrivate</scope><name>TestDeviceInfoService</name></member>
+      <member refid="qobject_1thread" prot="public" virt="non-virtual"><scope>DeviceInfoServicePrivate</scope><name>thread</name></member>
+      <member refid="qobject_1timerEvent" prot="protected" virt="virtual"><scope>DeviceInfoServicePrivate</scope><name>timerEvent</name></member>
+      <member refid="classAbstractPokitServicePrivate_1af748600fc201fe47f29b58e8e93179d8" prot="public" virt="non-virtual"><scope>DeviceInfoServicePrivate</scope><name>toHexString</name></member>
+      <member refid="qobject_1tr" prot="public" virt="non-virtual"><scope>DeviceInfoServicePrivate</scope><name>tr</name></member>
+      <member refid="qobject_1dtor.QObject" prot="public" virt="virtual"><scope>DeviceInfoServicePrivate</scope><name>~QObject</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

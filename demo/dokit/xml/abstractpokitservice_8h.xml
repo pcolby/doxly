@@ -1,0 +1,440 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.0" xml:lang="en-US">
+  <compounddef id="abstractpokitservice_8h" kind="file" language="C++">
+    <compoundname>abstractpokitservice.h</compoundname>
+    <includes refid="qtpokit__global_8h" local="yes">qtpokit_global.h</includes>
+    <includes refid="pokitproducts_8h" local="yes">pokitproducts.h</includes>
+    <includes local="no">QLowEnergyService</includes>
+    <includes local="no">QObject</includes>
+    <includes local="no">optional</includes>
+    <includedby refid="abstractpokitservice_8cpp" local="no">abstractpokitservice.cpp</includedby>
+    <includedby refid="calibrationservice_8h" local="yes">calibrationservice.h</includedby>
+    <includedby refid="dataloggerservice_8h" local="yes">dataloggerservice.h</includedby>
+    <includedby refid="devicecommand_8cpp" local="no">devicecommand.cpp</includedby>
+    <includedby refid="deviceinfoservice_8h" local="yes">deviceinfoservice.h</includedby>
+    <includedby refid="dsoservice_8h" local="yes">dsoservice.h</includedby>
+    <includedby refid="multimeterservice_8h" local="yes">multimeterservice.h</includedby>
+    <includedby refid="statusservice_8h" local="yes">statusservice.h</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>abstractpokitservice.h</label>
+        <link refid="abstractpokitservice_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>pokitproducts.h</label>
+        <link refid="pokitproducts_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>qtpokit_global.h</label>
+        <link refid="qtpokit__global_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>QBluetoothDeviceInfo</label>
+      </node>
+      <node id="6">
+        <label>QFlags</label>
+      </node>
+      <node id="8">
+        <label>QLowEnergyService</label>
+      </node>
+      <node id="9">
+        <label>QObject</label>
+      </node>
+      <node id="7">
+        <label>QString</label>
+      </node>
+      <node id="3">
+        <label>QtGlobal</label>
+      </node>
+      <node id="10">
+        <label>optional</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>abstractpokitservice.h</label>
+        <link refid="abstractpokitservice_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>calibrationservice.h</label>
+        <link refid="calibrationservice_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>dataloggerservice.h</label>
+        <link refid="dataloggerservice_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>deviceinfoservice.h</label>
+        <link refid="deviceinfoservice_8h"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>dsoservice.h</label>
+        <link refid="dsoservice_8h"/>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>multimeterservice.h</label>
+        <link refid="multimeterservice_8h"/>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>statusservice.h</label>
+        <link refid="statusservice_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>calibratecommand.cpp</label>
+        <link refid="calibratecommand_8cpp_source"/>
+      </node>
+      <node id="18">
+        <label>devicecommand.cpp</label>
+        <link refid="devicecommand_8cpp_source"/>
+      </node>
+      <node id="25">
+        <label>dsocommand.cpp</label>
+        <link refid="dsocommand_8cpp_source"/>
+      </node>
+      <node id="24">
+        <label>dsocommand.h</label>
+        <link refid="dsocommand_8h_source"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>flashledcommand.cpp</label>
+        <link refid="flashledcommand_8cpp_source"/>
+      </node>
+      <node id="22">
+        <label>infocommand.cpp</label>
+        <link refid="infocommand_8cpp_source"/>
+      </node>
+      <node id="12">
+        <label>loggerfetchcommand.cpp</label>
+        <link refid="loggerfetchcommand_8cpp_source"/>
+      </node>
+      <node id="11">
+        <label>loggerfetchcommand.h</label>
+        <link refid="loggerfetchcommand_8h_source"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>loggerstartcommand.cpp</label>
+        <link refid="loggerstartcommand_8cpp_source"/>
+      </node>
+      <node id="14">
+        <label>loggerstartcommand.h</label>
+        <link refid="loggerstartcommand_8h_source"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>loggerstopcommand.cpp</label>
+        <link refid="loggerstopcommand_8cpp_source"/>
+      </node>
+      <node id="16">
+        <label>loggerstopcommand.h</label>
+        <link refid="loggerstopcommand_8h_source"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>main.cpp</label>
+        <link refid="main_8cpp_source"/>
+      </node>
+      <node id="30">
+        <label>metercommand.cpp</label>
+        <link refid="metercommand_8cpp_source"/>
+      </node>
+      <node id="29">
+        <label>metercommand.h</label>
+        <link refid="metercommand_8h_source"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>setnamecommand.cpp</label>
+        <link refid="setnamecommand_8cpp_source"/>
+      </node>
+      <node id="39">
+        <label>settorchcommand.cpp</label>
+        <link refid="settorchcommand_8cpp_source"/>
+      </node>
+      <node id="38">
+        <label>settorchcommand.h</label>
+        <link refid="settorchcommand_8h_source"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+      </node>
+      <node id="41">
+        <label>statuscommand.cpp</label>
+        <link refid="statuscommand_8cpp_source"/>
+      </node>
+      <node id="40">
+        <label>statuscommand.h</label>
+        <link refid="statuscommand_8h_source"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>abstractpokitservice.cpp</label>
+        <link refid="abstractpokitservice_8cpp"/>
+      </node>
+      <node id="5">
+        <label>calibrationservice.cpp</label>
+        <link refid="calibrationservice_8cpp"/>
+      </node>
+      <node id="6">
+        <label>calibrationservice_p.h</label>
+        <link refid="calibrationservice__p_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>dataloggerservice.cpp</label>
+        <link refid="dataloggerservice_8cpp"/>
+      </node>
+      <node id="10">
+        <label>dataloggerservice_p.h</label>
+        <link refid="dataloggerservice__p_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>deviceinfoservice.cpp</label>
+        <link refid="deviceinfoservice_8cpp"/>
+      </node>
+      <node id="21">
+        <label>deviceinfoservice_p.h</label>
+        <link refid="deviceinfoservice__p_8h"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>dsoservice.cpp</label>
+        <link refid="dsoservice_8cpp"/>
+      </node>
+      <node id="27">
+        <label>dsoservice_p.h</label>
+        <link refid="dsoservice__p_8h"/>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>multimeterservice.cpp</label>
+        <link refid="multimeterservice_8cpp"/>
+      </node>
+      <node id="32">
+        <label>multimeterservice_p.h</label>
+        <link refid="multimeterservice__p_8h"/>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>pokitdevice.cpp</label>
+        <link refid="pokitdevice_8cpp"/>
+      </node>
+      <node id="35">
+        <label>pokitdiscoveryagent.cpp</label>
+        <link refid="pokitdiscoveryagent_8cpp"/>
+      </node>
+      <node id="36">
+        <label>pokitproducts.cpp</label>
+        <link refid="pokitproducts_8cpp"/>
+      </node>
+      <node id="42">
+        <label>statusservice.cpp</label>
+        <link refid="statusservice_8cpp"/>
+      </node>
+      <node id="43">
+        <label>statusservice_p.h</label>
+        <link refid="statusservice__p_8h"/>
+        <childnode refid="42" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classAbstractPokitService" prot="public">AbstractPokitService</innerclass>
+    <briefdescription>
+<para>Declares the <ref refid="classAbstractPokitService" kindref="compound">AbstractPokitService</ref> class. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>SPDX-FileCopyrightText:<sp/>2022-2024<sp/>Paul<sp/>Colby<sp/>&lt;git@colby.id.au&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>SPDX-License-Identifier:<sp/>LGPL-3.0-or-later</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="4"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>\file</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>Declares<sp/>the<sp/>AbstractPokitService<sp/>class.</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>QTPOKIT_ABSTRACTPOKITSERVICE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>QTPOKIT_ABSTRACTPOKITSERVICE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="qtpokit__global_8h" kindref="compound">qtpokit_global.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="pokitproducts_8h" kindref="compound">pokitproducts.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QLowEnergyService&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QObject&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;optional&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="qlowenergycontroller" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QLowEnergyController</ref>;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><ref refid="qtpokit__global_8h_1ac5aca53b48a017f8db467922deee7983" kindref="member">QTPOKIT_BEGIN_NAMESPACE</ref></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classAbstractPokitServicePrivate" kindref="compound">AbstractPokitServicePrivate</ref>;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="classAbstractPokitService" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="qtpokit__global_8h_1aeba02234b4a21ddf98bb8127b8d41759" kindref="member">QTPOKIT_EXPORT</ref><sp/><ref refid="classAbstractPokitService" kindref="compound">AbstractPokitService</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="qobject" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QObject</ref></highlight></codeline>
+<codeline lineno="27"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_OBJECT</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classAbstractPokitService" kindref="compound">AbstractPokitService</ref>()<sp/>=<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classAbstractPokitService" kindref="compound">~AbstractPokitService</ref>();</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="classAbstractPokitService_1ab1de532f20d46803d6e8b8ffea835b48" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classAbstractPokitService_1ab1de532f20d46803d6e8b8ffea835b48" kindref="member">readCharacteristics</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>autoDiscover()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setAutoDiscover(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>discover<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>std::optional&lt;PokitProduct&gt;<sp/><ref refid="pokitproducts_8h_1a0227e333e3bab67294b49b8b73120943" kindref="member">pokitProduct</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setPokitProduct(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="pokitproducts_8h_1a0c4f628f68ce0432a6db11681a41fda4" kindref="member">PokitProduct</ref><sp/>product);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="qlowenergyservice" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QLowEnergyService</ref><sp/>*<sp/>service();</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qlowenergyservice" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QLowEnergyService</ref><sp/>*<sp/>service()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><ref refid="qobject_1Q_SIGNALS" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">Q_SIGNALS</ref>:</highlight></codeline>
+<codeline lineno="46" refid="classAbstractPokitService_1af67cbea4294ba0a77dcd9540b29528ff" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classAbstractPokitService_1af67cbea4294ba0a77dcd9540b29528ff" kindref="member">serviceDetailsDiscovered</ref>();</highlight></codeline>
+<codeline lineno="47" refid="classAbstractPokitService_1a9e680ebf280361ef82f4b072448d7e9b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classAbstractPokitService_1a9e680ebf280361ef82f4b072448d7e9b" kindref="member">serviceErrorOccurred</ref>(<ref refid="qlowenergyservice_1ServiceError-enum" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QLowEnergyService::ServiceError</ref><sp/>newError);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="50"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>\cond<sp/>internal</highlight></codeline>
+<codeline lineno="51" refid="classAbstractPokitService_1acb832f24262f3f61f74c878dd79f48e8" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classAbstractPokitServicePrivate" kindref="compound">AbstractPokitServicePrivate</ref><sp/>*<sp/><ref refid="classAbstractPokitService_1acb832f24262f3f61f74c878dd79f48e8" kindref="member">d_ptr</ref>;<sp/></highlight><highlight class="comment">///&lt;<sp/>Internal<sp/>d-pointer.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classAbstractPokitService" kindref="compound">AbstractPokitService</ref>(<ref refid="classAbstractPokitServicePrivate" kindref="compound">AbstractPokitServicePrivate</ref><sp/>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>d,<sp/><ref refid="qobject" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QObject</ref><sp/>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>parent);</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="53"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>\endcond</highlight></codeline>
+<codeline lineno="54"><highlight class="comment"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_DECLARE_PRIVATE(<ref refid="classAbstractPokitService" kindref="compound">AbstractPokitService</ref>)</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_DISABLE_COPY(<ref refid="classAbstractPokitService" kindref="compound">AbstractPokitService</ref>)</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">TestAbstractPokitService;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><ref refid="qtpokit__global_8h_1af2a5fcdf5ad6da4ea4f238aad0d29d65" kindref="member">QTPOKIT_END_NAMESPACE</ref></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>QTPOKIT_ABSTRACTPOKITSERVICE_H</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/paul/src/dokit/include/qtpokit/abstractpokitservice.h"/>
+  </compounddef>
+</doxygen>

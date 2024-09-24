@@ -1,0 +1,792 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.0" xml:lang="en-US">
+  <compounddef id="classMeterCommand" kind="class" language="C++" prot="public">
+    <compoundname>MeterCommand</compoundname>
+    <basecompoundref refid="classDeviceCommand" prot="public" virt="non-virtual">DeviceCommand</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classMeterCommand_1aed2c787884f9f1c0359010036e637829" prot="private" static="no" mutable="no">
+        <type>quint8(*</type>
+        <definition>quint8(* MeterCommand::minRangeFunc) (const PokitProduct product, const quint32 maxValue)</definition>
+        <argsstring>)(const PokitProduct product, const quint32 maxValue)</argsstring>
+        <name>minRangeFunc</name>
+        <qualifiedname>MeterCommand::minRangeFunc</qualifiedname>
+        <briefdescription>
+<para>Pointer to function for converting <ref refid="classMeterCommand_1a0d86f89709a97b7ab1d8667970ef2ece" kindref="member">rangeOptionValue</ref> to a Pokit device&apos;s range enumerator. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function pointer is assigned during the command line parsing, but is not invoked until after the device&apos;s services are discovere, because prior to that discovery, we don&apos;t know which product (Meter vs Pro vs Clamp, etc) we&apos;re talking to and thus which enumerator list to be using.</para>
+<para>If the current mode does not support ranges (eg diode, and continuity modes), then this member will be <computeroutput>nullptr</computeroutput>.</para>
+<para><simplesect kind="see"><para><ref refid="classMeterCommand_1a7252ac9a772bc45e374da30bbc23ed85" kindref="member">processOptions</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classMeterCommand_1aca51a018963bc384a24154cdb112a49b" kindref="member">serviceDetailsDiscovered</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/metercommand.h" line="30" column="5" bodyfile="/home/paul/src/dokit/src/cli/metercommand.h" bodystart="30" bodyend="30"/>
+        <referencedby refid="classMeterCommand_1a7252ac9a772bc45e374da30bbc23ed85" compoundref="metercommand_8cpp" startline="49" endline="141">processOptions</referencedby>
+        <referencedby refid="classMeterCommand_1aca51a018963bc384a24154cdb112a49b" compoundref="metercommand_8cpp" startline="165" endline="174">serviceDetailsDiscovered</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classMeterCommand_1a0d86f89709a97b7ab1d8667970ef2ece" prot="private" static="no" mutable="no">
+        <type>quint32</type>
+        <definition>quint32 MeterCommand::rangeOptionValue</definition>
+        <argsstring></argsstring>
+        <name>rangeOptionValue</name>
+        <qualifiedname>MeterCommand::rangeOptionValue</qualifiedname>
+        <initializer>{ 0 }</initializer>
+        <briefdescription>
+<para>The parsed value of range option, if one was supplied. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/metercommand.h" line="31" column="13" bodyfile="/home/paul/src/dokit/src/cli/metercommand.h" bodystart="31" bodyend="31"/>
+        <referencedby refid="classMeterCommand_1a7252ac9a772bc45e374da30bbc23ed85" compoundref="metercommand_8cpp" startline="49" endline="141">processOptions</referencedby>
+        <referencedby refid="classMeterCommand_1aca51a018963bc384a24154cdb112a49b" compoundref="metercommand_8cpp" startline="165" endline="174">serviceDetailsDiscovered</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classMeterCommand_1afbd91fbc89c6d6d8891dcbeb1fcc3280" prot="private" static="no" mutable="no">
+        <type><ref refid="classMultimeterService" kindref="compound">MultimeterService</ref> *</type>
+        <definition>MultimeterService* MeterCommand::service</definition>
+        <argsstring></argsstring>
+        <name>service</name>
+        <qualifiedname>MeterCommand::service</qualifiedname>
+        <initializer>{ nullptr }</initializer>
+        <briefdescription>
+<para>Bluetooth service this command interracts with. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/metercommand.h" line="32" column="5" bodyfile="/home/paul/src/dokit/src/cli/metercommand.h" bodystart="32" bodyend="32"/>
+        <referencedby refid="classMeterCommand_1abdc90c9cd480caa8ad04281c49a1e9a4" compoundref="metercommand_8cpp" startline="148" endline="158">getService</referencedby>
+        <referencedby refid="classMeterCommand_1a551a1c3d1c6f10384b5ccf264a640eff" compoundref="metercommand_8cpp" startline="204" endline="288">outputReading</referencedby>
+        <referencedby refid="classMeterCommand_1aca51a018963bc384a24154cdb112a49b" compoundref="metercommand_8cpp" startline="165" endline="174">serviceDetailsDiscovered</referencedby>
+        <referencedby refid="classMeterCommand_1a994e13d73c26eac303fa34b14082c9a4" compoundref="metercommand_8cpp" startline="193" endline="199">settingsWritten</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classMeterCommand_1a0db4ce8811d8fb3a297aa5cc5b83beb6" prot="private" static="no" mutable="no">
+        <type><ref refid="structMultimeterService_1_1Settings" kindref="compound">MultimeterService::Settings</ref></type>
+        <definition>MultimeterService::Settings MeterCommand::settings</definition>
+        <argsstring></argsstring>
+        <name>settings</name>
+        <qualifiedname>MeterCommand::settings</qualifiedname>
+        <initializer>{ <ref refid="classMultimeterService_1a51f66d0b81dace3115c5c68bc931eaeaa1a18453c20867d5a990479b3716cbbc5" kindref="member">MultimeterService::Mode::DcVoltage</ref>, +<ref refid="namespacePokitMeter_1ab9abf7a50f13c9cfb1e1b4c49c16dfeea5c8523b038abf04d86fcc5358cd893cf" kindref="member">PokitMeter::VoltageRange::AutoRange</ref>, 1000 }</initializer>
+        <briefdescription>
+<para>&lt; Settings for the Pokit device&apos;s multimeter mode. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/metercommand.h" line="33" column="33" bodyfile="/home/paul/src/dokit/src/cli/metercommand.h" bodystart="34" bodyend="34"/>
+        <referencedby refid="classMeterCommand_1a7252ac9a772bc45e374da30bbc23ed85" compoundref="metercommand_8cpp" startline="49" endline="141">processOptions</referencedby>
+        <referencedby refid="classMeterCommand_1aca51a018963bc384a24154cdb112a49b" compoundref="metercommand_8cpp" startline="165" endline="174">serviceDetailsDiscovered</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classMeterCommand_1adf371ab0a3848960f9177d80853863b1" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int MeterCommand::samplesToGo</definition>
+        <argsstring></argsstring>
+        <name>samplesToGo</name>
+        <qualifiedname>MeterCommand::samplesToGo</qualifiedname>
+        <initializer>{ -1 }</initializer>
+        <briefdescription>
+<para>Number of samples to read, if specified on the CLI. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/metercommand.h" line="35" column="9" bodyfile="/home/paul/src/dokit/src/cli/metercommand.h" bodystart="35" bodyend="35"/>
+        <referencedby refid="classMeterCommand_1a551a1c3d1c6f10384b5ccf264a640eff" compoundref="metercommand_8cpp" startline="204" endline="288">outputReading</referencedby>
+        <referencedby refid="classMeterCommand_1a7252ac9a772bc45e374da30bbc23ed85" compoundref="metercommand_8cpp" startline="49" endline="141">processOptions</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classMeterCommand_1a4dd5d50f974af64685b5e318010d4d43" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool MeterCommand::showCsvHeader</definition>
+        <argsstring></argsstring>
+        <name>showCsvHeader</name>
+        <qualifiedname>MeterCommand::showCsvHeader</qualifiedname>
+        <initializer>{ true }</initializer>
+        <briefdescription>
+<para>Whether or not to show a header as the first line of CSV output. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/metercommand.h" line="36" column="10" bodyfile="/home/paul/src/dokit/src/cli/metercommand.h" bodystart="36" bodyend="36"/>
+        <referencedby refid="classMeterCommand_1a551a1c3d1c6f10384b5ccf264a640eff" compoundref="metercommand_8cpp" startline="204" endline="288">outputReading</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="classMeterCommand_1a0eb51cde4277b5092969c10f7bdf5de8" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class TestMeterCommand</definition>
+        <argsstring></argsstring>
+        <name>TestMeterCommand</name>
+        <qualifiedname>MeterCommand::TestMeterCommand</qualifiedname>
+        <param>
+          <type>TestMeterCommand</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/metercommand.h" line="42" column="18" bodyfile="/home/paul/src/dokit/src/cli/metercommand.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classMeterCommand_1acfbe584039f6165df390014ae202a543" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>MeterCommand::MeterCommand</definition>
+        <argsstring>(QObject *const parent=nullptr)</argsstring>
+        <name>MeterCommand</name>
+        <qualifiedname>MeterCommand::MeterCommand</qualifiedname>
+        <param>
+          <type><ref refid="qobject" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QObject</ref> *const</type>
+          <declname>parent</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+<para>Construct a new <ref refid="classMeterCommand" kindref="compound">MeterCommand</ref> object with <emphasis>parent</emphasis>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/metercommand.h" line="15" column="14" bodyfile="/home/paul/src/dokit/src/cli/metercommand.cpp" bodystart="22" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classMeterCommand_1a088f95f4012a564ccf690d42f480aeb7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="qstringlist" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QStringList</ref></type>
+        <definition>QStringList MeterCommand::requiredOptions</definition>
+        <argsstring>(const QCommandLineParser &amp;parser) const override</argsstring>
+        <name>requiredOptions</name>
+        <qualifiedname>MeterCommand::requiredOptions</qualifiedname>
+        <reimplements refid="classAbstractCommand_1afd6f41cfc925751415cfa45e3b2d0b4a">requiredOptions</reimplements>
+        <param>
+          <type>const <ref refid="qcommandlineparser" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCommandLineParser</ref> &amp;</type>
+          <declname>parser</declname>
+        </param>
+        <briefdescription>
+<para>Returns a list of CLI option names required by this command. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The main console appication may use this list to output an eror (and exit) if any of the returned names are not found in the parsed CLI options.</para>
+<para>The (already parsed) <emphasis>parser</emphasis> may be used adjust the returned required options depending on the value of other options. For example, the <computeroutput>logger</computeroutput> command only requires the <computeroutput>--mode</computeroutput> option if the <computeroutput>--command</computeroutput> option is <computeroutput>start</computeroutput>.</para>
+<para>This base implementation simply returns an empty list. Derived classes should override this function to include any required options. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/metercommand.h" line="17" column="17" bodyfile="/home/paul/src/dokit/src/cli/metercommand.cpp" bodystart="27" bodyend="32"/>
+        <references refid="classAbstractCommand_1afd6f41cfc925751415cfa45e3b2d0b4a" compoundref="abstractcommand_8cpp" startline="56" endline="60">AbstractCommand::requiredOptions</references>
+      </memberdef>
+      <memberdef kind="function" id="classMeterCommand_1aa32c65d3e27b6193af5a3bf802d7cccf" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="qstringlist" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QStringList</ref></type>
+        <definition>QStringList MeterCommand::supportedOptions</definition>
+        <argsstring>(const QCommandLineParser &amp;parser) const override</argsstring>
+        <name>supportedOptions</name>
+        <qualifiedname>MeterCommand::supportedOptions</qualifiedname>
+        <reimplements refid="classAbstractCommand_1a1ceca3c5b4cb24277dd4d4054f45db18">supportedOptions</reimplements>
+        <param>
+          <type>const <ref refid="qcommandlineparser" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCommandLineParser</ref> &amp;</type>
+          <declname>parser</declname>
+        </param>
+        <briefdescription>
+<para>Returns a list of CLI option names supported by this command. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The main console appication may use this list to output a warning for any parsed CLI options not included in the returned list.</para>
+<para>The (already parsed) <emphasis>parser</emphasis> may be used adjust the returned supported options depending on the value of other options. For example, the <computeroutput>logger</computeroutput> command only supported the <computeroutput>--timestamp</computeroutput> option if the <computeroutput>--command</computeroutput> option is <computeroutput>start</computeroutput>.</para>
+<para>This base implementation simply returns <ref refid="classMeterCommand_1a088f95f4012a564ccf690d42f480aeb7" kindref="member">requiredOptions()</ref>. Derived classes should override this function to include optional options, such as:</para>
+<para><programlisting><codeline><highlight class="normal"><ref refid="qstringlist" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QStringList</ref><sp/>Derived::supportedOptions(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qcommandlineparser" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCommandLineParser</ref><sp/>&amp;parser)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qstringlist" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QStringList</ref><sp/>list<sp/>=<sp/><ref refid="classAbstractCommand_1a1ceca3c5b4cb24277dd4d4054f45db18" kindref="member">AbstractCommand::supportedOptions</ref>(parser)<sp/>+<sp/><ref refid="qstringlist" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QStringList</ref>{<sp/>...<sp/>};</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>list.<ref refid="qstringlist_1sort" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">sort</ref>();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>list.<ref refid="qstringlist_1removeDuplicates" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">removeDuplicates</ref>();<sp/></highlight><highlight class="comment">//<sp/>Optional,<sp/>recommended.</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>list;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/metercommand.h" line="18" column="17" bodyfile="/home/paul/src/dokit/src/cli/metercommand.cpp" bodystart="34" bodyend="41"/>
+        <references refid="classAbstractCommand_1a1ceca3c5b4cb24277dd4d4054f45db18" compoundref="abstractcommand_8cpp" startline="83" endline="91">AbstractCommand::supportedOptions</references>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-slot">
+      <memberdef kind="slot" id="classMeterCommand_1a7252ac9a772bc45e374da30bbc23ed85" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="qstringlist" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QStringList</ref></type>
+        <definition>QStringList MeterCommand::processOptions</definition>
+        <argsstring>(const QCommandLineParser &amp;parser) override</argsstring>
+        <name>processOptions</name>
+        <qualifiedname>MeterCommand::processOptions</qualifiedname>
+        <param>
+          <type>const <ref refid="qcommandlineparser" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCommandLineParser</ref> &amp;</type>
+          <declname>parser</declname>
+        </param>
+        <briefdescription>
+<para>Processes the relevant options from the command line <emphasis>parser</emphasis>.    </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This implementation extends <ref refid="classAbstractCommand_1ad827a18a24776efeb955739459d48f7d" kindref="member">DeviceCommand::processOptions</ref> to process additional CLI options supported (or required) by this command. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/metercommand.h" line="21" column="17" bodyfile="/home/paul/src/dokit/src/cli/metercommand.cpp" bodystart="49" bodyend="141"/>
+        <references refid="classMultimeterService_1a51f66d0b81dace3115c5c68bc931eaeaa7b39f260051ef745ddba9fc57ac23ff9">MultimeterService::AcCurrent</references>
+        <references refid="classMultimeterService_1a51f66d0b81dace3115c5c68bc931eaeaa9f01dfb531bd23d5cb9c2bb2e49d685e">MultimeterService::AcVoltage</references>
+        <references refid="qlist_1append">QList::append</references>
+        <references refid="qstring_1arg-14">QString::arg</references>
+        <references refid="classMultimeterService_1a51f66d0b81dace3115c5c68bc931eaeaa22bef5ff8cc5db9cc862164e779f29dc">MultimeterService::Capacitance</references>
+        <references refid="qt_1CaseSensitivity-enum">Qt::CaseInsensitive</references>
+        <references refid="qstring_1compare-6">QString::compare</references>
+        <references refid="classMultimeterService_1a51f66d0b81dace3115c5c68bc931eaeaaf73d2c55dc3628b7071e45104874c485">MultimeterService::Continuity</references>
+        <references refid="classMultimeterService_1a51f66d0b81dace3115c5c68bc931eaeaaf2a03b2c98a6620d4bf33af69572898e">MultimeterService::DcCurrent</references>
+        <references refid="classMultimeterService_1a51f66d0b81dace3115c5c68bc931eaeaa1a18453c20867d5a990479b3716cbbc5">MultimeterService::DcVoltage</references>
+        <references refid="classMultimeterService_1a51f66d0b81dace3115c5c68bc931eaeaa0f31a45b6daa6a5478050c36732a2549">MultimeterService::Diode</references>
+        <references refid="qlist_1isEmpty">QList::isEmpty</references>
+        <references refid="qcommandlineparser_1isSet-1">QCommandLineParser::isSet</references>
+        <references refid="classDeviceCommand_1a8aa676de2533a687cb369e70bb352a4c" compoundref="devicecommand_8cpp" startline="213" endline="224">DeviceCommand::minCapacitanceRange</references>
+        <references refid="classDeviceCommand_1ab5ae0318d3ec2bd4449e710eafafa680" compoundref="devicecommand_8cpp" startline="233" endline="243">DeviceCommand::minCurrentRange</references>
+        <references refid="classMeterCommand_1aed2c787884f9f1c0359010036e637829" compoundref="metercommand_8h" startline="30" endline="30">minRangeFunc</references>
+        <references refid="classDeviceCommand_1a1ce3ce094a91ec500e9d50e620b0cc6d" compoundref="devicecommand_8cpp" startline="252" endline="262">DeviceCommand::minResistanceRange</references>
+        <references refid="classDeviceCommand_1a92f7e61dff3d28eda856ea4f95e828fe" compoundref="devicecommand_8cpp" startline="272" endline="282">DeviceCommand::minVoltageRange</references>
+        <references refid="structMultimeterService_1_1Settings_1afed6bcae66af6d69cb3887e2c6d5c443" compoundref="multimeterservice_8h" startline="62">MultimeterService::Settings::mode</references>
+        <references refid="classAbstractCommand_1a29b2a2446ef034195183a2ae9d4bb911" compoundref="abstractcommand_8cpp" startline="149" endline="218">AbstractCommand::parseNumber</references>
+        <references refid="classAbstractCommand_1ad827a18a24776efeb955739459d48f7d" compoundref="abstractcommand_8cpp" startline="265" endline="320">AbstractCommand::processOptions</references>
+        <references refid="classMeterCommand_1a0d86f89709a97b7ab1d8667970ef2ece" compoundref="metercommand_8h" startline="31" endline="31">rangeOptionValue</references>
+        <references refid="classMultimeterService_1a51f66d0b81dace3115c5c68bc931eaeaa9db444f7a3b8ba8f817647de53b7a6fe">MultimeterService::Resistance</references>
+        <references refid="classMeterCommand_1adf371ab0a3848960f9177d80853863b1" compoundref="metercommand_8h" startline="35" endline="35">samplesToGo</references>
+        <references refid="classMeterCommand_1a0db4ce8811d8fb3a297aa5cc5b83beb6" compoundref="metercommand_8h" startline="34" endline="34">settings</references>
+        <references refid="qstring_1startsWith-3">QString::startsWith</references>
+        <references refid="classMultimeterService_1a51f66d0b81dace3115c5c68bc931eaeaaee7a8e262285ed49ea1b4e4ae11525bd">MultimeterService::Temperature</references>
+        <references refid="qstring_1toLower">QString::toLower</references>
+        <references refid="qobject_1tr">QObject::tr</references>
+        <references refid="qstring_1trimmed">QString::trimmed</references>
+        <references refid="structMultimeterService_1_1Settings_1a02446f040ebf7aeeacb4d932d3ab2ea2" compoundref="multimeterservice_8h" startline="64">MultimeterService::Settings::updateInterval</references>
+        <references refid="qcommandlineparser_1value-1">QCommandLineParser::value</references>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classMeterCommand_1abdc90c9cd480caa8ad04281c49a1e9a4" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classAbstractPokitService" kindref="compound">AbstractPokitService</ref> *</type>
+        <definition>AbstractPokitService * MeterCommand::getService</definition>
+        <argsstring>() override</argsstring>
+        <name>getService</name>
+        <qualifiedname>MeterCommand::getService</qualifiedname>
+        <reimplements refid="classDeviceCommand_1af7a724ae722462b6fa15dc6269aadd15">getService</reimplements>
+        <briefdescription>
+<para>Returns a Pokit service object for the derived command class.    </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This override returns a pointer to a <ref refid="classMultimeterService" kindref="compound">MultimeterService</ref> object. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/metercommand.h" line="24" column="27" bodyfile="/home/paul/src/dokit/src/cli/metercommand.cpp" bodystart="148" bodyend="158"/>
+        <references refid="qobject_1connect-4">QObject::connect</references>
+        <references refid="classDeviceCommand_1a2bbf2dc9bb0ba85a2bf29263746c7b57" compoundref="devicecommand_8h" startline="26" endline="26">DeviceCommand::device</references>
+        <references refid="classPokitDevice_1a7b4467f667ace65992a8fd152e9799ce" compoundref="pokitdevice_8cpp" startline="166" endline="169">PokitDevice::multimeter</references>
+        <references refid="classMeterCommand_1afbd91fbc89c6d6d8891dcbeb1fcc3280" compoundref="metercommand_8h" startline="32" endline="32">service</references>
+        <references refid="classMeterCommand_1a994e13d73c26eac303fa34b14082c9a4" compoundref="metercommand_8cpp" startline="193" endline="199">settingsWritten</references>
+        <references refid="classMultimeterService_1a11b8dc40cfedb636770f2c5b8551ff8b">MultimeterService::settingsWritten</references>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-slot">
+      <memberdef kind="slot" id="classMeterCommand_1aca51a018963bc384a24154cdb112a49b" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MeterCommand::serviceDetailsDiscovered</definition>
+        <argsstring>() override</argsstring>
+        <name>serviceDetailsDiscovered</name>
+        <qualifiedname>MeterCommand::serviceDetailsDiscovered</qualifiedname>
+        <briefdescription>
+<para>Handles service detail discovery events.    </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This override fetches the current device&apos;s status, and outputs it in the selected format. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/metercommand.h" line="27" column="10" bodyfile="/home/paul/src/dokit/src/cli/metercommand.cpp" bodystart="165" bodyend="174"/>
+        <references refid="qstring_1arg-14">QString::arg</references>
+        <references refid="qstring_1fromLatin1-1">QString::fromLatin1</references>
+        <references refid="qstring_1isNull">QString::isNull</references>
+        <references refid="classMeterCommand_1aed2c787884f9f1c0359010036e637829" compoundref="metercommand_8h" startline="30" endline="30">minRangeFunc</references>
+        <references refid="structMultimeterService_1_1Settings_1afed6bcae66af6d69cb3887e2c6d5c443" compoundref="multimeterservice_8h" startline="62">MultimeterService::Settings::mode</references>
+        <references refid="classAbstractPokitService_1a039d2f1054788cf586c8decadb53ddc0" compoundref="abstractpokitservice_8cpp" startline="86" endline="90">AbstractPokitService::pokitProduct</references>
+        <references refid="structMultimeterService_1_1Settings_1a6be92a8f2c6dc31050a46a0aa7610069" compoundref="multimeterservice_8h" startline="63">MultimeterService::Settings::range</references>
+        <references refid="classMeterCommand_1a0d86f89709a97b7ab1d8667970ef2ece" compoundref="metercommand_8h" startline="31" endline="31">rangeOptionValue</references>
+        <references refid="classMeterCommand_1afbd91fbc89c6d6d8891dcbeb1fcc3280" compoundref="metercommand_8h" startline="32" endline="32">service</references>
+        <references refid="classDeviceCommand_1a906fd97d832be0e8d2ba1c917fba41db" compoundref="devicecommand_8cpp" startline="331" endline="334">DeviceCommand::serviceDetailsDiscovered</references>
+        <references refid="classMultimeterService_1ab459a9db42aed973bbc18a2bc9fcd957" compoundref="multimeterservice_8cpp" startline="182" endline="198">MultimeterService::setSettings</references>
+        <references refid="classMeterCommand_1a0db4ce8811d8fb3a297aa5cc5b83beb6" compoundref="metercommand_8h" startline="34" endline="34">settings</references>
+        <references refid="classMultimeterService_1a58a03dbc0ae216dc60f27d975af92cf8" compoundref="multimeterservice_8cpp" startline="35" endline="51">MultimeterService::toString</references>
+        <references refid="qobject_1tr">QObject::tr</references>
+        <references refid="structMultimeterService_1_1Settings_1a02446f040ebf7aeeacb4d932d3ab2ea2" compoundref="multimeterservice_8h" startline="64">MultimeterService::Settings::updateInterval</references>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-slot">
+      <memberdef kind="slot" id="classMeterCommand_1a994e13d73c26eac303fa34b14082c9a4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MeterCommand::settingsWritten</definition>
+        <argsstring>()</argsstring>
+        <name>settingsWritten</name>
+        <qualifiedname>MeterCommand::settingsWritten</qualifiedname>
+        <briefdescription>
+<para>Invoked when the multimeter settings have been written, to begin reading the meter values. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/metercommand.h" line="39" column="10" bodyfile="/home/paul/src/dokit/src/cli/metercommand.cpp" bodystart="193" bodyend="199"/>
+        <references refid="qobject_1connect-4">QObject::connect</references>
+        <references refid="classMultimeterService_1a321c4fdade8d934ac2e1daec3be174fb" compoundref="multimeterservice_8cpp" startline="232" endline="236">MultimeterService::enableReadingNotifications</references>
+        <references refid="classMeterCommand_1a551a1c3d1c6f10384b5ccf264a640eff" compoundref="metercommand_8cpp" startline="204" endline="288">outputReading</references>
+        <references refid="classMultimeterService_1a713bc310057b845399ed495ad5df2663">MultimeterService::readingRead</references>
+        <references refid="classMeterCommand_1afbd91fbc89c6d6d8891dcbeb1fcc3280" compoundref="metercommand_8h" startline="32" endline="32">service</references>
+        <references refid="qobject_1tr">QObject::tr</references>
+        <referencedby refid="classMeterCommand_1abdc90c9cd480caa8ad04281c49a1e9a4" compoundref="metercommand_8cpp" startline="148" endline="158">getService</referencedby>
+      </memberdef>
+      <memberdef kind="slot" id="classMeterCommand_1a551a1c3d1c6f10384b5ccf264a640eff" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MeterCommand::outputReading</definition>
+        <argsstring>(const MultimeterService::Reading &amp;reading)</argsstring>
+        <name>outputReading</name>
+        <qualifiedname>MeterCommand::outputReading</qualifiedname>
+        <param>
+          <type>const <ref refid="structMultimeterService_1_1Reading" kindref="compound">MultimeterService::Reading</ref> &amp;</type>
+          <declname>reading</declname>
+        </param>
+        <briefdescription>
+<para>Outputs meter <emphasis>reading</emphasis> in the selected ouput format. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/metercommand.h" line="40" column="10" bodyfile="/home/paul/src/dokit/src/cli/metercommand.cpp" bodystart="204" bodyend="288"/>
+        <references refid="classMultimeterService_1a51f66d0b81dace3115c5c68bc931eaeaa7b39f260051ef745ddba9fc57ac23ff9">MultimeterService::AcCurrent</references>
+        <references refid="classMultimeterService_1a51f66d0b81dace3115c5c68bc931eaeaa9f01dfb531bd23d5cb9c2bb2e49d685e">MultimeterService::AcVoltage</references>
+        <references refid="qstring_1arg-14">QString::arg</references>
+        <references refid="classMultimeterService_1a43c735e6c80c4ada9bc8640d06fbe286a5e657c7063a35c1ab8cf463cc74e0541">MultimeterService::AutoRangeOn</references>
+        <references refid="classMultimeterService_1a51f66d0b81dace3115c5c68bc931eaeaa22bef5ff8cc5db9cc862164e779f29dc">MultimeterService::Capacitance</references>
+        <references refid="classMultimeterService_1a51f66d0b81dace3115c5c68bc931eaeaaf73d2c55dc3628b7071e45104874c485">MultimeterService::Continuity</references>
+        <references refid="classAbstractCommand_1aa2dadc72289ff2b0a02c1fb435f8a4dcab20daea8bfacec3891fcf5b7be4adca0">AbstractCommand::Csv</references>
+        <references refid="classMultimeterService_1a51f66d0b81dace3115c5c68bc931eaeaaf2a03b2c98a6620d4bf33af69572898e">MultimeterService::DcCurrent</references>
+        <references refid="classMultimeterService_1a51f66d0b81dace3115c5c68bc931eaeaa1a18453c20867d5a990479b3716cbbc5">MultimeterService::DcVoltage</references>
+        <references refid="classDeviceCommand_1a2bbf2dc9bb0ba85a2bf29263746c7b57" compoundref="devicecommand_8h" startline="26" endline="26">DeviceCommand::device</references>
+        <references refid="classMultimeterService_1a51f66d0b81dace3115c5c68bc931eaeaa0f31a45b6daa6a5478050c36732a2549">MultimeterService::Diode</references>
+        <references refid="classDeviceCommand_1ae619166395b5651f1316fd5336d9fa2c" compoundref="devicecommand_8cpp" startline="42" endline="49">DeviceCommand::disconnect</references>
+        <references refid="classMultimeterService_1a43c735e6c80c4ada9bc8640d06fbe286a902b0d55fddef6f8d651fe1035b7d4bd">MultimeterService::Error</references>
+        <references refid="classAbstractCommand_1af85c842568f8a3a893e336e449ef7813" compoundref="abstractcommand_8cpp" startline="105" endline="113">AbstractCommand::escapeCsvField</references>
+        <references refid="classMultimeterService_1a51f66d0b81dace3115c5c68bc931eaeaa8d6937c3adb213bd7b7beb575aa17687">MultimeterService::ExternalTemperature</references>
+        <references refid="classAbstractCommand_1a881d85cd96b6fcc0652b916c366dda7b" compoundref="abstractcommand_8h" startline="43" endline="43">AbstractCommand::format</references>
+        <references refid="qstring_1fromLatin1-1">QString::fromLatin1</references>
+        <references refid="qstring_1fromUtf8-1">QString::fromUtf8</references>
+        <references refid="classMultimeterService_1a51f66d0b81dace3115c5c68bc931eaeaae599161956d626eda4cb0a5ffb85271c">MultimeterService::Idle</references>
+        <references refid="qstring_1isNull">QString::isNull</references>
+        <references refid="classAbstractCommand_1aa2dadc72289ff2b0a02c1fb435f8a4dcaeed8d85b888a6c015834240885ee6333">AbstractCommand::Json</references>
+        <references refid="structMultimeterService_1_1Reading_1a431d32df3541b91edf0c713af9c2cf00" compoundref="multimeterservice_8h" startline="81">MultimeterService::Reading::mode</references>
+        <references refid="structMultimeterService_1_1Reading_1af139db432d92fb885d426e3b30a4a482" compoundref="multimeterservice_8h" startline="82">MultimeterService::Reading::range</references>
+        <references refid="classMultimeterService_1a51f66d0b81dace3115c5c68bc931eaeaa9db444f7a3b8ba8f817647de53b7a6fe">MultimeterService::Resistance</references>
+        <references refid="classMeterCommand_1adf371ab0a3848960f9177d80853863b1" compoundref="metercommand_8h" startline="35" endline="35">samplesToGo</references>
+        <references refid="classMeterCommand_1afbd91fbc89c6d6d8891dcbeb1fcc3280" compoundref="metercommand_8h" startline="32" endline="32">service</references>
+        <references refid="classMeterCommand_1a4dd5d50f974af64685b5e318010d4d43" compoundref="metercommand_8h" startline="36" endline="36">showCsvHeader</references>
+        <references refid="structMultimeterService_1_1Reading_1a05031630f11f9e6810176211dfabaf18" compoundref="multimeterservice_8h" startline="79">MultimeterService::Reading::status</references>
+        <references refid="classMultimeterService_1a51f66d0b81dace3115c5c68bc931eaeaaee7a8e262285ed49ea1b4e4ae11525bd">MultimeterService::Temperature</references>
+        <references refid="classAbstractCommand_1aa2dadc72289ff2b0a02c1fb435f8a4dca9dffbf69ffba8bc38bc4e01abf4b1675">AbstractCommand::Text</references>
+        <references refid="qjsondocument_1toJson">QJsonDocument::toJson</references>
+        <references refid="qbytearray_1toStdString">QByteArray::toStdString</references>
+        <references refid="classMultimeterService_1a58a03dbc0ae216dc60f27d975af92cf8" compoundref="multimeterservice_8cpp" startline="35" endline="51">MultimeterService::toString</references>
+        <references refid="qobject_1tr">QObject::tr</references>
+        <references refid="structMultimeterService_1_1Reading_1a5b6599355c8ae7e67d57da122256521a" compoundref="multimeterservice_8h" startline="80">MultimeterService::Reading::value</references>
+        <referencedby refid="classMeterCommand_1a994e13d73c26eac303fa34b14082c9a4" compoundref="metercommand_8cpp" startline="193" endline="199">settingsWritten</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>The <ref refid="classMeterCommand" kindref="compound">MeterCommand</ref> class implements the <computeroutput>meter</computeroutput> CLI command. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>AbstractCommand</label>
+        <link refid="classAbstractCommand"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>DeviceCommand</label>
+        <link refid="classDeviceCommand"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>MeterCommand</label>
+        <link refid="classMeterCommand"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>QObject</label>
+        <link refid="qobject" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>AbstractCommand</label>
+        <link refid="classAbstractCommand"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>deviceToScanFor</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>discoveryAgent</edgelabel>
+        </childnode>
+      </node>
+      <node id="13">
+        <label>AbstractPokitService</label>
+        <link refid="classAbstractPokitService"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>d_ptr</edgelabel>
+        </childnode>
+      </node>
+      <node id="14">
+        <label>AbstractPokitServicePrivate</label>
+        <link refid="classAbstractPokitServicePrivate"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>controller</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>service</edgelabel>
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>serviceUuid</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>q_ptr</edgelabel>
+        </childnode>
+      </node>
+      <node id="12">
+        <label>CalibrationService</label>
+        <link refid="classCalibrationService"/>
+        <childnode refid="13" relation="public-inheritance">
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>serviceUuid</edgelabel>
+        </childnode>
+      </node>
+      <node id="18">
+        <label>DataLoggerService</label>
+        <link refid="classDataLoggerService"/>
+        <childnode refid="13" relation="public-inheritance">
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>serviceUuid</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>DeviceCommand</label>
+        <link refid="classDeviceCommand"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>device</edgelabel>
+        </childnode>
+      </node>
+      <node id="19">
+        <label>DeviceInfoService</label>
+        <link refid="classDeviceInfoService"/>
+        <childnode refid="13" relation="public-inheritance">
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>serviceUuid</edgelabel>
+        </childnode>
+      </node>
+      <node id="20">
+        <label>DsoService</label>
+        <link refid="classDsoService"/>
+        <childnode refid="13" relation="public-inheritance">
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>serviceUuid</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>MeterCommand</label>
+        <link refid="classMeterCommand"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="21" relation="usage">
+          <edgelabel>service</edgelabel>
+        </childnode>
+        <childnode refid="24" relation="usage">
+          <edgelabel>settings</edgelabel>
+        </childnode>
+      </node>
+      <node id="21">
+        <label>MultimeterService</label>
+        <link refid="classMultimeterService"/>
+        <childnode refid="13" relation="public-inheritance">
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>serviceUuid</edgelabel>
+        </childnode>
+      </node>
+      <node id="24">
+        <label>MultimeterService::Settings</label>
+        <link refid="structMultimeterService_1_1Settings"/>
+      </node>
+      <node id="9">
+        <label>PokitDevice</label>
+        <link refid="classPokitDevice"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>d_ptr</edgelabel>
+        </childnode>
+      </node>
+      <node id="10">
+        <label>PokitDevicePrivate</label>
+        <link refid="classPokitDevicePrivate"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>controller</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>calibration</edgelabel>
+        </childnode>
+        <childnode refid="18" relation="usage">
+          <edgelabel>dataLogger</edgelabel>
+        </childnode>
+        <childnode refid="19" relation="usage">
+          <edgelabel>deviceInfo</edgelabel>
+        </childnode>
+        <childnode refid="20" relation="usage">
+          <edgelabel>dso</edgelabel>
+        </childnode>
+        <childnode refid="21" relation="usage">
+          <edgelabel>multimeter</edgelabel>
+        </childnode>
+        <childnode refid="22" relation="usage">
+          <edgelabel>status</edgelabel>
+        </childnode>
+        <childnode refid="23" relation="usage">
+          <edgelabel>calibrationMutex</edgelabel>
+          <edgelabel>dataLoggerMutex</edgelabel>
+          <edgelabel>deviceInfoMutex</edgelabel>
+          <edgelabel>dsoMutex</edgelabel>
+          <edgelabel>multimeterMutex</edgelabel>
+          <edgelabel>statusMutex</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>q_ptr</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>PokitDiscoveryAgent</label>
+        <link refid="classPokitDiscoveryAgent"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>d_ptr</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>PokitDiscoveryAgentPrivate</label>
+        <link refid="classPokitDiscoveryAgentPrivate"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>q_ptr</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>QBluetoothDeviceDiscoveryAgent</label>
+        <link refid="qbluetoothdevicediscoveryagent" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>QBluetoothUuid</label>
+        <link refid="qbluetoothuuid" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags"/>
+        <childnode refid="17" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>QLowEnergyController</label>
+        <link refid="qlowenergycontroller" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>QLowEnergyService</label>
+        <link refid="qlowenergyservice" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>QMutex</label>
+        <link refid="qmutex" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags"/>
+      </node>
+      <node id="4">
+        <label>QObject</label>
+        <link refid="qobject" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags"/>
+      </node>
+      <node id="5">
+        <label>QString</label>
+        <link refid="qstring" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags"/>
+      </node>
+      <node id="17">
+        <label>QUuid</label>
+        <link refid="quuid" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags"/>
+      </node>
+      <node id="22">
+        <label>StatusService</label>
+        <link refid="classStatusService"/>
+        <childnode refid="13" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/paul/src/dokit/src/cli/metercommand.h" line="10" column="1" bodyfile="/home/paul/src/dokit/src/cli/metercommand.h" bodystart="11" bodyend="43"/>
+    <listofallmembers>
+      <member refid="classAbstractCommand_1a0d6fde269511e87aa6f178c1733073ae" prot="public" virt="non-virtual"><scope>MeterCommand</scope><name>AbstractCommand</name></member>
+      <member refid="qobject_1objectName-prop" prot="public" virt="non-virtual"><scope>MeterCommand</scope><name>bindableObjectName</name></member>
+      <member refid="qobject_1blockSignals" prot="public" virt="non-virtual"><scope>MeterCommand</scope><name>blockSignals</name></member>
+      <member refid="qobject_1childEvent" prot="protected" virt="virtual"><scope>MeterCommand</scope><name>childEvent</name></member>
+      <member refid="qobject_1children" prot="public" virt="non-virtual"><scope>MeterCommand</scope><name>children</name></member>
+      <member refid="qobject_1connect-4" prot="public" virt="non-virtual"><scope>MeterCommand</scope><name>connect</name></member>
+      <member refid="qobject_1connect-5" prot="public" virt="non-virtual"><scope>MeterCommand</scope><name>connect</name></member>
+      <member refid="qobject_1connect-3" prot="public" virt="non-virtual"><scope>MeterCommand</scope><name>connect</name></member>
+      <member refid="qobject_1connect-1" prot="public" virt="non-virtual"><scope>MeterCommand</scope><name>connect</name></member>
+      <member refid="qobject_1connect" prot="public" virt="non-virtual"><scope>MeterCommand</scope><name>connect</name></member>
+      <member refid="qobject_1connect-2" prot="public" virt="non-virtual"><scope>MeterCommand</scope><name>connect</name></member>
+      <member refid="qobject_1connectNotify" prot="protected" virt="virtual"><scope>MeterCommand</scope><name>connectNotify</name></member>
+      <member refid="classDeviceCommand_1a28461c0fe3f2b3398c74298b3df70b93" prot="protected" virt="virtual"><scope>MeterCommand</scope><name>controllerError</name></member>
+      <member refid="qobject_1customEvent" prot="protected" virt="virtual"><scope>MeterCommand</scope><name>customEvent</name></member>
+      <member refid="qobject_1deleteLater" prot="public" virt="non-virtual"><scope>MeterCommand</scope><name>deleteLater</name></member>
+      <member refid="qobject_1destroyed" prot="public" virt="non-virtual"><scope>MeterCommand</scope><name>destroyed</name></member>
+      <member refid="classDeviceCommand_1a2bbf2dc9bb0ba85a2bf29263746c7b57" prot="protected" virt="non-virtual"><scope>MeterCommand</scope><name>device</name></member>
+      <member refid="classDeviceCommand_1a55c623ad1d1e0ad1273604f3f24b1dfc" prot="public" virt="non-virtual"><scope>MeterCommand</scope><name>DeviceCommand</name></member>
+      <member refid="classDeviceCommand_1a525ae4429c2b9a325bad62678409fb5b" prot="protected" virt="virtual"><scope>MeterCommand</scope><name>deviceDisconnected</name></member>
+      <member refid="classDeviceCommand_1acde5a41e646a23c5485b67cf99e402a7" prot="private" virt="non-virtual"><scope>MeterCommand</scope><name>deviceDiscovered</name></member>
+      <member refid="classDeviceCommand_1a7dfdaae89c5f6540af9a5bfbcfd66e5a" prot="private" virt="non-virtual"><scope>MeterCommand</scope><name>deviceDiscoveryFinished</name></member>
+      <member refid="classAbstractCommand_1a07d979bc039d61f5c720cb1521b31208" prot="protected" virt="non-virtual"><scope>MeterCommand</scope><name>deviceToScanFor</name></member>
+      <member refid="classDeviceCommand_1ae619166395b5651f1316fd5336d9fa2c" prot="protected" virt="non-virtual"><scope>MeterCommand</scope><name>disconnect</name></member>
+      <member refid="qobject_1disconnect-4" prot="public" virt="non-virtual" ambiguityscope="AbstractCommand::"><scope>MeterCommand</scope><name>disconnect</name></member>
+      <member refid="qobject_1disconnect-5" prot="public" virt="non-virtual" ambiguityscope="AbstractCommand::"><scope>MeterCommand</scope><name>disconnect</name></member>
+      <member refid="qobject_1disconnect-1" prot="public" virt="non-virtual" ambiguityscope="AbstractCommand::"><scope>MeterCommand</scope><name>disconnect</name></member>
+      <member refid="qobject_1disconnect" prot="public" virt="non-virtual" ambiguityscope="AbstractCommand::"><scope>MeterCommand</scope><name>disconnect</name></member>
+      <member refid="qobject_1disconnect-3" prot="public" virt="non-virtual" ambiguityscope="AbstractCommand::"><scope>MeterCommand</scope><name>disconnect</name></member>
+      <member refid="qobject_1disconnect-2" prot="public" virt="non-virtual" ambiguityscope="AbstractCommand::"><scope>MeterCommand</scope><name>disconnect</name></member>
+      <member refid="qobject_1disconnectNotify" prot="protected" virt="virtual"><scope>MeterCommand</scope><name>disconnectNotify</name></member>
+      <member refid="classAbstractCommand_1a86878df43cd818f4a7f333a97dabac3c" prot="protected" virt="non-virtual"><scope>MeterCommand</scope><name>discoveryAgent</name></member>
+      <member refid="qobject_1dumpObjectInfo" prot="public" virt="non-virtual"><scope>MeterCommand</scope><name>dumpObjectInfo</name></member>
+      <member refid="qobject_1dumpObjectTree" prot="public" virt="non-virtual"><scope>MeterCommand</scope><name>dumpObjectTree</name></member>
+      <member refid="qobject_1dynamicPropertyNames" prot="public" virt="non-virtual"><scope>MeterCommand</scope><name>dynamicPropertyNames</name></member>
+      <member refid="classAbstractCommand_1af85c842568f8a3a893e336e449ef7813" prot="public" virt="non-virtual"><scope>MeterCommand</scope><name>escapeCsvField</name></member>
+      <member refid="qobject_1event" prot="public" virt="virtual"><scope>MeterCommand</scope><name>event</name></member>
+      <member refid="qobject_1eventFilter" prot="public" virt="virtual"><scope>MeterCommand</scope><name>eventFilter</name></member>
+      <member refid="classDeviceCommand_1a792b3771a02cb7f4aff6335045b705bf" prot="protected" virt="non-virtual"><scope>MeterCommand</scope><name>exitCodeOnDisconnect</name></member>
+      <member refid="qobject_1findChild" prot="public" virt="non-virtual"><scope>MeterCommand</scope><name>findChild</name></member>
+      <member refid="qobject_1findChildren-1" prot="public" virt="non-virtual"><scope>MeterCommand</scope><name>findChildren</name></member>
+      <member refid="qobject_1findChildren-2" prot="public" virt="non-virtual"><scope>MeterCommand</scope><name>findChildren</name></member>
+      <member refid="qobject_1findChildren" prot="public" virt="non-virtual"><scope>MeterCommand</scope><name>findChildren</name></member>
+      <member refid="classAbstractCommand_1a881d85cd96b6fcc0652b916c366dda7b" prot="protected" virt="non-virtual"><scope>MeterCommand</scope><name>format</name></member>
+      <member refid="classMeterCommand_1abdc90c9cd480caa8ad04281c49a1e9a4" prot="protected" virt="virtual"><scope>MeterCommand</scope><name>getService</name></member>
+      <member refid="qobject_1inherits" prot="public" virt="non-virtual"><scope>MeterCommand</scope><name>inherits</name></member>
+      <member refid="qobject_1installEventFilter" prot="public" virt="non-virtual"><scope>MeterCommand</scope><name>installEventFilter</name></member>
+      <member refid="qobject_1isQuickItemType" prot="public" virt="non-virtual"><scope>MeterCommand</scope><name>isQuickItemType</name></member>
+      <member refid="qobject_1isSignalConnected" prot="protected" virt="non-virtual"><scope>MeterCommand</scope><name>isSignalConnected</name></member>
+      <member refid="qobject_1isWidgetType" prot="public" virt="non-virtual"><scope>MeterCommand</scope><name>isWidgetType</name></member>
+      <member refid="qobject_1isWindowType" prot="public" virt="non-virtual"><scope>MeterCommand</scope><name>isWindowType</name></member>
+      <member refid="qobject_1killTimer" prot="public" virt="non-virtual"><scope>MeterCommand</scope><name>killTimer</name></member>
+      <member refid="qobject_1metaObject" prot="public" virt="virtual"><scope>MeterCommand</scope><name>metaObject</name></member>
+      <member refid="classMeterCommand_1acfbe584039f6165df390014ae202a543" prot="public" virt="non-virtual"><scope>MeterCommand</scope><name>MeterCommand</name></member>
+      <member refid="classDeviceCommand_1a8aa676de2533a687cb369e70bb352a4c" prot="protected" virt="non-virtual"><scope>MeterCommand</scope><name>minCapacitanceRange</name></member>
+      <member refid="classDeviceCommand_1ab5ae0318d3ec2bd4449e710eafafa680" prot="protected" virt="non-virtual"><scope>MeterCommand</scope><name>minCurrentRange</name></member>
+      <member refid="classDeviceCommand_1abb9d2e113e372130dca9360791e7ce5b" prot="protected" virt="non-virtual"><scope>MeterCommand</scope><name>minRange</name></member>
+      <member refid="classMeterCommand_1aed2c787884f9f1c0359010036e637829" prot="private" virt="non-virtual"><scope>MeterCommand</scope><name>minRangeFunc</name></member>
+      <member refid="classDeviceCommand_1a1ce3ce094a91ec500e9d50e620b0cc6d" prot="protected" virt="non-virtual"><scope>MeterCommand</scope><name>minResistanceRange</name></member>
+      <member refid="classDeviceCommand_1a92f7e61dff3d28eda856ea4f95e828fe" prot="protected" virt="non-virtual"><scope>MeterCommand</scope><name>minVoltageRange</name></member>
+      <member refid="qobject_1moveToThread" prot="public" virt="non-virtual"><scope>MeterCommand</scope><name>moveToThread</name></member>
+      <member refid="qobject_1objectName-prop" prot="public" virt="non-virtual"><scope>MeterCommand</scope><name>objectName</name></member>
+      <member refid="qobject_1objectName-prop" prot="public" virt="non-virtual"><scope>MeterCommand</scope><name>objectName</name></member>
+      <member refid="qobject_1objectNameChanged" prot="public" virt="non-virtual"><scope>MeterCommand</scope><name>objectNameChanged</name></member>
+      <member refid="classAbstractCommand_1aa2dadc72289ff2b0a02c1fb435f8a4dc" prot="public" virt="non-virtual"><scope>MeterCommand</scope><name>OutputFormat</name></member>
+      <member refid="classMeterCommand_1a551a1c3d1c6f10384b5ccf264a640eff" prot="private" virt="non-virtual"><scope>MeterCommand</scope><name>outputReading</name></member>
+      <member refid="qobject_1parent" prot="public" virt="non-virtual"><scope>MeterCommand</scope><name>parent</name></member>
+      <member refid="classAbstractCommand_1a29b2a2446ef034195183a2ae9d4bb911" prot="public" virt="non-virtual"><scope>MeterCommand</scope><name>parseNumber</name></member>
+      <member refid="classMeterCommand_1a7252ac9a772bc45e374da30bbc23ed85" prot="public" virt="non-virtual"><scope>MeterCommand</scope><name>processOptions</name></member>
+      <member refid="qobject_1property" prot="public" virt="non-virtual"><scope>MeterCommand</scope><name>property</name></member>
+      <member refid="qobject_1Q_CLASSINFO" prot="public" virt="non-virtual"><scope>MeterCommand</scope><name>Q_CLASSINFO</name></member>
+      <member refid="qobject_1Q_EMIT" prot="public" virt="non-virtual"><scope>MeterCommand</scope><name>Q_EMIT</name></member>
+      <member refid="qobject_1Q_ENUM" prot="public" virt="non-virtual"><scope>MeterCommand</scope><name>Q_ENUM</name></member>
+      <member refid="qobject_1Q_ENUM_NS" prot="public" virt="non-virtual"><scope>MeterCommand</scope><name>Q_ENUM_NS</name></member>
+      <member refid="qobject-obsolete_1Q_ENUMS" prot="public" virt="non-virtual"><scope>MeterCommand</scope><name>Q_ENUMS</name></member>
+      <member refid="qobject_1Q_FLAG" prot="public" virt="non-virtual"><scope>MeterCommand</scope><name>Q_FLAG</name></member>
+      <member refid="qobject_1Q_FLAG_NS" prot="public" virt="non-virtual"><scope>MeterCommand</scope><name>Q_FLAG_NS</name></member>
+      <member refid="qobject-obsolete_1Q_FLAGS" prot="public" virt="non-virtual"><scope>MeterCommand</scope><name>Q_FLAGS</name></member>
+      <member refid="qobject_1Q_GADGET" prot="public" virt="non-virtual"><scope>MeterCommand</scope><name>Q_GADGET</name></member>
+      <member refid="qobject_1Q_GADGET_EXPORT" prot="public" virt="non-virtual"><scope>MeterCommand</scope><name>Q_GADGET_EXPORT</name></member>
+      <member refid="qobject_1Q_INTERFACES" prot="public" virt="non-virtual"><scope>MeterCommand</scope><name>Q_INTERFACES</name></member>
+      <member refid="qobject_1Q_INVOKABLE" prot="public" virt="non-virtual"><scope>MeterCommand</scope><name>Q_INVOKABLE</name></member>
+      <member refid="classAbstractCommand_1ac8bafb6db670b3c127ab59130584274f" prot="protected" virt="non-virtual"><scope>MeterCommand</scope><name>Q_LOGGING_CATEGORY</name></member>
+      <member refid="qobject_1Q_MOC_INCLUDE" prot="public" virt="non-virtual"><scope>MeterCommand</scope><name>Q_MOC_INCLUDE</name></member>
+      <member refid="qobject_1Q_NAMESPACE" prot="public" virt="non-virtual"><scope>MeterCommand</scope><name>Q_NAMESPACE</name></member>
+      <member refid="qobject_1Q_NAMESPACE_EXPORT" prot="public" virt="non-virtual"><scope>MeterCommand</scope><name>Q_NAMESPACE_EXPORT</name></member>
+      <member refid="qobject_1Q_OBJECT" prot="public" virt="non-virtual"><scope>MeterCommand</scope><name>Q_OBJECT</name></member>
+      <member refid="qobject_1Q_PROPERTY" prot="public" virt="non-virtual"><scope>MeterCommand</scope><name>Q_PROPERTY</name></member>
+      <member refid="qobject_1Q_REVISION" prot="public" virt="non-virtual"><scope>MeterCommand</scope><name>Q_REVISION</name></member>
+      <member refid="qobject_1Q_SET_OBJECT_NAME" prot="public" virt="non-virtual"><scope>MeterCommand</scope><name>Q_SET_OBJECT_NAME</name></member>
+      <member refid="qobject_1Q_SIGNAL" prot="public" virt="non-virtual"><scope>MeterCommand</scope><name>Q_SIGNAL</name></member>
+      <member refid="qobject_1Q_SIGNALS" prot="public" virt="non-virtual"><scope>MeterCommand</scope><name>Q_SIGNALS</name></member>
+      <member refid="qobject_1Q_SLOT" prot="public" virt="non-virtual"><scope>MeterCommand</scope><name>Q_SLOT</name></member>
+      <member refid="qobject_1Q_SLOTS" prot="public" virt="non-virtual"><scope>MeterCommand</scope><name>Q_SLOTS</name></member>
+      <member refid="qobject_1QObject" prot="public" virt="non-virtual"><scope>MeterCommand</scope><name>QObject</name></member>
+      <member refid="qobject_1qobject_cast" prot="public" virt="non-virtual"><scope>MeterCommand</scope><name>qobject_cast</name></member>
+      <member refid="qobject_1qobject_cast-1" prot="public" virt="non-virtual"><scope>MeterCommand</scope><name>qobject_cast</name></member>
+      <member refid="qobject_1QObjectList-typedef" prot="public" virt="non-virtual"><scope>MeterCommand</scope><name>QObjectList</name></member>
+      <member refid="qobject_1QT_NO_NARROWING_CONVERSIONS_IN_CONNECT" prot="public" virt="non-virtual"><scope>MeterCommand</scope><name>QT_NO_NARROWING_CONVERSIONS_IN_CONNECT</name></member>
+      <member refid="classMeterCommand_1a0d86f89709a97b7ab1d8667970ef2ece" prot="private" virt="non-virtual"><scope>MeterCommand</scope><name>rangeOptionValue</name></member>
+      <member refid="qobject_1receivers" prot="protected" virt="non-virtual"><scope>MeterCommand</scope><name>receivers</name></member>
+      <member refid="qobject_1removeEventFilter" prot="public" virt="non-virtual"><scope>MeterCommand</scope><name>removeEventFilter</name></member>
+      <member refid="classMeterCommand_1a088f95f4012a564ccf690d42f480aeb7" prot="public" virt="virtual"><scope>MeterCommand</scope><name>requiredOptions</name></member>
+      <member refid="classMeterCommand_1adf371ab0a3848960f9177d80853863b1" prot="private" virt="non-virtual"><scope>MeterCommand</scope><name>samplesToGo</name></member>
+      <member refid="qobject_1sender" prot="protected" virt="non-virtual"><scope>MeterCommand</scope><name>sender</name></member>
+      <member refid="qobject_1senderSignalIndex" prot="protected" virt="non-virtual"><scope>MeterCommand</scope><name>senderSignalIndex</name></member>
+      <member refid="classMeterCommand_1afbd91fbc89c6d6d8891dcbeb1fcc3280" prot="private" virt="non-virtual"><scope>MeterCommand</scope><name>service</name></member>
+      <member refid="classMeterCommand_1aca51a018963bc384a24154cdb112a49b" prot="protected" virt="non-virtual"><scope>MeterCommand</scope><name>serviceDetailsDiscovered</name></member>
+      <member refid="classDeviceCommand_1a96208c78728c0068e7a78f961b913751" prot="protected" virt="virtual"><scope>MeterCommand</scope><name>serviceError</name></member>
+      <member refid="qobject_1setObjectName-1" prot="public" virt="non-virtual"><scope>MeterCommand</scope><name>setObjectName</name></member>
+      <member refid="qobject_1setObjectName" prot="public" virt="non-virtual"><scope>MeterCommand</scope><name>setObjectName</name></member>
+      <member refid="qobject_1setParent" prot="public" virt="non-virtual"><scope>MeterCommand</scope><name>setParent</name></member>
+      <member refid="qobject_1setProperty-1" prot="public" virt="non-virtual"><scope>MeterCommand</scope><name>setProperty</name></member>
+      <member refid="qobject_1setProperty" prot="public" virt="non-virtual"><scope>MeterCommand</scope><name>setProperty</name></member>
+      <member refid="classMeterCommand_1a0db4ce8811d8fb3a297aa5cc5b83beb6" prot="private" virt="non-virtual"><scope>MeterCommand</scope><name>settings</name></member>
+      <member refid="classMeterCommand_1a994e13d73c26eac303fa34b14082c9a4" prot="private" virt="non-virtual"><scope>MeterCommand</scope><name>settingsWritten</name></member>
+      <member refid="classMeterCommand_1a4dd5d50f974af64685b5e318010d4d43" prot="private" virt="non-virtual"><scope>MeterCommand</scope><name>showCsvHeader</name></member>
+      <member refid="qobject_1signalsBlocked" prot="public" virt="non-virtual"><scope>MeterCommand</scope><name>signalsBlocked</name></member>
+      <member refid="classDeviceCommand_1a6cf548752b7ae1084a712b9003b92d0c" prot="public" virt="non-virtual"><scope>MeterCommand</scope><name>start</name></member>
+      <member refid="qobject_1startTimer" prot="public" virt="non-virtual"><scope>MeterCommand</scope><name>startTimer</name></member>
+      <member refid="qobject_1startTimer-1" prot="public" virt="non-virtual"><scope>MeterCommand</scope><name>startTimer</name></member>
+      <member refid="classMeterCommand_1aa32c65d3e27b6193af5a3bf802d7cccf" prot="public" virt="virtual"><scope>MeterCommand</scope><name>supportedOptions</name></member>
+      <member refid="classMeterCommand_1a0eb51cde4277b5092969c10f7bdf5de8" prot="private" virt="non-virtual"><scope>MeterCommand</scope><name>TestMeterCommand</name></member>
+      <member refid="qobject_1thread" prot="public" virt="non-virtual"><scope>MeterCommand</scope><name>thread</name></member>
+      <member refid="qobject_1timerEvent" prot="protected" virt="virtual"><scope>MeterCommand</scope><name>timerEvent</name></member>
+      <member refid="qobject_1tr" prot="public" virt="non-virtual"><scope>MeterCommand</scope><name>tr</name></member>
+      <member refid="qobject_1dtor.QObject" prot="public" virt="virtual"><scope>MeterCommand</scope><name>~QObject</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

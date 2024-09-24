@@ -1,0 +1,611 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.0" xml:lang="en-US">
+  <compounddef id="namespacePokitPro" kind="namespace" language="C++">
+    <compoundname>PokitPro</compoundname>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="namespacePokitPro_1adc67ba31bcd650dd7535939e42cec17a" prot="public" static="no" strong="yes">
+        <type>quint8</type>
+        <name>CapacitanceRange</name>
+        <qualifiedname>PokitPro::CapacitanceRange</qualifiedname>
+        <enumvalue id="namespacePokitPro_1adc67ba31bcd650dd7535939e42cec17aa68fced4643296b01a486c942c4d2aadc" prot="public">
+          <name>_100nF</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>Up 100nF. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacePokitPro_1adc67ba31bcd650dd7535939e42cec17aa3a62ceb0bde1ea913ffcd1aceec836fa" prot="public">
+          <name>_10uF</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+<para>Up 10μF. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacePokitPro_1adc67ba31bcd650dd7535939e42cec17aa362fd0550b52dd45127f1048786f2d76" prot="public">
+          <name>_1mF</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+<para>Up 1mF. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacePokitPro_1adc67ba31bcd650dd7535939e42cec17aa5c8523b038abf04d86fcc5358cd893cf" prot="public">
+          <name>AutoRange</name>
+          <initializer>= 255</initializer>
+          <briefdescription>
+<para>Auto-range. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Values supported by the Pokit Pro&apos;s <computeroutput>Range</computeroutput> attributes in <computeroutput>Capacitance</computeroutput> mode. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="pokit_1_pokit000005"><xreftitle>Pokit Bluetooth API errata</xreftitle><xrefdescription><para>These Pokit Pro enumeration values are as-yet undocumented by Pokit Innovations. <ulink url="https://github.com/pcolby">@pcolby</ulink> reverse-engineered them as part of the <ulink url="https://github.com/pcolby/dokit">dokit</ulink> project.</para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/pokitpro.h" line="22" column="5" bodyfile="/home/paul/src/dokit/include/qtpokit/pokitpro.h" bodystart="22" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespacePokitPro_1ac51059eb5a52fa362da01d4e2f44de21" prot="public" static="no" strong="yes">
+        <type>quint8</type>
+        <name>CurrentRange</name>
+        <qualifiedname>PokitPro::CurrentRange</qualifiedname>
+        <enumvalue id="namespacePokitPro_1ac51059eb5a52fa362da01d4e2f44de21a2fe16a3d6f34821435e0a2c34dbc293c" prot="public">
+          <name>_500uA</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>Up to 5µA. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacePokitPro_1ac51059eb5a52fa362da01d4e2f44de21ab456211adccac69002c6b4ff43386669" prot="public">
+          <name>_2mA</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+<para>Up to 2mA. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacePokitPro_1ac51059eb5a52fa362da01d4e2f44de21a828fc0744dbf6304160fefea4b5f9265" prot="public">
+          <name>_10mA</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+<para>Up to 10mA. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacePokitPro_1ac51059eb5a52fa362da01d4e2f44de21af728aa2bafbe9c6fb70f418c454ea30c" prot="public">
+          <name>_125mA</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+<para>Up to 125mA. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacePokitPro_1ac51059eb5a52fa362da01d4e2f44de21ab728c73ce23f33f3a68ab57720a5ea77" prot="public">
+          <name>_300mA</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+<para>Up to 300mA. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacePokitPro_1ac51059eb5a52fa362da01d4e2f44de21ae6b57d9fc160a83b9724e98c18fd2382" prot="public">
+          <name>_3A</name>
+          <initializer>= 5</initializer>
+          <briefdescription>
+<para>Up to 3A. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacePokitPro_1ac51059eb5a52fa362da01d4e2f44de21a1f19d2da4ce053031b834f59343db831" prot="public">
+          <name>_10A</name>
+          <initializer>= 6</initializer>
+          <briefdescription>
+<para>Up to 10A. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacePokitPro_1ac51059eb5a52fa362da01d4e2f44de21a5c8523b038abf04d86fcc5358cd893cf" prot="public">
+          <name>AutoRange</name>
+          <initializer>= 255</initializer>
+          <briefdescription>
+<para>Auto-range. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Values supported by the Pokit Pro&apos;s <computeroutput>Range</computeroutput> attributes in <computeroutput>*Current</computeroutput> modes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="pokit_1_pokit000006"><xreftitle>Pokit Bluetooth API errata</xreftitle><xrefdescription><para>These Pokit Pro enumeration values are as-yet undocumented by Pokit Innovations. <ulink url="https://github.com/pcolby">@pcolby</ulink> reverse-engineered them as part of the <ulink url="https://github.com/pcolby/dokit">dokit</ulink> project.</para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/pokitpro.h" line="33" column="5" bodyfile="/home/paul/src/dokit/include/qtpokit/pokitpro.h" bodystart="33" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespacePokitPro_1ac6fedf42d1268613f25da2b7c82832a7" prot="public" static="no" strong="yes">
+        <type>quint8</type>
+        <name>ResistanceRange</name>
+        <qualifiedname>PokitPro::ResistanceRange</qualifiedname>
+        <enumvalue id="namespacePokitPro_1ac6fedf42d1268613f25da2b7c82832a7aa614778d33ecf3d4b5a4696a57abe2ca" prot="public">
+          <name>_30</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>Up to 30Ω. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacePokitPro_1ac6fedf42d1268613f25da2b7c82832a7ad3c06aadde4ff40fc9f14337872fd640" prot="public">
+          <name>_75</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+<para>Up to 75Ω. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacePokitPro_1ac6fedf42d1268613f25da2b7c82832a7a2479cf6f0d78265fcd778452855fd664" prot="public">
+          <name>_400</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+<para>Up to 400Ω. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacePokitPro_1ac6fedf42d1268613f25da2b7c82832a7a89d7c5ebe7e809991d0642ad50d6d134" prot="public">
+          <name>_5K</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+<para>Up to 5KΩ. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacePokitPro_1ac6fedf42d1268613f25da2b7c82832a7a2d0af3ed810f0eb7edb0c6b8a19c1fc3" prot="public">
+          <name>_10K</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+<para>Up to 10KΩ. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacePokitPro_1ac6fedf42d1268613f25da2b7c82832a7a0bb9238c41bb7c4fe61fe1fd0e8c98e0" prot="public">
+          <name>_15K</name>
+          <initializer>= 5</initializer>
+          <briefdescription>
+<para>Up to 15KΩ. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacePokitPro_1ac6fedf42d1268613f25da2b7c82832a7a2768cb3d353c2d0e5ccc21d33ba8116e" prot="public">
+          <name>_40K</name>
+          <initializer>= 6</initializer>
+          <briefdescription>
+<para>Up to 40KΩ. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacePokitPro_1ac6fedf42d1268613f25da2b7c82832a7a54b59f2d52a00ae74f1034e770e2859f" prot="public">
+          <name>_500K</name>
+          <initializer>= 7</initializer>
+          <briefdescription>
+<para>Up to 500KΩ. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacePokitPro_1ac6fedf42d1268613f25da2b7c82832a7a7a47a3b1c5e88cdee8448f083fc6a028" prot="public">
+          <name>_700K</name>
+          <initializer>= 8</initializer>
+          <briefdescription>
+<para>Up to 700KΩ. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacePokitPro_1ac6fedf42d1268613f25da2b7c82832a7a46a66baf429b6426d9ce1b133845d2a8" prot="public">
+          <name>_1M</name>
+          <initializer>= 9</initializer>
+          <briefdescription>
+<para>Up to 1MΩ. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacePokitPro_1ac6fedf42d1268613f25da2b7c82832a7a625cf61f7dcdb6ff09fdc0163cc16915" prot="public">
+          <name>_3M</name>
+          <initializer>= 10</initializer>
+          <briefdescription>
+<para>Up to 3MΩ. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacePokitPro_1ac6fedf42d1268613f25da2b7c82832a7a5c8523b038abf04d86fcc5358cd893cf" prot="public">
+          <name>AutoRange</name>
+          <initializer>= 255</initializer>
+          <briefdescription>
+<para>Auto-range. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Values supported by the Pokit Pro&apos;s <computeroutput>Range</computeroutput> attributes in <computeroutput>Resistance</computeroutput> mode. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="pokit_1_pokit000007"><xreftitle>Pokit Bluetooth API errata</xreftitle><xrefdescription><para>These Pokit Pro enumeration values are as-yet undocumented by Pokit Innovations. <ulink url="https://github.com/pcolby">@pcolby</ulink> reverse-engineered them as part of the <ulink url="https://github.com/pcolby/dokit">dokit</ulink> project.</para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/pokitpro.h" line="47" column="5" bodyfile="/home/paul/src/dokit/include/qtpokit/pokitpro.h" bodystart="47" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespacePokitPro_1a68ddba45fec73a3391f241f2da38e78a" prot="public" static="no" strong="yes">
+        <type>quint8</type>
+        <name>VoltageRange</name>
+        <qualifiedname>PokitPro::VoltageRange</qualifiedname>
+        <enumvalue id="namespacePokitPro_1a68ddba45fec73a3391f241f2da38e78aa7e5e700a5795197157fb14f5a107ffca" prot="public">
+          <name>_250mV</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>Up to 250mV. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacePokitPro_1a68ddba45fec73a3391f241f2da38e78aa848192caa654906dae3d719e1368e0c2" prot="public">
+          <name>_2V</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+<para>Up to 2V. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacePokitPro_1a68ddba45fec73a3391f241f2da38e78aa26bf873b8c4713f975a976cd921c2708" prot="public">
+          <name>_10V</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+<para>Up to 10V. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacePokitPro_1a68ddba45fec73a3391f241f2da38e78aa8e75785537c9af6adcd60131c680cdab" prot="public">
+          <name>_30V</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+<para>Up to 30V. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacePokitPro_1a68ddba45fec73a3391f241f2da38e78aa4c8cbd97f19afa487f3b6c98342fd09d" prot="public">
+          <name>_60V</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+<para>Up to 60V. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacePokitPro_1a68ddba45fec73a3391f241f2da38e78aad8441d8666d9293c6b6143e6d355706d" prot="public">
+          <name>_125V</name>
+          <initializer>= 5</initializer>
+          <briefdescription>
+<para>Up to 125V. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacePokitPro_1a68ddba45fec73a3391f241f2da38e78aac2750c095195ff5584b07fc9f3c69869" prot="public">
+          <name>_400V</name>
+          <initializer>= 6</initializer>
+          <briefdescription>
+<para>Up to 400V. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacePokitPro_1a68ddba45fec73a3391f241f2da38e78aad442483cf36c44fc3e34a968be25cbb0" prot="public">
+          <name>_600V</name>
+          <initializer>= 7</initializer>
+          <briefdescription>
+<para>Up to 600V. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacePokitPro_1a68ddba45fec73a3391f241f2da38e78aa5c8523b038abf04d86fcc5358cd893cf" prot="public">
+          <name>AutoRange</name>
+          <initializer>= 255</initializer>
+          <briefdescription>
+<para>Auto-range. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Values supported by the Pokit Pro&apos;s <computeroutput>Range</computeroutput> attributes in <computeroutput>*Voltage</computeroutput> modes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="pokit_1_pokit000008"><xreftitle>Pokit Bluetooth API errata</xreftitle><xrefdescription><para>These Pokit Pro enumeration values are as-yet undocumented by Pokit Innovations. <ulink url="https://github.com/pcolby">@pcolby</ulink> reverse-engineered them as part of the <ulink url="https://github.com/pcolby/dokit">dokit</ulink> project.</para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/pokitpro.h" line="65" column="5" bodyfile="/home/paul/src/dokit/include/qtpokit/pokitpro.h" bodystart="65" bodyend="75"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="namespacePokitPro_1a38ce307b844e4d67d94402b31461f7f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="qtpokit__global_8h_1aeba02234b4a21ddf98bb8127b8d41759" kindref="member">QTPOKIT_EXPORT</ref> <ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref></type>
+        <definition>QString PokitPro::toString</definition>
+        <argsstring>(const CapacitanceRange &amp;range)</argsstring>
+        <name>toString</name>
+        <qualifiedname>PokitPro::toString</qualifiedname>
+        <param>
+          <type>const <ref refid="namespacePokitPro_1adc67ba31bcd650dd7535939e42cec17a" kindref="member">CapacitanceRange</ref> &amp;</type>
+          <declname>range</declname>
+        </param>
+        <briefdescription>
+<para>Returns <emphasis>range</emphasis> as a user-friendly string. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/lib/pokitpro.cpp" line="25" column="9" bodyfile="/home/paul/src/dokit/src/lib/pokitpro.cpp" bodystart="25" bodyend="34" declfile="/home/paul/src/dokit/include/qtpokit/pokitpro.h" declline="28" declcolumn="28"/>
+        <references refid="namespacePokitPro_1adc67ba31bcd650dd7535939e42cec17aa68fced4643296b01a486c942c4d2aadc">_100nF</references>
+        <references refid="namespacePokitPro_1adc67ba31bcd650dd7535939e42cec17aa3a62ceb0bde1ea913ffcd1aceec836fa">_10uF</references>
+        <references refid="namespacePokitPro_1adc67ba31bcd650dd7535939e42cec17aa362fd0550b52dd45127f1048786f2d76">_1mF</references>
+        <references refid="namespacePokitPro_1adc67ba31bcd650dd7535939e42cec17aa5c8523b038abf04d86fcc5358cd893cf">AutoRange</references>
+        <references refid="qcoreapplication_1translate">QCoreApplication::translate</references>
+        <referencedby refid="namespaceCapacitanceRange_1a14203d0e3a636e5142dccade0c4b5c91" compoundref="pokitproducts_8cpp" startline="134" endline="147">CapacitanceRange::toString</referencedby>
+        <referencedby refid="namespaceCurrentRange_1a683a82fdd02371d1d6acb4bbbd91e844" compoundref="pokitproducts_8cpp" startline="183" endline="194">CurrentRange::toString</referencedby>
+        <referencedby refid="namespaceResistanceRange_1a6f542c3fe27b9c58c03edc92ceab40ef" compoundref="pokitproducts_8cpp" startline="227" endline="238">ResistanceRange::toString</referencedby>
+        <referencedby refid="namespaceVoltageRange_1a843ef4bfc3538988c695fa643adcd4d0" compoundref="pokitproducts_8cpp" startline="271" endline="282">VoltageRange::toString</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacePokitPro_1a377d083e0bc3e7972ba1476914dda1b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="qtpokit__global_8h_1aeba02234b4a21ddf98bb8127b8d41759" kindref="member">QTPOKIT_EXPORT</ref> <ref refid="qvariant" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QVariant</ref></type>
+        <definition>QVariant PokitPro::maxValue</definition>
+        <argsstring>(const CapacitanceRange &amp;range)</argsstring>
+        <name>maxValue</name>
+        <qualifiedname>PokitPro::maxValue</qualifiedname>
+        <param>
+          <type>const <ref refid="namespacePokitPro_1adc67ba31bcd650dd7535939e42cec17a" kindref="member">CapacitanceRange</ref> &amp;</type>
+          <declname>range</declname>
+        </param>
+        <briefdescription>
+<para>Returns the maximum value for <emphasis>range</emphasis> in (integer) nanofarads, or the string &quot;Auto&quot;. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If <emphasis>range</emphasis> is not a known valid value, then an null <ref refid="qvariant" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QVariant</ref> is returned. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/lib/pokitpro.cpp" line="40" column="10" bodyfile="/home/paul/src/dokit/src/lib/pokitpro.cpp" bodystart="40" bodyend="49" declfile="/home/paul/src/dokit/include/qtpokit/pokitpro.h" declline="29" declcolumn="29"/>
+        <references refid="namespacePokitPro_1adc67ba31bcd650dd7535939e42cec17aa68fced4643296b01a486c942c4d2aadc">_100nF</references>
+        <references refid="namespacePokitPro_1adc67ba31bcd650dd7535939e42cec17aa3a62ceb0bde1ea913ffcd1aceec836fa">_10uF</references>
+        <references refid="namespacePokitPro_1adc67ba31bcd650dd7535939e42cec17aa362fd0550b52dd45127f1048786f2d76">_1mF</references>
+        <references refid="namespacePokitPro_1adc67ba31bcd650dd7535939e42cec17aa5c8523b038abf04d86fcc5358cd893cf">AutoRange</references>
+        <references refid="qcoreapplication_1translate">QCoreApplication::translate</references>
+        <referencedby refid="namespaceCapacitanceRange_1ae13fb76d6fab44972334e2b007be4a06" compoundref="pokitproducts_8cpp" startline="157" endline="170">CapacitanceRange::maxValue</referencedby>
+        <referencedby refid="namespaceCurrentRange_1a340ae103126865c13997adcde5976bd1" compoundref="pokitproducts_8cpp" startline="203" endline="214">CurrentRange::maxValue</referencedby>
+        <referencedby refid="namespaceResistanceRange_1a30fba7f1c73e7a8b9b3c45aed8b5b3e1" compoundref="pokitproducts_8cpp" startline="247" endline="258">ResistanceRange::maxValue</referencedby>
+        <referencedby refid="namespaceVoltageRange_1adc3a8126ae8dcec8010fc8b037fab885" compoundref="pokitproducts_8cpp" startline="291" endline="302">VoltageRange::maxValue</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacePokitPro_1afd55d7ea5f6a6781dd8416cd8a8c74a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="qtpokit__global_8h_1aeba02234b4a21ddf98bb8127b8d41759" kindref="member">QTPOKIT_EXPORT</ref> <ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref></type>
+        <definition>QString PokitPro::toString</definition>
+        <argsstring>(const CurrentRange &amp;range)</argsstring>
+        <name>toString</name>
+        <qualifiedname>PokitPro::toString</qualifiedname>
+        <param>
+          <type>const <ref refid="namespacePokitPro_1ac51059eb5a52fa362da01d4e2f44de21" kindref="member">CurrentRange</ref> &amp;</type>
+          <declname>range</declname>
+        </param>
+        <briefdescription>
+<para>Returns <emphasis>range</emphasis> as a user-friendly string. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/lib/pokitpro.cpp" line="61" column="9" bodyfile="/home/paul/src/dokit/src/lib/pokitpro.cpp" bodystart="61" bodyend="74" declfile="/home/paul/src/dokit/include/qtpokit/pokitpro.h" declline="43" declcolumn="28"/>
+        <references refid="namespacePokitPro_1ac51059eb5a52fa362da01d4e2f44de21a1f19d2da4ce053031b834f59343db831">_10A</references>
+        <references refid="namespacePokitPro_1ac51059eb5a52fa362da01d4e2f44de21a828fc0744dbf6304160fefea4b5f9265">_10mA</references>
+        <references refid="namespacePokitPro_1ac51059eb5a52fa362da01d4e2f44de21af728aa2bafbe9c6fb70f418c454ea30c">_125mA</references>
+        <references refid="namespacePokitPro_1ac51059eb5a52fa362da01d4e2f44de21ab456211adccac69002c6b4ff43386669">_2mA</references>
+        <references refid="namespacePokitPro_1ac51059eb5a52fa362da01d4e2f44de21ab728c73ce23f33f3a68ab57720a5ea77">_300mA</references>
+        <references refid="namespacePokitPro_1ac51059eb5a52fa362da01d4e2f44de21ae6b57d9fc160a83b9724e98c18fd2382">_3A</references>
+        <references refid="namespacePokitPro_1ac51059eb5a52fa362da01d4e2f44de21a2fe16a3d6f34821435e0a2c34dbc293c">_500uA</references>
+        <references refid="namespacePokitPro_1ac51059eb5a52fa362da01d4e2f44de21a5c8523b038abf04d86fcc5358cd893cf">AutoRange</references>
+        <references refid="qcoreapplication_1translate">QCoreApplication::translate</references>
+      </memberdef>
+      <memberdef kind="function" id="namespacePokitPro_1a4e9682c1346c8ee45c1cfc810cb7e4b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="qtpokit__global_8h_1aeba02234b4a21ddf98bb8127b8d41759" kindref="member">QTPOKIT_EXPORT</ref> <ref refid="qvariant" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QVariant</ref></type>
+        <definition>QVariant PokitPro::maxValue</definition>
+        <argsstring>(const CurrentRange &amp;range)</argsstring>
+        <name>maxValue</name>
+        <qualifiedname>PokitPro::maxValue</qualifiedname>
+        <param>
+          <type>const <ref refid="namespacePokitPro_1ac51059eb5a52fa362da01d4e2f44de21" kindref="member">CurrentRange</ref> &amp;</type>
+          <declname>range</declname>
+        </param>
+        <briefdescription>
+<para>Returns the maximum value for <emphasis>range</emphasis> in (integer) microamps, or the string &quot;Auto&quot;. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If <emphasis>range</emphasis> is not a known valid value, then an null <ref refid="qvariant" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QVariant</ref> is returned. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/lib/pokitpro.cpp" line="80" column="10" bodyfile="/home/paul/src/dokit/src/lib/pokitpro.cpp" bodystart="80" bodyend="93" declfile="/home/paul/src/dokit/include/qtpokit/pokitpro.h" declline="44" declcolumn="29"/>
+        <references refid="namespacePokitPro_1ac51059eb5a52fa362da01d4e2f44de21a1f19d2da4ce053031b834f59343db831">_10A</references>
+        <references refid="namespacePokitPro_1ac51059eb5a52fa362da01d4e2f44de21a828fc0744dbf6304160fefea4b5f9265">_10mA</references>
+        <references refid="namespacePokitPro_1ac51059eb5a52fa362da01d4e2f44de21af728aa2bafbe9c6fb70f418c454ea30c">_125mA</references>
+        <references refid="namespacePokitPro_1ac51059eb5a52fa362da01d4e2f44de21ab456211adccac69002c6b4ff43386669">_2mA</references>
+        <references refid="namespacePokitPro_1ac51059eb5a52fa362da01d4e2f44de21ab728c73ce23f33f3a68ab57720a5ea77">_300mA</references>
+        <references refid="namespacePokitPro_1ac51059eb5a52fa362da01d4e2f44de21ae6b57d9fc160a83b9724e98c18fd2382">_3A</references>
+        <references refid="namespacePokitPro_1ac51059eb5a52fa362da01d4e2f44de21a2fe16a3d6f34821435e0a2c34dbc293c">_500uA</references>
+        <references refid="namespacePokitPro_1ac51059eb5a52fa362da01d4e2f44de21a5c8523b038abf04d86fcc5358cd893cf">AutoRange</references>
+        <references refid="qcoreapplication_1translate">QCoreApplication::translate</references>
+      </memberdef>
+      <memberdef kind="function" id="namespacePokitPro_1ae6547e17145d57e3b18aa134e090d400" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="qtpokit__global_8h_1aeba02234b4a21ddf98bb8127b8d41759" kindref="member">QTPOKIT_EXPORT</ref> <ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref></type>
+        <definition>QString PokitPro::toString</definition>
+        <argsstring>(const ResistanceRange &amp;range)</argsstring>
+        <name>toString</name>
+        <qualifiedname>PokitPro::toString</qualifiedname>
+        <param>
+          <type>const <ref refid="namespacePokitPro_1ac6fedf42d1268613f25da2b7c82832a7" kindref="member">ResistanceRange</ref> &amp;</type>
+          <declname>range</declname>
+        </param>
+        <briefdescription>
+<para>Returns <emphasis>range</emphasis> as a user-friendly string. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/lib/pokitpro.cpp" line="105" column="9" bodyfile="/home/paul/src/dokit/src/lib/pokitpro.cpp" bodystart="105" bodyend="122" declfile="/home/paul/src/dokit/include/qtpokit/pokitpro.h" declline="61" declcolumn="28"/>
+        <references refid="namespacePokitPro_1ac6fedf42d1268613f25da2b7c82832a7a2d0af3ed810f0eb7edb0c6b8a19c1fc3">_10K</references>
+        <references refid="namespacePokitPro_1ac6fedf42d1268613f25da2b7c82832a7a0bb9238c41bb7c4fe61fe1fd0e8c98e0">_15K</references>
+        <references refid="namespacePokitPro_1ac6fedf42d1268613f25da2b7c82832a7a46a66baf429b6426d9ce1b133845d2a8">_1M</references>
+        <references refid="namespacePokitPro_1ac6fedf42d1268613f25da2b7c82832a7aa614778d33ecf3d4b5a4696a57abe2ca">_30</references>
+        <references refid="namespacePokitPro_1ac6fedf42d1268613f25da2b7c82832a7a625cf61f7dcdb6ff09fdc0163cc16915">_3M</references>
+        <references refid="namespacePokitPro_1ac6fedf42d1268613f25da2b7c82832a7a2479cf6f0d78265fcd778452855fd664">_400</references>
+        <references refid="namespacePokitPro_1ac6fedf42d1268613f25da2b7c82832a7a2768cb3d353c2d0e5ccc21d33ba8116e">_40K</references>
+        <references refid="namespacePokitPro_1ac6fedf42d1268613f25da2b7c82832a7a54b59f2d52a00ae74f1034e770e2859f">_500K</references>
+        <references refid="namespacePokitPro_1ac6fedf42d1268613f25da2b7c82832a7a89d7c5ebe7e809991d0642ad50d6d134">_5K</references>
+        <references refid="namespacePokitPro_1ac6fedf42d1268613f25da2b7c82832a7a7a47a3b1c5e88cdee8448f083fc6a028">_700K</references>
+        <references refid="namespacePokitPro_1ac6fedf42d1268613f25da2b7c82832a7ad3c06aadde4ff40fc9f14337872fd640">_75</references>
+        <references refid="namespacePokitPro_1ac6fedf42d1268613f25da2b7c82832a7a5c8523b038abf04d86fcc5358cd893cf">AutoRange</references>
+        <references refid="qcoreapplication_1translate">QCoreApplication::translate</references>
+      </memberdef>
+      <memberdef kind="function" id="namespacePokitPro_1a78ce6ea577673c1a17e0ee773ebd7ebe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="qtpokit__global_8h_1aeba02234b4a21ddf98bb8127b8d41759" kindref="member">QTPOKIT_EXPORT</ref> <ref refid="qvariant" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QVariant</ref></type>
+        <definition>QVariant PokitPro::maxValue</definition>
+        <argsstring>(const ResistanceRange &amp;range)</argsstring>
+        <name>maxValue</name>
+        <qualifiedname>PokitPro::maxValue</qualifiedname>
+        <param>
+          <type>const <ref refid="namespacePokitPro_1ac6fedf42d1268613f25da2b7c82832a7" kindref="member">ResistanceRange</ref> &amp;</type>
+          <declname>range</declname>
+        </param>
+        <briefdescription>
+<para>Returns the maximum value for <emphasis>range</emphasis> in (integer) ohms, or the string &quot;Auto&quot;. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If <emphasis>range</emphasis> is not a known valid value, then an null <ref refid="qvariant" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QVariant</ref> is returned. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/lib/pokitpro.cpp" line="128" column="10" bodyfile="/home/paul/src/dokit/src/lib/pokitpro.cpp" bodystart="128" bodyend="145" declfile="/home/paul/src/dokit/include/qtpokit/pokitpro.h" declline="62" declcolumn="29"/>
+        <references refid="namespacePokitPro_1ac6fedf42d1268613f25da2b7c82832a7a2d0af3ed810f0eb7edb0c6b8a19c1fc3">_10K</references>
+        <references refid="namespacePokitPro_1ac6fedf42d1268613f25da2b7c82832a7a0bb9238c41bb7c4fe61fe1fd0e8c98e0">_15K</references>
+        <references refid="namespacePokitPro_1ac6fedf42d1268613f25da2b7c82832a7a46a66baf429b6426d9ce1b133845d2a8">_1M</references>
+        <references refid="namespacePokitPro_1ac6fedf42d1268613f25da2b7c82832a7aa614778d33ecf3d4b5a4696a57abe2ca">_30</references>
+        <references refid="namespacePokitPro_1ac6fedf42d1268613f25da2b7c82832a7a625cf61f7dcdb6ff09fdc0163cc16915">_3M</references>
+        <references refid="namespacePokitPro_1ac6fedf42d1268613f25da2b7c82832a7a2479cf6f0d78265fcd778452855fd664">_400</references>
+        <references refid="namespacePokitPro_1ac6fedf42d1268613f25da2b7c82832a7a2768cb3d353c2d0e5ccc21d33ba8116e">_40K</references>
+        <references refid="namespacePokitPro_1ac6fedf42d1268613f25da2b7c82832a7a54b59f2d52a00ae74f1034e770e2859f">_500K</references>
+        <references refid="namespacePokitPro_1ac6fedf42d1268613f25da2b7c82832a7a89d7c5ebe7e809991d0642ad50d6d134">_5K</references>
+        <references refid="namespacePokitPro_1ac6fedf42d1268613f25da2b7c82832a7a7a47a3b1c5e88cdee8448f083fc6a028">_700K</references>
+        <references refid="namespacePokitPro_1ac6fedf42d1268613f25da2b7c82832a7ad3c06aadde4ff40fc9f14337872fd640">_75</references>
+        <references refid="namespacePokitPro_1ac6fedf42d1268613f25da2b7c82832a7a5c8523b038abf04d86fcc5358cd893cf">AutoRange</references>
+        <references refid="qcoreapplication_1translate">QCoreApplication::translate</references>
+      </memberdef>
+      <memberdef kind="function" id="namespacePokitPro_1aa054120cc07d4e25439a8b183abcd4ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="qtpokit__global_8h_1aeba02234b4a21ddf98bb8127b8d41759" kindref="member">QTPOKIT_EXPORT</ref> <ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref></type>
+        <definition>QString PokitPro::toString</definition>
+        <argsstring>(const VoltageRange &amp;range)</argsstring>
+        <name>toString</name>
+        <qualifiedname>PokitPro::toString</qualifiedname>
+        <param>
+          <type>const <ref refid="namespacePokitPro_1a68ddba45fec73a3391f241f2da38e78a" kindref="member">VoltageRange</ref> &amp;</type>
+          <declname>range</declname>
+        </param>
+        <briefdescription>
+<para>Returns <emphasis>range</emphasis> as a user-friendly string. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/lib/pokitpro.cpp" line="157" column="9" bodyfile="/home/paul/src/dokit/src/lib/pokitpro.cpp" bodystart="157" bodyend="171" declfile="/home/paul/src/dokit/include/qtpokit/pokitpro.h" declline="76" declcolumn="28"/>
+        <references refid="namespacePokitPro_1a68ddba45fec73a3391f241f2da38e78aa26bf873b8c4713f975a976cd921c2708">_10V</references>
+        <references refid="namespacePokitPro_1a68ddba45fec73a3391f241f2da38e78aad8441d8666d9293c6b6143e6d355706d">_125V</references>
+        <references refid="namespacePokitPro_1a68ddba45fec73a3391f241f2da38e78aa7e5e700a5795197157fb14f5a107ffca">_250mV</references>
+        <references refid="namespacePokitPro_1a68ddba45fec73a3391f241f2da38e78aa848192caa654906dae3d719e1368e0c2">_2V</references>
+        <references refid="namespacePokitPro_1a68ddba45fec73a3391f241f2da38e78aa8e75785537c9af6adcd60131c680cdab">_30V</references>
+        <references refid="namespacePokitPro_1a68ddba45fec73a3391f241f2da38e78aac2750c095195ff5584b07fc9f3c69869">_400V</references>
+        <references refid="namespacePokitPro_1a68ddba45fec73a3391f241f2da38e78aad442483cf36c44fc3e34a968be25cbb0">_600V</references>
+        <references refid="namespacePokitPro_1a68ddba45fec73a3391f241f2da38e78aa4c8cbd97f19afa487f3b6c98342fd09d">_60V</references>
+        <references refid="namespacePokitPro_1a68ddba45fec73a3391f241f2da38e78aa5c8523b038abf04d86fcc5358cd893cf">AutoRange</references>
+        <references refid="qcoreapplication_1translate">QCoreApplication::translate</references>
+      </memberdef>
+      <memberdef kind="function" id="namespacePokitPro_1a96fabdab4ab96dc695135b61d2dff175" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="qtpokit__global_8h_1aeba02234b4a21ddf98bb8127b8d41759" kindref="member">QTPOKIT_EXPORT</ref> <ref refid="qvariant" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QVariant</ref></type>
+        <definition>QVariant PokitPro::maxValue</definition>
+        <argsstring>(const VoltageRange &amp;range)</argsstring>
+        <name>maxValue</name>
+        <qualifiedname>PokitPro::maxValue</qualifiedname>
+        <param>
+          <type>const <ref refid="namespacePokitPro_1a68ddba45fec73a3391f241f2da38e78a" kindref="member">VoltageRange</ref> &amp;</type>
+          <declname>range</declname>
+        </param>
+        <briefdescription>
+<para>Returns the maximum value for <emphasis>range</emphasis> in (integer) millivolts, or the string &quot;Auto&quot;. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If <emphasis>range</emphasis> is not a known valid value, then an null <ref refid="qvariant" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QVariant</ref> is returned. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/lib/pokitpro.cpp" line="177" column="10" bodyfile="/home/paul/src/dokit/src/lib/pokitpro.cpp" bodystart="177" bodyend="191" declfile="/home/paul/src/dokit/include/qtpokit/pokitpro.h" declline="77" declcolumn="29"/>
+        <references refid="namespacePokitPro_1a68ddba45fec73a3391f241f2da38e78aa26bf873b8c4713f975a976cd921c2708">_10V</references>
+        <references refid="namespacePokitPro_1a68ddba45fec73a3391f241f2da38e78aad8441d8666d9293c6b6143e6d355706d">_125V</references>
+        <references refid="namespacePokitPro_1a68ddba45fec73a3391f241f2da38e78aa7e5e700a5795197157fb14f5a107ffca">_250mV</references>
+        <references refid="namespacePokitPro_1a68ddba45fec73a3391f241f2da38e78aa848192caa654906dae3d719e1368e0c2">_2V</references>
+        <references refid="namespacePokitPro_1a68ddba45fec73a3391f241f2da38e78aa8e75785537c9af6adcd60131c680cdab">_30V</references>
+        <references refid="namespacePokitPro_1a68ddba45fec73a3391f241f2da38e78aac2750c095195ff5584b07fc9f3c69869">_400V</references>
+        <references refid="namespacePokitPro_1a68ddba45fec73a3391f241f2da38e78aad442483cf36c44fc3e34a968be25cbb0">_600V</references>
+        <references refid="namespacePokitPro_1a68ddba45fec73a3391f241f2da38e78aa4c8cbd97f19afa487f3b6c98342fd09d">_60V</references>
+        <references refid="namespacePokitPro_1a68ddba45fec73a3391f241f2da38e78aa5c8523b038abf04d86fcc5358cd893cf">AutoRange</references>
+        <references refid="qcoreapplication_1translate">QCoreApplication::translate</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Encapsulates details specific to Pokit Pro devices. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/paul/src/dokit/include/qtpokit/pokitpro.h" line="19" column="1"/>
+  </compounddef>
+</doxygen>

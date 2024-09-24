@@ -1,0 +1,341 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.0" xml:lang="en-US">
+  <compounddef id="pokitmeter_8cpp" kind="file" language="C++">
+    <compoundname>pokitmeter.cpp</compoundname>
+    <includes refid="pokitmeter_8h" local="yes">qtpokit/pokitmeter.h</includes>
+    <includes local="no">QCoreApplication</includes>
+    <incdepgraph>
+      <node id="2">
+        <label>qtpokit/pokitmeter.h</label>
+        <link refid="pokitmeter_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>qtpokit_global.h</label>
+        <link refid="qtpokit__global_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>pokitmeter.cpp</label>
+        <link refid="pokitmeter_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>QCoreApplication</label>
+      </node>
+      <node id="5">
+        <label>QVariant</label>
+      </node>
+      <node id="4">
+        <label>QtGlobal</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespacePokitMeter">PokitMeter</innernamespace>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="namespacePokitMeter_1a3c3db7b94b6f44af24f4a23e87a3569e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="qtpokit__global_8h_1aeba02234b4a21ddf98bb8127b8d41759" kindref="member">QTPOKIT_EXPORT</ref> <ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref></type>
+        <definition>QString PokitMeter::toString</definition>
+        <argsstring>(const CurrentRange &amp;range)</argsstring>
+        <name>toString</name>
+        <qualifiedname>PokitMeter::toString</qualifiedname>
+        <param>
+          <type>const CurrentRange &amp;</type>
+          <declname>range</declname>
+        </param>
+        <briefdescription>
+<para>Returns <emphasis>range</emphasis> as a user-friendly string. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/lib/pokitmeter.cpp" line="16" column="9" bodyfile="/home/paul/src/dokit/src/lib/pokitmeter.cpp" bodystart="16" bodyend="27" declfile="/home/paul/src/dokit/include/qtpokit/pokitmeter.h" declline="30" declcolumn="28"/>
+        <references refid="namespacePokitMeter_1a22b467360c970e645f6a111b34d50a92a828fc0744dbf6304160fefea4b5f9265">PokitMeter::_10mA</references>
+        <references refid="namespacePokitMeter_1a22b467360c970e645f6a111b34d50a92ac599cead1dac0dc8c78c0d593dd9df76">PokitMeter::_150mA</references>
+        <references refid="namespacePokitMeter_1a22b467360c970e645f6a111b34d50a92a4e21b9650f4279211a4e7180c97b8480">PokitMeter::_2A</references>
+        <references refid="namespacePokitMeter_1a22b467360c970e645f6a111b34d50a92ab728c73ce23f33f3a68ab57720a5ea77">PokitMeter::_300mA</references>
+        <references refid="namespacePokitMeter_1a22b467360c970e645f6a111b34d50a92a6cf453011c81d39c2418e95c9cd9c9df">PokitMeter::_30mA</references>
+        <references refid="namespacePokitMeter_1a22b467360c970e645f6a111b34d50a92a5c8523b038abf04d86fcc5358cd893cf">PokitMeter::AutoRange</references>
+        <references refid="qcoreapplication_1translate">QCoreApplication::translate</references>
+        <referencedby refid="namespaceCurrentRange_1a683a82fdd02371d1d6acb4bbbd91e844" compoundref="pokitproducts_8cpp" startline="183" endline="194">CurrentRange::toString</referencedby>
+        <referencedby refid="namespaceResistanceRange_1a6f542c3fe27b9c58c03edc92ceab40ef" compoundref="pokitproducts_8cpp" startline="227" endline="238">ResistanceRange::toString</referencedby>
+        <referencedby refid="namespaceVoltageRange_1a843ef4bfc3538988c695fa643adcd4d0" compoundref="pokitproducts_8cpp" startline="271" endline="282">VoltageRange::toString</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacePokitMeter_1a86a4eb262b1a9fde417acdee8eea00b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="qtpokit__global_8h_1aeba02234b4a21ddf98bb8127b8d41759" kindref="member">QTPOKIT_EXPORT</ref> <ref refid="qvariant" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QVariant</ref></type>
+        <definition>QVariant PokitMeter::maxValue</definition>
+        <argsstring>(const CurrentRange &amp;range)</argsstring>
+        <name>maxValue</name>
+        <qualifiedname>PokitMeter::maxValue</qualifiedname>
+        <param>
+          <type>const CurrentRange &amp;</type>
+          <declname>range</declname>
+        </param>
+        <briefdescription>
+<para>Returns the maximum value for <emphasis>range</emphasis> in (integer) microamps, or the string &quot;Auto&quot;. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If <emphasis>range</emphasis> is not a known valid value, then an null <ref refid="qvariant" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QVariant</ref> is returned. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/lib/pokitmeter.cpp" line="33" column="10" bodyfile="/home/paul/src/dokit/src/lib/pokitmeter.cpp" bodystart="33" bodyend="44" declfile="/home/paul/src/dokit/include/qtpokit/pokitmeter.h" declline="31" declcolumn="29"/>
+        <references refid="namespacePokitMeter_1a22b467360c970e645f6a111b34d50a92a828fc0744dbf6304160fefea4b5f9265">PokitMeter::_10mA</references>
+        <references refid="namespacePokitMeter_1a22b467360c970e645f6a111b34d50a92ac599cead1dac0dc8c78c0d593dd9df76">PokitMeter::_150mA</references>
+        <references refid="namespacePokitMeter_1a22b467360c970e645f6a111b34d50a92a4e21b9650f4279211a4e7180c97b8480">PokitMeter::_2A</references>
+        <references refid="namespacePokitMeter_1a22b467360c970e645f6a111b34d50a92ab728c73ce23f33f3a68ab57720a5ea77">PokitMeter::_300mA</references>
+        <references refid="namespacePokitMeter_1a22b467360c970e645f6a111b34d50a92a6cf453011c81d39c2418e95c9cd9c9df">PokitMeter::_30mA</references>
+        <references refid="namespacePokitMeter_1a22b467360c970e645f6a111b34d50a92a5c8523b038abf04d86fcc5358cd893cf">PokitMeter::AutoRange</references>
+        <references refid="qcoreapplication_1translate">QCoreApplication::translate</references>
+        <referencedby refid="namespaceCurrentRange_1a340ae103126865c13997adcde5976bd1" compoundref="pokitproducts_8cpp" startline="203" endline="214">CurrentRange::maxValue</referencedby>
+        <referencedby refid="namespaceResistanceRange_1a30fba7f1c73e7a8b9b3c45aed8b5b3e1" compoundref="pokitproducts_8cpp" startline="247" endline="258">ResistanceRange::maxValue</referencedby>
+        <referencedby refid="namespaceVoltageRange_1adc3a8126ae8dcec8010fc8b037fab885" compoundref="pokitproducts_8cpp" startline="291" endline="302">VoltageRange::maxValue</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacePokitMeter_1adf4c2051d0ce0fe5a53fd682cf97f8a8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="qtpokit__global_8h_1aeba02234b4a21ddf98bb8127b8d41759" kindref="member">QTPOKIT_EXPORT</ref> <ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref></type>
+        <definition>QString PokitMeter::toString</definition>
+        <argsstring>(const ResistanceRange &amp;range)</argsstring>
+        <name>toString</name>
+        <qualifiedname>PokitMeter::toString</qualifiedname>
+        <param>
+          <type>const ResistanceRange &amp;</type>
+          <declname>range</declname>
+        </param>
+        <briefdescription>
+<para>Returns <emphasis>range</emphasis> as a user-friendly string. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/lib/pokitmeter.cpp" line="47" column="9" bodyfile="/home/paul/src/dokit/src/lib/pokitmeter.cpp" bodystart="47" bodyend="61" declfile="/home/paul/src/dokit/include/qtpokit/pokitmeter.h" declline="45" declcolumn="28"/>
+        <references refid="namespacePokitMeter_1aacf3005969c4417f7eaeeeaf83d5e047a83cfa36debb22f738bf971d42a0f58f7">PokitMeter::_100K</references>
+        <references refid="namespacePokitMeter_1aacf3005969c4417f7eaeeeaf83d5e047a2d0af3ed810f0eb7edb0c6b8a19c1fc3">PokitMeter::_10K</references>
+        <references refid="namespacePokitMeter_1aacf3005969c4417f7eaeeeaf83d5e047a900ae15226aa8c0d4fa29e2add4a08c4">PokitMeter::_160</references>
+        <references refid="namespacePokitMeter_1aacf3005969c4417f7eaeeeaf83d5e047aef1eecc4af34ef7f92e309dfd8b9721a">PokitMeter::_1K5</references>
+        <references refid="namespacePokitMeter_1aacf3005969c4417f7eaeeeaf83d5e047a46a66baf429b6426d9ce1b133845d2a8">PokitMeter::_1M</references>
+        <references refid="namespacePokitMeter_1aacf3005969c4417f7eaeeeaf83d5e047a44c86547d0ddac7860e857aba92608ea">PokitMeter::_330</references>
+        <references refid="namespacePokitMeter_1aacf3005969c4417f7eaeeeaf83d5e047a04fe3f2ffbf0343e5e67caca5fdd0069">PokitMeter::_470K</references>
+        <references refid="namespacePokitMeter_1aacf3005969c4417f7eaeeeaf83d5e047a1565efe7464a002ba8253cea19fb2c16">PokitMeter::_890</references>
+        <references refid="namespacePokitMeter_1aacf3005969c4417f7eaeeeaf83d5e047a5c8523b038abf04d86fcc5358cd893cf">PokitMeter::AutoRange</references>
+        <references refid="qcoreapplication_1translate">QCoreApplication::translate</references>
+      </memberdef>
+      <memberdef kind="function" id="namespacePokitMeter_1afdc7a546b276b7533a115aacecc82ff8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="qtpokit__global_8h_1aeba02234b4a21ddf98bb8127b8d41759" kindref="member">QTPOKIT_EXPORT</ref> <ref refid="qvariant" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QVariant</ref></type>
+        <definition>QVariant PokitMeter::maxValue</definition>
+        <argsstring>(const ResistanceRange &amp;range)</argsstring>
+        <name>maxValue</name>
+        <qualifiedname>PokitMeter::maxValue</qualifiedname>
+        <param>
+          <type>const ResistanceRange &amp;</type>
+          <declname>range</declname>
+        </param>
+        <briefdescription>
+<para>Returns the maximum value for <emphasis>range</emphasis> in (integer) ohms, or the string &quot;Auto&quot;. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If <emphasis>range</emphasis> is not a known valid value, then an null <ref refid="qvariant" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QVariant</ref> is returned. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/lib/pokitmeter.cpp" line="67" column="10" bodyfile="/home/paul/src/dokit/src/lib/pokitmeter.cpp" bodystart="67" bodyend="81" declfile="/home/paul/src/dokit/include/qtpokit/pokitmeter.h" declline="46" declcolumn="29"/>
+        <references refid="namespacePokitMeter_1aacf3005969c4417f7eaeeeaf83d5e047a83cfa36debb22f738bf971d42a0f58f7">PokitMeter::_100K</references>
+        <references refid="namespacePokitMeter_1aacf3005969c4417f7eaeeeaf83d5e047a2d0af3ed810f0eb7edb0c6b8a19c1fc3">PokitMeter::_10K</references>
+        <references refid="namespacePokitMeter_1aacf3005969c4417f7eaeeeaf83d5e047a900ae15226aa8c0d4fa29e2add4a08c4">PokitMeter::_160</references>
+        <references refid="namespacePokitMeter_1aacf3005969c4417f7eaeeeaf83d5e047aef1eecc4af34ef7f92e309dfd8b9721a">PokitMeter::_1K5</references>
+        <references refid="namespacePokitMeter_1aacf3005969c4417f7eaeeeaf83d5e047a46a66baf429b6426d9ce1b133845d2a8">PokitMeter::_1M</references>
+        <references refid="namespacePokitMeter_1aacf3005969c4417f7eaeeeaf83d5e047a44c86547d0ddac7860e857aba92608ea">PokitMeter::_330</references>
+        <references refid="namespacePokitMeter_1aacf3005969c4417f7eaeeeaf83d5e047a04fe3f2ffbf0343e5e67caca5fdd0069">PokitMeter::_470K</references>
+        <references refid="namespacePokitMeter_1aacf3005969c4417f7eaeeeaf83d5e047a1565efe7464a002ba8253cea19fb2c16">PokitMeter::_890</references>
+        <references refid="namespacePokitMeter_1aacf3005969c4417f7eaeeeaf83d5e047a5c8523b038abf04d86fcc5358cd893cf">PokitMeter::AutoRange</references>
+        <references refid="qcoreapplication_1translate">QCoreApplication::translate</references>
+      </memberdef>
+      <memberdef kind="function" id="namespacePokitMeter_1a3038daa52676f52266163577f07954e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="qtpokit__global_8h_1aeba02234b4a21ddf98bb8127b8d41759" kindref="member">QTPOKIT_EXPORT</ref> <ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref></type>
+        <definition>QString PokitMeter::toString</definition>
+        <argsstring>(const VoltageRange &amp;range)</argsstring>
+        <name>toString</name>
+        <qualifiedname>PokitMeter::toString</qualifiedname>
+        <param>
+          <type>const VoltageRange &amp;</type>
+          <declname>range</declname>
+        </param>
+        <briefdescription>
+<para>Returns <emphasis>range</emphasis> as a user-friendly string. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/lib/pokitmeter.cpp" line="84" column="9" bodyfile="/home/paul/src/dokit/src/lib/pokitmeter.cpp" bodystart="84" bodyend="96" declfile="/home/paul/src/dokit/include/qtpokit/pokitmeter.h" declline="58" declcolumn="28"/>
+        <references refid="namespacePokitMeter_1ab9abf7a50f13c9cfb1e1b4c49c16dfeea308ad507e84478351cd8b6f8b09c7490">PokitMeter::_12V</references>
+        <references refid="namespacePokitMeter_1ab9abf7a50f13c9cfb1e1b4c49c16dfeea848192caa654906dae3d719e1368e0c2">PokitMeter::_2V</references>
+        <references refid="namespacePokitMeter_1ab9abf7a50f13c9cfb1e1b4c49c16dfeea59e644560a28139459f614bc629df71b">PokitMeter::_300mV</references>
+        <references refid="namespacePokitMeter_1ab9abf7a50f13c9cfb1e1b4c49c16dfeea8e75785537c9af6adcd60131c680cdab">PokitMeter::_30V</references>
+        <references refid="namespacePokitMeter_1ab9abf7a50f13c9cfb1e1b4c49c16dfeea4c8cbd97f19afa487f3b6c98342fd09d">PokitMeter::_60V</references>
+        <references refid="namespacePokitMeter_1ab9abf7a50f13c9cfb1e1b4c49c16dfeeaa77ff71c31e6c3cde192b1baf7d8c663">PokitMeter::_6V</references>
+        <references refid="namespacePokitMeter_1ab9abf7a50f13c9cfb1e1b4c49c16dfeea5c8523b038abf04d86fcc5358cd893cf">PokitMeter::AutoRange</references>
+        <references refid="qcoreapplication_1translate">QCoreApplication::translate</references>
+      </memberdef>
+      <memberdef kind="function" id="namespacePokitMeter_1a91cdd2d4576e4278be157c6ca12249d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="qtpokit__global_8h_1aeba02234b4a21ddf98bb8127b8d41759" kindref="member">QTPOKIT_EXPORT</ref> <ref refid="qvariant" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QVariant</ref></type>
+        <definition>QVariant PokitMeter::maxValue</definition>
+        <argsstring>(const VoltageRange &amp;range)</argsstring>
+        <name>maxValue</name>
+        <qualifiedname>PokitMeter::maxValue</qualifiedname>
+        <param>
+          <type>const VoltageRange &amp;</type>
+          <declname>range</declname>
+        </param>
+        <briefdescription>
+<para>Returns the maximum value for <emphasis>range</emphasis> in (integer) millivolts, or the string &quot;Auto&quot;. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If <emphasis>range</emphasis> is not a known valid value, then an null <ref refid="qvariant" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QVariant</ref> is returned. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/lib/pokitmeter.cpp" line="102" column="10" bodyfile="/home/paul/src/dokit/src/lib/pokitmeter.cpp" bodystart="102" bodyend="114" declfile="/home/paul/src/dokit/include/qtpokit/pokitmeter.h" declline="59" declcolumn="29"/>
+        <references refid="namespacePokitMeter_1ab9abf7a50f13c9cfb1e1b4c49c16dfeea308ad507e84478351cd8b6f8b09c7490">PokitMeter::_12V</references>
+        <references refid="namespacePokitMeter_1ab9abf7a50f13c9cfb1e1b4c49c16dfeea848192caa654906dae3d719e1368e0c2">PokitMeter::_2V</references>
+        <references refid="namespacePokitMeter_1ab9abf7a50f13c9cfb1e1b4c49c16dfeea59e644560a28139459f614bc629df71b">PokitMeter::_300mV</references>
+        <references refid="namespacePokitMeter_1ab9abf7a50f13c9cfb1e1b4c49c16dfeea8e75785537c9af6adcd60131c680cdab">PokitMeter::_30V</references>
+        <references refid="namespacePokitMeter_1ab9abf7a50f13c9cfb1e1b4c49c16dfeea4c8cbd97f19afa487f3b6c98342fd09d">PokitMeter::_60V</references>
+        <references refid="namespacePokitMeter_1ab9abf7a50f13c9cfb1e1b4c49c16dfeeaa77ff71c31e6c3cde192b1baf7d8c663">PokitMeter::_6V</references>
+        <references refid="namespacePokitMeter_1ab9abf7a50f13c9cfb1e1b4c49c16dfeea5c8523b038abf04d86fcc5358cd893cf">PokitMeter::AutoRange</references>
+        <references refid="qcoreapplication_1translate">QCoreApplication::translate</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Declares the <ref refid="namespacePokitMeter" kindref="compound">PokitMeter</ref> namespace. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>SPDX-FileCopyrightText:<sp/>2022-2024<sp/>Paul<sp/>Colby<sp/>&lt;git@colby.id.au&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>SPDX-License-Identifier:<sp/>LGPL-3.0-or-later</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="4"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>\file</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>Declares<sp/>the<sp/>PokitMeter<sp/>namespace.</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="pokitmeter_8h" kindref="compound">qtpokit/pokitmeter.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QCoreApplication&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacePokitMeter" kindref="compound">PokitMeter</ref><sp/>{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="15"><highlight class="comment">///<sp/>Returns<sp/>\a<sp/>range<sp/>as<sp/>a<sp/>user-friendly<sp/>string.</highlight></codeline>
+<codeline lineno="16" refid="namespacePokitMeter_1a3c3db7b94b6f44af24f4a23e87a3569e" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref><sp/><ref refid="namespacePokitMeter_1a3c3db7b94b6f44af24f4a23e87a3569e" kindref="member">toString</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceCurrentRange" kindref="compound">CurrentRange</ref><sp/>&amp;range)</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(range)<sp/>{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="namespacePokitMeter_1a22b467360c970e645f6a111b34d50a92a828fc0744dbf6304160fefea4b5f9265" kindref="member">CurrentRange::_10mA</ref>:<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="qcoreapplication_1translate" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCoreApplication::translate</ref>(</highlight><highlight class="stringliteral">&quot;PokitMeter&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Up<sp/>to<sp/>10mA&quot;</highlight><highlight class="normal">,<sp/><sp/></highlight><highlight class="stringliteral">&quot;CurrentRange&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="namespacePokitMeter_1a22b467360c970e645f6a111b34d50a92a6cf453011c81d39c2418e95c9cd9c9df" kindref="member">CurrentRange::_30mA</ref>:<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="qcoreapplication_1translate" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCoreApplication::translate</ref>(</highlight><highlight class="stringliteral">&quot;PokitMeter&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Up<sp/>to<sp/>30mA&quot;</highlight><highlight class="normal">,<sp/><sp/></highlight><highlight class="stringliteral">&quot;CurrentRange&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="namespacePokitMeter_1a22b467360c970e645f6a111b34d50a92ac599cead1dac0dc8c78c0d593dd9df76" kindref="member">CurrentRange::_150mA</ref>:<sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="qcoreapplication_1translate" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCoreApplication::translate</ref>(</highlight><highlight class="stringliteral">&quot;PokitMeter&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Up<sp/>to<sp/>150mA&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;CurrentRange&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="namespacePokitMeter_1a22b467360c970e645f6a111b34d50a92ab728c73ce23f33f3a68ab57720a5ea77" kindref="member">CurrentRange::_300mA</ref>:<sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="qcoreapplication_1translate" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCoreApplication::translate</ref>(</highlight><highlight class="stringliteral">&quot;PokitMeter&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Up<sp/>to<sp/>300mA&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;CurrentRange&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="namespacePokitMeter_1a22b467360c970e645f6a111b34d50a92a4e21b9650f4279211a4e7180c97b8480" kindref="member">CurrentRange::_2A</ref>:<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="qcoreapplication_1translate" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCoreApplication::translate</ref>(</highlight><highlight class="stringliteral">&quot;PokitMeter&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Up<sp/>to<sp/>2A&quot;</highlight><highlight class="normal">,<sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;CurrentRange&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="namespacePokitMeter_1a22b467360c970e645f6a111b34d50a92a5c8523b038abf04d86fcc5358cd893cf" kindref="member">CurrentRange::AutoRange</ref>:<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="qcoreapplication_1translate" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCoreApplication::translate</ref>(</highlight><highlight class="stringliteral">&quot;PokitMeter&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Auto-range&quot;</highlight><highlight class="normal">,<sp/><sp/></highlight><highlight class="stringliteral">&quot;CurrentRange&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref>();</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="27"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="29"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="30"><highlight class="comment"><sp/>*<sp/><sp/>Returns<sp/>the<sp/>maximum<sp/>value<sp/>for<sp/>\a<sp/>range<sp/>in<sp/>(integer)<sp/>microamps,<sp/>or<sp/>the<sp/>string<sp/>&quot;Auto&quot;.</highlight></codeline>
+<codeline lineno="31"><highlight class="comment"><sp/>*<sp/><sp/>If<sp/>\a<sp/>range<sp/>is<sp/>not<sp/>a<sp/>known<sp/>valid<sp/>value,<sp/>then<sp/>an<sp/>null<sp/>QVariant<sp/>is<sp/>returned.</highlight></codeline>
+<codeline lineno="32"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="namespacePokitMeter_1a86a4eb262b1a9fde417acdee8eea00b7" refkind="member"><highlight class="normal"><ref refid="qvariant" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QVariant</ref><sp/><ref refid="namespacePokitMeter_1a86a4eb262b1a9fde417acdee8eea00b7" kindref="member">maxValue</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceCurrentRange" kindref="compound">CurrentRange</ref><sp/>&amp;range)</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(range)<sp/>{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="namespacePokitMeter_1a22b467360c970e645f6a111b34d50a92a828fc0744dbf6304160fefea4b5f9265" kindref="member">CurrentRange::_10mA</ref>:<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><sp/><sp/><sp/>10&apos;000;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="namespacePokitMeter_1a22b467360c970e645f6a111b34d50a92a6cf453011c81d39c2418e95c9cd9c9df" kindref="member">CurrentRange::_30mA</ref>:<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><sp/><sp/><sp/>30&apos;000;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="namespacePokitMeter_1a22b467360c970e645f6a111b34d50a92ac599cead1dac0dc8c78c0d593dd9df76" kindref="member">CurrentRange::_150mA</ref>:<sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><sp/><sp/>150&apos;000;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="namespacePokitMeter_1a22b467360c970e645f6a111b34d50a92ab728c73ce23f33f3a68ab57720a5ea77" kindref="member">CurrentRange::_300mA</ref>:<sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><sp/><sp/>300&apos;000;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="namespacePokitMeter_1a22b467360c970e645f6a111b34d50a92a4e21b9650f4279211a4e7180c97b8480" kindref="member">CurrentRange::_2A</ref>:<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>2&apos;000&apos;000;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="namespacePokitMeter_1a22b467360c970e645f6a111b34d50a92a5c8523b038abf04d86fcc5358cd893cf" kindref="member">CurrentRange::AutoRange</ref>:<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="qcoreapplication_1translate" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCoreApplication::translate</ref>(</highlight><highlight class="stringliteral">&quot;PokitMeter&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Auto&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;CurrentRange&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="qvariant" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QVariant</ref>();</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="44"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="46"><highlight class="comment">///<sp/>Returns<sp/>\a<sp/>range<sp/>as<sp/>a<sp/>user-friendly<sp/>string.</highlight></codeline>
+<codeline lineno="47" refid="namespacePokitMeter_1adf4c2051d0ce0fe5a53fd682cf97f8a8" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref><sp/><ref refid="namespacePokitMeter_1a3c3db7b94b6f44af24f4a23e87a3569e" kindref="member">toString</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceResistanceRange" kindref="compound">ResistanceRange</ref><sp/>&amp;range)</highlight></codeline>
+<codeline lineno="48"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(range)<sp/>{</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="namespacePokitMeter_1aacf3005969c4417f7eaeeeaf83d5e047a900ae15226aa8c0d4fa29e2add4a08c4" kindref="member">ResistanceRange::_160</ref>:<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="qcoreapplication_1translate" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCoreApplication::translate</ref>(</highlight><highlight class="stringliteral">&quot;PokitMeter&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Up<sp/>to<sp/>160Ω&quot;</highlight><highlight class="normal">,<sp/><sp/></highlight><highlight class="stringliteral">&quot;ResistanceRange&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="namespacePokitMeter_1aacf3005969c4417f7eaeeeaf83d5e047a44c86547d0ddac7860e857aba92608ea" kindref="member">ResistanceRange::_330</ref>:<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="qcoreapplication_1translate" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCoreApplication::translate</ref>(</highlight><highlight class="stringliteral">&quot;PokitMeter&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Up<sp/>to<sp/>330Ω&quot;</highlight><highlight class="normal">,<sp/><sp/></highlight><highlight class="stringliteral">&quot;ResistanceRange&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="namespacePokitMeter_1aacf3005969c4417f7eaeeeaf83d5e047a1565efe7464a002ba8253cea19fb2c16" kindref="member">ResistanceRange::_890</ref>:<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="qcoreapplication_1translate" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCoreApplication::translate</ref>(</highlight><highlight class="stringliteral">&quot;PokitMeter&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Up<sp/>to<sp/>890Ω&quot;</highlight><highlight class="normal">,<sp/><sp/></highlight><highlight class="stringliteral">&quot;ResistanceRange&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="namespacePokitMeter_1aacf3005969c4417f7eaeeeaf83d5e047aef1eecc4af34ef7f92e309dfd8b9721a" kindref="member">ResistanceRange::_1K5</ref>:<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="qcoreapplication_1translate" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCoreApplication::translate</ref>(</highlight><highlight class="stringliteral">&quot;PokitMeter&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Up<sp/>to<sp/>1.5KΩ&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;ResistanceRange&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="namespacePokitMeter_1aacf3005969c4417f7eaeeeaf83d5e047a2d0af3ed810f0eb7edb0c6b8a19c1fc3" kindref="member">ResistanceRange::_10K</ref>:<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="qcoreapplication_1translate" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCoreApplication::translate</ref>(</highlight><highlight class="stringliteral">&quot;PokitMeter&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Up<sp/>to<sp/>10KΩ&quot;</highlight><highlight class="normal">,<sp/><sp/></highlight><highlight class="stringliteral">&quot;ResistanceRange&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="namespacePokitMeter_1aacf3005969c4417f7eaeeeaf83d5e047a83cfa36debb22f738bf971d42a0f58f7" kindref="member">ResistanceRange::_100K</ref>:<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="qcoreapplication_1translate" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCoreApplication::translate</ref>(</highlight><highlight class="stringliteral">&quot;PokitMeter&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Up<sp/>to<sp/>100KΩ&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;ResistanceRange&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="namespacePokitMeter_1aacf3005969c4417f7eaeeeaf83d5e047a04fe3f2ffbf0343e5e67caca5fdd0069" kindref="member">ResistanceRange::_470K</ref>:<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="qcoreapplication_1translate" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCoreApplication::translate</ref>(</highlight><highlight class="stringliteral">&quot;PokitMeter&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Up<sp/>to<sp/>470KΩ&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;ResistanceRange&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="namespacePokitMeter_1aacf3005969c4417f7eaeeeaf83d5e047a46a66baf429b6426d9ce1b133845d2a8" kindref="member">ResistanceRange::_1M</ref>:<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="qcoreapplication_1translate" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCoreApplication::translate</ref>(</highlight><highlight class="stringliteral">&quot;PokitMeter&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Up<sp/>to<sp/>1MΩ&quot;</highlight><highlight class="normal">,<sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;ResistanceRange&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="namespacePokitMeter_1aacf3005969c4417f7eaeeeaf83d5e047a5c8523b038abf04d86fcc5358cd893cf" kindref="member">ResistanceRange::AutoRange</ref>:<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="qcoreapplication_1translate" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCoreApplication::translate</ref>(</highlight><highlight class="stringliteral">&quot;PokitMeter&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Auto-range&quot;</highlight><highlight class="normal">,<sp/><sp/></highlight><highlight class="stringliteral">&quot;ResistanceRange&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref>();</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="61"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="63"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="64"><highlight class="comment"><sp/>*<sp/><sp/>Returns<sp/>the<sp/>maximum<sp/>value<sp/>for<sp/>\a<sp/>range<sp/>in<sp/>(integer)<sp/>ohms,<sp/>or<sp/>the<sp/>string<sp/>&quot;Auto&quot;.</highlight></codeline>
+<codeline lineno="65"><highlight class="comment"><sp/>*<sp/><sp/>If<sp/>\a<sp/>range<sp/>is<sp/>not<sp/>a<sp/>known<sp/>valid<sp/>value,<sp/>then<sp/>an<sp/>null<sp/>QVariant<sp/>is<sp/>returned.</highlight></codeline>
+<codeline lineno="66"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67" refid="namespacePokitMeter_1afdc7a546b276b7533a115aacecc82ff8" refkind="member"><highlight class="normal"><ref refid="qvariant" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QVariant</ref><sp/><ref refid="namespacePokitMeter_1a86a4eb262b1a9fde417acdee8eea00b7" kindref="member">maxValue</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceResistanceRange" kindref="compound">ResistanceRange</ref><sp/>&amp;range)</highlight></codeline>
+<codeline lineno="68"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(range)<sp/>{</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="namespacePokitMeter_1aacf3005969c4417f7eaeeeaf83d5e047a900ae15226aa8c0d4fa29e2add4a08c4" kindref="member">ResistanceRange::_160</ref>:<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>160;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="namespacePokitMeter_1aacf3005969c4417f7eaeeeaf83d5e047a44c86547d0ddac7860e857aba92608ea" kindref="member">ResistanceRange::_330</ref>:<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>330;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="namespacePokitMeter_1aacf3005969c4417f7eaeeeaf83d5e047a1565efe7464a002ba8253cea19fb2c16" kindref="member">ResistanceRange::_890</ref>:<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>890;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="namespacePokitMeter_1aacf3005969c4417f7eaeeeaf83d5e047aef1eecc4af34ef7f92e309dfd8b9721a" kindref="member">ResistanceRange::_1K5</ref>:<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>1&apos;500;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="namespacePokitMeter_1aacf3005969c4417f7eaeeeaf83d5e047a2d0af3ed810f0eb7edb0c6b8a19c1fc3" kindref="member">ResistanceRange::_10K</ref>:<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><sp/><sp/><sp/>10&apos;000;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="namespacePokitMeter_1aacf3005969c4417f7eaeeeaf83d5e047a83cfa36debb22f738bf971d42a0f58f7" kindref="member">ResistanceRange::_100K</ref>:<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><sp/><sp/>100&apos;000;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="namespacePokitMeter_1aacf3005969c4417f7eaeeeaf83d5e047a04fe3f2ffbf0343e5e67caca5fdd0069" kindref="member">ResistanceRange::_470K</ref>:<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><sp/><sp/>470&apos;000;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="namespacePokitMeter_1aacf3005969c4417f7eaeeeaf83d5e047a46a66baf429b6426d9ce1b133845d2a8" kindref="member">ResistanceRange::_1M</ref>:<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>1&apos;000&apos;000;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="namespacePokitMeter_1aacf3005969c4417f7eaeeeaf83d5e047a5c8523b038abf04d86fcc5358cd893cf" kindref="member">ResistanceRange::AutoRange</ref>:<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="qcoreapplication_1translate" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCoreApplication::translate</ref>(</highlight><highlight class="stringliteral">&quot;PokitMeter&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Auto&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;ResistanceRange&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="qvariant" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QVariant</ref>();</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="81"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="83"><highlight class="comment">///<sp/>Returns<sp/>\a<sp/>range<sp/>as<sp/>a<sp/>user-friendly<sp/>string.</highlight></codeline>
+<codeline lineno="84" refid="namespacePokitMeter_1a3038daa52676f52266163577f07954e5" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref><sp/><ref refid="namespacePokitMeter_1a3c3db7b94b6f44af24f4a23e87a3569e" kindref="member">toString</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceVoltageRange" kindref="compound">VoltageRange</ref><sp/>&amp;range)</highlight></codeline>
+<codeline lineno="85"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(range)<sp/>{</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="namespacePokitMeter_1ab9abf7a50f13c9cfb1e1b4c49c16dfeea59e644560a28139459f614bc629df71b" kindref="member">VoltageRange::_300mV</ref>:<sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="qcoreapplication_1translate" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCoreApplication::translate</ref>(</highlight><highlight class="stringliteral">&quot;PokitMeter&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Up<sp/>to<sp/>300mV&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;VoltageRange&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="namespacePokitMeter_1ab9abf7a50f13c9cfb1e1b4c49c16dfeea848192caa654906dae3d719e1368e0c2" kindref="member">VoltageRange::_2V</ref>:<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="qcoreapplication_1translate" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCoreApplication::translate</ref>(</highlight><highlight class="stringliteral">&quot;PokitMeter&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Up<sp/>to<sp/>2V&quot;</highlight><highlight class="normal">,<sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;VoltageRange&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="namespacePokitMeter_1ab9abf7a50f13c9cfb1e1b4c49c16dfeeaa77ff71c31e6c3cde192b1baf7d8c663" kindref="member">VoltageRange::_6V</ref>:<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="qcoreapplication_1translate" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCoreApplication::translate</ref>(</highlight><highlight class="stringliteral">&quot;PokitMeter&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Up<sp/>to<sp/>6V&quot;</highlight><highlight class="normal">,<sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;VoltageRange&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="namespacePokitMeter_1ab9abf7a50f13c9cfb1e1b4c49c16dfeea308ad507e84478351cd8b6f8b09c7490" kindref="member">VoltageRange::_12V</ref>:<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="qcoreapplication_1translate" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCoreApplication::translate</ref>(</highlight><highlight class="stringliteral">&quot;PokitMeter&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Up<sp/>to<sp/>12V&quot;</highlight><highlight class="normal">,<sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;VoltageRange&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="namespacePokitMeter_1ab9abf7a50f13c9cfb1e1b4c49c16dfeea8e75785537c9af6adcd60131c680cdab" kindref="member">VoltageRange::_30V</ref>:<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="qcoreapplication_1translate" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCoreApplication::translate</ref>(</highlight><highlight class="stringliteral">&quot;PokitMeter&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Up<sp/>to<sp/>30V&quot;</highlight><highlight class="normal">,<sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;VoltageRange&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="namespacePokitMeter_1ab9abf7a50f13c9cfb1e1b4c49c16dfeea4c8cbd97f19afa487f3b6c98342fd09d" kindref="member">VoltageRange::_60V</ref>:<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="qcoreapplication_1translate" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCoreApplication::translate</ref>(</highlight><highlight class="stringliteral">&quot;PokitMeter&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Up<sp/>to<sp/>60V&quot;</highlight><highlight class="normal">,<sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;VoltageRange&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="namespacePokitMeter_1ab9abf7a50f13c9cfb1e1b4c49c16dfeea5c8523b038abf04d86fcc5358cd893cf" kindref="member">VoltageRange::AutoRange</ref>:<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="qcoreapplication_1translate" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCoreApplication::translate</ref>(</highlight><highlight class="stringliteral">&quot;PokitMeter&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Auto-range&quot;</highlight><highlight class="normal">,<sp/><sp/></highlight><highlight class="stringliteral">&quot;VoltageRange&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref>();</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="96"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="98"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="99"><highlight class="comment"><sp/>*<sp/><sp/>Returns<sp/>the<sp/>maximum<sp/>value<sp/>for<sp/>\a<sp/>range<sp/>in<sp/>(integer)<sp/>millivolts,<sp/>or<sp/>the<sp/>string<sp/>&quot;Auto&quot;.</highlight></codeline>
+<codeline lineno="100"><highlight class="comment"><sp/>*<sp/><sp/>If<sp/>\a<sp/>range<sp/>is<sp/>not<sp/>a<sp/>known<sp/>valid<sp/>value,<sp/>then<sp/>an<sp/>null<sp/>QVariant<sp/>is<sp/>returned.</highlight></codeline>
+<codeline lineno="101"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102" refid="namespacePokitMeter_1a91cdd2d4576e4278be157c6ca12249d3" refkind="member"><highlight class="normal"><ref refid="qvariant" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QVariant</ref><sp/><ref refid="namespacePokitMeter_1a86a4eb262b1a9fde417acdee8eea00b7" kindref="member">maxValue</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceVoltageRange" kindref="compound">VoltageRange</ref><sp/>&amp;range)</highlight></codeline>
+<codeline lineno="103"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(range)<sp/>{</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="namespacePokitMeter_1ab9abf7a50f13c9cfb1e1b4c49c16dfeea59e644560a28139459f614bc629df71b" kindref="member">VoltageRange::_300mV</ref>:<sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><sp/><sp/><sp/>300;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="namespacePokitMeter_1ab9abf7a50f13c9cfb1e1b4c49c16dfeea848192caa654906dae3d719e1368e0c2" kindref="member">VoltageRange::_2V</ref>:<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><sp/>2&apos;000;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="namespacePokitMeter_1ab9abf7a50f13c9cfb1e1b4c49c16dfeeaa77ff71c31e6c3cde192b1baf7d8c663" kindref="member">VoltageRange::_6V</ref>:<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><sp/>6&apos;000;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="namespacePokitMeter_1ab9abf7a50f13c9cfb1e1b4c49c16dfeea308ad507e84478351cd8b6f8b09c7490" kindref="member">VoltageRange::_12V</ref>:<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>12&apos;000;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="namespacePokitMeter_1ab9abf7a50f13c9cfb1e1b4c49c16dfeea8e75785537c9af6adcd60131c680cdab" kindref="member">VoltageRange::_30V</ref>:<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>30&apos;000;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="namespacePokitMeter_1ab9abf7a50f13c9cfb1e1b4c49c16dfeea4c8cbd97f19afa487f3b6c98342fd09d" kindref="member">VoltageRange::_60V</ref>:<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>60&apos;000;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="namespacePokitMeter_1ab9abf7a50f13c9cfb1e1b4c49c16dfeea5c8523b038abf04d86fcc5358cd893cf" kindref="member">VoltageRange::AutoRange</ref>:<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="qcoreapplication_1translate" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCoreApplication::translate</ref>(</highlight><highlight class="stringliteral">&quot;PokitMeter&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Auto&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;VoltageRange&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="qvariant" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QVariant</ref>();</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="114"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/paul/src/dokit/src/lib/pokitmeter.cpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,1013 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.0" xml:lang="en-US">
+  <compounddef id="classAbstractPokitServicePrivate" kind="class" language="C++" prot="public">
+    <compoundname>AbstractPokitServicePrivate</compoundname>
+    <basecompoundref refid="qobject" prot="public" virt="non-virtual">QObject</basecompoundref>
+    <derivedcompoundref refid="classCalibrationServicePrivate" prot="public" virt="non-virtual">CalibrationServicePrivate</derivedcompoundref>
+    <derivedcompoundref refid="classDataLoggerServicePrivate" prot="public" virt="non-virtual">DataLoggerServicePrivate</derivedcompoundref>
+    <derivedcompoundref refid="classDeviceInfoServicePrivate" prot="public" virt="non-virtual">DeviceInfoServicePrivate</derivedcompoundref>
+    <derivedcompoundref refid="classDsoServicePrivate" prot="public" virt="non-virtual">DsoServicePrivate</derivedcompoundref>
+    <derivedcompoundref refid="classMultimeterServicePrivate" prot="public" virt="non-virtual">MultimeterServicePrivate</derivedcompoundref>
+    <derivedcompoundref refid="classStatusServicePrivate" prot="public" virt="non-virtual">StatusServicePrivate</derivedcompoundref>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classAbstractPokitServicePrivate_1a21d38af5e7fc69f2c47c219a7ab545c7" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool AbstractPokitServicePrivate::autoDiscover</definition>
+        <argsstring></argsstring>
+        <name>autoDiscover</name>
+        <qualifiedname>AbstractPokitServicePrivate::autoDiscover</qualifiedname>
+        <initializer>{ true }</initializer>
+        <briefdescription>
+<para>Whether autodiscovery is enabled or not. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/lib/abstractpokitservice_p.h" line="34" column="10" bodyfile="/home/paul/src/dokit/src/lib/abstractpokitservice_p.h" bodystart="34" bodyend="34"/>
+        <referencedby refid="classAbstractPokitServicePrivate_1a9eec6d6dfe45c70c2907564940966200" compoundref="abstractpokitservice_8cpp" startline="441" endline="454">connected</referencedby>
+        <referencedby refid="classAbstractPokitServicePrivate_1a2b105802085225fe68254dfdb6754ad9" compoundref="abstractpokitservice_8cpp" startline="193" endline="250">createServiceObject</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classAbstractPokitServicePrivate_1aefc2f27e42be44bf63d9e4f944737da1" prot="public" static="no" mutable="no">
+        <type><ref refid="qlowenergycontroller" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QLowEnergyController</ref> *</type>
+        <definition>QLowEnergyController* AbstractPokitServicePrivate::controller</definition>
+        <argsstring></argsstring>
+        <name>controller</name>
+        <qualifiedname>AbstractPokitServicePrivate::controller</qualifiedname>
+        <initializer>{ nullptr }</initializer>
+        <briefdescription>
+<para>BLE controller to fetch the service from. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/lib/abstractpokitservice_p.h" line="35" column="27" bodyfile="/home/paul/src/dokit/src/lib/abstractpokitservice_p.h" bodystart="35" bodyend="35"/>
+        <referencedby refid="classAbstractPokitServicePrivate_1a73d4b6cd1a53f997f78d1c266a1c1871" compoundref="abstractpokitservice_8cpp" startline="168" endline="184">AbstractPokitServicePrivate</referencedby>
+        <referencedby refid="classAbstractPokitServicePrivate_1a9eec6d6dfe45c70c2907564940966200" compoundref="abstractpokitservice_8cpp" startline="441" endline="454">connected</referencedby>
+        <referencedby refid="classAbstractPokitServicePrivate_1a2b105802085225fe68254dfdb6754ad9" compoundref="abstractpokitservice_8cpp" startline="193" endline="250">createServiceObject</referencedby>
+        <referencedby refid="classAbstractPokitServicePrivate_1a2cc16a897908f50e0f3cfc6b876b50ab" compoundref="abstractpokitservice_8cpp" startline="462" endline="478">discoveryFinished</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classAbstractPokitServicePrivate_1afd4b02970f049753542e539bdf85e218" prot="public" static="no" mutable="no">
+        <type>std::optional&lt; <ref refid="pokitproducts_8h_1a0c4f628f68ce0432a6db11681a41fda4" kindref="member">PokitProduct</ref> &gt;</type>
+        <definition>std::optional&lt;PokitProduct&gt; AbstractPokitServicePrivate::pokitProduct</definition>
+        <argsstring></argsstring>
+        <name>pokitProduct</name>
+        <qualifiedname>AbstractPokitServicePrivate::pokitProduct</qualifiedname>
+        <briefdescription>
+<para>The Pokit product <ref refid="classAbstractPokitServicePrivate_1aefc2f27e42be44bf63d9e4f944737da1" kindref="member">controller</ref> is connected to. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/lib/abstractpokitservice_p.h" line="36" column="19" bodyfile="/home/paul/src/dokit/src/lib/abstractpokitservice_p.h" bodystart="36" bodyend="-1"/>
+        <referencedby refid="classAbstractPokitServicePrivate_1a2b105802085225fe68254dfdb6754ad9" compoundref="abstractpokitservice_8cpp" startline="193" endline="250">createServiceObject</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classAbstractPokitServicePrivate_1adc41ee1de2a4783623aa78d0a8beb85d" prot="public" static="no" mutable="no">
+        <type><ref refid="qlowenergyservice" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QLowEnergyService</ref> *</type>
+        <definition>QLowEnergyService* AbstractPokitServicePrivate::service</definition>
+        <argsstring></argsstring>
+        <name>service</name>
+        <qualifiedname>AbstractPokitServicePrivate::service</qualifiedname>
+        <initializer>{ nullptr }</initializer>
+        <briefdescription>
+<para>BLE service to read/write characteristics. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/lib/abstractpokitservice_p.h" line="37" column="5" bodyfile="/home/paul/src/dokit/src/lib/abstractpokitservice_p.h" bodystart="37" bodyend="37"/>
+        <referencedby refid="classAbstractPokitServicePrivate_1a2b105802085225fe68254dfdb6754ad9" compoundref="abstractpokitservice_8cpp" startline="193" endline="250">createServiceObject</referencedby>
+        <referencedby refid="classAbstractPokitServicePrivate_1a2922b59e5fc76b0e90ebef2a88adac9d" compoundref="abstractpokitservice_8cpp" startline="365" endline="390">disableCharacteristicNotificatons</referencedby>
+        <referencedby refid="classAbstractPokitServicePrivate_1a7a024ab2e783e62b78568f4834eb6159" compoundref="abstractpokitservice_8cpp" startline="330" endline="355">enableCharacteristicNotificatons</referencedby>
+        <referencedby refid="classAbstractPokitServicePrivate_1aaac3ef8e3590334acdddb2b029865eb0" compoundref="abstractpokitservice_8cpp" startline="265" endline="296">getCharacteristic</referencedby>
+        <referencedby refid="classAbstractPokitServicePrivate_1ad58619e237f300294049c82b85d76875" compoundref="abstractpokitservice_8cpp" startline="310" endline="320">readCharacteristic</referencedby>
+        <referencedby refid="classAbstractPokitServicePrivate_1a654255854b4aca7718ef30e10260d89b" compoundref="abstractpokitservice_8cpp" startline="499" endline="505">serviceDiscovered</referencedby>
+        <referencedby refid="classAbstractPokitServicePrivate_1ad4cd6a5700b0b764b3a81f67603dc68f" compoundref="abstractpokitservice_8cpp" startline="515" endline="553">stateChanged</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classAbstractPokitServicePrivate_1a37538a1aa1beeb85a041f1735d65cbfd" prot="public" static="no" mutable="no">
+        <type><ref refid="qbluetoothuuid" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothUuid</ref></type>
+        <definition>QBluetoothUuid AbstractPokitServicePrivate::serviceUuid</definition>
+        <argsstring></argsstring>
+        <name>serviceUuid</name>
+        <qualifiedname>AbstractPokitServicePrivate::serviceUuid</qualifiedname>
+        <briefdescription>
+<para>UUIDs for <ref refid="classAbstractPokitServicePrivate_1adc41ee1de2a4783623aa78d0a8beb85d" kindref="member">service</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/lib/abstractpokitservice_p.h" line="38" column="20" bodyfile="/home/paul/src/dokit/src/lib/abstractpokitservice_p.h" bodystart="38" bodyend="-1"/>
+        <referencedby refid="classDataLoggerServicePrivate_1a687b443e1e36e2c07a9776a6ca02e688" compoundref="dataloggerservice_8cpp" startline="517" endline="541">DataLoggerServicePrivate::characteristicChanged</referencedby>
+        <referencedby refid="classDsoServicePrivate_1a7de9e2488240903fee3d88b89bf1d5ec" compoundref="dsoservice_8cpp" startline="462" endline="486">DsoServicePrivate::characteristicChanged</referencedby>
+        <referencedby refid="classMultimeterServicePrivate_1af80ef46d902cc372a57bb1ba45313bcb" compoundref="multimeterservice_8cpp" startline="380" endline="399">MultimeterServicePrivate::characteristicChanged</referencedby>
+        <referencedby refid="classDataLoggerServicePrivate_1a91ded6976e79e6054954eebe591214be" compoundref="dataloggerservice_8cpp" startline="455" endline="480">DataLoggerServicePrivate::characteristicRead</referencedby>
+        <referencedby refid="classDeviceInfoServicePrivate_1a5ca3ccfe6cc8231247fed820e41551a1" compoundref="deviceinfoservice_8cpp" startline="324" endline="374">DeviceInfoServicePrivate::characteristicRead</referencedby>
+        <referencedby refid="classDsoServicePrivate_1a0eb9af767bd0ec01458d681a5831c07a" compoundref="dsoservice_8cpp" startline="400" endline="425">DsoServicePrivate::characteristicRead</referencedby>
+        <referencedby refid="classMultimeterServicePrivate_1a2cb96a3c5ae351ca9d07ee7bc828029a" compoundref="multimeterservice_8cpp" startline="330" endline="349">MultimeterServicePrivate::characteristicRead</referencedby>
+        <referencedby refid="classStatusServicePrivate_1a08d8faee04fb47ac19d3962609606d52" compoundref="statusservice_8cpp" startline="735" endline="786">StatusServicePrivate::characteristicRead</referencedby>
+        <referencedby refid="classCalibrationServicePrivate_1a1319763f3101ba47ad5e3dedacb630ac" compoundref="calibrationservice_8cpp" startline="129" endline="142">CalibrationServicePrivate::characteristicWritten</referencedby>
+        <referencedby refid="classDataLoggerServicePrivate_1a6988cc8bf165d4bf1fcdacf7124ea6f9" compoundref="dataloggerservice_8cpp" startline="486" endline="511">DataLoggerServicePrivate::characteristicWritten</referencedby>
+        <referencedby refid="classDsoServicePrivate_1acd230f4773256fa6cea38cb43ed65df1" compoundref="dsoservice_8cpp" startline="431" endline="456">DsoServicePrivate::characteristicWritten</referencedby>
+        <referencedby refid="classMultimeterServicePrivate_1abe299f554929b4b345d5dd527fd7bcea" compoundref="multimeterservice_8cpp" startline="355" endline="374">MultimeterServicePrivate::characteristicWritten</referencedby>
+        <referencedby refid="classStatusServicePrivate_1a8de57b8b27437360d75bd44f74595db1" compoundref="statusservice_8cpp" startline="792" endline="827">StatusServicePrivate::characteristicWritten</referencedby>
+        <referencedby refid="classAbstractPokitServicePrivate_1a2b105802085225fe68254dfdb6754ad9" compoundref="abstractpokitservice_8cpp" startline="193" endline="250">createServiceObject</referencedby>
+        <referencedby refid="classAbstractPokitServicePrivate_1a654255854b4aca7718ef30e10260d89b" compoundref="abstractpokitservice_8cpp" startline="499" endline="505">serviceDiscovered</referencedby>
+        <referencedby refid="classStatusServicePrivate_1a416f4b2a7e342c39fd667bcf324b4ea4" compoundref="statusservice_8cpp" startline="719" endline="729">StatusServicePrivate::serviceDiscovered</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classAbstractPokitServicePrivate_1a68f7ec9c0b34677eb1cf797221eb4845" prot="protected" static="no" mutable="no">
+        <type><ref refid="classAbstractPokitService" kindref="compound">AbstractPokitService</ref> *</type>
+        <definition>AbstractPokitService* AbstractPokitServicePrivate::q_ptr</definition>
+        <argsstring></argsstring>
+        <name>q_ptr</name>
+        <qualifiedname>AbstractPokitServicePrivate::q_ptr</qualifiedname>
+        <briefdescription>
+<para>Internal q-pointer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/lib/abstractpokitservice_p.h" line="55" column="27" bodyfile="/home/paul/src/dokit/src/lib/abstractpokitservice_p.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="classAbstractPokitServicePrivate_1a127cc137bfd605debbdf97eec20d08c9" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class TestAbstractPokitService</definition>
+        <argsstring></argsstring>
+        <name>TestAbstractPokitService</name>
+        <qualifiedname>AbstractPokitServicePrivate::TestAbstractPokitService</qualifiedname>
+        <param>
+          <type>TestAbstractPokitService</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/lib/abstractpokitservice_p.h" line="74" column="18" bodyfile="/home/paul/src/dokit/src/lib/abstractpokitservice_p.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classAbstractPokitServicePrivate_1a32f402260c965002c68f7b9191d38af6" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>static</type>
+        <definition>static AbstractPokitServicePrivate::Q_LOGGING_CATEGORY</definition>
+        <argsstring>(lc, &quot;pokit.ble.service&quot;, QtInfoMsg)</argsstring>
+        <name>Q_LOGGING_CATEGORY</name>
+        <qualifiedname>AbstractPokitServicePrivate::Q_LOGGING_CATEGORY</qualifiedname>
+        <param>
+          <type>lc</type>
+        </param>
+        <param>
+          <type>&quot;pokit.ble.service&quot;</type>
+        </param>
+        <param>
+          <type>QtInfoMsg</type>
+        </param>
+        <briefdescription>
+<para>Logging category. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/lib/abstractpokitservice_p.h" line="32" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classAbstractPokitServicePrivate_1af8b480a950244540bfff7fc4b476a0ef" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool AbstractPokitServicePrivate::checkSize</definition>
+        <argsstring>(const QString &amp;label, const QByteArray &amp;data, const int minSize, const int maxSize=-1, const bool failOnMax=false)</argsstring>
+        <name>checkSize</name>
+        <qualifiedname>AbstractPokitServicePrivate::checkSize</qualifiedname>
+        <param>
+          <type>const <ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref> &amp;</type>
+          <declname>label</declname>
+        </param>
+        <param>
+          <type>const <ref refid="qbytearray" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QByteArray</ref> &amp;</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>minSize</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>maxSize</declname>
+          <defval>-1</defval>
+        </param>
+        <param>
+          <type>const bool</type>
+          <declname>failOnMax</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Returns <computeroutput>false</computeroutput> if <emphasis>data</emphasis> is smaller than <emphasis>minSize</emphasis>, otherwise returns <emphasis>failOnMax</emphasis> if <emphasis>data</emphasis> is bigger than <emphasis>maxSize</emphasis>, otherwise returns <computeroutput>true</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>A warning is logged if either <emphasis>minSize</emphasis> or <emphasis>maxSize</emphasis> is violated, regardless of the returned value; ie this funcion can be used to simply warn if <emphasis>data</emphasis> is too big, or it can be used to failed (return <computeroutput>false</computeroutput>) in that case. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/lib/abstractpokitservice_p.h" line="50" column="17" bodyfile="/home/paul/src/dokit/src/lib/abstractpokitservice.cpp" bodystart="400" bodyend="415"/>
+        <references refid="qstring_1arg-14">QString::arg</references>
+        <references refid="qbytearray_1mid">QByteArray::mid</references>
+        <references refid="qbytearray_1size">QByteArray::size</references>
+        <references refid="classAbstractPokitServicePrivate_1af748600fc201fe47f29b58e8e93179d8" compoundref="abstractpokitservice_8cpp" startline="425" endline="432">toHexString</references>
+        <references refid="qobject_1tr">QObject::tr</references>
+        <referencedby refid="classStatusServicePrivate_1a08d8faee04fb47ac19d3962609606d52" compoundref="statusservice_8cpp" startline="735" endline="786">StatusServicePrivate::characteristicRead</referencedby>
+        <referencedby refid="classStatusServicePrivate_1a90d78c3261bea8f23ddf9804ada203c1" compoundref="statusservice_8cpp" startline="693" endline="711">StatusServicePrivate::parseButtonPress</referencedby>
+        <referencedby refid="classStatusServicePrivate_1a7bdbc14dbfe0a29bb0333c01890a6ced" compoundref="statusservice_8cpp" startline="584" endline="619">StatusServicePrivate::parseDeviceCharacteristics</referencedby>
+        <referencedby refid="classDataLoggerServicePrivate_1aed59b28db53cea0757289a0960bed3fd" compoundref="dataloggerservice_8cpp" startline="393" endline="431">DataLoggerServicePrivate::parseMetadata</referencedby>
+        <referencedby refid="classDsoServicePrivate_1af869cf5b228bac719545511ba4247b88" compoundref="dsoservice_8cpp" startline="357" endline="376">DsoServicePrivate::parseMetadata</referencedby>
+        <referencedby refid="classMultimeterServicePrivate_1ac9594dce487207bafd123e1093f399db" compoundref="multimeterservice_8cpp" startline="307" endline="324">MultimeterServicePrivate::parseReading</referencedby>
+        <referencedby refid="classStatusServicePrivate_1a3a6ff8ca3e9d7c884b269e52dd43aeb0" compoundref="statusservice_8cpp" startline="626" endline="674">StatusServicePrivate::parseStatus</referencedby>
+        <referencedby refid="classStatusServicePrivate_1abe408253ab1c7f08e09d7613691befba" compoundref="statusservice_8cpp" startline="679" endline="688">StatusServicePrivate::parseTorchStatus</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classAbstractPokitServicePrivate_1af748600fc201fe47f29b58e8e93179d8" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref></type>
+        <definition>QString AbstractPokitServicePrivate::toHexString</definition>
+        <argsstring>(const QByteArray &amp;data, const int maxSize=20)</argsstring>
+        <name>toHexString</name>
+        <qualifiedname>AbstractPokitServicePrivate::toHexString</qualifiedname>
+        <param>
+          <type>const <ref refid="qbytearray" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QByteArray</ref> &amp;</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>maxSize</declname>
+          <defval>20</defval>
+        </param>
+        <briefdescription>
+<para>Returns up to <emphasis>maxSize</emphasis> bytes of <emphasis>data</emphasis> as a human readable hexadecimal string. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If <emphasis>data</emphasis> exceeds <emphasis>maxSize</emphasis>, then <emphasis>data</emphasis> is elided in the middle. For example:</para>
+<para><programlisting><codeline><highlight class="normal">toHex(QBytArray(</highlight><highlight class="stringliteral">&quot;\x1\x2\x3\x4\x5\x6&quot;</highlight><highlight class="normal">,<sp/>4);<sp/></highlight><highlight class="comment">//<sp/>&quot;0x01,02,...,05,06&quot;</highlight></codeline>
+</programlisting> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/lib/abstractpokitservice_p.h" line="52" column="20" bodyfile="/home/paul/src/dokit/src/lib/abstractpokitservice.cpp" bodystart="425" bodyend="432"/>
+        <references refid="qstring_1arg-14">QString::arg</references>
+        <references refid="qstring_1fromLatin1-1">QString::fromLatin1</references>
+        <references refid="qbytearray_1left">QByteArray::left</references>
+        <references refid="qbytearray_1right">QByteArray::right</references>
+        <references refid="qbytearray_1size">QByteArray::size</references>
+        <references refid="qbytearray_1toHex">QByteArray::toHex</references>
+        <referencedby refid="classAbstractPokitServicePrivate_1a642431b7bfb76baa5d976ae24e90d9ef" compoundref="abstractpokitservice_8cpp" startline="591" endline="596">characteristicChanged</referencedby>
+        <referencedby refid="classAbstractPokitServicePrivate_1a84bef330c6ff124f1e460bb8949d82da" compoundref="abstractpokitservice_8cpp" startline="562" endline="567">characteristicRead</referencedby>
+        <referencedby refid="classAbstractPokitServicePrivate_1aaf4a6cb9f0b1fe537877d615a6634201" compoundref="abstractpokitservice_8cpp" startline="576" endline="581">characteristicWritten</referencedby>
+        <referencedby refid="classAbstractPokitServicePrivate_1af8b480a950244540bfff7fc4b476a0ef" compoundref="abstractpokitservice_8cpp" startline="400" endline="415">checkSize</referencedby>
+        <referencedby refid="classDataLoggerServicePrivate_1aed59b28db53cea0757289a0960bed3fd" compoundref="dataloggerservice_8cpp" startline="393" endline="431">DataLoggerServicePrivate::parseMetadata</referencedby>
+        <referencedby refid="classDataLoggerServicePrivate_1aa929b0252b19e3dc2b40fe1b3e94663d" compoundref="dataloggerservice_8cpp" startline="436" endline="449">DataLoggerServicePrivate::parseSamples</referencedby>
+        <referencedby refid="classDsoServicePrivate_1a404aa10d2278131ea7f787ff5e354e8a" compoundref="dsoservice_8cpp" startline="381" endline="394">DsoServicePrivate::parseSamples</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classAbstractPokitServicePrivate_1a73d4b6cd1a53f997f78d1c266a1c1871" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AbstractPokitServicePrivate::AbstractPokitServicePrivate</definition>
+        <argsstring>(const QBluetoothUuid &amp;serviceUuid, QLowEnergyController *controller, AbstractPokitService *const q)</argsstring>
+        <name>AbstractPokitServicePrivate</name>
+        <qualifiedname>AbstractPokitServicePrivate::AbstractPokitServicePrivate</qualifiedname>
+        <param>
+          <type>const <ref refid="qbluetoothuuid" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothUuid</ref> &amp;</type>
+          <declname>serviceUuid</declname>
+        </param>
+        <param>
+          <type><ref refid="qlowenergycontroller" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QLowEnergyController</ref> *</type>
+          <declname>controller</declname>
+        </param>
+        <param>
+          <type><ref refid="classAbstractPokitService" kindref="compound">AbstractPokitService</ref> *const</type>
+          <declname>q</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<internal><para>Constructs a new <ref refid="classAbstractPokitServicePrivate" kindref="compound">AbstractPokitServicePrivate</ref> object with public implementation <emphasis>q</emphasis>.</para>
+<para>Note, typically the <emphasis>serviceUuid</emphasis> should be set validly, however, in the rare case that a service&apos;s UUID can vary (ie the Status Service), <emphasis>serviceUuid</emphasis> may be set to a <computeroutput>null</computeroutput> <ref refid="qbluetoothuuid" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothUuid</ref> here, and updated when the correct service UUID is known.</para>
+<para><simplesect kind="see"><para><ref refid="structStatusService_1_1ServiceUuids" kindref="compound">StatusService::ServiceUuids</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classStatusServicePrivate_1a416f4b2a7e342c39fd667bcf324b4ea4" kindref="member">StatusServicePrivate::serviceDiscovered</ref> </para>
+</simplesect>
+</para>
+</internal>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/lib/abstractpokitservice_p.h" line="40" column="5" bodyfile="/home/paul/src/dokit/src/lib/abstractpokitservice.cpp" bodystart="168" bodyend="184"/>
+        <references refid="qobject_1connect-4">QObject::connect</references>
+        <references refid="classAbstractPokitServicePrivate_1a9eec6d6dfe45c70c2907564940966200" compoundref="abstractpokitservice_8cpp" startline="441" endline="454">connected</references>
+        <references refid="qlowenergycontroller_1connected">QLowEnergyController::connected</references>
+        <references refid="classAbstractPokitServicePrivate_1aefc2f27e42be44bf63d9e4f944737da1" compoundref="abstractpokitservice__p_8h" startline="35" endline="35">controller</references>
+        <references refid="classAbstractPokitServicePrivate_1a2b105802085225fe68254dfdb6754ad9" compoundref="abstractpokitservice_8cpp" startline="193" endline="250">createServiceObject</references>
+        <references refid="classAbstractPokitServicePrivate_1a2cc16a897908f50e0f3cfc6b876b50ab" compoundref="abstractpokitservice_8cpp" startline="462" endline="478">discoveryFinished</references>
+        <references refid="qlowenergycontroller_1discoveryFinished">QLowEnergyController::discoveryFinished</references>
+        <references refid="classAbstractPokitServicePrivate_1a654255854b4aca7718ef30e10260d89b" compoundref="abstractpokitservice_8cpp" startline="499" endline="505">serviceDiscovered</references>
+        <references refid="qlowenergycontroller_1serviceDiscovered">QLowEnergyController::serviceDiscovered</references>
+      </memberdef>
+      <memberdef kind="function" id="classAbstractPokitServicePrivate_1a2b105802085225fe68254dfdb6754ad9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool AbstractPokitServicePrivate::createServiceObject</definition>
+        <argsstring>()</argsstring>
+        <name>createServiceObject</name>
+        <qualifiedname>AbstractPokitServicePrivate::createServiceObject</qualifiedname>
+        <briefdescription>
+<para>Creates an internal service object from the internal controller. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Any existing service object will <emphasis>not</emphasis> be replaced.</para>
+<para>Returns <computeroutput>true</computeroutput> if a service was created successfully, either now, or sometime previously. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/lib/abstractpokitservice_p.h" line="43" column="10" bodyfile="/home/paul/src/dokit/src/lib/abstractpokitservice.cpp" bodystart="193" bodyend="250"/>
+        <references refid="qstring_1arg-14">QString::arg</references>
+        <references refid="classAbstractPokitServicePrivate_1a21d38af5e7fc69f2c47c219a7ab545c7" compoundref="abstractpokitservice__p_8h" startline="34" endline="34">autoDiscover</references>
+        <references refid="classAbstractPokitServicePrivate_1a642431b7bfb76baa5d976ae24e90d9ef" compoundref="abstractpokitservice_8cpp" startline="591" endline="596">characteristicChanged</references>
+        <references refid="qlowenergyservice_1characteristicChanged">QLowEnergyService::characteristicChanged</references>
+        <references refid="classAbstractPokitServicePrivate_1a84bef330c6ff124f1e460bb8949d82da" compoundref="abstractpokitservice_8cpp" startline="562" endline="567">characteristicRead</references>
+        <references refid="qlowenergyservice_1characteristicRead">QLowEnergyService::characteristicRead</references>
+        <references refid="classAbstractPokitServicePrivate_1aaf4a6cb9f0b1fe537877d615a6634201" compoundref="abstractpokitservice_8cpp" startline="576" endline="581">characteristicWritten</references>
+        <references refid="qlowenergyservice_1characteristicWritten">QLowEnergyService::characteristicWritten</references>
+        <references refid="qobject_1connect-4">QObject::connect</references>
+        <references refid="classAbstractPokitServicePrivate_1aefc2f27e42be44bf63d9e4f944737da1" compoundref="abstractpokitservice__p_8h" startline="35" endline="35">controller</references>
+        <references refid="qlowenergycontroller_1createServiceObject">QLowEnergyController::createServiceObject</references>
+        <references refid="qlowenergyservice_1descriptorRead">QLowEnergyService::descriptorRead</references>
+        <references refid="qlowenergyservice_1descriptorWritten">QLowEnergyService::descriptorWritten</references>
+        <references refid="qlowenergyservice_1discoverDetails">QLowEnergyService::discoverDetails</references>
+        <references refid="qlowenergyservice_1error">QLowEnergyService::error</references>
+        <references refid="classAbstractPokitServicePrivate_1ab086f2e2e5058bc7978a67e86d579325" compoundref="abstractpokitservice_8cpp" startline="485" endline="490">errorOccurred</references>
+        <references refid="qlowenergyservice_1errorOccurred">QLowEnergyService::errorOccurred</references>
+        <references refid="quuid_1isNull">QUuid::isNull</references>
+        <references refid="qlowenergydescriptor_1name">QLowEnergyDescriptor::name</references>
+        <references refid="classAbstractPokitServicePrivate_1afd4b02970f049753542e539bdf85e218" compoundref="abstractpokitservice__p_8h" startline="36">pokitProduct</references>
+        <references refid="classAbstractPokitServicePrivate_1adc41ee1de2a4783623aa78d0a8beb85d" compoundref="abstractpokitservice__p_8h" startline="37" endline="37">service</references>
+        <references refid="classAbstractPokitServicePrivate_1a37538a1aa1beeb85a041f1735d65cbfd" compoundref="abstractpokitservice__p_8h" startline="38">serviceUuid</references>
+        <references refid="classAbstractPokitServicePrivate_1ad4cd6a5700b0b764b3a81f67603dc68f" compoundref="abstractpokitservice_8cpp" startline="515" endline="553">stateChanged</references>
+        <references refid="qlowenergyservice_1stateChanged">QLowEnergyService::stateChanged</references>
+        <references refid="quuid_1toString">QUuid::toString</references>
+        <references refid="pokitproducts_8h_1abac6d04d602c122e3de08ef55122d635" compoundref="pokitproducts_8cpp" startline="26" endline="35">toString</references>
+        <references refid="qobject_1tr">QObject::tr</references>
+        <references refid="qlowenergydescriptor_1uuid">QLowEnergyDescriptor::uuid</references>
+        <referencedby refid="classAbstractPokitServicePrivate_1a73d4b6cd1a53f997f78d1c266a1c1871" compoundref="abstractpokitservice_8cpp" startline="168" endline="184">AbstractPokitServicePrivate</referencedby>
+        <referencedby refid="classAbstractPokitServicePrivate_1a2cc16a897908f50e0f3cfc6b876b50ab" compoundref="abstractpokitservice_8cpp" startline="462" endline="478">discoveryFinished</referencedby>
+        <referencedby refid="classAbstractPokitServicePrivate_1a654255854b4aca7718ef30e10260d89b" compoundref="abstractpokitservice_8cpp" startline="499" endline="505">serviceDiscovered</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classAbstractPokitServicePrivate_1aaac3ef8e3590334acdddb2b029865eb0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="qlowenergycharacteristic" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QLowEnergyCharacteristic</ref></type>
+        <definition>QLowEnergyCharacteristic AbstractPokitServicePrivate::getCharacteristic</definition>
+        <argsstring>(const QBluetoothUuid &amp;uuid) const</argsstring>
+        <name>getCharacteristic</name>
+        <qualifiedname>AbstractPokitServicePrivate::getCharacteristic</qualifiedname>
+        <param>
+          <type>const <ref refid="qbluetoothuuid" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothUuid</ref> &amp;</type>
+          <declname>uuid</declname>
+        </param>
+        <briefdescription>
+<para>Get <emphasis>uuid</emphasis> characteristc from the underlying service. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This helper function is equivalent to</para>
+<para><programlisting><codeline><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classAbstractPokitServicePrivate_1adc41ee1de2a4783623aa78d0a8beb85d" kindref="member">service</ref>-&gt;<ref refid="qlowenergyservice_1characteristic" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">characteristic</ref>(uuid);</highlight></codeline>
+</programlisting></para>
+<para>except that it performs some sanity checks, such as checking the service object pointer has been assigned first, and also logs failures in a consistent manner.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>uuid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/lib/abstractpokitservice_p.h" line="44" column="30" bodyfile="/home/paul/src/dokit/src/lib/abstractpokitservice.cpp" bodystart="265" bodyend="296"/>
+        <references refid="qstring_1arg-14">QString::arg</references>
+        <references refid="qlowenergyservice_1characteristic">QLowEnergyService::characteristic</references>
+        <references refid="classPokitDevice_1a0a3e6078ce0a7c2d93171ef0f4183d61" compoundref="pokitdevice_8cpp" startline="218" endline="261">PokitDevice::charcteristicToString</references>
+        <references refid="qlowenergycharacteristic_1isValid">QLowEnergyCharacteristic::isValid</references>
+        <references refid="classAbstractPokitServicePrivate_1adc41ee1de2a4783623aa78d0a8beb85d" compoundref="abstractpokitservice__p_8h" startline="37" endline="37">service</references>
+        <references refid="classPokitDevice_1aca9393595de5676f20e3d0fd795358b5" compoundref="pokitdevice_8cpp" startline="190" endline="210">PokitDevice::serviceToString</references>
+        <references refid="qlowenergyservice_1serviceUuid">QLowEnergyService::serviceUuid</references>
+        <references refid="qlowenergyservice_1state">QLowEnergyService::state</references>
+        <references refid="quuid_1toString">QUuid::toString</references>
+        <references refid="qobject_1tr">QObject::tr</references>
+        <referencedby refid="classAbstractPokitServicePrivate_1a2922b59e5fc76b0e90ebef2a88adac9d" compoundref="abstractpokitservice_8cpp" startline="365" endline="390">disableCharacteristicNotificatons</referencedby>
+        <referencedby refid="classAbstractPokitServicePrivate_1a7a024ab2e783e62b78568f4834eb6159" compoundref="abstractpokitservice_8cpp" startline="330" endline="355">enableCharacteristicNotificatons</referencedby>
+        <referencedby refid="classAbstractPokitServicePrivate_1ad58619e237f300294049c82b85d76875" compoundref="abstractpokitservice_8cpp" startline="310" endline="320">readCharacteristic</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classAbstractPokitServicePrivate_1ad58619e237f300294049c82b85d76875" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool AbstractPokitServicePrivate::readCharacteristic</definition>
+        <argsstring>(const QBluetoothUuid &amp;uuid)</argsstring>
+        <name>readCharacteristic</name>
+        <qualifiedname>AbstractPokitServicePrivate::readCharacteristic</qualifiedname>
+        <param>
+          <type>const <ref refid="qbluetoothuuid" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothUuid</ref> &amp;</type>
+          <declname>uuid</declname>
+        </param>
+        <briefdescription>
+<para>Read the <emphasis>uuid</emphasis> characteristic. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If succesful, the <computeroutput><ref refid="qlowenergyservice_1characteristicRead" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QLowEnergyService::characteristicRead</ref></computeroutput> signal will be emitted by the internal service object. For convenience, derived classes should implement the <ref refid="classAbstractPokitServicePrivate_1a84bef330c6ff124f1e460bb8949d82da" kindref="member">characteristicRead()</ref> virtual function to handle the read value.</para>
+<para>Returns <computeroutput>true</computeroutput> if the characteristic read request was successfully queued, <computeroutput>false</computeroutput> otherwise.</para>
+<para><simplesect kind="see"><para><ref refid="classAbstractPokitService_1ab1de532f20d46803d6e8b8ffea835b48" kindref="member">AbstractPokitService::readCharacteristics()</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classAbstractPokitServicePrivate_1a84bef330c6ff124f1e460bb8949d82da" kindref="member">AbstractPokitServicePrivate::characteristicRead()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/lib/abstractpokitservice_p.h" line="45" column="10" bodyfile="/home/paul/src/dokit/src/lib/abstractpokitservice.cpp" bodystart="310" bodyend="320"/>
+        <references refid="qstring_1arg-14">QString::arg</references>
+        <references refid="classPokitDevice_1a0a3e6078ce0a7c2d93171ef0f4183d61" compoundref="pokitdevice_8cpp" startline="218" endline="261">PokitDevice::charcteristicToString</references>
+        <references refid="classAbstractPokitServicePrivate_1aaac3ef8e3590334acdddb2b029865eb0" compoundref="abstractpokitservice_8cpp" startline="265" endline="296">getCharacteristic</references>
+        <references refid="qlowenergycharacteristic_1isValid">QLowEnergyCharacteristic::isValid</references>
+        <references refid="qlowenergyservice_1readCharacteristic">QLowEnergyService::readCharacteristic</references>
+        <references refid="classAbstractPokitServicePrivate_1adc41ee1de2a4783623aa78d0a8beb85d" compoundref="abstractpokitservice__p_8h" startline="37" endline="37">service</references>
+        <references refid="quuid_1toString">QUuid::toString</references>
+        <references refid="qobject_1tr">QObject::tr</references>
+      </memberdef>
+      <memberdef kind="function" id="classAbstractPokitServicePrivate_1a7a024ab2e783e62b78568f4834eb6159" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool AbstractPokitServicePrivate::enableCharacteristicNotificatons</definition>
+        <argsstring>(const QBluetoothUuid &amp;uuid)</argsstring>
+        <name>enableCharacteristicNotificatons</name>
+        <qualifiedname>AbstractPokitServicePrivate::enableCharacteristicNotificatons</qualifiedname>
+        <param>
+          <type>const <ref refid="qbluetoothuuid" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothUuid</ref> &amp;</type>
+          <declname>uuid</declname>
+        </param>
+        <briefdescription>
+<para>Enables client (Pokit device) side notification for characteristic <emphasis>uuid</emphasis>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns <computeroutput>true</computeroutput> if the notication enable request was successfully queued, <computeroutput>false</computeroutput> otherwise.</para>
+<para><simplesect kind="see"><para><ref refid="classAbstractPokitServicePrivate_1a642431b7bfb76baa5d976ae24e90d9ef" kindref="member">AbstractPokitServicePrivate::characteristicChanged</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classAbstractPokitServicePrivate_1a2922b59e5fc76b0e90ebef2a88adac9d" kindref="member">AbstractPokitServicePrivate::disableCharacteristicNotificatons</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/lib/abstractpokitservice_p.h" line="47" column="10" bodyfile="/home/paul/src/dokit/src/lib/abstractpokitservice.cpp" bodystart="330" bodyend="355"/>
+        <references refid="qstring_1arg-14">QString::arg</references>
+        <references refid="classPokitDevice_1a0a3e6078ce0a7c2d93171ef0f4183d61" compoundref="pokitdevice_8cpp" startline="218" endline="261">PokitDevice::charcteristicToString</references>
+        <references refid="qlowenergycharacteristic_1descriptor">QLowEnergyCharacteristic::descriptor</references>
+        <references refid="qbytearray_1fromHex">QByteArray::fromHex</references>
+        <references refid="classAbstractPokitServicePrivate_1aaac3ef8e3590334acdddb2b029865eb0" compoundref="abstractpokitservice_8cpp" startline="265" endline="296">getCharacteristic</references>
+        <references refid="qlowenergycharacteristic_1isValid">QLowEnergyCharacteristic::isValid</references>
+        <references refid="qlowenergydescriptor_1isValid">QLowEnergyDescriptor::isValid</references>
+        <references refid="classAbstractPokitServicePrivate_1adc41ee1de2a4783623aa78d0a8beb85d" compoundref="abstractpokitservice__p_8h" startline="37" endline="37">service</references>
+        <references refid="quuid_1toString">QUuid::toString</references>
+        <references refid="qobject_1tr">QObject::tr</references>
+        <references refid="qlowenergyservice_1writeDescriptor">QLowEnergyService::writeDescriptor</references>
+      </memberdef>
+      <memberdef kind="function" id="classAbstractPokitServicePrivate_1a2922b59e5fc76b0e90ebef2a88adac9d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool AbstractPokitServicePrivate::disableCharacteristicNotificatons</definition>
+        <argsstring>(const QBluetoothUuid &amp;uuid)</argsstring>
+        <name>disableCharacteristicNotificatons</name>
+        <qualifiedname>AbstractPokitServicePrivate::disableCharacteristicNotificatons</qualifiedname>
+        <param>
+          <type>const <ref refid="qbluetoothuuid" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothUuid</ref> &amp;</type>
+          <declname>uuid</declname>
+        </param>
+        <briefdescription>
+<para>Disables client (Pokit device) side notification for characteristic <emphasis>uuid</emphasis>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns <computeroutput>true</computeroutput> if the notication disable request was successfully queued, <computeroutput>false</computeroutput> otherwise.</para>
+<para><simplesect kind="see"><para><ref refid="classAbstractPokitServicePrivate_1a642431b7bfb76baa5d976ae24e90d9ef" kindref="member">AbstractPokitServicePrivate::characteristicChanged</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classAbstractPokitServicePrivate_1a7a024ab2e783e62b78568f4834eb6159" kindref="member">AbstractPokitServicePrivate::enableCharacteristicNotificatons</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/lib/abstractpokitservice_p.h" line="48" column="10" bodyfile="/home/paul/src/dokit/src/lib/abstractpokitservice.cpp" bodystart="365" bodyend="390"/>
+        <references refid="qstring_1arg-14">QString::arg</references>
+        <references refid="classPokitDevice_1a0a3e6078ce0a7c2d93171ef0f4183d61" compoundref="pokitdevice_8cpp" startline="218" endline="261">PokitDevice::charcteristicToString</references>
+        <references refid="qlowenergycharacteristic_1descriptor">QLowEnergyCharacteristic::descriptor</references>
+        <references refid="qbytearray_1fromHex">QByteArray::fromHex</references>
+        <references refid="classAbstractPokitServicePrivate_1aaac3ef8e3590334acdddb2b029865eb0" compoundref="abstractpokitservice_8cpp" startline="265" endline="296">getCharacteristic</references>
+        <references refid="qlowenergycharacteristic_1isValid">QLowEnergyCharacteristic::isValid</references>
+        <references refid="qlowenergydescriptor_1isValid">QLowEnergyDescriptor::isValid</references>
+        <references refid="classAbstractPokitServicePrivate_1adc41ee1de2a4783623aa78d0a8beb85d" compoundref="abstractpokitservice__p_8h" startline="37" endline="37">service</references>
+        <references refid="quuid_1toString">QUuid::toString</references>
+        <references refid="qobject_1tr">QObject::tr</references>
+        <references refid="qlowenergyservice_1writeDescriptor">QLowEnergyService::writeDescriptor</references>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-slot">
+      <memberdef kind="slot" id="classAbstractPokitServicePrivate_1a9eec6d6dfe45c70c2907564940966200" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AbstractPokitServicePrivate::connected</definition>
+        <argsstring>()</argsstring>
+        <name>connected</name>
+        <qualifiedname>AbstractPokitServicePrivate::connected</qualifiedname>
+        <briefdescription>
+<para>Handles <computeroutput><ref refid="qlowenergycontroller_1connected" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QLowEnergyController::connected</ref></computeroutput> events. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If <computeroutput>autoDiscover</computeroutput> is enabled, this will begin service discovery on the newly connected contoller.</para>
+<para><simplesect kind="see"><para><ref refid="classAbstractPokitService_1a65c2c9c6163744a7cf52de2c6a83f610" kindref="member">AbstractPokitService::autoDiscover()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/lib/abstractpokitservice_p.h" line="58" column="10" bodyfile="/home/paul/src/dokit/src/lib/abstractpokitservice.cpp" bodystart="441" bodyend="454"/>
+        <references refid="qstring_1arg-14">QString::arg</references>
+        <references refid="classAbstractPokitServicePrivate_1a21d38af5e7fc69f2c47c219a7ab545c7" compoundref="abstractpokitservice__p_8h" startline="34" endline="34">autoDiscover</references>
+        <references refid="classAbstractPokitServicePrivate_1aefc2f27e42be44bf63d9e4f944737da1" compoundref="abstractpokitservice__p_8h" startline="35" endline="35">controller</references>
+        <references refid="qlowenergycontroller_1discoverServices">QLowEnergyController::discoverServices</references>
+        <references refid="qlowenergycontroller_1remoteAddress">QLowEnergyController::remoteAddress</references>
+        <references refid="qlowenergycontroller_1remoteDeviceUuid">QLowEnergyController::remoteDeviceUuid</references>
+        <references refid="qlowenergycontroller_1remoteName">QLowEnergyController::remoteName</references>
+        <references refid="qobject_1sender">QObject::sender</references>
+        <references refid="qbluetoothaddress_1toString">QBluetoothAddress::toString</references>
+        <references refid="quuid_1toString">QUuid::toString</references>
+        <references refid="qobject_1tr">QObject::tr</references>
+        <referencedby refid="classAbstractPokitServicePrivate_1a73d4b6cd1a53f997f78d1c266a1c1871" compoundref="abstractpokitservice_8cpp" startline="168" endline="184">AbstractPokitServicePrivate</referencedby>
+      </memberdef>
+      <memberdef kind="slot" id="classAbstractPokitServicePrivate_1a2cc16a897908f50e0f3cfc6b876b50ab" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AbstractPokitServicePrivate::discoveryFinished</definition>
+        <argsstring>()</argsstring>
+        <name>discoveryFinished</name>
+        <qualifiedname>AbstractPokitServicePrivate::discoveryFinished</qualifiedname>
+        <briefdescription>
+<para>Handles <computeroutput><ref refid="qlowenergycontroller_1discoveryFinished" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QLowEnergyController::discoveryFinished</ref></computeroutput> events. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>As this event indicates that the conroller has finished discovering services, this function will invoke <ref refid="classAbstractPokitServicePrivate_1a2b105802085225fe68254dfdb6754ad9" kindref="member">createServiceObject()</ref> to create the internal service object (if not already created). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/lib/abstractpokitservice_p.h" line="59" column="10" bodyfile="/home/paul/src/dokit/src/lib/abstractpokitservice.cpp" bodystart="462" bodyend="478"/>
+        <references refid="qstring_1arg-14">QString::arg</references>
+        <references refid="classAbstractPokitServicePrivate_1aefc2f27e42be44bf63d9e4f944737da1" compoundref="abstractpokitservice__p_8h" startline="35" endline="35">controller</references>
+        <references refid="classAbstractPokitServicePrivate_1a2b105802085225fe68254dfdb6754ad9" compoundref="abstractpokitservice_8cpp" startline="193" endline="250">createServiceObject</references>
+        <references refid="qobject_1Q_EMIT">QObject::Q_EMIT</references>
+        <references refid="qlowenergycontroller_1remoteAddress">QLowEnergyController::remoteAddress</references>
+        <references refid="qlowenergycontroller_1remoteDeviceUuid">QLowEnergyController::remoteDeviceUuid</references>
+        <references refid="qlowenergycontroller_1remoteName">QLowEnergyController::remoteName</references>
+        <references refid="qobject_1sender">QObject::sender</references>
+        <references refid="qbluetoothaddress_1toString">QBluetoothAddress::toString</references>
+        <references refid="quuid_1toString">QUuid::toString</references>
+        <references refid="qobject_1tr">QObject::tr</references>
+        <referencedby refid="classAbstractPokitServicePrivate_1a73d4b6cd1a53f997f78d1c266a1c1871" compoundref="abstractpokitservice_8cpp" startline="168" endline="184">AbstractPokitServicePrivate</referencedby>
+      </memberdef>
+      <memberdef kind="slot" id="classAbstractPokitServicePrivate_1ab086f2e2e5058bc7978a67e86d579325" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AbstractPokitServicePrivate::errorOccurred</definition>
+        <argsstring>(const QLowEnergyService::ServiceError newError)</argsstring>
+        <name>errorOccurred</name>
+        <qualifiedname>AbstractPokitServicePrivate::errorOccurred</qualifiedname>
+        <param>
+          <type>const <ref refid="qlowenergyservice_1ServiceError-enum" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QLowEnergyService::ServiceError</ref></type>
+          <declname>newError</declname>
+        </param>
+        <briefdescription>
+<para>Handles <computeroutput><ref refid="qlowenergycontroller_1errorOccurred" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QLowEnergyController::errorOccurred</ref></computeroutput> events. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function simply re-emits <emphasis>newError</emphasis> as <ref refid="classAbstractPokitService_1a9e680ebf280361ef82f4b072448d7e9b" kindref="member">AbstractPokitService::serviceErrorOccurred</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/lib/abstractpokitservice_p.h" line="60" column="10" bodyfile="/home/paul/src/dokit/src/lib/abstractpokitservice.cpp" bodystart="485" bodyend="490"/>
+        <references refid="qobject_1Q_EMIT">QObject::Q_EMIT</references>
+        <references refid="qobject_1tr">QObject::tr</references>
+        <referencedby refid="classAbstractPokitServicePrivate_1a2b105802085225fe68254dfdb6754ad9" compoundref="abstractpokitservice_8cpp" startline="193" endline="250">createServiceObject</referencedby>
+      </memberdef>
+      <memberdef kind="slot" id="classAbstractPokitServicePrivate_1a654255854b4aca7718ef30e10260d89b" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void AbstractPokitServicePrivate::serviceDiscovered</definition>
+        <argsstring>(const QBluetoothUuid &amp;newService)</argsstring>
+        <name>serviceDiscovered</name>
+        <qualifiedname>AbstractPokitServicePrivate::serviceDiscovered</qualifiedname>
+        <reimplementedby refid="classStatusServicePrivate_1a416f4b2a7e342c39fd667bcf324b4ea4">serviceDiscovered</reimplementedby>
+        <param>
+          <type>const <ref refid="qbluetoothuuid" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothUuid</ref> &amp;</type>
+          <declname>newService</declname>
+        </param>
+        <briefdescription>
+<para>Handles <computeroutput><ref refid="qlowenergycontroller_1serviceDiscovered" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QLowEnergyController::serviceDiscovered</ref></computeroutput> events. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If the discovered service is the one this (or rather the derived) class wraps, then <ref refid="classAbstractPokitServicePrivate_1a2b105802085225fe68254dfdb6754ad9" kindref="member">createServiceObject()</ref> will be invoked immediately (otherwise it will be invoked after full service discovery has completed, ie in <ref refid="classAbstractPokitServicePrivate_1a2cc16a897908f50e0f3cfc6b876b50ab" kindref="member">discoveryFinished()</ref>). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/lib/abstractpokitservice_p.h" line="61" column="18" bodyfile="/home/paul/src/dokit/src/lib/abstractpokitservice.cpp" bodystart="499" bodyend="505"/>
+        <references refid="classAbstractPokitServicePrivate_1a2b105802085225fe68254dfdb6754ad9" compoundref="abstractpokitservice_8cpp" startline="193" endline="250">createServiceObject</references>
+        <references refid="classAbstractPokitServicePrivate_1adc41ee1de2a4783623aa78d0a8beb85d" compoundref="abstractpokitservice__p_8h" startline="37" endline="37">service</references>
+        <references refid="classAbstractPokitServicePrivate_1a37538a1aa1beeb85a041f1735d65cbfd" compoundref="abstractpokitservice__p_8h" startline="38">serviceUuid</references>
+        <references refid="qobject_1tr">QObject::tr</references>
+        <referencedby refid="classAbstractPokitServicePrivate_1a73d4b6cd1a53f997f78d1c266a1c1871" compoundref="abstractpokitservice_8cpp" startline="168" endline="184">AbstractPokitServicePrivate</referencedby>
+        <referencedby refid="classStatusServicePrivate_1a416f4b2a7e342c39fd667bcf324b4ea4" compoundref="statusservice_8cpp" startline="719" endline="729">StatusServicePrivate::serviceDiscovered</referencedby>
+      </memberdef>
+      <memberdef kind="slot" id="classAbstractPokitServicePrivate_1ad4cd6a5700b0b764b3a81f67603dc68f" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AbstractPokitServicePrivate::stateChanged</definition>
+        <argsstring>(QLowEnergyService::ServiceState newState)</argsstring>
+        <name>stateChanged</name>
+        <qualifiedname>AbstractPokitServicePrivate::stateChanged</qualifiedname>
+        <param>
+          <type><ref refid="qlowenergyservice_1ServiceState-enum" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QLowEnergyService::ServiceState</ref></type>
+          <declname>newState</declname>
+        </param>
+        <briefdescription>
+<para>Handles <computeroutput><ref refid="qlowenergycontroller_1stateChanged" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QLowEnergyController::stateChanged</ref></computeroutput> events. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If <emphasis>newState</emphasis> indicates that service details have now been discovered, then <ref refid="classAbstractPokitService_1af67cbea4294ba0a77dcd9540b29528ff" kindref="member">AbstractPokitService::serviceDetailsDiscovered</ref> will be emitted.</para>
+<para><simplesect kind="see"><para><ref refid="classAbstractPokitService_1a65c2c9c6163744a7cf52de2c6a83f610" kindref="member">AbstractPokitService::autoDiscover()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/lib/abstractpokitservice_p.h" line="62" column="10" bodyfile="/home/paul/src/dokit/src/lib/abstractpokitservice.cpp" bodystart="515" bodyend="553"/>
+        <references refid="qstring_1arg-14">QString::arg</references>
+        <references refid="qlowenergyservice_1characteristics">QLowEnergyService::characteristics</references>
+        <references refid="classPokitDevice_1a0a3e6078ce0a7c2d93171ef0f4183d61" compoundref="pokitdevice_8cpp" startline="218" endline="261">PokitDevice::charcteristicToString</references>
+        <references refid="qstringlist_1join-3">QStringList::join</references>
+        <references refid="qobject_1Q_EMIT">QObject::Q_EMIT</references>
+        <references refid="classAbstractPokitServicePrivate_1adc41ee1de2a4783623aa78d0a8beb85d" compoundref="abstractpokitservice__p_8h" startline="37" endline="37">service</references>
+        <references refid="qobject_1tr">QObject::tr</references>
+        <referencedby refid="classAbstractPokitServicePrivate_1a2b105802085225fe68254dfdb6754ad9" compoundref="abstractpokitservice_8cpp" startline="193" endline="250">createServiceObject</referencedby>
+      </memberdef>
+      <memberdef kind="slot" id="classAbstractPokitServicePrivate_1a84bef330c6ff124f1e460bb8949d82da" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void AbstractPokitServicePrivate::characteristicRead</definition>
+        <argsstring>(const QLowEnergyCharacteristic &amp;characteristic, const QByteArray &amp;value)</argsstring>
+        <name>characteristicRead</name>
+        <qualifiedname>AbstractPokitServicePrivate::characteristicRead</qualifiedname>
+        <reimplementedby refid="classDataLoggerServicePrivate_1a91ded6976e79e6054954eebe591214be">characteristicRead</reimplementedby>
+        <reimplementedby refid="classDeviceInfoServicePrivate_1a5ca3ccfe6cc8231247fed820e41551a1">characteristicRead</reimplementedby>
+        <reimplementedby refid="classDsoServicePrivate_1a0eb9af767bd0ec01458d681a5831c07a">characteristicRead</reimplementedby>
+        <reimplementedby refid="classMultimeterServicePrivate_1a2cb96a3c5ae351ca9d07ee7bc828029a">characteristicRead</reimplementedby>
+        <reimplementedby refid="classStatusServicePrivate_1a08d8faee04fb47ac19d3962609606d52">characteristicRead</reimplementedby>
+        <param>
+          <type>const <ref refid="qlowenergycharacteristic" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QLowEnergyCharacteristic</ref> &amp;</type>
+          <declname>characteristic</declname>
+        </param>
+        <param>
+          <type>const <ref refid="qbytearray" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QByteArray</ref> &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Handles <computeroutput><ref refid="qlowenergyservice_1characteristicRead" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QLowEnergyService::characteristicRead</ref></computeroutput> events. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This base implementation simply debug logs the event.</para>
+<para>Derived classes should implement this function to handle the successful reads of <emphasis>characteristic</emphasis>, typically by parsing <emphasis>value</emphasis>, then emitting a speciailised signal. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/lib/abstractpokitservice_p.h" line="64" column="18" bodyfile="/home/paul/src/dokit/src/lib/abstractpokitservice.cpp" bodystart="562" bodyend="567"/>
+        <references refid="qstring_1arg-14">QString::arg</references>
+        <references refid="classPokitDevice_1a0a3e6078ce0a7c2d93171ef0f4183d61" compoundref="pokitdevice_8cpp" startline="218" endline="261">PokitDevice::charcteristicToString</references>
+        <references refid="qbytearray_1size">QByteArray::size</references>
+        <references refid="classAbstractPokitServicePrivate_1af748600fc201fe47f29b58e8e93179d8" compoundref="abstractpokitservice_8cpp" startline="425" endline="432">toHexString</references>
+        <references refid="quuid_1toString">QUuid::toString</references>
+        <references refid="qobject_1tr">QObject::tr</references>
+        <references refid="qlowenergycharacteristic_1uuid">QLowEnergyCharacteristic::uuid</references>
+        <referencedby refid="classDataLoggerServicePrivate_1a91ded6976e79e6054954eebe591214be" compoundref="dataloggerservice_8cpp" startline="455" endline="480">DataLoggerServicePrivate::characteristicRead</referencedby>
+        <referencedby refid="classDeviceInfoServicePrivate_1a5ca3ccfe6cc8231247fed820e41551a1" compoundref="deviceinfoservice_8cpp" startline="324" endline="374">DeviceInfoServicePrivate::characteristicRead</referencedby>
+        <referencedby refid="classDsoServicePrivate_1a0eb9af767bd0ec01458d681a5831c07a" compoundref="dsoservice_8cpp" startline="400" endline="425">DsoServicePrivate::characteristicRead</referencedby>
+        <referencedby refid="classMultimeterServicePrivate_1a2cb96a3c5ae351ca9d07ee7bc828029a" compoundref="multimeterservice_8cpp" startline="330" endline="349">MultimeterServicePrivate::characteristicRead</referencedby>
+        <referencedby refid="classStatusServicePrivate_1a08d8faee04fb47ac19d3962609606d52" compoundref="statusservice_8cpp" startline="735" endline="786">StatusServicePrivate::characteristicRead</referencedby>
+        <referencedby refid="classAbstractPokitServicePrivate_1a2b105802085225fe68254dfdb6754ad9" compoundref="abstractpokitservice_8cpp" startline="193" endline="250">createServiceObject</referencedby>
+      </memberdef>
+      <memberdef kind="slot" id="classAbstractPokitServicePrivate_1aaf4a6cb9f0b1fe537877d615a6634201" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void AbstractPokitServicePrivate::characteristicWritten</definition>
+        <argsstring>(const QLowEnergyCharacteristic &amp;characteristic, const QByteArray &amp;newValue)</argsstring>
+        <name>characteristicWritten</name>
+        <qualifiedname>AbstractPokitServicePrivate::characteristicWritten</qualifiedname>
+        <reimplementedby refid="classCalibrationServicePrivate_1a1319763f3101ba47ad5e3dedacb630ac">characteristicWritten</reimplementedby>
+        <reimplementedby refid="classDataLoggerServicePrivate_1a6988cc8bf165d4bf1fcdacf7124ea6f9">characteristicWritten</reimplementedby>
+        <reimplementedby refid="classDsoServicePrivate_1acd230f4773256fa6cea38cb43ed65df1">characteristicWritten</reimplementedby>
+        <reimplementedby refid="classMultimeterServicePrivate_1abe299f554929b4b345d5dd527fd7bcea">characteristicWritten</reimplementedby>
+        <reimplementedby refid="classStatusServicePrivate_1a8de57b8b27437360d75bd44f74595db1">characteristicWritten</reimplementedby>
+        <param>
+          <type>const <ref refid="qlowenergycharacteristic" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QLowEnergyCharacteristic</ref> &amp;</type>
+          <declname>characteristic</declname>
+        </param>
+        <param>
+          <type>const <ref refid="qbytearray" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QByteArray</ref> &amp;</type>
+          <declname>newValue</declname>
+        </param>
+        <briefdescription>
+<para>Handles <computeroutput><ref refid="qlowenergyservice_1characteristicWritten" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QLowEnergyService::characteristicWritten</ref></computeroutput> events. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This base implementation simply debug logs the event.</para>
+<para>Derived classes should implement this function to handle the successful writes of <emphasis>characteristic</emphasis>, typically by parsing <emphasis>newValue</emphasis>, then emitting a speciailised signal. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/lib/abstractpokitservice_p.h" line="66" column="18" bodyfile="/home/paul/src/dokit/src/lib/abstractpokitservice.cpp" bodystart="576" bodyend="581"/>
+        <references refid="qstring_1arg-14">QString::arg</references>
+        <references refid="classPokitDevice_1a0a3e6078ce0a7c2d93171ef0f4183d61" compoundref="pokitdevice_8cpp" startline="218" endline="261">PokitDevice::charcteristicToString</references>
+        <references refid="qbytearray_1size">QByteArray::size</references>
+        <references refid="classAbstractPokitServicePrivate_1af748600fc201fe47f29b58e8e93179d8" compoundref="abstractpokitservice_8cpp" startline="425" endline="432">toHexString</references>
+        <references refid="quuid_1toString">QUuid::toString</references>
+        <references refid="qobject_1tr">QObject::tr</references>
+        <references refid="qlowenergycharacteristic_1uuid">QLowEnergyCharacteristic::uuid</references>
+        <referencedby refid="classCalibrationServicePrivate_1a1319763f3101ba47ad5e3dedacb630ac" compoundref="calibrationservice_8cpp" startline="129" endline="142">CalibrationServicePrivate::characteristicWritten</referencedby>
+        <referencedby refid="classDataLoggerServicePrivate_1a6988cc8bf165d4bf1fcdacf7124ea6f9" compoundref="dataloggerservice_8cpp" startline="486" endline="511">DataLoggerServicePrivate::characteristicWritten</referencedby>
+        <referencedby refid="classDsoServicePrivate_1acd230f4773256fa6cea38cb43ed65df1" compoundref="dsoservice_8cpp" startline="431" endline="456">DsoServicePrivate::characteristicWritten</referencedby>
+        <referencedby refid="classMultimeterServicePrivate_1abe299f554929b4b345d5dd527fd7bcea" compoundref="multimeterservice_8cpp" startline="355" endline="374">MultimeterServicePrivate::characteristicWritten</referencedby>
+        <referencedby refid="classStatusServicePrivate_1a8de57b8b27437360d75bd44f74595db1" compoundref="statusservice_8cpp" startline="792" endline="827">StatusServicePrivate::characteristicWritten</referencedby>
+        <referencedby refid="classAbstractPokitServicePrivate_1a2b105802085225fe68254dfdb6754ad9" compoundref="abstractpokitservice_8cpp" startline="193" endline="250">createServiceObject</referencedby>
+      </memberdef>
+      <memberdef kind="slot" id="classAbstractPokitServicePrivate_1a642431b7bfb76baa5d976ae24e90d9ef" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void AbstractPokitServicePrivate::characteristicChanged</definition>
+        <argsstring>(const QLowEnergyCharacteristic &amp;characteristic, const QByteArray &amp;newValue)</argsstring>
+        <name>characteristicChanged</name>
+        <qualifiedname>AbstractPokitServicePrivate::characteristicChanged</qualifiedname>
+        <reimplementedby refid="classDataLoggerServicePrivate_1a687b443e1e36e2c07a9776a6ca02e688">characteristicChanged</reimplementedby>
+        <reimplementedby refid="classDsoServicePrivate_1a7de9e2488240903fee3d88b89bf1d5ec">characteristicChanged</reimplementedby>
+        <reimplementedby refid="classMultimeterServicePrivate_1af80ef46d902cc372a57bb1ba45313bcb">characteristicChanged</reimplementedby>
+        <param>
+          <type>const <ref refid="qlowenergycharacteristic" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QLowEnergyCharacteristic</ref> &amp;</type>
+          <declname>characteristic</declname>
+        </param>
+        <param>
+          <type>const <ref refid="qbytearray" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QByteArray</ref> &amp;</type>
+          <declname>newValue</declname>
+        </param>
+        <briefdescription>
+<para>Handles <computeroutput><ref refid="qlowenergyservice_1characteristicChanged" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QLowEnergyService::characteristicChanged</ref></computeroutput> events. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This base implementation simply debug logs the event.</para>
+<para>If derived classes support characteristics with client-side notification (ie Notify, as opposed to Read or Write operations), they should implement this function to handle the successful reads of <emphasis>characteristic</emphasis>, typically by parsing <emphasis>value</emphasis>, then emitting a speciailised signal. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/lib/abstractpokitservice_p.h" line="68" column="18" bodyfile="/home/paul/src/dokit/src/lib/abstractpokitservice.cpp" bodystart="591" bodyend="596"/>
+        <references refid="qstring_1arg-14">QString::arg</references>
+        <references refid="classPokitDevice_1a0a3e6078ce0a7c2d93171ef0f4183d61" compoundref="pokitdevice_8cpp" startline="218" endline="261">PokitDevice::charcteristicToString</references>
+        <references refid="qbytearray_1size">QByteArray::size</references>
+        <references refid="classAbstractPokitServicePrivate_1af748600fc201fe47f29b58e8e93179d8" compoundref="abstractpokitservice_8cpp" startline="425" endline="432">toHexString</references>
+        <references refid="quuid_1toString">QUuid::toString</references>
+        <references refid="qobject_1tr">QObject::tr</references>
+        <references refid="qlowenergycharacteristic_1uuid">QLowEnergyCharacteristic::uuid</references>
+        <referencedby refid="classDataLoggerServicePrivate_1a687b443e1e36e2c07a9776a6ca02e688" compoundref="dataloggerservice_8cpp" startline="517" endline="541">DataLoggerServicePrivate::characteristicChanged</referencedby>
+        <referencedby refid="classDsoServicePrivate_1a7de9e2488240903fee3d88b89bf1d5ec" compoundref="dsoservice_8cpp" startline="462" endline="486">DsoServicePrivate::characteristicChanged</referencedby>
+        <referencedby refid="classMultimeterServicePrivate_1af80ef46d902cc372a57bb1ba45313bcb" compoundref="multimeterservice_8cpp" startline="380" endline="399">MultimeterServicePrivate::characteristicChanged</referencedby>
+        <referencedby refid="classAbstractPokitServicePrivate_1a2b105802085225fe68254dfdb6754ad9" compoundref="abstractpokitservice_8cpp" startline="193" endline="250">createServiceObject</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>The <ref refid="classAbstractPokitServicePrivate" kindref="compound">AbstractPokitServicePrivate</ref> class provides private implementation for <ref refid="classAbstractPokitService" kindref="compound">AbstractPokitService</ref>. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>AbstractPokitServicePrivate</label>
+        <link refid="classAbstractPokitServicePrivate"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>CalibrationServicePrivate</label>
+        <link refid="classCalibrationServicePrivate"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>DataLoggerServicePrivate</label>
+        <link refid="classDataLoggerServicePrivate"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>DeviceInfoServicePrivate</label>
+        <link refid="classDeviceInfoServicePrivate"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>DsoServicePrivate</label>
+        <link refid="classDsoServicePrivate"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>MultimeterServicePrivate</label>
+        <link refid="classMultimeterServicePrivate"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QObject</label>
+        <link refid="qobject" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags"/>
+      </node>
+      <node id="8">
+        <label>StatusServicePrivate</label>
+        <link refid="classStatusServicePrivate"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="7">
+        <label>AbstractPokitService</label>
+        <link refid="classAbstractPokitService"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1" relation="usage">
+          <edgelabel>d_ptr</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>AbstractPokitServicePrivate</label>
+        <link refid="classAbstractPokitServicePrivate"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>controller</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>service</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>serviceUuid</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>q_ptr</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>QBluetoothUuid</label>
+        <link refid="qbluetoothuuid" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>QLowEnergyController</label>
+        <link refid="qlowenergycontroller" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>QLowEnergyService</label>
+        <link refid="qlowenergyservice" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QObject</label>
+        <link refid="qobject" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags"/>
+      </node>
+      <node id="6">
+        <label>QUuid</label>
+        <link refid="quuid" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/paul/src/dokit/src/lib/abstractpokitservice_p.h" line="27" column="1" bodyfile="/home/paul/src/dokit/src/lib/abstractpokitservice_p.h" bodystart="28" bodyend="75"/>
+    <listofallmembers>
+      <member refid="classAbstractPokitServicePrivate_1a73d4b6cd1a53f997f78d1c266a1c1871" prot="public" virt="non-virtual"><scope>AbstractPokitServicePrivate</scope><name>AbstractPokitServicePrivate</name></member>
+      <member refid="classAbstractPokitServicePrivate_1a21d38af5e7fc69f2c47c219a7ab545c7" prot="public" virt="non-virtual"><scope>AbstractPokitServicePrivate</scope><name>autoDiscover</name></member>
+      <member refid="qobject_1objectName-prop" prot="public" virt="non-virtual"><scope>AbstractPokitServicePrivate</scope><name>bindableObjectName</name></member>
+      <member refid="qobject_1blockSignals" prot="public" virt="non-virtual"><scope>AbstractPokitServicePrivate</scope><name>blockSignals</name></member>
+      <member refid="classAbstractPokitServicePrivate_1a642431b7bfb76baa5d976ae24e90d9ef" prot="protected" virt="virtual"><scope>AbstractPokitServicePrivate</scope><name>characteristicChanged</name></member>
+      <member refid="classAbstractPokitServicePrivate_1a84bef330c6ff124f1e460bb8949d82da" prot="protected" virt="virtual"><scope>AbstractPokitServicePrivate</scope><name>characteristicRead</name></member>
+      <member refid="classAbstractPokitServicePrivate_1aaf4a6cb9f0b1fe537877d615a6634201" prot="protected" virt="virtual"><scope>AbstractPokitServicePrivate</scope><name>characteristicWritten</name></member>
+      <member refid="classAbstractPokitServicePrivate_1af8b480a950244540bfff7fc4b476a0ef" prot="public" virt="non-virtual"><scope>AbstractPokitServicePrivate</scope><name>checkSize</name></member>
+      <member refid="qobject_1childEvent" prot="protected" virt="virtual"><scope>AbstractPokitServicePrivate</scope><name>childEvent</name></member>
+      <member refid="qobject_1children" prot="public" virt="non-virtual"><scope>AbstractPokitServicePrivate</scope><name>children</name></member>
+      <member refid="qobject_1connect-4" prot="public" virt="non-virtual"><scope>AbstractPokitServicePrivate</scope><name>connect</name></member>
+      <member refid="qobject_1connect-5" prot="public" virt="non-virtual"><scope>AbstractPokitServicePrivate</scope><name>connect</name></member>
+      <member refid="qobject_1connect-3" prot="public" virt="non-virtual"><scope>AbstractPokitServicePrivate</scope><name>connect</name></member>
+      <member refid="qobject_1connect-1" prot="public" virt="non-virtual"><scope>AbstractPokitServicePrivate</scope><name>connect</name></member>
+      <member refid="qobject_1connect" prot="public" virt="non-virtual"><scope>AbstractPokitServicePrivate</scope><name>connect</name></member>
+      <member refid="qobject_1connect-2" prot="public" virt="non-virtual"><scope>AbstractPokitServicePrivate</scope><name>connect</name></member>
+      <member refid="classAbstractPokitServicePrivate_1a9eec6d6dfe45c70c2907564940966200" prot="protected" virt="non-virtual"><scope>AbstractPokitServicePrivate</scope><name>connected</name></member>
+      <member refid="qobject_1connectNotify" prot="protected" virt="virtual"><scope>AbstractPokitServicePrivate</scope><name>connectNotify</name></member>
+      <member refid="classAbstractPokitServicePrivate_1aefc2f27e42be44bf63d9e4f944737da1" prot="public" virt="non-virtual"><scope>AbstractPokitServicePrivate</scope><name>controller</name></member>
+      <member refid="classAbstractPokitServicePrivate_1a2b105802085225fe68254dfdb6754ad9" prot="public" virt="non-virtual"><scope>AbstractPokitServicePrivate</scope><name>createServiceObject</name></member>
+      <member refid="qobject_1customEvent" prot="protected" virt="virtual"><scope>AbstractPokitServicePrivate</scope><name>customEvent</name></member>
+      <member refid="qobject_1deleteLater" prot="public" virt="non-virtual"><scope>AbstractPokitServicePrivate</scope><name>deleteLater</name></member>
+      <member refid="qobject_1destroyed" prot="public" virt="non-virtual"><scope>AbstractPokitServicePrivate</scope><name>destroyed</name></member>
+      <member refid="classAbstractPokitServicePrivate_1a2922b59e5fc76b0e90ebef2a88adac9d" prot="public" virt="non-virtual"><scope>AbstractPokitServicePrivate</scope><name>disableCharacteristicNotificatons</name></member>
+      <member refid="qobject_1disconnect-4" prot="public" virt="non-virtual"><scope>AbstractPokitServicePrivate</scope><name>disconnect</name></member>
+      <member refid="qobject_1disconnect-5" prot="public" virt="non-virtual"><scope>AbstractPokitServicePrivate</scope><name>disconnect</name></member>
+      <member refid="qobject_1disconnect-1" prot="public" virt="non-virtual"><scope>AbstractPokitServicePrivate</scope><name>disconnect</name></member>
+      <member refid="qobject_1disconnect" prot="public" virt="non-virtual"><scope>AbstractPokitServicePrivate</scope><name>disconnect</name></member>
+      <member refid="qobject_1disconnect-3" prot="public" virt="non-virtual"><scope>AbstractPokitServicePrivate</scope><name>disconnect</name></member>
+      <member refid="qobject_1disconnect-2" prot="public" virt="non-virtual"><scope>AbstractPokitServicePrivate</scope><name>disconnect</name></member>
+      <member refid="qobject_1disconnectNotify" prot="protected" virt="virtual"><scope>AbstractPokitServicePrivate</scope><name>disconnectNotify</name></member>
+      <member refid="classAbstractPokitServicePrivate_1a2cc16a897908f50e0f3cfc6b876b50ab" prot="protected" virt="non-virtual"><scope>AbstractPokitServicePrivate</scope><name>discoveryFinished</name></member>
+      <member refid="qobject_1dumpObjectInfo" prot="public" virt="non-virtual"><scope>AbstractPokitServicePrivate</scope><name>dumpObjectInfo</name></member>
+      <member refid="qobject_1dumpObjectTree" prot="public" virt="non-virtual"><scope>AbstractPokitServicePrivate</scope><name>dumpObjectTree</name></member>
+      <member refid="qobject_1dynamicPropertyNames" prot="public" virt="non-virtual"><scope>AbstractPokitServicePrivate</scope><name>dynamicPropertyNames</name></member>
+      <member refid="classAbstractPokitServicePrivate_1a7a024ab2e783e62b78568f4834eb6159" prot="public" virt="non-virtual"><scope>AbstractPokitServicePrivate</scope><name>enableCharacteristicNotificatons</name></member>
+      <member refid="classAbstractPokitServicePrivate_1ab086f2e2e5058bc7978a67e86d579325" prot="protected" virt="non-virtual"><scope>AbstractPokitServicePrivate</scope><name>errorOccurred</name></member>
+      <member refid="qobject_1event" prot="public" virt="virtual"><scope>AbstractPokitServicePrivate</scope><name>event</name></member>
+      <member refid="qobject_1eventFilter" prot="public" virt="virtual"><scope>AbstractPokitServicePrivate</scope><name>eventFilter</name></member>
+      <member refid="qobject_1findChild" prot="public" virt="non-virtual"><scope>AbstractPokitServicePrivate</scope><name>findChild</name></member>
+      <member refid="qobject_1findChildren-1" prot="public" virt="non-virtual"><scope>AbstractPokitServicePrivate</scope><name>findChildren</name></member>
+      <member refid="qobject_1findChildren-2" prot="public" virt="non-virtual"><scope>AbstractPokitServicePrivate</scope><name>findChildren</name></member>
+      <member refid="qobject_1findChildren" prot="public" virt="non-virtual"><scope>AbstractPokitServicePrivate</scope><name>findChildren</name></member>
+      <member refid="classAbstractPokitServicePrivate_1aaac3ef8e3590334acdddb2b029865eb0" prot="public" virt="non-virtual"><scope>AbstractPokitServicePrivate</scope><name>getCharacteristic</name></member>
+      <member refid="qobject_1inherits" prot="public" virt="non-virtual"><scope>AbstractPokitServicePrivate</scope><name>inherits</name></member>
+      <member refid="qobject_1installEventFilter" prot="public" virt="non-virtual"><scope>AbstractPokitServicePrivate</scope><name>installEventFilter</name></member>
+      <member refid="qobject_1isQuickItemType" prot="public" virt="non-virtual"><scope>AbstractPokitServicePrivate</scope><name>isQuickItemType</name></member>
+      <member refid="qobject_1isSignalConnected" prot="protected" virt="non-virtual"><scope>AbstractPokitServicePrivate</scope><name>isSignalConnected</name></member>
+      <member refid="qobject_1isWidgetType" prot="public" virt="non-virtual"><scope>AbstractPokitServicePrivate</scope><name>isWidgetType</name></member>
+      <member refid="qobject_1isWindowType" prot="public" virt="non-virtual"><scope>AbstractPokitServicePrivate</scope><name>isWindowType</name></member>
+      <member refid="qobject_1killTimer" prot="public" virt="non-virtual"><scope>AbstractPokitServicePrivate</scope><name>killTimer</name></member>
+      <member refid="qobject_1metaObject" prot="public" virt="virtual"><scope>AbstractPokitServicePrivate</scope><name>metaObject</name></member>
+      <member refid="qobject_1moveToThread" prot="public" virt="non-virtual"><scope>AbstractPokitServicePrivate</scope><name>moveToThread</name></member>
+      <member refid="qobject_1objectName-prop" prot="public" virt="non-virtual"><scope>AbstractPokitServicePrivate</scope><name>objectName</name></member>
+      <member refid="qobject_1objectName-prop" prot="public" virt="non-virtual"><scope>AbstractPokitServicePrivate</scope><name>objectName</name></member>
+      <member refid="qobject_1objectNameChanged" prot="public" virt="non-virtual"><scope>AbstractPokitServicePrivate</scope><name>objectNameChanged</name></member>
+      <member refid="qobject_1parent" prot="public" virt="non-virtual"><scope>AbstractPokitServicePrivate</scope><name>parent</name></member>
+      <member refid="classAbstractPokitServicePrivate_1afd4b02970f049753542e539bdf85e218" prot="public" virt="non-virtual"><scope>AbstractPokitServicePrivate</scope><name>pokitProduct</name></member>
+      <member refid="qobject_1property" prot="public" virt="non-virtual"><scope>AbstractPokitServicePrivate</scope><name>property</name></member>
+      <member refid="qobject_1Q_CLASSINFO" prot="public" virt="non-virtual"><scope>AbstractPokitServicePrivate</scope><name>Q_CLASSINFO</name></member>
+      <member refid="qobject_1Q_EMIT" prot="public" virt="non-virtual"><scope>AbstractPokitServicePrivate</scope><name>Q_EMIT</name></member>
+      <member refid="qobject_1Q_ENUM" prot="public" virt="non-virtual"><scope>AbstractPokitServicePrivate</scope><name>Q_ENUM</name></member>
+      <member refid="qobject_1Q_ENUM_NS" prot="public" virt="non-virtual"><scope>AbstractPokitServicePrivate</scope><name>Q_ENUM_NS</name></member>
+      <member refid="qobject-obsolete_1Q_ENUMS" prot="public" virt="non-virtual"><scope>AbstractPokitServicePrivate</scope><name>Q_ENUMS</name></member>
+      <member refid="qobject_1Q_FLAG" prot="public" virt="non-virtual"><scope>AbstractPokitServicePrivate</scope><name>Q_FLAG</name></member>
+      <member refid="qobject_1Q_FLAG_NS" prot="public" virt="non-virtual"><scope>AbstractPokitServicePrivate</scope><name>Q_FLAG_NS</name></member>
+      <member refid="qobject-obsolete_1Q_FLAGS" prot="public" virt="non-virtual"><scope>AbstractPokitServicePrivate</scope><name>Q_FLAGS</name></member>
+      <member refid="qobject_1Q_GADGET" prot="public" virt="non-virtual"><scope>AbstractPokitServicePrivate</scope><name>Q_GADGET</name></member>
+      <member refid="qobject_1Q_GADGET_EXPORT" prot="public" virt="non-virtual"><scope>AbstractPokitServicePrivate</scope><name>Q_GADGET_EXPORT</name></member>
+      <member refid="qobject_1Q_INTERFACES" prot="public" virt="non-virtual"><scope>AbstractPokitServicePrivate</scope><name>Q_INTERFACES</name></member>
+      <member refid="qobject_1Q_INVOKABLE" prot="public" virt="non-virtual"><scope>AbstractPokitServicePrivate</scope><name>Q_INVOKABLE</name></member>
+      <member refid="classAbstractPokitServicePrivate_1a32f402260c965002c68f7b9191d38af6" prot="public" virt="non-virtual"><scope>AbstractPokitServicePrivate</scope><name>Q_LOGGING_CATEGORY</name></member>
+      <member refid="qobject_1Q_MOC_INCLUDE" prot="public" virt="non-virtual"><scope>AbstractPokitServicePrivate</scope><name>Q_MOC_INCLUDE</name></member>
+      <member refid="qobject_1Q_NAMESPACE" prot="public" virt="non-virtual"><scope>AbstractPokitServicePrivate</scope><name>Q_NAMESPACE</name></member>
+      <member refid="qobject_1Q_NAMESPACE_EXPORT" prot="public" virt="non-virtual"><scope>AbstractPokitServicePrivate</scope><name>Q_NAMESPACE_EXPORT</name></member>
+      <member refid="qobject_1Q_OBJECT" prot="public" virt="non-virtual"><scope>AbstractPokitServicePrivate</scope><name>Q_OBJECT</name></member>
+      <member refid="qobject_1Q_PROPERTY" prot="public" virt="non-virtual"><scope>AbstractPokitServicePrivate</scope><name>Q_PROPERTY</name></member>
+      <member refid="classAbstractPokitServicePrivate_1a68f7ec9c0b34677eb1cf797221eb4845" prot="protected" virt="non-virtual"><scope>AbstractPokitServicePrivate</scope><name>q_ptr</name></member>
+      <member refid="qobject_1Q_REVISION" prot="public" virt="non-virtual"><scope>AbstractPokitServicePrivate</scope><name>Q_REVISION</name></member>
+      <member refid="qobject_1Q_SET_OBJECT_NAME" prot="public" virt="non-virtual"><scope>AbstractPokitServicePrivate</scope><name>Q_SET_OBJECT_NAME</name></member>
+      <member refid="qobject_1Q_SIGNAL" prot="public" virt="non-virtual"><scope>AbstractPokitServicePrivate</scope><name>Q_SIGNAL</name></member>
+      <member refid="qobject_1Q_SIGNALS" prot="public" virt="non-virtual"><scope>AbstractPokitServicePrivate</scope><name>Q_SIGNALS</name></member>
+      <member refid="qobject_1Q_SLOT" prot="public" virt="non-virtual"><scope>AbstractPokitServicePrivate</scope><name>Q_SLOT</name></member>
+      <member refid="qobject_1Q_SLOTS" prot="public" virt="non-virtual"><scope>AbstractPokitServicePrivate</scope><name>Q_SLOTS</name></member>
+      <member refid="qobject_1QObject" prot="public" virt="non-virtual"><scope>AbstractPokitServicePrivate</scope><name>QObject</name></member>
+      <member refid="qobject_1qobject_cast" prot="public" virt="non-virtual"><scope>AbstractPokitServicePrivate</scope><name>qobject_cast</name></member>
+      <member refid="qobject_1qobject_cast-1" prot="public" virt="non-virtual"><scope>AbstractPokitServicePrivate</scope><name>qobject_cast</name></member>
+      <member refid="qobject_1QObjectList-typedef" prot="public" virt="non-virtual"><scope>AbstractPokitServicePrivate</scope><name>QObjectList</name></member>
+      <member refid="qobject_1QT_NO_NARROWING_CONVERSIONS_IN_CONNECT" prot="public" virt="non-virtual"><scope>AbstractPokitServicePrivate</scope><name>QT_NO_NARROWING_CONVERSIONS_IN_CONNECT</name></member>
+      <member refid="classAbstractPokitServicePrivate_1ad58619e237f300294049c82b85d76875" prot="public" virt="non-virtual"><scope>AbstractPokitServicePrivate</scope><name>readCharacteristic</name></member>
+      <member refid="qobject_1receivers" prot="protected" virt="non-virtual"><scope>AbstractPokitServicePrivate</scope><name>receivers</name></member>
+      <member refid="qobject_1removeEventFilter" prot="public" virt="non-virtual"><scope>AbstractPokitServicePrivate</scope><name>removeEventFilter</name></member>
+      <member refid="qobject_1sender" prot="protected" virt="non-virtual"><scope>AbstractPokitServicePrivate</scope><name>sender</name></member>
+      <member refid="qobject_1senderSignalIndex" prot="protected" virt="non-virtual"><scope>AbstractPokitServicePrivate</scope><name>senderSignalIndex</name></member>
+      <member refid="classAbstractPokitServicePrivate_1adc41ee1de2a4783623aa78d0a8beb85d" prot="public" virt="non-virtual"><scope>AbstractPokitServicePrivate</scope><name>service</name></member>
+      <member refid="classAbstractPokitServicePrivate_1a654255854b4aca7718ef30e10260d89b" prot="protected" virt="virtual"><scope>AbstractPokitServicePrivate</scope><name>serviceDiscovered</name></member>
+      <member refid="classAbstractPokitServicePrivate_1a37538a1aa1beeb85a041f1735d65cbfd" prot="public" virt="non-virtual"><scope>AbstractPokitServicePrivate</scope><name>serviceUuid</name></member>
+      <member refid="qobject_1setObjectName-1" prot="public" virt="non-virtual"><scope>AbstractPokitServicePrivate</scope><name>setObjectName</name></member>
+      <member refid="qobject_1setObjectName" prot="public" virt="non-virtual"><scope>AbstractPokitServicePrivate</scope><name>setObjectName</name></member>
+      <member refid="qobject_1setParent" prot="public" virt="non-virtual"><scope>AbstractPokitServicePrivate</scope><name>setParent</name></member>
+      <member refid="qobject_1setProperty-1" prot="public" virt="non-virtual"><scope>AbstractPokitServicePrivate</scope><name>setProperty</name></member>
+      <member refid="qobject_1setProperty" prot="public" virt="non-virtual"><scope>AbstractPokitServicePrivate</scope><name>setProperty</name></member>
+      <member refid="qobject_1signalsBlocked" prot="public" virt="non-virtual"><scope>AbstractPokitServicePrivate</scope><name>signalsBlocked</name></member>
+      <member refid="qobject_1startTimer" prot="public" virt="non-virtual"><scope>AbstractPokitServicePrivate</scope><name>startTimer</name></member>
+      <member refid="qobject_1startTimer-1" prot="public" virt="non-virtual"><scope>AbstractPokitServicePrivate</scope><name>startTimer</name></member>
+      <member refid="classAbstractPokitServicePrivate_1ad4cd6a5700b0b764b3a81f67603dc68f" prot="protected" virt="non-virtual"><scope>AbstractPokitServicePrivate</scope><name>stateChanged</name></member>
+      <member refid="classAbstractPokitServicePrivate_1a127cc137bfd605debbdf97eec20d08c9" prot="private" virt="non-virtual"><scope>AbstractPokitServicePrivate</scope><name>TestAbstractPokitService</name></member>
+      <member refid="qobject_1thread" prot="public" virt="non-virtual"><scope>AbstractPokitServicePrivate</scope><name>thread</name></member>
+      <member refid="qobject_1timerEvent" prot="protected" virt="virtual"><scope>AbstractPokitServicePrivate</scope><name>timerEvent</name></member>
+      <member refid="classAbstractPokitServicePrivate_1af748600fc201fe47f29b58e8e93179d8" prot="public" virt="non-virtual"><scope>AbstractPokitServicePrivate</scope><name>toHexString</name></member>
+      <member refid="qobject_1tr" prot="public" virt="non-virtual"><scope>AbstractPokitServicePrivate</scope><name>tr</name></member>
+      <member refid="qobject_1dtor.QObject" prot="public" virt="virtual"><scope>AbstractPokitServicePrivate</scope><name>~QObject</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

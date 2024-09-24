@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.0" xml:lang="en-US">
+  <compounddef id="structMultimeterService_1_1Settings" kind="struct" language="C++" prot="public">
+    <compoundname>MultimeterService::Settings</compoundname>
+    <includes refid="multimeterservice_8h" local="no">multimeterservice.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structMultimeterService_1_1Settings_1afed6bcae66af6d69cb3887e2c6d5c443" prot="public" static="no" mutable="no">
+        <type><ref refid="classMultimeterService_1a51f66d0b81dace3115c5c68bc931eaea" kindref="member">Mode</ref></type>
+        <definition>Mode MultimeterService::Settings::mode</definition>
+        <argsstring></argsstring>
+        <name>mode</name>
+        <qualifiedname>MultimeterService::Settings::mode</qualifiedname>
+        <briefdescription>
+<para>Desired operation mode. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/multimeterservice.h" line="62" column="14" bodyfile="/home/paul/src/dokit/include/qtpokit/multimeterservice.h" bodystart="62" bodyend="-1"/>
+        <referencedby refid="classMultimeterServicePrivate_1ab69aec8bf3290ba5037e8d11926fe707" compoundref="multimeterservice_8cpp" startline="288" endline="302">MultimeterServicePrivate::encodeSettings</referencedby>
+        <referencedby refid="classMeterCommand_1a7252ac9a772bc45e374da30bbc23ed85" compoundref="metercommand_8cpp" startline="49" endline="141">MeterCommand::processOptions</referencedby>
+        <referencedby refid="classMeterCommand_1aca51a018963bc384a24154cdb112a49b" compoundref="metercommand_8cpp" startline="165" endline="174">MeterCommand::serviceDetailsDiscovered</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structMultimeterService_1_1Settings_1a6be92a8f2c6dc31050a46a0aa7610069" prot="public" static="no" mutable="no">
+        <type>quint8</type>
+        <definition>quint8 MultimeterService::Settings::range</definition>
+        <argsstring></argsstring>
+        <name>range</name>
+        <qualifiedname>MultimeterService::Settings::range</qualifiedname>
+        <briefdescription>
+<para>Desired range. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/multimeterservice.h" line="63" column="16" bodyfile="/home/paul/src/dokit/include/qtpokit/multimeterservice.h" bodystart="63" bodyend="-1"/>
+        <referencedby refid="classMultimeterServicePrivate_1ab69aec8bf3290ba5037e8d11926fe707" compoundref="multimeterservice_8cpp" startline="288" endline="302">MultimeterServicePrivate::encodeSettings</referencedby>
+        <referencedby refid="classMeterCommand_1aca51a018963bc384a24154cdb112a49b" compoundref="metercommand_8cpp" startline="165" endline="174">MeterCommand::serviceDetailsDiscovered</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structMultimeterService_1_1Settings_1a02446f040ebf7aeeacb4d932d3ab2ea2" prot="public" static="no" mutable="no">
+        <type>quint32</type>
+        <definition>quint32 MultimeterService::Settings::updateInterval</definition>
+        <argsstring></argsstring>
+        <name>updateInterval</name>
+        <qualifiedname>MultimeterService::Settings::updateInterval</qualifiedname>
+        <briefdescription>
+<para>Desired update interval in milliseconds. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/multimeterservice.h" line="64" column="17" bodyfile="/home/paul/src/dokit/include/qtpokit/multimeterservice.h" bodystart="64" bodyend="-1"/>
+        <referencedby refid="classMultimeterServicePrivate_1ab69aec8bf3290ba5037e8d11926fe707" compoundref="multimeterservice_8cpp" startline="288" endline="302">MultimeterServicePrivate::encodeSettings</referencedby>
+        <referencedby refid="classMeterCommand_1a7252ac9a772bc45e374da30bbc23ed85" compoundref="metercommand_8cpp" startline="49" endline="141">MeterCommand::processOptions</referencedby>
+        <referencedby refid="classMeterCommand_1aca51a018963bc384a24154cdb112a49b" compoundref="metercommand_8cpp" startline="165" endline="174">MeterCommand::serviceDetailsDiscovered</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Attributes included in the <computeroutput><ref refid="structMultimeterService_1_1Settings" kindref="compound">Settings</ref></computeroutput> characterstic. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/paul/src/dokit/include/qtpokit/multimeterservice.h" line="61" column="5" bodyfile="/home/paul/src/dokit/include/qtpokit/multimeterservice.h" bodystart="61" bodyend="65"/>
+    <listofallmembers>
+      <member refid="structMultimeterService_1_1Settings_1afed6bcae66af6d69cb3887e2c6d5c443" prot="public" virt="non-virtual"><scope>MultimeterService::Settings</scope><name>mode</name></member>
+      <member refid="structMultimeterService_1_1Settings_1a6be92a8f2c6dc31050a46a0aa7610069" prot="public" virt="non-virtual"><scope>MultimeterService::Settings</scope><name>range</name></member>
+      <member refid="structMultimeterService_1_1Settings_1a02446f040ebf7aeeacb4d932d3ab2ea2" prot="public" virt="non-virtual"><scope>MultimeterService::Settings</scope><name>updateInterval</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

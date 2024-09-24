@@ -1,0 +1,504 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.0" xml:lang="en-US">
+  <compounddef id="scancommand_8cpp" kind="file" language="C++">
+    <compoundname>scancommand.cpp</compoundname>
+    <includes refid="scancommand_8h" local="yes">scancommand.h</includes>
+    <includes refid="pokitdiscoveryagent_8h" local="no">qtpokit/pokitdiscoveryagent.h</includes>
+    <includes local="no">QBluetoothUuid</includes>
+    <includes local="no">QJsonArray</includes>
+    <includes local="no">QJsonDocument</includes>
+    <includes local="no">QJsonObject</includes>
+    <includes local="no">iostream</includes>
+    <incdepgraph>
+      <node id="8">
+        <label>qtpokit/pokitdiscoveryagent.h</label>
+        <link refid="pokitdiscoveryagent_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>qtpokit_global.h</label>
+        <link refid="qtpokit__global_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>abstractcommand.h</label>
+        <link refid="abstractcommand_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>scancommand.cpp</label>
+        <link refid="scancommand_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>scancommand.h</label>
+        <link refid="scancommand_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>QBluetoothDeviceDiscoveryAgent</label>
+      </node>
+      <node id="4">
+        <label>QBluetoothDeviceInfo</label>
+      </node>
+      <node id="12">
+        <label>QBluetoothUuid</label>
+      </node>
+      <node id="5">
+        <label>QCommandLineParser</label>
+      </node>
+      <node id="13">
+        <label>QJsonArray</label>
+      </node>
+      <node id="14">
+        <label>QJsonDocument</label>
+      </node>
+      <node id="15">
+        <label>QJsonObject</label>
+      </node>
+      <node id="6">
+        <label>QLoggingCategory</label>
+      </node>
+      <node id="7">
+        <label>QObject</label>
+      </node>
+      <node id="10">
+        <label>QtGlobal</label>
+      </node>
+      <node id="16">
+        <label>iostream</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>SPDX-FileCopyrightText:<sp/>2022-2024<sp/>Paul<sp/>Colby<sp/>&lt;git@colby.id.au&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>SPDX-License-Identifier:<sp/>LGPL-3.0-or-later</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;scancommand.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="pokitdiscoveryagent_8h" kindref="compound">qtpokit/pokitdiscoveryagent.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QBluetoothUuid&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QJsonArray&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QJsonDocument&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QJsonObject&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="15"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/>\class<sp/>ScanCommand</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>The<sp/>ScanCommand<sp/>class<sp/>implements<sp/>the<sp/>`scan`<sp/>CLI<sp/>command,<sp/>by<sp/>scanning<sp/>for<sp/>nearby<sp/>Pokit<sp/>Bluetooth</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/>devices.<sp/>When<sp/>devices<sp/>are<sp/>found,<sp/>they<sp/>are<sp/>logged<sp/>to<sp/>stdout<sp/>in<sp/>the<sp/>chosen<sp/>format.</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="22"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/>Construct<sp/>a<sp/>new<sp/>ScanCommand<sp/>object<sp/>with<sp/>\a<sp/>parent.</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25" refid="classScanCommand_1a3e809c3a97ec08aecf2dc0f2cf99a837" refkind="member"><highlight class="normal"><ref refid="classScanCommand_1a3e809c3a97ec08aecf2dc0f2cf99a837" kindref="member">ScanCommand::ScanCommand</ref>(<ref refid="qobject" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QObject</ref><sp/>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>parent)<sp/>:<sp/><ref refid="classAbstractCommand" kindref="compound">AbstractCommand</ref>(parent)</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#if<sp/>(QT_VERSION<sp/>&gt;=<sp/>QT_VERSION_CHECK(5,<sp/>12,<sp/>0))<sp/></highlight><highlight class="comment">//<sp/>Required<sp/>signal,<sp/>and<sp/>Fields,<sp/>added<sp/>in<sp/>Qt<sp/>5.12.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="qobject_1connect-4" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">connect</ref>(<ref refid="classAbstractCommand_1a86878df43cd818f4a7f333a97dabac3c" kindref="member">discoveryAgent</ref>,<sp/>&amp;<ref refid="classPokitDiscoveryAgent_1a96787015304d52f3e220d5a5d4e7e06c" kindref="member">PokitDiscoveryAgent::pokitDeviceUpdated</ref>,</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>&amp;<ref refid="classScanCommand_1a2cb218644893d84036ec16cd46f1d488" kindref="member">ScanCommand::deviceUpdated</ref>);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="classScanCommand_1a1fbef848493eb849ba6382c00463f275" refkind="member"><highlight class="normal"><ref refid="qstringlist" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QStringList</ref><sp/><ref refid="classScanCommand_1a1fbef848493eb849ba6382c00463f275" kindref="member">ScanCommand::requiredOptions</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qcommandlineparser" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCommandLineParser</ref><sp/>&amp;parser)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="34"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classAbstractCommand_1afd6f41cfc925751415cfa45e3b2d0b4a" kindref="member">AbstractCommand::requiredOptions</ref>(parser);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="classScanCommand_1afde6034e9362b2986aa5084b638930d6" refkind="member"><highlight class="normal"><ref refid="qstringlist" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QStringList</ref><sp/><ref refid="classScanCommand_1afde6034e9362b2986aa5084b638930d6" kindref="member">ScanCommand::supportedOptions</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qcommandlineparser" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCommandLineParser</ref><sp/>&amp;parser)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="39"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classAbstractCommand_1a1ceca3c5b4cb24277dd4d4054f45db18" kindref="member">AbstractCommand::supportedOptions</ref>(parser)<sp/>+<sp/><ref refid="qstringlist" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QStringList</ref>{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="42"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="44"><highlight class="comment">///<sp/>\copydoc<sp/>AbstractCommand::processOptions</highlight></codeline>
+<codeline lineno="45" refid="classScanCommand_1a9998ef360fde53be932dc3059e86578e" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><ref refid="qstringlist" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QStringList</ref><sp/><ref refid="classScanCommand_1a9998ef360fde53be932dc3059e86578e" kindref="member">ScanCommand::processOptions</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qcommandlineparser" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCommandLineParser</ref><sp/>&amp;parser)</highlight></codeline>
+<codeline lineno="46"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="qstringlist" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QStringList</ref><sp/>errors<sp/>=<sp/><ref refid="classAbstractCommand_1ad827a18a24776efeb955739459d48f7d" kindref="member">AbstractCommand::processOptions</ref>(parser);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!errors.<ref refid="qlist_1isEmpty" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">isEmpty</ref>())<sp/>{</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>errors;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>errors;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="55"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="56"><highlight class="comment"><sp/>*<sp/>Begins<sp/>scanning<sp/>for<sp/>Pokit<sp/>devices.</highlight></codeline>
+<codeline lineno="57"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58" refid="classScanCommand_1a5fe99205591ced024ad2676f377cc845" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classScanCommand_1a5fe99205591ced024ad2676f377cc845" kindref="member">ScanCommand::start</ref>()</highlight></codeline>
+<codeline lineno="59"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_ASSERT(<ref refid="classAbstractCommand_1a86878df43cd818f4a7f333a97dabac3c" kindref="member">discoveryAgent</ref>);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>qCInfo(lc).noquote()<sp/>&lt;&lt;<sp/><ref refid="qobject_1tr" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">tr</ref>(</highlight><highlight class="stringliteral">&quot;Scanning<sp/>for<sp/>Pokit<sp/>devices...&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classAbstractCommand_1a86878df43cd818f4a7f333a97dabac3c" kindref="member">discoveryAgent</ref>-&gt;<ref refid="classPokitDiscoveryAgent_1a7a91a09dbbe46327407d69bc04b19fc5" kindref="member">start</ref>();</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="66"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="67"><highlight class="comment"><sp/>*<sp/>Handles<sp/>discovered<sp/>Pokit<sp/>devices,<sp/>writing<sp/>\a<sp/>info<sp/>to<sp/>stdout.</highlight></codeline>
+<codeline lineno="68"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69" refid="classScanCommand_1ac9f53dee63d2dfaa3acf82e71db01d64" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classScanCommand_1ac9f53dee63d2dfaa3acf82e71db01d64" kindref="member">ScanCommand::deviceDiscovered</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qbluetoothdeviceinfo" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothDeviceInfo</ref><sp/>&amp;info)</highlight></codeline>
+<codeline lineno="70"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(<ref refid="classAbstractCommand_1a881d85cd96b6fcc0652b916c366dda7b" kindref="member">format</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="classAbstractCommand_1aa2dadc72289ff2b0a02c1fb435f8a4dcab20daea8bfacec3891fcf5b7be4adca0" kindref="member">OutputFormat::Csv</ref>:</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(;<sp/><ref refid="classScanCommand_1a9bdde80750c61e63e21dead03fef3629" kindref="member">showCsvHeader</ref>;<sp/><ref refid="classScanCommand_1a9bdde80750c61e63e21dead03fef3629" kindref="member">showCsvHeader</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/>qUtf8Printable(<ref refid="qobject_1tr" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">tr</ref>(</highlight><highlight class="stringliteral">&quot;uuid,address,name,major_class,minor_class,signal_strength\n&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/>qUtf8Printable(<ref refid="qstring_1fromLatin1-1" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString::fromLatin1</ref>(</highlight><highlight class="stringliteral">&quot;%1,%2,%3,%4,%5,%6\n&quot;</highlight><highlight class="normal">).arg(info.<ref refid="qbluetoothdeviceinfo_1deviceUuid" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">deviceUuid</ref>().<ref refid="quuid_1toString" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">toString</ref>(),</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>info.<ref refid="qbluetoothdeviceinfo_1address" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">address</ref>().<ref refid="qbluetoothaddress_1toString" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">toString</ref>(),<sp/><ref refid="classAbstractCommand_1af85c842568f8a3a893e336e449ef7813" kindref="member">escapeCsvField</ref>(info.<ref refid="qbluetoothdeviceinfo_1name" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">name</ref>()),<sp/><ref refid="classScanCommand_1a4422f8c5972370796065882a622940e1" kindref="member">toString</ref>(info.<ref refid="qbluetoothdeviceinfo_1majorDeviceClass" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">majorDeviceClass</ref>()),</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classScanCommand_1a4422f8c5972370796065882a622940e1" kindref="member">toString</ref>(info.<ref refid="qbluetoothdeviceinfo_1majorDeviceClass" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">majorDeviceClass</ref>(),<sp/>info.<ref refid="qbluetoothdeviceinfo_1minorDeviceClass" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">minorDeviceClass</ref>())).<ref refid="qstring_1arg-14" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">arg</ref>(info.<ref refid="qbluetoothdeviceinfo_1rssi" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">rssi</ref>()));</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="classAbstractCommand_1aa2dadc72289ff2b0a02c1fb435f8a4dcaeed8d85b888a6c015834240885ee6333" kindref="member">OutputFormat::Json</ref>:</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/><ref refid="qjsondocument" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QJsonDocument</ref>(<ref refid="classScanCommand_1a0004f4c780fb9cbd73bc7eba48613c7c" kindref="member">toJson</ref>(info)).<ref refid="qjsondocument_1toJson" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">toJson</ref>().<ref refid="qbytearray_1toStdString" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">toStdString</ref>();</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="classAbstractCommand_1aa2dadc72289ff2b0a02c1fb435f8a4dca9dffbf69ffba8bc38bc4e01abf4b1675" kindref="member">OutputFormat::Text</ref>:</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/>qUtf8Printable(<ref refid="qobject_1tr" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">tr</ref>(</highlight><highlight class="stringliteral">&quot;%1<sp/>%2<sp/>%3<sp/>%4\n&quot;</highlight><highlight class="normal">).arg(info.<ref refid="qbluetoothdeviceinfo_1deviceUuid" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">deviceUuid</ref>().<ref refid="quuid_1toString" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">toString</ref>(),</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>info.<ref refid="qbluetoothdeviceinfo_1address" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">address</ref>().<ref refid="qbluetoothaddress_1toString" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">toString</ref>(),<sp/>info.<ref refid="qbluetoothdeviceinfo_1name" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">name</ref>()).<ref refid="qstring_1arg-14" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">arg</ref>(info.<ref refid="qbluetoothdeviceinfo_1rssi" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">rssi</ref>()));</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="88"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="90"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="91"><highlight class="comment"><sp/>*<sp/>Handles<sp/>updated<sp/>Pokit<sp/>devices,<sp/>writing<sp/>\a<sp/>info<sp/>to<sp/>stdout.<sp/>Currently<sp/>\a<sp/>updatedFields<sp/>us<sp/>unused.</highlight></codeline>
+<codeline lineno="92"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>(QT_VERSION<sp/>&gt;=<sp/>QT_VERSION_CHECK(5,<sp/>12,<sp/>0))<sp/></highlight><highlight class="comment">//<sp/>Required<sp/>signal,<sp/>and<sp/>Fields,<sp/>added<sp/>in<sp/>Qt<sp/>5.12.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94" refid="classScanCommand_1a2cb218644893d84036ec16cd46f1d488" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classScanCommand_1a2cb218644893d84036ec16cd46f1d488" kindref="member">ScanCommand::deviceUpdated</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qbluetoothdeviceinfo" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothDeviceInfo</ref><sp/>&amp;info,</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qbluetoothdeviceinfo_1Field-enum" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothDeviceInfo::Fields</ref><sp/>updatedFields)</highlight></codeline>
+<codeline lineno="96"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_UNUSED(updatedFields)</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classScanCommand_1ac9f53dee63d2dfaa3acf82e71db01d64" kindref="member">deviceDiscovered</ref>(info);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="102"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="103"><highlight class="comment"><sp/>*<sp/>Handles<sp/>the<sp/>completion<sp/>of<sp/>device<sp/>discovery.<sp/>In<sp/>this<sp/>override<sp/>we<sp/>simply<sp/>exit,<sp/>as<sp/>the<sp/>scan<sp/>command</highlight></codeline>
+<codeline lineno="104"><highlight class="comment"><sp/>*<sp/>is<sp/>nothing<sp/>more<sp/>than<sp/>logging<sp/>of<sp/>discovered<sp/>devices.</highlight></codeline>
+<codeline lineno="105"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106" refid="classScanCommand_1a509decde7ad462eac744e661b5544c62" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classScanCommand_1a509decde7ad462eac744e661b5544c62" kindref="member">ScanCommand::deviceDiscoveryFinished</ref>()</highlight></codeline>
+<codeline lineno="107"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/>qCDebug(lc).noquote()<sp/>&lt;&lt;<sp/><ref refid="qobject_1tr" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">tr</ref>(</highlight><highlight class="stringliteral">&quot;Finished<sp/>scanning<sp/>for<sp/>Pokit<sp/>devices.&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="qcoreapplication_1quit" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCoreApplication::quit</ref>();</highlight></codeline>
+<codeline lineno="110"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="112"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="113"><highlight class="comment"><sp/>*<sp/>Returns<sp/>\a<sp/>info<sp/>as<sp/>a<sp/>JSON<sp/>object.</highlight></codeline>
+<codeline lineno="114"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115" refid="classScanCommand_1a0004f4c780fb9cbd73bc7eba48613c7c" refkind="member"><highlight class="normal"><ref refid="qjsonobject" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QJsonObject</ref><sp/><ref refid="classScanCommand_1a0004f4c780fb9cbd73bc7eba48613c7c" kindref="member">ScanCommand::toJson</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qbluetoothdeviceinfo" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothDeviceInfo</ref><sp/>&amp;info)</highlight></codeline>
+<codeline lineno="116"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!info.<ref refid="qbluetoothdeviceinfo_1isValid" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">isValid</ref>())<sp/>{</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="qjsonobject" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QJsonObject</ref>();</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="qjsonobject" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QJsonObject</ref><sp/>json{</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/><ref refid="qlatin1string" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QLatin1String</ref>(</highlight><highlight class="stringliteral">&quot;address&quot;</highlight><highlight class="normal">),<sp/>info.<ref refid="qbluetoothdeviceinfo_1address" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">address</ref>().<ref refid="qbluetoothaddress_1toString" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">toString</ref>()<sp/>},</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/><ref refid="qlatin1string" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QLatin1String</ref>(</highlight><highlight class="stringliteral">&quot;name&quot;</highlight><highlight class="normal">),<sp/>info.<ref refid="qbluetoothdeviceinfo_1name" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">name</ref>()<sp/>},</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/><ref refid="qlatin1string" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QLatin1String</ref>(</highlight><highlight class="stringliteral">&quot;isCached&quot;</highlight><highlight class="normal">),<sp/>info.<ref refid="qbluetoothdeviceinfo_1isCached" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">isCached</ref>()<sp/>},</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/><ref refid="qlatin1string" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QLatin1String</ref>(</highlight><highlight class="stringliteral">&quot;majorDeviceClass&quot;</highlight><highlight class="normal">),<sp/>info.<ref refid="qbluetoothdeviceinfo_1majorDeviceClass" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">majorDeviceClass</ref>()<sp/>},</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/><ref refid="qlatin1string" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QLatin1String</ref>(</highlight><highlight class="stringliteral">&quot;majorDeviceClass&quot;</highlight><highlight class="normal">),<sp/><ref refid="classScanCommand_1a0004f4c780fb9cbd73bc7eba48613c7c" kindref="member">toJson</ref>(info.<ref refid="qbluetoothdeviceinfo_1majorDeviceClass" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">majorDeviceClass</ref>())<sp/>},</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/><ref refid="qlatin1string" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QLatin1String</ref>(</highlight><highlight class="stringliteral">&quot;minorDeviceClass&quot;</highlight><highlight class="normal">),<sp/><ref refid="classScanCommand_1a0004f4c780fb9cbd73bc7eba48613c7c" kindref="member">toJson</ref>(info.<ref refid="qbluetoothdeviceinfo_1majorDeviceClass" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">majorDeviceClass</ref>(),<sp/>info.<ref refid="qbluetoothdeviceinfo_1minorDeviceClass" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">minorDeviceClass</ref>())<sp/>},</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/><ref refid="qlatin1string" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QLatin1String</ref>(</highlight><highlight class="stringliteral">&quot;signalStrength&quot;</highlight><highlight class="normal">),<sp/>info.<ref refid="qbluetoothdeviceinfo_1rssi" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">rssi</ref>()<sp/>},</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(info.<ref refid="qbluetoothdeviceinfo_1coreConfigurations" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">coreConfigurations</ref>()<sp/>!=<sp/><ref refid="qbluetoothdeviceinfo_1CoreConfiguration-enum" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothDeviceInfo::UnknownCoreConfiguration</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>json.insert(<ref refid="qlatin1string" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QLatin1String</ref>(</highlight><highlight class="stringliteral">&quot;coreConfiguration&quot;</highlight><highlight class="normal">),<sp/><ref refid="classScanCommand_1a0004f4c780fb9cbd73bc7eba48613c7c" kindref="member">toJson</ref>(info.<ref refid="qbluetoothdeviceinfo_1coreConfigurations" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">coreConfigurations</ref>()));</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!info.<ref refid="qbluetoothdeviceinfo_1deviceUuid" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">deviceUuid</ref>().<ref refid="quuid_1isNull" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">isNull</ref>())<sp/>{</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>json.insert(<ref refid="qlatin1string" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QLatin1String</ref>(</highlight><highlight class="stringliteral">&quot;deviceUuid&quot;</highlight><highlight class="normal">),<sp/>info.<ref refid="qbluetoothdeviceinfo_1deviceUuid" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">deviceUuid</ref>().<ref refid="quuid_1toString" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">toString</ref>());</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#if<sp/>(QT_VERSION<sp/>&gt;=<sp/>QT_VERSION_CHECK(5,<sp/>12,<sp/>0))<sp/></highlight><highlight class="comment">//<sp/>Added<sp/>in<sp/>Qt<sp/>5.12.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!info.<ref refid="qbluetoothdeviceinfo_1manufacturerData" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">manufacturerData</ref>().<ref refid="qbytearray_1isEmpty" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">isEmpty</ref>())<sp/>{</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>json.insert(<ref refid="qlatin1string" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QLatin1String</ref>(</highlight><highlight class="stringliteral">&quot;manufacturerData&quot;</highlight><highlight class="normal">),<sp/><ref refid="classScanCommand_1a0004f4c780fb9cbd73bc7eba48613c7c" kindref="member">toJson</ref>(info.<ref refid="qbluetoothdeviceinfo_1manufacturerData" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">manufacturerData</ref>()));</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(info.<ref refid="qbluetoothdeviceinfo_1serviceClasses" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">serviceClasses</ref>()<sp/>!=<sp/><ref refid="qbluetoothdeviceinfo_1ServiceClass-enum" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothDeviceInfo::NoService</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>json.insert(<ref refid="qlatin1string" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QLatin1String</ref>(</highlight><highlight class="stringliteral">&quot;serviceClasses&quot;</highlight><highlight class="normal">),<sp/><ref refid="classScanCommand_1a0004f4c780fb9cbd73bc7eba48613c7c" kindref="member">toJson</ref>(info.<ref refid="qbluetoothdeviceinfo_1serviceClasses" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">serviceClasses</ref>()));</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!info.<ref refid="qbluetoothdeviceinfo_1serviceUuids" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">serviceUuids</ref>().isEmpty())<sp/>{</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>json.insert(<ref refid="qlatin1string" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QLatin1String</ref>(</highlight><highlight class="stringliteral">&quot;serviceUuids&quot;</highlight><highlight class="normal">),<sp/><ref refid="classScanCommand_1a0004f4c780fb9cbd73bc7eba48613c7c" kindref="member">toJson</ref>(info.<ref refid="qbluetoothdeviceinfo_1serviceUuids" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">serviceUuids</ref>()));</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>json;</highlight></codeline>
+<codeline lineno="147"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="149"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="150"><highlight class="comment"><sp/>*<sp/>Returns<sp/>\a<sp/>configuration<sp/>as<sp/>a<sp/>JSON<sp/>array<sp/>of<sp/>strings.</highlight></codeline>
+<codeline lineno="151"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="152" refid="classScanCommand_1af75eb6fd7d6d9143c18e1ef2b3e3f5ec" refkind="member"><highlight class="normal"><ref refid="qjsonarray" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QJsonArray</ref><sp/><ref refid="classScanCommand_1a0004f4c780fb9cbd73bc7eba48613c7c" kindref="member">ScanCommand::toJson</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qbluetoothdeviceinfo_1CoreConfiguration-enum" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothDeviceInfo::CoreConfigurations</ref><sp/>&amp;configurations)</highlight></codeline>
+<codeline lineno="153"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="qjsonarray" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QJsonArray</ref><sp/>array;</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>DOKIT_INTERNAL_IF_SET_THEN_APPEND(flag)<sp/>\</highlight></codeline>
+<codeline lineno="156"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>if<sp/>(configurations.testFlag(QBluetoothDeviceInfo::flag))<sp/>\</highlight></codeline>
+<codeline lineno="157"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>array.append(QLatin1String(#flag))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/>DOKIT_INTERNAL_IF_SET_THEN_APPEND(UnknownCoreConfiguration);</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/>DOKIT_INTERNAL_IF_SET_THEN_APPEND(LowEnergyCoreConfiguration);</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/>DOKIT_INTERNAL_IF_SET_THEN_APPEND(BaseRateCoreConfiguration);</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//DOKIT_INTERNAL_IF_SET_THEN_APPEND(BaseRateAndLowEnergyCoreConfiguration);<sp/>//<sp/>Combination<sp/>flag.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#undef<sp/>DOKIT_INTERNAL_IF_SET_THEN_APPEND</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>array;</highlight></codeline>
+<codeline lineno="164"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="166"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="167"><highlight class="comment"><sp/>*<sp/>Returns<sp/>\a<sp/>majorClass<sp/>as<sp/>a<sp/>JSON<sp/>value.<sp/>This<sp/>is<sp/>equivalent<sp/>to<sp/>toString,<sp/>except<sp/>that<sp/>if<sp/>toString</highlight></codeline>
+<codeline lineno="168"><highlight class="comment"><sp/>*<sp/>does<sp/>not<sp/>recognise<sp/>\a<sp/>majorClass,<sp/>then<sp/>\a<sp/>majorClass<sp/>is<sp/>returned<sp/>as<sp/>a<sp/>JSON<sp/>number<sp/>(not<sp/>a<sp/>string).</highlight></codeline>
+<codeline lineno="169"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="170"><highlight class="comment"><sp/>*<sp/>\see<sp/>toString(const<sp/>QBluetoothDeviceInfo::MajorDeviceClass<sp/>&amp;majorClass)</highlight></codeline>
+<codeline lineno="171"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="172" refid="classScanCommand_1a3f96c110d5f90517ef9a3afc9f2b5501" refkind="member"><highlight class="normal"><ref refid="qjsonvalue" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QJsonValue</ref><sp/><ref refid="classScanCommand_1a0004f4c780fb9cbd73bc7eba48613c7c" kindref="member">ScanCommand::toJson</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qbluetoothdeviceinfo_1MajorDeviceClass-enum" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothDeviceInfo::MajorDeviceClass</ref><sp/>&amp;majorClass)</highlight></codeline>
+<codeline lineno="173"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>=<sp/><ref refid="classScanCommand_1a4422f8c5972370796065882a622940e1" kindref="member">toString</ref>(majorClass);</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">.isNull()<sp/>?<sp/><ref refid="qjsonvalue" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QJsonValue</ref>(majorClass)<sp/>:<sp/><ref refid="qjsonvalue" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QJsonValue</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="176"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="178"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="179"><highlight class="comment"><sp/>*<sp/>Returns<sp/>\a<sp/>minorClass<sp/>as<sp/>a<sp/>JSON<sp/>value.<sp/>This<sp/>is<sp/>equivalent<sp/>to<sp/>toString,<sp/>except<sp/>that<sp/>if<sp/>toString</highlight></codeline>
+<codeline lineno="180"><highlight class="comment"><sp/>*<sp/>does<sp/>not<sp/>recognise<sp/>\a<sp/>minorClass<sp/>as<sp/>a<sp/>sub-class<sp/>of<sp/>\a<sp/>majorClass,<sp/>then<sp/>\a<sp/>minorClass<sp/>is<sp/>returned</highlight></codeline>
+<codeline lineno="181"><highlight class="comment"><sp/>*<sp/>as<sp/>a<sp/>JSON<sp/>number<sp/>(not<sp/>a<sp/>string).</highlight></codeline>
+<codeline lineno="182"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="183"><highlight class="comment"><sp/>*<sp/>\see<sp/>toString(const<sp/>QBluetoothDeviceInfo::MajorDeviceClass<sp/>&amp;majorClass,<sp/>const<sp/>quint8<sp/>minorClass)</highlight></codeline>
+<codeline lineno="184"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="185" refid="classScanCommand_1ae1e453f0e6b1f951b0115e1c96037c48" refkind="member"><highlight class="normal"><ref refid="qjsonvalue" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QJsonValue</ref><sp/><ref refid="classScanCommand_1a0004f4c780fb9cbd73bc7eba48613c7c" kindref="member">ScanCommand::toJson</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qbluetoothdeviceinfo_1MajorDeviceClass-enum" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothDeviceInfo::MajorDeviceClass</ref><sp/>&amp;majorClass,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>quint8<sp/>minorClass)</highlight></codeline>
+<codeline lineno="186"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>=<sp/><ref refid="classScanCommand_1a4422f8c5972370796065882a622940e1" kindref="member">toString</ref>(majorClass,<sp/>minorClass);</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">.isNull()<sp/>?<sp/><ref refid="qjsonvalue" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QJsonValue</ref>(minorClass)<sp/>:<sp/><ref refid="qjsonvalue" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QJsonValue</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="189"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="191"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="192"><highlight class="comment"><sp/>*<sp/>Returns<sp/>\a<sp/>classes<sp/>as<sp/>a<sp/>JSON<sp/>array<sp/>of<sp/>strings.</highlight></codeline>
+<codeline lineno="193"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="194" refid="classScanCommand_1a28566c7a8789c6f1cacdadabd2b1e697" refkind="member"><highlight class="normal"><ref refid="qjsonarray" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QJsonArray</ref><sp/><ref refid="classScanCommand_1a0004f4c780fb9cbd73bc7eba48613c7c" kindref="member">ScanCommand::toJson</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qbluetoothdeviceinfo_1ServiceClass-enum" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothDeviceInfo::ServiceClasses</ref><sp/>&amp;classes)</highlight></codeline>
+<codeline lineno="195"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="qjsonarray" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QJsonArray</ref><sp/>array;</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>DOKIT_INTERNAL_IF_SET_THEN_APPEND(flag)<sp/>\</highlight></codeline>
+<codeline lineno="198"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>if<sp/>(classes.testFlag(QBluetoothDeviceInfo::flag))<sp/>\</highlight></codeline>
+<codeline lineno="199"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>array.append(QLatin1String(#flag))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/>DOKIT_INTERNAL_IF_SET_THEN_APPEND(PositioningService);</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/>DOKIT_INTERNAL_IF_SET_THEN_APPEND(NetworkingService);</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/>DOKIT_INTERNAL_IF_SET_THEN_APPEND(RenderingService);</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/>DOKIT_INTERNAL_IF_SET_THEN_APPEND(CapturingService);</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/>DOKIT_INTERNAL_IF_SET_THEN_APPEND(ObjectTransferService);</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/>DOKIT_INTERNAL_IF_SET_THEN_APPEND(AudioService);</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/>DOKIT_INTERNAL_IF_SET_THEN_APPEND(TelephonyService);</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/>DOKIT_INTERNAL_IF_SET_THEN_APPEND(InformationService);</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#undef<sp/>DOKIT_INTERNAL_IF_SET_THEN_APPEND</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>array;</highlight></codeline>
+<codeline lineno="210"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="212"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="213"><highlight class="comment"><sp/>*<sp/>Returns<sp/>\a<sp/>uuids<sp/>as<sp/>a<sp/>JSON<sp/>array.</highlight></codeline>
+<codeline lineno="214"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="215" refid="classScanCommand_1a692b7c3f071f31211ab36d754d779330" refkind="member"><highlight class="normal"><ref refid="qjsonarray" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QJsonArray</ref><sp/><ref refid="classScanCommand_1a0004f4c780fb9cbd73bc7eba48613c7c" kindref="member">ScanCommand::toJson</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qlist" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QList&lt;QBluetoothUuid&gt;</ref><sp/>&amp;uuids)</highlight></codeline>
+<codeline lineno="216"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="qjsonarray" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QJsonArray</ref><sp/>array;</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qbluetoothuuid" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothUuid</ref><sp/>&amp;uuid:<sp/>uuids)<sp/>{</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>array.<ref refid="qjsonarray_1append" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">append</ref>(uuid.toString());</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>array;</highlight></codeline>
+<codeline lineno="222"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="224"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="225"><highlight class="comment"><sp/>*<sp/>Returns<sp/>Bluetooth<sp/>manufacturer<sp/>\a<sp/>data<sp/>as<sp/>a<sp/>JSON<sp/>object<sp/>that<sp/>maps<sp/>the<sp/>manufacturer<sp/>IDs<sp/>(unsigned</highlight></codeline>
+<codeline lineno="226"><highlight class="comment"><sp/>*<sp/>integers<sp/>as<sp/>strings)<sp/>to<sp/>arrays<sp/>of<sp/>one<sp/>or<sp/>more<sp/>values.</highlight></codeline>
+<codeline lineno="227"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="228" refid="classScanCommand_1a33d8423caad084f3131066a870f697bc" refkind="member"><highlight class="normal"><ref refid="qjsonobject" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QJsonObject</ref><sp/><ref refid="classScanCommand_1a0004f4c780fb9cbd73bc7eba48613c7c" kindref="member">ScanCommand::toJson</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qmultihash" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QMultiHash&lt;quint16, QByteArray&gt;</ref><sp/>&amp;data)</highlight></codeline>
+<codeline lineno="229"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="qjsonobject" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QJsonObject</ref><sp/>object;</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="qlist" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QList&lt;quint16&gt;</ref><sp/>keys<sp/>=<sp/>data.<ref refid="qmultihash_1uniqueKeys" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">uniqueKeys</ref>();</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/>std::sort(keys.<ref refid="qlist_1begin" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">begin</ref>(),<sp/>keys.<ref refid="qlist_1end" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">end</ref>());</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>quint16<sp/>key:<sp/>keys)<sp/>{</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Convert<sp/>the<sp/>key&apos;s<sp/>values<sp/>to<sp/>a<sp/>JSON<sp/>array,<sp/>reversing<sp/>the<sp/>order,<sp/>because<sp/>QMultiHash</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>guarantees<sp/>that<sp/>the<sp/>values<sp/>are<sp/>orderer<sp/>&quot;from<sp/>the<sp/>most<sp/>recently<sp/>inserted<sp/>to<sp/>the<sp/>least</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>recently<sp/>inserted&quot;,<sp/>which<sp/>is<sp/>the<sp/>oppoosit<sp/>of<sp/>what<sp/>we<sp/>want.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="qlist" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QList&lt;QByteArray&gt;</ref><sp/>values<sp/>=<sp/>data.<ref refid="qmultihash_1values" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">values</ref>(key);</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::reverse(values.<ref refid="qlist_1begin" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">begin</ref>(),<sp/>values.<ref refid="qlist_1end" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">end</ref>());</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="qjsonarray" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QJsonArray</ref><sp/>array;</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qbytearray" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QByteArray</ref><sp/>&amp;value:<sp/>values)<sp/>{</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>array.<ref refid="qjsonarray_1append" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">append</ref>(<ref refid="qlatin1string" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QLatin1String</ref>(value.toBase64()));</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">object</highlight><highlight class="normal">.<ref refid="qjsonarray_1insert-1" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">insert</ref>(<ref refid="qstring_1number-6" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString::number</ref>(key),<sp/>array);</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>object;</highlight></codeline>
+<codeline lineno="246"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="248"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="249"><highlight class="comment"><sp/>*<sp/>Returns<sp/>\a<sp/>majorClass<sp/>as<sp/>a<sp/>human-readable<sp/>string,<sp/>or<sp/>a<sp/>null<sp/>QString<sp/>if<sp/>\a<sp/>majorClass<sp/>is<sp/>not</highlight></codeline>
+<codeline lineno="250"><highlight class="comment"><sp/>*<sp/>recognised.</highlight></codeline>
+<codeline lineno="251"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="252"><highlight class="comment"><sp/>*<sp/>For<sp/>example,<sp/>if<sp/>\a<sp/>majorClass<sp/>is<sp/>\c<sp/>QBluetoothDeviceInfo::ToyDevice,<sp/>then<sp/>the<sp/>string<sp/>`ToyDevice`</highlight></codeline>
+<codeline lineno="253"><highlight class="comment"><sp/>*<sp/>is<sp/>returned.</highlight></codeline>
+<codeline lineno="254"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="255" refid="classScanCommand_1a4422f8c5972370796065882a622940e1" refkind="member"><highlight class="normal"><ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref><sp/><ref refid="classScanCommand_1a4422f8c5972370796065882a622940e1" kindref="member">ScanCommand::toString</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qbluetoothdeviceinfo_1MajorDeviceClass-enum" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothDeviceInfo::MajorDeviceClass</ref><sp/>&amp;majorClass)</highlight></codeline>
+<codeline lineno="256"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>DOKIT_INTERNAL_IF_EQUAL_THEN_RETURN(value)<sp/>\</highlight></codeline>
+<codeline lineno="258"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>if<sp/>(majorClass<sp/>==<sp/>QBluetoothDeviceInfo::value)<sp/>\</highlight></codeline>
+<codeline lineno="259"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>return<sp/>QLatin1String(#value)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/>DOKIT_INTERNAL_IF_EQUAL_THEN_RETURN(MiscellaneousDevice);</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/>DOKIT_INTERNAL_IF_EQUAL_THEN_RETURN(ComputerDevice);</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/>DOKIT_INTERNAL_IF_EQUAL_THEN_RETURN(PhoneDevice);</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#if<sp/>(QT_VERSION<sp/>&lt;<sp/>QT_VERSION_CHECK(5,<sp/>13,<sp/>0))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/>DOKIT_INTERNAL_IF_EQUAL_THEN_RETURN(LANAccessDevice);<sp/></highlight><highlight class="comment">//<sp/>Deprecated<sp/>since<sp/>Qt<sp/>5.13.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="265"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/>DOKIT_INTERNAL_IF_EQUAL_THEN_RETURN(NetworkDevice);<sp/></highlight><highlight class="comment">//<sp/>Added<sp/>in<sp/>Qt<sp/>5.13.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="267"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/>DOKIT_INTERNAL_IF_EQUAL_THEN_RETURN(AudioVideoDevice);</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/>DOKIT_INTERNAL_IF_EQUAL_THEN_RETURN(PeripheralDevice);</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/>DOKIT_INTERNAL_IF_EQUAL_THEN_RETURN(ImagingDevice);</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/>DOKIT_INTERNAL_IF_EQUAL_THEN_RETURN(WearableDevice);</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/><sp/><sp/>DOKIT_INTERNAL_IF_EQUAL_THEN_RETURN(ToyDevice);</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/>DOKIT_INTERNAL_IF_EQUAL_THEN_RETURN(HealthDevice);</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/><sp/><sp/>DOKIT_INTERNAL_IF_EQUAL_THEN_RETURN(UncategorizedDevice);</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#undef<sp/>DOKIT_INTERNAL_IF_EQUAL_THEN_RETURN</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/>qCDebug(lc).noquote()<sp/>&lt;&lt;<sp/><ref refid="qobject_1tr" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">tr</ref>(</highlight><highlight class="stringliteral">&quot;Unknown<sp/>major<sp/>class<sp/>%1.&quot;</highlight><highlight class="normal">).<ref refid="qstring_1arg-14" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">arg</ref>(majorClass);</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref>();<sp/></highlight><highlight class="comment">//<sp/>Null<sp/>QString<sp/>indicates<sp/>unknown<sp/>minor<sp/>class.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="278"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="280"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="281"><highlight class="comment"><sp/>*<sp/>Returns<sp/>\a<sp/>minorClass<sp/>as<sp/>a<sp/>human-readable<sp/>string,<sp/>or<sp/>a<sp/>null<sp/>QString<sp/>if<sp/>\a<sp/>minorClass<sp/>is<sp/>not</highlight></codeline>
+<codeline lineno="282"><highlight class="comment"><sp/>*<sp/>recognised<sp/>as<sp/>a<sp/>sub-class<sp/>of<sp/>\a<sp/>majorClass.</highlight></codeline>
+<codeline lineno="283"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="284"><highlight class="comment"><sp/>*<sp/>For<sp/>example,<sp/>if<sp/>\a<sp/>majorClass<sp/>is<sp/>\c<sp/>QBluetoothDeviceInfo::ToyDevice,<sp/>and<sp/>\a<sp/>minorClass<sp/>is</highlight></codeline>
+<codeline lineno="285"><highlight class="comment"><sp/>*<sp/>\c<sp/>QBluetoothDeviceInfo::ToyRobot,<sp/>then<sp/>the<sp/>string<sp/>`ToyRobot`<sp/>is<sp/>returned.</highlight></codeline>
+<codeline lineno="286"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="287" refid="classScanCommand_1a13d0237febd6f73fd1c8a1c6bf639a23" refkind="member"><highlight class="normal"><ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref><sp/><ref refid="classScanCommand_1a4422f8c5972370796065882a622940e1" kindref="member">ScanCommand::toString</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qbluetoothdeviceinfo_1MajorDeviceClass-enum" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothDeviceInfo::MajorDeviceClass</ref><sp/>&amp;majorClass,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>quint8<sp/>minorClass)</highlight></codeline>
+<codeline lineno="288"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="289"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>DOKIT_INTERNAL_IF_EQUAL_THEN_RETURN(value)<sp/>\</highlight></codeline>
+<codeline lineno="290"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>if<sp/>(minorClass<sp/>==<sp/>QBluetoothDeviceInfo::value)<sp/>\</highlight></codeline>
+<codeline lineno="291"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>return<sp/>QLatin1String(#value)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="292"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(majorClass)<sp/>{</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="qbluetoothdeviceinfo_1MajorDeviceClass-enum" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothDeviceInfo::MiscellaneousDevice</ref>:</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DOKIT_INTERNAL_IF_EQUAL_THEN_RETURN(UncategorizedMiscellaneous);</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="qbluetoothdeviceinfo_1MajorDeviceClass-enum" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothDeviceInfo::ComputerDevice</ref>:</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DOKIT_INTERNAL_IF_EQUAL_THEN_RETURN(UncategorizedComputer);</highlight></codeline>
+<codeline lineno="298"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DOKIT_INTERNAL_IF_EQUAL_THEN_RETURN(DesktopComputer);</highlight></codeline>
+<codeline lineno="299"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DOKIT_INTERNAL_IF_EQUAL_THEN_RETURN(ServerComputer);</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DOKIT_INTERNAL_IF_EQUAL_THEN_RETURN(LaptopComputer);</highlight></codeline>
+<codeline lineno="301"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DOKIT_INTERNAL_IF_EQUAL_THEN_RETURN(HandheldClamShellComputer);</highlight></codeline>
+<codeline lineno="302"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DOKIT_INTERNAL_IF_EQUAL_THEN_RETURN(HandheldComputer);</highlight></codeline>
+<codeline lineno="303"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DOKIT_INTERNAL_IF_EQUAL_THEN_RETURN(WearableComputer);</highlight></codeline>
+<codeline lineno="304"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="305"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="qbluetoothdeviceinfo_1MajorDeviceClass-enum" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothDeviceInfo::PhoneDevice</ref>:</highlight></codeline>
+<codeline lineno="306"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DOKIT_INTERNAL_IF_EQUAL_THEN_RETURN(UncategorizedPhone);</highlight></codeline>
+<codeline lineno="307"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DOKIT_INTERNAL_IF_EQUAL_THEN_RETURN(CellularPhone);</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DOKIT_INTERNAL_IF_EQUAL_THEN_RETURN(CordlessPhone);</highlight></codeline>
+<codeline lineno="309"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DOKIT_INTERNAL_IF_EQUAL_THEN_RETURN(SmartPhone);</highlight></codeline>
+<codeline lineno="310"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DOKIT_INTERNAL_IF_EQUAL_THEN_RETURN(WiredModemOrVoiceGatewayPhone);</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DOKIT_INTERNAL_IF_EQUAL_THEN_RETURN(CommonIsdnAccessPhone);</highlight></codeline>
+<codeline lineno="312"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="313"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#if<sp/>(QT_VERSION<sp/>&lt;<sp/>QT_VERSION_CHECK(5,<sp/>13,<sp/>0))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="314"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>QBluetoothDeviceInfo::LANAccessDevice:<sp/></highlight><highlight class="comment">//<sp/>Deprecated<sp/>since<sp/>Qt<sp/>5.13.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="315"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="316"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="qbluetoothdeviceinfo_1MajorDeviceClass-enum" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothDeviceInfo::NetworkDevice</ref>:<sp/></highlight><highlight class="comment">//<sp/>Added<sp/>in<sp/>Qt<sp/>5.13.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="317"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="318"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DOKIT_INTERNAL_IF_EQUAL_THEN_RETURN(NetworkFullService);</highlight></codeline>
+<codeline lineno="319"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DOKIT_INTERNAL_IF_EQUAL_THEN_RETURN(NetworkLoadFactorOne);</highlight></codeline>
+<codeline lineno="320"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DOKIT_INTERNAL_IF_EQUAL_THEN_RETURN(NetworkLoadFactorTwo);</highlight></codeline>
+<codeline lineno="321"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DOKIT_INTERNAL_IF_EQUAL_THEN_RETURN(NetworkLoadFactorThree);</highlight></codeline>
+<codeline lineno="322"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DOKIT_INTERNAL_IF_EQUAL_THEN_RETURN(NetworkLoadFactorFour);</highlight></codeline>
+<codeline lineno="323"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DOKIT_INTERNAL_IF_EQUAL_THEN_RETURN(NetworkLoadFactorFive);</highlight></codeline>
+<codeline lineno="324"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DOKIT_INTERNAL_IF_EQUAL_THEN_RETURN(NetworkLoadFactorSix);</highlight></codeline>
+<codeline lineno="325"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DOKIT_INTERNAL_IF_EQUAL_THEN_RETURN(NetworkNoService);</highlight></codeline>
+<codeline lineno="326"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="327"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="qbluetoothdeviceinfo_1MajorDeviceClass-enum" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothDeviceInfo::AudioVideoDevice</ref>:</highlight></codeline>
+<codeline lineno="328"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DOKIT_INTERNAL_IF_EQUAL_THEN_RETURN(UncategorizedAudioVideoDevice);</highlight></codeline>
+<codeline lineno="329"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DOKIT_INTERNAL_IF_EQUAL_THEN_RETURN(WearableHeadsetDevice);</highlight></codeline>
+<codeline lineno="330"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DOKIT_INTERNAL_IF_EQUAL_THEN_RETURN(HandsFreeDevice);</highlight></codeline>
+<codeline lineno="331"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DOKIT_INTERNAL_IF_EQUAL_THEN_RETURN(Microphone);</highlight></codeline>
+<codeline lineno="332"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DOKIT_INTERNAL_IF_EQUAL_THEN_RETURN(Loudspeaker);</highlight></codeline>
+<codeline lineno="333"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DOKIT_INTERNAL_IF_EQUAL_THEN_RETURN(Headphones);</highlight></codeline>
+<codeline lineno="334"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DOKIT_INTERNAL_IF_EQUAL_THEN_RETURN(PortableAudioDevice);</highlight></codeline>
+<codeline lineno="335"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DOKIT_INTERNAL_IF_EQUAL_THEN_RETURN(CarAudio);</highlight></codeline>
+<codeline lineno="336"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DOKIT_INTERNAL_IF_EQUAL_THEN_RETURN(SetTopBox);</highlight></codeline>
+<codeline lineno="337"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DOKIT_INTERNAL_IF_EQUAL_THEN_RETURN(HiFiAudioDevice);</highlight></codeline>
+<codeline lineno="338"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DOKIT_INTERNAL_IF_EQUAL_THEN_RETURN(Vcr);</highlight></codeline>
+<codeline lineno="339"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DOKIT_INTERNAL_IF_EQUAL_THEN_RETURN(VideoCamera);</highlight></codeline>
+<codeline lineno="340"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DOKIT_INTERNAL_IF_EQUAL_THEN_RETURN(Camcorder);</highlight></codeline>
+<codeline lineno="341"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DOKIT_INTERNAL_IF_EQUAL_THEN_RETURN(VideoMonitor);</highlight></codeline>
+<codeline lineno="342"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DOKIT_INTERNAL_IF_EQUAL_THEN_RETURN(VideoDisplayAndLoudspeaker);</highlight></codeline>
+<codeline lineno="343"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DOKIT_INTERNAL_IF_EQUAL_THEN_RETURN(VideoConferencing);</highlight></codeline>
+<codeline lineno="344"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DOKIT_INTERNAL_IF_EQUAL_THEN_RETURN(GamingDevice);</highlight></codeline>
+<codeline lineno="345"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="346"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="qbluetoothdeviceinfo_1MajorDeviceClass-enum" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothDeviceInfo::PeripheralDevice</ref>:</highlight></codeline>
+<codeline lineno="347"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DOKIT_INTERNAL_IF_EQUAL_THEN_RETURN(UncategorizedPeripheral);</highlight></codeline>
+<codeline lineno="348"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DOKIT_INTERNAL_IF_EQUAL_THEN_RETURN(KeyboardPeripheral);</highlight></codeline>
+<codeline lineno="349"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DOKIT_INTERNAL_IF_EQUAL_THEN_RETURN(PointingDevicePeripheral);</highlight></codeline>
+<codeline lineno="350"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DOKIT_INTERNAL_IF_EQUAL_THEN_RETURN(KeyboardWithPointingDevicePeripheral);</highlight></codeline>
+<codeline lineno="351"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DOKIT_INTERNAL_IF_EQUAL_THEN_RETURN(JoystickPeripheral);</highlight></codeline>
+<codeline lineno="352"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DOKIT_INTERNAL_IF_EQUAL_THEN_RETURN(GamepadPeripheral);</highlight></codeline>
+<codeline lineno="353"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DOKIT_INTERNAL_IF_EQUAL_THEN_RETURN(RemoteControlPeripheral);</highlight></codeline>
+<codeline lineno="354"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DOKIT_INTERNAL_IF_EQUAL_THEN_RETURN(SensingDevicePeripheral);</highlight></codeline>
+<codeline lineno="355"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DOKIT_INTERNAL_IF_EQUAL_THEN_RETURN(DigitizerTabletPeripheral);</highlight></codeline>
+<codeline lineno="356"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DOKIT_INTERNAL_IF_EQUAL_THEN_RETURN(CardReaderPeripheral);</highlight></codeline>
+<codeline lineno="357"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="358"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="qbluetoothdeviceinfo_1MajorDeviceClass-enum" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothDeviceInfo::ImagingDevice</ref>:</highlight></codeline>
+<codeline lineno="359"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DOKIT_INTERNAL_IF_EQUAL_THEN_RETURN(UncategorizedImagingDevice);</highlight></codeline>
+<codeline lineno="360"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DOKIT_INTERNAL_IF_EQUAL_THEN_RETURN(ImageDisplay);</highlight></codeline>
+<codeline lineno="361"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DOKIT_INTERNAL_IF_EQUAL_THEN_RETURN(ImageCamera);</highlight></codeline>
+<codeline lineno="362"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DOKIT_INTERNAL_IF_EQUAL_THEN_RETURN(ImageScanner);</highlight></codeline>
+<codeline lineno="363"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DOKIT_INTERNAL_IF_EQUAL_THEN_RETURN(ImagePrinter);</highlight></codeline>
+<codeline lineno="364"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="365"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="qbluetoothdeviceinfo_1MajorDeviceClass-enum" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothDeviceInfo::WearableDevice</ref>:</highlight></codeline>
+<codeline lineno="366"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DOKIT_INTERNAL_IF_EQUAL_THEN_RETURN(UncategorizedWearableDevice);</highlight></codeline>
+<codeline lineno="367"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DOKIT_INTERNAL_IF_EQUAL_THEN_RETURN(WearableWristWatch);</highlight></codeline>
+<codeline lineno="368"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DOKIT_INTERNAL_IF_EQUAL_THEN_RETURN(WearablePager);</highlight></codeline>
+<codeline lineno="369"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DOKIT_INTERNAL_IF_EQUAL_THEN_RETURN(WearableJacket);</highlight></codeline>
+<codeline lineno="370"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DOKIT_INTERNAL_IF_EQUAL_THEN_RETURN(WearableHelmet);</highlight></codeline>
+<codeline lineno="371"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DOKIT_INTERNAL_IF_EQUAL_THEN_RETURN(WearableGlasses);</highlight></codeline>
+<codeline lineno="372"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="373"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="qbluetoothdeviceinfo_1MajorDeviceClass-enum" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothDeviceInfo::ToyDevice</ref>:</highlight></codeline>
+<codeline lineno="374"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DOKIT_INTERNAL_IF_EQUAL_THEN_RETURN(UncategorizedToy);</highlight></codeline>
+<codeline lineno="375"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DOKIT_INTERNAL_IF_EQUAL_THEN_RETURN(ToyRobot);</highlight></codeline>
+<codeline lineno="376"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DOKIT_INTERNAL_IF_EQUAL_THEN_RETURN(ToyVehicle);</highlight></codeline>
+<codeline lineno="377"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DOKIT_INTERNAL_IF_EQUAL_THEN_RETURN(ToyDoll);</highlight></codeline>
+<codeline lineno="378"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DOKIT_INTERNAL_IF_EQUAL_THEN_RETURN(ToyController);</highlight></codeline>
+<codeline lineno="379"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DOKIT_INTERNAL_IF_EQUAL_THEN_RETURN(ToyGame);</highlight></codeline>
+<codeline lineno="380"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="381"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="qbluetoothdeviceinfo_1MajorDeviceClass-enum" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothDeviceInfo::HealthDevice</ref>:</highlight></codeline>
+<codeline lineno="382"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DOKIT_INTERNAL_IF_EQUAL_THEN_RETURN(UncategorizedHealthDevice);</highlight></codeline>
+<codeline lineno="383"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DOKIT_INTERNAL_IF_EQUAL_THEN_RETURN(HealthBloodPressureMonitor);</highlight></codeline>
+<codeline lineno="384"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DOKIT_INTERNAL_IF_EQUAL_THEN_RETURN(HealthThermometer);</highlight></codeline>
+<codeline lineno="385"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DOKIT_INTERNAL_IF_EQUAL_THEN_RETURN(HealthWeightScale);</highlight></codeline>
+<codeline lineno="386"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DOKIT_INTERNAL_IF_EQUAL_THEN_RETURN(HealthGlucoseMeter);</highlight></codeline>
+<codeline lineno="387"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DOKIT_INTERNAL_IF_EQUAL_THEN_RETURN(HealthPulseOximeter);</highlight></codeline>
+<codeline lineno="388"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DOKIT_INTERNAL_IF_EQUAL_THEN_RETURN(HealthDataDisplay);</highlight></codeline>
+<codeline lineno="389"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DOKIT_INTERNAL_IF_EQUAL_THEN_RETURN(HealthStepCounter);</highlight></codeline>
+<codeline lineno="390"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="391"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="qbluetoothdeviceinfo_1MajorDeviceClass-enum" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothDeviceInfo::UncategorizedDevice</ref>:</highlight></codeline>
+<codeline lineno="392"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>There<sp/>are<sp/>no<sp/>minor<sp/>classes<sp/>defined<sp/>(in<sp/>Qt)<sp/>for<sp/>uncategorized<sp/>devices.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="393"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="394"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="395"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#undef<sp/>DOKIT_INTERNAL_IF_EQUAL_THEN_RETURN</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="396"><highlight class="normal"><sp/><sp/><sp/><sp/>qCDebug(lc).noquote()<sp/>&lt;&lt;<sp/><ref refid="qobject_1tr" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">tr</ref>(</highlight><highlight class="stringliteral">&quot;Unknown<sp/>minor<sp/>class<sp/>%1<sp/>for<sp/>major<sp/>class<sp/>%2.&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="397"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.<ref refid="qstring_1arg-14" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">arg</ref>(minorClass).<ref refid="qstring_1arg-14" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">arg</ref>(majorClass);</highlight></codeline>
+<codeline lineno="398"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref>();<sp/></highlight><highlight class="comment">//<sp/>Null<sp/>QString<sp/>indicates<sp/>unknown<sp/>minor<sp/>class.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="399"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/paul/src/dokit/src/cli/scancommand.cpp"/>
+  </compounddef>
+</doxygen>

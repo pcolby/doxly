@@ -1,0 +1,841 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.0" xml:lang="en-US">
+  <compounddef id="classDsoCommand" kind="class" language="C++" prot="public">
+    <compoundname>DsoCommand</compoundname>
+    <basecompoundref refid="classDeviceCommand" prot="public" virt="non-virtual">DeviceCommand</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classDsoCommand_1a24309dd456a3595b034f45cae208b61c" prot="private" static="no" mutable="no">
+        <type>quint8(*</type>
+        <definition>quint8(* DsoCommand::minRangeFunc) (const PokitProduct product, const quint32 maxValue)</definition>
+        <argsstring>)(const PokitProduct product, const quint32 maxValue)</argsstring>
+        <name>minRangeFunc</name>
+        <qualifiedname>DsoCommand::minRangeFunc</qualifiedname>
+        <briefdescription>
+<para>Pointer to function for converting <ref refid="classDsoCommand_1ab326ab6d226da73c0682c020fc8132af" kindref="member">rangeOptionValue</ref> to a Pokit device&apos;s range enumerator. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function pointer is assigned during the command line parsing, but is not invoked until after the device&apos;s services are discovere, because prior to that discovery, we don&apos;t know which product (Meter vs Pro vs Clamp, etc) we&apos;re talking to and thus which enumerator list to be using.</para>
+<para>If the current mode does not support ranges (eg diode, and continuity modes), then this member will be <computeroutput>nullptr</computeroutput>.</para>
+<para><simplesect kind="see"><para><ref refid="classDsoCommand_1a87db950042b5ea7707bd76648536c943" kindref="member">processOptions</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classDsoCommand_1a57f3b6be35c7a6fdadfaa737177016a8" kindref="member">serviceDetailsDiscovered</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/dsocommand.h" line="30" column="5" bodyfile="/home/paul/src/dokit/src/cli/dsocommand.h" bodystart="30" bodyend="30"/>
+        <referencedby refid="classDsoCommand_1a87db950042b5ea7707bd76648536c943" compoundref="dsocommand_8cpp" startline="51" endline="162">processOptions</referencedby>
+        <referencedby refid="classDsoCommand_1a57f3b6be35c7a6fdadfaa737177016a8" compoundref="dsocommand_8cpp" startline="186" endline="195">serviceDetailsDiscovered</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classDsoCommand_1ab326ab6d226da73c0682c020fc8132af" prot="private" static="no" mutable="no">
+        <type>quint32</type>
+        <definition>quint32 DsoCommand::rangeOptionValue</definition>
+        <argsstring></argsstring>
+        <name>rangeOptionValue</name>
+        <qualifiedname>DsoCommand::rangeOptionValue</qualifiedname>
+        <initializer>{ 0 }</initializer>
+        <briefdescription>
+<para>The parsed value of range option. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/dsocommand.h" line="31" column="13" bodyfile="/home/paul/src/dokit/src/cli/dsocommand.h" bodystart="31" bodyend="31"/>
+        <referencedby refid="classDsoCommand_1a87db950042b5ea7707bd76648536c943" compoundref="dsocommand_8cpp" startline="51" endline="162">processOptions</referencedby>
+        <referencedby refid="classDsoCommand_1a57f3b6be35c7a6fdadfaa737177016a8" compoundref="dsocommand_8cpp" startline="186" endline="195">serviceDetailsDiscovered</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classDsoCommand_1a843aa2767953801fc2ec5fa7895714d6" prot="private" static="no" mutable="no">
+        <type><ref refid="classDsoService" kindref="compound">DsoService</ref> *</type>
+        <definition>DsoService* DsoCommand::service</definition>
+        <argsstring></argsstring>
+        <name>service</name>
+        <qualifiedname>DsoCommand::service</qualifiedname>
+        <initializer>{ nullptr }</initializer>
+        <briefdescription>
+<para>Bluetooth service this command interracts with. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/dsocommand.h" line="32" column="5" bodyfile="/home/paul/src/dokit/src/cli/dsocommand.h" bodystart="32" bodyend="32"/>
+        <referencedby refid="classDsoCommand_1abdc2af86181151e0c64c655ed265fbe8" compoundref="dsocommand_8cpp" startline="169" endline="179">getService</referencedby>
+        <referencedby refid="classDsoCommand_1ae3458da4747f34661ec0ef1d36657e24" compoundref="dsocommand_8cpp" startline="227" endline="238">metadataRead</referencedby>
+        <referencedby refid="classDsoCommand_1a5ed6988ac93f2964979b8dce1425816e" compoundref="dsocommand_8cpp" startline="243" endline="287">outputSamples</referencedby>
+        <referencedby refid="classDsoCommand_1a57f3b6be35c7a6fdadfaa737177016a8" compoundref="dsocommand_8cpp" startline="186" endline="195">serviceDetailsDiscovered</referencedby>
+        <referencedby refid="classDsoCommand_1a96c56e497f56ab5ed43201ad13aede7b" compoundref="dsocommand_8cpp" startline="214" endline="222">settingsWritten</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classDsoCommand_1a0438c5c9aa9fea7c00051ff9be7819d8" prot="private" static="no" mutable="no">
+        <type><ref refid="structDsoService_1_1Settings" kindref="compound">DsoService::Settings</ref></type>
+        <definition>DsoService::Settings DsoCommand::settings</definition>
+        <argsstring></argsstring>
+        <name>settings</name>
+        <qualifiedname>DsoCommand::settings</qualifiedname>
+        <initializer>{
+        <ref refid="classDsoService_1af2baee0dc3fa5e308be06c691dece236a75564fb3d5bebd9283b77cc37a30463f" kindref="member">DsoService::Command::FreeRunning</ref>, 0.0f, <ref refid="classDsoService_1ae1414a11556e06b49cea9fadcd6f5b95a1a18453c20867d5a990479b3716cbbc5" kindref="member">DsoService::Mode::DcVoltage</ref>,
+        +<ref refid="namespacePokitMeter_1ab9abf7a50f13c9cfb1e1b4c49c16dfeea5c8523b038abf04d86fcc5358cd893cf" kindref="member">PokitMeter::VoltageRange::AutoRange</ref>, 1&apos;000&apos;000, 1000
+    }</initializer>
+        <briefdescription>
+<para>Settings for the Pokit device&apos;s DSO mode. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/dsocommand.h" line="33" column="26" bodyfile="/home/paul/src/dokit/src/cli/dsocommand.h" bodystart="33" bodyend="36"/>
+        <referencedby refid="classDsoCommand_1a87db950042b5ea7707bd76648536c943" compoundref="dsocommand_8cpp" startline="51" endline="162">processOptions</referencedby>
+        <referencedby refid="classDsoCommand_1a57f3b6be35c7a6fdadfaa737177016a8" compoundref="dsocommand_8cpp" startline="186" endline="195">serviceDetailsDiscovered</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classDsoCommand_1ae2d7e39e8a5d61680d8e6da0cf2bc9df" prot="private" static="no" mutable="no">
+        <type><ref refid="structDsoService_1_1Metadata" kindref="compound">DsoService::Metadata</ref></type>
+        <definition>DsoService::Metadata DsoCommand::metadata</definition>
+        <argsstring></argsstring>
+        <name>metadata</name>
+        <qualifiedname>DsoCommand::metadata</qualifiedname>
+        <briefdescription>
+<para>Most recent DSO metadata. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/dsocommand.h" line="37" column="26" bodyfile="/home/paul/src/dokit/src/cli/dsocommand.h" bodystart="37" bodyend="-1"/>
+        <referencedby refid="classDsoCommand_1ae3458da4747f34661ec0ef1d36657e24" compoundref="dsocommand_8cpp" startline="227" endline="238">metadataRead</referencedby>
+        <referencedby refid="classDsoCommand_1a5ed6988ac93f2964979b8dce1425816e" compoundref="dsocommand_8cpp" startline="243" endline="287">outputSamples</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classDsoCommand_1a2fba285441bb9d0a76f3e43d1b718015" prot="private" static="no" mutable="no">
+        <type>qint32</type>
+        <definition>qint32 DsoCommand::samplesToGo</definition>
+        <argsstring></argsstring>
+        <name>samplesToGo</name>
+        <qualifiedname>DsoCommand::samplesToGo</qualifiedname>
+        <initializer>{ 0 }</initializer>
+        <briefdescription>
+<para>Number of samples we&apos;re expecting in the current window. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/dsocommand.h" line="38" column="12" bodyfile="/home/paul/src/dokit/src/cli/dsocommand.h" bodystart="38" bodyend="38"/>
+        <referencedby refid="classDsoCommand_1ae3458da4747f34661ec0ef1d36657e24" compoundref="dsocommand_8cpp" startline="227" endline="238">metadataRead</referencedby>
+        <referencedby refid="classDsoCommand_1a5ed6988ac93f2964979b8dce1425816e" compoundref="dsocommand_8cpp" startline="243" endline="287">outputSamples</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classDsoCommand_1a4768b502cbfeb3436892a112b51f6b4a" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool DsoCommand::showCsvHeader</definition>
+        <argsstring></argsstring>
+        <name>showCsvHeader</name>
+        <qualifiedname>DsoCommand::showCsvHeader</qualifiedname>
+        <initializer>{ true }</initializer>
+        <briefdescription>
+<para>Whether or not to show a header as the first line of CSV output. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/dsocommand.h" line="39" column="10" bodyfile="/home/paul/src/dokit/src/cli/dsocommand.h" bodystart="39" bodyend="39"/>
+        <referencedby refid="classDsoCommand_1a5ed6988ac93f2964979b8dce1425816e" compoundref="dsocommand_8cpp" startline="243" endline="287">outputSamples</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="classDsoCommand_1adf07b37e9543223362edf14674075897" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class TestDsoCommand</definition>
+        <argsstring></argsstring>
+        <name>TestDsoCommand</name>
+        <qualifiedname>DsoCommand::TestDsoCommand</qualifiedname>
+        <param>
+          <type>TestDsoCommand</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/dsocommand.h" line="46" column="18" bodyfile="/home/paul/src/dokit/src/cli/dsocommand.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classDsoCommand_1a79f1a1eedff91cffa223d2d5b454d9e0" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>DsoCommand::DsoCommand</definition>
+        <argsstring>(QObject *const parent=nullptr)</argsstring>
+        <name>DsoCommand</name>
+        <qualifiedname>DsoCommand::DsoCommand</qualifiedname>
+        <param>
+          <type><ref refid="qobject" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QObject</ref> *const</type>
+          <declname>parent</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+<para>Construct a new <ref refid="classDsoCommand" kindref="compound">DsoCommand</ref> object with <emphasis>parent</emphasis>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/dsocommand.h" line="15" column="14" bodyfile="/home/paul/src/dokit/src/cli/dsocommand.cpp" bodystart="22" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classDsoCommand_1abbdf205b4b6ca5271e8e8c6b633b0462" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="qstringlist" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QStringList</ref></type>
+        <definition>QStringList DsoCommand::requiredOptions</definition>
+        <argsstring>(const QCommandLineParser &amp;parser) const override</argsstring>
+        <name>requiredOptions</name>
+        <qualifiedname>DsoCommand::requiredOptions</qualifiedname>
+        <reimplements refid="classAbstractCommand_1afd6f41cfc925751415cfa45e3b2d0b4a">requiredOptions</reimplements>
+        <param>
+          <type>const <ref refid="qcommandlineparser" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCommandLineParser</ref> &amp;</type>
+          <declname>parser</declname>
+        </param>
+        <briefdescription>
+<para>Returns a list of CLI option names required by this command. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The main console appication may use this list to output an eror (and exit) if any of the returned names are not found in the parsed CLI options.</para>
+<para>The (already parsed) <emphasis>parser</emphasis> may be used adjust the returned required options depending on the value of other options. For example, the <computeroutput>logger</computeroutput> command only requires the <computeroutput>--mode</computeroutput> option if the <computeroutput>--command</computeroutput> option is <computeroutput>start</computeroutput>.</para>
+<para>This base implementation simply returns an empty list. Derived classes should override this function to include any required options. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/dsocommand.h" line="17" column="17" bodyfile="/home/paul/src/dokit/src/cli/dsocommand.cpp" bodystart="27" bodyend="33"/>
+        <references refid="classAbstractCommand_1afd6f41cfc925751415cfa45e3b2d0b4a" compoundref="abstractcommand_8cpp" startline="56" endline="60">AbstractCommand::requiredOptions</references>
+      </memberdef>
+      <memberdef kind="function" id="classDsoCommand_1a6569d0fd7b8307d6098e93092859301a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="qstringlist" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QStringList</ref></type>
+        <definition>QStringList DsoCommand::supportedOptions</definition>
+        <argsstring>(const QCommandLineParser &amp;parser) const override</argsstring>
+        <name>supportedOptions</name>
+        <qualifiedname>DsoCommand::supportedOptions</qualifiedname>
+        <reimplements refid="classAbstractCommand_1a1ceca3c5b4cb24277dd4d4054f45db18">supportedOptions</reimplements>
+        <param>
+          <type>const <ref refid="qcommandlineparser" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCommandLineParser</ref> &amp;</type>
+          <declname>parser</declname>
+        </param>
+        <briefdescription>
+<para>Returns a list of CLI option names supported by this command. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The main console appication may use this list to output a warning for any parsed CLI options not included in the returned list.</para>
+<para>The (already parsed) <emphasis>parser</emphasis> may be used adjust the returned supported options depending on the value of other options. For example, the <computeroutput>logger</computeroutput> command only supported the <computeroutput>--timestamp</computeroutput> option if the <computeroutput>--command</computeroutput> option is <computeroutput>start</computeroutput>.</para>
+<para>This base implementation simply returns <ref refid="classDsoCommand_1abbdf205b4b6ca5271e8e8c6b633b0462" kindref="member">requiredOptions()</ref>. Derived classes should override this function to include optional options, such as:</para>
+<para><programlisting><codeline><highlight class="normal"><ref refid="qstringlist" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QStringList</ref><sp/>Derived::supportedOptions(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qcommandlineparser" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCommandLineParser</ref><sp/>&amp;parser)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qstringlist" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QStringList</ref><sp/>list<sp/>=<sp/><ref refid="classAbstractCommand_1a1ceca3c5b4cb24277dd4d4054f45db18" kindref="member">AbstractCommand::supportedOptions</ref>(parser)<sp/>+<sp/><ref refid="qstringlist" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QStringList</ref>{<sp/>...<sp/>};</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>list.<ref refid="qstringlist_1sort" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">sort</ref>();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>list.<ref refid="qstringlist_1removeDuplicates" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">removeDuplicates</ref>();<sp/></highlight><highlight class="comment">//<sp/>Optional,<sp/>recommended.</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>list;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/dsocommand.h" line="18" column="17" bodyfile="/home/paul/src/dokit/src/cli/dsocommand.cpp" bodystart="35" bodyend="43"/>
+        <references refid="classAbstractCommand_1a1ceca3c5b4cb24277dd4d4054f45db18" compoundref="abstractcommand_8cpp" startline="83" endline="91">AbstractCommand::supportedOptions</references>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-slot">
+      <memberdef kind="slot" id="classDsoCommand_1a87db950042b5ea7707bd76648536c943" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="qstringlist" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QStringList</ref></type>
+        <definition>QStringList DsoCommand::processOptions</definition>
+        <argsstring>(const QCommandLineParser &amp;parser) override</argsstring>
+        <name>processOptions</name>
+        <qualifiedname>DsoCommand::processOptions</qualifiedname>
+        <param>
+          <type>const <ref refid="qcommandlineparser" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCommandLineParser</ref> &amp;</type>
+          <declname>parser</declname>
+        </param>
+        <briefdescription>
+<para>Processes the relevant options from the command line <emphasis>parser</emphasis>.    </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This implementation extends <ref refid="classAbstractCommand_1ad827a18a24776efeb955739459d48f7d" kindref="member">DeviceCommand::processOptions</ref> to process additional CLI options supported (or required) by this command. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/dsocommand.h" line="21" column="17" bodyfile="/home/paul/src/dokit/src/cli/dsocommand.cpp" bodystart="51" bodyend="162"/>
+        <references refid="classDsoService_1ae1414a11556e06b49cea9fadcd6f5b95a7b39f260051ef745ddba9fc57ac23ff9">DsoService::AcCurrent</references>
+        <references refid="classDsoService_1ae1414a11556e06b49cea9fadcd6f5b95a9f01dfb531bd23d5cb9c2bb2e49d685e">DsoService::AcVoltage</references>
+        <references refid="qlist_1append">QList::append</references>
+        <references refid="structDsoService_1_1Settings_1a661cb2920a504d5f3fc7437529c37f15" compoundref="dsoservice_8h" startline="68">DsoService::Settings::command</references>
+        <references refid="classDsoService_1ae1414a11556e06b49cea9fadcd6f5b95af2a03b2c98a6620d4bf33af69572898e">DsoService::DcCurrent</references>
+        <references refid="classDsoService_1ae1414a11556e06b49cea9fadcd6f5b95a1a18453c20867d5a990479b3716cbbc5">DsoService::DcVoltage</references>
+        <references refid="classDsoService_1af2baee0dc3fa5e308be06c691dece236af8818049ee541da5e1567511eafbe6f1">DsoService::FallingEdgeTrigger</references>
+        <references refid="classDsoService_1af2baee0dc3fa5e308be06c691dece236a75564fb3d5bebd9283b77cc37a30463f">DsoService::FreeRunning</references>
+        <references refid="classDsoService_1ae1414a11556e06b49cea9fadcd6f5b95ae599161956d626eda4cb0a5ffb85271c">DsoService::Idle</references>
+        <references refid="qlist_1isEmpty">QList::isEmpty</references>
+        <references refid="qstring_1isEmpty">QString::isEmpty</references>
+        <references refid="qcommandlineparser_1isSet-1">QCommandLineParser::isSet</references>
+        <references refid="classDeviceCommand_1ab5ae0318d3ec2bd4449e710eafafa680" compoundref="devicecommand_8cpp" startline="233" endline="243">DeviceCommand::minCurrentRange</references>
+        <references refid="classDsoCommand_1a24309dd456a3595b034f45cae208b61c" compoundref="dsocommand_8h" startline="30" endline="30">minRangeFunc</references>
+        <references refid="classDeviceCommand_1a92f7e61dff3d28eda856ea4f95e828fe" compoundref="devicecommand_8cpp" startline="272" endline="282">DeviceCommand::minVoltageRange</references>
+        <references refid="structDsoService_1_1Settings_1a1a66d9c5ab84eb3d046c1c5842f87faf" compoundref="dsoservice_8h" startline="70">DsoService::Settings::mode</references>
+        <references refid="structDsoService_1_1Settings_1ad118943a951c606915bd12c45ded6cd6" compoundref="dsoservice_8h" startline="73">DsoService::Settings::numberOfSamples</references>
+        <references refid="classAbstractCommand_1a29b2a2446ef034195183a2ae9d4bb911" compoundref="abstractcommand_8cpp" startline="149" endline="218">AbstractCommand::parseNumber</references>
+        <references refid="classAbstractCommand_1ad827a18a24776efeb955739459d48f7d" compoundref="abstractcommand_8cpp" startline="265" endline="320">AbstractCommand::processOptions</references>
+        <references refid="classDsoCommand_1ab326ab6d226da73c0682c020fc8132af" compoundref="dsocommand_8h" startline="31" endline="31">rangeOptionValue</references>
+        <references refid="classDsoService_1af2baee0dc3fa5e308be06c691dece236adbf4d21ae7c8f69c3a9375d0d16613d6">DsoService::RisingEdgeTrigger</references>
+        <references refid="structDsoService_1_1Settings_1a85067aa6f3ad5a734414e97aa623763b" compoundref="dsoservice_8h" startline="72">DsoService::Settings::samplingWindow</references>
+        <references refid="classDsoCommand_1a0438c5c9aa9fea7c00051ff9be7819d8" compoundref="dsocommand_8h" startline="33" endline="36">settings</references>
+        <references refid="qstring_1startsWith-3">QString::startsWith</references>
+        <references refid="qstring_1toLower">QString::toLower</references>
+        <references refid="qobject_1tr">QObject::tr</references>
+        <references refid="structDsoService_1_1Settings_1a98deec20d34aa9f0e1567bce8ff24bc8" compoundref="dsoservice_8h" startline="69">DsoService::Settings::triggerLevel</references>
+        <references refid="qstring_1trimmed">QString::trimmed</references>
+        <references refid="qcommandlineparser_1value-1">QCommandLineParser::value</references>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classDsoCommand_1abdc2af86181151e0c64c655ed265fbe8" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classAbstractPokitService" kindref="compound">AbstractPokitService</ref> *</type>
+        <definition>AbstractPokitService * DsoCommand::getService</definition>
+        <argsstring>() override</argsstring>
+        <name>getService</name>
+        <qualifiedname>DsoCommand::getService</qualifiedname>
+        <reimplements refid="classDeviceCommand_1af7a724ae722462b6fa15dc6269aadd15">getService</reimplements>
+        <briefdescription>
+<para>Returns a Pokit service object for the derived command class.    </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This override returns a pointer to a <ref refid="classDsoService" kindref="compound">DsoService</ref> object. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/dsocommand.h" line="24" column="27" bodyfile="/home/paul/src/dokit/src/cli/dsocommand.cpp" bodystart="169" bodyend="179"/>
+        <references refid="qobject_1connect-4">QObject::connect</references>
+        <references refid="classDeviceCommand_1a2bbf2dc9bb0ba85a2bf29263746c7b57" compoundref="devicecommand_8h" startline="26" endline="26">DeviceCommand::device</references>
+        <references refid="classPokitDevice_1a3ded76591f3ec2b0620a2fbc617ed117" compoundref="pokitdevice_8cpp" startline="154" endline="157">PokitDevice::dso</references>
+        <references refid="classDsoCommand_1a843aa2767953801fc2ec5fa7895714d6" compoundref="dsocommand_8h" startline="32" endline="32">service</references>
+        <references refid="classDsoCommand_1a96c56e497f56ab5ed43201ad13aede7b" compoundref="dsocommand_8cpp" startline="214" endline="222">settingsWritten</references>
+        <references refid="classDsoService_1a5d5b1266a63ee479c91c4e048cdf0859">DsoService::settingsWritten</references>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-slot">
+      <memberdef kind="slot" id="classDsoCommand_1a57f3b6be35c7a6fdadfaa737177016a8" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DsoCommand::serviceDetailsDiscovered</definition>
+        <argsstring>() override</argsstring>
+        <name>serviceDetailsDiscovered</name>
+        <qualifiedname>DsoCommand::serviceDetailsDiscovered</qualifiedname>
+        <briefdescription>
+<para>Handles service detail discovery events.    </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This override fetches the current device&apos;s status, and outputs it in the selected format. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/dsocommand.h" line="27" column="10" bodyfile="/home/paul/src/dokit/src/cli/dsocommand.cpp" bodystart="186" bodyend="195"/>
+        <references refid="qstring_1arg-14">QString::arg</references>
+        <references refid="qstring_1fromLatin1-1">QString::fromLatin1</references>
+        <references refid="qstring_1isNull">QString::isNull</references>
+        <references refid="classDsoCommand_1a24309dd456a3595b034f45cae208b61c" compoundref="dsocommand_8h" startline="30" endline="30">minRangeFunc</references>
+        <references refid="structDsoService_1_1Settings_1a1a66d9c5ab84eb3d046c1c5842f87faf" compoundref="dsoservice_8h" startline="70">DsoService::Settings::mode</references>
+        <references refid="structDsoService_1_1Settings_1ad118943a951c606915bd12c45ded6cd6" compoundref="dsoservice_8h" startline="73">DsoService::Settings::numberOfSamples</references>
+        <references refid="classAbstractPokitService_1a039d2f1054788cf586c8decadb53ddc0" compoundref="abstractpokitservice_8cpp" startline="86" endline="90">AbstractPokitService::pokitProduct</references>
+        <references refid="structDsoService_1_1Settings_1a3868828fd33d6f555c25b7b7eadb767e" compoundref="dsoservice_8h" startline="71">DsoService::Settings::range</references>
+        <references refid="classDsoCommand_1ab326ab6d226da73c0682c020fc8132af" compoundref="dsocommand_8h" startline="31" endline="31">rangeOptionValue</references>
+        <references refid="structDsoService_1_1Settings_1a85067aa6f3ad5a734414e97aa623763b" compoundref="dsoservice_8h" startline="72">DsoService::Settings::samplingWindow</references>
+        <references refid="classDsoCommand_1a843aa2767953801fc2ec5fa7895714d6" compoundref="dsocommand_8h" startline="32" endline="32">service</references>
+        <references refid="classDeviceCommand_1a906fd97d832be0e8d2ba1c917fba41db" compoundref="devicecommand_8cpp" startline="331" endline="334">DeviceCommand::serviceDetailsDiscovered</references>
+        <references refid="classDsoService_1a5714c8ccec6ab1d98241312b28a32e9e" compoundref="dsoservice_8cpp" startline="159" endline="175">DsoService::setSettings</references>
+        <references refid="classDsoCommand_1a0438c5c9aa9fea7c00051ff9be7819d8" compoundref="dsocommand_8h" startline="33" endline="36">settings</references>
+        <references refid="classDsoService_1acc76b93255cf3c5110d90c0df3318afe" compoundref="dsoservice_8cpp" startline="26" endline="36">DsoService::toString</references>
+        <references refid="qobject_1tr">QObject::tr</references>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-slot">
+      <memberdef kind="slot" id="classDsoCommand_1a96c56e497f56ab5ed43201ad13aede7b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DsoCommand::settingsWritten</definition>
+        <argsstring>()</argsstring>
+        <name>settingsWritten</name>
+        <qualifiedname>DsoCommand::settingsWritten</qualifiedname>
+        <briefdescription>
+<para>Invoked when the DSO settings have been written. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/dsocommand.h" line="42" column="10" bodyfile="/home/paul/src/dokit/src/cli/dsocommand.cpp" bodystart="214" bodyend="222"/>
+        <references refid="qobject_1connect-4">QObject::connect</references>
+        <references refid="classDsoService_1a67ca97370da5420c62591c3d8614a26d" compoundref="dsoservice_8cpp" startline="244" endline="248">DsoService::enableMetadataNotifications</references>
+        <references refid="classDsoService_1ab0d0c4d4b41617bc23556b800dbafe29" compoundref="dsoservice_8cpp" startline="270" endline="274">DsoService::enableReadingNotifications</references>
+        <references refid="classDsoCommand_1ae3458da4747f34661ec0ef1d36657e24" compoundref="dsocommand_8cpp" startline="227" endline="238">metadataRead</references>
+        <references refid="classDsoService_1a19e4f10c45794762aa5b692aceee9e6c">DsoService::metadataRead</references>
+        <references refid="classDsoCommand_1a5ed6988ac93f2964979b8dce1425816e" compoundref="dsocommand_8cpp" startline="243" endline="287">outputSamples</references>
+        <references refid="classDsoService_1afafabdcfc2d5812b32eac0e16c437789">DsoService::samplesRead</references>
+        <references refid="classDsoCommand_1a843aa2767953801fc2ec5fa7895714d6" compoundref="dsocommand_8h" startline="32" endline="32">service</references>
+        <references refid="qobject_1tr">QObject::tr</references>
+        <referencedby refid="classDsoCommand_1abdc2af86181151e0c64c655ed265fbe8" compoundref="dsocommand_8cpp" startline="169" endline="179">getService</referencedby>
+      </memberdef>
+      <memberdef kind="slot" id="classDsoCommand_1ae3458da4747f34661ec0ef1d36657e24" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DsoCommand::metadataRead</definition>
+        <argsstring>(const DsoService::Metadata &amp;data)</argsstring>
+        <name>metadataRead</name>
+        <qualifiedname>DsoCommand::metadataRead</qualifiedname>
+        <param>
+          <type>const <ref refid="structDsoService_1_1Metadata" kindref="compound">DsoService::Metadata</ref> &amp;</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>Invoked when <emphasis>metadata</emphasis> has been received from the DSO. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/dsocommand.h" line="43" column="10" bodyfile="/home/paul/src/dokit/src/cli/dsocommand.cpp" bodystart="227" bodyend="238"/>
+        <references refid="classDsoCommand_1ae2d7e39e8a5d61680d8e6da0cf2bc9df" compoundref="dsocommand_8h" startline="37">metadata</references>
+        <references refid="structDsoService_1_1Metadata_1ad0109534b3e7035a93abd47b1028f8ca" compoundref="dsoservice_8h" startline="87">DsoService::Metadata::mode</references>
+        <references refid="structDsoService_1_1Metadata_1aa2c92c1dd91d2351dbe06c1e7910c78d" compoundref="dsoservice_8h" startline="90">DsoService::Metadata::numberOfSamples</references>
+        <references refid="structDsoService_1_1Metadata_1acb41b394f9fc234072f0c977eedb162f" compoundref="dsoservice_8h" startline="88">DsoService::Metadata::range</references>
+        <references refid="classDsoCommand_1a2fba285441bb9d0a76f3e43d1b718015" compoundref="dsocommand_8h" startline="38" endline="38">samplesToGo</references>
+        <references refid="structDsoService_1_1Metadata_1a1ee78a173e219e8224f4db3d4bc5ee97" compoundref="dsoservice_8h" startline="91">DsoService::Metadata::samplingRate</references>
+        <references refid="structDsoService_1_1Metadata_1adef86fc5e8e8ef5b2348251e2cc419d1" compoundref="dsoservice_8h" startline="89">DsoService::Metadata::samplingWindow</references>
+        <references refid="structDsoService_1_1Metadata_1a6b8a8636619603ff9a52e0ef2eba1085" compoundref="dsoservice_8h" startline="86">DsoService::Metadata::scale</references>
+        <references refid="classDsoCommand_1a843aa2767953801fc2ec5fa7895714d6" compoundref="dsocommand_8h" startline="32" endline="32">service</references>
+        <references refid="structDsoService_1_1Metadata_1a49968d71997c4a744061b547e9c4778e" compoundref="dsoservice_8h" startline="85">DsoService::Metadata::status</references>
+        <references refid="classDsoService_1acc76b93255cf3c5110d90c0df3318afe" compoundref="dsoservice_8cpp" startline="26" endline="36">DsoService::toString</references>
+        <referencedby refid="classDsoCommand_1a96c56e497f56ab5ed43201ad13aede7b" compoundref="dsocommand_8cpp" startline="214" endline="222">settingsWritten</referencedby>
+      </memberdef>
+      <memberdef kind="slot" id="classDsoCommand_1a5ed6988ac93f2964979b8dce1425816e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DsoCommand::outputSamples</definition>
+        <argsstring>(const DsoService::Samples &amp;samples)</argsstring>
+        <name>outputSamples</name>
+        <qualifiedname>DsoCommand::outputSamples</qualifiedname>
+        <param>
+          <type>const <ref refid="classDsoService_1a99b8139924e2ef845cca81ca7c340d2c" kindref="member">DsoService::Samples</ref> &amp;</type>
+          <declname>samples</declname>
+        </param>
+        <briefdescription>
+<para>Outputs DSO <emphasis>samples</emphasis> in the selected ouput format. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/dsocommand.h" line="44" column="10" bodyfile="/home/paul/src/dokit/src/cli/dsocommand.cpp" bodystart="243" bodyend="287"/>
+        <references refid="classDsoService_1ae1414a11556e06b49cea9fadcd6f5b95a7b39f260051ef745ddba9fc57ac23ff9">DsoService::AcCurrent</references>
+        <references refid="classDsoService_1ae1414a11556e06b49cea9fadcd6f5b95a9f01dfb531bd23d5cb9c2bb2e49d685e">DsoService::AcVoltage</references>
+        <references refid="qstring_1arg-14">QString::arg</references>
+        <references refid="classAbstractCommand_1aa2dadc72289ff2b0a02c1fb435f8a4dcab20daea8bfacec3891fcf5b7be4adca0">AbstractCommand::Csv</references>
+        <references refid="classDsoService_1ae1414a11556e06b49cea9fadcd6f5b95af2a03b2c98a6620d4bf33af69572898e">DsoService::DcCurrent</references>
+        <references refid="classDsoService_1ae1414a11556e06b49cea9fadcd6f5b95a1a18453c20867d5a990479b3716cbbc5">DsoService::DcVoltage</references>
+        <references refid="classDeviceCommand_1a2bbf2dc9bb0ba85a2bf29263746c7b57" compoundref="devicecommand_8h" startline="26" endline="26">DeviceCommand::device</references>
+        <references refid="classDeviceCommand_1ae619166395b5651f1316fd5336d9fa2c" compoundref="devicecommand_8cpp" startline="42" endline="49">DeviceCommand::disconnect</references>
+        <references refid="classAbstractCommand_1a881d85cd96b6fcc0652b916c366dda7b" compoundref="abstractcommand_8h" startline="43" endline="43">AbstractCommand::format</references>
+        <references refid="qstring_1fromLatin1-1">QString::fromLatin1</references>
+        <references refid="classAbstractCommand_1aa2dadc72289ff2b0a02c1fb435f8a4dcaeed8d85b888a6c015834240885ee6333">AbstractCommand::Json</references>
+        <references refid="classDsoCommand_1ae2d7e39e8a5d61680d8e6da0cf2bc9df" compoundref="dsocommand_8h" startline="37">metadata</references>
+        <references refid="structDsoService_1_1Metadata_1ad0109534b3e7035a93abd47b1028f8ca" compoundref="dsoservice_8h" startline="87">DsoService::Metadata::mode</references>
+        <references refid="structDsoService_1_1Metadata_1aa2c92c1dd91d2351dbe06c1e7910c78d" compoundref="dsoservice_8h" startline="90">DsoService::Metadata::numberOfSamples</references>
+        <references refid="structDsoService_1_1Metadata_1acb41b394f9fc234072f0c977eedb162f" compoundref="dsoservice_8h" startline="88">DsoService::Metadata::range</references>
+        <references refid="classDsoCommand_1a2fba285441bb9d0a76f3e43d1b718015" compoundref="dsocommand_8h" startline="38" endline="38">samplesToGo</references>
+        <references refid="structDsoService_1_1Metadata_1a6b8a8636619603ff9a52e0ef2eba1085" compoundref="dsoservice_8h" startline="86">DsoService::Metadata::scale</references>
+        <references refid="classDsoCommand_1a843aa2767953801fc2ec5fa7895714d6" compoundref="dsocommand_8h" startline="32" endline="32">service</references>
+        <references refid="classDsoCommand_1a4768b502cbfeb3436892a112b51f6b4a" compoundref="dsocommand_8h" startline="39" endline="39">showCsvHeader</references>
+        <references refid="classAbstractCommand_1aa2dadc72289ff2b0a02c1fb435f8a4dca9dffbf69ffba8bc38bc4e01abf4b1675">AbstractCommand::Text</references>
+        <references refid="classDsoService_1acc76b93255cf3c5110d90c0df3318afe" compoundref="dsoservice_8cpp" startline="26" endline="36">DsoService::toString</references>
+        <references refid="qobject_1tr">QObject::tr</references>
+        <referencedby refid="classDsoCommand_1a96c56e497f56ab5ed43201ad13aede7b" compoundref="dsocommand_8cpp" startline="214" endline="222">settingsWritten</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>The <ref refid="classDsoCommand" kindref="compound">DsoCommand</ref> class implements the <computeroutput>dso</computeroutput> CLI command. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>AbstractCommand</label>
+        <link refid="classAbstractCommand"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>DeviceCommand</label>
+        <link refid="classDeviceCommand"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>DsoCommand</label>
+        <link refid="classDsoCommand"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>QObject</label>
+        <link refid="qobject" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>AbstractCommand</label>
+        <link refid="classAbstractCommand"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>deviceToScanFor</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>discoveryAgent</edgelabel>
+        </childnode>
+      </node>
+      <node id="13">
+        <label>AbstractPokitService</label>
+        <link refid="classAbstractPokitService"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>d_ptr</edgelabel>
+        </childnode>
+      </node>
+      <node id="14">
+        <label>AbstractPokitServicePrivate</label>
+        <link refid="classAbstractPokitServicePrivate"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>controller</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>service</edgelabel>
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>serviceUuid</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>q_ptr</edgelabel>
+        </childnode>
+      </node>
+      <node id="12">
+        <label>CalibrationService</label>
+        <link refid="classCalibrationService"/>
+        <childnode refid="13" relation="public-inheritance">
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>serviceUuid</edgelabel>
+        </childnode>
+      </node>
+      <node id="18">
+        <label>DataLoggerService</label>
+        <link refid="classDataLoggerService"/>
+        <childnode refid="13" relation="public-inheritance">
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>serviceUuid</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>DeviceCommand</label>
+        <link refid="classDeviceCommand"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>device</edgelabel>
+        </childnode>
+      </node>
+      <node id="19">
+        <label>DeviceInfoService</label>
+        <link refid="classDeviceInfoService"/>
+        <childnode refid="13" relation="public-inheritance">
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>serviceUuid</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>DsoCommand</label>
+        <link refid="classDsoCommand"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="20" relation="usage">
+          <edgelabel>service</edgelabel>
+        </childnode>
+        <childnode refid="24" relation="usage">
+          <edgelabel>settings</edgelabel>
+        </childnode>
+        <childnode refid="25" relation="usage">
+          <edgelabel>metadata</edgelabel>
+        </childnode>
+      </node>
+      <node id="20">
+        <label>DsoService</label>
+        <link refid="classDsoService"/>
+        <childnode refid="13" relation="public-inheritance">
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>serviceUuid</edgelabel>
+        </childnode>
+      </node>
+      <node id="25">
+        <label>DsoService::Metadata</label>
+        <link refid="structDsoService_1_1Metadata"/>
+      </node>
+      <node id="24">
+        <label>DsoService::Settings</label>
+        <link refid="structDsoService_1_1Settings"/>
+      </node>
+      <node id="21">
+        <label>MultimeterService</label>
+        <link refid="classMultimeterService"/>
+        <childnode refid="13" relation="public-inheritance">
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>serviceUuid</edgelabel>
+        </childnode>
+      </node>
+      <node id="9">
+        <label>PokitDevice</label>
+        <link refid="classPokitDevice"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>d_ptr</edgelabel>
+        </childnode>
+      </node>
+      <node id="10">
+        <label>PokitDevicePrivate</label>
+        <link refid="classPokitDevicePrivate"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>controller</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>calibration</edgelabel>
+        </childnode>
+        <childnode refid="18" relation="usage">
+          <edgelabel>dataLogger</edgelabel>
+        </childnode>
+        <childnode refid="19" relation="usage">
+          <edgelabel>deviceInfo</edgelabel>
+        </childnode>
+        <childnode refid="20" relation="usage">
+          <edgelabel>dso</edgelabel>
+        </childnode>
+        <childnode refid="21" relation="usage">
+          <edgelabel>multimeter</edgelabel>
+        </childnode>
+        <childnode refid="22" relation="usage">
+          <edgelabel>status</edgelabel>
+        </childnode>
+        <childnode refid="23" relation="usage">
+          <edgelabel>calibrationMutex</edgelabel>
+          <edgelabel>dataLoggerMutex</edgelabel>
+          <edgelabel>deviceInfoMutex</edgelabel>
+          <edgelabel>dsoMutex</edgelabel>
+          <edgelabel>multimeterMutex</edgelabel>
+          <edgelabel>statusMutex</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>q_ptr</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>PokitDiscoveryAgent</label>
+        <link refid="classPokitDiscoveryAgent"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>d_ptr</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>PokitDiscoveryAgentPrivate</label>
+        <link refid="classPokitDiscoveryAgentPrivate"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>q_ptr</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>QBluetoothDeviceDiscoveryAgent</label>
+        <link refid="qbluetoothdevicediscoveryagent" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>QBluetoothUuid</label>
+        <link refid="qbluetoothuuid" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags"/>
+        <childnode refid="17" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>QLowEnergyController</label>
+        <link refid="qlowenergycontroller" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>QLowEnergyService</label>
+        <link refid="qlowenergyservice" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>QMutex</label>
+        <link refid="qmutex" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags"/>
+      </node>
+      <node id="4">
+        <label>QObject</label>
+        <link refid="qobject" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags"/>
+      </node>
+      <node id="5">
+        <label>QString</label>
+        <link refid="qstring" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags"/>
+      </node>
+      <node id="17">
+        <label>QUuid</label>
+        <link refid="quuid" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags"/>
+      </node>
+      <node id="22">
+        <label>StatusService</label>
+        <link refid="classStatusService"/>
+        <childnode refid="13" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/paul/src/dokit/src/cli/dsocommand.h" line="10" column="1" bodyfile="/home/paul/src/dokit/src/cli/dsocommand.h" bodystart="11" bodyend="47"/>
+    <listofallmembers>
+      <member refid="classAbstractCommand_1a0d6fde269511e87aa6f178c1733073ae" prot="public" virt="non-virtual"><scope>DsoCommand</scope><name>AbstractCommand</name></member>
+      <member refid="qobject_1objectName-prop" prot="public" virt="non-virtual"><scope>DsoCommand</scope><name>bindableObjectName</name></member>
+      <member refid="qobject_1blockSignals" prot="public" virt="non-virtual"><scope>DsoCommand</scope><name>blockSignals</name></member>
+      <member refid="qobject_1childEvent" prot="protected" virt="virtual"><scope>DsoCommand</scope><name>childEvent</name></member>
+      <member refid="qobject_1children" prot="public" virt="non-virtual"><scope>DsoCommand</scope><name>children</name></member>
+      <member refid="qobject_1connect-4" prot="public" virt="non-virtual"><scope>DsoCommand</scope><name>connect</name></member>
+      <member refid="qobject_1connect-5" prot="public" virt="non-virtual"><scope>DsoCommand</scope><name>connect</name></member>
+      <member refid="qobject_1connect-3" prot="public" virt="non-virtual"><scope>DsoCommand</scope><name>connect</name></member>
+      <member refid="qobject_1connect-1" prot="public" virt="non-virtual"><scope>DsoCommand</scope><name>connect</name></member>
+      <member refid="qobject_1connect" prot="public" virt="non-virtual"><scope>DsoCommand</scope><name>connect</name></member>
+      <member refid="qobject_1connect-2" prot="public" virt="non-virtual"><scope>DsoCommand</scope><name>connect</name></member>
+      <member refid="qobject_1connectNotify" prot="protected" virt="virtual"><scope>DsoCommand</scope><name>connectNotify</name></member>
+      <member refid="classDeviceCommand_1a28461c0fe3f2b3398c74298b3df70b93" prot="protected" virt="virtual"><scope>DsoCommand</scope><name>controllerError</name></member>
+      <member refid="qobject_1customEvent" prot="protected" virt="virtual"><scope>DsoCommand</scope><name>customEvent</name></member>
+      <member refid="qobject_1deleteLater" prot="public" virt="non-virtual"><scope>DsoCommand</scope><name>deleteLater</name></member>
+      <member refid="qobject_1destroyed" prot="public" virt="non-virtual"><scope>DsoCommand</scope><name>destroyed</name></member>
+      <member refid="classDeviceCommand_1a2bbf2dc9bb0ba85a2bf29263746c7b57" prot="protected" virt="non-virtual"><scope>DsoCommand</scope><name>device</name></member>
+      <member refid="classDeviceCommand_1a55c623ad1d1e0ad1273604f3f24b1dfc" prot="public" virt="non-virtual"><scope>DsoCommand</scope><name>DeviceCommand</name></member>
+      <member refid="classDeviceCommand_1a525ae4429c2b9a325bad62678409fb5b" prot="protected" virt="virtual"><scope>DsoCommand</scope><name>deviceDisconnected</name></member>
+      <member refid="classDeviceCommand_1acde5a41e646a23c5485b67cf99e402a7" prot="private" virt="non-virtual"><scope>DsoCommand</scope><name>deviceDiscovered</name></member>
+      <member refid="classDeviceCommand_1a7dfdaae89c5f6540af9a5bfbcfd66e5a" prot="private" virt="non-virtual"><scope>DsoCommand</scope><name>deviceDiscoveryFinished</name></member>
+      <member refid="classAbstractCommand_1a07d979bc039d61f5c720cb1521b31208" prot="protected" virt="non-virtual"><scope>DsoCommand</scope><name>deviceToScanFor</name></member>
+      <member refid="classDeviceCommand_1ae619166395b5651f1316fd5336d9fa2c" prot="protected" virt="non-virtual"><scope>DsoCommand</scope><name>disconnect</name></member>
+      <member refid="qobject_1disconnect-4" prot="public" virt="non-virtual" ambiguityscope="AbstractCommand::"><scope>DsoCommand</scope><name>disconnect</name></member>
+      <member refid="qobject_1disconnect-5" prot="public" virt="non-virtual" ambiguityscope="AbstractCommand::"><scope>DsoCommand</scope><name>disconnect</name></member>
+      <member refid="qobject_1disconnect-1" prot="public" virt="non-virtual" ambiguityscope="AbstractCommand::"><scope>DsoCommand</scope><name>disconnect</name></member>
+      <member refid="qobject_1disconnect" prot="public" virt="non-virtual" ambiguityscope="AbstractCommand::"><scope>DsoCommand</scope><name>disconnect</name></member>
+      <member refid="qobject_1disconnect-3" prot="public" virt="non-virtual" ambiguityscope="AbstractCommand::"><scope>DsoCommand</scope><name>disconnect</name></member>
+      <member refid="qobject_1disconnect-2" prot="public" virt="non-virtual" ambiguityscope="AbstractCommand::"><scope>DsoCommand</scope><name>disconnect</name></member>
+      <member refid="qobject_1disconnectNotify" prot="protected" virt="virtual"><scope>DsoCommand</scope><name>disconnectNotify</name></member>
+      <member refid="classAbstractCommand_1a86878df43cd818f4a7f333a97dabac3c" prot="protected" virt="non-virtual"><scope>DsoCommand</scope><name>discoveryAgent</name></member>
+      <member refid="classDsoCommand_1a79f1a1eedff91cffa223d2d5b454d9e0" prot="public" virt="non-virtual"><scope>DsoCommand</scope><name>DsoCommand</name></member>
+      <member refid="qobject_1dumpObjectInfo" prot="public" virt="non-virtual"><scope>DsoCommand</scope><name>dumpObjectInfo</name></member>
+      <member refid="qobject_1dumpObjectTree" prot="public" virt="non-virtual"><scope>DsoCommand</scope><name>dumpObjectTree</name></member>
+      <member refid="qobject_1dynamicPropertyNames" prot="public" virt="non-virtual"><scope>DsoCommand</scope><name>dynamicPropertyNames</name></member>
+      <member refid="classAbstractCommand_1af85c842568f8a3a893e336e449ef7813" prot="public" virt="non-virtual"><scope>DsoCommand</scope><name>escapeCsvField</name></member>
+      <member refid="qobject_1event" prot="public" virt="virtual"><scope>DsoCommand</scope><name>event</name></member>
+      <member refid="qobject_1eventFilter" prot="public" virt="virtual"><scope>DsoCommand</scope><name>eventFilter</name></member>
+      <member refid="classDeviceCommand_1a792b3771a02cb7f4aff6335045b705bf" prot="protected" virt="non-virtual"><scope>DsoCommand</scope><name>exitCodeOnDisconnect</name></member>
+      <member refid="qobject_1findChild" prot="public" virt="non-virtual"><scope>DsoCommand</scope><name>findChild</name></member>
+      <member refid="qobject_1findChildren-1" prot="public" virt="non-virtual"><scope>DsoCommand</scope><name>findChildren</name></member>
+      <member refid="qobject_1findChildren-2" prot="public" virt="non-virtual"><scope>DsoCommand</scope><name>findChildren</name></member>
+      <member refid="qobject_1findChildren" prot="public" virt="non-virtual"><scope>DsoCommand</scope><name>findChildren</name></member>
+      <member refid="classAbstractCommand_1a881d85cd96b6fcc0652b916c366dda7b" prot="protected" virt="non-virtual"><scope>DsoCommand</scope><name>format</name></member>
+      <member refid="classDsoCommand_1abdc2af86181151e0c64c655ed265fbe8" prot="protected" virt="virtual"><scope>DsoCommand</scope><name>getService</name></member>
+      <member refid="qobject_1inherits" prot="public" virt="non-virtual"><scope>DsoCommand</scope><name>inherits</name></member>
+      <member refid="qobject_1installEventFilter" prot="public" virt="non-virtual"><scope>DsoCommand</scope><name>installEventFilter</name></member>
+      <member refid="qobject_1isQuickItemType" prot="public" virt="non-virtual"><scope>DsoCommand</scope><name>isQuickItemType</name></member>
+      <member refid="qobject_1isSignalConnected" prot="protected" virt="non-virtual"><scope>DsoCommand</scope><name>isSignalConnected</name></member>
+      <member refid="qobject_1isWidgetType" prot="public" virt="non-virtual"><scope>DsoCommand</scope><name>isWidgetType</name></member>
+      <member refid="qobject_1isWindowType" prot="public" virt="non-virtual"><scope>DsoCommand</scope><name>isWindowType</name></member>
+      <member refid="qobject_1killTimer" prot="public" virt="non-virtual"><scope>DsoCommand</scope><name>killTimer</name></member>
+      <member refid="classDsoCommand_1ae2d7e39e8a5d61680d8e6da0cf2bc9df" prot="private" virt="non-virtual"><scope>DsoCommand</scope><name>metadata</name></member>
+      <member refid="classDsoCommand_1ae3458da4747f34661ec0ef1d36657e24" prot="private" virt="non-virtual"><scope>DsoCommand</scope><name>metadataRead</name></member>
+      <member refid="qobject_1metaObject" prot="public" virt="virtual"><scope>DsoCommand</scope><name>metaObject</name></member>
+      <member refid="classDeviceCommand_1a8aa676de2533a687cb369e70bb352a4c" prot="protected" virt="non-virtual"><scope>DsoCommand</scope><name>minCapacitanceRange</name></member>
+      <member refid="classDeviceCommand_1ab5ae0318d3ec2bd4449e710eafafa680" prot="protected" virt="non-virtual"><scope>DsoCommand</scope><name>minCurrentRange</name></member>
+      <member refid="classDeviceCommand_1abb9d2e113e372130dca9360791e7ce5b" prot="protected" virt="non-virtual"><scope>DsoCommand</scope><name>minRange</name></member>
+      <member refid="classDsoCommand_1a24309dd456a3595b034f45cae208b61c" prot="private" virt="non-virtual"><scope>DsoCommand</scope><name>minRangeFunc</name></member>
+      <member refid="classDeviceCommand_1a1ce3ce094a91ec500e9d50e620b0cc6d" prot="protected" virt="non-virtual"><scope>DsoCommand</scope><name>minResistanceRange</name></member>
+      <member refid="classDeviceCommand_1a92f7e61dff3d28eda856ea4f95e828fe" prot="protected" virt="non-virtual"><scope>DsoCommand</scope><name>minVoltageRange</name></member>
+      <member refid="qobject_1moveToThread" prot="public" virt="non-virtual"><scope>DsoCommand</scope><name>moveToThread</name></member>
+      <member refid="qobject_1objectName-prop" prot="public" virt="non-virtual"><scope>DsoCommand</scope><name>objectName</name></member>
+      <member refid="qobject_1objectName-prop" prot="public" virt="non-virtual"><scope>DsoCommand</scope><name>objectName</name></member>
+      <member refid="qobject_1objectNameChanged" prot="public" virt="non-virtual"><scope>DsoCommand</scope><name>objectNameChanged</name></member>
+      <member refid="classAbstractCommand_1aa2dadc72289ff2b0a02c1fb435f8a4dc" prot="public" virt="non-virtual"><scope>DsoCommand</scope><name>OutputFormat</name></member>
+      <member refid="classDsoCommand_1a5ed6988ac93f2964979b8dce1425816e" prot="private" virt="non-virtual"><scope>DsoCommand</scope><name>outputSamples</name></member>
+      <member refid="qobject_1parent" prot="public" virt="non-virtual"><scope>DsoCommand</scope><name>parent</name></member>
+      <member refid="classAbstractCommand_1a29b2a2446ef034195183a2ae9d4bb911" prot="public" virt="non-virtual"><scope>DsoCommand</scope><name>parseNumber</name></member>
+      <member refid="classDsoCommand_1a87db950042b5ea7707bd76648536c943" prot="public" virt="non-virtual"><scope>DsoCommand</scope><name>processOptions</name></member>
+      <member refid="qobject_1property" prot="public" virt="non-virtual"><scope>DsoCommand</scope><name>property</name></member>
+      <member refid="qobject_1Q_CLASSINFO" prot="public" virt="non-virtual"><scope>DsoCommand</scope><name>Q_CLASSINFO</name></member>
+      <member refid="qobject_1Q_EMIT" prot="public" virt="non-virtual"><scope>DsoCommand</scope><name>Q_EMIT</name></member>
+      <member refid="qobject_1Q_ENUM" prot="public" virt="non-virtual"><scope>DsoCommand</scope><name>Q_ENUM</name></member>
+      <member refid="qobject_1Q_ENUM_NS" prot="public" virt="non-virtual"><scope>DsoCommand</scope><name>Q_ENUM_NS</name></member>
+      <member refid="qobject-obsolete_1Q_ENUMS" prot="public" virt="non-virtual"><scope>DsoCommand</scope><name>Q_ENUMS</name></member>
+      <member refid="qobject_1Q_FLAG" prot="public" virt="non-virtual"><scope>DsoCommand</scope><name>Q_FLAG</name></member>
+      <member refid="qobject_1Q_FLAG_NS" prot="public" virt="non-virtual"><scope>DsoCommand</scope><name>Q_FLAG_NS</name></member>
+      <member refid="qobject-obsolete_1Q_FLAGS" prot="public" virt="non-virtual"><scope>DsoCommand</scope><name>Q_FLAGS</name></member>
+      <member refid="qobject_1Q_GADGET" prot="public" virt="non-virtual"><scope>DsoCommand</scope><name>Q_GADGET</name></member>
+      <member refid="qobject_1Q_GADGET_EXPORT" prot="public" virt="non-virtual"><scope>DsoCommand</scope><name>Q_GADGET_EXPORT</name></member>
+      <member refid="qobject_1Q_INTERFACES" prot="public" virt="non-virtual"><scope>DsoCommand</scope><name>Q_INTERFACES</name></member>
+      <member refid="qobject_1Q_INVOKABLE" prot="public" virt="non-virtual"><scope>DsoCommand</scope><name>Q_INVOKABLE</name></member>
+      <member refid="classAbstractCommand_1ac8bafb6db670b3c127ab59130584274f" prot="protected" virt="non-virtual"><scope>DsoCommand</scope><name>Q_LOGGING_CATEGORY</name></member>
+      <member refid="qobject_1Q_MOC_INCLUDE" prot="public" virt="non-virtual"><scope>DsoCommand</scope><name>Q_MOC_INCLUDE</name></member>
+      <member refid="qobject_1Q_NAMESPACE" prot="public" virt="non-virtual"><scope>DsoCommand</scope><name>Q_NAMESPACE</name></member>
+      <member refid="qobject_1Q_NAMESPACE_EXPORT" prot="public" virt="non-virtual"><scope>DsoCommand</scope><name>Q_NAMESPACE_EXPORT</name></member>
+      <member refid="qobject_1Q_OBJECT" prot="public" virt="non-virtual"><scope>DsoCommand</scope><name>Q_OBJECT</name></member>
+      <member refid="qobject_1Q_PROPERTY" prot="public" virt="non-virtual"><scope>DsoCommand</scope><name>Q_PROPERTY</name></member>
+      <member refid="qobject_1Q_REVISION" prot="public" virt="non-virtual"><scope>DsoCommand</scope><name>Q_REVISION</name></member>
+      <member refid="qobject_1Q_SET_OBJECT_NAME" prot="public" virt="non-virtual"><scope>DsoCommand</scope><name>Q_SET_OBJECT_NAME</name></member>
+      <member refid="qobject_1Q_SIGNAL" prot="public" virt="non-virtual"><scope>DsoCommand</scope><name>Q_SIGNAL</name></member>
+      <member refid="qobject_1Q_SIGNALS" prot="public" virt="non-virtual"><scope>DsoCommand</scope><name>Q_SIGNALS</name></member>
+      <member refid="qobject_1Q_SLOT" prot="public" virt="non-virtual"><scope>DsoCommand</scope><name>Q_SLOT</name></member>
+      <member refid="qobject_1Q_SLOTS" prot="public" virt="non-virtual"><scope>DsoCommand</scope><name>Q_SLOTS</name></member>
+      <member refid="qobject_1QObject" prot="public" virt="non-virtual"><scope>DsoCommand</scope><name>QObject</name></member>
+      <member refid="qobject_1qobject_cast" prot="public" virt="non-virtual"><scope>DsoCommand</scope><name>qobject_cast</name></member>
+      <member refid="qobject_1qobject_cast-1" prot="public" virt="non-virtual"><scope>DsoCommand</scope><name>qobject_cast</name></member>
+      <member refid="qobject_1QObjectList-typedef" prot="public" virt="non-virtual"><scope>DsoCommand</scope><name>QObjectList</name></member>
+      <member refid="qobject_1QT_NO_NARROWING_CONVERSIONS_IN_CONNECT" prot="public" virt="non-virtual"><scope>DsoCommand</scope><name>QT_NO_NARROWING_CONVERSIONS_IN_CONNECT</name></member>
+      <member refid="classDsoCommand_1ab326ab6d226da73c0682c020fc8132af" prot="private" virt="non-virtual"><scope>DsoCommand</scope><name>rangeOptionValue</name></member>
+      <member refid="qobject_1receivers" prot="protected" virt="non-virtual"><scope>DsoCommand</scope><name>receivers</name></member>
+      <member refid="qobject_1removeEventFilter" prot="public" virt="non-virtual"><scope>DsoCommand</scope><name>removeEventFilter</name></member>
+      <member refid="classDsoCommand_1abbdf205b4b6ca5271e8e8c6b633b0462" prot="public" virt="virtual"><scope>DsoCommand</scope><name>requiredOptions</name></member>
+      <member refid="classDsoCommand_1a2fba285441bb9d0a76f3e43d1b718015" prot="private" virt="non-virtual"><scope>DsoCommand</scope><name>samplesToGo</name></member>
+      <member refid="qobject_1sender" prot="protected" virt="non-virtual"><scope>DsoCommand</scope><name>sender</name></member>
+      <member refid="qobject_1senderSignalIndex" prot="protected" virt="non-virtual"><scope>DsoCommand</scope><name>senderSignalIndex</name></member>
+      <member refid="classDsoCommand_1a843aa2767953801fc2ec5fa7895714d6" prot="private" virt="non-virtual"><scope>DsoCommand</scope><name>service</name></member>
+      <member refid="classDsoCommand_1a57f3b6be35c7a6fdadfaa737177016a8" prot="protected" virt="non-virtual"><scope>DsoCommand</scope><name>serviceDetailsDiscovered</name></member>
+      <member refid="classDeviceCommand_1a96208c78728c0068e7a78f961b913751" prot="protected" virt="virtual"><scope>DsoCommand</scope><name>serviceError</name></member>
+      <member refid="qobject_1setObjectName-1" prot="public" virt="non-virtual"><scope>DsoCommand</scope><name>setObjectName</name></member>
+      <member refid="qobject_1setObjectName" prot="public" virt="non-virtual"><scope>DsoCommand</scope><name>setObjectName</name></member>
+      <member refid="qobject_1setParent" prot="public" virt="non-virtual"><scope>DsoCommand</scope><name>setParent</name></member>
+      <member refid="qobject_1setProperty-1" prot="public" virt="non-virtual"><scope>DsoCommand</scope><name>setProperty</name></member>
+      <member refid="qobject_1setProperty" prot="public" virt="non-virtual"><scope>DsoCommand</scope><name>setProperty</name></member>
+      <member refid="classDsoCommand_1a0438c5c9aa9fea7c00051ff9be7819d8" prot="private" virt="non-virtual"><scope>DsoCommand</scope><name>settings</name></member>
+      <member refid="classDsoCommand_1a96c56e497f56ab5ed43201ad13aede7b" prot="private" virt="non-virtual"><scope>DsoCommand</scope><name>settingsWritten</name></member>
+      <member refid="classDsoCommand_1a4768b502cbfeb3436892a112b51f6b4a" prot="private" virt="non-virtual"><scope>DsoCommand</scope><name>showCsvHeader</name></member>
+      <member refid="qobject_1signalsBlocked" prot="public" virt="non-virtual"><scope>DsoCommand</scope><name>signalsBlocked</name></member>
+      <member refid="classDeviceCommand_1a6cf548752b7ae1084a712b9003b92d0c" prot="public" virt="non-virtual"><scope>DsoCommand</scope><name>start</name></member>
+      <member refid="qobject_1startTimer" prot="public" virt="non-virtual"><scope>DsoCommand</scope><name>startTimer</name></member>
+      <member refid="qobject_1startTimer-1" prot="public" virt="non-virtual"><scope>DsoCommand</scope><name>startTimer</name></member>
+      <member refid="classDsoCommand_1a6569d0fd7b8307d6098e93092859301a" prot="public" virt="virtual"><scope>DsoCommand</scope><name>supportedOptions</name></member>
+      <member refid="classDsoCommand_1adf07b37e9543223362edf14674075897" prot="private" virt="non-virtual"><scope>DsoCommand</scope><name>TestDsoCommand</name></member>
+      <member refid="qobject_1thread" prot="public" virt="non-virtual"><scope>DsoCommand</scope><name>thread</name></member>
+      <member refid="qobject_1timerEvent" prot="protected" virt="virtual"><scope>DsoCommand</scope><name>timerEvent</name></member>
+      <member refid="qobject_1tr" prot="public" virt="non-virtual"><scope>DsoCommand</scope><name>tr</name></member>
+      <member refid="qobject_1dtor.QObject" prot="public" virt="virtual"><scope>DsoCommand</scope><name>~QObject</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

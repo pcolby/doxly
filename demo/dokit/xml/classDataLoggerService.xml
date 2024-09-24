@@ -1,0 +1,966 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.0" xml:lang="en-US">
+  <compounddef id="classDataLoggerService" kind="class" language="C++" prot="public">
+    <compoundname>DataLoggerService</compoundname>
+    <basecompoundref refid="classAbstractPokitService" prot="public" virt="non-virtual">AbstractPokitService</basecompoundref>
+    <innerclass refid="structDataLoggerService_1_1CharacteristicUuids" prot="public">DataLoggerService::CharacteristicUuids</innerclass>
+    <innerclass refid="structDataLoggerService_1_1Metadata" prot="public">DataLoggerService::Metadata</innerclass>
+    <innerclass refid="structDataLoggerService_1_1Settings" prot="public">DataLoggerService::Settings</innerclass>
+    <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classDataLoggerService_1a8662772916319f96aa7aeb16c87665cc" prot="public" static="no" strong="yes">
+        <type>quint8</type>
+        <name>Command</name>
+        <qualifiedname>DataLoggerService::Command</qualifiedname>
+        <enumvalue id="classDataLoggerService_1a8662772916319f96aa7aeb16c87665ccaa6122a65eaa676f700ae68d393054a37" prot="public">
+          <name>Start</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>Start the Data Logger. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classDataLoggerService_1a8662772916319f96aa7aeb16c87665cca11a755d598c0c417f9a36758c3da7481" prot="public">
+          <name>Stop</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+<para>Stop the Data Logger. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classDataLoggerService_1a8662772916319f96aa7aeb16c87665cca63a6a88c066880c5ac42394a22803ca6" prot="public">
+          <name>Refresh</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+<para>Refresh the Data Logger. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Values supported by the <computeroutput>Command</computeroutput> attribute of the <computeroutput><ref refid="structDataLoggerService_1_1Settings" kindref="compound">Settings</ref></computeroutput> characteristic. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/dataloggerservice.h" line="43" column="5" bodyfile="/home/paul/src/dokit/include/qtpokit/dataloggerservice.h" bodystart="43" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="enum" id="classDataLoggerService_1ab7fc5073f8ab9d5e93ba7006df685771" prot="public" static="no" strong="yes">
+        <type>quint8</type>
+        <name>Mode</name>
+        <qualifiedname>DataLoggerService::Mode</qualifiedname>
+        <enumvalue id="classDataLoggerService_1ab7fc5073f8ab9d5e93ba7006df685771ae599161956d626eda4cb0a5ffb85271c" prot="public">
+          <name>Idle</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>Make device idle. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classDataLoggerService_1ab7fc5073f8ab9d5e93ba7006df685771a1a18453c20867d5a990479b3716cbbc5" prot="public">
+          <name>DcVoltage</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+<para>Measure DC voltage. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classDataLoggerService_1ab7fc5073f8ab9d5e93ba7006df685771a9f01dfb531bd23d5cb9c2bb2e49d685e" prot="public">
+          <name>AcVoltage</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+<para>Measure AC voltage. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classDataLoggerService_1ab7fc5073f8ab9d5e93ba7006df685771af2a03b2c98a6620d4bf33af69572898e" prot="public">
+          <name>DcCurrent</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+<para>Measure DC current. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classDataLoggerService_1ab7fc5073f8ab9d5e93ba7006df685771a7b39f260051ef745ddba9fc57ac23ff9" prot="public">
+          <name>AcCurrent</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+<para>Measure AC current. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classDataLoggerService_1ab7fc5073f8ab9d5e93ba7006df685771aee7a8e262285ed49ea1b4e4ae11525bd" prot="public">
+          <name>Temperature</name>
+          <initializer>= 5</initializer>
+          <briefdescription>
+<para>Measure temperature. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Values supported by the <computeroutput>Mode</computeroutput> attribute of the <computeroutput><ref refid="structDataLoggerService_1_1Settings" kindref="compound">Settings</ref></computeroutput> and <computeroutput><ref refid="structDataLoggerService_1_1Metadata" kindref="compound">Metadata</ref></computeroutput> characteristics. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/dataloggerservice.h" line="50" column="5" bodyfile="/home/paul/src/dokit/include/qtpokit/dataloggerservice.h" bodystart="50" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="enum" id="classDataLoggerService_1a1a3a38ca8befc3de8121d795879140f6" prot="public" static="no" strong="yes">
+        <type>quint8</type>
+        <name>LoggerStatus</name>
+        <qualifiedname>DataLoggerService::LoggerStatus</qualifiedname>
+        <enumvalue id="classDataLoggerService_1a1a3a38ca8befc3de8121d795879140f6af92965e2c8a7afb3c1b9a5c09a263636" prot="public">
+          <name>Done</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>Sampling has completed. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classDataLoggerService_1a1a3a38ca8befc3de8121d795879140f6a1d07814d12178c958e4233501cb0bdc7" prot="public">
+          <name>Sampling</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+<para>Actively sampling. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classDataLoggerService_1a1a3a38ca8befc3de8121d795879140f6a1a22c40923d2978b2a258720df650702" prot="public">
+          <name>BufferFull</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+<para>Buffer is full. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classDataLoggerService_1a1a3a38ca8befc3de8121d795879140f6a902b0d55fddef6f8d651fe1035b7d4bd" prot="public">
+          <name>Error</name>
+          <initializer>= 255</initializer>
+          <briefdescription>
+<para>An error has occurred. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Values supported by the <computeroutput>Status</computeroutput> attribute of the <computeroutput><ref refid="structDataLoggerService_1_1Metadata" kindref="compound">Metadata</ref></computeroutput> characteristic. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/dataloggerservice.h" line="76" column="5" bodyfile="/home/paul/src/dokit/include/qtpokit/dataloggerservice.h" bodystart="76" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classDataLoggerService_1a59612dc26aa6b9a6d57be1014b04581b" prot="public" static="no">
+        <type><ref refid="qvector" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QVector</ref>&lt; qint16 &gt;</type>
+        <definition>QVector&lt;qint16&gt; DataLoggerService::Samples</definition>
+        <argsstring></argsstring>
+        <name>Samples</name>
+        <qualifiedname>DataLoggerService::Samples</qualifiedname>
+        <briefdescription>
+<para>Raw samples from the <computeroutput>Reading</computeroutput> characteristic. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>These raw samples are (supposedly) within the range -2048 to +2047, and need to be multiplied by the <ref refid="structDataLoggerService_1_1Metadata_1a824ce9f37293e435d41af31788145571" kindref="member">Metadata::scale</ref> value from the <computeroutput><ref refid="structDataLoggerService_1_1Metadata" kindref="compound">Metadata</ref></computeroutput> characteristc to get the true values.</para>
+<para>Also supposedly, there should be no more than 10 samples at a time, according to Pokit&apos;s current API docs. There is not artificial limitation imposed by QtPokit, so devices may begin batching more samples in future. Specifically, the Pokit Pro seems to send 88 samples (in 176 bytes) at a time. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/dataloggerservice.h" line="94" column="21" bodyfile="/home/paul/src/dokit/include/qtpokit/dataloggerservice.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classDataLoggerService_1a17be902e87a778365fd439fbcc5548d4" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="qbluetoothuuid" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothUuid</ref></type>
+        <definition>const QBluetoothUuid DataLoggerService::serviceUuid</definition>
+        <argsstring></argsstring>
+        <name>serviceUuid</name>
+        <qualifiedname>DataLoggerService::serviceUuid</qualifiedname>
+        <initializer>{ QStringLiteral(&quot;a5ff3566-1fd8-4e10-8362-590a578a4121&quot;) }</initializer>
+        <briefdescription>
+<para>UUID of the &quot;DataLogger&quot; service. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/dataloggerservice.h" line="28" column="40" bodyfile="/home/paul/src/dokit/include/qtpokit/dataloggerservice.h" bodystart="28" bodyend="28"/>
+        <referencedby refid="classPokitDevice_1aca9393595de5676f20e3d0fd795358b5" compoundref="pokitdevice_8cpp" startline="190" endline="210">PokitDevice::serviceToString</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="classDataLoggerService_1af08b06b984094d1b3813a3b6e01d9989" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class TestDataLoggerService</definition>
+        <argsstring></argsstring>
+        <name>TestDataLoggerService</name>
+        <qualifiedname>DataLoggerService::TestDataLoggerService</qualifiedname>
+        <param>
+          <type>TestDataLoggerService</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/dataloggerservice.h" line="130" column="18" bodyfile="/home/paul/src/dokit/include/qtpokit/dataloggerservice.h" bodystart="130" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classDataLoggerService_1a4c696b7500e666959bbec4b0ed677d5d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref></type>
+        <definition>QString DataLoggerService::toString</definition>
+        <argsstring>(const Mode &amp;mode)</argsstring>
+        <name>toString</name>
+        <qualifiedname>DataLoggerService::toString</qualifiedname>
+        <param>
+          <type>const <ref refid="classDataLoggerService_1ab7fc5073f8ab9d5e93ba7006df685771" kindref="member">Mode</ref> &amp;</type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+<para>Returns <emphasis>mode</emphasis> as a user-friendly string. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/dataloggerservice.h" line="58" column="20" bodyfile="/home/paul/src/dokit/src/lib/dataloggerservice.cpp" bodystart="27" bodyend="38"/>
+        <references refid="classDataLoggerService_1ab7fc5073f8ab9d5e93ba7006df685771a7b39f260051ef745ddba9fc57ac23ff9">AcCurrent</references>
+        <references refid="classDataLoggerService_1ab7fc5073f8ab9d5e93ba7006df685771a9f01dfb531bd23d5cb9c2bb2e49d685e">AcVoltage</references>
+        <references refid="classDataLoggerService_1ab7fc5073f8ab9d5e93ba7006df685771af2a03b2c98a6620d4bf33af69572898e">DcCurrent</references>
+        <references refid="classDataLoggerService_1ab7fc5073f8ab9d5e93ba7006df685771a1a18453c20867d5a990479b3716cbbc5">DcVoltage</references>
+        <references refid="classDataLoggerService_1ab7fc5073f8ab9d5e93ba7006df685771ae599161956d626eda4cb0a5ffb85271c">Idle</references>
+        <references refid="classDataLoggerService_1ab7fc5073f8ab9d5e93ba7006df685771aee7a8e262285ed49ea1b4e4ae11525bd">Temperature</references>
+        <references refid="qobject_1tr">QObject::tr</references>
+        <referencedby refid="classLoggerFetchCommand_1ad77b93a8a2ccad9ee9aaacd67f49689e" compoundref="loggerfetchcommand_8cpp" startline="71" endline="84">LoggerFetchCommand::metadataRead</referencedby>
+        <referencedby refid="classLoggerFetchCommand_1a2f093386853fc6667de091a0e921a665" compoundref="loggerfetchcommand_8cpp" startline="89" endline="140">LoggerFetchCommand::outputSamples</referencedby>
+        <referencedby refid="classLoggerStartCommand_1ab1b0364c6a26ff893d5b58dea381e4d5" compoundref="loggerstartcommand_8cpp" startline="153" endline="162">LoggerStartCommand::serviceDetailsDiscovered</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classDataLoggerService_1acb7b2d9480b2756074571c6b96531337" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref></type>
+        <definition>QString DataLoggerService::toString</definition>
+        <argsstring>(const PokitProduct product, const quint8 range, const Mode mode)</argsstring>
+        <name>toString</name>
+        <qualifiedname>DataLoggerService::toString</qualifiedname>
+        <param>
+          <type>const <ref refid="pokitproducts_8h_1a0c4f628f68ce0432a6db11681a41fda4" kindref="member">PokitProduct</ref></type>
+          <declname>product</declname>
+        </param>
+        <param>
+          <type>const quint8</type>
+          <declname>range</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classDataLoggerService_1ab7fc5073f8ab9d5e93ba7006df685771" kindref="member">Mode</ref></type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+<para>Returns <emphasis>range</emphasis> as a user-friendly string, or a null <ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref> if <emphasis>mode</emphasis> has no ranges. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/dataloggerservice.h" line="60" column="20" bodyfile="/home/paul/src/dokit/src/lib/dataloggerservice.cpp" bodystart="41" bodyend="56"/>
+        <references refid="classDataLoggerService_1ab7fc5073f8ab9d5e93ba7006df685771a7b39f260051ef745ddba9fc57ac23ff9">AcCurrent</references>
+        <references refid="classDataLoggerService_1ab7fc5073f8ab9d5e93ba7006df685771a9f01dfb531bd23d5cb9c2bb2e49d685e">AcVoltage</references>
+        <references refid="classDataLoggerService_1ab7fc5073f8ab9d5e93ba7006df685771af2a03b2c98a6620d4bf33af69572898e">DcCurrent</references>
+        <references refid="classDataLoggerService_1ab7fc5073f8ab9d5e93ba7006df685771a1a18453c20867d5a990479b3716cbbc5">DcVoltage</references>
+        <references refid="classDataLoggerService_1ab7fc5073f8ab9d5e93ba7006df685771ae599161956d626eda4cb0a5ffb85271c">Idle</references>
+        <references refid="classDataLoggerService_1ab7fc5073f8ab9d5e93ba7006df685771aee7a8e262285ed49ea1b4e4ae11525bd">Temperature</references>
+        <references refid="namespaceCurrentRange_1a683a82fdd02371d1d6acb4bbbd91e844" compoundref="pokitproducts_8cpp" startline="183" endline="194">CurrentRange::toString</references>
+        <references refid="namespaceVoltageRange_1a843ef4bfc3538988c695fa643adcd4d0" compoundref="pokitproducts_8cpp" startline="271" endline="282">VoltageRange::toString</references>
+      </memberdef>
+      <memberdef kind="function" id="classDataLoggerService_1ac4d7ef9171f04a4d71b404ba3d99cef4" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="qvariant" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QVariant</ref></type>
+        <definition>QVariant DataLoggerService::maxValue</definition>
+        <argsstring>(const PokitProduct product, const quint8 range, const Mode mode)</argsstring>
+        <name>maxValue</name>
+        <qualifiedname>DataLoggerService::maxValue</qualifiedname>
+        <param>
+          <type>const <ref refid="pokitproducts_8h_1a0c4f628f68ce0432a6db11681a41fda4" kindref="member">PokitProduct</ref></type>
+          <declname>product</declname>
+        </param>
+        <param>
+          <type>const quint8</type>
+          <declname>range</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classDataLoggerService_1ab7fc5073f8ab9d5e93ba7006df685771" kindref="member">Mode</ref></type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+<para>Returns the maximum value for <emphasis>range</emphasis>, or the string &quot;Auto&quot;. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If <emphasis>range</emphasis> is not a known valid enumeration value for <emphasis>product&apos;s</emphasis> <emphasis>mode</emphasis>, then a null <ref refid="qvariant" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QVariant</ref> is returned. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/dataloggerservice.h" line="62" column="21" bodyfile="/home/paul/src/dokit/src/lib/dataloggerservice.cpp" bodystart="69" bodyend="84"/>
+        <references refid="classDataLoggerService_1ab7fc5073f8ab9d5e93ba7006df685771a7b39f260051ef745ddba9fc57ac23ff9">AcCurrent</references>
+        <references refid="classDataLoggerService_1ab7fc5073f8ab9d5e93ba7006df685771a9f01dfb531bd23d5cb9c2bb2e49d685e">AcVoltage</references>
+        <references refid="classDataLoggerService_1ab7fc5073f8ab9d5e93ba7006df685771af2a03b2c98a6620d4bf33af69572898e">DcCurrent</references>
+        <references refid="classDataLoggerService_1ab7fc5073f8ab9d5e93ba7006df685771a1a18453c20867d5a990479b3716cbbc5">DcVoltage</references>
+        <references refid="classDataLoggerService_1ab7fc5073f8ab9d5e93ba7006df685771ae599161956d626eda4cb0a5ffb85271c">Idle</references>
+        <references refid="namespaceCurrentRange_1a340ae103126865c13997adcde5976bd1" compoundref="pokitproducts_8cpp" startline="203" endline="214">CurrentRange::maxValue</references>
+        <references refid="namespaceVoltageRange_1adc3a8126ae8dcec8010fc8b037fab885" compoundref="pokitproducts_8cpp" startline="291" endline="302">VoltageRange::maxValue</references>
+        <references refid="classDataLoggerService_1ab7fc5073f8ab9d5e93ba7006df685771aee7a8e262285ed49ea1b4e4ae11525bd">Temperature</references>
+        <referencedby refid="classDataLoggerService_1ab2fb8703f5724589cdace781b47bb96d" compoundref="dataloggerservice_8cpp" startline="92" endline="95">maxValue</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classDataLoggerService_1a6f92316f5c2c256b17a74c5ad38eeab8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref></type>
+        <definition>QString DataLoggerService::toString</definition>
+        <argsstring>(const quint8 range, const Mode mode) const</argsstring>
+        <name>toString</name>
+        <qualifiedname>DataLoggerService::toString</qualifiedname>
+        <param>
+          <type>const quint8</type>
+          <declname>range</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classDataLoggerService_1ab7fc5073f8ab9d5e93ba7006df685771" kindref="member">Mode</ref></type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+<para>Returns <emphasis>range</emphasis> as a user-friendly string, or a null <ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref> if <emphasis>mode</emphasis> has no ranges. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/dataloggerservice.h" line="61" column="13" bodyfile="/home/paul/src/dokit/src/lib/dataloggerservice.cpp" bodystart="59" bodyend="62"/>
+        <references refid="classAbstractPokitService_1a039d2f1054788cf586c8decadb53ddc0" compoundref="abstractpokitservice_8cpp" startline="86" endline="90">AbstractPokitService::pokitProduct</references>
+        <references refid="classDataLoggerService_1a6f92316f5c2c256b17a74c5ad38eeab8" compoundref="dataloggerservice_8cpp" startline="59" endline="62">toString</references>
+        <referencedby refid="classDataLoggerService_1a6f92316f5c2c256b17a74c5ad38eeab8" compoundref="dataloggerservice_8cpp" startline="59" endline="62">toString</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classDataLoggerService_1ab2fb8703f5724589cdace781b47bb96d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="qvariant" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QVariant</ref></type>
+        <definition>QVariant DataLoggerService::maxValue</definition>
+        <argsstring>(const quint8 range, const Mode mode) const</argsstring>
+        <name>maxValue</name>
+        <qualifiedname>DataLoggerService::maxValue</qualifiedname>
+        <param>
+          <type>const quint8</type>
+          <declname>range</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classDataLoggerService_1ab7fc5073f8ab9d5e93ba7006df685771" kindref="member">Mode</ref></type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+<para>Returns the maximum value for <emphasis>range</emphasis>, or the string &quot;Auto&quot;. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If <emphasis>range</emphasis> is not a known valid enumeration value for the current <emphasis>product&apos;s</emphasis> <emphasis>mode</emphasis>, then a null <ref refid="qvariant" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QVariant</ref> is returned. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/dataloggerservice.h" line="63" column="14" bodyfile="/home/paul/src/dokit/src/lib/dataloggerservice.cpp" bodystart="92" bodyend="95"/>
+        <references refid="classDataLoggerService_1ac4d7ef9171f04a4d71b404ba3d99cef4" compoundref="dataloggerservice_8cpp" startline="69" endline="84">maxValue</references>
+        <references refid="classAbstractPokitService_1a039d2f1054788cf586c8decadb53ddc0" compoundref="abstractpokitservice_8cpp" startline="86" endline="90">AbstractPokitService::pokitProduct</references>
+      </memberdef>
+      <memberdef kind="function" id="classDataLoggerService_1a1c2155abba340d49fc39bfa49ed59a6c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>DataLoggerService::DataLoggerService</definition>
+        <argsstring>(QLowEnergyController *const pokitDevice, QObject *parent=nullptr)</argsstring>
+        <name>DataLoggerService</name>
+        <qualifiedname>DataLoggerService::DataLoggerService</qualifiedname>
+        <param>
+          <type><ref refid="qlowenergycontroller" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QLowEnergyController</ref> *const</type>
+          <declname>pokitDevice</declname>
+        </param>
+        <param>
+          <type><ref refid="qobject" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QObject</ref> *</type>
+          <declname>parent</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+<para>Constructs a new Pokit service with <emphasis>parent</emphasis>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/dataloggerservice.h" line="96" column="5" bodyfile="/home/paul/src/dokit/src/lib/dataloggerservice.cpp" bodystart="113" bodyend="117"/>
+      </memberdef>
+      <memberdef kind="function" id="classDataLoggerService_1ab0b747cc7f0ec24ac2611b9d70877ffc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>DataLoggerService::~DataLoggerService</definition>
+        <argsstring>() override</argsstring>
+        <name>~DataLoggerService</name>
+        <qualifiedname>DataLoggerService::~DataLoggerService</qualifiedname>
+        <briefdescription>
+<para>Destroys this <ref refid="classDataLoggerService" kindref="compound">DataLoggerService</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/dataloggerservice.h" line="97" column="5" bodyfile="/home/paul/src/dokit/src/lib/dataloggerservice.cpp" bodystart="134" bodyend="137"/>
+      </memberdef>
+      <memberdef kind="function" id="classDataLoggerService_1a661ebfee183fa2f9c90f71696d66a8bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool DataLoggerService::readCharacteristics</definition>
+        <argsstring>() override</argsstring>
+        <name>readCharacteristics</name>
+        <qualifiedname>DataLoggerService::readCharacteristics</qualifiedname>
+        <reimplements refid="classAbstractPokitService_1ab1de532f20d46803d6e8b8ffea835b48">readCharacteristics</reimplements>
+        <briefdescription>
+<para>Read all characteristics. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This convenience function will queue refresh requests of all characteristics supported by this service.</para>
+<para>Relevant <computeroutput>*Service::*Read</computeroutput> signals will be emitted by derived class objects as each characteristic is successfully read. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/dataloggerservice.h" line="99" column="10" bodyfile="/home/paul/src/dokit/src/lib/dataloggerservice.cpp" bodystart="139" bodyend="142"/>
+        <references refid="classDataLoggerService_1a03ef6028ed40b095540dd45ba744c0f5" compoundref="dataloggerservice_8cpp" startline="153" endline="157">readMetadataCharacteristic</references>
+      </memberdef>
+      <memberdef kind="function" id="classDataLoggerService_1a03ef6028ed40b095540dd45ba744c0f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool DataLoggerService::readMetadataCharacteristic</definition>
+        <argsstring>()</argsstring>
+        <name>readMetadataCharacteristic</name>
+        <qualifiedname>DataLoggerService::readMetadataCharacteristic</qualifiedname>
+        <briefdescription>
+<para>Reads the <computeroutput>DataLogger</computeroutput> service&apos;s <computeroutput><ref refid="structDataLoggerService_1_1Metadata" kindref="compound">Metadata</ref></computeroutput> characteristic. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns <computeroutput>true</computeroutput> is the read request is succesfully queued, <computeroutput>false</computeroutput> otherwise (ie if the underlying controller it not yet connected to the Pokit device, or the device&apos;s services have not yet been discovered).</para>
+<para>Emits <ref refid="classDataLoggerService_1a637460cb26b0d448760544ecba6de468" kindref="member">metadataRead()</ref> if/when the characteristic has been read successfully. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/dataloggerservice.h" line="100" column="10" bodyfile="/home/paul/src/dokit/src/lib/dataloggerservice.cpp" bodystart="153" bodyend="157"/>
+        <references refid="structDataLoggerService_1_1CharacteristicUuids_1a360ad74780e776a1233d73e5416db0e9" compoundref="dataloggerservice_8h" startline="36" endline="36">DataLoggerService::CharacteristicUuids::metadata</references>
+        <referencedby refid="classDataLoggerService_1a661ebfee183fa2f9c90f71696d66a8bf" compoundref="dataloggerservice_8cpp" startline="139" endline="142">readCharacteristics</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classDataLoggerService_1a3b933a1a161a390eb08e5019685f449c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool DataLoggerService::setSettings</definition>
+        <argsstring>(const Settings &amp;settings)</argsstring>
+        <name>setSettings</name>
+        <qualifiedname>DataLoggerService::setSettings</qualifiedname>
+        <param>
+          <type>const <ref refid="structDataLoggerService_1_1Settings" kindref="compound">Settings</ref> &amp;</type>
+          <declname>settings</declname>
+        </param>
+        <briefdescription>
+<para>Configures the Pokit device&apos;s data logger mode. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns <computeroutput>true</computeroutput> if the write request was successfully queued, <computeroutput>false</computeroutput> otherwise.</para>
+<para>Emits <ref refid="classDataLoggerService_1ad4588cca08c3eeee40b3f02f16a3998f" kindref="member">settingsWritten()</ref> if/when the <emphasis>settings</emphasis> have been writtem successfully. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/dataloggerservice.h" line="103" column="10" bodyfile="/home/paul/src/dokit/src/lib/dataloggerservice.cpp" bodystart="166" bodyend="184"/>
+        <references refid="classDataLoggerServicePrivate_1a774d21863bf83168171143ec8492a736" compoundref="dataloggerservice_8cpp" startline="358" endline="388">DataLoggerServicePrivate::encodeSettings</references>
+        <references refid="qbytearray_1isNull">QByteArray::isNull</references>
+        <references refid="qlowenergycharacteristic_1isValid">QLowEnergyCharacteristic::isValid</references>
+        <references refid="structDataLoggerService_1_1CharacteristicUuids_1a360ad74780e776a1233d73e5416db0e9" compoundref="dataloggerservice_8h" startline="36" endline="36">DataLoggerService::CharacteristicUuids::metadata</references>
+        <references refid="structDataLoggerService_1_1CharacteristicUuids_1ab5fa52ba8b4cacf839abe6d3f8e8a929" compoundref="dataloggerservice_8h" startline="33" endline="33">DataLoggerService::CharacteristicUuids::settings</references>
+        <referencedby refid="classDataLoggerService_1a4c9e68b94b0fba82a979bb7e0b0adab4" compoundref="dataloggerservice_8cpp" startline="227" endline="233">fetchSamples</referencedby>
+        <referencedby refid="classLoggerStartCommand_1ab1b0364c6a26ff893d5b58dea381e4d5" compoundref="loggerstartcommand_8cpp" startline="153" endline="162">LoggerStartCommand::serviceDetailsDiscovered</referencedby>
+        <referencedby refid="classDataLoggerService_1a4aac49f9a655408e4b58f05735c5f9ab" compoundref="dataloggerservice_8cpp" startline="192" endline="201">startLogger</referencedby>
+        <referencedby refid="classDataLoggerService_1a9f8a721025e04bf27df18194247b532e" compoundref="dataloggerservice_8cpp" startline="209" endline="215">stopLogger</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classDataLoggerService_1a4aac49f9a655408e4b58f05735c5f9ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool DataLoggerService::startLogger</definition>
+        <argsstring>(const Settings &amp;settings)</argsstring>
+        <name>startLogger</name>
+        <qualifiedname>DataLoggerService::startLogger</qualifiedname>
+        <param>
+          <type>const <ref refid="structDataLoggerService_1_1Settings" kindref="compound">Settings</ref> &amp;</type>
+          <declname>settings</declname>
+        </param>
+        <briefdescription>
+<para>Start the data logger with <emphasis>settings</emphasis>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is just a synonym for <ref refid="classDataLoggerService_1a3b933a1a161a390eb08e5019685f449c" kindref="member">setSettings()</ref> except makes the caller&apos;s intention more explicit, and sanity-checks that the settings&apos;s command is <ref refid="classDataLoggerService_1a8662772916319f96aa7aeb16c87665ccaa6122a65eaa676f700ae68d393054a37" kindref="member">DataLoggerService::Command::Start</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/dataloggerservice.h" line="104" column="10" bodyfile="/home/paul/src/dokit/src/lib/dataloggerservice.cpp" bodystart="192" bodyend="201"/>
+        <references refid="structDataLoggerService_1_1Settings_1a71c4c7e8417ee7a187c09a89057c5ab7" compoundref="dataloggerservice_8h" startline="67">DataLoggerService::Settings::command</references>
+        <references refid="classDataLoggerService_1a3b933a1a161a390eb08e5019685f449c" compoundref="dataloggerservice_8cpp" startline="166" endline="184">setSettings</references>
+        <references refid="classDataLoggerService_1a8662772916319f96aa7aeb16c87665ccaa6122a65eaa676f700ae68d393054a37">Start</references>
+        <references refid="qobject_1tr">QObject::tr</references>
+      </memberdef>
+      <memberdef kind="function" id="classDataLoggerService_1a9f8a721025e04bf27df18194247b532e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool DataLoggerService::stopLogger</definition>
+        <argsstring>()</argsstring>
+        <name>stopLogger</name>
+        <qualifiedname>DataLoggerService::stopLogger</qualifiedname>
+        <briefdescription>
+<para>Stop the data logger. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is just a convenience function equivalent to calling <ref refid="classDataLoggerService_1a3b933a1a161a390eb08e5019685f449c" kindref="member">setSettings()</ref> with the command set to <ref refid="classDataLoggerService_1a8662772916319f96aa7aeb16c87665cca11a755d598c0c417f9a36758c3da7481" kindref="member">DataLoggerService::Command::Stop</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/dataloggerservice.h" line="105" column="10" bodyfile="/home/paul/src/dokit/src/lib/dataloggerservice.cpp" bodystart="209" bodyend="215"/>
+        <references refid="classDataLoggerService_1ab7fc5073f8ab9d5e93ba7006df685771ae599161956d626eda4cb0a5ffb85271c">Idle</references>
+        <references refid="classDataLoggerService_1a3b933a1a161a390eb08e5019685f449c" compoundref="dataloggerservice_8cpp" startline="166" endline="184">setSettings</references>
+        <references refid="classDataLoggerService_1a8662772916319f96aa7aeb16c87665cca11a755d598c0c417f9a36758c3da7481">Stop</references>
+        <referencedby refid="classLoggerStopCommand_1a6e1d2dd8ccd4dafacea51c63f4725d7e" compoundref="loggerstopcommand_8cpp" startline="49" endline="54">LoggerStopCommand::serviceDetailsDiscovered</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classDataLoggerService_1a4c9e68b94b0fba82a979bb7e0b0adab4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool DataLoggerService::fetchSamples</definition>
+        <argsstring>()</argsstring>
+        <name>fetchSamples</name>
+        <qualifiedname>DataLoggerService::fetchSamples</qualifiedname>
+        <briefdescription>
+<para>Start the data logger. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is just a convenience function equivalent to calling <ref refid="classDataLoggerService_1a3b933a1a161a390eb08e5019685f449c" kindref="member">setSettings()</ref> with the command set to <ref refid="classDataLoggerService_1a8662772916319f96aa7aeb16c87665cca63a6a88c066880c5ac42394a22803ca6" kindref="member">DataLoggerService::Command::Refresh</ref>.</para>
+<para>Once the Pokit device has processed this request succesffully, the device will begin notifying the <computeroutput><ref refid="structDataLoggerService_1_1Metadata" kindref="compound">Metadata</ref></computeroutput> and <computeroutput>Reading</computeroutput> characteristic, resulting in emits of metadataRead and samplesRead respectively. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/dataloggerservice.h" line="106" column="10" bodyfile="/home/paul/src/dokit/src/lib/dataloggerservice.cpp" bodystart="227" bodyend="233"/>
+        <references refid="classDataLoggerService_1ab7fc5073f8ab9d5e93ba7006df685771ae599161956d626eda4cb0a5ffb85271c">Idle</references>
+        <references refid="classDataLoggerService_1a8662772916319f96aa7aeb16c87665cca63a6a88c066880c5ac42394a22803ca6">Refresh</references>
+        <references refid="classDataLoggerService_1a3b933a1a161a390eb08e5019685f449c" compoundref="dataloggerservice_8cpp" startline="166" endline="184">setSettings</references>
+        <referencedby refid="classLoggerFetchCommand_1a87a6be7a1babc635129434b3ed3ae104" compoundref="loggerfetchcommand_8cpp" startline="59" endline="66">LoggerFetchCommand::serviceDetailsDiscovered</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classDataLoggerService_1aa94364928c317c1769e66eaf8635db92" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structDataLoggerService_1_1Metadata" kindref="compound">Metadata</ref></type>
+        <definition>DataLoggerService::Metadata DataLoggerService::metadata</definition>
+        <argsstring>() const</argsstring>
+        <name>metadata</name>
+        <qualifiedname>DataLoggerService::metadata</qualifiedname>
+        <briefdescription>
+<para>Returns the most recent value of the <computeroutput>DataLogger</computeroutput> service&apos;s <computeroutput><ref refid="structDataLoggerService_1_1Metadata" kindref="compound">Metadata</ref></computeroutput> characteristic. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The returned value, if any, is from the underlying Bluetooth stack&apos;s cache. If no such value is currently available (ie the serviceDetailsDiscovered signal has not been emitted yet), then the returned <ref refid="structDataLoggerService_1_1Metadata_1a824ce9f37293e435d41af31788145571" kindref="member">DataLoggerService::Metadata::scale</ref> member will be a quiet NaN, which can be checked like:</para>
+<para><programlisting><codeline><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structDataLoggerService_1_1Metadata" kindref="compound">DataLoggerService::Metadata</ref><sp/><ref refid="classDataLoggerService_1aa94364928c317c1769e66eaf8635db92" kindref="member">metadata</ref><sp/>=<sp/>multimeterService-&gt;metadata();</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(qIsNaN(<ref refid="classDataLoggerService_1aa94364928c317c1769e66eaf8635db92" kindref="member">metadata</ref>.<ref refid="structDataLoggerService_1_1Metadata_1a824ce9f37293e435d41af31788145571" kindref="member">scale</ref>))<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Handle<sp/>failure.</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/dataloggerservice.h" line="109" column="14" bodyfile="/home/paul/src/dokit/src/lib/dataloggerservice.cpp" bodystart="249" bodyend="256"/>
+        <references refid="classDataLoggerService_1a1a3a38ca8befc3de8121d795879140f6a902b0d55fddef6f8d651fe1035b7d4bd">Error</references>
+        <references refid="classDataLoggerService_1ab7fc5073f8ab9d5e93ba7006df685771ae599161956d626eda4cb0a5ffb85271c">Idle</references>
+        <references refid="qlowenergycharacteristic_1isValid">QLowEnergyCharacteristic::isValid</references>
+        <references refid="structDataLoggerService_1_1CharacteristicUuids_1a360ad74780e776a1233d73e5416db0e9" compoundref="dataloggerservice_8h" startline="36" endline="36">DataLoggerService::CharacteristicUuids::metadata</references>
+        <references refid="classDataLoggerServicePrivate_1aed59b28db53cea0757289a0960bed3fd" compoundref="dataloggerservice_8cpp" startline="393" endline="431">DataLoggerServicePrivate::parseMetadata</references>
+        <references refid="qlowenergycharacteristic_1value">QLowEnergyCharacteristic::value</references>
+      </memberdef>
+      <memberdef kind="function" id="classDataLoggerService_1a0c63e3cdbc6b39ab68b8442b77938049" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool DataLoggerService::enableMetadataNotifications</definition>
+        <argsstring>()</argsstring>
+        <name>enableMetadataNotifications</name>
+        <qualifiedname>DataLoggerService::enableMetadataNotifications</qualifiedname>
+        <briefdescription>
+<para>Enables client-side notifications of Data Logger metadata changes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is an alternative to manually requesting individual reads via <ref refid="classDataLoggerService_1a03ef6028ed40b095540dd45ba744c0f5" kindref="member">readMetadataCharacteristic()</ref>.</para>
+<para>Returns <computeroutput>true</computeroutput> is the request was successfully submited to the device queue, <computeroutput>false</computeroutput> otherwise.</para>
+<para>Successfully read values (if any) will be emitted via the <ref refid="classDataLoggerService_1a637460cb26b0d448760544ecba6de468" kindref="member">metadataRead()</ref> signal. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/dataloggerservice.h" line="110" column="10" bodyfile="/home/paul/src/dokit/src/lib/dataloggerservice.cpp" bodystart="267" bodyend="271"/>
+        <references refid="structDataLoggerService_1_1CharacteristicUuids_1a360ad74780e776a1233d73e5416db0e9" compoundref="dataloggerservice_8h" startline="36" endline="36">DataLoggerService::CharacteristicUuids::metadata</references>
+        <referencedby refid="classLoggerFetchCommand_1a87a6be7a1babc635129434b3ed3ae104" compoundref="loggerfetchcommand_8cpp" startline="59" endline="66">LoggerFetchCommand::serviceDetailsDiscovered</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classDataLoggerService_1a1e007dc2f934757d8b28cdd9939bcaa5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool DataLoggerService::disableMetadataNotifications</definition>
+        <argsstring>()</argsstring>
+        <name>disableMetadataNotifications</name>
+        <qualifiedname>DataLoggerService::disableMetadataNotifications</qualifiedname>
+        <briefdescription>
+<para>Disables client-side notifications of Data Logger metadata changes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Instantaneous reads can still be fetched by <ref refid="classDataLoggerService_1a03ef6028ed40b095540dd45ba744c0f5" kindref="member">readMetadataCharacteristic()</ref>.</para>
+<para>Returns <computeroutput>true</computeroutput> is the request was successfully submited to the device queue, <computeroutput>false</computeroutput> otherwise. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/dataloggerservice.h" line="111" column="10" bodyfile="/home/paul/src/dokit/src/lib/dataloggerservice.cpp" bodystart="280" bodyend="284"/>
+        <references refid="structDataLoggerService_1_1CharacteristicUuids_1a360ad74780e776a1233d73e5416db0e9" compoundref="dataloggerservice_8h" startline="36" endline="36">DataLoggerService::CharacteristicUuids::metadata</references>
+      </memberdef>
+      <memberdef kind="function" id="classDataLoggerService_1a2b9d2cad9b7b937a2fd20517c5ba825e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool DataLoggerService::enableReadingNotifications</definition>
+        <argsstring>()</argsstring>
+        <name>enableReadingNotifications</name>
+        <qualifiedname>DataLoggerService::enableReadingNotifications</qualifiedname>
+        <briefdescription>
+<para>Enables client-side notifications of Data Logger readings. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns <computeroutput>true</computeroutput> is the request was successfully submited to the device queue, <computeroutput>false</computeroutput> otherwise.</para>
+<para>Successfully read samples (if any) will be emitted via the <ref refid="classDataLoggerService_1a4f3e86b3300ebd0f0b212cabf8da90a0" kindref="member">samplesRead()</ref> signal. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/dataloggerservice.h" line="114" column="10" bodyfile="/home/paul/src/dokit/src/lib/dataloggerservice.cpp" bodystart="293" bodyend="297"/>
+        <references refid="structDataLoggerService_1_1CharacteristicUuids_1ae49f85e600ca4eb2753818bb2ef32d65" compoundref="dataloggerservice_8h" startline="39" endline="39">DataLoggerService::CharacteristicUuids::reading</references>
+        <referencedby refid="classLoggerFetchCommand_1a87a6be7a1babc635129434b3ed3ae104" compoundref="loggerfetchcommand_8cpp" startline="59" endline="66">LoggerFetchCommand::serviceDetailsDiscovered</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classDataLoggerService_1a8b144b31de4aa3d33c6e9fcb7e606bae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool DataLoggerService::disableReadingNotifications</definition>
+        <argsstring>()</argsstring>
+        <name>disableReadingNotifications</name>
+        <qualifiedname>DataLoggerService::disableReadingNotifications</qualifiedname>
+        <briefdescription>
+<para>Disables client-side notifications of Data Logger readings. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns <computeroutput>true</computeroutput> is the request was successfully submited to the device queue, <computeroutput>false</computeroutput> otherwise. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/dataloggerservice.h" line="115" column="10" bodyfile="/home/paul/src/dokit/src/lib/dataloggerservice.cpp" bodystart="304" bodyend="308"/>
+        <references refid="structDataLoggerService_1_1CharacteristicUuids_1ae49f85e600ca4eb2753818bb2ef32d65" compoundref="dataloggerservice_8h" startline="39" endline="39">DataLoggerService::CharacteristicUuids::reading</references>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="signal">
+      <memberdef kind="signal" id="classDataLoggerService_1ad4588cca08c3eeee40b3f02f16a3998f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DataLoggerService::settingsWritten</definition>
+        <argsstring>()</argsstring>
+        <name>settingsWritten</name>
+        <qualifiedname>DataLoggerService::settingsWritten</qualifiedname>
+        <briefdescription>
+<para>This signal is emitted when the <computeroutput><ref refid="structDataLoggerService_1_1Settings" kindref="compound">Settings</ref></computeroutput> characteristic has been written successfully. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="classDataLoggerService_1a3b933a1a161a390eb08e5019685f449c" kindref="member">setSettings</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/dataloggerservice.h" line="118" column="10"/>
+        <referencedby refid="classLoggerStartCommand_1a2c5c71e3ea2690a25490862b104b81ea" compoundref="loggerstartcommand_8cpp" startline="136" endline="146">LoggerStartCommand::getService</referencedby>
+        <referencedby refid="classLoggerStopCommand_1a299a08c063c3a5274e4b9df3ae4b8861" compoundref="loggerstopcommand_8cpp" startline="32" endline="42">LoggerStopCommand::getService</referencedby>
+      </memberdef>
+      <memberdef kind="signal" id="classDataLoggerService_1a637460cb26b0d448760544ecba6de468" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DataLoggerService::metadataRead</definition>
+        <argsstring>(const DataLoggerService::Metadata &amp;meta)</argsstring>
+        <name>metadataRead</name>
+        <qualifiedname>DataLoggerService::metadataRead</qualifiedname>
+        <param>
+          <type>const <ref refid="structDataLoggerService_1_1Metadata" kindref="compound">DataLoggerService::Metadata</ref> &amp;</type>
+          <declname>meta</declname>
+        </param>
+        <briefdescription>
+<para>This signal is emitted when the <computeroutput><ref refid="structDataLoggerService_1_1Metadata" kindref="compound">Metadata</ref></computeroutput> characteristic has been read successfully. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="classDataLoggerService_1a03ef6028ed40b095540dd45ba744c0f5" kindref="member">readMetadataCharacteristic</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/dataloggerservice.h" line="119" column="10"/>
+        <referencedby refid="classLoggerFetchCommand_1a42654138dfb822007275146802a2c26f" compoundref="loggerfetchcommand_8cpp" startline="42" endline="52">LoggerFetchCommand::getService</referencedby>
+      </memberdef>
+      <memberdef kind="signal" id="classDataLoggerService_1a4f3e86b3300ebd0f0b212cabf8da90a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DataLoggerService::samplesRead</definition>
+        <argsstring>(const DataLoggerService::Samples &amp;samples)</argsstring>
+        <name>samplesRead</name>
+        <qualifiedname>DataLoggerService::samplesRead</qualifiedname>
+        <param>
+          <type>const <ref refid="classDataLoggerService_1a59612dc26aa6b9a6d57be1014b04581b" kindref="member">DataLoggerService::Samples</ref> &amp;</type>
+          <declname>samples</declname>
+        </param>
+        <briefdescription>
+<para>This signal is emitted when the <computeroutput>Reading</computeroutput> characteristic has been notified. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para>beginSampling </para>
+</simplesect>
+<simplesect kind="see"><para>stopSampling </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/dataloggerservice.h" line="120" column="10"/>
+        <referencedby refid="classLoggerFetchCommand_1a42654138dfb822007275146802a2c26f" compoundref="loggerfetchcommand_8cpp" startline="42" endline="52">LoggerFetchCommand::getService</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classDataLoggerService_1ad3ecbfc9b9f40ff3b1f0c8941d4c0a96" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>DataLoggerService::DataLoggerService</definition>
+        <argsstring>(DataLoggerServicePrivate *const d, QObject *const parent)</argsstring>
+        <name>DataLoggerService</name>
+        <qualifiedname>DataLoggerService::DataLoggerService</qualifiedname>
+        <param>
+          <type><ref refid="classDataLoggerServicePrivate" kindref="compound">DataLoggerServicePrivate</ref> *const</type>
+          <declname>d</declname>
+        </param>
+        <param>
+          <type><ref refid="qobject" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QObject</ref> *const</type>
+          <declname>parent</declname>
+        </param>
+        <briefdescription>
+<para>Constructs a new Pokit service with <emphasis>parent</emphasis>, and private implementation <emphasis>d</emphasis>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/dataloggerservice.h" line="124" column="5" bodyfile="/home/paul/src/dokit/src/lib/dataloggerservice.cpp" bodystart="123" bodyend="128"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>The <ref refid="classDataLoggerService" kindref="compound">DataLoggerService</ref> class accesses the <computeroutput>Data Logger</computeroutput> service of Pokit devices. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>AbstractPokitService</label>
+        <link refid="classAbstractPokitService"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>DataLoggerService</label>
+        <link refid="classDataLoggerService"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>QObject</label>
+        <link refid="qobject" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>AbstractPokitService</label>
+        <link refid="classAbstractPokitService"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>d_ptr</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>AbstractPokitServicePrivate</label>
+        <link refid="classAbstractPokitServicePrivate"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>controller</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>service</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>serviceUuid</edgelabel>
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>q_ptr</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>DataLoggerService</label>
+        <link refid="classDataLoggerService"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>serviceUuid</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>QBluetoothUuid</label>
+        <link refid="qbluetoothuuid" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags"/>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>QLowEnergyController</label>
+        <link refid="qlowenergycontroller" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>QLowEnergyService</label>
+        <link refid="qlowenergyservice" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>QObject</label>
+        <link refid="qobject" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags"/>
+      </node>
+      <node id="8">
+        <label>QUuid</label>
+        <link refid="quuid" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/paul/src/dokit/include/qtpokit/dataloggerservice.h" line="22" column="1" bodyfile="/home/paul/src/dokit/include/qtpokit/dataloggerservice.h" bodystart="23" bodyend="131"/>
+    <listofallmembers>
+      <member refid="classAbstractPokitService_1aa1309523f169115a7b7a8117ea4ab04f" prot="public" virt="non-virtual"><scope>DataLoggerService</scope><name>AbstractPokitService</name></member>
+      <member refid="classAbstractPokitService_1a2d624e58e68663e0420df7d282caf116" prot="protected" virt="non-virtual"><scope>DataLoggerService</scope><name>AbstractPokitService</name></member>
+      <member refid="classAbstractPokitService_1a65c2c9c6163744a7cf52de2c6a83f610" prot="public" virt="non-virtual"><scope>DataLoggerService</scope><name>autoDiscover</name></member>
+      <member refid="qobject_1objectName-prop" prot="public" virt="non-virtual"><scope>DataLoggerService</scope><name>bindableObjectName</name></member>
+      <member refid="qobject_1blockSignals" prot="public" virt="non-virtual"><scope>DataLoggerService</scope><name>blockSignals</name></member>
+      <member refid="qobject_1childEvent" prot="protected" virt="virtual"><scope>DataLoggerService</scope><name>childEvent</name></member>
+      <member refid="qobject_1children" prot="public" virt="non-virtual"><scope>DataLoggerService</scope><name>children</name></member>
+      <member refid="classDataLoggerService_1a8662772916319f96aa7aeb16c87665cc" prot="public" virt="non-virtual"><scope>DataLoggerService</scope><name>Command</name></member>
+      <member refid="qobject_1connect-4" prot="public" virt="non-virtual"><scope>DataLoggerService</scope><name>connect</name></member>
+      <member refid="qobject_1connect-5" prot="public" virt="non-virtual"><scope>DataLoggerService</scope><name>connect</name></member>
+      <member refid="qobject_1connect-3" prot="public" virt="non-virtual"><scope>DataLoggerService</scope><name>connect</name></member>
+      <member refid="qobject_1connect-1" prot="public" virt="non-virtual"><scope>DataLoggerService</scope><name>connect</name></member>
+      <member refid="qobject_1connect" prot="public" virt="non-virtual"><scope>DataLoggerService</scope><name>connect</name></member>
+      <member refid="qobject_1connect-2" prot="public" virt="non-virtual"><scope>DataLoggerService</scope><name>connect</name></member>
+      <member refid="qobject_1connectNotify" prot="protected" virt="virtual"><scope>DataLoggerService</scope><name>connectNotify</name></member>
+      <member refid="qobject_1customEvent" prot="protected" virt="virtual"><scope>DataLoggerService</scope><name>customEvent</name></member>
+      <member refid="classAbstractPokitService_1acb832f24262f3f61f74c878dd79f48e8" prot="protected" virt="non-virtual"><scope>DataLoggerService</scope><name>d_ptr</name></member>
+      <member refid="classDataLoggerService_1a1c2155abba340d49fc39bfa49ed59a6c" prot="public" virt="non-virtual"><scope>DataLoggerService</scope><name>DataLoggerService</name></member>
+      <member refid="classDataLoggerService_1ad3ecbfc9b9f40ff3b1f0c8941d4c0a96" prot="protected" virt="non-virtual"><scope>DataLoggerService</scope><name>DataLoggerService</name></member>
+      <member refid="qobject_1deleteLater" prot="public" virt="non-virtual"><scope>DataLoggerService</scope><name>deleteLater</name></member>
+      <member refid="qobject_1destroyed" prot="public" virt="non-virtual"><scope>DataLoggerService</scope><name>destroyed</name></member>
+      <member refid="classDataLoggerService_1a1e007dc2f934757d8b28cdd9939bcaa5" prot="public" virt="non-virtual"><scope>DataLoggerService</scope><name>disableMetadataNotifications</name></member>
+      <member refid="classDataLoggerService_1a8b144b31de4aa3d33c6e9fcb7e606bae" prot="public" virt="non-virtual"><scope>DataLoggerService</scope><name>disableReadingNotifications</name></member>
+      <member refid="qobject_1disconnect-4" prot="public" virt="non-virtual"><scope>DataLoggerService</scope><name>disconnect</name></member>
+      <member refid="qobject_1disconnect-5" prot="public" virt="non-virtual"><scope>DataLoggerService</scope><name>disconnect</name></member>
+      <member refid="qobject_1disconnect-1" prot="public" virt="non-virtual"><scope>DataLoggerService</scope><name>disconnect</name></member>
+      <member refid="qobject_1disconnect" prot="public" virt="non-virtual"><scope>DataLoggerService</scope><name>disconnect</name></member>
+      <member refid="qobject_1disconnect-3" prot="public" virt="non-virtual"><scope>DataLoggerService</scope><name>disconnect</name></member>
+      <member refid="qobject_1disconnect-2" prot="public" virt="non-virtual"><scope>DataLoggerService</scope><name>disconnect</name></member>
+      <member refid="qobject_1disconnectNotify" prot="protected" virt="virtual"><scope>DataLoggerService</scope><name>disconnectNotify</name></member>
+      <member refid="qobject_1dumpObjectInfo" prot="public" virt="non-virtual"><scope>DataLoggerService</scope><name>dumpObjectInfo</name></member>
+      <member refid="qobject_1dumpObjectTree" prot="public" virt="non-virtual"><scope>DataLoggerService</scope><name>dumpObjectTree</name></member>
+      <member refid="qobject_1dynamicPropertyNames" prot="public" virt="non-virtual"><scope>DataLoggerService</scope><name>dynamicPropertyNames</name></member>
+      <member refid="classDataLoggerService_1a0c63e3cdbc6b39ab68b8442b77938049" prot="public" virt="non-virtual"><scope>DataLoggerService</scope><name>enableMetadataNotifications</name></member>
+      <member refid="classDataLoggerService_1a2b9d2cad9b7b937a2fd20517c5ba825e" prot="public" virt="non-virtual"><scope>DataLoggerService</scope><name>enableReadingNotifications</name></member>
+      <member refid="qobject_1event" prot="public" virt="virtual"><scope>DataLoggerService</scope><name>event</name></member>
+      <member refid="qobject_1eventFilter" prot="public" virt="virtual"><scope>DataLoggerService</scope><name>eventFilter</name></member>
+      <member refid="classDataLoggerService_1a4c9e68b94b0fba82a979bb7e0b0adab4" prot="public" virt="non-virtual"><scope>DataLoggerService</scope><name>fetchSamples</name></member>
+      <member refid="qobject_1findChild" prot="public" virt="non-virtual"><scope>DataLoggerService</scope><name>findChild</name></member>
+      <member refid="qobject_1findChildren-1" prot="public" virt="non-virtual"><scope>DataLoggerService</scope><name>findChildren</name></member>
+      <member refid="qobject_1findChildren-2" prot="public" virt="non-virtual"><scope>DataLoggerService</scope><name>findChildren</name></member>
+      <member refid="qobject_1findChildren" prot="public" virt="non-virtual"><scope>DataLoggerService</scope><name>findChildren</name></member>
+      <member refid="qobject_1inherits" prot="public" virt="non-virtual"><scope>DataLoggerService</scope><name>inherits</name></member>
+      <member refid="qobject_1installEventFilter" prot="public" virt="non-virtual"><scope>DataLoggerService</scope><name>installEventFilter</name></member>
+      <member refid="qobject_1isQuickItemType" prot="public" virt="non-virtual"><scope>DataLoggerService</scope><name>isQuickItemType</name></member>
+      <member refid="qobject_1isSignalConnected" prot="protected" virt="non-virtual"><scope>DataLoggerService</scope><name>isSignalConnected</name></member>
+      <member refid="qobject_1isWidgetType" prot="public" virt="non-virtual"><scope>DataLoggerService</scope><name>isWidgetType</name></member>
+      <member refid="qobject_1isWindowType" prot="public" virt="non-virtual"><scope>DataLoggerService</scope><name>isWindowType</name></member>
+      <member refid="qobject_1killTimer" prot="public" virt="non-virtual"><scope>DataLoggerService</scope><name>killTimer</name></member>
+      <member refid="classDataLoggerService_1a1a3a38ca8befc3de8121d795879140f6" prot="public" virt="non-virtual"><scope>DataLoggerService</scope><name>LoggerStatus</name></member>
+      <member refid="classDataLoggerService_1ac4d7ef9171f04a4d71b404ba3d99cef4" prot="public" virt="non-virtual"><scope>DataLoggerService</scope><name>maxValue</name></member>
+      <member refid="classDataLoggerService_1ab2fb8703f5724589cdace781b47bb96d" prot="public" virt="non-virtual"><scope>DataLoggerService</scope><name>maxValue</name></member>
+      <member refid="classDataLoggerService_1aa94364928c317c1769e66eaf8635db92" prot="public" virt="non-virtual"><scope>DataLoggerService</scope><name>metadata</name></member>
+      <member refid="classDataLoggerService_1a637460cb26b0d448760544ecba6de468" prot="public" virt="non-virtual"><scope>DataLoggerService</scope><name>metadataRead</name></member>
+      <member refid="qobject_1metaObject" prot="public" virt="virtual"><scope>DataLoggerService</scope><name>metaObject</name></member>
+      <member refid="classDataLoggerService_1ab7fc5073f8ab9d5e93ba7006df685771" prot="public" virt="non-virtual"><scope>DataLoggerService</scope><name>Mode</name></member>
+      <member refid="qobject_1moveToThread" prot="public" virt="non-virtual"><scope>DataLoggerService</scope><name>moveToThread</name></member>
+      <member refid="qobject_1objectName-prop" prot="public" virt="non-virtual"><scope>DataLoggerService</scope><name>objectName</name></member>
+      <member refid="qobject_1objectName-prop" prot="public" virt="non-virtual"><scope>DataLoggerService</scope><name>objectName</name></member>
+      <member refid="qobject_1objectNameChanged" prot="public" virt="non-virtual"><scope>DataLoggerService</scope><name>objectNameChanged</name></member>
+      <member refid="qobject_1parent" prot="public" virt="non-virtual"><scope>DataLoggerService</scope><name>parent</name></member>
+      <member refid="classAbstractPokitService_1a039d2f1054788cf586c8decadb53ddc0" prot="public" virt="non-virtual"><scope>DataLoggerService</scope><name>pokitProduct</name></member>
+      <member refid="qobject_1property" prot="public" virt="non-virtual"><scope>DataLoggerService</scope><name>property</name></member>
+      <member refid="qobject_1Q_CLASSINFO" prot="public" virt="non-virtual"><scope>DataLoggerService</scope><name>Q_CLASSINFO</name></member>
+      <member refid="qobject_1Q_EMIT" prot="public" virt="non-virtual"><scope>DataLoggerService</scope><name>Q_EMIT</name></member>
+      <member refid="qobject_1Q_ENUM" prot="public" virt="non-virtual"><scope>DataLoggerService</scope><name>Q_ENUM</name></member>
+      <member refid="qobject_1Q_ENUM_NS" prot="public" virt="non-virtual"><scope>DataLoggerService</scope><name>Q_ENUM_NS</name></member>
+      <member refid="qobject-obsolete_1Q_ENUMS" prot="public" virt="non-virtual"><scope>DataLoggerService</scope><name>Q_ENUMS</name></member>
+      <member refid="qobject_1Q_FLAG" prot="public" virt="non-virtual"><scope>DataLoggerService</scope><name>Q_FLAG</name></member>
+      <member refid="qobject_1Q_FLAG_NS" prot="public" virt="non-virtual"><scope>DataLoggerService</scope><name>Q_FLAG_NS</name></member>
+      <member refid="qobject-obsolete_1Q_FLAGS" prot="public" virt="non-virtual"><scope>DataLoggerService</scope><name>Q_FLAGS</name></member>
+      <member refid="qobject_1Q_GADGET" prot="public" virt="non-virtual"><scope>DataLoggerService</scope><name>Q_GADGET</name></member>
+      <member refid="qobject_1Q_GADGET_EXPORT" prot="public" virt="non-virtual"><scope>DataLoggerService</scope><name>Q_GADGET_EXPORT</name></member>
+      <member refid="qobject_1Q_INTERFACES" prot="public" virt="non-virtual"><scope>DataLoggerService</scope><name>Q_INTERFACES</name></member>
+      <member refid="qobject_1Q_INVOKABLE" prot="public" virt="non-virtual"><scope>DataLoggerService</scope><name>Q_INVOKABLE</name></member>
+      <member refid="qobject_1Q_MOC_INCLUDE" prot="public" virt="non-virtual"><scope>DataLoggerService</scope><name>Q_MOC_INCLUDE</name></member>
+      <member refid="qobject_1Q_NAMESPACE" prot="public" virt="non-virtual"><scope>DataLoggerService</scope><name>Q_NAMESPACE</name></member>
+      <member refid="qobject_1Q_NAMESPACE_EXPORT" prot="public" virt="non-virtual"><scope>DataLoggerService</scope><name>Q_NAMESPACE_EXPORT</name></member>
+      <member refid="qobject_1Q_OBJECT" prot="public" virt="non-virtual"><scope>DataLoggerService</scope><name>Q_OBJECT</name></member>
+      <member refid="qobject_1Q_PROPERTY" prot="public" virt="non-virtual"><scope>DataLoggerService</scope><name>Q_PROPERTY</name></member>
+      <member refid="qobject_1Q_REVISION" prot="public" virt="non-virtual"><scope>DataLoggerService</scope><name>Q_REVISION</name></member>
+      <member refid="qobject_1Q_SET_OBJECT_NAME" prot="public" virt="non-virtual"><scope>DataLoggerService</scope><name>Q_SET_OBJECT_NAME</name></member>
+      <member refid="qobject_1Q_SIGNAL" prot="public" virt="non-virtual"><scope>DataLoggerService</scope><name>Q_SIGNAL</name></member>
+      <member refid="qobject_1Q_SIGNALS" prot="public" virt="non-virtual"><scope>DataLoggerService</scope><name>Q_SIGNALS</name></member>
+      <member refid="qobject_1Q_SLOT" prot="public" virt="non-virtual"><scope>DataLoggerService</scope><name>Q_SLOT</name></member>
+      <member refid="qobject_1Q_SLOTS" prot="public" virt="non-virtual"><scope>DataLoggerService</scope><name>Q_SLOTS</name></member>
+      <member refid="qobject_1QObject" prot="public" virt="non-virtual"><scope>DataLoggerService</scope><name>QObject</name></member>
+      <member refid="qobject_1qobject_cast" prot="public" virt="non-virtual"><scope>DataLoggerService</scope><name>qobject_cast</name></member>
+      <member refid="qobject_1qobject_cast-1" prot="public" virt="non-virtual"><scope>DataLoggerService</scope><name>qobject_cast</name></member>
+      <member refid="qobject_1QObjectList-typedef" prot="public" virt="non-virtual"><scope>DataLoggerService</scope><name>QObjectList</name></member>
+      <member refid="qobject_1QT_NO_NARROWING_CONVERSIONS_IN_CONNECT" prot="public" virt="non-virtual"><scope>DataLoggerService</scope><name>QT_NO_NARROWING_CONVERSIONS_IN_CONNECT</name></member>
+      <member refid="classDataLoggerService_1a661ebfee183fa2f9c90f71696d66a8bf" prot="public" virt="virtual"><scope>DataLoggerService</scope><name>readCharacteristics</name></member>
+      <member refid="classDataLoggerService_1a03ef6028ed40b095540dd45ba744c0f5" prot="public" virt="non-virtual"><scope>DataLoggerService</scope><name>readMetadataCharacteristic</name></member>
+      <member refid="qobject_1receivers" prot="protected" virt="non-virtual"><scope>DataLoggerService</scope><name>receivers</name></member>
+      <member refid="qobject_1removeEventFilter" prot="public" virt="non-virtual"><scope>DataLoggerService</scope><name>removeEventFilter</name></member>
+      <member refid="classDataLoggerService_1a59612dc26aa6b9a6d57be1014b04581b" prot="public" virt="non-virtual"><scope>DataLoggerService</scope><name>Samples</name></member>
+      <member refid="classDataLoggerService_1a4f3e86b3300ebd0f0b212cabf8da90a0" prot="public" virt="non-virtual"><scope>DataLoggerService</scope><name>samplesRead</name></member>
+      <member refid="qobject_1sender" prot="protected" virt="non-virtual"><scope>DataLoggerService</scope><name>sender</name></member>
+      <member refid="qobject_1senderSignalIndex" prot="protected" virt="non-virtual"><scope>DataLoggerService</scope><name>senderSignalIndex</name></member>
+      <member refid="classAbstractPokitService_1a7a4ff74f51ba6ea6c01cbeb9eda15b9b" prot="public" virt="non-virtual"><scope>DataLoggerService</scope><name>service</name></member>
+      <member refid="classAbstractPokitService_1ab7161dedf8ae431f723a5e225c2ec9ca" prot="public" virt="non-virtual"><scope>DataLoggerService</scope><name>service</name></member>
+      <member refid="classAbstractPokitService_1af67cbea4294ba0a77dcd9540b29528ff" prot="public" virt="non-virtual"><scope>DataLoggerService</scope><name>serviceDetailsDiscovered</name></member>
+      <member refid="classAbstractPokitService_1a9e680ebf280361ef82f4b072448d7e9b" prot="public" virt="non-virtual"><scope>DataLoggerService</scope><name>serviceErrorOccurred</name></member>
+      <member refid="classDataLoggerService_1a17be902e87a778365fd439fbcc5548d4" prot="public" virt="non-virtual"><scope>DataLoggerService</scope><name>serviceUuid</name></member>
+      <member refid="classAbstractPokitService_1a9d6d50cf31bc5859747a134d6cb4c418" prot="public" virt="non-virtual"><scope>DataLoggerService</scope><name>setAutoDiscover</name></member>
+      <member refid="qobject_1setObjectName-1" prot="public" virt="non-virtual"><scope>DataLoggerService</scope><name>setObjectName</name></member>
+      <member refid="qobject_1setObjectName" prot="public" virt="non-virtual"><scope>DataLoggerService</scope><name>setObjectName</name></member>
+      <member refid="qobject_1setParent" prot="public" virt="non-virtual"><scope>DataLoggerService</scope><name>setParent</name></member>
+      <member refid="classAbstractPokitService_1aa0e323c5e2380709c5a5fde18520ae3f" prot="public" virt="non-virtual"><scope>DataLoggerService</scope><name>setPokitProduct</name></member>
+      <member refid="qobject_1setProperty-1" prot="public" virt="non-virtual"><scope>DataLoggerService</scope><name>setProperty</name></member>
+      <member refid="qobject_1setProperty" prot="public" virt="non-virtual"><scope>DataLoggerService</scope><name>setProperty</name></member>
+      <member refid="classDataLoggerService_1a3b933a1a161a390eb08e5019685f449c" prot="public" virt="non-virtual"><scope>DataLoggerService</scope><name>setSettings</name></member>
+      <member refid="classDataLoggerService_1ad4588cca08c3eeee40b3f02f16a3998f" prot="public" virt="non-virtual"><scope>DataLoggerService</scope><name>settingsWritten</name></member>
+      <member refid="qobject_1signalsBlocked" prot="public" virt="non-virtual"><scope>DataLoggerService</scope><name>signalsBlocked</name></member>
+      <member refid="classDataLoggerService_1a4aac49f9a655408e4b58f05735c5f9ab" prot="public" virt="non-virtual"><scope>DataLoggerService</scope><name>startLogger</name></member>
+      <member refid="qobject_1startTimer" prot="public" virt="non-virtual"><scope>DataLoggerService</scope><name>startTimer</name></member>
+      <member refid="qobject_1startTimer-1" prot="public" virt="non-virtual"><scope>DataLoggerService</scope><name>startTimer</name></member>
+      <member refid="classDataLoggerService_1a9f8a721025e04bf27df18194247b532e" prot="public" virt="non-virtual"><scope>DataLoggerService</scope><name>stopLogger</name></member>
+      <member refid="classDataLoggerService_1af08b06b984094d1b3813a3b6e01d9989" prot="private" virt="non-virtual"><scope>DataLoggerService</scope><name>TestDataLoggerService</name></member>
+      <member refid="qobject_1thread" prot="public" virt="non-virtual"><scope>DataLoggerService</scope><name>thread</name></member>
+      <member refid="qobject_1timerEvent" prot="protected" virt="virtual"><scope>DataLoggerService</scope><name>timerEvent</name></member>
+      <member refid="classDataLoggerService_1a4c696b7500e666959bbec4b0ed677d5d" prot="public" virt="non-virtual"><scope>DataLoggerService</scope><name>toString</name></member>
+      <member refid="classDataLoggerService_1acb7b2d9480b2756074571c6b96531337" prot="public" virt="non-virtual"><scope>DataLoggerService</scope><name>toString</name></member>
+      <member refid="classDataLoggerService_1a6f92316f5c2c256b17a74c5ad38eeab8" prot="public" virt="non-virtual"><scope>DataLoggerService</scope><name>toString</name></member>
+      <member refid="qobject_1tr" prot="public" virt="non-virtual"><scope>DataLoggerService</scope><name>tr</name></member>
+      <member refid="classAbstractPokitService_1af0b962913c8be9b1d69ce1b68a5f9bdd" prot="public" virt="virtual"><scope>DataLoggerService</scope><name>~AbstractPokitService</name></member>
+      <member refid="classDataLoggerService_1ab0b747cc7f0ec24ac2611b9d70877ffc" prot="public" virt="non-virtual"><scope>DataLoggerService</scope><name>~DataLoggerService</name></member>
+      <member refid="qobject_1dtor.QObject" prot="public" virt="virtual"><scope>DataLoggerService</scope><name>~QObject</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

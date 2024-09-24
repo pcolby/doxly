@@ -1,0 +1,560 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.0" xml:lang="en-US">
+  <compounddef id="multimeterservice_8cpp" kind="file" language="C++">
+    <compoundname>multimeterservice.cpp</compoundname>
+    <includes refid="multimeterservice_8h" local="no">qtpokit/multimeterservice.h</includes>
+    <includes refid="multimeterservice__p_8h" local="yes">multimeterservice_p.h</includes>
+    <includes refid="pokitproducts__p_8h" local="yes">pokitproducts_p.h</includes>
+    <includes local="no">QDataStream</includes>
+    <includes local="no">QIODevice</includes>
+    <includes local="no">QtEndian</includes>
+    <incdepgraph>
+      <node id="3">
+        <label>abstractpokitservice.h</label>
+        <link refid="abstractpokitservice_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>qtpokit/multimeterservice.h</label>
+        <link refid="multimeterservice_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>pokitproducts.h</label>
+        <link refid="pokitproducts_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>qtpokit_global.h</label>
+        <link refid="qtpokit__global_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>abstractpokitservice_p.h</label>
+        <link refid="abstractpokitservice__p_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>multimeterservice.cpp</label>
+        <link refid="multimeterservice_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>multimeterservice_p.h</label>
+        <link refid="multimeterservice__p_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>pokitproducts_p.h</label>
+        <link refid="pokitproducts__p_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>QBluetoothAddress</label>
+      </node>
+      <node id="7">
+        <label>QBluetoothDeviceInfo</label>
+      </node>
+      <node id="14">
+        <label>QBluetoothUuid</label>
+      </node>
+      <node id="21">
+        <label>QDataStream</label>
+      </node>
+      <node id="8">
+        <label>QFlags</label>
+      </node>
+      <node id="22">
+        <label>QIODevice</label>
+      </node>
+      <node id="18">
+        <label>QLoggingCategory</label>
+      </node>
+      <node id="20">
+        <label>QLowEnergyController</label>
+      </node>
+      <node id="10">
+        <label>QLowEnergyService</label>
+      </node>
+      <node id="11">
+        <label>QObject</label>
+      </node>
+      <node id="9">
+        <label>QString</label>
+      </node>
+      <node id="15">
+        <label>QVersionNumber</label>
+      </node>
+      <node id="23">
+        <label>QtEndian</label>
+      </node>
+      <node id="5">
+        <label>QtGlobal</label>
+      </node>
+      <node id="12">
+        <label>optional</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+<para>Defines the <ref refid="classMultimeterService" kindref="compound">MultimeterService</ref> and <ref refid="classMultimeterServicePrivate" kindref="compound">MultimeterServicePrivate</ref> classes. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>SPDX-FileCopyrightText:<sp/>2022-2024<sp/>Paul<sp/>Colby<sp/>&lt;git@colby.id.au&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>SPDX-License-Identifier:<sp/>LGPL-3.0-or-later</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="4"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>\file</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>Defines<sp/>the<sp/>MultimeterService<sp/>and<sp/>MultimeterServicePrivate<sp/>classes.</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="multimeterservice_8h" kindref="compound">qtpokit/multimeterservice.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="multimeterservice__p_8h" kindref="compound">multimeterservice_p.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;pokitproducts_p.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QDataStream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QIODevice&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QtEndian&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="17"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>\class<sp/>MultimeterService</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/>The<sp/>MultimeterService<sp/>class<sp/>accesses<sp/>the<sp/>`Multimeter`<sp/>service<sp/>of<sp/>Pokit<sp/>devices.</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="23"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*<sp/>\cond<sp/>internal</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*<sp/>\enum<sp/>MultimeterService::Mode</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/>*<sp/>\pokitApi<sp/>The<sp/>following<sp/>enumeration<sp/>values<sp/>are<sp/>as-yet<sp/>undocumented<sp/>by<sp/>Pokit<sp/>Innovations.</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/>*<sp/>[\@pcolby](https://github.com/pcolby)<sp/>reverse-engineered<sp/>them<sp/>as<sp/>part<sp/>of<sp/>the</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/>*<sp/>[dokit](https://github.com/pcolby/dokit)<sp/>project.</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/>*<sp/><sp/><sp/>*<sp/>Mode::Capacitance</highlight></codeline>
+<codeline lineno="30"><highlight class="comment"><sp/>*<sp/><sp/><sp/>*<sp/>Mode::ExternalTemperature</highlight></codeline>
+<codeline lineno="31"><highlight class="comment"><sp/>*<sp/>\endcond</highlight></codeline>
+<codeline lineno="32"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="34"><highlight class="comment">///<sp/>Returns<sp/>\a<sp/>mode<sp/>as<sp/>a<sp/>user-friendly<sp/>string.</highlight></codeline>
+<codeline lineno="35" refid="classMultimeterService_1a58a03dbc0ae216dc60f27d975af92cf8" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref><sp/><ref refid="classMultimeterService_1a58a03dbc0ae216dc60f27d975af92cf8" kindref="member">MultimeterService::toString</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classMultimeterService_1a51f66d0b81dace3115c5c68bc931eaea" kindref="member">Mode</ref><sp/>&amp;mode)</highlight></codeline>
+<codeline lineno="36"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(mode)<sp/>{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="classMultimeterService_1a51f66d0b81dace3115c5c68bc931eaeaae599161956d626eda4cb0a5ffb85271c" kindref="member">Mode::Idle</ref>:<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="qobject_1tr" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">tr</ref>(</highlight><highlight class="stringliteral">&quot;Idle&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="classMultimeterService_1a51f66d0b81dace3115c5c68bc931eaeaa1a18453c20867d5a990479b3716cbbc5" kindref="member">Mode::DcVoltage</ref>:<sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="qobject_1tr" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">tr</ref>(</highlight><highlight class="stringliteral">&quot;DC<sp/>voltage&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="classMultimeterService_1a51f66d0b81dace3115c5c68bc931eaeaa9f01dfb531bd23d5cb9c2bb2e49d685e" kindref="member">Mode::AcVoltage</ref>:<sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="qobject_1tr" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">tr</ref>(</highlight><highlight class="stringliteral">&quot;AC<sp/>voltage&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="classMultimeterService_1a51f66d0b81dace3115c5c68bc931eaeaaf2a03b2c98a6620d4bf33af69572898e" kindref="member">Mode::DcCurrent</ref>:<sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="qobject_1tr" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">tr</ref>(</highlight><highlight class="stringliteral">&quot;DC<sp/>current&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="classMultimeterService_1a51f66d0b81dace3115c5c68bc931eaeaa7b39f260051ef745ddba9fc57ac23ff9" kindref="member">Mode::AcCurrent</ref>:<sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="qobject_1tr" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">tr</ref>(</highlight><highlight class="stringliteral">&quot;AC<sp/>current&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="classMultimeterService_1a51f66d0b81dace3115c5c68bc931eaeaa9db444f7a3b8ba8f817647de53b7a6fe" kindref="member">Mode::Resistance</ref>:<sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="qobject_1tr" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">tr</ref>(</highlight><highlight class="stringliteral">&quot;Resistance&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="classMultimeterService_1a51f66d0b81dace3115c5c68bc931eaeaa0f31a45b6daa6a5478050c36732a2549" kindref="member">Mode::Diode</ref>:<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="qobject_1tr" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">tr</ref>(</highlight><highlight class="stringliteral">&quot;Diode&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="classMultimeterService_1a51f66d0b81dace3115c5c68bc931eaeaaf73d2c55dc3628b7071e45104874c485" kindref="member">Mode::Continuity</ref>:<sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="qobject_1tr" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">tr</ref>(</highlight><highlight class="stringliteral">&quot;Continuity&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="classMultimeterService_1a51f66d0b81dace3115c5c68bc931eaeaaee7a8e262285ed49ea1b4e4ae11525bd" kindref="member">Mode::Temperature</ref>:<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="qobject_1tr" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">tr</ref>(</highlight><highlight class="stringliteral">&quot;Temperature&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="classMultimeterService_1a51f66d0b81dace3115c5c68bc931eaeaa22bef5ff8cc5db9cc862164e779f29dc" kindref="member">Mode::Capacitance</ref>:<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="qobject_1tr" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">tr</ref>(</highlight><highlight class="stringliteral">&quot;Capacitance&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="classMultimeterService_1a51f66d0b81dace3115c5c68bc931eaeaa8d6937c3adb213bd7b7beb575aa17687" kindref="member">Mode::ExternalTemperature</ref>:<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="qobject_1tr" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">tr</ref>(</highlight><highlight class="stringliteral">&quot;External<sp/>temperature&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref>();</highlight></codeline>
+<codeline lineno="51"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="53"><highlight class="comment">///<sp/>Returns<sp/>\a<sp/>range<sp/>as<sp/>a<sp/>user-friendly<sp/>string,<sp/>or<sp/>a<sp/>null<sp/>QString<sp/>if<sp/>\a<sp/>mode<sp/>has<sp/>no<sp/>ranges.</highlight></codeline>
+<codeline lineno="54" refid="classMultimeterService_1a66e1f404c97d779e284c0a6c7c954c49" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref><sp/><ref refid="classMultimeterService_1a58a03dbc0ae216dc60f27d975af92cf8" kindref="member">MultimeterService::toString</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="pokitproducts_8h_1a0c4f628f68ce0432a6db11681a41fda4" kindref="member">PokitProduct</ref><sp/>product,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>quint8<sp/>range,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classMultimeterService_1a51f66d0b81dace3115c5c68bc931eaea" kindref="member">Mode</ref><sp/>mode)</highlight></codeline>
+<codeline lineno="55"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(mode)<sp/>{</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="classMultimeterService_1a51f66d0b81dace3115c5c68bc931eaeaae599161956d626eda4cb0a5ffb85271c" kindref="member">Mode::Idle</ref>:</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="classMultimeterService_1a51f66d0b81dace3115c5c68bc931eaeaa1a18453c20867d5a990479b3716cbbc5" kindref="member">Mode::DcVoltage</ref>:</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="classMultimeterService_1a51f66d0b81dace3115c5c68bc931eaeaa9f01dfb531bd23d5cb9c2bb2e49d685e" kindref="member">Mode::AcVoltage</ref>:</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespaceVoltageRange_1a843ef4bfc3538988c695fa643adcd4d0" kindref="member">VoltageRange::toString</ref>(product,<sp/>range);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="classMultimeterService_1a51f66d0b81dace3115c5c68bc931eaeaaf2a03b2c98a6620d4bf33af69572898e" kindref="member">Mode::DcCurrent</ref>:</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="classMultimeterService_1a51f66d0b81dace3115c5c68bc931eaeaa7b39f260051ef745ddba9fc57ac23ff9" kindref="member">Mode::AcCurrent</ref>:</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespaceCurrentRange_1a683a82fdd02371d1d6acb4bbbd91e844" kindref="member">CurrentRange::toString</ref>(product,<sp/>range);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="classMultimeterService_1a51f66d0b81dace3115c5c68bc931eaeaa9db444f7a3b8ba8f817647de53b7a6fe" kindref="member">Mode::Resistance</ref>:</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespaceResistanceRange_1a6f542c3fe27b9c58c03edc92ceab40ef" kindref="member">ResistanceRange::toString</ref>(product,<sp/>range);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="classMultimeterService_1a51f66d0b81dace3115c5c68bc931eaeaa0f31a45b6daa6a5478050c36732a2549" kindref="member">Mode::Diode</ref>:</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="classMultimeterService_1a51f66d0b81dace3115c5c68bc931eaeaaf73d2c55dc3628b7071e45104874c485" kindref="member">Mode::Continuity</ref>:</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="classMultimeterService_1a51f66d0b81dace3115c5c68bc931eaeaaee7a8e262285ed49ea1b4e4ae11525bd" kindref="member">Mode::Temperature</ref>:</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="classMultimeterService_1a51f66d0b81dace3115c5c68bc931eaeaa22bef5ff8cc5db9cc862164e779f29dc" kindref="member">Mode::Capacitance</ref>:</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespaceCapacitanceRange_1a14203d0e3a636e5142dccade0c4b5c91" kindref="member">CapacitanceRange::toString</ref>(product,<sp/>range);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="classMultimeterService_1a51f66d0b81dace3115c5c68bc931eaeaa8d6937c3adb213bd7b7beb575aa17687" kindref="member">Mode::ExternalTemperature</ref>:</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref>();</highlight></codeline>
+<codeline lineno="77"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="79"><highlight class="comment">///<sp/>Returns<sp/>\a<sp/>range<sp/>as<sp/>a<sp/>user-friendly<sp/>string,<sp/>or<sp/>a<sp/>null<sp/>QString<sp/>if<sp/>\a<sp/>mode<sp/>has<sp/>no<sp/>ranges.</highlight></codeline>
+<codeline lineno="80" refid="classMultimeterService_1ade75432f62ac592509c4583a415ec04b" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref><sp/><ref refid="classMultimeterService_1a58a03dbc0ae216dc60f27d975af92cf8" kindref="member">MultimeterService::toString</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>quint8<sp/>range,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classMultimeterService_1a51f66d0b81dace3115c5c68bc931eaea" kindref="member">Mode</ref><sp/>mode)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="81"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classMultimeterService_1a58a03dbc0ae216dc60f27d975af92cf8" kindref="member">toString</ref>(*<ref refid="classAbstractPokitService_1a039d2f1054788cf586c8decadb53ddc0" kindref="member">pokitProduct</ref>(),<sp/>range,<sp/>mode);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="85"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="86"><highlight class="comment"><sp/>*<sp/><sp/>Returns<sp/>the<sp/>maximum<sp/>value<sp/>for<sp/>\a<sp/>range,<sp/>or<sp/>the<sp/>string<sp/>&quot;Auto&quot;.</highlight></codeline>
+<codeline lineno="87"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="88"><highlight class="comment"><sp/>*<sp/><sp/>If<sp/>\a<sp/>range<sp/>is<sp/>not<sp/>a<sp/>known<sp/>valid<sp/>enumeration<sp/>value<sp/>for<sp/>\a<sp/>product&apos;s<sp/>\a<sp/>mode,<sp/>then<sp/>a<sp/>null<sp/>QVariant<sp/>is<sp/>returned.</highlight></codeline>
+<codeline lineno="89"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90" refid="classMultimeterService_1a9d05ef9c2d80a941bfd4f972d3dc6145" refkind="member"><highlight class="normal"><ref refid="qvariant" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QVariant</ref><sp/><ref refid="classMultimeterService_1a9d05ef9c2d80a941bfd4f972d3dc6145" kindref="member">MultimeterService::maxValue</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="pokitproducts_8h_1a0c4f628f68ce0432a6db11681a41fda4" kindref="member">PokitProduct</ref><sp/>product,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>quint8<sp/>range,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classMultimeterService_1a51f66d0b81dace3115c5c68bc931eaea" kindref="member">Mode</ref><sp/>mode)</highlight></codeline>
+<codeline lineno="91"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(mode)<sp/>{</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="classMultimeterService_1a51f66d0b81dace3115c5c68bc931eaeaae599161956d626eda4cb0a5ffb85271c" kindref="member">Mode::Idle</ref>:</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="classMultimeterService_1a51f66d0b81dace3115c5c68bc931eaeaa1a18453c20867d5a990479b3716cbbc5" kindref="member">Mode::DcVoltage</ref>:</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="classMultimeterService_1a51f66d0b81dace3115c5c68bc931eaeaa9f01dfb531bd23d5cb9c2bb2e49d685e" kindref="member">Mode::AcVoltage</ref>:</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespaceVoltageRange_1adc3a8126ae8dcec8010fc8b037fab885" kindref="member">VoltageRange::maxValue</ref>(product,<sp/>range);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="classMultimeterService_1a51f66d0b81dace3115c5c68bc931eaeaaf2a03b2c98a6620d4bf33af69572898e" kindref="member">Mode::DcCurrent</ref>:</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="classMultimeterService_1a51f66d0b81dace3115c5c68bc931eaeaa7b39f260051ef745ddba9fc57ac23ff9" kindref="member">Mode::AcCurrent</ref>:</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespaceCurrentRange_1a340ae103126865c13997adcde5976bd1" kindref="member">CurrentRange::maxValue</ref>(product,<sp/>range);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="classMultimeterService_1a51f66d0b81dace3115c5c68bc931eaeaa9db444f7a3b8ba8f817647de53b7a6fe" kindref="member">Mode::Resistance</ref>:</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespaceResistanceRange_1a30fba7f1c73e7a8b9b3c45aed8b5b3e1" kindref="member">ResistanceRange::maxValue</ref>(product,<sp/>range);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="classMultimeterService_1a51f66d0b81dace3115c5c68bc931eaeaa0f31a45b6daa6a5478050c36732a2549" kindref="member">Mode::Diode</ref>:</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="classMultimeterService_1a51f66d0b81dace3115c5c68bc931eaeaaf73d2c55dc3628b7071e45104874c485" kindref="member">Mode::Continuity</ref>:</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="classMultimeterService_1a51f66d0b81dace3115c5c68bc931eaeaaee7a8e262285ed49ea1b4e4ae11525bd" kindref="member">Mode::Temperature</ref>:</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="classMultimeterService_1a51f66d0b81dace3115c5c68bc931eaeaa22bef5ff8cc5db9cc862164e779f29dc" kindref="member">Mode::Capacitance</ref>:</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespaceCapacitanceRange_1ae13fb76d6fab44972334e2b007be4a06" kindref="member">CapacitanceRange::maxValue</ref>(product,<sp/>range);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="classMultimeterService_1a51f66d0b81dace3115c5c68bc931eaeaa8d6937c3adb213bd7b7beb575aa17687" kindref="member">Mode::ExternalTemperature</ref>:</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="qvariant" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QVariant</ref>();</highlight></codeline>
+<codeline lineno="113"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="115"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="116"><highlight class="comment"><sp/>*<sp/><sp/>Returns<sp/>the<sp/>maximum<sp/>value<sp/>for<sp/>\a<sp/>range,<sp/>or<sp/>the<sp/>string<sp/>&quot;Auto&quot;.</highlight></codeline>
+<codeline lineno="117"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="118"><highlight class="comment"><sp/>*<sp/><sp/>If<sp/>\a<sp/>range<sp/>is<sp/>not<sp/>a<sp/>known<sp/>valid<sp/>enumeration<sp/>value<sp/>for<sp/>the<sp/>current<sp/>\a<sp/>product&apos;s<sp/>\a<sp/>mode,</highlight></codeline>
+<codeline lineno="119"><highlight class="comment"><sp/>*<sp/><sp/>then<sp/>a<sp/>null<sp/>QVariant<sp/>is<sp/>returned.</highlight></codeline>
+<codeline lineno="120"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121" refid="classMultimeterService_1a80dd2c9eed94973bbc532ee42daee1fb" refkind="member"><highlight class="normal"><ref refid="qvariant" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QVariant</ref><sp/><ref refid="classMultimeterService_1a9d05ef9c2d80a941bfd4f972d3dc6145" kindref="member">MultimeterService::maxValue</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>quint8<sp/>range,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classMultimeterService_1a51f66d0b81dace3115c5c68bc931eaea" kindref="member">Mode</ref><sp/>mode)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="122"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classMultimeterService_1a9d05ef9c2d80a941bfd4f972d3dc6145" kindref="member">maxValue</ref>(*<ref refid="classAbstractPokitService_1a039d2f1054788cf586c8decadb53ddc0" kindref="member">pokitProduct</ref>(),<sp/>range,<sp/>mode);</highlight></codeline>
+<codeline lineno="124"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="126"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="127"><highlight class="comment"><sp/>*<sp/>Constructs<sp/>a<sp/>new<sp/>Pokit<sp/>service<sp/>with<sp/>\a<sp/>parent.</highlight></codeline>
+<codeline lineno="128"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="129" refid="classMultimeterService_1a8121655f13ddf00fc2a65921b5ebc67b" refkind="member"><highlight class="normal"><ref refid="classMultimeterService_1a8121655f13ddf00fc2a65921b5ebc67b" kindref="member">MultimeterService::MultimeterService</ref>(<ref refid="qlowenergycontroller" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QLowEnergyController</ref><sp/>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>controller,<sp/><ref refid="qobject" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QObject</ref><sp/>*<sp/>parent)</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/><ref refid="classAbstractPokitService" kindref="compound">AbstractPokitService</ref>(new<sp/><ref refid="classMultimeterServicePrivate" kindref="compound">MultimeterServicePrivate</ref>(controller,<sp/>this),<sp/>parent)</highlight></codeline>
+<codeline lineno="131"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="135"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="136"><highlight class="comment"><sp/>*<sp/>\cond<sp/>internal</highlight></codeline>
+<codeline lineno="137"><highlight class="comment"><sp/>*<sp/>Constructs<sp/>a<sp/>new<sp/>Pokit<sp/>service<sp/>with<sp/>\a<sp/>parent,<sp/>and<sp/>private<sp/>implementation<sp/>\a<sp/>d.</highlight></codeline>
+<codeline lineno="138"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="139" refid="classMultimeterService_1a244b45bb3b82e37ebfab531dcb2bc55d" refkind="member"><highlight class="normal"><ref refid="classMultimeterService_1a8121655f13ddf00fc2a65921b5ebc67b" kindref="member">MultimeterService::MultimeterService</ref>(</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classMultimeterServicePrivate" kindref="compound">MultimeterServicePrivate</ref><sp/>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>d,<sp/><ref refid="qobject" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QObject</ref><sp/>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>parent)</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/><ref refid="classAbstractPokitService" kindref="compound">AbstractPokitService</ref>(d,<sp/>parent)</highlight></codeline>
+<codeline lineno="142"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal">}</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="145"><highlight class="comment">///<sp/>\endcond</highlight></codeline>
+<codeline lineno="146"><highlight class="comment"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="147"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="148"><highlight class="comment"><sp/>*<sp/>Destroys<sp/>this<sp/>MultimeterService<sp/>object.</highlight></codeline>
+<codeline lineno="149"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="150" refid="classMultimeterService_1a2bc53e1189ae9ff23d6a557d2a0576b0" refkind="member"><highlight class="normal"><ref refid="classMultimeterService_1a2bc53e1189ae9ff23d6a557d2a0576b0" kindref="member">MultimeterService::~MultimeterService</ref>()</highlight></codeline>
+<codeline lineno="151"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight></codeline>
+<codeline lineno="155" refid="classMultimeterService_1a58831d3ca3e6df355fcd6fd1bb8d5e68" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classMultimeterService_1a58831d3ca3e6df355fcd6fd1bb8d5e68" kindref="member">MultimeterService::readCharacteristics</ref>()</highlight></codeline>
+<codeline lineno="156"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classMultimeterService_1a818612a809f2addc659b44bc537c4428" kindref="member">readReadingCharacteristic</ref>();</highlight></codeline>
+<codeline lineno="158"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="160"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="161"><highlight class="comment"><sp/>*<sp/>Read<sp/>the<sp/>`Multimeter`<sp/>service&apos;s<sp/>`Reading`<sp/>characteristic.</highlight></codeline>
+<codeline lineno="162"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="163"><highlight class="comment"><sp/>*<sp/>Returns<sp/>`true`<sp/>is<sp/>the<sp/>read<sp/>request<sp/>is<sp/>succesfully<sp/>queued,<sp/>`false`<sp/>otherwise<sp/>(ie<sp/>if<sp/>the</highlight></codeline>
+<codeline lineno="164"><highlight class="comment"><sp/>*<sp/>underlying<sp/>controller<sp/>it<sp/>not<sp/>yet<sp/>connected<sp/>to<sp/>the<sp/>Pokit<sp/>device,<sp/>or<sp/>the<sp/>device&apos;s<sp/>services<sp/>have</highlight></codeline>
+<codeline lineno="165"><highlight class="comment"><sp/>*<sp/>not<sp/>yet<sp/>been<sp/>discovered).</highlight></codeline>
+<codeline lineno="166"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="167"><highlight class="comment"><sp/>*<sp/>Emits<sp/>readingRead()<sp/>if/when<sp/>the<sp/>characteristic<sp/>has<sp/>been<sp/>read<sp/>successfully.</highlight></codeline>
+<codeline lineno="168"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="169" refid="classMultimeterService_1a818612a809f2addc659b44bc537c4428" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classMultimeterService_1a818612a809f2addc659b44bc537c4428" kindref="member">MultimeterService::readReadingCharacteristic</ref>()</highlight></codeline>
+<codeline lineno="170"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_D(<ref refid="classMultimeterService" kindref="compound">MultimeterService</ref>);</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>d-&gt;readCharacteristic(<ref refid="structMultimeterService_1_1CharacteristicUuids_1a38e61d8cc1060c1166f11b9d8a5c0643" kindref="member">CharacteristicUuids::reading</ref>);</highlight></codeline>
+<codeline lineno="173"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="175"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="176"><highlight class="comment"><sp/>*<sp/>Configures<sp/>the<sp/>Pokit<sp/>device&apos;s<sp/>multimeter<sp/>mode.</highlight></codeline>
+<codeline lineno="177"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="178"><highlight class="comment"><sp/>*<sp/>Returns<sp/>`true`<sp/>if<sp/>the<sp/>write<sp/>request<sp/>was<sp/>successfully<sp/>queued,<sp/>`false`<sp/>otherwise.</highlight></codeline>
+<codeline lineno="179"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="180"><highlight class="comment"><sp/>*<sp/>Emits<sp/>settingsWritten()<sp/>if/when<sp/>the<sp/>\a<sp/>settings<sp/>have<sp/>been<sp/>writtem<sp/>successfully.</highlight></codeline>
+<codeline lineno="181"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="182" refid="classMultimeterService_1ab459a9db42aed973bbc18a2bc9fcd957" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classMultimeterService_1ab459a9db42aed973bbc18a2bc9fcd957" kindref="member">MultimeterService::setSettings</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structMultimeterService_1_1Settings" kindref="compound">Settings</ref><sp/>&amp;settings)</highlight></codeline>
+<codeline lineno="183"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_D(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classMultimeterService" kindref="compound">MultimeterService</ref>);</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qlowenergycharacteristic" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QLowEnergyCharacteristic</ref><sp/>characteristic<sp/>=</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>d-&gt;getCharacteristic(<ref refid="structMultimeterService_1_1CharacteristicUuids_1a502132c1d5922e86256dd70e6935b6d2" kindref="member">CharacteristicUuids::settings</ref>);</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!characteristic.<ref refid="qlowenergycharacteristic_1isValid" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">isValid</ref>())<sp/>{</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qbytearray" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QByteArray</ref><sp/>value<sp/>=<sp/><ref refid="classMultimeterServicePrivate_1ab69aec8bf3290ba5037e8d11926fe707" kindref="member">MultimeterServicePrivate::encodeSettings</ref>(settings);</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(value.<ref refid="qbytearray_1isNull" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">isNull</ref>())<sp/>{</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/>d-&gt;service-&gt;writeCharacteristic(characteristic,<sp/>value);</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(d-&gt;service-&gt;error()<sp/>!=<sp/>QLowEnergyService::ServiceError::CharacteristicWriteError);</highlight></codeline>
+<codeline lineno="198"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="200"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="201"><highlight class="comment"><sp/>*<sp/>Returns<sp/>the<sp/>most<sp/>recent<sp/>value<sp/>of<sp/>the<sp/>`Multimeter`<sp/>service&apos;s<sp/>`Reading`<sp/>characteristic.</highlight></codeline>
+<codeline lineno="202"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="203"><highlight class="comment"><sp/>*<sp/>The<sp/>returned<sp/>value,<sp/>if<sp/>any,<sp/>is<sp/>from<sp/>the<sp/>underlying<sp/>Bluetooth<sp/>stack&apos;s<sp/>cache.<sp/>If<sp/>no<sp/>such<sp/>value<sp/>is</highlight></codeline>
+<codeline lineno="204"><highlight class="comment"><sp/>*<sp/>currently<sp/>available<sp/>(ie<sp/>the<sp/>serviceDetailsDiscovered<sp/>signal<sp/>has<sp/>not<sp/>been<sp/>emitted<sp/>yet),<sp/>then<sp/>the</highlight></codeline>
+<codeline lineno="205"><highlight class="comment"><sp/>*<sp/>returned<sp/>MultimeterService::Reading::value<sp/>member<sp/>will<sp/>be<sp/>a<sp/>quiet<sp/>NaN,<sp/>which<sp/>can<sp/>be<sp/>checked<sp/>like:</highlight></codeline>
+<codeline lineno="206"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="207"><highlight class="comment"><sp/>*<sp/>```</highlight></codeline>
+<codeline lineno="208"><highlight class="comment"><sp/>*<sp/>const<sp/>MultimeterService::Reading<sp/>reading<sp/>=<sp/>multimeterService-&gt;reading();</highlight></codeline>
+<codeline lineno="209"><highlight class="comment"><sp/>*<sp/>if<sp/>(qIsNaN(reading.value))<sp/>{</highlight></codeline>
+<codeline lineno="210"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/>//<sp/>Handle<sp/>failure.</highlight></codeline>
+<codeline lineno="211"><highlight class="comment"><sp/>*<sp/>}</highlight></codeline>
+<codeline lineno="212"><highlight class="comment"><sp/>*<sp/>```</highlight></codeline>
+<codeline lineno="213"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="214" refid="classMultimeterService_1ad7623c59f41fc099bebd3447637a904e" refkind="member"><highlight class="normal"><ref refid="structMultimeterService_1_1Reading" kindref="compound">MultimeterService::Reading</ref><sp/><ref refid="classMultimeterService_1ad7623c59f41fc099bebd3447637a904e" kindref="member">MultimeterService::reading</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="215"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_D(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classMultimeterService" kindref="compound">MultimeterService</ref>);</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qlowenergycharacteristic" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QLowEnergyCharacteristic</ref><sp/>characteristic<sp/>=</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>d-&gt;getCharacteristic(<ref refid="structMultimeterService_1_1CharacteristicUuids_1a38e61d8cc1060c1166f11b9d8a5c0643" kindref="member">CharacteristicUuids::reading</ref>);</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(characteristic.<ref refid="qlowenergycharacteristic_1isValid" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">isValid</ref>())<sp/>?<sp/><ref refid="classMultimeterServicePrivate_1ac9594dce487207bafd123e1093f399db" kindref="member">MultimeterServicePrivate::parseReading</ref>(characteristic.<ref refid="qlowenergycharacteristic_1value" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">value</ref>())</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/><ref refid="structMultimeterService_1_1Reading" kindref="compound">Reading</ref>{<sp/><ref refid="classMultimeterService_1a43c735e6c80c4ada9bc8640d06fbe286a902b0d55fddef6f8d651fe1035b7d4bd" kindref="member">MeterStatus::Error</ref>,<sp/>std::numeric_limits&lt;float&gt;::quiet_NaN(),<sp/><ref refid="classMultimeterService_1a51f66d0b81dace3115c5c68bc931eaeaae599161956d626eda4cb0a5ffb85271c" kindref="member">Mode::Idle</ref>,<sp/>0<sp/>};</highlight></codeline>
+<codeline lineno="221"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="223"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="224"><highlight class="comment"><sp/>*<sp/>Enables<sp/>client-side<sp/>notifications<sp/>of<sp/>meter<sp/>readings.</highlight></codeline>
+<codeline lineno="225"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="226"><highlight class="comment"><sp/>*<sp/>This<sp/>is<sp/>an<sp/>alternative<sp/>to<sp/>manually<sp/>requesting<sp/>individual<sp/>reads<sp/>via<sp/>readReadingCharacteristic().</highlight></codeline>
+<codeline lineno="227"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="228"><highlight class="comment"><sp/>*<sp/>Returns<sp/>`true`<sp/>is<sp/>the<sp/>request<sp/>was<sp/>successfully<sp/>submited<sp/>to<sp/>the<sp/>device<sp/>queue,<sp/>`false`<sp/>otherwise.</highlight></codeline>
+<codeline lineno="229"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="230"><highlight class="comment"><sp/>*<sp/>Successfully<sp/>read<sp/>values<sp/>(if<sp/>any)<sp/>will<sp/>be<sp/>emitted<sp/>via<sp/>the<sp/>readingRead()<sp/>signal.</highlight></codeline>
+<codeline lineno="231"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="232" refid="classMultimeterService_1a321c4fdade8d934ac2e1daec3be174fb" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classMultimeterService_1a321c4fdade8d934ac2e1daec3be174fb" kindref="member">MultimeterService::enableReadingNotifications</ref>()</highlight></codeline>
+<codeline lineno="233"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_D(<ref refid="classMultimeterService" kindref="compound">MultimeterService</ref>);</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>d-&gt;enableCharacteristicNotificatons(<ref refid="structMultimeterService_1_1CharacteristicUuids_1a38e61d8cc1060c1166f11b9d8a5c0643" kindref="member">CharacteristicUuids::reading</ref>);</highlight></codeline>
+<codeline lineno="236"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="238"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="239"><highlight class="comment"><sp/>*<sp/>Disables<sp/>client-side<sp/>notifications<sp/>of<sp/>meter<sp/>readings.</highlight></codeline>
+<codeline lineno="240"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="241"><highlight class="comment"><sp/>*<sp/>Instantaneous<sp/>reads<sp/>can<sp/>still<sp/>be<sp/>fetched<sp/>by<sp/>readReadingCharacteristic().</highlight></codeline>
+<codeline lineno="242"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="243"><highlight class="comment"><sp/>*<sp/>Returns<sp/>`true`<sp/>is<sp/>the<sp/>request<sp/>was<sp/>successfully<sp/>submited<sp/>to<sp/>the<sp/>device<sp/>queue,<sp/>`false`<sp/>otherwise.</highlight></codeline>
+<codeline lineno="244"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="245" refid="classMultimeterService_1ae51553919b7d659cf6d0ce1210503555" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classMultimeterService_1ae51553919b7d659cf6d0ce1210503555" kindref="member">MultimeterService::disableReadingNotifications</ref>()</highlight></codeline>
+<codeline lineno="246"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_D(<ref refid="classMultimeterService" kindref="compound">MultimeterService</ref>);</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>d-&gt;disableCharacteristicNotificatons(<ref refid="structMultimeterService_1_1CharacteristicUuids_1a38e61d8cc1060c1166f11b9d8a5c0643" kindref="member">CharacteristicUuids::reading</ref>);</highlight></codeline>
+<codeline lineno="249"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="251"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="252"><highlight class="comment"><sp/>*<sp/>\fn<sp/>MultimeterService::readingRead</highlight></codeline>
+<codeline lineno="253"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="254"><highlight class="comment"><sp/>*<sp/>This<sp/>signal<sp/>is<sp/>emitted<sp/>when<sp/>the<sp/>`Reading`<sp/>characteristic<sp/>has<sp/>been<sp/>read<sp/>successfully.</highlight></codeline>
+<codeline lineno="255"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="256"><highlight class="comment"><sp/>*<sp/>\see<sp/>readReadingCharacteristic</highlight></codeline>
+<codeline lineno="257"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="258"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="259"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="260"><highlight class="comment"><sp/>*<sp/>\fn<sp/>MultimeterService::settingsWritten</highlight></codeline>
+<codeline lineno="261"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="262"><highlight class="comment"><sp/>*<sp/>This<sp/>signal<sp/>is<sp/>emitted<sp/>when<sp/>the<sp/>`Settings`<sp/>characteristic<sp/>has<sp/>been<sp/>written<sp/>successfully.</highlight></codeline>
+<codeline lineno="263"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="264"><highlight class="comment"><sp/>*<sp/>\see<sp/>setSettings</highlight></codeline>
+<codeline lineno="265"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="266"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="267"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="268"><highlight class="comment"><sp/>*<sp/>\cond<sp/>internal</highlight></codeline>
+<codeline lineno="269"><highlight class="comment"><sp/>*<sp/>\class<sp/>MultimeterServicePrivate</highlight></codeline>
+<codeline lineno="270"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="271"><highlight class="comment"><sp/>*<sp/>The<sp/>MultimeterServicePrivate<sp/>class<sp/>provides<sp/>private<sp/>implementation<sp/>for<sp/>MultimeterService.</highlight></codeline>
+<codeline lineno="272"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="273"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="274"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="275"><highlight class="comment"><sp/>*<sp/>\internal</highlight></codeline>
+<codeline lineno="276"><highlight class="comment"><sp/>*<sp/>Constructs<sp/>a<sp/>new<sp/>MultimeterServicePrivate<sp/>object<sp/>with<sp/>public<sp/>implementation<sp/>\a<sp/>q.</highlight></codeline>
+<codeline lineno="277"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="278" refid="classMultimeterServicePrivate_1a59762f5dbe8b4a33c16d155a1da57f54" refkind="member"><highlight class="normal"><ref refid="classMultimeterServicePrivate_1a59762f5dbe8b4a33c16d155a1da57f54" kindref="member">MultimeterServicePrivate::MultimeterServicePrivate</ref>(</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="qlowenergycontroller" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QLowEnergyController</ref><sp/>*<sp/>controller,<sp/><ref refid="classMultimeterService" kindref="compound">MultimeterService</ref><sp/>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>q)</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/><ref refid="classAbstractPokitServicePrivate" kindref="compound">AbstractPokitServicePrivate</ref>(<ref refid="classMultimeterService" kindref="compound">MultimeterService</ref>::serviceUuid,<sp/>controller,<sp/>q)</highlight></codeline>
+<codeline lineno="281"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"></highlight></codeline>
+<codeline lineno="283"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="285"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="286"><highlight class="comment"><sp/>*<sp/>Returns<sp/>\a<sp/>settings<sp/>in<sp/>the<sp/>format<sp/>Pokit<sp/>devices<sp/>expect.</highlight></codeline>
+<codeline lineno="287"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="288" refid="classMultimeterServicePrivate_1ab69aec8bf3290ba5037e8d11926fe707" refkind="member"><highlight class="normal"><ref refid="qbytearray" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QByteArray</ref><sp/><ref refid="classMultimeterServicePrivate_1ab69aec8bf3290ba5037e8d11926fe707" kindref="member">MultimeterServicePrivate::encodeSettings</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structMultimeterService_1_1Settings" kindref="compound">MultimeterService::Settings</ref><sp/>&amp;settings)</highlight></codeline>
+<codeline lineno="289"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static_assert</highlight><highlight class="normal">(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(settings.<ref refid="structMultimeterService_1_1Settings_1afed6bcae66af6d69cb3887e2c6d5c443" kindref="member">mode</ref>)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>==<sp/>1,<sp/></highlight><highlight class="stringliteral">&quot;Expected<sp/>to<sp/>be<sp/>1<sp/>byte.&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="291"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static_assert</highlight><highlight class="normal">(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(settings.<ref refid="structMultimeterService_1_1Settings_1a6be92a8f2c6dc31050a46a0aa7610069" kindref="member">range</ref>)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>==<sp/>1,<sp/></highlight><highlight class="stringliteral">&quot;Expected<sp/>to<sp/>be<sp/>1<sp/>byte.&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="292"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static_assert</highlight><highlight class="normal">(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(settings.<ref refid="structMultimeterService_1_1Settings_1a02446f040ebf7aeeacb4d932d3ab2ea2" kindref="member">updateInterval</ref>)<sp/>==<sp/>4,<sp/></highlight><highlight class="stringliteral">&quot;Expected<sp/>to<sp/>be<sp/>4<sp/>bytes.&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"></highlight></codeline>
+<codeline lineno="294"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="qbytearray" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QByteArray</ref><sp/>value;</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="qdatastream" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QDataStream</ref><sp/>stream(&amp;value,<sp/><ref refid="qiodevicebase_1OpenModeFlag-enum" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QIODevice::WriteOnly</ref>);</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/><sp/><sp/>stream.<ref refid="qdatastream_1setByteOrder" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">setByteOrder</ref>(<ref refid="qdatastream_1ByteOrder-enum" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QDataStream::LittleEndian</ref>);</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"><sp/><sp/><sp/><sp/>stream.<ref refid="qdatastream_1setFloatingPointPrecision" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">setFloatingPointPrecision</ref>(<ref refid="qdatastream_1FloatingPointPrecision-enum" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QDataStream::SinglePrecision</ref>);<sp/></highlight><highlight class="comment">//<sp/>32-bit<sp/>floats,<sp/>not<sp/>64-bit.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="298"><highlight class="normal"><sp/><sp/><sp/><sp/>stream<sp/>&lt;&lt;<sp/>(quint8)settings.<ref refid="structMultimeterService_1_1Settings_1afed6bcae66af6d69cb3887e2c6d5c443" kindref="member">mode</ref><sp/>&lt;&lt;<sp/>settings.<ref refid="structMultimeterService_1_1Settings_1a6be92a8f2c6dc31050a46a0aa7610069" kindref="member">range</ref><sp/>&lt;&lt;<sp/>settings.<ref refid="structMultimeterService_1_1Settings_1a02446f040ebf7aeeacb4d932d3ab2ea2" kindref="member">updateInterval</ref>;</highlight></codeline>
+<codeline lineno="299"><highlight class="normal"></highlight></codeline>
+<codeline lineno="300"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_ASSERT(value.<ref refid="qbytearray_1size" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">size</ref>()<sp/>==<sp/>6);</highlight></codeline>
+<codeline lineno="301"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>value;</highlight></codeline>
+<codeline lineno="302"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="303"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="304"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="305"><highlight class="comment"><sp/>*<sp/>Parses<sp/>the<sp/>`Reading`<sp/>\a<sp/>value<sp/>into<sp/>a<sp/>MultimeterService::Reading<sp/>struct.</highlight></codeline>
+<codeline lineno="306"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="307" refid="classMultimeterServicePrivate_1ac9594dce487207bafd123e1093f399db" refkind="member"><highlight class="normal"><ref refid="structMultimeterService_1_1Reading" kindref="compound">MultimeterService::Reading</ref><sp/><ref refid="classMultimeterServicePrivate_1ac9594dce487207bafd123e1093f399db" kindref="member">MultimeterServicePrivate::parseReading</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qbytearray" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QByteArray</ref><sp/>&amp;value)</highlight></codeline>
+<codeline lineno="308"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="309"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structMultimeterService_1_1Reading" kindref="compound">MultimeterService::Reading</ref><sp/>reading{</highlight></codeline>
+<codeline lineno="310"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMultimeterService_1a43c735e6c80c4ada9bc8640d06fbe286a902b0d55fddef6f8d651fe1035b7d4bd" kindref="member">MultimeterService::MeterStatus::Error</ref>,</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::numeric_limits&lt;float&gt;::quiet_NaN(),</highlight></codeline>
+<codeline lineno="312"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMultimeterService_1a51f66d0b81dace3115c5c68bc931eaeaae599161956d626eda4cb0a5ffb85271c" kindref="member">MultimeterService::Mode::Idle</ref>,<sp/>0</highlight></codeline>
+<codeline lineno="313"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="314"><highlight class="normal"></highlight></codeline>
+<codeline lineno="315"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!<ref refid="classAbstractPokitServicePrivate_1af8b480a950244540bfff7fc4b476a0ef" kindref="member">checkSize</ref>(<ref refid="qlatin1string" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QLatin1String</ref>(</highlight><highlight class="stringliteral">&quot;Reading&quot;</highlight><highlight class="normal">),<sp/>value,<sp/>7,<sp/>7))<sp/>{</highlight></codeline>
+<codeline lineno="316"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>reading;</highlight></codeline>
+<codeline lineno="317"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="318"><highlight class="normal"></highlight></codeline>
+<codeline lineno="319"><highlight class="normal"><sp/><sp/><sp/><sp/>reading.<ref refid="structMultimeterService_1_1Reading_1a05031630f11f9e6810176211dfabaf18" kindref="member">status</ref><sp/>=<sp/><ref refid="classMultimeterService_1a43c735e6c80c4ada9bc8640d06fbe286" kindref="member">MultimeterService::MeterStatus</ref>(value.<ref refid="qbytearray_1at" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">at</ref>(0));</highlight></codeline>
+<codeline lineno="320"><highlight class="normal"><sp/><sp/><sp/><sp/>reading.value<sp/><sp/>=<sp/>qFromLittleEndian&lt;float&gt;(value.<ref refid="qbytearray_1mid" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">mid</ref>(1,4).<ref refid="qbytearray_1constData" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">constData</ref>());</highlight></codeline>
+<codeline lineno="321"><highlight class="normal"><sp/><sp/><sp/><sp/>reading.mode<sp/><sp/><sp/>=<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal"><ref refid="classMultimeterService_1a51f66d0b81dace3115c5c68bc931eaea" kindref="member">MultimeterService::Mode</ref></highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(value.<ref refid="qbytearray_1at" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">at</ref>(5));</highlight></codeline>
+<codeline lineno="322"><highlight class="normal"><sp/><sp/><sp/><sp/>reading.range<sp/><sp/>=<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal">quint8</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(value.<ref refid="qbytearray_1at" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">at</ref>(6));</highlight></codeline>
+<codeline lineno="323"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>reading;</highlight></codeline>
+<codeline lineno="324"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="325"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="326"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="327"><highlight class="comment"><sp/>*<sp/>Implements<sp/>AbstractPokitServicePrivate::characteristicRead<sp/>to<sp/>parse<sp/>\a<sp/>value,<sp/>then<sp/>emit<sp/>a</highlight></codeline>
+<codeline lineno="328"><highlight class="comment"><sp/>*<sp/>specialised<sp/>signal,<sp/>for<sp/>each<sp/>supported<sp/>\a<sp/>characteristic.</highlight></codeline>
+<codeline lineno="329"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="330" refid="classMultimeterServicePrivate_1a2cb96a3c5ae351ca9d07ee7bc828029a" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classMultimeterServicePrivate_1a2cb96a3c5ae351ca9d07ee7bc828029a" kindref="member">MultimeterServicePrivate::characteristicRead</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qlowenergycharacteristic" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QLowEnergyCharacteristic</ref><sp/>&amp;characteristic,</highlight></codeline>
+<codeline lineno="331"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qbytearray" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QByteArray</ref><sp/>&amp;value)</highlight></codeline>
+<codeline lineno="332"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="333"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classAbstractPokitServicePrivate_1a84bef330c6ff124f1e460bb8949d82da" kindref="member">AbstractPokitServicePrivate::characteristicRead</ref>(characteristic,<sp/>value);</highlight></codeline>
+<codeline lineno="334"><highlight class="normal"></highlight></codeline>
+<codeline lineno="335"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_Q(<ref refid="classMultimeterService" kindref="compound">MultimeterService</ref>);</highlight></codeline>
+<codeline lineno="336"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(characteristic.<ref refid="qlowenergycharacteristic_1uuid" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">uuid</ref>()<sp/>==<sp/><ref refid="structMultimeterService_1_1CharacteristicUuids_1a38e61d8cc1060c1166f11b9d8a5c0643" kindref="member">MultimeterService::CharacteristicUuids::reading</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="337"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="qobject_1Q_EMIT" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">Q_EMIT</ref><sp/>q-&gt;readingRead(<ref refid="classMultimeterServicePrivate_1ac9594dce487207bafd123e1093f399db" kindref="member">parseReading</ref>(value));</highlight></codeline>
+<codeline lineno="338"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="339"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="340"><highlight class="normal"></highlight></codeline>
+<codeline lineno="341"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(characteristic.<ref refid="qlowenergycharacteristic_1uuid" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">uuid</ref>()<sp/>==<sp/><ref refid="structMultimeterService_1_1CharacteristicUuids_1a502132c1d5922e86256dd70e6935b6d2" kindref="member">MultimeterService::CharacteristicUuids::settings</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="342"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>qCWarning(lc).noquote()<sp/>&lt;&lt;<sp/><ref refid="qobject_1tr" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">tr</ref>(</highlight><highlight class="stringliteral">&quot;Settings<sp/>characteristic<sp/>is<sp/>write-only,<sp/>but<sp/>somehow<sp/>read&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="343"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/><ref refid="classAbstractPokitServicePrivate_1a37538a1aa1beeb85a041f1735d65cbfd" kindref="member">serviceUuid</ref><sp/>&lt;&lt;<sp/>characteristic.<ref refid="qlowenergycharacteristic_1name" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">name</ref>()<sp/>&lt;&lt;<sp/>characteristic.<ref refid="qlowenergycharacteristic_1uuid" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">uuid</ref>();</highlight></codeline>
+<codeline lineno="344"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="345"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="346"><highlight class="normal"></highlight></codeline>
+<codeline lineno="347"><highlight class="normal"><sp/><sp/><sp/><sp/>qCWarning(lc).noquote()<sp/>&lt;&lt;<sp/><ref refid="qobject_1tr" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">tr</ref>(</highlight><highlight class="stringliteral">&quot;Unknown<sp/>characteristic<sp/>read<sp/>for<sp/>Multimeter<sp/>service&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="348"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/><ref refid="classAbstractPokitServicePrivate_1a37538a1aa1beeb85a041f1735d65cbfd" kindref="member">serviceUuid</ref><sp/>&lt;&lt;<sp/>characteristic.<ref refid="qlowenergycharacteristic_1name" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">name</ref>()<sp/>&lt;&lt;<sp/>characteristic.<ref refid="qlowenergycharacteristic_1uuid" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">uuid</ref>();</highlight></codeline>
+<codeline lineno="349"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="350"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="351"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="352"><highlight class="comment"><sp/>*<sp/>Implements<sp/>AbstractPokitServicePrivate::characteristicWritten<sp/>to<sp/>parse<sp/>\a<sp/>newValue,<sp/>then<sp/>emit<sp/>a</highlight></codeline>
+<codeline lineno="353"><highlight class="comment"><sp/>*<sp/>specialised<sp/>signal,<sp/>for<sp/>each<sp/>supported<sp/>\a<sp/>characteristic.</highlight></codeline>
+<codeline lineno="354"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="355" refid="classMultimeterServicePrivate_1abe299f554929b4b345d5dd527fd7bcea" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classMultimeterServicePrivate_1abe299f554929b4b345d5dd527fd7bcea" kindref="member">MultimeterServicePrivate::characteristicWritten</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qlowenergycharacteristic" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QLowEnergyCharacteristic</ref><sp/>&amp;characteristic,</highlight></codeline>
+<codeline lineno="356"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qbytearray" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QByteArray</ref><sp/>&amp;newValue)</highlight></codeline>
+<codeline lineno="357"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="358"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classAbstractPokitServicePrivate_1aaf4a6cb9f0b1fe537877d615a6634201" kindref="member">AbstractPokitServicePrivate::characteristicWritten</ref>(characteristic,<sp/>newValue);</highlight></codeline>
+<codeline lineno="359"><highlight class="normal"></highlight></codeline>
+<codeline lineno="360"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_Q(<ref refid="classMultimeterService" kindref="compound">MultimeterService</ref>);</highlight></codeline>
+<codeline lineno="361"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(characteristic.<ref refid="qlowenergycharacteristic_1uuid" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">uuid</ref>()<sp/>==<sp/><ref refid="structMultimeterService_1_1CharacteristicUuids_1a502132c1d5922e86256dd70e6935b6d2" kindref="member">MultimeterService::CharacteristicUuids::settings</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="362"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="qobject_1Q_EMIT" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">Q_EMIT</ref><sp/>q-&gt;settingsWritten();</highlight></codeline>
+<codeline lineno="363"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="364"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="365"><highlight class="normal"></highlight></codeline>
+<codeline lineno="366"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(characteristic.<ref refid="qlowenergycharacteristic_1uuid" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">uuid</ref>()<sp/>==<sp/><ref refid="structMultimeterService_1_1CharacteristicUuids_1a38e61d8cc1060c1166f11b9d8a5c0643" kindref="member">MultimeterService::CharacteristicUuids::reading</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="367"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>qCWarning(lc).noquote()<sp/>&lt;&lt;<sp/><ref refid="qobject_1tr" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">tr</ref>(</highlight><highlight class="stringliteral">&quot;Reading<sp/>characteristic<sp/>is<sp/>read/notify,<sp/>but<sp/>somehow<sp/>written&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="368"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/><ref refid="classAbstractPokitServicePrivate_1a37538a1aa1beeb85a041f1735d65cbfd" kindref="member">serviceUuid</ref><sp/>&lt;&lt;<sp/>characteristic.<ref refid="qlowenergycharacteristic_1name" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">name</ref>()<sp/>&lt;&lt;<sp/>characteristic.<ref refid="qlowenergycharacteristic_1uuid" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">uuid</ref>();</highlight></codeline>
+<codeline lineno="369"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="370"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="371"><highlight class="normal"></highlight></codeline>
+<codeline lineno="372"><highlight class="normal"><sp/><sp/><sp/><sp/>qCWarning(lc).noquote()<sp/>&lt;&lt;<sp/><ref refid="qobject_1tr" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">tr</ref>(</highlight><highlight class="stringliteral">&quot;Unknown<sp/>characteristic<sp/>written<sp/>for<sp/>Multimeter<sp/>service&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="373"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/><ref refid="classAbstractPokitServicePrivate_1a37538a1aa1beeb85a041f1735d65cbfd" kindref="member">serviceUuid</ref><sp/>&lt;&lt;<sp/>characteristic.<ref refid="qlowenergycharacteristic_1name" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">name</ref>()<sp/>&lt;&lt;<sp/>characteristic.<ref refid="qlowenergycharacteristic_1uuid" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">uuid</ref>();</highlight></codeline>
+<codeline lineno="374"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="375"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="376"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="377"><highlight class="comment"><sp/>*<sp/>Implements<sp/>AbstractPokitServicePrivate::characteristicChanged<sp/>to<sp/>parse<sp/>\a<sp/>newValue,<sp/>then<sp/>emit<sp/>a</highlight></codeline>
+<codeline lineno="378"><highlight class="comment"><sp/>*<sp/>specialised<sp/>signal,<sp/>for<sp/>each<sp/>supported<sp/>\a<sp/>characteristic.</highlight></codeline>
+<codeline lineno="379"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="380" refid="classMultimeterServicePrivate_1af80ef46d902cc372a57bb1ba45313bcb" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classMultimeterServicePrivate_1af80ef46d902cc372a57bb1ba45313bcb" kindref="member">MultimeterServicePrivate::characteristicChanged</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qlowenergycharacteristic" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QLowEnergyCharacteristic</ref><sp/>&amp;characteristic,</highlight></codeline>
+<codeline lineno="381"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qbytearray" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QByteArray</ref><sp/>&amp;newValue)</highlight></codeline>
+<codeline lineno="382"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="383"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classAbstractPokitServicePrivate_1a642431b7bfb76baa5d976ae24e90d9ef" kindref="member">AbstractPokitServicePrivate::characteristicChanged</ref>(characteristic,<sp/>newValue);</highlight></codeline>
+<codeline lineno="384"><highlight class="normal"></highlight></codeline>
+<codeline lineno="385"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_Q(<ref refid="classMultimeterService" kindref="compound">MultimeterService</ref>);</highlight></codeline>
+<codeline lineno="386"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(characteristic.<ref refid="qlowenergycharacteristic_1uuid" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">uuid</ref>()<sp/>==<sp/><ref refid="structMultimeterService_1_1CharacteristicUuids_1a502132c1d5922e86256dd70e6935b6d2" kindref="member">MultimeterService::CharacteristicUuids::settings</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="387"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>qCWarning(lc).noquote()<sp/>&lt;&lt;<sp/><ref refid="qobject_1tr" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">tr</ref>(</highlight><highlight class="stringliteral">&quot;Settings<sp/>characteristic<sp/>is<sp/>write-only,<sp/>but<sp/>somehow<sp/>updated&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="388"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/><ref refid="classAbstractPokitServicePrivate_1a37538a1aa1beeb85a041f1735d65cbfd" kindref="member">serviceUuid</ref><sp/>&lt;&lt;<sp/>characteristic.<ref refid="qlowenergycharacteristic_1name" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">name</ref>()<sp/>&lt;&lt;<sp/>characteristic.<ref refid="qlowenergycharacteristic_1uuid" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">uuid</ref>();</highlight></codeline>
+<codeline lineno="389"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="390"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="391"><highlight class="normal"></highlight></codeline>
+<codeline lineno="392"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(characteristic.<ref refid="qlowenergycharacteristic_1uuid" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">uuid</ref>()<sp/>==<sp/><ref refid="structMultimeterService_1_1CharacteristicUuids_1a38e61d8cc1060c1166f11b9d8a5c0643" kindref="member">MultimeterService::CharacteristicUuids::reading</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="393"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="qobject_1Q_EMIT" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">Q_EMIT</ref><sp/>q-&gt;readingRead(<ref refid="classMultimeterServicePrivate_1ac9594dce487207bafd123e1093f399db" kindref="member">parseReading</ref>(newValue));</highlight></codeline>
+<codeline lineno="394"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="395"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="396"><highlight class="normal"></highlight></codeline>
+<codeline lineno="397"><highlight class="normal"><sp/><sp/><sp/><sp/>qCWarning(lc).noquote()<sp/>&lt;&lt;<sp/><ref refid="qobject_1tr" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">tr</ref>(</highlight><highlight class="stringliteral">&quot;Unknown<sp/>characteristic<sp/>notified<sp/>for<sp/>Multimeter<sp/>service&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="398"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/><ref refid="classAbstractPokitServicePrivate_1a37538a1aa1beeb85a041f1735d65cbfd" kindref="member">serviceUuid</ref><sp/>&lt;&lt;<sp/>characteristic.<ref refid="qlowenergycharacteristic_1name" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">name</ref>()<sp/>&lt;&lt;<sp/>characteristic.<ref refid="qlowenergycharacteristic_1uuid" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">uuid</ref>();</highlight></codeline>
+<codeline lineno="399"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="400"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="401"><highlight class="comment">///<sp/>\endcond</highlight></codeline>
+    </programlisting>
+    <location file="/home/paul/src/dokit/src/lib/multimeterservice.cpp"/>
+  </compounddef>
+</doxygen>

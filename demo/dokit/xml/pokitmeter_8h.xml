@@ -1,0 +1,664 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.0" xml:lang="en-US">
+  <compounddef id="pokitmeter_8h" kind="file" language="C++">
+    <compoundname>pokitmeter.h</compoundname>
+    <includes refid="qtpokit__global_8h" local="yes">qtpokit_global.h</includes>
+    <includes local="no">QVariant</includes>
+    <includedby refid="devicecommand_8cpp" local="yes">devicecommand.cpp</includedby>
+    <includedby refid="dsocommand_8h" local="no">dsocommand.h</includedby>
+    <includedby refid="dsoservice_8cpp" local="no">dsoservice.cpp</includedby>
+    <includedby refid="loggerstartcommand_8h" local="no">loggerstartcommand.h</includedby>
+    <includedby refid="metercommand_8h" local="no">metercommand.h</includedby>
+    <includedby refid="pokitmeter_8cpp" local="yes">pokitmeter.cpp</includedby>
+    <includedby refid="pokitproducts_8cpp" local="no">pokitproducts.cpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>pokitmeter.h</label>
+        <link refid="pokitmeter_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>qtpokit_global.h</label>
+        <link refid="qtpokit__global_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>QVariant</label>
+      </node>
+      <node id="3">
+        <label>QtGlobal</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>pokitmeter.h</label>
+        <link refid="pokitmeter_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>devicecommand.cpp</label>
+        <link refid="devicecommand_8cpp_source"/>
+      </node>
+      <node id="4">
+        <label>dsocommand.cpp</label>
+        <link refid="dsocommand_8cpp_source"/>
+      </node>
+      <node id="3">
+        <label>dsocommand.h</label>
+        <link refid="dsocommand_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>loggerstartcommand.cpp</label>
+        <link refid="loggerstartcommand_8cpp_source"/>
+      </node>
+      <node id="7">
+        <label>loggerstartcommand.h</label>
+        <link refid="loggerstartcommand_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>main.cpp</label>
+        <link refid="main_8cpp_source"/>
+      </node>
+      <node id="10">
+        <label>metercommand.cpp</label>
+        <link refid="metercommand_8cpp_source"/>
+      </node>
+      <node id="9">
+        <label>metercommand.h</label>
+        <link refid="metercommand_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>dsoservice.cpp</label>
+        <link refid="dsoservice_8cpp"/>
+      </node>
+      <node id="11">
+        <label>pokitmeter.cpp</label>
+        <link refid="pokitmeter_8cpp"/>
+      </node>
+      <node id="12">
+        <label>pokitproducts.cpp</label>
+        <link refid="pokitproducts_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innernamespace refid="namespacePokitMeter">PokitMeter</innernamespace>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="namespacePokitMeter_1a22b467360c970e645f6a111b34d50a92" prot="public" static="no" strong="yes">
+        <type>quint8</type>
+        <name>CurrentRange</name>
+        <qualifiedname>PokitMeter::CurrentRange</qualifiedname>
+        <enumvalue id="namespacePokitMeter_1a22b467360c970e645f6a111b34d50a92a828fc0744dbf6304160fefea4b5f9265" prot="public">
+          <name>_10mA</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>Up to 10mA. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacePokitMeter_1a22b467360c970e645f6a111b34d50a92a6cf453011c81d39c2418e95c9cd9c9df" prot="public">
+          <name>_30mA</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+<para>Up to 30mA. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacePokitMeter_1a22b467360c970e645f6a111b34d50a92ac599cead1dac0dc8c78c0d593dd9df76" prot="public">
+          <name>_150mA</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+<para>Up to 150mA. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacePokitMeter_1a22b467360c970e645f6a111b34d50a92ab728c73ce23f33f3a68ab57720a5ea77" prot="public">
+          <name>_300mA</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+<para>Up to 300mA. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacePokitMeter_1a22b467360c970e645f6a111b34d50a92a4e21b9650f4279211a4e7180c97b8480" prot="public">
+          <name>_2A</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+<para>Up to 2A. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacePokitMeter_1a22b467360c970e645f6a111b34d50a92a5c8523b038abf04d86fcc5358cd893cf" prot="public">
+          <name>AutoRange</name>
+          <initializer>= 255</initializer>
+          <briefdescription>
+<para>Auto-range. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Values supported by the Pokit Meter&apos;s <computeroutput>Range</computeroutput> attributes in <computeroutput>*Current</computeroutput> modes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/pokitmeter.h" line="22" column="5" bodyfile="/home/paul/src/dokit/include/qtpokit/pokitmeter.h" bodystart="22" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespacePokitMeter_1aacf3005969c4417f7eaeeeaf83d5e047" prot="public" static="no" strong="yes">
+        <type>quint8</type>
+        <name>ResistanceRange</name>
+        <qualifiedname>PokitMeter::ResistanceRange</qualifiedname>
+        <enumvalue id="namespacePokitMeter_1aacf3005969c4417f7eaeeeaf83d5e047a900ae15226aa8c0d4fa29e2add4a08c4" prot="public">
+          <name>_160</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>Up to 160Ω. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacePokitMeter_1aacf3005969c4417f7eaeeeaf83d5e047a44c86547d0ddac7860e857aba92608ea" prot="public">
+          <name>_330</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+<para>Up to 330Ω. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacePokitMeter_1aacf3005969c4417f7eaeeeaf83d5e047a1565efe7464a002ba8253cea19fb2c16" prot="public">
+          <name>_890</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+<para>Up to 890Ω. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacePokitMeter_1aacf3005969c4417f7eaeeeaf83d5e047aef1eecc4af34ef7f92e309dfd8b9721a" prot="public">
+          <name>_1K5</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+<para>Up to 1.5KΩ. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacePokitMeter_1aacf3005969c4417f7eaeeeaf83d5e047a2d0af3ed810f0eb7edb0c6b8a19c1fc3" prot="public">
+          <name>_10K</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+<para>Up to 10KΩ. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacePokitMeter_1aacf3005969c4417f7eaeeeaf83d5e047a83cfa36debb22f738bf971d42a0f58f7" prot="public">
+          <name>_100K</name>
+          <initializer>= 5</initializer>
+          <briefdescription>
+<para>Up to 100KΩ. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacePokitMeter_1aacf3005969c4417f7eaeeeaf83d5e047a04fe3f2ffbf0343e5e67caca5fdd0069" prot="public">
+          <name>_470K</name>
+          <initializer>= 6</initializer>
+          <briefdescription>
+<para>Up to 470KΩ. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacePokitMeter_1aacf3005969c4417f7eaeeeaf83d5e047a46a66baf429b6426d9ce1b133845d2a8" prot="public">
+          <name>_1M</name>
+          <initializer>= 7</initializer>
+          <briefdescription>
+<para>Up to 1MΩ. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacePokitMeter_1aacf3005969c4417f7eaeeeaf83d5e047a5c8523b038abf04d86fcc5358cd893cf" prot="public">
+          <name>AutoRange</name>
+          <initializer>= 255</initializer>
+          <briefdescription>
+<para>Auto-range. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Values supported by the Pokit Meter&apos;s <computeroutput>Range</computeroutput> attributes in <computeroutput>Resistance</computeroutput> mode. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/pokitmeter.h" line="34" column="5" bodyfile="/home/paul/src/dokit/include/qtpokit/pokitmeter.h" bodystart="34" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespacePokitMeter_1ab9abf7a50f13c9cfb1e1b4c49c16dfee" prot="public" static="no" strong="yes">
+        <type>quint8</type>
+        <name>VoltageRange</name>
+        <qualifiedname>PokitMeter::VoltageRange</qualifiedname>
+        <enumvalue id="namespacePokitMeter_1ab9abf7a50f13c9cfb1e1b4c49c16dfeea59e644560a28139459f614bc629df71b" prot="public">
+          <name>_300mV</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>Up to 300mV. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacePokitMeter_1ab9abf7a50f13c9cfb1e1b4c49c16dfeea848192caa654906dae3d719e1368e0c2" prot="public">
+          <name>_2V</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+<para>Up to 2V. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacePokitMeter_1ab9abf7a50f13c9cfb1e1b4c49c16dfeeaa77ff71c31e6c3cde192b1baf7d8c663" prot="public">
+          <name>_6V</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+<para>Up to 6V. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacePokitMeter_1ab9abf7a50f13c9cfb1e1b4c49c16dfeea308ad507e84478351cd8b6f8b09c7490" prot="public">
+          <name>_12V</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+<para>Up to 12V. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacePokitMeter_1ab9abf7a50f13c9cfb1e1b4c49c16dfeea8e75785537c9af6adcd60131c680cdab" prot="public">
+          <name>_30V</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+<para>Up to 30V. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacePokitMeter_1ab9abf7a50f13c9cfb1e1b4c49c16dfeea4c8cbd97f19afa487f3b6c98342fd09d" prot="public">
+          <name>_60V</name>
+          <initializer>= 5</initializer>
+          <briefdescription>
+<para>Up to 60V DC (42V AC). </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacePokitMeter_1ab9abf7a50f13c9cfb1e1b4c49c16dfeea5c8523b038abf04d86fcc5358cd893cf" prot="public">
+          <name>AutoRange</name>
+          <initializer>= 255</initializer>
+          <briefdescription>
+<para>Auto-range. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Values supported by the Pokit Meter&apos;s <computeroutput>Range</computeroutput> attributes in <computeroutput>*Voltage</computeroutput> modes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/pokitmeter.h" line="49" column="5" bodyfile="/home/paul/src/dokit/include/qtpokit/pokitmeter.h" bodystart="49" bodyend="57"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="namespacePokitMeter_1a3c3db7b94b6f44af24f4a23e87a3569e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="qtpokit__global_8h_1aeba02234b4a21ddf98bb8127b8d41759" kindref="member">QTPOKIT_EXPORT</ref> <ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref></type>
+        <definition>QString PokitMeter::toString</definition>
+        <argsstring>(const CurrentRange &amp;range)</argsstring>
+        <name>toString</name>
+        <qualifiedname>PokitMeter::toString</qualifiedname>
+        <param>
+          <type>const CurrentRange &amp;</type>
+          <declname>range</declname>
+        </param>
+        <briefdescription>
+<para>Returns <emphasis>range</emphasis> as a user-friendly string. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/lib/pokitmeter.cpp" line="16" column="9" bodyfile="/home/paul/src/dokit/src/lib/pokitmeter.cpp" bodystart="16" bodyend="27" declfile="/home/paul/src/dokit/include/qtpokit/pokitmeter.h" declline="30" declcolumn="28"/>
+        <references refid="namespacePokitMeter_1a22b467360c970e645f6a111b34d50a92a828fc0744dbf6304160fefea4b5f9265">PokitMeter::_10mA</references>
+        <references refid="namespacePokitMeter_1a22b467360c970e645f6a111b34d50a92ac599cead1dac0dc8c78c0d593dd9df76">PokitMeter::_150mA</references>
+        <references refid="namespacePokitMeter_1a22b467360c970e645f6a111b34d50a92a4e21b9650f4279211a4e7180c97b8480">PokitMeter::_2A</references>
+        <references refid="namespacePokitMeter_1a22b467360c970e645f6a111b34d50a92ab728c73ce23f33f3a68ab57720a5ea77">PokitMeter::_300mA</references>
+        <references refid="namespacePokitMeter_1a22b467360c970e645f6a111b34d50a92a6cf453011c81d39c2418e95c9cd9c9df">PokitMeter::_30mA</references>
+        <references refid="namespacePokitMeter_1a22b467360c970e645f6a111b34d50a92a5c8523b038abf04d86fcc5358cd893cf">PokitMeter::AutoRange</references>
+        <references refid="qcoreapplication_1translate">QCoreApplication::translate</references>
+        <referencedby refid="namespaceCurrentRange_1a683a82fdd02371d1d6acb4bbbd91e844" compoundref="pokitproducts_8cpp" startline="183" endline="194">CurrentRange::toString</referencedby>
+        <referencedby refid="namespaceResistanceRange_1a6f542c3fe27b9c58c03edc92ceab40ef" compoundref="pokitproducts_8cpp" startline="227" endline="238">ResistanceRange::toString</referencedby>
+        <referencedby refid="namespaceVoltageRange_1a843ef4bfc3538988c695fa643adcd4d0" compoundref="pokitproducts_8cpp" startline="271" endline="282">VoltageRange::toString</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacePokitMeter_1a86a4eb262b1a9fde417acdee8eea00b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="qtpokit__global_8h_1aeba02234b4a21ddf98bb8127b8d41759" kindref="member">QTPOKIT_EXPORT</ref> <ref refid="qvariant" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QVariant</ref></type>
+        <definition>QVariant PokitMeter::maxValue</definition>
+        <argsstring>(const CurrentRange &amp;range)</argsstring>
+        <name>maxValue</name>
+        <qualifiedname>PokitMeter::maxValue</qualifiedname>
+        <param>
+          <type>const CurrentRange &amp;</type>
+          <declname>range</declname>
+        </param>
+        <briefdescription>
+<para>Returns the maximum value for <emphasis>range</emphasis> in (integer) microamps, or the string &quot;Auto&quot;. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If <emphasis>range</emphasis> is not a known valid value, then an null <ref refid="qvariant" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QVariant</ref> is returned. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/lib/pokitmeter.cpp" line="33" column="10" bodyfile="/home/paul/src/dokit/src/lib/pokitmeter.cpp" bodystart="33" bodyend="44" declfile="/home/paul/src/dokit/include/qtpokit/pokitmeter.h" declline="31" declcolumn="29"/>
+        <references refid="namespacePokitMeter_1a22b467360c970e645f6a111b34d50a92a828fc0744dbf6304160fefea4b5f9265">PokitMeter::_10mA</references>
+        <references refid="namespacePokitMeter_1a22b467360c970e645f6a111b34d50a92ac599cead1dac0dc8c78c0d593dd9df76">PokitMeter::_150mA</references>
+        <references refid="namespacePokitMeter_1a22b467360c970e645f6a111b34d50a92a4e21b9650f4279211a4e7180c97b8480">PokitMeter::_2A</references>
+        <references refid="namespacePokitMeter_1a22b467360c970e645f6a111b34d50a92ab728c73ce23f33f3a68ab57720a5ea77">PokitMeter::_300mA</references>
+        <references refid="namespacePokitMeter_1a22b467360c970e645f6a111b34d50a92a6cf453011c81d39c2418e95c9cd9c9df">PokitMeter::_30mA</references>
+        <references refid="namespacePokitMeter_1a22b467360c970e645f6a111b34d50a92a5c8523b038abf04d86fcc5358cd893cf">PokitMeter::AutoRange</references>
+        <references refid="qcoreapplication_1translate">QCoreApplication::translate</references>
+        <referencedby refid="namespaceCurrentRange_1a340ae103126865c13997adcde5976bd1" compoundref="pokitproducts_8cpp" startline="203" endline="214">CurrentRange::maxValue</referencedby>
+        <referencedby refid="namespaceResistanceRange_1a30fba7f1c73e7a8b9b3c45aed8b5b3e1" compoundref="pokitproducts_8cpp" startline="247" endline="258">ResistanceRange::maxValue</referencedby>
+        <referencedby refid="namespaceVoltageRange_1adc3a8126ae8dcec8010fc8b037fab885" compoundref="pokitproducts_8cpp" startline="291" endline="302">VoltageRange::maxValue</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacePokitMeter_1adf4c2051d0ce0fe5a53fd682cf97f8a8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="qtpokit__global_8h_1aeba02234b4a21ddf98bb8127b8d41759" kindref="member">QTPOKIT_EXPORT</ref> <ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref></type>
+        <definition>QString PokitMeter::toString</definition>
+        <argsstring>(const ResistanceRange &amp;range)</argsstring>
+        <name>toString</name>
+        <qualifiedname>PokitMeter::toString</qualifiedname>
+        <param>
+          <type>const ResistanceRange &amp;</type>
+          <declname>range</declname>
+        </param>
+        <briefdescription>
+<para>Returns <emphasis>range</emphasis> as a user-friendly string. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/lib/pokitmeter.cpp" line="47" column="9" bodyfile="/home/paul/src/dokit/src/lib/pokitmeter.cpp" bodystart="47" bodyend="61" declfile="/home/paul/src/dokit/include/qtpokit/pokitmeter.h" declline="45" declcolumn="28"/>
+        <references refid="namespacePokitMeter_1aacf3005969c4417f7eaeeeaf83d5e047a83cfa36debb22f738bf971d42a0f58f7">PokitMeter::_100K</references>
+        <references refid="namespacePokitMeter_1aacf3005969c4417f7eaeeeaf83d5e047a2d0af3ed810f0eb7edb0c6b8a19c1fc3">PokitMeter::_10K</references>
+        <references refid="namespacePokitMeter_1aacf3005969c4417f7eaeeeaf83d5e047a900ae15226aa8c0d4fa29e2add4a08c4">PokitMeter::_160</references>
+        <references refid="namespacePokitMeter_1aacf3005969c4417f7eaeeeaf83d5e047aef1eecc4af34ef7f92e309dfd8b9721a">PokitMeter::_1K5</references>
+        <references refid="namespacePokitMeter_1aacf3005969c4417f7eaeeeaf83d5e047a46a66baf429b6426d9ce1b133845d2a8">PokitMeter::_1M</references>
+        <references refid="namespacePokitMeter_1aacf3005969c4417f7eaeeeaf83d5e047a44c86547d0ddac7860e857aba92608ea">PokitMeter::_330</references>
+        <references refid="namespacePokitMeter_1aacf3005969c4417f7eaeeeaf83d5e047a04fe3f2ffbf0343e5e67caca5fdd0069">PokitMeter::_470K</references>
+        <references refid="namespacePokitMeter_1aacf3005969c4417f7eaeeeaf83d5e047a1565efe7464a002ba8253cea19fb2c16">PokitMeter::_890</references>
+        <references refid="namespacePokitMeter_1aacf3005969c4417f7eaeeeaf83d5e047a5c8523b038abf04d86fcc5358cd893cf">PokitMeter::AutoRange</references>
+        <references refid="qcoreapplication_1translate">QCoreApplication::translate</references>
+      </memberdef>
+      <memberdef kind="function" id="namespacePokitMeter_1afdc7a546b276b7533a115aacecc82ff8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="qtpokit__global_8h_1aeba02234b4a21ddf98bb8127b8d41759" kindref="member">QTPOKIT_EXPORT</ref> <ref refid="qvariant" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QVariant</ref></type>
+        <definition>QVariant PokitMeter::maxValue</definition>
+        <argsstring>(const ResistanceRange &amp;range)</argsstring>
+        <name>maxValue</name>
+        <qualifiedname>PokitMeter::maxValue</qualifiedname>
+        <param>
+          <type>const ResistanceRange &amp;</type>
+          <declname>range</declname>
+        </param>
+        <briefdescription>
+<para>Returns the maximum value for <emphasis>range</emphasis> in (integer) ohms, or the string &quot;Auto&quot;. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If <emphasis>range</emphasis> is not a known valid value, then an null <ref refid="qvariant" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QVariant</ref> is returned. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/lib/pokitmeter.cpp" line="67" column="10" bodyfile="/home/paul/src/dokit/src/lib/pokitmeter.cpp" bodystart="67" bodyend="81" declfile="/home/paul/src/dokit/include/qtpokit/pokitmeter.h" declline="46" declcolumn="29"/>
+        <references refid="namespacePokitMeter_1aacf3005969c4417f7eaeeeaf83d5e047a83cfa36debb22f738bf971d42a0f58f7">PokitMeter::_100K</references>
+        <references refid="namespacePokitMeter_1aacf3005969c4417f7eaeeeaf83d5e047a2d0af3ed810f0eb7edb0c6b8a19c1fc3">PokitMeter::_10K</references>
+        <references refid="namespacePokitMeter_1aacf3005969c4417f7eaeeeaf83d5e047a900ae15226aa8c0d4fa29e2add4a08c4">PokitMeter::_160</references>
+        <references refid="namespacePokitMeter_1aacf3005969c4417f7eaeeeaf83d5e047aef1eecc4af34ef7f92e309dfd8b9721a">PokitMeter::_1K5</references>
+        <references refid="namespacePokitMeter_1aacf3005969c4417f7eaeeeaf83d5e047a46a66baf429b6426d9ce1b133845d2a8">PokitMeter::_1M</references>
+        <references refid="namespacePokitMeter_1aacf3005969c4417f7eaeeeaf83d5e047a44c86547d0ddac7860e857aba92608ea">PokitMeter::_330</references>
+        <references refid="namespacePokitMeter_1aacf3005969c4417f7eaeeeaf83d5e047a04fe3f2ffbf0343e5e67caca5fdd0069">PokitMeter::_470K</references>
+        <references refid="namespacePokitMeter_1aacf3005969c4417f7eaeeeaf83d5e047a1565efe7464a002ba8253cea19fb2c16">PokitMeter::_890</references>
+        <references refid="namespacePokitMeter_1aacf3005969c4417f7eaeeeaf83d5e047a5c8523b038abf04d86fcc5358cd893cf">PokitMeter::AutoRange</references>
+        <references refid="qcoreapplication_1translate">QCoreApplication::translate</references>
+      </memberdef>
+      <memberdef kind="function" id="namespacePokitMeter_1a3038daa52676f52266163577f07954e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="qtpokit__global_8h_1aeba02234b4a21ddf98bb8127b8d41759" kindref="member">QTPOKIT_EXPORT</ref> <ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref></type>
+        <definition>QString PokitMeter::toString</definition>
+        <argsstring>(const VoltageRange &amp;range)</argsstring>
+        <name>toString</name>
+        <qualifiedname>PokitMeter::toString</qualifiedname>
+        <param>
+          <type>const VoltageRange &amp;</type>
+          <declname>range</declname>
+        </param>
+        <briefdescription>
+<para>Returns <emphasis>range</emphasis> as a user-friendly string. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/lib/pokitmeter.cpp" line="84" column="9" bodyfile="/home/paul/src/dokit/src/lib/pokitmeter.cpp" bodystart="84" bodyend="96" declfile="/home/paul/src/dokit/include/qtpokit/pokitmeter.h" declline="58" declcolumn="28"/>
+        <references refid="namespacePokitMeter_1ab9abf7a50f13c9cfb1e1b4c49c16dfeea308ad507e84478351cd8b6f8b09c7490">PokitMeter::_12V</references>
+        <references refid="namespacePokitMeter_1ab9abf7a50f13c9cfb1e1b4c49c16dfeea848192caa654906dae3d719e1368e0c2">PokitMeter::_2V</references>
+        <references refid="namespacePokitMeter_1ab9abf7a50f13c9cfb1e1b4c49c16dfeea59e644560a28139459f614bc629df71b">PokitMeter::_300mV</references>
+        <references refid="namespacePokitMeter_1ab9abf7a50f13c9cfb1e1b4c49c16dfeea8e75785537c9af6adcd60131c680cdab">PokitMeter::_30V</references>
+        <references refid="namespacePokitMeter_1ab9abf7a50f13c9cfb1e1b4c49c16dfeea4c8cbd97f19afa487f3b6c98342fd09d">PokitMeter::_60V</references>
+        <references refid="namespacePokitMeter_1ab9abf7a50f13c9cfb1e1b4c49c16dfeeaa77ff71c31e6c3cde192b1baf7d8c663">PokitMeter::_6V</references>
+        <references refid="namespacePokitMeter_1ab9abf7a50f13c9cfb1e1b4c49c16dfeea5c8523b038abf04d86fcc5358cd893cf">PokitMeter::AutoRange</references>
+        <references refid="qcoreapplication_1translate">QCoreApplication::translate</references>
+      </memberdef>
+      <memberdef kind="function" id="namespacePokitMeter_1a91cdd2d4576e4278be157c6ca12249d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="qtpokit__global_8h_1aeba02234b4a21ddf98bb8127b8d41759" kindref="member">QTPOKIT_EXPORT</ref> <ref refid="qvariant" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QVariant</ref></type>
+        <definition>QVariant PokitMeter::maxValue</definition>
+        <argsstring>(const VoltageRange &amp;range)</argsstring>
+        <name>maxValue</name>
+        <qualifiedname>PokitMeter::maxValue</qualifiedname>
+        <param>
+          <type>const VoltageRange &amp;</type>
+          <declname>range</declname>
+        </param>
+        <briefdescription>
+<para>Returns the maximum value for <emphasis>range</emphasis> in (integer) millivolts, or the string &quot;Auto&quot;. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If <emphasis>range</emphasis> is not a known valid value, then an null <ref refid="qvariant" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QVariant</ref> is returned. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/lib/pokitmeter.cpp" line="102" column="10" bodyfile="/home/paul/src/dokit/src/lib/pokitmeter.cpp" bodystart="102" bodyend="114" declfile="/home/paul/src/dokit/include/qtpokit/pokitmeter.h" declline="59" declcolumn="29"/>
+        <references refid="namespacePokitMeter_1ab9abf7a50f13c9cfb1e1b4c49c16dfeea308ad507e84478351cd8b6f8b09c7490">PokitMeter::_12V</references>
+        <references refid="namespacePokitMeter_1ab9abf7a50f13c9cfb1e1b4c49c16dfeea848192caa654906dae3d719e1368e0c2">PokitMeter::_2V</references>
+        <references refid="namespacePokitMeter_1ab9abf7a50f13c9cfb1e1b4c49c16dfeea59e644560a28139459f614bc629df71b">PokitMeter::_300mV</references>
+        <references refid="namespacePokitMeter_1ab9abf7a50f13c9cfb1e1b4c49c16dfeea8e75785537c9af6adcd60131c680cdab">PokitMeter::_30V</references>
+        <references refid="namespacePokitMeter_1ab9abf7a50f13c9cfb1e1b4c49c16dfeea4c8cbd97f19afa487f3b6c98342fd09d">PokitMeter::_60V</references>
+        <references refid="namespacePokitMeter_1ab9abf7a50f13c9cfb1e1b4c49c16dfeeaa77ff71c31e6c3cde192b1baf7d8c663">PokitMeter::_6V</references>
+        <references refid="namespacePokitMeter_1ab9abf7a50f13c9cfb1e1b4c49c16dfeea5c8523b038abf04d86fcc5358cd893cf">PokitMeter::AutoRange</references>
+        <references refid="qcoreapplication_1translate">QCoreApplication::translate</references>
+      </memberdef>
+      <memberdef kind="function" id="pokitmeter_8h_1ae19f1ec82fb666136d0861742110211c" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>quint8</type>
+        <definition>quint8 operator+</definition>
+        <argsstring>(PokitMeter::CurrentRange range) noexcept</argsstring>
+        <name>operator+</name>
+        <param>
+          <type><ref refid="namespacePokitMeter_1a22b467360c970e645f6a111b34d50a92" kindref="member">PokitMeter::CurrentRange</ref></type>
+          <declname>range</declname>
+        </param>
+        <briefdescription>
+<para>Returns <emphasis>range</emphasis> as a <computeroutput>quint8</computeroutput> as a convenience for assigning to services&apos; <computeroutput>settings.range</computeroutput> members. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/pokitmeter.h" line="64" column="18" bodyfile="/home/paul/src/dokit/include/qtpokit/pokitmeter.h" bodystart="64" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="pokitmeter_8h_1aad3e78653e7dcfdaebe934865a9d44c4" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>quint8</type>
+        <definition>quint8 operator+</definition>
+        <argsstring>(PokitMeter::ResistanceRange range) noexcept</argsstring>
+        <name>operator+</name>
+        <param>
+          <type><ref refid="namespacePokitMeter_1aacf3005969c4417f7eaeeeaf83d5e047" kindref="member">PokitMeter::ResistanceRange</ref></type>
+          <declname>range</declname>
+        </param>
+        <briefdescription>
+<para>Returns <emphasis>range</emphasis> as a <computeroutput>quint8</computeroutput> as a convenience for assigning to services&apos; <computeroutput>settings.range</computeroutput> members. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/pokitmeter.h" line="67" column="18" bodyfile="/home/paul/src/dokit/include/qtpokit/pokitmeter.h" bodystart="67" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="pokitmeter_8h_1af783364356175e31c47e2f83c73440a7" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>quint8</type>
+        <definition>quint8 operator+</definition>
+        <argsstring>(PokitMeter::VoltageRange range) noexcept</argsstring>
+        <name>operator+</name>
+        <param>
+          <type><ref refid="namespacePokitMeter_1ab9abf7a50f13c9cfb1e1b4c49c16dfee" kindref="member">PokitMeter::VoltageRange</ref></type>
+          <declname>range</declname>
+        </param>
+        <briefdescription>
+<para>Returns <emphasis>range</emphasis> as a <computeroutput>quint8</computeroutput> as a convenience for assigning to services&apos; <computeroutput>settings.range</computeroutput> members. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/pokitmeter.h" line="70" column="18" bodyfile="/home/paul/src/dokit/include/qtpokit/pokitmeter.h" bodystart="70" bodyend="70"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Declares the <ref refid="namespacePokitMeter" kindref="compound">PokitMeter</ref> namespace. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>SPDX-FileCopyrightText:<sp/>2022-2024<sp/>Paul<sp/>Colby<sp/>&lt;git@colby.id.au&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>SPDX-License-Identifier:<sp/>LGPL-3.0-or-later</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="4"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>\file</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>Declares<sp/>the<sp/>PokitMeter<sp/>namespace.</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>QTPOKIT_POKITMETER_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>QTPOKIT_POKITMETER_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="qtpokit__global_8h" kindref="compound">qtpokit_global.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QVariant&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><ref refid="qtpokit__global_8h_1ac5aca53b48a017f8db467922deee7983" kindref="member">QTPOKIT_BEGIN_NAMESPACE</ref></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="18"><highlight class="comment">///<sp/>Encapsulates<sp/>details<sp/>specific<sp/>to<sp/>Pokit<sp/>Meter<sp/>devices.</highlight></codeline>
+<codeline lineno="19" refid="namespacePokitMeter" refkind="compound"><highlight class="comment"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacePokitMeter" kindref="compound">PokitMeter</ref><sp/>{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Values<sp/>supported<sp/>by<sp/>the<sp/>Pokit<sp/>Meter&apos;s<sp/>`Range`<sp/>attributes<sp/>in<sp/>`*Current`<sp/>modes.</highlight></codeline>
+<codeline lineno="22" refid="namespacePokitMeter_1a22b467360c970e645f6a111b34d50a92" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/><ref refid="namespacePokitMeter_1a22b467360c970e645f6a111b34d50a92" kindref="member">CurrentRange</ref><sp/>:<sp/>quint8<sp/>{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacePokitMeter_1a22b467360c970e645f6a111b34d50a92a828fc0744dbf6304160fefea4b5f9265" kindref="member">_10mA</ref><sp/><sp/><sp/><sp/><sp/>=<sp/>0,<sp/><sp/></highlight><highlight class="comment">///&lt;<sp/>Up<sp/>to<sp/>10mA.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacePokitMeter_1a22b467360c970e645f6a111b34d50a92a6cf453011c81d39c2418e95c9cd9c9df" kindref="member">_30mA</ref><sp/><sp/><sp/><sp/><sp/>=<sp/>1,<sp/><sp/></highlight><highlight class="comment">///&lt;<sp/>Up<sp/>to<sp/>30mA.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacePokitMeter_1a22b467360c970e645f6a111b34d50a92ac599cead1dac0dc8c78c0d593dd9df76" kindref="member">_150mA</ref><sp/><sp/><sp/><sp/>=<sp/>2,<sp/><sp/></highlight><highlight class="comment">///&lt;<sp/>Up<sp/>to<sp/>150mA.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacePokitMeter_1a22b467360c970e645f6a111b34d50a92ab728c73ce23f33f3a68ab57720a5ea77" kindref="member">_300mA</ref><sp/><sp/><sp/><sp/>=<sp/>3,<sp/><sp/></highlight><highlight class="comment">///&lt;<sp/>Up<sp/>to<sp/>300mA.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacePokitMeter_1a22b467360c970e645f6a111b34d50a92a4e21b9650f4279211a4e7180c97b8480" kindref="member">_2A</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>4,<sp/><sp/></highlight><highlight class="comment">///&lt;<sp/>Up<sp/>to<sp/>2A.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacePokitMeter_1a22b467360c970e645f6a111b34d50a92a5c8523b038abf04d86fcc5358cd893cf" kindref="member">AutoRange</ref><sp/>=<sp/>255<sp/></highlight><highlight class="comment">///&lt;<sp/>Auto-range.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="qtpokit__global_8h_1aeba02234b4a21ddf98bb8127b8d41759" kindref="member">QTPOKIT_EXPORT</ref><sp/><ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref><sp/><ref refid="namespacePokitMeter_1a3c3db7b94b6f44af24f4a23e87a3569e" kindref="member">toString</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceCurrentRange" kindref="compound">CurrentRange</ref><sp/>&amp;range);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="qtpokit__global_8h_1aeba02234b4a21ddf98bb8127b8d41759" kindref="member">QTPOKIT_EXPORT</ref><sp/><ref refid="qvariant" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QVariant</ref><sp/><ref refid="namespacePokitMeter_1a86a4eb262b1a9fde417acdee8eea00b7" kindref="member">maxValue</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceCurrentRange" kindref="compound">CurrentRange</ref><sp/>&amp;range);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="33"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Values<sp/>supported<sp/>by<sp/>the<sp/>Pokit<sp/>Meter&apos;s<sp/>`Range`<sp/>attributes<sp/>in<sp/>`Resistance`<sp/>mode.</highlight></codeline>
+<codeline lineno="34" refid="namespacePokitMeter_1aacf3005969c4417f7eaeeeaf83d5e047" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/><ref refid="namespacePokitMeter_1aacf3005969c4417f7eaeeeaf83d5e047" kindref="member">ResistanceRange</ref><sp/>:<sp/>quint8<sp/>{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacePokitMeter_1aacf3005969c4417f7eaeeeaf83d5e047a900ae15226aa8c0d4fa29e2add4a08c4" kindref="member">_160</ref><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0,<sp/><sp/></highlight><highlight class="comment">///&lt;<sp/>Up<sp/>to<sp/>160Ω.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacePokitMeter_1aacf3005969c4417f7eaeeeaf83d5e047a44c86547d0ddac7860e857aba92608ea" kindref="member">_330</ref><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>1,<sp/><sp/></highlight><highlight class="comment">///&lt;<sp/>Up<sp/>to<sp/>330Ω.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacePokitMeter_1aacf3005969c4417f7eaeeeaf83d5e047a1565efe7464a002ba8253cea19fb2c16" kindref="member">_890</ref><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>2,<sp/><sp/></highlight><highlight class="comment">///&lt;<sp/>Up<sp/>to<sp/>890Ω.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacePokitMeter_1aacf3005969c4417f7eaeeeaf83d5e047aef1eecc4af34ef7f92e309dfd8b9721a" kindref="member">_1K5</ref><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>3,<sp/><sp/></highlight><highlight class="comment">///&lt;<sp/>Up<sp/>to<sp/>1.5KΩ.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacePokitMeter_1aacf3005969c4417f7eaeeeaf83d5e047a2d0af3ed810f0eb7edb0c6b8a19c1fc3" kindref="member">_10K</ref><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>4,<sp/><sp/></highlight><highlight class="comment">///&lt;<sp/>Up<sp/>to<sp/>10KΩ.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacePokitMeter_1aacf3005969c4417f7eaeeeaf83d5e047a83cfa36debb22f738bf971d42a0f58f7" kindref="member">_100K</ref><sp/><sp/><sp/><sp/><sp/>=<sp/>5,<sp/><sp/></highlight><highlight class="comment">///&lt;<sp/>Up<sp/>to<sp/>100KΩ.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacePokitMeter_1aacf3005969c4417f7eaeeeaf83d5e047a04fe3f2ffbf0343e5e67caca5fdd0069" kindref="member">_470K</ref><sp/><sp/><sp/><sp/><sp/>=<sp/>6,<sp/><sp/></highlight><highlight class="comment">///&lt;<sp/>Up<sp/>to<sp/>470KΩ.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacePokitMeter_1aacf3005969c4417f7eaeeeaf83d5e047a46a66baf429b6426d9ce1b133845d2a8" kindref="member">_1M</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>7,<sp/><sp/></highlight><highlight class="comment">///&lt;<sp/>Up<sp/>to<sp/>1MΩ.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacePokitMeter_1a22b467360c970e645f6a111b34d50a92a5c8523b038abf04d86fcc5358cd893cf" kindref="member">AutoRange</ref><sp/>=<sp/>255<sp/></highlight><highlight class="comment">///&lt;<sp/>Auto-range.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="qtpokit__global_8h_1aeba02234b4a21ddf98bb8127b8d41759" kindref="member">QTPOKIT_EXPORT</ref><sp/><ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref><sp/><ref refid="namespacePokitMeter_1a3c3db7b94b6f44af24f4a23e87a3569e" kindref="member">toString</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceResistanceRange" kindref="compound">ResistanceRange</ref><sp/>&amp;range);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="qtpokit__global_8h_1aeba02234b4a21ddf98bb8127b8d41759" kindref="member">QTPOKIT_EXPORT</ref><sp/><ref refid="qvariant" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QVariant</ref><sp/><ref refid="namespacePokitMeter_1a86a4eb262b1a9fde417acdee8eea00b7" kindref="member">maxValue</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceResistanceRange" kindref="compound">ResistanceRange</ref><sp/>&amp;range);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="48"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Values<sp/>supported<sp/>by<sp/>the<sp/>Pokit<sp/>Meter&apos;s<sp/>`Range`<sp/>attributes<sp/>in<sp/>`*Voltage`<sp/>modes.</highlight></codeline>
+<codeline lineno="49" refid="namespacePokitMeter_1ab9abf7a50f13c9cfb1e1b4c49c16dfee" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/><ref refid="namespacePokitMeter_1ab9abf7a50f13c9cfb1e1b4c49c16dfee" kindref="member">VoltageRange</ref><sp/>:<sp/>quint8<sp/>{</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacePokitMeter_1ab9abf7a50f13c9cfb1e1b4c49c16dfeea59e644560a28139459f614bc629df71b" kindref="member">_300mV</ref><sp/><sp/><sp/><sp/>=<sp/>0,<sp/><sp/></highlight><highlight class="comment">///&lt;<sp/>Up<sp/>to<sp/>300mV.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacePokitMeter_1ab9abf7a50f13c9cfb1e1b4c49c16dfeea848192caa654906dae3d719e1368e0c2" kindref="member">_2V</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>1,<sp/><sp/></highlight><highlight class="comment">///&lt;<sp/>Up<sp/>to<sp/>2V.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacePokitMeter_1ab9abf7a50f13c9cfb1e1b4c49c16dfeeaa77ff71c31e6c3cde192b1baf7d8c663" kindref="member">_6V</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>2,<sp/><sp/></highlight><highlight class="comment">///&lt;<sp/>Up<sp/>to<sp/>6V.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacePokitMeter_1ab9abf7a50f13c9cfb1e1b4c49c16dfeea308ad507e84478351cd8b6f8b09c7490" kindref="member">_12V</ref><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>3,<sp/><sp/></highlight><highlight class="comment">///&lt;<sp/>Up<sp/>to<sp/>12V.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacePokitMeter_1ab9abf7a50f13c9cfb1e1b4c49c16dfeea8e75785537c9af6adcd60131c680cdab" kindref="member">_30V</ref><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>4,<sp/><sp/></highlight><highlight class="comment">///&lt;<sp/>Up<sp/>to<sp/>30V.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacePokitMeter_1ab9abf7a50f13c9cfb1e1b4c49c16dfeea4c8cbd97f19afa487f3b6c98342fd09d" kindref="member">_60V</ref><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>5,<sp/><sp/></highlight><highlight class="comment">///&lt;<sp/>Up<sp/>to<sp/>60V<sp/>DC<sp/>(42V<sp/>AC).</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacePokitMeter_1a22b467360c970e645f6a111b34d50a92a5c8523b038abf04d86fcc5358cd893cf" kindref="member">AutoRange</ref><sp/>=<sp/>255<sp/></highlight><highlight class="comment">///&lt;<sp/>Auto-range.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="qtpokit__global_8h_1aeba02234b4a21ddf98bb8127b8d41759" kindref="member">QTPOKIT_EXPORT</ref><sp/><ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref><sp/><ref refid="namespacePokitMeter_1a3c3db7b94b6f44af24f4a23e87a3569e" kindref="member">toString</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceVoltageRange" kindref="compound">VoltageRange</ref><sp/>&amp;range);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="qtpokit__global_8h_1aeba02234b4a21ddf98bb8127b8d41759" kindref="member">QTPOKIT_EXPORT</ref><sp/><ref refid="qvariant" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QVariant</ref><sp/><ref refid="namespacePokitMeter_1a86a4eb262b1a9fde417acdee8eea00b7" kindref="member">maxValue</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceVoltageRange" kindref="compound">VoltageRange</ref><sp/>&amp;range);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="63"><highlight class="comment">///<sp/>Returns<sp/>\a<sp/>range<sp/>as<sp/>a<sp/>`quint8`<sp/>as<sp/>a<sp/>convenience<sp/>for<sp/>assigning<sp/>to<sp/>services&apos;<sp/>`settings.range`<sp/>members.</highlight></codeline>
+<codeline lineno="64" refid="pokitmeter_8h_1ae19f1ec82fb666136d0861742110211c" refkind="member"><highlight class="comment"></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/>quint8<sp/><ref refid="pokitmeter_8h_1ae19f1ec82fb666136d0861742110211c" kindref="member">operator+</ref>(<ref refid="namespacePokitMeter_1a22b467360c970e645f6a111b34d50a92" kindref="member">PokitMeter::CurrentRange</ref><sp/>range)<sp/></highlight><highlight class="keyword">noexcept</highlight><highlight class="normal"><sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal">quint8</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(range);<sp/>}</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="66"><highlight class="comment">///<sp/>Returns<sp/>\a<sp/>range<sp/>as<sp/>a<sp/>`quint8`<sp/>as<sp/>a<sp/>convenience<sp/>for<sp/>assigning<sp/>to<sp/>services&apos;<sp/>`settings.range`<sp/>members.</highlight></codeline>
+<codeline lineno="67" refid="pokitmeter_8h_1aad3e78653e7dcfdaebe934865a9d44c4" refkind="member"><highlight class="comment"></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/>quint8<sp/><ref refid="pokitmeter_8h_1ae19f1ec82fb666136d0861742110211c" kindref="member">operator+</ref>(<ref refid="namespacePokitMeter_1aacf3005969c4417f7eaeeeaf83d5e047" kindref="member">PokitMeter::ResistanceRange</ref><sp/>range)<sp/></highlight><highlight class="keyword">noexcept</highlight><highlight class="normal"><sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal">quint8</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(range);<sp/>}</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="69"><highlight class="comment">///<sp/>Returns<sp/>\a<sp/>range<sp/>as<sp/>a<sp/>`quint8`<sp/>as<sp/>a<sp/>convenience<sp/>for<sp/>assigning<sp/>to<sp/>services&apos;<sp/>`settings.range`<sp/>members.</highlight></codeline>
+<codeline lineno="70" refid="pokitmeter_8h_1af783364356175e31c47e2f83c73440a7" refkind="member"><highlight class="comment"></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/>quint8<sp/><ref refid="pokitmeter_8h_1ae19f1ec82fb666136d0861742110211c" kindref="member">operator+</ref>(<ref refid="namespacePokitMeter_1ab9abf7a50f13c9cfb1e1b4c49c16dfee" kindref="member">PokitMeter::VoltageRange</ref><sp/>range)<sp/></highlight><highlight class="keyword">noexcept</highlight><highlight class="normal"><sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal">quint8</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(range);<sp/>}</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><ref refid="qtpokit__global_8h_1af2a5fcdf5ad6da4ea4f238aad0d29d65" kindref="member">QTPOKIT_END_NAMESPACE</ref></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>QTPOKIT_POKITMETER_H</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/paul/src/dokit/include/qtpokit/pokitmeter.h"/>
+  </compounddef>
+</doxygen>

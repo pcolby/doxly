@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.0" xml:lang="en-US">
+  <compounddef id="structRatio" kind="struct" language="C++" prot="public">
+    <compoundname>Ratio</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structRatio_1a8e07dbd09bf3610c9e3f2d7ddf3f4691" prot="public" static="no" mutable="no">
+        <type>std::intmax_t</type>
+        <definition>std::intmax_t Ratio::num</definition>
+        <argsstring></argsstring>
+        <name>num</name>
+        <qualifiedname>Ratio::num</qualifiedname>
+        <initializer>{ 0 }</initializer>
+        <briefdescription>
+<para>Numerator. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/abstractcommand.cpp" line="120" column="19" bodyfile="/home/paul/src/dokit/src/cli/abstractcommand.cpp" bodystart="120" bodyend="120"/>
+        <referencedby refid="structRatio_1abbfb48e8ebeec5666385f38b31f94215" compoundref="abstractcommand_8cpp" startline="123" endline="123">isValid</referencedby>
+        <referencedby refid="classAbstractCommand_1a29b2a2446ef034195183a2ae9d4bb911" compoundref="abstractcommand_8cpp" startline="149" endline="218">AbstractCommand::parseNumber</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structRatio_1a9ae669a5646b7743df8d6be0427b918e" prot="public" static="no" mutable="no">
+        <type>std::intmax_t</type>
+        <definition>std::intmax_t Ratio::den</definition>
+        <argsstring></argsstring>
+        <name>den</name>
+        <qualifiedname>Ratio::den</qualifiedname>
+        <initializer>{ 0 }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Denominator. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/abstractcommand.cpp" line="121" column="19" bodyfile="/home/paul/src/dokit/src/cli/abstractcommand.cpp" bodystart="121" bodyend="121"/>
+        <referencedby refid="structRatio_1abbfb48e8ebeec5666385f38b31f94215" compoundref="abstractcommand_8cpp" startline="123" endline="123">isValid</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structRatio_1abbfb48e8ebeec5666385f38b31f94215" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Ratio::isValid</definition>
+        <argsstring>() const</argsstring>
+        <name>isValid</name>
+        <qualifiedname>Ratio::isValid</qualifiedname>
+        <briefdescription>
+<para>Returns <emphasis>true</emphasis> if both <ref refid="structRatio_1a8e07dbd09bf3610c9e3f2d7ddf3f4691" kindref="member">num</ref> and <ref refid="structRatio_1a9ae669a5646b7743df8d6be0427b918e" kindref="member">den</ref> are non-zero. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/abstractcommand.cpp" line="123" column="10" bodyfile="/home/paul/src/dokit/src/cli/abstractcommand.cpp" bodystart="123" bodyend="123"/>
+        <references refid="structRatio_1a9ae669a5646b7743df8d6be0427b918e" compoundref="abstractcommand_8cpp" startline="121" endline="121">den</references>
+        <references refid="structRatio_1a8e07dbd09bf3610c9e3f2d7ddf3f4691" compoundref="abstractcommand_8cpp" startline="120" endline="120">num</references>
+        <referencedby refid="classAbstractCommand_1a29b2a2446ef034195183a2ae9d4bb911" compoundref="abstractcommand_8cpp" startline="149" endline="218">AbstractCommand::parseNumber</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<internal><para>A (run-time) class approximately equivalent to the compile-time std::ratio template. </para>
+</internal>
+    </detaileddescription>
+    <location file="/home/paul/src/dokit/src/cli/abstractcommand.cpp" line="119" column="1" bodyfile="/home/paul/src/dokit/src/cli/abstractcommand.cpp" bodystart="119" bodyend="124"/>
+    <listofallmembers>
+      <member refid="structRatio_1a9ae669a5646b7743df8d6be0427b918e" prot="public" virt="non-virtual"><scope>Ratio</scope><name>den</name></member>
+      <member refid="structRatio_1abbfb48e8ebeec5666385f38b31f94215" prot="public" virt="non-virtual"><scope>Ratio</scope><name>isValid</name></member>
+      <member refid="structRatio_1a8e07dbd09bf3610c9e3f2d7ddf3f4691" prot="public" virt="non-virtual"><scope>Ratio</scope><name>num</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

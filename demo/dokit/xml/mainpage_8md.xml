@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.0" xml:lang="en-US">
+  <compounddef id="mainpage_8md" kind="file" language="Markdown">
+    <compoundname>mainpage.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">#<sp/>QtPokit<sp/>-<sp/>Internal</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">This<sp/>is<sp/>*internal*<sp/>documentation,<sp/>aimed<sp/>at<sp/>developers<sp/>that<sp/>contribute<sp/>to<sp/>the<sp/>QtPokit<sp/>project<sp/>itself.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Building<sp/>from<sp/>Source</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Prototypical<sp/>[CMake][]-based<sp/>out-of-source<sp/>build<sp/>and<sp/>test<sp/>process:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">~~~{.sh}</highlight></codeline>
+<codeline><highlight class="normal">cmake<sp/>-E<sp/>make_directory<sp/>&lt;tmp-build-dir&gt;</highlight></codeline>
+<codeline><highlight class="normal">cmake<sp/>-D<sp/>CMAKE_BUILD_TYPE=Release<sp/>-S<sp/>&lt;path-to-cloned-repo&gt;<sp/>-B<sp/>&lt;tmp-build-dir&gt;</highlight></codeline>
+<codeline><highlight class="normal">cmake<sp/>--build<sp/>&lt;tmp-build-dir&gt;</highlight></codeline>
+<codeline><highlight class="normal">ctest<sp/>--test-dir<sp/>&lt;tmp-build-dir&gt;<sp/>--verbose</highlight></codeline>
+<codeline><highlight class="normal">~~~</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Test<sp/>Coverage</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Similar<sp/>to<sp/>above,<sp/>but<sp/>specify<sp/>`ENABLE_COVERAGE=YES`,<sp/>which<sp/>will<sp/>add<sp/>dependencies<sp/>on<sp/>[gcov][]<sp/>and<sp/>[LCOV][].</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">~~~{.sh}</highlight></codeline>
+<codeline><highlight class="normal">cmake<sp/>-E<sp/>make_directory<sp/>&lt;tmp-build-dir&gt;</highlight></codeline>
+<codeline><highlight class="normal">cmake<sp/>-D<sp/>CMAKE_BUILD_TYPE=Release<sp/>-S<sp/>&lt;path-to-cloned-repo&gt;<sp/>-B<sp/>&lt;tmp-build-dir&gt;</highlight></codeline>
+<codeline><highlight class="normal">cmake<sp/>--build<sp/>&lt;tmp-build-dir&gt;</highlight></codeline>
+<codeline><highlight class="normal">ctest<sp/>--test-dir<sp/>&lt;tmp-build-dir&gt;<sp/>--verbose</highlight></codeline>
+<codeline><highlight class="normal">cmake<sp/>--build<sp/>&lt;tmp-build-dir&gt;<sp/>--target<sp/>coverage<sp/>coverage-html</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>ls<sp/>&lt;tmp-build-dir&gt;/test/coverage.info<sp/>#<sp/>Coverage<sp/>tracefile.</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>ls<sp/>&lt;tmp-build-dir&gt;/test/coverage/<sp/>#<sp/>HTML<sp/>report.</highlight></codeline>
+<codeline><highlight class="normal">~~~</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Documentation</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Configure<sp/>the<sp/>same<sp/>as<sp/>above,<sp/>but<sp/>build<sp/>the<sp/>`doc`<sp/>and<sp/>(optionally)<sp/>`doc-internal`<sp/>targets.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">~~~{.sh}</highlight></codeline>
+<codeline><highlight class="normal">cmake<sp/>-E<sp/>make_directory<sp/>&lt;tmp-build-dir&gt;</highlight></codeline>
+<codeline><highlight class="normal">cmake<sp/>-S<sp/>&lt;path-to-cloned-repo&gt;<sp/>-B<sp/>&lt;tmp-build-dir&gt;</highlight></codeline>
+<codeline><highlight class="normal">cmake<sp/>--build<sp/>&lt;tmp-build-dir&gt;<sp/>--target<sp/>doc<sp/>doc-internal</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>ls<sp/>&lt;tmp-build-dir&gt;/doc/public<sp/><sp/><sp/><sp/>#<sp/>Library<sp/>end-user<sp/>documentation</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>ls<sp/>&lt;tmp-build-dir&gt;/doc/internal<sp/><sp/>#<sp/>Internal<sp/>developer<sp/>documentation</highlight></codeline>
+<codeline><highlight class="normal">~~~</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">[CMake]:<sp/>https://cmake.org/</highlight></codeline>
+<codeline><highlight class="normal">[gcov]:<sp/><sp/>https://gcc.gnu.org/onlinedocs/gcc/Gcov.html<sp/>&quot;gcov<sp/>—<sp/>a<sp/>Test<sp/>Coverage<sp/>Program&quot;</highlight></codeline>
+<codeline><highlight class="normal">[LCOV]:<sp/><sp/>http://ltp.sourceforge.net/coverage/lcov.php<sp/>&quot;LCOV<sp/>—<sp/>the<sp/>LTP<sp/>GCOV<sp/>extension&quot;</highlight></codeline>
+    </programlisting>
+    <location file="/home/paul/src/dokit/doc/src/internal/mainpage.md"/>
+  </compounddef>
+</doxygen>

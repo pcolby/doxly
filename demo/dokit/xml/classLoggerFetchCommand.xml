@@ -1,0 +1,660 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.0" xml:lang="en-US">
+  <compounddef id="classLoggerFetchCommand" kind="class" language="C++" prot="public">
+    <compoundname>LoggerFetchCommand</compoundname>
+    <basecompoundref refid="classDeviceCommand" prot="public" virt="non-virtual">DeviceCommand</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classLoggerFetchCommand_1a2320991b33aa1c83d674829d3e566333" prot="private" static="no" mutable="no">
+        <type><ref refid="classDataLoggerService" kindref="compound">DataLoggerService</ref> *</type>
+        <definition>DataLoggerService* LoggerFetchCommand::service</definition>
+        <argsstring></argsstring>
+        <name>service</name>
+        <qualifiedname>LoggerFetchCommand::service</qualifiedname>
+        <initializer>{ nullptr }</initializer>
+        <briefdescription>
+<para>Bluetooth service this command interracts with. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/loggerfetchcommand.h" line="22" column="5" bodyfile="/home/paul/src/dokit/src/cli/loggerfetchcommand.h" bodystart="22" bodyend="22"/>
+        <referencedby refid="classLoggerFetchCommand_1a42654138dfb822007275146802a2c26f" compoundref="loggerfetchcommand_8cpp" startline="42" endline="52">getService</referencedby>
+        <referencedby refid="classLoggerFetchCommand_1ad77b93a8a2ccad9ee9aaacd67f49689e" compoundref="loggerfetchcommand_8cpp" startline="71" endline="84">metadataRead</referencedby>
+        <referencedby refid="classLoggerFetchCommand_1a2f093386853fc6667de091a0e921a665" compoundref="loggerfetchcommand_8cpp" startline="89" endline="140">outputSamples</referencedby>
+        <referencedby refid="classLoggerFetchCommand_1a87a6be7a1babc635129434b3ed3ae104" compoundref="loggerfetchcommand_8cpp" startline="59" endline="66">serviceDetailsDiscovered</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classLoggerFetchCommand_1a0cfcd615d5febcfd95b34a88091d7839" prot="private" static="no" mutable="no">
+        <type><ref refid="structDataLoggerService_1_1Metadata" kindref="compound">DataLoggerService::Metadata</ref></type>
+        <definition>DataLoggerService::Metadata LoggerFetchCommand::metadata</definition>
+        <argsstring></argsstring>
+        <name>metadata</name>
+        <qualifiedname>LoggerFetchCommand::metadata</qualifiedname>
+        <briefdescription>
+<para>Most recent data logging metadata. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/loggerfetchcommand.h" line="23" column="33" bodyfile="/home/paul/src/dokit/src/cli/loggerfetchcommand.h" bodystart="23" bodyend="-1"/>
+        <referencedby refid="classLoggerFetchCommand_1ad77b93a8a2ccad9ee9aaacd67f49689e" compoundref="loggerfetchcommand_8cpp" startline="71" endline="84">metadataRead</referencedby>
+        <referencedby refid="classLoggerFetchCommand_1a2f093386853fc6667de091a0e921a665" compoundref="loggerfetchcommand_8cpp" startline="89" endline="140">outputSamples</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classLoggerFetchCommand_1a04a05bff3bc50f8b87a10f7472de26b7" prot="private" static="no" mutable="no">
+        <type>qint32</type>
+        <definition>qint32 LoggerFetchCommand::samplesToGo</definition>
+        <argsstring></argsstring>
+        <name>samplesToGo</name>
+        <qualifiedname>LoggerFetchCommand::samplesToGo</qualifiedname>
+        <initializer>{ 0 }</initializer>
+        <briefdescription>
+<para>Number of samples we&apos;re still expecting to receive. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/loggerfetchcommand.h" line="24" column="12" bodyfile="/home/paul/src/dokit/src/cli/loggerfetchcommand.h" bodystart="24" bodyend="24"/>
+        <referencedby refid="classLoggerFetchCommand_1ad77b93a8a2ccad9ee9aaacd67f49689e" compoundref="loggerfetchcommand_8cpp" startline="71" endline="84">metadataRead</referencedby>
+        <referencedby refid="classLoggerFetchCommand_1a2f093386853fc6667de091a0e921a665" compoundref="loggerfetchcommand_8cpp" startline="89" endline="140">outputSamples</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classLoggerFetchCommand_1a9e1ed2a86fc05613415937e23759936e" prot="private" static="no" mutable="no">
+        <type>quint64</type>
+        <definition>quint64 LoggerFetchCommand::timestamp</definition>
+        <argsstring></argsstring>
+        <name>timestamp</name>
+        <qualifiedname>LoggerFetchCommand::timestamp</qualifiedname>
+        <initializer>{ 0 }</initializer>
+        <briefdescription>
+<para>Current sample&apos;s epoch milliseconds timestamp. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/loggerfetchcommand.h" line="25" column="13" bodyfile="/home/paul/src/dokit/src/cli/loggerfetchcommand.h" bodystart="25" bodyend="25"/>
+        <referencedby refid="classLoggerFetchCommand_1ad77b93a8a2ccad9ee9aaacd67f49689e" compoundref="loggerfetchcommand_8cpp" startline="71" endline="84">metadataRead</referencedby>
+        <referencedby refid="classLoggerFetchCommand_1a2f093386853fc6667de091a0e921a665" compoundref="loggerfetchcommand_8cpp" startline="89" endline="140">outputSamples</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classLoggerFetchCommand_1a2ac15b24db2ef86974c0034d7cb88c3f" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool LoggerFetchCommand::showCsvHeader</definition>
+        <argsstring></argsstring>
+        <name>showCsvHeader</name>
+        <qualifiedname>LoggerFetchCommand::showCsvHeader</qualifiedname>
+        <initializer>{ true }</initializer>
+        <briefdescription>
+<para>Whether or not to show a header as the first line of CSV output. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/loggerfetchcommand.h" line="26" column="10" bodyfile="/home/paul/src/dokit/src/cli/loggerfetchcommand.h" bodystart="26" bodyend="26"/>
+        <referencedby refid="classLoggerFetchCommand_1a2f093386853fc6667de091a0e921a665" compoundref="loggerfetchcommand_8cpp" startline="89" endline="140">outputSamples</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="classLoggerFetchCommand_1a50cf7cea1d074a22a955db0e4c078249" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class TestLoggerFetchCommand</definition>
+        <argsstring></argsstring>
+        <name>TestLoggerFetchCommand</name>
+        <qualifiedname>LoggerFetchCommand::TestLoggerFetchCommand</qualifiedname>
+        <param>
+          <type>TestLoggerFetchCommand</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/loggerfetchcommand.h" line="32" column="18" bodyfile="/home/paul/src/dokit/src/cli/loggerfetchcommand.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classLoggerFetchCommand_1a478ae0a53ab31a494818a1eed08755e6" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>LoggerFetchCommand::LoggerFetchCommand</definition>
+        <argsstring>(QObject *const parent=nullptr)</argsstring>
+        <name>LoggerFetchCommand</name>
+        <qualifiedname>LoggerFetchCommand::LoggerFetchCommand</qualifiedname>
+        <param>
+          <type><ref refid="qobject" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QObject</ref> *const</type>
+          <declname>parent</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+<para>Construct a new <ref refid="classLoggerFetchCommand" kindref="compound">LoggerFetchCommand</ref> object with <emphasis>parent</emphasis>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/loggerfetchcommand.h" line="13" column="14" bodyfile="/home/paul/src/dokit/src/cli/loggerfetchcommand.cpp" bodystart="32" bodyend="35"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classLoggerFetchCommand_1a42654138dfb822007275146802a2c26f" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classAbstractPokitService" kindref="compound">AbstractPokitService</ref> *</type>
+        <definition>AbstractPokitService * LoggerFetchCommand::getService</definition>
+        <argsstring>() override</argsstring>
+        <name>getService</name>
+        <qualifiedname>LoggerFetchCommand::getService</qualifiedname>
+        <reimplements refid="classDeviceCommand_1af7a724ae722462b6fa15dc6269aadd15">getService</reimplements>
+        <briefdescription>
+<para>Returns a Pokit service object for the derived command class.    </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This override returns a pointer to a <ref refid="classDataLoggerService" kindref="compound">DataLoggerService</ref> object. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/loggerfetchcommand.h" line="16" column="27" bodyfile="/home/paul/src/dokit/src/cli/loggerfetchcommand.cpp" bodystart="42" bodyend="52"/>
+        <references refid="qobject_1connect-4">QObject::connect</references>
+        <references refid="classPokitDevice_1a77d94b8b0cf19bdbbd8f994e3c66c961" compoundref="pokitdevice_8cpp" startline="129" endline="132">PokitDevice::dataLogger</references>
+        <references refid="classDeviceCommand_1a2bbf2dc9bb0ba85a2bf29263746c7b57" compoundref="devicecommand_8h" startline="26" endline="26">DeviceCommand::device</references>
+        <references refid="classDataLoggerService_1a637460cb26b0d448760544ecba6de468">DataLoggerService::metadataRead</references>
+        <references refid="classLoggerFetchCommand_1ad77b93a8a2ccad9ee9aaacd67f49689e" compoundref="loggerfetchcommand_8cpp" startline="71" endline="84">metadataRead</references>
+        <references refid="classLoggerFetchCommand_1a2f093386853fc6667de091a0e921a665" compoundref="loggerfetchcommand_8cpp" startline="89" endline="140">outputSamples</references>
+        <references refid="classDataLoggerService_1a4f3e86b3300ebd0f0b212cabf8da90a0">DataLoggerService::samplesRead</references>
+        <references refid="classLoggerFetchCommand_1a2320991b33aa1c83d674829d3e566333" compoundref="loggerfetchcommand_8h" startline="22" endline="22">service</references>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-slot">
+      <memberdef kind="slot" id="classLoggerFetchCommand_1a87a6be7a1babc635129434b3ed3ae104" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LoggerFetchCommand::serviceDetailsDiscovered</definition>
+        <argsstring>() override</argsstring>
+        <name>serviceDetailsDiscovered</name>
+        <qualifiedname>LoggerFetchCommand::serviceDetailsDiscovered</qualifiedname>
+        <briefdescription>
+<para>Handles service detail discovery events.    </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This override fetches the current device&apos;s status, and outputs it in the selected format. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/loggerfetchcommand.h" line="19" column="10" bodyfile="/home/paul/src/dokit/src/cli/loggerfetchcommand.cpp" bodystart="59" bodyend="66"/>
+        <references refid="classDataLoggerService_1a0c63e3cdbc6b39ab68b8442b77938049" compoundref="dataloggerservice_8cpp" startline="267" endline="271">DataLoggerService::enableMetadataNotifications</references>
+        <references refid="classDataLoggerService_1a2b9d2cad9b7b937a2fd20517c5ba825e" compoundref="dataloggerservice_8cpp" startline="293" endline="297">DataLoggerService::enableReadingNotifications</references>
+        <references refid="classDataLoggerService_1a4c9e68b94b0fba82a979bb7e0b0adab4" compoundref="dataloggerservice_8cpp" startline="227" endline="233">DataLoggerService::fetchSamples</references>
+        <references refid="classLoggerFetchCommand_1a2320991b33aa1c83d674829d3e566333" compoundref="loggerfetchcommand_8h" startline="22" endline="22">service</references>
+        <references refid="classDeviceCommand_1a906fd97d832be0e8d2ba1c917fba41db" compoundref="devicecommand_8cpp" startline="331" endline="334">DeviceCommand::serviceDetailsDiscovered</references>
+        <references refid="qobject_1tr">QObject::tr</references>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-slot">
+      <memberdef kind="slot" id="classLoggerFetchCommand_1ad77b93a8a2ccad9ee9aaacd67f49689e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LoggerFetchCommand::metadataRead</definition>
+        <argsstring>(const DataLoggerService::Metadata &amp;data)</argsstring>
+        <name>metadataRead</name>
+        <qualifiedname>LoggerFetchCommand::metadataRead</qualifiedname>
+        <param>
+          <type>const <ref refid="structDataLoggerService_1_1Metadata" kindref="compound">DataLoggerService::Metadata</ref> &amp;</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>Invoked when <emphasis>metadata</emphasis> has been received from the data logger. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/loggerfetchcommand.h" line="29" column="10" bodyfile="/home/paul/src/dokit/src/cli/loggerfetchcommand.cpp" bodystart="71" bodyend="84"/>
+        <references refid="qdatetime_1fromSecsSinceEpoch-2">QDateTime::fromSecsSinceEpoch</references>
+        <references refid="classLoggerFetchCommand_1a0cfcd615d5febcfd95b34a88091d7839" compoundref="loggerfetchcommand_8h" startline="23">metadata</references>
+        <references refid="structDataLoggerService_1_1Metadata_1ac976c83a69d67fbd287d9ae406582d81" compoundref="dataloggerservice_8h" startline="87">DataLoggerService::Metadata::mode</references>
+        <references refid="structDataLoggerService_1_1Metadata_1a5e40e39f2d21dbf609403f111537b2b0" compoundref="dataloggerservice_8h" startline="90">DataLoggerService::Metadata::numberOfSamples</references>
+        <references refid="structDataLoggerService_1_1Metadata_1a4d54eb6eeb9dd6415f3729bfea2ce3a3" compoundref="dataloggerservice_8h" startline="88">DataLoggerService::Metadata::range</references>
+        <references refid="classLoggerFetchCommand_1a04a05bff3bc50f8b87a10f7472de26b7" compoundref="loggerfetchcommand_8h" startline="24" endline="24">samplesToGo</references>
+        <references refid="structDataLoggerService_1_1Metadata_1a824ce9f37293e435d41af31788145571" compoundref="dataloggerservice_8h" startline="86">DataLoggerService::Metadata::scale</references>
+        <references refid="classLoggerFetchCommand_1a2320991b33aa1c83d674829d3e566333" compoundref="loggerfetchcommand_8h" startline="22" endline="22">service</references>
+        <references refid="structDataLoggerService_1_1Metadata_1a996d2701f1571bbbe51da18d2be3e2b8" compoundref="dataloggerservice_8h" startline="85">DataLoggerService::Metadata::status</references>
+        <references refid="structDataLoggerService_1_1Metadata_1a67edabb3d6dbd9c9d425bd825f72d23b" compoundref="dataloggerservice_8h" startline="91">DataLoggerService::Metadata::timestamp</references>
+        <references refid="classLoggerFetchCommand_1a9e1ed2a86fc05613415937e23759936e" compoundref="loggerfetchcommand_8h" startline="25" endline="25">timestamp</references>
+        <references refid="classDataLoggerService_1a4c696b7500e666959bbec4b0ed677d5d" compoundref="dataloggerservice_8cpp" startline="27" endline="38">DataLoggerService::toString</references>
+        <references refid="qobject_1tr">QObject::tr</references>
+        <references refid="structDataLoggerService_1_1Metadata_1a9cc636b875d630cf33d3ddead54e27d2" compoundref="dataloggerservice_8h" startline="89">DataLoggerService::Metadata::updateInterval</references>
+        <referencedby refid="classLoggerFetchCommand_1a42654138dfb822007275146802a2c26f" compoundref="loggerfetchcommand_8cpp" startline="42" endline="52">getService</referencedby>
+      </memberdef>
+      <memberdef kind="slot" id="classLoggerFetchCommand_1a2f093386853fc6667de091a0e921a665" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LoggerFetchCommand::outputSamples</definition>
+        <argsstring>(const DataLoggerService::Samples &amp;samples)</argsstring>
+        <name>outputSamples</name>
+        <qualifiedname>LoggerFetchCommand::outputSamples</qualifiedname>
+        <param>
+          <type>const <ref refid="classDataLoggerService_1a59612dc26aa6b9a6d57be1014b04581b" kindref="member">DataLoggerService::Samples</ref> &amp;</type>
+          <declname>samples</declname>
+        </param>
+        <briefdescription>
+<para>Outputs logger <emphasis>samples</emphasis> in the selected ouput format. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/loggerfetchcommand.h" line="30" column="10" bodyfile="/home/paul/src/dokit/src/cli/loggerfetchcommand.cpp" bodystart="89" bodyend="140"/>
+        <references refid="classDataLoggerService_1ab7fc5073f8ab9d5e93ba7006df685771a7b39f260051ef745ddba9fc57ac23ff9">DataLoggerService::AcCurrent</references>
+        <references refid="classDataLoggerService_1ab7fc5073f8ab9d5e93ba7006df685771a9f01dfb531bd23d5cb9c2bb2e49d685e">DataLoggerService::AcVoltage</references>
+        <references refid="qstring_1arg-14">QString::arg</references>
+        <references refid="classAbstractCommand_1aa2dadc72289ff2b0a02c1fb435f8a4dcab20daea8bfacec3891fcf5b7be4adca0">AbstractCommand::Csv</references>
+        <references refid="classDataLoggerService_1ab7fc5073f8ab9d5e93ba7006df685771af2a03b2c98a6620d4bf33af69572898e">DataLoggerService::DcCurrent</references>
+        <references refid="classDataLoggerService_1ab7fc5073f8ab9d5e93ba7006df685771a1a18453c20867d5a990479b3716cbbc5">DataLoggerService::DcVoltage</references>
+        <references refid="classDeviceCommand_1a2bbf2dc9bb0ba85a2bf29263746c7b57" compoundref="devicecommand_8h" startline="26" endline="26">DeviceCommand::device</references>
+        <references refid="classDeviceCommand_1ae619166395b5651f1316fd5336d9fa2c" compoundref="devicecommand_8cpp" startline="42" endline="49">DeviceCommand::disconnect</references>
+        <references refid="classAbstractCommand_1a881d85cd96b6fcc0652b916c366dda7b" compoundref="abstractcommand_8h" startline="43" endline="43">AbstractCommand::format</references>
+        <references refid="qstring_1fromLatin1-1">QString::fromLatin1</references>
+        <references refid="qdatetime_1fromMSecsSinceEpoch-2">QDateTime::fromMSecsSinceEpoch</references>
+        <references refid="qstring_1fromUtf8-1">QString::fromUtf8</references>
+        <references refid="qstring_1isEmpty">QString::isEmpty</references>
+        <references refid="qt_1DateFormat-enum">Qt::ISODateWithMs</references>
+        <references refid="classAbstractCommand_1aa2dadc72289ff2b0a02c1fb435f8a4dcaeed8d85b888a6c015834240885ee6333">AbstractCommand::Json</references>
+        <references refid="classLoggerFetchCommand_1a0cfcd615d5febcfd95b34a88091d7839" compoundref="loggerfetchcommand_8h" startline="23">metadata</references>
+        <references refid="structDataLoggerService_1_1Metadata_1ac976c83a69d67fbd287d9ae406582d81" compoundref="dataloggerservice_8h" startline="87">DataLoggerService::Metadata::mode</references>
+        <references refid="qstring_1number-6">QString::number</references>
+        <references refid="structDataLoggerService_1_1Metadata_1a5e40e39f2d21dbf609403f111537b2b0" compoundref="dataloggerservice_8h" startline="90">DataLoggerService::Metadata::numberOfSamples</references>
+        <references refid="structDataLoggerService_1_1Metadata_1a4d54eb6eeb9dd6415f3729bfea2ce3a3" compoundref="dataloggerservice_8h" startline="88">DataLoggerService::Metadata::range</references>
+        <references refid="classLoggerFetchCommand_1a04a05bff3bc50f8b87a10f7472de26b7" compoundref="loggerfetchcommand_8h" startline="24" endline="24">samplesToGo</references>
+        <references refid="structDataLoggerService_1_1Metadata_1a824ce9f37293e435d41af31788145571" compoundref="dataloggerservice_8h" startline="86">DataLoggerService::Metadata::scale</references>
+        <references refid="classLoggerFetchCommand_1a2320991b33aa1c83d674829d3e566333" compoundref="loggerfetchcommand_8h" startline="22" endline="22">service</references>
+        <references refid="classLoggerFetchCommand_1a2ac15b24db2ef86974c0034d7cb88c3f" compoundref="loggerfetchcommand_8h" startline="26" endline="26">showCsvHeader</references>
+        <references refid="classDataLoggerService_1ab7fc5073f8ab9d5e93ba7006df685771aee7a8e262285ed49ea1b4e4ae11525bd">DataLoggerService::Temperature</references>
+        <references refid="classAbstractCommand_1aa2dadc72289ff2b0a02c1fb435f8a4dca9dffbf69ffba8bc38bc4e01abf4b1675">AbstractCommand::Text</references>
+        <references refid="structDataLoggerService_1_1Metadata_1a67edabb3d6dbd9c9d425bd825f72d23b" compoundref="dataloggerservice_8h" startline="91">DataLoggerService::Metadata::timestamp</references>
+        <references refid="classLoggerFetchCommand_1a9e1ed2a86fc05613415937e23759936e" compoundref="loggerfetchcommand_8h" startline="25" endline="25">timestamp</references>
+        <references refid="qjsondocument_1toJson">QJsonDocument::toJson</references>
+        <references refid="qbytearray_1toStdString">QByteArray::toStdString</references>
+        <references refid="classDataLoggerService_1a4c696b7500e666959bbec4b0ed677d5d" compoundref="dataloggerservice_8cpp" startline="27" endline="38">DataLoggerService::toString</references>
+        <references refid="qdatetime_1toString-2">QDateTime::toString</references>
+        <references refid="qobject_1tr">QObject::tr</references>
+        <references refid="structDataLoggerService_1_1Metadata_1a9cc636b875d630cf33d3ddead54e27d2" compoundref="dataloggerservice_8h" startline="89">DataLoggerService::Metadata::updateInterval</references>
+        <referencedby refid="classLoggerFetchCommand_1a42654138dfb822007275146802a2c26f" compoundref="loggerfetchcommand_8cpp" startline="42" endline="52">getService</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>The <ref refid="classLoggerFetchCommand" kindref="compound">LoggerFetchCommand</ref> class implements the <computeroutput>logger</computeroutput> CLI command. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>AbstractCommand</label>
+        <link refid="classAbstractCommand"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>DeviceCommand</label>
+        <link refid="classDeviceCommand"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>LoggerFetchCommand</label>
+        <link refid="classLoggerFetchCommand"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>QObject</label>
+        <link refid="qobject" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>AbstractCommand</label>
+        <link refid="classAbstractCommand"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>deviceToScanFor</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>discoveryAgent</edgelabel>
+        </childnode>
+      </node>
+      <node id="13">
+        <label>AbstractPokitService</label>
+        <link refid="classAbstractPokitService"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>d_ptr</edgelabel>
+        </childnode>
+      </node>
+      <node id="14">
+        <label>AbstractPokitServicePrivate</label>
+        <link refid="classAbstractPokitServicePrivate"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>controller</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>service</edgelabel>
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>serviceUuid</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>q_ptr</edgelabel>
+        </childnode>
+      </node>
+      <node id="12">
+        <label>CalibrationService</label>
+        <link refid="classCalibrationService"/>
+        <childnode refid="13" relation="public-inheritance">
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>serviceUuid</edgelabel>
+        </childnode>
+      </node>
+      <node id="18">
+        <label>DataLoggerService</label>
+        <link refid="classDataLoggerService"/>
+        <childnode refid="13" relation="public-inheritance">
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>serviceUuid</edgelabel>
+        </childnode>
+      </node>
+      <node id="24">
+        <label>DataLoggerService::Metadata</label>
+        <link refid="structDataLoggerService_1_1Metadata"/>
+      </node>
+      <node id="2">
+        <label>DeviceCommand</label>
+        <link refid="classDeviceCommand"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>device</edgelabel>
+        </childnode>
+      </node>
+      <node id="19">
+        <label>DeviceInfoService</label>
+        <link refid="classDeviceInfoService"/>
+        <childnode refid="13" relation="public-inheritance">
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>serviceUuid</edgelabel>
+        </childnode>
+      </node>
+      <node id="20">
+        <label>DsoService</label>
+        <link refid="classDsoService"/>
+        <childnode refid="13" relation="public-inheritance">
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>serviceUuid</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>LoggerFetchCommand</label>
+        <link refid="classLoggerFetchCommand"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="18" relation="usage">
+          <edgelabel>service</edgelabel>
+        </childnode>
+        <childnode refid="24" relation="usage">
+          <edgelabel>metadata</edgelabel>
+        </childnode>
+      </node>
+      <node id="21">
+        <label>MultimeterService</label>
+        <link refid="classMultimeterService"/>
+        <childnode refid="13" relation="public-inheritance">
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>serviceUuid</edgelabel>
+        </childnode>
+      </node>
+      <node id="9">
+        <label>PokitDevice</label>
+        <link refid="classPokitDevice"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>d_ptr</edgelabel>
+        </childnode>
+      </node>
+      <node id="10">
+        <label>PokitDevicePrivate</label>
+        <link refid="classPokitDevicePrivate"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>controller</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>calibration</edgelabel>
+        </childnode>
+        <childnode refid="18" relation="usage">
+          <edgelabel>dataLogger</edgelabel>
+        </childnode>
+        <childnode refid="19" relation="usage">
+          <edgelabel>deviceInfo</edgelabel>
+        </childnode>
+        <childnode refid="20" relation="usage">
+          <edgelabel>dso</edgelabel>
+        </childnode>
+        <childnode refid="21" relation="usage">
+          <edgelabel>multimeter</edgelabel>
+        </childnode>
+        <childnode refid="22" relation="usage">
+          <edgelabel>status</edgelabel>
+        </childnode>
+        <childnode refid="23" relation="usage">
+          <edgelabel>calibrationMutex</edgelabel>
+          <edgelabel>dataLoggerMutex</edgelabel>
+          <edgelabel>deviceInfoMutex</edgelabel>
+          <edgelabel>dsoMutex</edgelabel>
+          <edgelabel>multimeterMutex</edgelabel>
+          <edgelabel>statusMutex</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>q_ptr</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>PokitDiscoveryAgent</label>
+        <link refid="classPokitDiscoveryAgent"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>d_ptr</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>PokitDiscoveryAgentPrivate</label>
+        <link refid="classPokitDiscoveryAgentPrivate"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>q_ptr</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>QBluetoothDeviceDiscoveryAgent</label>
+        <link refid="qbluetoothdevicediscoveryagent" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>QBluetoothUuid</label>
+        <link refid="qbluetoothuuid" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags"/>
+        <childnode refid="17" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>QLowEnergyController</label>
+        <link refid="qlowenergycontroller" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>QLowEnergyService</label>
+        <link refid="qlowenergyservice" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>QMutex</label>
+        <link refid="qmutex" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags"/>
+      </node>
+      <node id="4">
+        <label>QObject</label>
+        <link refid="qobject" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags"/>
+      </node>
+      <node id="5">
+        <label>QString</label>
+        <link refid="qstring" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags"/>
+      </node>
+      <node id="17">
+        <label>QUuid</label>
+        <link refid="quuid" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags"/>
+      </node>
+      <node id="22">
+        <label>StatusService</label>
+        <link refid="classStatusService"/>
+        <childnode refid="13" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/paul/src/dokit/src/cli/loggerfetchcommand.h" line="8" column="1" bodyfile="/home/paul/src/dokit/src/cli/loggerfetchcommand.h" bodystart="9" bodyend="33"/>
+    <listofallmembers>
+      <member refid="classAbstractCommand_1a0d6fde269511e87aa6f178c1733073ae" prot="public" virt="non-virtual"><scope>LoggerFetchCommand</scope><name>AbstractCommand</name></member>
+      <member refid="qobject_1objectName-prop" prot="public" virt="non-virtual"><scope>LoggerFetchCommand</scope><name>bindableObjectName</name></member>
+      <member refid="qobject_1blockSignals" prot="public" virt="non-virtual"><scope>LoggerFetchCommand</scope><name>blockSignals</name></member>
+      <member refid="qobject_1childEvent" prot="protected" virt="virtual"><scope>LoggerFetchCommand</scope><name>childEvent</name></member>
+      <member refid="qobject_1children" prot="public" virt="non-virtual"><scope>LoggerFetchCommand</scope><name>children</name></member>
+      <member refid="qobject_1connect-4" prot="public" virt="non-virtual"><scope>LoggerFetchCommand</scope><name>connect</name></member>
+      <member refid="qobject_1connect-5" prot="public" virt="non-virtual"><scope>LoggerFetchCommand</scope><name>connect</name></member>
+      <member refid="qobject_1connect-3" prot="public" virt="non-virtual"><scope>LoggerFetchCommand</scope><name>connect</name></member>
+      <member refid="qobject_1connect-1" prot="public" virt="non-virtual"><scope>LoggerFetchCommand</scope><name>connect</name></member>
+      <member refid="qobject_1connect" prot="public" virt="non-virtual"><scope>LoggerFetchCommand</scope><name>connect</name></member>
+      <member refid="qobject_1connect-2" prot="public" virt="non-virtual"><scope>LoggerFetchCommand</scope><name>connect</name></member>
+      <member refid="qobject_1connectNotify" prot="protected" virt="virtual"><scope>LoggerFetchCommand</scope><name>connectNotify</name></member>
+      <member refid="classDeviceCommand_1a28461c0fe3f2b3398c74298b3df70b93" prot="protected" virt="virtual"><scope>LoggerFetchCommand</scope><name>controllerError</name></member>
+      <member refid="qobject_1customEvent" prot="protected" virt="virtual"><scope>LoggerFetchCommand</scope><name>customEvent</name></member>
+      <member refid="qobject_1deleteLater" prot="public" virt="non-virtual"><scope>LoggerFetchCommand</scope><name>deleteLater</name></member>
+      <member refid="qobject_1destroyed" prot="public" virt="non-virtual"><scope>LoggerFetchCommand</scope><name>destroyed</name></member>
+      <member refid="classDeviceCommand_1a2bbf2dc9bb0ba85a2bf29263746c7b57" prot="protected" virt="non-virtual"><scope>LoggerFetchCommand</scope><name>device</name></member>
+      <member refid="classDeviceCommand_1a55c623ad1d1e0ad1273604f3f24b1dfc" prot="public" virt="non-virtual"><scope>LoggerFetchCommand</scope><name>DeviceCommand</name></member>
+      <member refid="classDeviceCommand_1a525ae4429c2b9a325bad62678409fb5b" prot="protected" virt="virtual"><scope>LoggerFetchCommand</scope><name>deviceDisconnected</name></member>
+      <member refid="classDeviceCommand_1acde5a41e646a23c5485b67cf99e402a7" prot="private" virt="non-virtual"><scope>LoggerFetchCommand</scope><name>deviceDiscovered</name></member>
+      <member refid="classDeviceCommand_1a7dfdaae89c5f6540af9a5bfbcfd66e5a" prot="private" virt="non-virtual"><scope>LoggerFetchCommand</scope><name>deviceDiscoveryFinished</name></member>
+      <member refid="classAbstractCommand_1a07d979bc039d61f5c720cb1521b31208" prot="protected" virt="non-virtual"><scope>LoggerFetchCommand</scope><name>deviceToScanFor</name></member>
+      <member refid="classDeviceCommand_1ae619166395b5651f1316fd5336d9fa2c" prot="protected" virt="non-virtual"><scope>LoggerFetchCommand</scope><name>disconnect</name></member>
+      <member refid="qobject_1disconnect-4" prot="public" virt="non-virtual" ambiguityscope="AbstractCommand::"><scope>LoggerFetchCommand</scope><name>disconnect</name></member>
+      <member refid="qobject_1disconnect-5" prot="public" virt="non-virtual" ambiguityscope="AbstractCommand::"><scope>LoggerFetchCommand</scope><name>disconnect</name></member>
+      <member refid="qobject_1disconnect-1" prot="public" virt="non-virtual" ambiguityscope="AbstractCommand::"><scope>LoggerFetchCommand</scope><name>disconnect</name></member>
+      <member refid="qobject_1disconnect" prot="public" virt="non-virtual" ambiguityscope="AbstractCommand::"><scope>LoggerFetchCommand</scope><name>disconnect</name></member>
+      <member refid="qobject_1disconnect-3" prot="public" virt="non-virtual" ambiguityscope="AbstractCommand::"><scope>LoggerFetchCommand</scope><name>disconnect</name></member>
+      <member refid="qobject_1disconnect-2" prot="public" virt="non-virtual" ambiguityscope="AbstractCommand::"><scope>LoggerFetchCommand</scope><name>disconnect</name></member>
+      <member refid="qobject_1disconnectNotify" prot="protected" virt="virtual"><scope>LoggerFetchCommand</scope><name>disconnectNotify</name></member>
+      <member refid="classAbstractCommand_1a86878df43cd818f4a7f333a97dabac3c" prot="protected" virt="non-virtual"><scope>LoggerFetchCommand</scope><name>discoveryAgent</name></member>
+      <member refid="qobject_1dumpObjectInfo" prot="public" virt="non-virtual"><scope>LoggerFetchCommand</scope><name>dumpObjectInfo</name></member>
+      <member refid="qobject_1dumpObjectTree" prot="public" virt="non-virtual"><scope>LoggerFetchCommand</scope><name>dumpObjectTree</name></member>
+      <member refid="qobject_1dynamicPropertyNames" prot="public" virt="non-virtual"><scope>LoggerFetchCommand</scope><name>dynamicPropertyNames</name></member>
+      <member refid="classAbstractCommand_1af85c842568f8a3a893e336e449ef7813" prot="public" virt="non-virtual"><scope>LoggerFetchCommand</scope><name>escapeCsvField</name></member>
+      <member refid="qobject_1event" prot="public" virt="virtual"><scope>LoggerFetchCommand</scope><name>event</name></member>
+      <member refid="qobject_1eventFilter" prot="public" virt="virtual"><scope>LoggerFetchCommand</scope><name>eventFilter</name></member>
+      <member refid="classDeviceCommand_1a792b3771a02cb7f4aff6335045b705bf" prot="protected" virt="non-virtual"><scope>LoggerFetchCommand</scope><name>exitCodeOnDisconnect</name></member>
+      <member refid="qobject_1findChild" prot="public" virt="non-virtual"><scope>LoggerFetchCommand</scope><name>findChild</name></member>
+      <member refid="qobject_1findChildren-1" prot="public" virt="non-virtual"><scope>LoggerFetchCommand</scope><name>findChildren</name></member>
+      <member refid="qobject_1findChildren-2" prot="public" virt="non-virtual"><scope>LoggerFetchCommand</scope><name>findChildren</name></member>
+      <member refid="qobject_1findChildren" prot="public" virt="non-virtual"><scope>LoggerFetchCommand</scope><name>findChildren</name></member>
+      <member refid="classAbstractCommand_1a881d85cd96b6fcc0652b916c366dda7b" prot="protected" virt="non-virtual"><scope>LoggerFetchCommand</scope><name>format</name></member>
+      <member refid="classLoggerFetchCommand_1a42654138dfb822007275146802a2c26f" prot="protected" virt="virtual"><scope>LoggerFetchCommand</scope><name>getService</name></member>
+      <member refid="qobject_1inherits" prot="public" virt="non-virtual"><scope>LoggerFetchCommand</scope><name>inherits</name></member>
+      <member refid="qobject_1installEventFilter" prot="public" virt="non-virtual"><scope>LoggerFetchCommand</scope><name>installEventFilter</name></member>
+      <member refid="qobject_1isQuickItemType" prot="public" virt="non-virtual"><scope>LoggerFetchCommand</scope><name>isQuickItemType</name></member>
+      <member refid="qobject_1isSignalConnected" prot="protected" virt="non-virtual"><scope>LoggerFetchCommand</scope><name>isSignalConnected</name></member>
+      <member refid="qobject_1isWidgetType" prot="public" virt="non-virtual"><scope>LoggerFetchCommand</scope><name>isWidgetType</name></member>
+      <member refid="qobject_1isWindowType" prot="public" virt="non-virtual"><scope>LoggerFetchCommand</scope><name>isWindowType</name></member>
+      <member refid="qobject_1killTimer" prot="public" virt="non-virtual"><scope>LoggerFetchCommand</scope><name>killTimer</name></member>
+      <member refid="classLoggerFetchCommand_1a478ae0a53ab31a494818a1eed08755e6" prot="public" virt="non-virtual"><scope>LoggerFetchCommand</scope><name>LoggerFetchCommand</name></member>
+      <member refid="classLoggerFetchCommand_1a0cfcd615d5febcfd95b34a88091d7839" prot="private" virt="non-virtual"><scope>LoggerFetchCommand</scope><name>metadata</name></member>
+      <member refid="classLoggerFetchCommand_1ad77b93a8a2ccad9ee9aaacd67f49689e" prot="private" virt="non-virtual"><scope>LoggerFetchCommand</scope><name>metadataRead</name></member>
+      <member refid="qobject_1metaObject" prot="public" virt="virtual"><scope>LoggerFetchCommand</scope><name>metaObject</name></member>
+      <member refid="classDeviceCommand_1a8aa676de2533a687cb369e70bb352a4c" prot="protected" virt="non-virtual"><scope>LoggerFetchCommand</scope><name>minCapacitanceRange</name></member>
+      <member refid="classDeviceCommand_1ab5ae0318d3ec2bd4449e710eafafa680" prot="protected" virt="non-virtual"><scope>LoggerFetchCommand</scope><name>minCurrentRange</name></member>
+      <member refid="classDeviceCommand_1abb9d2e113e372130dca9360791e7ce5b" prot="protected" virt="non-virtual"><scope>LoggerFetchCommand</scope><name>minRange</name></member>
+      <member refid="classDeviceCommand_1a1ce3ce094a91ec500e9d50e620b0cc6d" prot="protected" virt="non-virtual"><scope>LoggerFetchCommand</scope><name>minResistanceRange</name></member>
+      <member refid="classDeviceCommand_1a92f7e61dff3d28eda856ea4f95e828fe" prot="protected" virt="non-virtual"><scope>LoggerFetchCommand</scope><name>minVoltageRange</name></member>
+      <member refid="qobject_1moveToThread" prot="public" virt="non-virtual"><scope>LoggerFetchCommand</scope><name>moveToThread</name></member>
+      <member refid="qobject_1objectName-prop" prot="public" virt="non-virtual"><scope>LoggerFetchCommand</scope><name>objectName</name></member>
+      <member refid="qobject_1objectName-prop" prot="public" virt="non-virtual"><scope>LoggerFetchCommand</scope><name>objectName</name></member>
+      <member refid="qobject_1objectNameChanged" prot="public" virt="non-virtual"><scope>LoggerFetchCommand</scope><name>objectNameChanged</name></member>
+      <member refid="classAbstractCommand_1aa2dadc72289ff2b0a02c1fb435f8a4dc" prot="public" virt="non-virtual"><scope>LoggerFetchCommand</scope><name>OutputFormat</name></member>
+      <member refid="classLoggerFetchCommand_1a2f093386853fc6667de091a0e921a665" prot="private" virt="non-virtual"><scope>LoggerFetchCommand</scope><name>outputSamples</name></member>
+      <member refid="qobject_1parent" prot="public" virt="non-virtual"><scope>LoggerFetchCommand</scope><name>parent</name></member>
+      <member refid="classAbstractCommand_1a29b2a2446ef034195183a2ae9d4bb911" prot="public" virt="non-virtual"><scope>LoggerFetchCommand</scope><name>parseNumber</name></member>
+      <member refid="classAbstractCommand_1ad827a18a24776efeb955739459d48f7d" prot="public" virt="virtual"><scope>LoggerFetchCommand</scope><name>processOptions</name></member>
+      <member refid="qobject_1property" prot="public" virt="non-virtual"><scope>LoggerFetchCommand</scope><name>property</name></member>
+      <member refid="qobject_1Q_CLASSINFO" prot="public" virt="non-virtual"><scope>LoggerFetchCommand</scope><name>Q_CLASSINFO</name></member>
+      <member refid="qobject_1Q_EMIT" prot="public" virt="non-virtual"><scope>LoggerFetchCommand</scope><name>Q_EMIT</name></member>
+      <member refid="qobject_1Q_ENUM" prot="public" virt="non-virtual"><scope>LoggerFetchCommand</scope><name>Q_ENUM</name></member>
+      <member refid="qobject_1Q_ENUM_NS" prot="public" virt="non-virtual"><scope>LoggerFetchCommand</scope><name>Q_ENUM_NS</name></member>
+      <member refid="qobject-obsolete_1Q_ENUMS" prot="public" virt="non-virtual"><scope>LoggerFetchCommand</scope><name>Q_ENUMS</name></member>
+      <member refid="qobject_1Q_FLAG" prot="public" virt="non-virtual"><scope>LoggerFetchCommand</scope><name>Q_FLAG</name></member>
+      <member refid="qobject_1Q_FLAG_NS" prot="public" virt="non-virtual"><scope>LoggerFetchCommand</scope><name>Q_FLAG_NS</name></member>
+      <member refid="qobject-obsolete_1Q_FLAGS" prot="public" virt="non-virtual"><scope>LoggerFetchCommand</scope><name>Q_FLAGS</name></member>
+      <member refid="qobject_1Q_GADGET" prot="public" virt="non-virtual"><scope>LoggerFetchCommand</scope><name>Q_GADGET</name></member>
+      <member refid="qobject_1Q_GADGET_EXPORT" prot="public" virt="non-virtual"><scope>LoggerFetchCommand</scope><name>Q_GADGET_EXPORT</name></member>
+      <member refid="qobject_1Q_INTERFACES" prot="public" virt="non-virtual"><scope>LoggerFetchCommand</scope><name>Q_INTERFACES</name></member>
+      <member refid="qobject_1Q_INVOKABLE" prot="public" virt="non-virtual"><scope>LoggerFetchCommand</scope><name>Q_INVOKABLE</name></member>
+      <member refid="classAbstractCommand_1ac8bafb6db670b3c127ab59130584274f" prot="protected" virt="non-virtual"><scope>LoggerFetchCommand</scope><name>Q_LOGGING_CATEGORY</name></member>
+      <member refid="qobject_1Q_MOC_INCLUDE" prot="public" virt="non-virtual"><scope>LoggerFetchCommand</scope><name>Q_MOC_INCLUDE</name></member>
+      <member refid="qobject_1Q_NAMESPACE" prot="public" virt="non-virtual"><scope>LoggerFetchCommand</scope><name>Q_NAMESPACE</name></member>
+      <member refid="qobject_1Q_NAMESPACE_EXPORT" prot="public" virt="non-virtual"><scope>LoggerFetchCommand</scope><name>Q_NAMESPACE_EXPORT</name></member>
+      <member refid="qobject_1Q_OBJECT" prot="public" virt="non-virtual"><scope>LoggerFetchCommand</scope><name>Q_OBJECT</name></member>
+      <member refid="qobject_1Q_PROPERTY" prot="public" virt="non-virtual"><scope>LoggerFetchCommand</scope><name>Q_PROPERTY</name></member>
+      <member refid="qobject_1Q_REVISION" prot="public" virt="non-virtual"><scope>LoggerFetchCommand</scope><name>Q_REVISION</name></member>
+      <member refid="qobject_1Q_SET_OBJECT_NAME" prot="public" virt="non-virtual"><scope>LoggerFetchCommand</scope><name>Q_SET_OBJECT_NAME</name></member>
+      <member refid="qobject_1Q_SIGNAL" prot="public" virt="non-virtual"><scope>LoggerFetchCommand</scope><name>Q_SIGNAL</name></member>
+      <member refid="qobject_1Q_SIGNALS" prot="public" virt="non-virtual"><scope>LoggerFetchCommand</scope><name>Q_SIGNALS</name></member>
+      <member refid="qobject_1Q_SLOT" prot="public" virt="non-virtual"><scope>LoggerFetchCommand</scope><name>Q_SLOT</name></member>
+      <member refid="qobject_1Q_SLOTS" prot="public" virt="non-virtual"><scope>LoggerFetchCommand</scope><name>Q_SLOTS</name></member>
+      <member refid="qobject_1QObject" prot="public" virt="non-virtual"><scope>LoggerFetchCommand</scope><name>QObject</name></member>
+      <member refid="qobject_1qobject_cast" prot="public" virt="non-virtual"><scope>LoggerFetchCommand</scope><name>qobject_cast</name></member>
+      <member refid="qobject_1qobject_cast-1" prot="public" virt="non-virtual"><scope>LoggerFetchCommand</scope><name>qobject_cast</name></member>
+      <member refid="qobject_1QObjectList-typedef" prot="public" virt="non-virtual"><scope>LoggerFetchCommand</scope><name>QObjectList</name></member>
+      <member refid="qobject_1QT_NO_NARROWING_CONVERSIONS_IN_CONNECT" prot="public" virt="non-virtual"><scope>LoggerFetchCommand</scope><name>QT_NO_NARROWING_CONVERSIONS_IN_CONNECT</name></member>
+      <member refid="qobject_1receivers" prot="protected" virt="non-virtual"><scope>LoggerFetchCommand</scope><name>receivers</name></member>
+      <member refid="qobject_1removeEventFilter" prot="public" virt="non-virtual"><scope>LoggerFetchCommand</scope><name>removeEventFilter</name></member>
+      <member refid="classAbstractCommand_1afd6f41cfc925751415cfa45e3b2d0b4a" prot="public" virt="virtual"><scope>LoggerFetchCommand</scope><name>requiredOptions</name></member>
+      <member refid="classLoggerFetchCommand_1a04a05bff3bc50f8b87a10f7472de26b7" prot="private" virt="non-virtual"><scope>LoggerFetchCommand</scope><name>samplesToGo</name></member>
+      <member refid="qobject_1sender" prot="protected" virt="non-virtual"><scope>LoggerFetchCommand</scope><name>sender</name></member>
+      <member refid="qobject_1senderSignalIndex" prot="protected" virt="non-virtual"><scope>LoggerFetchCommand</scope><name>senderSignalIndex</name></member>
+      <member refid="classLoggerFetchCommand_1a2320991b33aa1c83d674829d3e566333" prot="private" virt="non-virtual"><scope>LoggerFetchCommand</scope><name>service</name></member>
+      <member refid="classLoggerFetchCommand_1a87a6be7a1babc635129434b3ed3ae104" prot="protected" virt="non-virtual"><scope>LoggerFetchCommand</scope><name>serviceDetailsDiscovered</name></member>
+      <member refid="classDeviceCommand_1a96208c78728c0068e7a78f961b913751" prot="protected" virt="virtual"><scope>LoggerFetchCommand</scope><name>serviceError</name></member>
+      <member refid="qobject_1setObjectName-1" prot="public" virt="non-virtual"><scope>LoggerFetchCommand</scope><name>setObjectName</name></member>
+      <member refid="qobject_1setObjectName" prot="public" virt="non-virtual"><scope>LoggerFetchCommand</scope><name>setObjectName</name></member>
+      <member refid="qobject_1setParent" prot="public" virt="non-virtual"><scope>LoggerFetchCommand</scope><name>setParent</name></member>
+      <member refid="qobject_1setProperty-1" prot="public" virt="non-virtual"><scope>LoggerFetchCommand</scope><name>setProperty</name></member>
+      <member refid="qobject_1setProperty" prot="public" virt="non-virtual"><scope>LoggerFetchCommand</scope><name>setProperty</name></member>
+      <member refid="classLoggerFetchCommand_1a2ac15b24db2ef86974c0034d7cb88c3f" prot="private" virt="non-virtual"><scope>LoggerFetchCommand</scope><name>showCsvHeader</name></member>
+      <member refid="qobject_1signalsBlocked" prot="public" virt="non-virtual"><scope>LoggerFetchCommand</scope><name>signalsBlocked</name></member>
+      <member refid="classDeviceCommand_1a6cf548752b7ae1084a712b9003b92d0c" prot="public" virt="non-virtual"><scope>LoggerFetchCommand</scope><name>start</name></member>
+      <member refid="qobject_1startTimer" prot="public" virt="non-virtual"><scope>LoggerFetchCommand</scope><name>startTimer</name></member>
+      <member refid="qobject_1startTimer-1" prot="public" virt="non-virtual"><scope>LoggerFetchCommand</scope><name>startTimer</name></member>
+      <member refid="classAbstractCommand_1a1ceca3c5b4cb24277dd4d4054f45db18" prot="public" virt="virtual"><scope>LoggerFetchCommand</scope><name>supportedOptions</name></member>
+      <member refid="classLoggerFetchCommand_1a50cf7cea1d074a22a955db0e4c078249" prot="private" virt="non-virtual"><scope>LoggerFetchCommand</scope><name>TestLoggerFetchCommand</name></member>
+      <member refid="qobject_1thread" prot="public" virt="non-virtual"><scope>LoggerFetchCommand</scope><name>thread</name></member>
+      <member refid="qobject_1timerEvent" prot="protected" virt="virtual"><scope>LoggerFetchCommand</scope><name>timerEvent</name></member>
+      <member refid="classLoggerFetchCommand_1a9e1ed2a86fc05613415937e23759936e" prot="private" virt="non-virtual"><scope>LoggerFetchCommand</scope><name>timestamp</name></member>
+      <member refid="qobject_1tr" prot="public" virt="non-virtual"><scope>LoggerFetchCommand</scope><name>tr</name></member>
+      <member refid="qobject_1dtor.QObject" prot="public" virt="virtual"><scope>LoggerFetchCommand</scope><name>~QObject</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

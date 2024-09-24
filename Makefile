@@ -1,9 +1,9 @@
 # SPDX-FileCopyrightText: 2024 Paul Colby <git@colby.id.au>
 # SPDX-License-Identifier: GPL-3.0-or-later
 
-doxml-dir = ${HOME}/tmp/build/dokit-gcc-6.6.3-debug/doc/xml
+doxml-dir = ${CURDIR}/demo/dokit/xml
 template = docusaurus
-output-dir = ${HOME}/tmp/doxly/output
+output-dir = ${CURDIR}/demo/dokit/${template}
 
 .PHONY: build check coverage coverage-html lint pycodestyle pylint run-module run-pipx test
 

@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.0" xml:lang="en-US">
+  <compounddef id="dir_147b3568de8375df823b5486ab16462a" kind="dir">
+    <compoundname>qtpokit</compoundname>
+    <innerfile refid="abstractpokitservice_8h">abstractpokitservice.h</innerfile>
+    <innerfile refid="calibrationservice_8h">calibrationservice.h</innerfile>
+    <innerfile refid="dataloggerservice_8h">dataloggerservice.h</innerfile>
+    <innerfile refid="deviceinfoservice_8h">deviceinfoservice.h</innerfile>
+    <innerfile refid="dsoservice_8h">dsoservice.h</innerfile>
+    <innerfile refid="multimeterservice_8h">multimeterservice.h</innerfile>
+    <innerfile refid="pokitdevice_8h">pokitdevice.h</innerfile>
+    <innerfile refid="pokitdiscoveryagent_8h">pokitdiscoveryagent.h</innerfile>
+    <innerfile refid="pokitmeter_8h">pokitmeter.h</innerfile>
+    <innerfile refid="pokitpro_8h">pokitpro.h</innerfile>
+    <innerfile refid="pokitproducts_8h">pokitproducts.h</innerfile>
+    <innerfile refid="qtpokit__global_8h">qtpokit_global.h</innerfile>
+    <innerfile refid="statusservice_8h">statusservice.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/paul/src/dokit/include/qtpokit/"/>
+  </compounddef>
+</doxygen>

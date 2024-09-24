@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.0" xml:lang="en-US">
+  <compounddef id="notes_8md" kind="file" language="Markdown">
+    <compoundname>notes.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">#<sp/>Notes</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Pokit<sp/>Bluetooth<sp/>API</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">See<sp/>also:<sp/>[Pokit<sp/>API<sp/>Errata](pokit.html)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Undocumented<sp/>Services</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Pokit<sp/>Meter<sp/>and<sp/>Pokit<sp/>Pro<sp/>both<sp/>include<sp/>the<sp/>following<sp/>service(s)<sp/>with<sp/>no<sp/>official<sp/>documentation<sp/>to<sp/>match:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">*<sp/>`1d14d6ee-fd63-4fa1-bfa4-8f47b42119f0`<sp/>-<sp/>appears<sp/>to<sp/>be<sp/>a<sp/>Silicon<sp/>Labs<sp/>(formerly<sp/>BlueGiga)<sp/>OTA<sp/>Service</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>for<sp/>updating<sp/>firmware,<sp/>which<sp/>would<sp/>make<sp/>sense.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Additionally,<sp/>the<sp/>Pokit<sp/>Meter<sp/>includes<sp/>the<sp/>following<sp/>undocumented<sp/>service:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">*<sp/>`831d0001-e98e-1fed-e73e-4bb7596f776e`<sp/>-<sp/>no<sp/>idea.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Qt<sp/>Versions</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">QtPokit<sp/>requires<sp/>Qt&apos;s<sp/>support<sp/>Bluetooth<sp/>Low<sp/>Energy,<sp/>in<sp/>Central<sp/>mode.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">|<sp/><sp/>Qt<sp/>|<sp/>Supported|<sp/>Notes<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|-----|:--------:|------------------------------------------|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>5.0<sp/>|<sp/>No<sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>Qt<sp/>BLE<sp/>API<sp/>was<sp/>[not<sp/>added<sp/>until<sp/>v5.4].<sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>5.1<sp/>|<sp/>No<sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>Qt<sp/>BLE<sp/>API<sp/>was<sp/>[not<sp/>added<sp/>until<sp/>v5.4].<sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>5.2<sp/>|<sp/>No<sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>Qt<sp/>BLE<sp/>API<sp/>was<sp/>[not<sp/>added<sp/>until<sp/>v5.4].<sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>5.3<sp/>|<sp/>No<sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>Qt<sp/>BLE<sp/>API<sp/>was<sp/>[not<sp/>added<sp/>until<sp/>v5.4].<sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>5.4<sp/>|<sp/>Probably<sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>5.5<sp/>|<sp/>Probably<sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>5.6<sp/>|<sp/>Probably<sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>5.7<sp/>|<sp/>Probably<sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>5.8<sp/>|<sp/>Probably<sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>5.9<sp/>|<sp/>Probably<sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>5.10|<sp/>Probably<sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>5.11|<sp/>Probably<sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>5.12|<sp/>Probably<sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>5.13|<sp/>Probably<sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>5.14|<sp/>Probably<sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>5.15|<sp/>Yes<sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>6.0<sp/>|<sp/>No<sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>Bluetooth<sp/>module<sp/>[ported<sp/>to<sp/>Qt6<sp/>in<sp/>v6.2].|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>6.1<sp/>|<sp/>No<sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>Bluetooth<sp/>module<sp/>[ported<sp/>to<sp/>Qt6<sp/>in<sp/>v6.2].|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>6.2<sp/>|<sp/>Yes<sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>6.3<sp/>|<sp/>Yes<sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>CMake<sp/>Versions</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">In<sp/>summary<sp/>(of<sp/>the<sp/>below<sp/>table),<sp/>for<sp/>*building*<sp/>QtPokit:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">*<sp/>CMake<sp/>2.8.9<sp/>through<sp/>to<sp/>pre-3.0<sp/>*should*<sp/>be<sp/>possible,<sp/>but<sp/>the<sp/>effort<sp/>and<sp/>resulting<sp/>complexity</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>is<sp/>high<sp/>enough<sp/>to<sp/>not<sp/>be<sp/>worth<sp/>it.</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>any<sp/>CMake<sp/>3.x<sp/>should<sp/>be<sp/>fine,<sp/>except:</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>CMake<sp/>3.12+<sp/>is<sp/>needed<sp/>for<sp/>the<sp/>full<sp/>set<sp/>of<sp/>unit<sp/>tests.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">|<sp/>Version|<sp/>Dependency<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|:------:|--------------------------------------------------------------------------------------|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>2.8.9<sp/><sp/>|<sp/>[Qt<sp/>5.1+](https://github.com/qt/qtbase/blob/v5.1.0/src/corelib/Qt5Config.cmake.in)<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>2.8.11<sp/>|<sp/>[`target_include_directories`](https://cmake.org/cmake/help/v2.8.11/cmake.html#command:target_include_directories)<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>2.8.11<sp/>|<sp/>Has<sp/>`-fPIC`<sp/>issues<sp/>with<sp/>Qt.<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>2.8.12<sp/>|<sp/>[`add_compile_options`](https://cmake.org/cmake/help/v2.8.12/cmake.html#command:add_compile_options)</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>2.8.12<sp/>|<sp/>Has<sp/>compile<sp/>isssues<sp/>with<sp/>Qt.<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/><sp/>3.0<sp/><sp/><sp/>|<sp/>`VERSION`<sp/>option<sp/>of<sp/>the<sp/>`project()`<sp/>command.</highlight></codeline>
+<codeline><highlight class="normal">|<sp/><sp/>3.1<sp/><sp/><sp/>|<sp/>[Qt<sp/>5.11+](https://github.com/qt/qtbase/blob/v5.11.0/src/corelib/Qt5Config.cmake.in)<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>`target_sources`<sp/>command.<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/><sp/>3.12<sp/><sp/>|<sp/>[Object<sp/>Libraries]<sp/>for<sp/>sharing<sp/>binary<sp/>objects<sp/>between<sp/>the<sp/>console<sp/>app<sp/>and<sp/>unit<sp/>tests.|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/><sp/>3.13<sp/><sp/>|<sp/>`-B`<sp/>CLI<sp/>option<sp/>(handy,<sp/>but<sp/>not<sp/>essential).<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/><sp/>3.16<sp/><sp/>|<sp/>[Qt6.x<sp/>shared](https://github.com/qt/qtbase/blob/v6.2.0/.cmake.conf)|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/><sp/>3.18<sp/><sp/>|<sp/>Not<sp/>actually<sp/>a<sp/>requirement,<sp/>but<sp/>this<sp/>is<sp/>the<sp/>minimum<sp/>version<sp/>that&apos;s<sp/>regularly<sp/>tested.<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/><sp/>3.21<sp/><sp/>|<sp/>[Qt6.x<sp/>static](https://github.com/qt/qtbase/blob/v6.2.0/.cmake.conf)|</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">[not<sp/>added<sp/>until<sp/>v5.4]:<sp/>https://doc.qt.io/qt-5/qtbluetooth-le-overview.html</highlight></codeline>
+<codeline><highlight class="normal">[Object<sp/>Libraries]:<sp/>https://cmake.org/cmake/help/latest/command/add_library.html#object-libraries</highlight></codeline>
+<codeline><highlight class="normal">[ported<sp/>to<sp/>Qt6<sp/>in<sp/>v6.2]:<sp/>https://www.qt.io/blog/qt-6.2-lts-released</highlight></codeline>
+    </programlisting>
+    <location file="/home/paul/src/dokit/doc/src/internal/notes.md"/>
+  </compounddef>
+</doxygen>

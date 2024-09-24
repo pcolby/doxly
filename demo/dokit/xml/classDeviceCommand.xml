@@ -1,0 +1,977 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.0" xml:lang="en-US">
+  <compounddef id="classDeviceCommand" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>DeviceCommand</compoundname>
+    <basecompoundref refid="classAbstractCommand" prot="public" virt="non-virtual">AbstractCommand</basecompoundref>
+    <derivedcompoundref refid="classCalibrateCommand" prot="public" virt="non-virtual">CalibrateCommand</derivedcompoundref>
+    <derivedcompoundref refid="classDsoCommand" prot="public" virt="non-virtual">DsoCommand</derivedcompoundref>
+    <derivedcompoundref refid="classFlashLedCommand" prot="public" virt="non-virtual">FlashLedCommand</derivedcompoundref>
+    <derivedcompoundref refid="classInfoCommand" prot="public" virt="non-virtual">InfoCommand</derivedcompoundref>
+    <derivedcompoundref refid="classLoggerFetchCommand" prot="public" virt="non-virtual">LoggerFetchCommand</derivedcompoundref>
+    <derivedcompoundref refid="classLoggerStartCommand" prot="public" virt="non-virtual">LoggerStartCommand</derivedcompoundref>
+    <derivedcompoundref refid="classLoggerStopCommand" prot="public" virt="non-virtual">LoggerStopCommand</derivedcompoundref>
+    <derivedcompoundref refid="classMeterCommand" prot="public" virt="non-virtual">MeterCommand</derivedcompoundref>
+    <derivedcompoundref refid="classSetNameCommand" prot="public" virt="non-virtual">SetNameCommand</derivedcompoundref>
+    <derivedcompoundref refid="classSetTorchCommand" prot="public" virt="non-virtual">SetTorchCommand</derivedcompoundref>
+    <derivedcompoundref refid="classStatusCommand" prot="public" virt="non-virtual">StatusCommand</derivedcompoundref>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classDeviceCommand_1a2bbf2dc9bb0ba85a2bf29263746c7b57" prot="protected" static="no" mutable="no">
+        <type><ref refid="classPokitDevice" kindref="compound">PokitDevice</ref> *</type>
+        <definition>PokitDevice* DeviceCommand::device</definition>
+        <argsstring></argsstring>
+        <name>device</name>
+        <qualifiedname>DeviceCommand::device</qualifiedname>
+        <initializer>{ nullptr }</initializer>
+        <briefdescription>
+<para>Pokit Bluetooth device (if any) this command interracts with. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/devicecommand.h" line="26" column="18" bodyfile="/home/paul/src/dokit/src/cli/devicecommand.h" bodystart="26" bodyend="26"/>
+        <referencedby refid="classDeviceCommand_1acde5a41e646a23c5485b67cf99e402a7" compoundref="devicecommand_8cpp" startline="340" endline="387">deviceDiscovered</referencedby>
+        <referencedby refid="classDeviceCommand_1a7dfdaae89c5f6540af9a5bfbcfd66e5a" compoundref="devicecommand_8cpp" startline="392" endline="400">deviceDiscoveryFinished</referencedby>
+        <referencedby refid="classFlashLedCommand_1af7a5897fc7657f70466c82f5ed538ccb" compoundref="flashledcommand_8cpp" startline="86" endline="100">FlashLedCommand::deviceLedFlashed</referencedby>
+        <referencedby refid="classSetNameCommand_1a6488980e62ffb16274644152a1364bce" compoundref="setnamecommand_8cpp" startline="92" endline="106">SetNameCommand::deviceNameWritten</referencedby>
+        <referencedby refid="classDeviceCommand_1ae619166395b5651f1316fd5336d9fa2c" compoundref="devicecommand_8cpp" startline="42" endline="49">disconnect</referencedby>
+        <referencedby refid="classCalibrateCommand_1aca9b6661db8a9d95ce5bc866772e2a11" compoundref="calibratecommand_8cpp" startline="69" endline="79">CalibrateCommand::getService</referencedby>
+        <referencedby refid="classDsoCommand_1abdc2af86181151e0c64c655ed265fbe8" compoundref="dsocommand_8cpp" startline="169" endline="179">DsoCommand::getService</referencedby>
+        <referencedby refid="classFlashLedCommand_1ae36389ece2050dd8546c5b379df942a9" compoundref="flashledcommand_8cpp" startline="57" endline="67">FlashLedCommand::getService</referencedby>
+        <referencedby refid="classInfoCommand_1a5a6f572882374077b39769b794fe7449" compoundref="infocommand_8cpp" startline="60" endline="68">InfoCommand::getService</referencedby>
+        <referencedby refid="classLoggerFetchCommand_1a42654138dfb822007275146802a2c26f" compoundref="loggerfetchcommand_8cpp" startline="42" endline="52">LoggerFetchCommand::getService</referencedby>
+        <referencedby refid="classLoggerStartCommand_1a2c5c71e3ea2690a25490862b104b81ea" compoundref="loggerstartcommand_8cpp" startline="136" endline="146">LoggerStartCommand::getService</referencedby>
+        <referencedby refid="classLoggerStopCommand_1a299a08c063c3a5274e4b9df3ae4b8861" compoundref="loggerstopcommand_8cpp" startline="32" endline="42">LoggerStopCommand::getService</referencedby>
+        <referencedby refid="classMeterCommand_1abdc90c9cd480caa8ad04281c49a1e9a4" compoundref="metercommand_8cpp" startline="148" endline="158">MeterCommand::getService</referencedby>
+        <referencedby refid="classSetNameCommand_1ac57aeeca51642c3ba79e6c6578677210" compoundref="setnamecommand_8cpp" startline="64" endline="74">SetNameCommand::getService</referencedby>
+        <referencedby refid="classSetTorchCommand_1af772b83095447969556df52702d68dd4" compoundref="settorchcommand_8cpp" startline="65" endline="75">SetTorchCommand::getService</referencedby>
+        <referencedby refid="classStatusCommand_1abeff2e017b4c34cfab1c55addc776a09" compoundref="statuscommand_8cpp" startline="59" endline="67">StatusCommand::getService</referencedby>
+        <referencedby refid="classStatusCommand_1ae2349e3d64b1b4db9b80465c0b7dadb7" compoundref="statuscommand_8cpp" startline="89" endline="195">StatusCommand::outputDeviceStatus</referencedby>
+        <referencedby refid="classMeterCommand_1a551a1c3d1c6f10384b5ccf264a640eff" compoundref="metercommand_8cpp" startline="204" endline="288">MeterCommand::outputReading</referencedby>
+        <referencedby refid="classDsoCommand_1a5ed6988ac93f2964979b8dce1425816e" compoundref="dsocommand_8cpp" startline="243" endline="287">DsoCommand::outputSamples</referencedby>
+        <referencedby refid="classLoggerFetchCommand_1a2f093386853fc6667de091a0e921a665" compoundref="loggerfetchcommand_8cpp" startline="89" endline="140">LoggerFetchCommand::outputSamples</referencedby>
+        <referencedby refid="classInfoCommand_1a06d095d57662fd10b201d6273085c34e" compoundref="infocommand_8cpp" startline="75" endline="138">InfoCommand::serviceDetailsDiscovered</referencedby>
+        <referencedby refid="classLoggerStartCommand_1a6b0922cf2e55e23c2df85cddf35e0b12" compoundref="loggerstartcommand_8cpp" startline="181" endline="196">LoggerStartCommand::settingsWritten</referencedby>
+        <referencedby refid="classLoggerStopCommand_1a0fc328ff975018ca87c14c38a56a2412" compoundref="loggerstopcommand_8cpp" startline="59" endline="74">LoggerStopCommand::settingsWritten</referencedby>
+        <referencedby refid="classCalibrateCommand_1afaf2c6153a3d409c06318dc809df1c78" compoundref="calibratecommand_8cpp" startline="99" endline="113">CalibrateCommand::temperatureCalibrated</referencedby>
+        <referencedby refid="classSetTorchCommand_1af4c7f99da529f36d29555565c814b82b" compoundref="settorchcommand_8cpp" startline="93" endline="107">SetTorchCommand::torchStatusWritten</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classDeviceCommand_1a792b3771a02cb7f4aff6335045b705bf" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int DeviceCommand::exitCodeOnDisconnect</definition>
+        <argsstring></argsstring>
+        <name>exitCodeOnDisconnect</name>
+        <qualifiedname>DeviceCommand::exitCodeOnDisconnect</qualifiedname>
+        <initializer>{ EXIT_FAILURE }</initializer>
+        <briefdescription>
+<para>Exit code to return on device disconnection. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/devicecommand.h" line="27" column="9" bodyfile="/home/paul/src/dokit/src/cli/devicecommand.h" bodystart="27" bodyend="27"/>
+        <referencedby refid="classDeviceCommand_1a525ae4429c2b9a325bad62678409fb5b" compoundref="devicecommand_8cpp" startline="305" endline="310">deviceDisconnected</referencedby>
+        <referencedby refid="classDeviceCommand_1ae619166395b5651f1316fd5336d9fa2c" compoundref="devicecommand_8cpp" startline="42" endline="49">disconnect</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="classDeviceCommand_1a4e4cda7a4d418daa1577a2344142b517" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class TestDeviceCommand</definition>
+        <argsstring></argsstring>
+        <name>TestDeviceCommand</name>
+        <qualifiedname>DeviceCommand::TestDeviceCommand</qualifiedname>
+        <param>
+          <type>TestDeviceCommand</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/devicecommand.h" line="49" column="18" bodyfile="/home/paul/src/dokit/src/cli/devicecommand.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classDeviceCommand_1a55c623ad1d1e0ad1273604f3f24b1dfc" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>DeviceCommand::DeviceCommand</definition>
+        <argsstring>(QObject *const parent=nullptr)</argsstring>
+        <name>DeviceCommand</name>
+        <qualifiedname>DeviceCommand::DeviceCommand</qualifiedname>
+        <param>
+          <type><ref refid="qobject" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QObject</ref> *const</type>
+          <declname>parent</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+<para>Construct a new <ref refid="classDeviceCommand" kindref="compound">DeviceCommand</ref> object with <emphasis>parent</emphasis>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/devicecommand.h" line="20" column="14" bodyfile="/home/paul/src/dokit/src/cli/devicecommand.cpp" bodystart="21" bodyend="24"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-slot">
+      <memberdef kind="slot" id="classDeviceCommand_1a6cf548752b7ae1084a712b9003b92d0c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool DeviceCommand::start</definition>
+        <argsstring>() override</argsstring>
+        <name>start</name>
+        <qualifiedname>DeviceCommand::start</qualifiedname>
+        <briefdescription>
+<para>Begins scanning for the Pokit device. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/devicecommand.h" line="23" column="10" bodyfile="/home/paul/src/dokit/src/cli/devicecommand.cpp" bodystart="29" bodyend="36"/>
+        <references refid="classAbstractCommand_1a07d979bc039d61f5c720cb1521b31208" compoundref="abstractcommand_8h" startline="41">AbstractCommand::deviceToScanFor</references>
+        <references refid="classAbstractCommand_1a86878df43cd818f4a7f333a97dabac3c" compoundref="abstractcommand_8h" startline="42">AbstractCommand::discoveryAgent</references>
+        <references refid="qstring_1isNull">QString::isNull</references>
+        <references refid="classPokitDiscoveryAgent_1a7a91a09dbbe46327407d69bc04b19fc5" compoundref="pokitdiscoveryagent_8cpp" startline="86" endline="92">PokitDiscoveryAgent::start</references>
+        <references refid="qobject_1tr">QObject::tr</references>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classDeviceCommand_1ae619166395b5651f1316fd5336d9fa2c" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DeviceCommand::disconnect</definition>
+        <argsstring>(int exitCode=EXIT_SUCCESS)</argsstring>
+        <name>disconnect</name>
+        <qualifiedname>DeviceCommand::disconnect</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>exitCode</declname>
+          <defval>EXIT_SUCCESS</defval>
+        </param>
+        <briefdescription>
+<para>Disconnects the underlying Pokit device, and sets <emphasis>exitCode</emphasis> to be return to the OS once the disconnection has taken place. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/devicecommand.h" line="29" column="10" bodyfile="/home/paul/src/dokit/src/cli/devicecommand.cpp" bodystart="42" bodyend="49"/>
+        <references refid="classPokitDevice_1a2e2fb6b30e6f5f0d7bc6cd8f806d6423" compoundref="pokitdevice_8cpp" startline="85" endline="89">PokitDevice::controller</references>
+        <references refid="classDeviceCommand_1a2bbf2dc9bb0ba85a2bf29263746c7b57" compoundref="devicecommand_8h" startline="26" endline="26">device</references>
+        <references refid="qlowenergycontroller_1disconnectFromDevice">QLowEnergyController::disconnectFromDevice</references>
+        <references refid="classDeviceCommand_1a792b3771a02cb7f4aff6335045b705bf" compoundref="devicecommand_8h" startline="27" endline="27">exitCodeOnDisconnect</references>
+        <references refid="qobject_1tr">QObject::tr</references>
+        <referencedby refid="classFlashLedCommand_1af7a5897fc7657f70466c82f5ed538ccb" compoundref="flashledcommand_8cpp" startline="86" endline="100">FlashLedCommand::deviceLedFlashed</referencedby>
+        <referencedby refid="classSetNameCommand_1a6488980e62ffb16274644152a1364bce" compoundref="setnamecommand_8cpp" startline="92" endline="106">SetNameCommand::deviceNameWritten</referencedby>
+        <referencedby refid="classStatusCommand_1ae2349e3d64b1b4db9b80465c0b7dadb7" compoundref="statuscommand_8cpp" startline="89" endline="195">StatusCommand::outputDeviceStatus</referencedby>
+        <referencedby refid="classMeterCommand_1a551a1c3d1c6f10384b5ccf264a640eff" compoundref="metercommand_8cpp" startline="204" endline="288">MeterCommand::outputReading</referencedby>
+        <referencedby refid="classDsoCommand_1a5ed6988ac93f2964979b8dce1425816e" compoundref="dsocommand_8cpp" startline="243" endline="287">DsoCommand::outputSamples</referencedby>
+        <referencedby refid="classLoggerFetchCommand_1a2f093386853fc6667de091a0e921a665" compoundref="loggerfetchcommand_8cpp" startline="89" endline="140">LoggerFetchCommand::outputSamples</referencedby>
+        <referencedby refid="classInfoCommand_1a06d095d57662fd10b201d6273085c34e" compoundref="infocommand_8cpp" startline="75" endline="138">InfoCommand::serviceDetailsDiscovered</referencedby>
+        <referencedby refid="classLoggerStartCommand_1a6b0922cf2e55e23c2df85cddf35e0b12" compoundref="loggerstartcommand_8cpp" startline="181" endline="196">LoggerStartCommand::settingsWritten</referencedby>
+        <referencedby refid="classLoggerStopCommand_1a0fc328ff975018ca87c14c38a56a2412" compoundref="loggerstopcommand_8cpp" startline="59" endline="74">LoggerStopCommand::settingsWritten</referencedby>
+        <referencedby refid="classCalibrateCommand_1afaf2c6153a3d409c06318dc809df1c78" compoundref="calibratecommand_8cpp" startline="99" endline="113">CalibrateCommand::temperatureCalibrated</referencedby>
+        <referencedby refid="classSetTorchCommand_1af4c7f99da529f36d29555565c814b82b" compoundref="settorchcommand_8cpp" startline="93" endline="107">SetTorchCommand::torchStatusWritten</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classDeviceCommand_1af7a724ae722462b6fa15dc6269aadd15" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="classAbstractPokitService" kindref="compound">AbstractPokitService</ref> *</type>
+        <definition>virtual AbstractPokitService * DeviceCommand::getService</definition>
+        <argsstring>()=0</argsstring>
+        <name>getService</name>
+        <qualifiedname>DeviceCommand::getService</qualifiedname>
+        <reimplementedby refid="classCalibrateCommand_1aca9b6661db8a9d95ce5bc866772e2a11">getService</reimplementedby>
+        <reimplementedby refid="classDsoCommand_1abdc2af86181151e0c64c655ed265fbe8">getService</reimplementedby>
+        <reimplementedby refid="classFlashLedCommand_1ae36389ece2050dd8546c5b379df942a9">getService</reimplementedby>
+        <reimplementedby refid="classInfoCommand_1a5a6f572882374077b39769b794fe7449">getService</reimplementedby>
+        <reimplementedby refid="classLoggerFetchCommand_1a42654138dfb822007275146802a2c26f">getService</reimplementedby>
+        <reimplementedby refid="classLoggerStartCommand_1a2c5c71e3ea2690a25490862b104b81ea">getService</reimplementedby>
+        <reimplementedby refid="classLoggerStopCommand_1a299a08c063c3a5274e4b9df3ae4b8861">getService</reimplementedby>
+        <reimplementedby refid="classMeterCommand_1abdc90c9cd480caa8ad04281c49a1e9a4">getService</reimplementedby>
+        <reimplementedby refid="classSetNameCommand_1ac57aeeca51642c3ba79e6c6578677210">getService</reimplementedby>
+        <reimplementedby refid="classSetTorchCommand_1af772b83095447969556df52702d68dd4">getService</reimplementedby>
+        <reimplementedby refid="classStatusCommand_1abeff2e017b4c34cfab1c55addc776a09">getService</reimplementedby>
+        <briefdescription>
+<para>Returns a Pokit service object for the derived command class. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This will be called by <ref refid="classDeviceCommand_1acde5a41e646a23c5485b67cf99e402a7" kindref="member">deviceDiscovered()</ref> when the requested Pokit device has been found, after which <ref refid="classDeviceCommand_1acde5a41e646a23c5485b67cf99e402a7" kindref="member">deviceDiscovered()</ref> will connect the returned service&apos;s common signals, and kick off the device&apos;s connection process. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/devicecommand.h" line="30" column="35"/>
+        <referencedby refid="classDeviceCommand_1acde5a41e646a23c5485b67cf99e402a7" compoundref="devicecommand_8cpp" startline="340" endline="387">deviceDiscovered</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-static-func">
+      <memberdef kind="function" id="classDeviceCommand_1abb9d2e113e372130dca9360791e7ce5b" prot="protected" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>T</type>
+        <definition>static T DeviceCommand::minRange</definition>
+        <argsstring>(const quint32 maxValue)</argsstring>
+        <name>minRange</name>
+        <qualifiedname>DeviceCommand::minRange</qualifiedname>
+        <param>
+          <type>const quint32</type>
+          <declname>maxValue</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the lowest <emphasis>T</emphasis> range that can measure at least up to <emphasis>maxValue</emphasis>, or AutoRange if no such range is available.</para>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Range enumerator to evaluate ranges for. Must be one of:<itemizedlist>
+<listitem><para><ref refid="namespacePokitMeter_1a22b467360c970e645f6a111b34d50a92" kindref="member">PokitMeter::CurrentRange</ref></para>
+</listitem><listitem><para><ref refid="namespacePokitMeter_1aacf3005969c4417f7eaeeeaf83d5e047" kindref="member">PokitMeter::ResistanceRange</ref></para>
+</listitem><listitem><para><ref refid="namespacePokitMeter_1ab9abf7a50f13c9cfb1e1b4c49c16dfee" kindref="member">PokitMeter::VoltageRange</ref></para>
+</listitem><listitem><para><ref refid="namespacePokitPro_1adc67ba31bcd650dd7535939e42cec17a" kindref="member">PokitPro::CapacitanceRange</ref></para>
+</listitem><listitem><para><ref refid="namespacePokitPro_1ac51059eb5a52fa362da01d4e2f44de21" kindref="member">PokitPro::CurrentRange</ref></para>
+</listitem><listitem><para><ref refid="namespacePokitPro_1ac6fedf42d1268613f25da2b7c82832a7" kindref="member">PokitPro::ResistanceRange</ref></para>
+</listitem><listitem><para><ref refid="namespacePokitPro_1a68ddba45fec73a3391f241f2da38e78a" kindref="member">PokitPro::VoltageRange</ref> </para>
+</listitem></itemizedlist>
+</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/devicecommand.h" line="32" column="25"/>
+        <referencedby refid="classDeviceCommand_1a8aa676de2533a687cb369e70bb352a4c" compoundref="devicecommand_8cpp" startline="213" endline="224">minCapacitanceRange</referencedby>
+        <referencedby refid="classDeviceCommand_1ab5ae0318d3ec2bd4449e710eafafa680" compoundref="devicecommand_8cpp" startline="233" endline="243">minCurrentRange</referencedby>
+        <referencedby refid="classDeviceCommand_1a1ce3ce094a91ec500e9d50e620b0cc6d" compoundref="devicecommand_8cpp" startline="252" endline="262">minResistanceRange</referencedby>
+        <referencedby refid="classDeviceCommand_1a92f7e61dff3d28eda856ea4f95e828fe" compoundref="devicecommand_8cpp" startline="272" endline="282">minVoltageRange</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classDeviceCommand_1a8aa676de2533a687cb369e70bb352a4c" prot="protected" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>quint8</type>
+        <definition>quint8 DeviceCommand::minCapacitanceRange</definition>
+        <argsstring>(const PokitProduct product, const quint32 maxValue)</argsstring>
+        <name>minCapacitanceRange</name>
+        <qualifiedname>DeviceCommand::minCapacitanceRange</qualifiedname>
+        <param>
+          <type>const <ref refid="pokitproducts_8h_1a0c4f628f68ce0432a6db11681a41fda4" kindref="member">PokitProduct</ref></type>
+          <declname>product</declname>
+        </param>
+        <param>
+          <type>const quint32</type>
+          <declname>maxValue</declname>
+        </param>
+        <briefdescription>
+<para>Returns the <emphasis>product&apos;s</emphasis> lowest capacitance range that can measure at least up to <emphasis>maxValue</emphasis> (nF), or AutoRange if no such range is available. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>Since Pokit Meters do not support capacitance measurement, <emphasis>product</emphasis> should not be <ref refid="pokitproducts_8h_1a0c4f628f68ce0432a6db11681a41fda4afbb216b5c2f76db3f733c4c5915b3001" kindref="member">PokitProduct::PokitMeter</ref>.</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classDeviceCommand_1abb9d2e113e372130dca9360791e7ce5b" kindref="member">minRange&lt;PokitPro::CapacitanceRange&gt;</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/devicecommand.h" line="33" column="19" bodyfile="/home/paul/src/dokit/src/cli/devicecommand.cpp" bodystart="213" bodyend="224"/>
+        <references refid="classDeviceCommand_1abb9d2e113e372130dca9360791e7ce5b">minRange</references>
+        <references refid="pokitproducts_8h_1a0c4f628f68ce0432a6db11681a41fda4afbb216b5c2f76db3f733c4c5915b3001">PokitMeter</references>
+        <references refid="pokitproducts_8h_1a0c4f628f68ce0432a6db11681a41fda4abf3aeeb41cfa55672113dbb4a86da2ae">PokitPro</references>
+        <referencedby refid="classMeterCommand_1a7252ac9a772bc45e374da30bbc23ed85" compoundref="metercommand_8cpp" startline="49" endline="141">MeterCommand::processOptions</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classDeviceCommand_1ab5ae0318d3ec2bd4449e710eafafa680" prot="protected" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>quint8</type>
+        <definition>quint8 DeviceCommand::minCurrentRange</definition>
+        <argsstring>(const PokitProduct product, const quint32 maxValue)</argsstring>
+        <name>minCurrentRange</name>
+        <qualifiedname>DeviceCommand::minCurrentRange</qualifiedname>
+        <param>
+          <type>const <ref refid="pokitproducts_8h_1a0c4f628f68ce0432a6db11681a41fda4" kindref="member">PokitProduct</ref></type>
+          <declname>product</declname>
+        </param>
+        <param>
+          <type>const quint32</type>
+          <declname>maxValue</declname>
+        </param>
+        <briefdescription>
+<para>Returns the <emphasis>product&apos;s</emphasis> lowest current range that can measure at least up to <emphasis>maxValue</emphasis> (µA), or AutoRange if no such range is available. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="classDeviceCommand_1abb9d2e113e372130dca9360791e7ce5b" kindref="member">DeviceCommand::minRange&lt;PokitMeter::CurrentRange&gt;(const quint32 maxValue)</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classDeviceCommand_1abb9d2e113e372130dca9360791e7ce5b" kindref="member">minRange&lt;PokitPro::CurrentRange&gt;(const quint32 maxValue)</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/devicecommand.h" line="34" column="19" bodyfile="/home/paul/src/dokit/src/cli/devicecommand.cpp" bodystart="233" bodyend="243"/>
+        <references refid="classDeviceCommand_1abb9d2e113e372130dca9360791e7ce5b">minRange</references>
+        <references refid="pokitproducts_8h_1a0c4f628f68ce0432a6db11681a41fda4afbb216b5c2f76db3f733c4c5915b3001">PokitMeter</references>
+        <references refid="pokitproducts_8h_1a0c4f628f68ce0432a6db11681a41fda4abf3aeeb41cfa55672113dbb4a86da2ae">PokitPro</references>
+        <referencedby refid="classDsoCommand_1a87db950042b5ea7707bd76648536c943" compoundref="dsocommand_8cpp" startline="51" endline="162">DsoCommand::processOptions</referencedby>
+        <referencedby refid="classLoggerStartCommand_1a2dea05a52eab344c52648513e5fecbd3" compoundref="loggerstartcommand_8cpp" startline="50" endline="129">LoggerStartCommand::processOptions</referencedby>
+        <referencedby refid="classMeterCommand_1a7252ac9a772bc45e374da30bbc23ed85" compoundref="metercommand_8cpp" startline="49" endline="141">MeterCommand::processOptions</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classDeviceCommand_1a1ce3ce094a91ec500e9d50e620b0cc6d" prot="protected" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>quint8</type>
+        <definition>quint8 DeviceCommand::minResistanceRange</definition>
+        <argsstring>(const PokitProduct product, const quint32 maxValue)</argsstring>
+        <name>minResistanceRange</name>
+        <qualifiedname>DeviceCommand::minResistanceRange</qualifiedname>
+        <param>
+          <type>const <ref refid="pokitproducts_8h_1a0c4f628f68ce0432a6db11681a41fda4" kindref="member">PokitProduct</ref></type>
+          <declname>product</declname>
+        </param>
+        <param>
+          <type>const quint32</type>
+          <declname>maxValue</declname>
+        </param>
+        <briefdescription>
+<para>Returns the <emphasis>product&apos;s</emphasis> lowest resistance range that can measure at least up to <emphasis>maxValue</emphasis> (Ω), or AutoRange if no such range is available. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="classDeviceCommand_1abb9d2e113e372130dca9360791e7ce5b" kindref="member">DeviceCommand::minRange&lt;PokitMeter::ResistanceRange&gt;(const quint32 maxValue)</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classDeviceCommand_1abb9d2e113e372130dca9360791e7ce5b" kindref="member">minRange&lt;PokitPro::ResistanceRange&gt;(const quint32 maxValue)</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/devicecommand.h" line="35" column="19" bodyfile="/home/paul/src/dokit/src/cli/devicecommand.cpp" bodystart="252" bodyend="262"/>
+        <references refid="classDeviceCommand_1abb9d2e113e372130dca9360791e7ce5b">minRange</references>
+        <references refid="pokitproducts_8h_1a0c4f628f68ce0432a6db11681a41fda4afbb216b5c2f76db3f733c4c5915b3001">PokitMeter</references>
+        <references refid="pokitproducts_8h_1a0c4f628f68ce0432a6db11681a41fda4abf3aeeb41cfa55672113dbb4a86da2ae">PokitPro</references>
+        <referencedby refid="classMeterCommand_1a7252ac9a772bc45e374da30bbc23ed85" compoundref="metercommand_8cpp" startline="49" endline="141">MeterCommand::processOptions</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classDeviceCommand_1a92f7e61dff3d28eda856ea4f95e828fe" prot="protected" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>quint8</type>
+        <definition>quint8 DeviceCommand::minVoltageRange</definition>
+        <argsstring>(const PokitProduct product, const quint32 maxValue)</argsstring>
+        <name>minVoltageRange</name>
+        <qualifiedname>DeviceCommand::minVoltageRange</qualifiedname>
+        <param>
+          <type>const <ref refid="pokitproducts_8h_1a0c4f628f68ce0432a6db11681a41fda4" kindref="member">PokitProduct</ref></type>
+          <declname>product</declname>
+        </param>
+        <param>
+          <type>const quint32</type>
+          <declname>maxValue</declname>
+        </param>
+        <briefdescription>
+<para>t Returns the <emphasis>product&apos;s</emphasis> lowest voltage range that can measure at least up to <emphasis>maxValue</emphasis> (mV), or AutoRange if no such range is available. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="classDeviceCommand_1abb9d2e113e372130dca9360791e7ce5b" kindref="member">DeviceCommand::minRange&lt;PokitMeter::VoltageRange&gt;(const quint32 maxValue)</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classDeviceCommand_1abb9d2e113e372130dca9360791e7ce5b" kindref="member">minRange&lt;PokitPro::VoltageRange&gt;(const quint32 maxValue)</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/devicecommand.h" line="36" column="19" bodyfile="/home/paul/src/dokit/src/cli/devicecommand.cpp" bodystart="272" bodyend="282"/>
+        <references refid="classDeviceCommand_1abb9d2e113e372130dca9360791e7ce5b">minRange</references>
+        <references refid="pokitproducts_8h_1a0c4f628f68ce0432a6db11681a41fda4afbb216b5c2f76db3f733c4c5915b3001">PokitMeter</references>
+        <references refid="pokitproducts_8h_1a0c4f628f68ce0432a6db11681a41fda4abf3aeeb41cfa55672113dbb4a86da2ae">PokitPro</references>
+        <referencedby refid="classDsoCommand_1a87db950042b5ea7707bd76648536c943" compoundref="dsocommand_8cpp" startline="51" endline="162">DsoCommand::processOptions</referencedby>
+        <referencedby refid="classLoggerStartCommand_1a2dea05a52eab344c52648513e5fecbd3" compoundref="loggerstartcommand_8cpp" startline="50" endline="129">LoggerStartCommand::processOptions</referencedby>
+        <referencedby refid="classMeterCommand_1a7252ac9a772bc45e374da30bbc23ed85" compoundref="metercommand_8cpp" startline="49" endline="141">MeterCommand::processOptions</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-slot">
+      <memberdef kind="slot" id="classDeviceCommand_1a28461c0fe3f2b3398c74298b3df70b93" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void DeviceCommand::controllerError</definition>
+        <argsstring>(const QLowEnergyController::Error error)</argsstring>
+        <name>controllerError</name>
+        <qualifiedname>DeviceCommand::controllerError</qualifiedname>
+        <param>
+          <type>const <ref refid="qlowenergycontroller_1Error-enum" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QLowEnergyController::Error</ref></type>
+          <declname>error</declname>
+        </param>
+        <briefdescription>
+<para>Handles controller error events. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This base implementation simply logs <emphasis>error</emphasis> and then exits with <computeroutput>EXIT_FAILURE</computeroutput>. Derived classes may override this slot to implement their own error handing if desired. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/devicecommand.h" line="39" column="18" bodyfile="/home/paul/src/dokit/src/cli/devicecommand.cpp" bodystart="292" bodyend="296"/>
+        <references refid="qcoreapplication_1exit">QCoreApplication::exit</references>
+        <references refid="qobject_1tr">QObject::tr</references>
+        <referencedby refid="classDeviceCommand_1acde5a41e646a23c5485b67cf99e402a7" compoundref="devicecommand_8cpp" startline="340" endline="387">deviceDiscovered</referencedby>
+      </memberdef>
+      <memberdef kind="slot" id="classDeviceCommand_1a525ae4429c2b9a325bad62678409fb5b" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void DeviceCommand::deviceDisconnected</definition>
+        <argsstring>()</argsstring>
+        <name>deviceDisconnected</name>
+        <qualifiedname>DeviceCommand::deviceDisconnected</qualifiedname>
+        <briefdescription>
+<para>Handles devics disconnection events. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This base implementation simply logs and exits the application (via <ref refid="qcoreapplication_1exit" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCoreApplication::exit</ref>) with the current exitCodeOnDisconnect value, which is initialise to <computeroutput>EXIT_FAILURE</computeroutput> in the constructor, but should be set to <computeroutput>EXIT_SUCESS</computeroutput> if/when the derived command class has completed its actions and requested the disconnection (as opposed to a spontaneous disconnection on error). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/devicecommand.h" line="40" column="18" bodyfile="/home/paul/src/dokit/src/cli/devicecommand.cpp" bodystart="305" bodyend="310"/>
+        <references refid="qstring_1arg-14">QString::arg</references>
+        <references refid="qcoreapplication_1exit">QCoreApplication::exit</references>
+        <references refid="classDeviceCommand_1a792b3771a02cb7f4aff6335045b705bf" compoundref="devicecommand_8h" startline="27" endline="27">exitCodeOnDisconnect</references>
+        <references refid="qobject_1tr">QObject::tr</references>
+        <referencedby refid="classDeviceCommand_1acde5a41e646a23c5485b67cf99e402a7" compoundref="devicecommand_8cpp" startline="340" endline="387">deviceDiscovered</referencedby>
+      </memberdef>
+      <memberdef kind="slot" id="classDeviceCommand_1a96208c78728c0068e7a78f961b913751" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void DeviceCommand::serviceError</definition>
+        <argsstring>(const QLowEnergyService::ServiceError error)</argsstring>
+        <name>serviceError</name>
+        <qualifiedname>DeviceCommand::serviceError</qualifiedname>
+        <param>
+          <type>const <ref refid="qlowenergyservice_1ServiceError-enum" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QLowEnergyService::ServiceError</ref></type>
+          <declname>error</declname>
+        </param>
+        <briefdescription>
+<para>Handles service error events. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This base implementation simply logs <emphasis>error</emphasis> and then exits with <computeroutput>EXIT_FAILURE</computeroutput>. Derived classes may override this slot to implement their own error handing if desired.</para>
+<para><simplesect kind="note"><para>As this base class does not construct services (derived classed do), its up to the derived classed to connect this slot to the relevant service&apos;s error signal if desired. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/devicecommand.h" line="41" column="18" bodyfile="/home/paul/src/dokit/src/cli/devicecommand.cpp" bodystart="320" bodyend="324"/>
+        <references refid="qcoreapplication_1exit">QCoreApplication::exit</references>
+        <references refid="qobject_1tr">QObject::tr</references>
+        <referencedby refid="classDeviceCommand_1acde5a41e646a23c5485b67cf99e402a7" compoundref="devicecommand_8cpp" startline="340" endline="387">deviceDiscovered</referencedby>
+      </memberdef>
+      <memberdef kind="slot" id="classDeviceCommand_1a906fd97d832be0e8d2ba1c917fba41db" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void DeviceCommand::serviceDetailsDiscovered</definition>
+        <argsstring>()</argsstring>
+        <name>serviceDetailsDiscovered</name>
+        <qualifiedname>DeviceCommand::serviceDetailsDiscovered</qualifiedname>
+        <briefdescription>
+<para>Handles service detail discovery events. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This base implementation simply logs the event, and nothing more. Derived classes may (usually do) override this slot to provide their own processing when a services details have been discovered. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/devicecommand.h" line="42" column="18" bodyfile="/home/paul/src/dokit/src/cli/devicecommand.cpp" bodystart="331" bodyend="334"/>
+        <references refid="qobject_1tr">QObject::tr</references>
+        <referencedby refid="classDeviceCommand_1acde5a41e646a23c5485b67cf99e402a7" compoundref="devicecommand_8cpp" startline="340" endline="387">deviceDiscovered</referencedby>
+        <referencedby refid="classCalibrateCommand_1af65b08cf1c44bf97470c9b4033c97e14" compoundref="calibratecommand_8cpp" startline="86" endline="94">CalibrateCommand::serviceDetailsDiscovered</referencedby>
+        <referencedby refid="classDsoCommand_1a57f3b6be35c7a6fdadfaa737177016a8" compoundref="dsocommand_8cpp" startline="186" endline="195">DsoCommand::serviceDetailsDiscovered</referencedby>
+        <referencedby refid="classFlashLedCommand_1af1d7d155b35b4a3d6301b2653c0d7eb7" compoundref="flashledcommand_8cpp" startline="74" endline="81">FlashLedCommand::serviceDetailsDiscovered</referencedby>
+        <referencedby refid="classInfoCommand_1a06d095d57662fd10b201d6273085c34e" compoundref="infocommand_8cpp" startline="75" endline="138">InfoCommand::serviceDetailsDiscovered</referencedby>
+        <referencedby refid="classLoggerFetchCommand_1a87a6be7a1babc635129434b3ed3ae104" compoundref="loggerfetchcommand_8cpp" startline="59" endline="66">LoggerFetchCommand::serviceDetailsDiscovered</referencedby>
+        <referencedby refid="classLoggerStartCommand_1ab1b0364c6a26ff893d5b58dea381e4d5" compoundref="loggerstartcommand_8cpp" startline="153" endline="162">LoggerStartCommand::serviceDetailsDiscovered</referencedby>
+        <referencedby refid="classLoggerStopCommand_1a6e1d2dd8ccd4dafacea51c63f4725d7e" compoundref="loggerstopcommand_8cpp" startline="49" endline="54">LoggerStopCommand::serviceDetailsDiscovered</referencedby>
+        <referencedby refid="classMeterCommand_1aca51a018963bc384a24154cdb112a49b" compoundref="metercommand_8cpp" startline="165" endline="174">MeterCommand::serviceDetailsDiscovered</referencedby>
+        <referencedby refid="classStatusCommand_1af275e3a02032915dd27e0c0e041ff6c1" compoundref="statuscommand_8cpp" startline="74" endline="84">StatusCommand::serviceDetailsDiscovered</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-slot">
+      <memberdef kind="slot" id="classDeviceCommand_1acde5a41e646a23c5485b67cf99e402a7" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DeviceCommand::deviceDiscovered</definition>
+        <argsstring>(const QBluetoothDeviceInfo &amp;info) override</argsstring>
+        <name>deviceDiscovered</name>
+        <qualifiedname>DeviceCommand::deviceDiscovered</qualifiedname>
+        <param>
+          <type>const <ref refid="qbluetoothdeviceinfo" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothDeviceInfo</ref> &amp;</type>
+          <declname>info</declname>
+        </param>
+        <briefdescription>
+<para>Checks if <emphasis>info</emphasis> is the device (if any) we&apos;re looking for, and if so, create a contoller and service, and begins connecting to the device. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/devicecommand.h" line="46" column="10" bodyfile="/home/paul/src/dokit/src/cli/devicecommand.cpp" bodystart="340" bodyend="387"/>
+        <references refid="qbluetoothdeviceinfo_1address">QBluetoothDeviceInfo::address</references>
+        <references refid="qstring_1arg-14">QString::arg</references>
+        <references refid="qobject_1connect-4">QObject::connect</references>
+        <references refid="qlowenergycontroller_1connectToDevice">QLowEnergyController::connectToDevice</references>
+        <references refid="classPokitDevice_1a2e2fb6b30e6f5f0d7bc6cd8f806d6423" compoundref="pokitdevice_8cpp" startline="85" endline="89">PokitDevice::controller</references>
+        <references refid="classDeviceCommand_1a28461c0fe3f2b3398c74298b3df70b93" compoundref="devicecommand_8cpp" startline="292" endline="296">controllerError</references>
+        <references refid="classDeviceCommand_1a2bbf2dc9bb0ba85a2bf29263746c7b57" compoundref="devicecommand_8h" startline="26" endline="26">device</references>
+        <references refid="classDeviceCommand_1a525ae4429c2b9a325bad62678409fb5b" compoundref="devicecommand_8cpp" startline="305" endline="310">deviceDisconnected</references>
+        <references refid="classAbstractCommand_1a07d979bc039d61f5c720cb1521b31208" compoundref="abstractcommand_8h" startline="41">AbstractCommand::deviceToScanFor</references>
+        <references refid="qbluetoothdeviceinfo_1deviceUuid">QBluetoothDeviceInfo::deviceUuid</references>
+        <references refid="qlowenergycontroller_1disconnected">QLowEnergyController::disconnected</references>
+        <references refid="classAbstractCommand_1a86878df43cd818f4a7f333a97dabac3c" compoundref="abstractcommand_8h" startline="42">AbstractCommand::discoveryAgent</references>
+        <references refid="qlowenergycontroller_1error">QLowEnergyController::error</references>
+        <references refid="qlowenergycontroller_1errorOccurred">QLowEnergyController::errorOccurred</references>
+        <references refid="classDeviceCommand_1af7a724ae722462b6fa15dc6269aadd15">getService</references>
+        <references refid="qstring_1isEmpty">QString::isEmpty</references>
+        <references refid="qbluetoothaddress_1isNull">QBluetoothAddress::isNull</references>
+        <references refid="quuid_1isNull">QUuid::isNull</references>
+        <references refid="pokitproducts_8h_1adb8bb3a07e937158a294997e60868297" compoundref="pokitproducts_8cpp" startline="43" endline="46">isPokitProduct</references>
+        <references refid="qbluetoothdeviceinfo_1name">QBluetoothDeviceInfo::name</references>
+        <references refid="classAbstractPokitService_1a039d2f1054788cf586c8decadb53ddc0" compoundref="abstractpokitservice_8cpp" startline="86" endline="90">AbstractPokitService::pokitProduct</references>
+        <references refid="pokitproducts_8h_1a0227e333e3bab67294b49b8b73120943" compoundref="pokitproducts_8cpp" startline="55" endline="58">pokitProduct</references>
+        <references refid="qt_1ConnectionType-enum">Qt::QueuedConnection</references>
+        <references refid="classAbstractPokitService_1af67cbea4294ba0a77dcd9540b29528ff">AbstractPokitService::serviceDetailsDiscovered</references>
+        <references refid="classDeviceCommand_1a906fd97d832be0e8d2ba1c917fba41db" compoundref="devicecommand_8cpp" startline="331" endline="334">serviceDetailsDiscovered</references>
+        <references refid="classDeviceCommand_1a96208c78728c0068e7a78f961b913751" compoundref="devicecommand_8cpp" startline="320" endline="324">serviceError</references>
+        <references refid="classAbstractPokitService_1a9e680ebf280361ef82f4b072448d7e9b">AbstractPokitService::serviceErrorOccurred</references>
+        <references refid="classAbstractPokitService_1aa0e323c5e2380709c5a5fde18520ae3f" compoundref="abstractpokitservice_8cpp" startline="110" endline="114">AbstractPokitService::setPokitProduct</references>
+        <references refid="qbluetoothdevicediscoveryagent_1stop">QBluetoothDeviceDiscoveryAgent::stop</references>
+        <references refid="qbluetoothaddress_1toString">QBluetoothAddress::toString</references>
+        <references refid="quuid_1toString">QUuid::toString</references>
+        <references refid="pokitproducts_8h_1abac6d04d602c122e3de08ef55122d635" compoundref="pokitproducts_8cpp" startline="26" endline="35">toString</references>
+        <references refid="qobject_1tr">QObject::tr</references>
+      </memberdef>
+      <memberdef kind="slot" id="classDeviceCommand_1a7dfdaae89c5f6540af9a5bfbcfd66e5a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DeviceCommand::deviceDiscoveryFinished</definition>
+        <argsstring>() override</argsstring>
+        <name>deviceDiscoveryFinished</name>
+        <qualifiedname>DeviceCommand::deviceDiscoveryFinished</qualifiedname>
+        <briefdescription>
+<para>Checks that the requested device was discovered, and if not, reports and error and exits. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/devicecommand.h" line="47" column="10" bodyfile="/home/paul/src/dokit/src/cli/devicecommand.cpp" bodystart="392" bodyend="400"/>
+        <references refid="classDeviceCommand_1a2bbf2dc9bb0ba85a2bf29263746c7b57" compoundref="devicecommand_8h" startline="26" endline="26">device</references>
+        <references refid="classAbstractCommand_1a07d979bc039d61f5c720cb1521b31208" compoundref="abstractcommand_8h" startline="41">AbstractCommand::deviceToScanFor</references>
+        <references refid="qcoreapplication_1exit">QCoreApplication::exit</references>
+        <references refid="qstring_1isNull">QString::isNull</references>
+        <references refid="qobject_1tr">QObject::tr</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>The <ref refid="classAbstractCommand" kindref="compound">AbstractCommand</ref> class extends <ref refid="classAbstractCommand" kindref="compound">AbstractCommand</ref> to add a <ref refid="classPokitDevice" kindref="compound">PokitDevice</ref> instance. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>AbstractCommand</label>
+        <link refid="classAbstractCommand"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>CalibrateCommand</label>
+        <link refid="classCalibrateCommand"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>DeviceCommand</label>
+        <link refid="classDeviceCommand"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>DsoCommand</label>
+        <link refid="classDsoCommand"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>FlashLedCommand</label>
+        <link refid="classFlashLedCommand"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>InfoCommand</label>
+        <link refid="classInfoCommand"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>LoggerFetchCommand</label>
+        <link refid="classLoggerFetchCommand"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>LoggerStartCommand</label>
+        <link refid="classLoggerStartCommand"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>LoggerStopCommand</label>
+        <link refid="classLoggerStopCommand"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>MeterCommand</label>
+        <link refid="classMeterCommand"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>QObject</label>
+        <link refid="qobject" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags"/>
+      </node>
+      <node id="12">
+        <label>SetNameCommand</label>
+        <link refid="classSetNameCommand"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>SetTorchCommand</label>
+        <link refid="classSetTorchCommand"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>StatusCommand</label>
+        <link refid="classStatusCommand"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>AbstractCommand</label>
+        <link refid="classAbstractCommand"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>deviceToScanFor</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>discoveryAgent</edgelabel>
+        </childnode>
+      </node>
+      <node id="12">
+        <label>AbstractPokitService</label>
+        <link refid="classAbstractPokitService"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>d_ptr</edgelabel>
+        </childnode>
+      </node>
+      <node id="13">
+        <label>AbstractPokitServicePrivate</label>
+        <link refid="classAbstractPokitServicePrivate"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>controller</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>service</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>serviceUuid</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>q_ptr</edgelabel>
+        </childnode>
+      </node>
+      <node id="11">
+        <label>CalibrationService</label>
+        <link refid="classCalibrationService"/>
+        <childnode refid="12" relation="public-inheritance">
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>serviceUuid</edgelabel>
+        </childnode>
+      </node>
+      <node id="17">
+        <label>DataLoggerService</label>
+        <link refid="classDataLoggerService"/>
+        <childnode refid="12" relation="public-inheritance">
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>serviceUuid</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>DeviceCommand</label>
+        <link refid="classDeviceCommand"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>device</edgelabel>
+        </childnode>
+      </node>
+      <node id="18">
+        <label>DeviceInfoService</label>
+        <link refid="classDeviceInfoService"/>
+        <childnode refid="12" relation="public-inheritance">
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>serviceUuid</edgelabel>
+        </childnode>
+      </node>
+      <node id="19">
+        <label>DsoService</label>
+        <link refid="classDsoService"/>
+        <childnode refid="12" relation="public-inheritance">
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>serviceUuid</edgelabel>
+        </childnode>
+      </node>
+      <node id="20">
+        <label>MultimeterService</label>
+        <link refid="classMultimeterService"/>
+        <childnode refid="12" relation="public-inheritance">
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>serviceUuid</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>PokitDevice</label>
+        <link refid="classPokitDevice"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>d_ptr</edgelabel>
+        </childnode>
+      </node>
+      <node id="9">
+        <label>PokitDevicePrivate</label>
+        <link refid="classPokitDevicePrivate"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>controller</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>calibration</edgelabel>
+        </childnode>
+        <childnode refid="17" relation="usage">
+          <edgelabel>dataLogger</edgelabel>
+        </childnode>
+        <childnode refid="18" relation="usage">
+          <edgelabel>deviceInfo</edgelabel>
+        </childnode>
+        <childnode refid="19" relation="usage">
+          <edgelabel>dso</edgelabel>
+        </childnode>
+        <childnode refid="20" relation="usage">
+          <edgelabel>multimeter</edgelabel>
+        </childnode>
+        <childnode refid="21" relation="usage">
+          <edgelabel>status</edgelabel>
+        </childnode>
+        <childnode refid="22" relation="usage">
+          <edgelabel>calibrationMutex</edgelabel>
+          <edgelabel>dataLoggerMutex</edgelabel>
+          <edgelabel>deviceInfoMutex</edgelabel>
+          <edgelabel>dsoMutex</edgelabel>
+          <edgelabel>multimeterMutex</edgelabel>
+          <edgelabel>statusMutex</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>q_ptr</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>PokitDiscoveryAgent</label>
+        <link refid="classPokitDiscoveryAgent"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>d_ptr</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>PokitDiscoveryAgentPrivate</label>
+        <link refid="classPokitDiscoveryAgentPrivate"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>q_ptr</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>QBluetoothDeviceDiscoveryAgent</label>
+        <link refid="qbluetoothdevicediscoveryagent" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>QBluetoothUuid</label>
+        <link refid="qbluetoothuuid" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags"/>
+        <childnode refid="16" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>QLowEnergyController</label>
+        <link refid="qlowenergycontroller" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>QLowEnergyService</label>
+        <link refid="qlowenergyservice" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>QMutex</label>
+        <link refid="qmutex" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags"/>
+      </node>
+      <node id="3">
+        <label>QObject</label>
+        <link refid="qobject" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags"/>
+      </node>
+      <node id="4">
+        <label>QString</label>
+        <link refid="qstring" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags"/>
+      </node>
+      <node id="16">
+        <label>QUuid</label>
+        <link refid="quuid" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags"/>
+      </node>
+      <node id="21">
+        <label>StatusService</label>
+        <link refid="classStatusService"/>
+        <childnode refid="12" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/paul/src/dokit/src/cli/devicecommand.h" line="15" column="1" bodyfile="/home/paul/src/dokit/src/cli/devicecommand.h" bodystart="16" bodyend="50"/>
+    <listofallmembers>
+      <member refid="classAbstractCommand_1a0d6fde269511e87aa6f178c1733073ae" prot="public" virt="non-virtual"><scope>DeviceCommand</scope><name>AbstractCommand</name></member>
+      <member refid="qobject_1objectName-prop" prot="public" virt="non-virtual"><scope>DeviceCommand</scope><name>bindableObjectName</name></member>
+      <member refid="qobject_1blockSignals" prot="public" virt="non-virtual"><scope>DeviceCommand</scope><name>blockSignals</name></member>
+      <member refid="qobject_1childEvent" prot="protected" virt="virtual"><scope>DeviceCommand</scope><name>childEvent</name></member>
+      <member refid="qobject_1children" prot="public" virt="non-virtual"><scope>DeviceCommand</scope><name>children</name></member>
+      <member refid="qobject_1connect-4" prot="public" virt="non-virtual"><scope>DeviceCommand</scope><name>connect</name></member>
+      <member refid="qobject_1connect-5" prot="public" virt="non-virtual"><scope>DeviceCommand</scope><name>connect</name></member>
+      <member refid="qobject_1connect-3" prot="public" virt="non-virtual"><scope>DeviceCommand</scope><name>connect</name></member>
+      <member refid="qobject_1connect-1" prot="public" virt="non-virtual"><scope>DeviceCommand</scope><name>connect</name></member>
+      <member refid="qobject_1connect" prot="public" virt="non-virtual"><scope>DeviceCommand</scope><name>connect</name></member>
+      <member refid="qobject_1connect-2" prot="public" virt="non-virtual"><scope>DeviceCommand</scope><name>connect</name></member>
+      <member refid="qobject_1connectNotify" prot="protected" virt="virtual"><scope>DeviceCommand</scope><name>connectNotify</name></member>
+      <member refid="classDeviceCommand_1a28461c0fe3f2b3398c74298b3df70b93" prot="protected" virt="virtual"><scope>DeviceCommand</scope><name>controllerError</name></member>
+      <member refid="qobject_1customEvent" prot="protected" virt="virtual"><scope>DeviceCommand</scope><name>customEvent</name></member>
+      <member refid="qobject_1deleteLater" prot="public" virt="non-virtual"><scope>DeviceCommand</scope><name>deleteLater</name></member>
+      <member refid="qobject_1destroyed" prot="public" virt="non-virtual"><scope>DeviceCommand</scope><name>destroyed</name></member>
+      <member refid="classDeviceCommand_1a2bbf2dc9bb0ba85a2bf29263746c7b57" prot="protected" virt="non-virtual"><scope>DeviceCommand</scope><name>device</name></member>
+      <member refid="classDeviceCommand_1a55c623ad1d1e0ad1273604f3f24b1dfc" prot="public" virt="non-virtual"><scope>DeviceCommand</scope><name>DeviceCommand</name></member>
+      <member refid="classDeviceCommand_1a525ae4429c2b9a325bad62678409fb5b" prot="protected" virt="virtual"><scope>DeviceCommand</scope><name>deviceDisconnected</name></member>
+      <member refid="classDeviceCommand_1acde5a41e646a23c5485b67cf99e402a7" prot="private" virt="non-virtual"><scope>DeviceCommand</scope><name>deviceDiscovered</name></member>
+      <member refid="classDeviceCommand_1a7dfdaae89c5f6540af9a5bfbcfd66e5a" prot="private" virt="non-virtual"><scope>DeviceCommand</scope><name>deviceDiscoveryFinished</name></member>
+      <member refid="classAbstractCommand_1a07d979bc039d61f5c720cb1521b31208" prot="protected" virt="non-virtual"><scope>DeviceCommand</scope><name>deviceToScanFor</name></member>
+      <member refid="classDeviceCommand_1ae619166395b5651f1316fd5336d9fa2c" prot="protected" virt="non-virtual"><scope>DeviceCommand</scope><name>disconnect</name></member>
+      <member refid="qobject_1disconnect-4" prot="public" virt="non-virtual" ambiguityscope="AbstractCommand::"><scope>DeviceCommand</scope><name>disconnect</name></member>
+      <member refid="qobject_1disconnect-5" prot="public" virt="non-virtual" ambiguityscope="AbstractCommand::"><scope>DeviceCommand</scope><name>disconnect</name></member>
+      <member refid="qobject_1disconnect-1" prot="public" virt="non-virtual" ambiguityscope="AbstractCommand::"><scope>DeviceCommand</scope><name>disconnect</name></member>
+      <member refid="qobject_1disconnect" prot="public" virt="non-virtual" ambiguityscope="AbstractCommand::"><scope>DeviceCommand</scope><name>disconnect</name></member>
+      <member refid="qobject_1disconnect-3" prot="public" virt="non-virtual" ambiguityscope="AbstractCommand::"><scope>DeviceCommand</scope><name>disconnect</name></member>
+      <member refid="qobject_1disconnect-2" prot="public" virt="non-virtual" ambiguityscope="AbstractCommand::"><scope>DeviceCommand</scope><name>disconnect</name></member>
+      <member refid="qobject_1disconnectNotify" prot="protected" virt="virtual"><scope>DeviceCommand</scope><name>disconnectNotify</name></member>
+      <member refid="classAbstractCommand_1a86878df43cd818f4a7f333a97dabac3c" prot="protected" virt="non-virtual"><scope>DeviceCommand</scope><name>discoveryAgent</name></member>
+      <member refid="qobject_1dumpObjectInfo" prot="public" virt="non-virtual"><scope>DeviceCommand</scope><name>dumpObjectInfo</name></member>
+      <member refid="qobject_1dumpObjectTree" prot="public" virt="non-virtual"><scope>DeviceCommand</scope><name>dumpObjectTree</name></member>
+      <member refid="qobject_1dynamicPropertyNames" prot="public" virt="non-virtual"><scope>DeviceCommand</scope><name>dynamicPropertyNames</name></member>
+      <member refid="classAbstractCommand_1af85c842568f8a3a893e336e449ef7813" prot="public" virt="non-virtual"><scope>DeviceCommand</scope><name>escapeCsvField</name></member>
+      <member refid="qobject_1event" prot="public" virt="virtual"><scope>DeviceCommand</scope><name>event</name></member>
+      <member refid="qobject_1eventFilter" prot="public" virt="virtual"><scope>DeviceCommand</scope><name>eventFilter</name></member>
+      <member refid="classDeviceCommand_1a792b3771a02cb7f4aff6335045b705bf" prot="protected" virt="non-virtual"><scope>DeviceCommand</scope><name>exitCodeOnDisconnect</name></member>
+      <member refid="qobject_1findChild" prot="public" virt="non-virtual"><scope>DeviceCommand</scope><name>findChild</name></member>
+      <member refid="qobject_1findChildren-1" prot="public" virt="non-virtual"><scope>DeviceCommand</scope><name>findChildren</name></member>
+      <member refid="qobject_1findChildren-2" prot="public" virt="non-virtual"><scope>DeviceCommand</scope><name>findChildren</name></member>
+      <member refid="qobject_1findChildren" prot="public" virt="non-virtual"><scope>DeviceCommand</scope><name>findChildren</name></member>
+      <member refid="classAbstractCommand_1a881d85cd96b6fcc0652b916c366dda7b" prot="protected" virt="non-virtual"><scope>DeviceCommand</scope><name>format</name></member>
+      <member refid="classDeviceCommand_1af7a724ae722462b6fa15dc6269aadd15" prot="protected" virt="pure-virtual"><scope>DeviceCommand</scope><name>getService</name></member>
+      <member refid="qobject_1inherits" prot="public" virt="non-virtual"><scope>DeviceCommand</scope><name>inherits</name></member>
+      <member refid="qobject_1installEventFilter" prot="public" virt="non-virtual"><scope>DeviceCommand</scope><name>installEventFilter</name></member>
+      <member refid="qobject_1isQuickItemType" prot="public" virt="non-virtual"><scope>DeviceCommand</scope><name>isQuickItemType</name></member>
+      <member refid="qobject_1isSignalConnected" prot="protected" virt="non-virtual"><scope>DeviceCommand</scope><name>isSignalConnected</name></member>
+      <member refid="qobject_1isWidgetType" prot="public" virt="non-virtual"><scope>DeviceCommand</scope><name>isWidgetType</name></member>
+      <member refid="qobject_1isWindowType" prot="public" virt="non-virtual"><scope>DeviceCommand</scope><name>isWindowType</name></member>
+      <member refid="qobject_1killTimer" prot="public" virt="non-virtual"><scope>DeviceCommand</scope><name>killTimer</name></member>
+      <member refid="qobject_1metaObject" prot="public" virt="virtual"><scope>DeviceCommand</scope><name>metaObject</name></member>
+      <member refid="classDeviceCommand_1a8aa676de2533a687cb369e70bb352a4c" prot="protected" virt="non-virtual"><scope>DeviceCommand</scope><name>minCapacitanceRange</name></member>
+      <member refid="classDeviceCommand_1ab5ae0318d3ec2bd4449e710eafafa680" prot="protected" virt="non-virtual"><scope>DeviceCommand</scope><name>minCurrentRange</name></member>
+      <member refid="classDeviceCommand_1abb9d2e113e372130dca9360791e7ce5b" prot="protected" virt="non-virtual"><scope>DeviceCommand</scope><name>minRange</name></member>
+      <member refid="classDeviceCommand_1a1ce3ce094a91ec500e9d50e620b0cc6d" prot="protected" virt="non-virtual"><scope>DeviceCommand</scope><name>minResistanceRange</name></member>
+      <member refid="classDeviceCommand_1a92f7e61dff3d28eda856ea4f95e828fe" prot="protected" virt="non-virtual"><scope>DeviceCommand</scope><name>minVoltageRange</name></member>
+      <member refid="qobject_1moveToThread" prot="public" virt="non-virtual"><scope>DeviceCommand</scope><name>moveToThread</name></member>
+      <member refid="qobject_1objectName-prop" prot="public" virt="non-virtual"><scope>DeviceCommand</scope><name>objectName</name></member>
+      <member refid="qobject_1objectName-prop" prot="public" virt="non-virtual"><scope>DeviceCommand</scope><name>objectName</name></member>
+      <member refid="qobject_1objectNameChanged" prot="public" virt="non-virtual"><scope>DeviceCommand</scope><name>objectNameChanged</name></member>
+      <member refid="classAbstractCommand_1aa2dadc72289ff2b0a02c1fb435f8a4dc" prot="public" virt="non-virtual"><scope>DeviceCommand</scope><name>OutputFormat</name></member>
+      <member refid="qobject_1parent" prot="public" virt="non-virtual"><scope>DeviceCommand</scope><name>parent</name></member>
+      <member refid="classAbstractCommand_1a29b2a2446ef034195183a2ae9d4bb911" prot="public" virt="non-virtual"><scope>DeviceCommand</scope><name>parseNumber</name></member>
+      <member refid="classAbstractCommand_1ad827a18a24776efeb955739459d48f7d" prot="public" virt="virtual"><scope>DeviceCommand</scope><name>processOptions</name></member>
+      <member refid="qobject_1property" prot="public" virt="non-virtual"><scope>DeviceCommand</scope><name>property</name></member>
+      <member refid="qobject_1Q_CLASSINFO" prot="public" virt="non-virtual"><scope>DeviceCommand</scope><name>Q_CLASSINFO</name></member>
+      <member refid="qobject_1Q_EMIT" prot="public" virt="non-virtual"><scope>DeviceCommand</scope><name>Q_EMIT</name></member>
+      <member refid="qobject_1Q_ENUM" prot="public" virt="non-virtual"><scope>DeviceCommand</scope><name>Q_ENUM</name></member>
+      <member refid="qobject_1Q_ENUM_NS" prot="public" virt="non-virtual"><scope>DeviceCommand</scope><name>Q_ENUM_NS</name></member>
+      <member refid="qobject-obsolete_1Q_ENUMS" prot="public" virt="non-virtual"><scope>DeviceCommand</scope><name>Q_ENUMS</name></member>
+      <member refid="qobject_1Q_FLAG" prot="public" virt="non-virtual"><scope>DeviceCommand</scope><name>Q_FLAG</name></member>
+      <member refid="qobject_1Q_FLAG_NS" prot="public" virt="non-virtual"><scope>DeviceCommand</scope><name>Q_FLAG_NS</name></member>
+      <member refid="qobject-obsolete_1Q_FLAGS" prot="public" virt="non-virtual"><scope>DeviceCommand</scope><name>Q_FLAGS</name></member>
+      <member refid="qobject_1Q_GADGET" prot="public" virt="non-virtual"><scope>DeviceCommand</scope><name>Q_GADGET</name></member>
+      <member refid="qobject_1Q_GADGET_EXPORT" prot="public" virt="non-virtual"><scope>DeviceCommand</scope><name>Q_GADGET_EXPORT</name></member>
+      <member refid="qobject_1Q_INTERFACES" prot="public" virt="non-virtual"><scope>DeviceCommand</scope><name>Q_INTERFACES</name></member>
+      <member refid="qobject_1Q_INVOKABLE" prot="public" virt="non-virtual"><scope>DeviceCommand</scope><name>Q_INVOKABLE</name></member>
+      <member refid="classAbstractCommand_1ac8bafb6db670b3c127ab59130584274f" prot="protected" virt="non-virtual"><scope>DeviceCommand</scope><name>Q_LOGGING_CATEGORY</name></member>
+      <member refid="qobject_1Q_MOC_INCLUDE" prot="public" virt="non-virtual"><scope>DeviceCommand</scope><name>Q_MOC_INCLUDE</name></member>
+      <member refid="qobject_1Q_NAMESPACE" prot="public" virt="non-virtual"><scope>DeviceCommand</scope><name>Q_NAMESPACE</name></member>
+      <member refid="qobject_1Q_NAMESPACE_EXPORT" prot="public" virt="non-virtual"><scope>DeviceCommand</scope><name>Q_NAMESPACE_EXPORT</name></member>
+      <member refid="qobject_1Q_OBJECT" prot="public" virt="non-virtual"><scope>DeviceCommand</scope><name>Q_OBJECT</name></member>
+      <member refid="qobject_1Q_PROPERTY" prot="public" virt="non-virtual"><scope>DeviceCommand</scope><name>Q_PROPERTY</name></member>
+      <member refid="qobject_1Q_REVISION" prot="public" virt="non-virtual"><scope>DeviceCommand</scope><name>Q_REVISION</name></member>
+      <member refid="qobject_1Q_SET_OBJECT_NAME" prot="public" virt="non-virtual"><scope>DeviceCommand</scope><name>Q_SET_OBJECT_NAME</name></member>
+      <member refid="qobject_1Q_SIGNAL" prot="public" virt="non-virtual"><scope>DeviceCommand</scope><name>Q_SIGNAL</name></member>
+      <member refid="qobject_1Q_SIGNALS" prot="public" virt="non-virtual"><scope>DeviceCommand</scope><name>Q_SIGNALS</name></member>
+      <member refid="qobject_1Q_SLOT" prot="public" virt="non-virtual"><scope>DeviceCommand</scope><name>Q_SLOT</name></member>
+      <member refid="qobject_1Q_SLOTS" prot="public" virt="non-virtual"><scope>DeviceCommand</scope><name>Q_SLOTS</name></member>
+      <member refid="qobject_1QObject" prot="public" virt="non-virtual"><scope>DeviceCommand</scope><name>QObject</name></member>
+      <member refid="qobject_1qobject_cast" prot="public" virt="non-virtual"><scope>DeviceCommand</scope><name>qobject_cast</name></member>
+      <member refid="qobject_1qobject_cast-1" prot="public" virt="non-virtual"><scope>DeviceCommand</scope><name>qobject_cast</name></member>
+      <member refid="qobject_1QObjectList-typedef" prot="public" virt="non-virtual"><scope>DeviceCommand</scope><name>QObjectList</name></member>
+      <member refid="qobject_1QT_NO_NARROWING_CONVERSIONS_IN_CONNECT" prot="public" virt="non-virtual"><scope>DeviceCommand</scope><name>QT_NO_NARROWING_CONVERSIONS_IN_CONNECT</name></member>
+      <member refid="qobject_1receivers" prot="protected" virt="non-virtual"><scope>DeviceCommand</scope><name>receivers</name></member>
+      <member refid="qobject_1removeEventFilter" prot="public" virt="non-virtual"><scope>DeviceCommand</scope><name>removeEventFilter</name></member>
+      <member refid="classAbstractCommand_1afd6f41cfc925751415cfa45e3b2d0b4a" prot="public" virt="virtual"><scope>DeviceCommand</scope><name>requiredOptions</name></member>
+      <member refid="qobject_1sender" prot="protected" virt="non-virtual"><scope>DeviceCommand</scope><name>sender</name></member>
+      <member refid="qobject_1senderSignalIndex" prot="protected" virt="non-virtual"><scope>DeviceCommand</scope><name>senderSignalIndex</name></member>
+      <member refid="classDeviceCommand_1a906fd97d832be0e8d2ba1c917fba41db" prot="protected" virt="virtual"><scope>DeviceCommand</scope><name>serviceDetailsDiscovered</name></member>
+      <member refid="classDeviceCommand_1a96208c78728c0068e7a78f961b913751" prot="protected" virt="virtual"><scope>DeviceCommand</scope><name>serviceError</name></member>
+      <member refid="qobject_1setObjectName-1" prot="public" virt="non-virtual"><scope>DeviceCommand</scope><name>setObjectName</name></member>
+      <member refid="qobject_1setObjectName" prot="public" virt="non-virtual"><scope>DeviceCommand</scope><name>setObjectName</name></member>
+      <member refid="qobject_1setParent" prot="public" virt="non-virtual"><scope>DeviceCommand</scope><name>setParent</name></member>
+      <member refid="qobject_1setProperty-1" prot="public" virt="non-virtual"><scope>DeviceCommand</scope><name>setProperty</name></member>
+      <member refid="qobject_1setProperty" prot="public" virt="non-virtual"><scope>DeviceCommand</scope><name>setProperty</name></member>
+      <member refid="qobject_1signalsBlocked" prot="public" virt="non-virtual"><scope>DeviceCommand</scope><name>signalsBlocked</name></member>
+      <member refid="classDeviceCommand_1a6cf548752b7ae1084a712b9003b92d0c" prot="public" virt="non-virtual"><scope>DeviceCommand</scope><name>start</name></member>
+      <member refid="qobject_1startTimer" prot="public" virt="non-virtual"><scope>DeviceCommand</scope><name>startTimer</name></member>
+      <member refid="qobject_1startTimer-1" prot="public" virt="non-virtual"><scope>DeviceCommand</scope><name>startTimer</name></member>
+      <member refid="classAbstractCommand_1a1ceca3c5b4cb24277dd4d4054f45db18" prot="public" virt="virtual"><scope>DeviceCommand</scope><name>supportedOptions</name></member>
+      <member refid="classDeviceCommand_1a4e4cda7a4d418daa1577a2344142b517" prot="private" virt="non-virtual"><scope>DeviceCommand</scope><name>TestDeviceCommand</name></member>
+      <member refid="qobject_1thread" prot="public" virt="non-virtual"><scope>DeviceCommand</scope><name>thread</name></member>
+      <member refid="qobject_1timerEvent" prot="protected" virt="virtual"><scope>DeviceCommand</scope><name>timerEvent</name></member>
+      <member refid="qobject_1tr" prot="public" virt="non-virtual"><scope>DeviceCommand</scope><name>tr</name></member>
+      <member refid="qobject_1dtor.QObject" prot="public" virt="virtual"><scope>DeviceCommand</scope><name>~QObject</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

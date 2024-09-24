@@ -1,0 +1,437 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.0" xml:lang="en-US">
+  <compounddef id="classPokitDiscoveryAgent" kind="class" language="C++" prot="public">
+    <compoundname>PokitDiscoveryAgent</compoundname>
+    <basecompoundref refid="qbluetoothdevicediscoveryagent" prot="public" virt="non-virtual">QBluetoothDeviceDiscoveryAgent</basecompoundref>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classPokitDiscoveryAgent_1ad42dea538f47317d0465e3320f2d4365" prot="protected" static="no" mutable="no">
+        <type><ref refid="classPokitDiscoveryAgentPrivate" kindref="compound">PokitDiscoveryAgentPrivate</ref> *</type>
+        <definition>PokitDiscoveryAgentPrivate* PokitDiscoveryAgent::d_ptr</definition>
+        <argsstring></argsstring>
+        <name>d_ptr</name>
+        <qualifiedname>PokitDiscoveryAgent::d_ptr</qualifiedname>
+        <briefdescription>
+<para>Internal d-pointer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/pokitdiscoveryagent.h" line="41" column="33" bodyfile="/home/paul/src/dokit/include/qtpokit/pokitdiscoveryagent.h" bodystart="41" bodyend="-1"/>
+        <referencedby refid="classPokitDiscoveryAgent_1a9bb87ea88f1098a4505f547be8e392b4" compoundref="pokitdiscoveryagent_8cpp" startline="75" endline="78">~PokitDiscoveryAgent</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="classPokitDiscoveryAgent_1adab84de4430e038cc3c56d9d81c6b7e6" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class TestPokitDiscoveryAgent</definition>
+        <argsstring></argsstring>
+        <name>TestPokitDiscoveryAgent</name>
+        <qualifiedname>PokitDiscoveryAgent::TestPokitDiscoveryAgent</qualifiedname>
+        <param>
+          <type>TestPokitDiscoveryAgent</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/pokitdiscoveryagent.h" line="50" column="18" bodyfile="/home/paul/src/dokit/include/qtpokit/pokitdiscoveryagent.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classPokitDiscoveryAgent_1a03d6f7080957f3435c1644302854e303" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PokitDiscoveryAgent::PokitDiscoveryAgent</definition>
+        <argsstring>(const QBluetoothAddress &amp;deviceAdapter, QObject *parent=nullptr)</argsstring>
+        <name>PokitDiscoveryAgent</name>
+        <qualifiedname>PokitDiscoveryAgent::PokitDiscoveryAgent</qualifiedname>
+        <param>
+          <type>const <ref refid="qbluetoothaddress" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothAddress</ref> &amp;</type>
+          <declname>deviceAdapter</declname>
+        </param>
+        <param>
+          <type><ref refid="qobject" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QObject</ref> *</type>
+          <declname>parent</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+<para>Constructs a new Pokit device discovery agent with <emphasis>parent</emphasis>, using <emphasis>deviceAdapter</emphasis> for the search device. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/pokitdiscoveryagent.h" line="25" column="14" bodyfile="/home/paul/src/dokit/src/lib/pokitdiscoveryagent.cpp" bodystart="30" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="classPokitDiscoveryAgent_1a9f057a22c00501860a7142d143d5c55b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PokitDiscoveryAgent::PokitDiscoveryAgent</definition>
+        <argsstring>(QObject *parent=nullptr)</argsstring>
+        <name>PokitDiscoveryAgent</name>
+        <qualifiedname>PokitDiscoveryAgent::PokitDiscoveryAgent</qualifiedname>
+        <param>
+          <type><ref refid="qobject" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QObject</ref> *</type>
+          <declname>parent</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+<para>Constructs a new Pokit device discovery agent with <emphasis>parent</emphasis>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/pokitdiscoveryagent.h" line="26" column="5" bodyfile="/home/paul/src/dokit/src/lib/pokitdiscoveryagent.cpp" bodystart="41" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classPokitDiscoveryAgent_1a9bb87ea88f1098a4505f547be8e392b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>PokitDiscoveryAgent::~PokitDiscoveryAgent</definition>
+        <argsstring>()</argsstring>
+        <name>~PokitDiscoveryAgent</name>
+        <qualifiedname>PokitDiscoveryAgent::~PokitDiscoveryAgent</qualifiedname>
+        <briefdescription>
+<para>Destroys this <ref refid="classPokitDiscoveryAgent" kindref="compound">PokitDiscoveryAgent</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/pokitdiscoveryagent.h" line="27" column="13" bodyfile="/home/paul/src/dokit/src/lib/pokitdiscoveryagent.cpp" bodystart="75" bodyend="78"/>
+        <references refid="classPokitDiscoveryAgent_1ad42dea538f47317d0465e3320f2d4365" compoundref="pokitdiscoveryagent_8h" startline="41">d_ptr</references>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-slot">
+      <memberdef kind="slot" id="classPokitDiscoveryAgent_1a7a91a09dbbe46327407d69bc04b19fc5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PokitDiscoveryAgent::start</definition>
+        <argsstring>(QBluetoothDeviceDiscoveryAgent::DiscoveryMethods methods)</argsstring>
+        <name>start</name>
+        <qualifiedname>PokitDiscoveryAgent::start</qualifiedname>
+        <param>
+          <type><ref refid="qbluetoothdevicediscoveryagent_1DiscoveryMethod-enum" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothDeviceDiscoveryAgent::DiscoveryMethods</ref></type>
+          <declname>methods</declname>
+        </param>
+        <briefdescription>
+<para>Starts Pokit device discovery. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This override simply enforces that <emphasis>method</emphasis> must be <computeroutput>LowEnergyMethod</computeroutput>, as all Pokit devices used Bluetooth Low Energy (BLE). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/pokitdiscoveryagent.h" line="30" column="10" bodyfile="/home/paul/src/dokit/src/lib/pokitdiscoveryagent.cpp" bodystart="86" bodyend="92"/>
+        <references refid="qbluetoothdevicediscoveryagent_1DiscoveryMethod-enum">QBluetoothDeviceDiscoveryAgent::LowEnergyMethod</references>
+        <references refid="qbluetoothdevicediscoveryagent_1start">QBluetoothDeviceDiscoveryAgent::start</references>
+        <references refid="qobject_1tr">QObject::tr</references>
+        <referencedby refid="classDeviceCommand_1a6cf548752b7ae1084a712b9003b92d0c" compoundref="devicecommand_8cpp" startline="29" endline="36">DeviceCommand::start</referencedby>
+        <referencedby refid="classScanCommand_1a5fe99205591ced024ad2676f377cc845" compoundref="scancommand_8cpp" startline="58" endline="64">ScanCommand::start</referencedby>
+      </memberdef>
+      <memberdef kind="slot" id="classPokitDiscoveryAgent_1a612a182a4f6e5f9bc501054df2a4bd02" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PokitDiscoveryAgent::start</definition>
+        <argsstring>()</argsstring>
+        <name>start</name>
+        <qualifiedname>PokitDiscoveryAgent::start</qualifiedname>
+        <briefdescription>
+<para>Starts Pokit device discovery. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/pokitdiscoveryagent.h" line="31" column="10" bodyfile="/home/paul/src/dokit/src/lib/pokitdiscoveryagent.cpp" bodystart="97" bodyend="102"/>
+        <references refid="qbluetoothdevicediscoveryagent_1DiscoveryMethod-enum">QBluetoothDeviceDiscoveryAgent::LowEnergyMethod</references>
+        <references refid="qbluetoothdevicediscoveryagent_1start">QBluetoothDeviceDiscoveryAgent::start</references>
+        <references refid="qobject_1tr">QObject::tr</references>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="signal">
+      <memberdef kind="signal" id="classPokitDiscoveryAgent_1af38e511ae250a745cc900c0c4f356972" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PokitDiscoveryAgent::pokitDeviceDiscovered</definition>
+        <argsstring>(const QBluetoothDeviceInfo &amp;info)</argsstring>
+        <name>pokitDeviceDiscovered</name>
+        <qualifiedname>PokitDiscoveryAgent::pokitDeviceDiscovered</qualifiedname>
+        <param>
+          <type>const <ref refid="qbluetoothdeviceinfo" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothDeviceInfo</ref> &amp;</type>
+          <declname>info</declname>
+        </param>
+        <briefdescription>
+<para>This signal is emitted when the Pokit device described by <emphasis>info</emphasis> is discovered. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/pokitdiscoveryagent.h" line="34" column="10"/>
+        <referencedby refid="classAbstractCommand_1a0d6fde269511e87aa6f178c1733073ae" compoundref="abstractcommand_8cpp" startline="23" endline="42">AbstractCommand::AbstractCommand</referencedby>
+      </memberdef>
+      <memberdef kind="signal" id="classPokitDiscoveryAgent_1a96787015304d52f3e220d5a5d4e7e06c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PokitDiscoveryAgent::pokitDeviceUpdated</definition>
+        <argsstring>(const QBluetoothDeviceInfo &amp;info, QBluetoothDeviceInfo::Fields updatedFields)</argsstring>
+        <name>pokitDeviceUpdated</name>
+        <qualifiedname>PokitDiscoveryAgent::pokitDeviceUpdated</qualifiedname>
+        <param>
+          <type>const <ref refid="qbluetoothdeviceinfo" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothDeviceInfo</ref> &amp;</type>
+          <declname>info</declname>
+        </param>
+        <param>
+          <type><ref refid="qbluetoothdeviceinfo_1Field-enum" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothDeviceInfo::Fields</ref></type>
+          <declname>updatedFields</declname>
+        </param>
+        <briefdescription>
+<para>This signal is emitted when the Pokit device described by <emphasis>info</emphasis> is updated. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The <emphasis>updatedFields</emphasis> flags tell which information has been updated. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/pokitdiscoveryagent.h" line="36" column="10"/>
+        <referencedby refid="classScanCommand_1a3e809c3a97ec08aecf2dc0f2cf99a837" compoundref="scancommand_8cpp" startline="25" endline="31">ScanCommand::ScanCommand</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classPokitDiscoveryAgent_1adf15272f71e409d291e38ece3f833769" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PokitDiscoveryAgent::PokitDiscoveryAgent</definition>
+        <argsstring>(PokitDiscoveryAgentPrivate *const d, const QBluetoothAddress &amp;deviceAdapter, QObject *const parent)</argsstring>
+        <name>PokitDiscoveryAgent</name>
+        <qualifiedname>PokitDiscoveryAgent::PokitDiscoveryAgent</qualifiedname>
+        <param>
+          <type><ref refid="classPokitDiscoveryAgentPrivate" kindref="compound">PokitDiscoveryAgentPrivate</ref> *const</type>
+          <declname>d</declname>
+        </param>
+        <param>
+          <type>const <ref refid="qbluetoothaddress" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothAddress</ref> &amp;</type>
+          <declname>deviceAdapter</declname>
+        </param>
+        <param>
+          <type><ref refid="qobject" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QObject</ref> *const</type>
+          <declname>parent</declname>
+        </param>
+        <briefdescription>
+<para>Constructs a new Pokit device discovery agent with <emphasis>parent</emphasis>, using <emphasis>deviceAdapter</emphasis> for the search device, and private implementation <emphasis>d</emphasis>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/pokitdiscoveryagent.h" line="42" column="5" bodyfile="/home/paul/src/dokit/src/lib/pokitdiscoveryagent.cpp" bodystart="53" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="classPokitDiscoveryAgent_1aa14d5dd80f33eca655ae95f320abdcc9" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PokitDiscoveryAgent::PokitDiscoveryAgent</definition>
+        <argsstring>(PokitDiscoveryAgentPrivate *const d, QObject *const parent)</argsstring>
+        <name>PokitDiscoveryAgent</name>
+        <qualifiedname>PokitDiscoveryAgent::PokitDiscoveryAgent</qualifiedname>
+        <param>
+          <type><ref refid="classPokitDiscoveryAgentPrivate" kindref="compound">PokitDiscoveryAgentPrivate</ref> *const</type>
+          <declname>d</declname>
+        </param>
+        <param>
+          <type><ref refid="qobject" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QObject</ref> *const</type>
+          <declname>parent</declname>
+        </param>
+        <briefdescription>
+<para>Constructs a new Pokit device discovery agent with <emphasis>parent</emphasis>, and private implementation <emphasis>d</emphasis>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/pokitdiscoveryagent.h" line="44" column="5" bodyfile="/home/paul/src/dokit/src/lib/pokitdiscoveryagent.cpp" bodystart="64" bodyend="69"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>The <ref refid="classPokitDiscoveryAgent" kindref="compound">PokitDiscoveryAgent</ref> class discovers nearby Pokit devices. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>After constructing a <ref refid="classPokitDiscoveryAgent" kindref="compound">PokitDiscoveryAgent</ref> object, and subscribing to the relevant signals, invoke <ref refid="classPokitDiscoveryAgent_1a612a182a4f6e5f9bc501054df2a4bd02" kindref="member">start()</ref> to begin discovery. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>PokitDiscoveryAgent</label>
+        <link refid="classPokitDiscoveryAgent"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QBluetoothDeviceDiscoveryAgent</label>
+        <link refid="qbluetoothdevicediscoveryagent" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>QObject</label>
+        <link refid="qobject" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>PokitDiscoveryAgent</label>
+        <link refid="classPokitDiscoveryAgent"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>d_ptr</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>PokitDiscoveryAgentPrivate</label>
+        <link refid="classPokitDiscoveryAgentPrivate"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1" relation="usage">
+          <edgelabel>q_ptr</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QBluetoothDeviceDiscoveryAgent</label>
+        <link refid="qbluetoothdevicediscoveryagent" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>QObject</label>
+        <link refid="qobject" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/paul/src/dokit/include/qtpokit/pokitdiscoveryagent.h" line="20" column="1" bodyfile="/home/paul/src/dokit/include/qtpokit/pokitdiscoveryagent.h" bodystart="21" bodyend="51"/>
+    <listofallmembers>
+      <member refid="qobject_1objectName-prop" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgent</scope><name>bindableObjectName</name></member>
+      <member refid="qobject_1blockSignals" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgent</scope><name>blockSignals</name></member>
+      <member refid="qbluetoothdevicediscoveryagent_1canceled" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgent</scope><name>canceled</name></member>
+      <member refid="qobject_1childEvent" prot="protected" virt="virtual"><scope>PokitDiscoveryAgent</scope><name>childEvent</name></member>
+      <member refid="qobject_1children" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgent</scope><name>children</name></member>
+      <member refid="qbluetoothdevicediscoveryagent_1DiscoveryMethod-enum" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgent</scope><name>ClassicMethod</name></member>
+      <member refid="qobject_1connect-4" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgent</scope><name>connect</name></member>
+      <member refid="qobject_1connect-5" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgent</scope><name>connect</name></member>
+      <member refid="qobject_1connect-3" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgent</scope><name>connect</name></member>
+      <member refid="qobject_1connect-1" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgent</scope><name>connect</name></member>
+      <member refid="qobject_1connect" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgent</scope><name>connect</name></member>
+      <member refid="qobject_1connect-2" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgent</scope><name>connect</name></member>
+      <member refid="qobject_1connectNotify" prot="protected" virt="virtual"><scope>PokitDiscoveryAgent</scope><name>connectNotify</name></member>
+      <member refid="qobject_1customEvent" prot="protected" virt="virtual"><scope>PokitDiscoveryAgent</scope><name>customEvent</name></member>
+      <member refid="classPokitDiscoveryAgent_1ad42dea538f47317d0465e3320f2d4365" prot="protected" virt="non-virtual"><scope>PokitDiscoveryAgent</scope><name>d_ptr</name></member>
+      <member refid="qobject_1deleteLater" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgent</scope><name>deleteLater</name></member>
+      <member refid="qobject_1destroyed" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgent</scope><name>destroyed</name></member>
+      <member refid="qbluetoothdevicediscoveryagent_1deviceDiscovered" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgent</scope><name>deviceDiscovered</name></member>
+      <member refid="qbluetoothdevicediscoveryagent_1deviceUpdated" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgent</scope><name>deviceUpdated</name></member>
+      <member refid="qobject_1disconnect-4" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgent</scope><name>disconnect</name></member>
+      <member refid="qobject_1disconnect-5" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgent</scope><name>disconnect</name></member>
+      <member refid="qobject_1disconnect-1" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgent</scope><name>disconnect</name></member>
+      <member refid="qobject_1disconnect" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgent</scope><name>disconnect</name></member>
+      <member refid="qobject_1disconnect-3" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgent</scope><name>disconnect</name></member>
+      <member refid="qobject_1disconnect-2" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgent</scope><name>disconnect</name></member>
+      <member refid="qobject_1disconnectNotify" prot="protected" virt="virtual"><scope>PokitDiscoveryAgent</scope><name>disconnectNotify</name></member>
+      <member refid="qbluetoothdevicediscoveryagent_1discoveredDevices" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgent</scope><name>discoveredDevices</name></member>
+      <member refid="qbluetoothdevicediscoveryagent_1DiscoveryMethod-enum" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgent</scope><name>DiscoveryMethod</name></member>
+      <member refid="qbluetoothdevicediscoveryagent_1DiscoveryMethod-enum" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgent</scope><name>DiscoveryMethods</name></member>
+      <member refid="qobject_1dumpObjectInfo" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgent</scope><name>dumpObjectInfo</name></member>
+      <member refid="qobject_1dumpObjectTree" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgent</scope><name>dumpObjectTree</name></member>
+      <member refid="qobject_1dynamicPropertyNames" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgent</scope><name>dynamicPropertyNames</name></member>
+      <member refid="qbluetoothdevicediscoveryagent_1Error-enum" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgent</scope><name>Error</name></member>
+      <member refid="qbluetoothdevicediscoveryagent_1error" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgent</scope><name>error</name></member>
+      <member refid="qbluetoothdevicediscoveryagent_1errorOccurred" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgent</scope><name>errorOccurred</name></member>
+      <member refid="qbluetoothdevicediscoveryagent_1errorString" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgent</scope><name>errorString</name></member>
+      <member refid="qobject_1event" prot="public" virt="virtual"><scope>PokitDiscoveryAgent</scope><name>event</name></member>
+      <member refid="qobject_1eventFilter" prot="public" virt="virtual"><scope>PokitDiscoveryAgent</scope><name>eventFilter</name></member>
+      <member refid="qobject_1findChild" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgent</scope><name>findChild</name></member>
+      <member refid="qobject_1findChildren-1" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgent</scope><name>findChildren</name></member>
+      <member refid="qobject_1findChildren-2" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgent</scope><name>findChildren</name></member>
+      <member refid="qobject_1findChildren" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgent</scope><name>findChildren</name></member>
+      <member refid="qbluetoothdevicediscoveryagent_1finished" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgent</scope><name>finished</name></member>
+      <member refid="qobject_1inherits" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgent</scope><name>inherits</name></member>
+      <member refid="qbluetoothdevicediscoveryagent_1Error-enum" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgent</scope><name>InputOutputError</name></member>
+      <member refid="qobject_1installEventFilter" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgent</scope><name>installEventFilter</name></member>
+      <member refid="qbluetoothdevicediscoveryagent_1Error-enum" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgent</scope><name>InvalidBluetoothAdapterError</name></member>
+      <member refid="qbluetoothdevicediscoveryagent_1isActive" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgent</scope><name>isActive</name></member>
+      <member refid="qobject_1isQuickItemType" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgent</scope><name>isQuickItemType</name></member>
+      <member refid="qobject_1isSignalConnected" prot="protected" virt="non-virtual"><scope>PokitDiscoveryAgent</scope><name>isSignalConnected</name></member>
+      <member refid="qobject_1isWidgetType" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgent</scope><name>isWidgetType</name></member>
+      <member refid="qobject_1isWindowType" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgent</scope><name>isWindowType</name></member>
+      <member refid="qobject_1killTimer" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgent</scope><name>killTimer</name></member>
+      <member refid="qbluetoothdevicediscoveryagent_1Error-enum" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgent</scope><name>LocationServiceTurnedOffError</name></member>
+      <member refid="qbluetoothdevicediscoveryagent_1lowEnergyDiscoveryTimeout" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgent</scope><name>lowEnergyDiscoveryTimeout</name></member>
+      <member refid="qbluetoothdevicediscoveryagent_1DiscoveryMethod-enum" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgent</scope><name>LowEnergyMethod</name></member>
+      <member refid="qobject_1metaObject" prot="public" virt="virtual"><scope>PokitDiscoveryAgent</scope><name>metaObject</name></member>
+      <member refid="qbluetoothdevicediscoveryagent_1Error-enum" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgent</scope><name>MissingPermissionsError</name></member>
+      <member refid="qobject_1moveToThread" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgent</scope><name>moveToThread</name></member>
+      <member refid="qbluetoothdevicediscoveryagent_1Error-enum" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgent</scope><name>NoError</name></member>
+      <member refid="qbluetoothdevicediscoveryagent_1DiscoveryMethod-enum" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgent</scope><name>NoMethod</name></member>
+      <member refid="qobject_1objectName-prop" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgent</scope><name>objectName</name></member>
+      <member refid="qobject_1objectName-prop" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgent</scope><name>objectName</name></member>
+      <member refid="qobject_1objectNameChanged" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgent</scope><name>objectNameChanged</name></member>
+      <member refid="qobject_1parent" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgent</scope><name>parent</name></member>
+      <member refid="classPokitDiscoveryAgent_1af38e511ae250a745cc900c0c4f356972" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgent</scope><name>pokitDeviceDiscovered</name></member>
+      <member refid="classPokitDiscoveryAgent_1a96787015304d52f3e220d5a5d4e7e06c" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgent</scope><name>pokitDeviceUpdated</name></member>
+      <member refid="classPokitDiscoveryAgent_1a03d6f7080957f3435c1644302854e303" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgent</scope><name>PokitDiscoveryAgent</name></member>
+      <member refid="classPokitDiscoveryAgent_1a9f057a22c00501860a7142d143d5c55b" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgent</scope><name>PokitDiscoveryAgent</name></member>
+      <member refid="classPokitDiscoveryAgent_1adf15272f71e409d291e38ece3f833769" prot="protected" virt="non-virtual"><scope>PokitDiscoveryAgent</scope><name>PokitDiscoveryAgent</name></member>
+      <member refid="classPokitDiscoveryAgent_1aa14d5dd80f33eca655ae95f320abdcc9" prot="protected" virt="non-virtual"><scope>PokitDiscoveryAgent</scope><name>PokitDiscoveryAgent</name></member>
+      <member refid="qbluetoothdevicediscoveryagent_1Error-enum" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgent</scope><name>PoweredOffError</name></member>
+      <member refid="qobject_1property" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgent</scope><name>property</name></member>
+      <member refid="qobject_1Q_CLASSINFO" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgent</scope><name>Q_CLASSINFO</name></member>
+      <member refid="qobject_1Q_EMIT" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgent</scope><name>Q_EMIT</name></member>
+      <member refid="qobject_1Q_ENUM" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgent</scope><name>Q_ENUM</name></member>
+      <member refid="qobject_1Q_ENUM_NS" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgent</scope><name>Q_ENUM_NS</name></member>
+      <member refid="qobject-obsolete_1Q_ENUMS" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgent</scope><name>Q_ENUMS</name></member>
+      <member refid="qobject_1Q_FLAG" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgent</scope><name>Q_FLAG</name></member>
+      <member refid="qobject_1Q_FLAG_NS" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgent</scope><name>Q_FLAG_NS</name></member>
+      <member refid="qobject-obsolete_1Q_FLAGS" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgent</scope><name>Q_FLAGS</name></member>
+      <member refid="qobject_1Q_GADGET" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgent</scope><name>Q_GADGET</name></member>
+      <member refid="qobject_1Q_GADGET_EXPORT" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgent</scope><name>Q_GADGET_EXPORT</name></member>
+      <member refid="qobject_1Q_INTERFACES" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgent</scope><name>Q_INTERFACES</name></member>
+      <member refid="qobject_1Q_INVOKABLE" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgent</scope><name>Q_INVOKABLE</name></member>
+      <member refid="qobject_1Q_MOC_INCLUDE" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgent</scope><name>Q_MOC_INCLUDE</name></member>
+      <member refid="qobject_1Q_NAMESPACE" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgent</scope><name>Q_NAMESPACE</name></member>
+      <member refid="qobject_1Q_NAMESPACE_EXPORT" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgent</scope><name>Q_NAMESPACE_EXPORT</name></member>
+      <member refid="qobject_1Q_OBJECT" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgent</scope><name>Q_OBJECT</name></member>
+      <member refid="qobject_1Q_PROPERTY" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgent</scope><name>Q_PROPERTY</name></member>
+      <member refid="qobject_1Q_REVISION" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgent</scope><name>Q_REVISION</name></member>
+      <member refid="qobject_1Q_SET_OBJECT_NAME" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgent</scope><name>Q_SET_OBJECT_NAME</name></member>
+      <member refid="qobject_1Q_SIGNAL" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgent</scope><name>Q_SIGNAL</name></member>
+      <member refid="qobject_1Q_SIGNALS" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgent</scope><name>Q_SIGNALS</name></member>
+      <member refid="qobject_1Q_SLOT" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgent</scope><name>Q_SLOT</name></member>
+      <member refid="qobject_1Q_SLOTS" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgent</scope><name>Q_SLOTS</name></member>
+      <member refid="qbluetoothdevicediscoveryagent_1QBluetoothDeviceDiscoveryAgent" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgent</scope><name>QBluetoothDeviceDiscoveryAgent</name></member>
+      <member refid="qbluetoothdevicediscoveryagent_1QBluetoothDeviceDiscoveryAgent-1" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgent</scope><name>QBluetoothDeviceDiscoveryAgent</name></member>
+      <member refid="qobject_1QObject" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgent</scope><name>QObject</name></member>
+      <member refid="qobject_1qobject_cast" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgent</scope><name>qobject_cast</name></member>
+      <member refid="qobject_1qobject_cast-1" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgent</scope><name>qobject_cast</name></member>
+      <member refid="qobject_1QObjectList-typedef" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgent</scope><name>QObjectList</name></member>
+      <member refid="qobject_1QT_NO_NARROWING_CONVERSIONS_IN_CONNECT" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgent</scope><name>QT_NO_NARROWING_CONVERSIONS_IN_CONNECT</name></member>
+      <member refid="qobject_1receivers" prot="protected" virt="non-virtual"><scope>PokitDiscoveryAgent</scope><name>receivers</name></member>
+      <member refid="qobject_1removeEventFilter" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgent</scope><name>removeEventFilter</name></member>
+      <member refid="qobject_1sender" prot="protected" virt="non-virtual"><scope>PokitDiscoveryAgent</scope><name>sender</name></member>
+      <member refid="qobject_1senderSignalIndex" prot="protected" virt="non-virtual"><scope>PokitDiscoveryAgent</scope><name>senderSignalIndex</name></member>
+      <member refid="qbluetoothdevicediscoveryagent_1setLowEnergyDiscoveryTimeout" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgent</scope><name>setLowEnergyDiscoveryTimeout</name></member>
+      <member refid="qobject_1setObjectName-1" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgent</scope><name>setObjectName</name></member>
+      <member refid="qobject_1setObjectName" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgent</scope><name>setObjectName</name></member>
+      <member refid="qobject_1setParent" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgent</scope><name>setParent</name></member>
+      <member refid="qobject_1setProperty-1" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgent</scope><name>setProperty</name></member>
+      <member refid="qobject_1setProperty" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgent</scope><name>setProperty</name></member>
+      <member refid="qobject_1signalsBlocked" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgent</scope><name>signalsBlocked</name></member>
+      <member refid="classPokitDiscoveryAgent_1a7a91a09dbbe46327407d69bc04b19fc5" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgent</scope><name>start</name></member>
+      <member refid="classPokitDiscoveryAgent_1a612a182a4f6e5f9bc501054df2a4bd02" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgent</scope><name>start</name></member>
+      <member refid="qobject_1startTimer" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgent</scope><name>startTimer</name></member>
+      <member refid="qobject_1startTimer-1" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgent</scope><name>startTimer</name></member>
+      <member refid="qbluetoothdevicediscoveryagent_1stop" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgent</scope><name>stop</name></member>
+      <member refid="qbluetoothdevicediscoveryagent_1supportedDiscoveryMethods" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgent</scope><name>supportedDiscoveryMethods</name></member>
+      <member refid="classPokitDiscoveryAgent_1adab84de4430e038cc3c56d9d81c6b7e6" prot="private" virt="non-virtual"><scope>PokitDiscoveryAgent</scope><name>TestPokitDiscoveryAgent</name></member>
+      <member refid="qobject_1thread" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgent</scope><name>thread</name></member>
+      <member refid="qobject_1timerEvent" prot="protected" virt="virtual"><scope>PokitDiscoveryAgent</scope><name>timerEvent</name></member>
+      <member refid="qobject_1tr" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgent</scope><name>tr</name></member>
+      <member refid="qbluetoothdevicediscoveryagent_1Error-enum" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgent</scope><name>UnknownError</name></member>
+      <member refid="qbluetoothdevicediscoveryagent_1Error-enum" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgent</scope><name>UnsupportedDiscoveryMethod</name></member>
+      <member refid="qbluetoothdevicediscoveryagent_1Error-enum" prot="public" virt="non-virtual"><scope>PokitDiscoveryAgent</scope><name>UnsupportedPlatformError</name></member>
+      <member refid="classPokitDiscoveryAgent_1a9bb87ea88f1098a4505f547be8e392b4" prot="public" virt="virtual"><scope>PokitDiscoveryAgent</scope><name>~PokitDiscoveryAgent</name></member>
+      <member refid="qbluetoothdevicediscoveryagent_1dtor.QBluetoothDeviceDiscoveryAgent" prot="public" virt="virtual"><scope>PokitDiscoveryAgent</scope><name>~QBluetoothDeviceDiscoveryAgent</name></member>
+      <member refid="qobject_1dtor.QObject" prot="public" virt="virtual"><scope>PokitDiscoveryAgent</scope><name>~QObject</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

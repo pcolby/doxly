@@ -1,0 +1,703 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.0" xml:lang="en-US">
+  <compounddef id="classScanCommand" kind="class" language="C++" prot="public">
+    <compoundname>ScanCommand</compoundname>
+    <basecompoundref refid="classAbstractCommand" prot="public" virt="non-virtual">AbstractCommand</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classScanCommand_1a9bdde80750c61e63e21dead03fef3629" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ScanCommand::showCsvHeader</definition>
+        <argsstring></argsstring>
+        <name>showCsvHeader</name>
+        <qualifiedname>ScanCommand::showCsvHeader</qualifiedname>
+        <initializer>{ true }</initializer>
+        <briefdescription>
+<para>Whether or not to show a header as the first line of CSV output. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/scancommand.h" line="29" column="10" bodyfile="/home/paul/src/dokit/src/cli/scancommand.h" bodystart="29" bodyend="29"/>
+        <referencedby refid="classScanCommand_1ac9f53dee63d2dfaa3acf82e71db01d64" compoundref="scancommand_8cpp" startline="69" endline="88">deviceDiscovered</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="classScanCommand_1a1e81096601fa56c740df641cf445b287" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class TestScanCommand</definition>
+        <argsstring></argsstring>
+        <name>TestScanCommand</name>
+        <qualifiedname>ScanCommand::TestScanCommand</qualifiedname>
+        <param>
+          <type>TestScanCommand</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/scancommand.h" line="42" column="18" bodyfile="/home/paul/src/dokit/src/cli/scancommand.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classScanCommand_1a3e809c3a97ec08aecf2dc0f2cf99a837" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ScanCommand::ScanCommand</definition>
+        <argsstring>(QObject *const parent=nullptr)</argsstring>
+        <name>ScanCommand</name>
+        <qualifiedname>ScanCommand::ScanCommand</qualifiedname>
+        <param>
+          <type><ref refid="qobject" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QObject</ref> *const</type>
+          <declname>parent</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+<para>Construct a new <ref refid="classScanCommand" kindref="compound">ScanCommand</ref> object with <emphasis>parent</emphasis>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/scancommand.h" line="11" column="14" bodyfile="/home/paul/src/dokit/src/cli/scancommand.cpp" bodystart="25" bodyend="31"/>
+        <references refid="qobject_1connect-4">QObject::connect</references>
+        <references refid="classScanCommand_1a2cb218644893d84036ec16cd46f1d488" compoundref="scancommand_8cpp" startline="94" endline="99">deviceUpdated</references>
+        <references refid="classAbstractCommand_1a86878df43cd818f4a7f333a97dabac3c" compoundref="abstractcommand_8h" startline="42">AbstractCommand::discoveryAgent</references>
+        <references refid="classPokitDiscoveryAgent_1a96787015304d52f3e220d5a5d4e7e06c">PokitDiscoveryAgent::pokitDeviceUpdated</references>
+      </memberdef>
+      <memberdef kind="function" id="classScanCommand_1a1fbef848493eb849ba6382c00463f275" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="qstringlist" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QStringList</ref></type>
+        <definition>QStringList ScanCommand::requiredOptions</definition>
+        <argsstring>(const QCommandLineParser &amp;parser) const override</argsstring>
+        <name>requiredOptions</name>
+        <qualifiedname>ScanCommand::requiredOptions</qualifiedname>
+        <reimplements refid="classAbstractCommand_1afd6f41cfc925751415cfa45e3b2d0b4a">requiredOptions</reimplements>
+        <param>
+          <type>const <ref refid="qcommandlineparser" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCommandLineParser</ref> &amp;</type>
+          <declname>parser</declname>
+        </param>
+        <briefdescription>
+<para>Returns a list of CLI option names required by this command. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The main console appication may use this list to output an eror (and exit) if any of the returned names are not found in the parsed CLI options.</para>
+<para>The (already parsed) <emphasis>parser</emphasis> may be used adjust the returned required options depending on the value of other options. For example, the <computeroutput>logger</computeroutput> command only requires the <computeroutput>--mode</computeroutput> option if the <computeroutput>--command</computeroutput> option is <computeroutput>start</computeroutput>.</para>
+<para>This base implementation simply returns an empty list. Derived classes should override this function to include any required options. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/scancommand.h" line="13" column="17" bodyfile="/home/paul/src/dokit/src/cli/scancommand.cpp" bodystart="33" bodyend="36"/>
+        <references refid="classAbstractCommand_1afd6f41cfc925751415cfa45e3b2d0b4a" compoundref="abstractcommand_8cpp" startline="56" endline="60">AbstractCommand::requiredOptions</references>
+      </memberdef>
+      <memberdef kind="function" id="classScanCommand_1afde6034e9362b2986aa5084b638930d6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="qstringlist" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QStringList</ref></type>
+        <definition>QStringList ScanCommand::supportedOptions</definition>
+        <argsstring>(const QCommandLineParser &amp;parser) const override</argsstring>
+        <name>supportedOptions</name>
+        <qualifiedname>ScanCommand::supportedOptions</qualifiedname>
+        <reimplements refid="classAbstractCommand_1a1ceca3c5b4cb24277dd4d4054f45db18">supportedOptions</reimplements>
+        <param>
+          <type>const <ref refid="qcommandlineparser" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCommandLineParser</ref> &amp;</type>
+          <declname>parser</declname>
+        </param>
+        <briefdescription>
+<para>Returns a list of CLI option names supported by this command. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The main console appication may use this list to output a warning for any parsed CLI options not included in the returned list.</para>
+<para>The (already parsed) <emphasis>parser</emphasis> may be used adjust the returned supported options depending on the value of other options. For example, the <computeroutput>logger</computeroutput> command only supported the <computeroutput>--timestamp</computeroutput> option if the <computeroutput>--command</computeroutput> option is <computeroutput>start</computeroutput>.</para>
+<para>This base implementation simply returns <ref refid="classScanCommand_1a1fbef848493eb849ba6382c00463f275" kindref="member">requiredOptions()</ref>. Derived classes should override this function to include optional options, such as:</para>
+<para><programlisting><codeline><highlight class="normal"><ref refid="qstringlist" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QStringList</ref><sp/>Derived::supportedOptions(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qcommandlineparser" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCommandLineParser</ref><sp/>&amp;parser)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qstringlist" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QStringList</ref><sp/>list<sp/>=<sp/><ref refid="classAbstractCommand_1a1ceca3c5b4cb24277dd4d4054f45db18" kindref="member">AbstractCommand::supportedOptions</ref>(parser)<sp/>+<sp/><ref refid="qstringlist" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QStringList</ref>{<sp/>...<sp/>};</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>list.<ref refid="qstringlist_1sort" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">sort</ref>();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>list.<ref refid="qstringlist_1removeDuplicates" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">removeDuplicates</ref>();<sp/></highlight><highlight class="comment">//<sp/>Optional,<sp/>recommended.</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>list;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/scancommand.h" line="14" column="17" bodyfile="/home/paul/src/dokit/src/cli/scancommand.cpp" bodystart="38" bodyend="42"/>
+        <references refid="classAbstractCommand_1a1ceca3c5b4cb24277dd4d4054f45db18" compoundref="abstractcommand_8cpp" startline="83" endline="91">AbstractCommand::supportedOptions</references>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-slot">
+      <memberdef kind="slot" id="classScanCommand_1a9998ef360fde53be932dc3059e86578e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="qstringlist" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QStringList</ref></type>
+        <definition>QStringList ScanCommand::processOptions</definition>
+        <argsstring>(const QCommandLineParser &amp;parser) override</argsstring>
+        <name>processOptions</name>
+        <qualifiedname>ScanCommand::processOptions</qualifiedname>
+        <param>
+          <type>const <ref refid="qcommandlineparser" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCommandLineParser</ref> &amp;</type>
+          <declname>parser</declname>
+        </param>
+        <briefdescription>
+<para>Processes the relevant options from the command line <emphasis>parser</emphasis>.    </para>
+        </briefdescription>
+        <detaileddescription>
+<para>On success, returns an empty <ref refid="qstringlist" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QStringList</ref>, otherwise returns a list of CLI errors that the caller should report appropriately before exiting.</para>
+<para>This base implementations performs some common checks, such as ensuring that required options are present. Derived classes should override this function to perform further processing, typically inovking this base implementation as a first step, such as:</para>
+<para><programlisting><codeline><highlight class="normal"><ref refid="qstringlist" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QStringList</ref><sp/>CustomCommand::processOptions(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qcommandlineparser" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCommandLineParser</ref><sp/>&amp;parser)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="qstringlist" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QStringList</ref><sp/>errors<sp/>=<sp/><ref refid="classAbstractCommand_1ad827a18a24776efeb955739459d48f7d" kindref="member">AbstractCommand::processOptions</ref>(parser);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!errors.<ref refid="qlist_1isEmpty" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">isEmpty</ref>())<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>errors;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Do<sp/>further<sp/>procession<sp/>of<sp/>options.</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>errors;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting>    </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/scancommand.h" line="17" column="17" bodyfile="/home/paul/src/dokit/src/cli/scancommand.cpp" bodystart="45" bodyend="53"/>
+        <references refid="qlist_1isEmpty">QList::isEmpty</references>
+        <references refid="classAbstractCommand_1ad827a18a24776efeb955739459d48f7d" compoundref="abstractcommand_8cpp" startline="265" endline="320">AbstractCommand::processOptions</references>
+      </memberdef>
+      <memberdef kind="slot" id="classScanCommand_1a5fe99205591ced024ad2676f377cc845" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ScanCommand::start</definition>
+        <argsstring>() override</argsstring>
+        <name>start</name>
+        <qualifiedname>ScanCommand::start</qualifiedname>
+        <briefdescription>
+<para>Begins scanning for Pokit devices. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/scancommand.h" line="18" column="10" bodyfile="/home/paul/src/dokit/src/cli/scancommand.cpp" bodystart="58" bodyend="64"/>
+        <references refid="classAbstractCommand_1a86878df43cd818f4a7f333a97dabac3c" compoundref="abstractcommand_8h" startline="42">AbstractCommand::discoveryAgent</references>
+        <references refid="classPokitDiscoveryAgent_1a7a91a09dbbe46327407d69bc04b19fc5" compoundref="pokitdiscoveryagent_8cpp" startline="86" endline="92">PokitDiscoveryAgent::start</references>
+        <references refid="qobject_1tr">QObject::tr</references>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-slot">
+      <memberdef kind="slot" id="classScanCommand_1ac9f53dee63d2dfaa3acf82e71db01d64" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ScanCommand::deviceDiscovered</definition>
+        <argsstring>(const QBluetoothDeviceInfo &amp;info) override</argsstring>
+        <name>deviceDiscovered</name>
+        <qualifiedname>ScanCommand::deviceDiscovered</qualifiedname>
+        <param>
+          <type>const <ref refid="qbluetoothdeviceinfo" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothDeviceInfo</ref> &amp;</type>
+          <declname>info</declname>
+        </param>
+        <briefdescription>
+<para>Handles discovered Pokit devices, writing <emphasis>info</emphasis> to stdout. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/scancommand.h" line="21" column="10" bodyfile="/home/paul/src/dokit/src/cli/scancommand.cpp" bodystart="69" bodyend="88"/>
+        <references refid="qbluetoothdeviceinfo_1address">QBluetoothDeviceInfo::address</references>
+        <references refid="qstring_1arg-14">QString::arg</references>
+        <references refid="classAbstractCommand_1aa2dadc72289ff2b0a02c1fb435f8a4dcab20daea8bfacec3891fcf5b7be4adca0">AbstractCommand::Csv</references>
+        <references refid="qbluetoothdeviceinfo_1deviceUuid">QBluetoothDeviceInfo::deviceUuid</references>
+        <references refid="classAbstractCommand_1af85c842568f8a3a893e336e449ef7813" compoundref="abstractcommand_8cpp" startline="105" endline="113">AbstractCommand::escapeCsvField</references>
+        <references refid="classAbstractCommand_1a881d85cd96b6fcc0652b916c366dda7b" compoundref="abstractcommand_8h" startline="43" endline="43">AbstractCommand::format</references>
+        <references refid="qstring_1fromLatin1-1">QString::fromLatin1</references>
+        <references refid="classAbstractCommand_1aa2dadc72289ff2b0a02c1fb435f8a4dcaeed8d85b888a6c015834240885ee6333">AbstractCommand::Json</references>
+        <references refid="qbluetoothdeviceinfo_1majorDeviceClass">QBluetoothDeviceInfo::majorDeviceClass</references>
+        <references refid="qbluetoothdeviceinfo_1minorDeviceClass">QBluetoothDeviceInfo::minorDeviceClass</references>
+        <references refid="qbluetoothdeviceinfo_1name">QBluetoothDeviceInfo::name</references>
+        <references refid="qbluetoothdeviceinfo_1rssi">QBluetoothDeviceInfo::rssi</references>
+        <references refid="classScanCommand_1a9bdde80750c61e63e21dead03fef3629" compoundref="scancommand_8h" startline="29" endline="29">showCsvHeader</references>
+        <references refid="classAbstractCommand_1aa2dadc72289ff2b0a02c1fb435f8a4dca9dffbf69ffba8bc38bc4e01abf4b1675">AbstractCommand::Text</references>
+        <references refid="qjsondocument_1toJson">QJsonDocument::toJson</references>
+        <references refid="classScanCommand_1a0004f4c780fb9cbd73bc7eba48613c7c" compoundref="scancommand_8cpp" startline="115" endline="147">toJson</references>
+        <references refid="qbytearray_1toStdString">QByteArray::toStdString</references>
+        <references refid="qbluetoothaddress_1toString">QBluetoothAddress::toString</references>
+        <references refid="quuid_1toString">QUuid::toString</references>
+        <references refid="classScanCommand_1a4422f8c5972370796065882a622940e1" compoundref="scancommand_8cpp" startline="255" endline="278">toString</references>
+        <references refid="qobject_1tr">QObject::tr</references>
+        <referencedby refid="classScanCommand_1a2cb218644893d84036ec16cd46f1d488" compoundref="scancommand_8cpp" startline="94" endline="99">deviceUpdated</referencedby>
+      </memberdef>
+      <memberdef kind="slot" id="classScanCommand_1a2cb218644893d84036ec16cd46f1d488" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ScanCommand::deviceUpdated</definition>
+        <argsstring>(const QBluetoothDeviceInfo &amp;info, const QBluetoothDeviceInfo::Fields updatedFields)</argsstring>
+        <name>deviceUpdated</name>
+        <qualifiedname>ScanCommand::deviceUpdated</qualifiedname>
+        <param>
+          <type>const <ref refid="qbluetoothdeviceinfo" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothDeviceInfo</ref> &amp;</type>
+          <declname>info</declname>
+        </param>
+        <param>
+          <type>const <ref refid="qbluetoothdeviceinfo_1Field-enum" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothDeviceInfo::Fields</ref></type>
+          <declname>updatedFields</declname>
+        </param>
+        <briefdescription>
+<para>Handles updated Pokit devices, writing <emphasis>info</emphasis> to stdout. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Currently <emphasis>updatedFields</emphasis> us unused. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/scancommand.h" line="23" column="10" bodyfile="/home/paul/src/dokit/src/cli/scancommand.cpp" bodystart="94" bodyend="99"/>
+        <references refid="classScanCommand_1ac9f53dee63d2dfaa3acf82e71db01d64" compoundref="scancommand_8cpp" startline="69" endline="88">deviceDiscovered</references>
+        <referencedby refid="classScanCommand_1a3e809c3a97ec08aecf2dc0f2cf99a837" compoundref="scancommand_8cpp" startline="25" endline="31">ScanCommand</referencedby>
+      </memberdef>
+      <memberdef kind="slot" id="classScanCommand_1a509decde7ad462eac744e661b5544c62" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ScanCommand::deviceDiscoveryFinished</definition>
+        <argsstring>() override</argsstring>
+        <name>deviceDiscoveryFinished</name>
+        <qualifiedname>ScanCommand::deviceDiscoveryFinished</qualifiedname>
+        <briefdescription>
+<para>Handles the completion of device discovery. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>In this override we simply exit, as the scan command is nothing more than logging of discovered devices. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/scancommand.h" line="26" column="10" bodyfile="/home/paul/src/dokit/src/cli/scancommand.cpp" bodystart="106" bodyend="110"/>
+        <references refid="qcoreapplication_1quit">QCoreApplication::quit</references>
+        <references refid="qobject_1tr">QObject::tr</references>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classScanCommand_1a0004f4c780fb9cbd73bc7eba48613c7c" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="qjsonobject" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QJsonObject</ref></type>
+        <definition>QJsonObject ScanCommand::toJson</definition>
+        <argsstring>(const QBluetoothDeviceInfo &amp;info)</argsstring>
+        <name>toJson</name>
+        <qualifiedname>ScanCommand::toJson</qualifiedname>
+        <param>
+          <type>const <ref refid="qbluetoothdeviceinfo" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothDeviceInfo</ref> &amp;</type>
+          <declname>info</declname>
+        </param>
+        <briefdescription>
+<para>Returns <emphasis>info</emphasis> as a JSON object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/scancommand.h" line="31" column="24" bodyfile="/home/paul/src/dokit/src/cli/scancommand.cpp" bodystart="115" bodyend="147"/>
+        <references refid="qbluetoothdeviceinfo_1address">QBluetoothDeviceInfo::address</references>
+        <references refid="qbluetoothdeviceinfo_1coreConfigurations">QBluetoothDeviceInfo::coreConfigurations</references>
+        <references refid="qbluetoothdeviceinfo_1deviceUuid">QBluetoothDeviceInfo::deviceUuid</references>
+        <references refid="qbluetoothdeviceinfo_1isCached">QBluetoothDeviceInfo::isCached</references>
+        <references refid="qbytearray_1isEmpty">QByteArray::isEmpty</references>
+        <references refid="quuid_1isNull">QUuid::isNull</references>
+        <references refid="qbluetoothdeviceinfo_1isValid">QBluetoothDeviceInfo::isValid</references>
+        <references refid="qbluetoothdeviceinfo_1majorDeviceClass">QBluetoothDeviceInfo::majorDeviceClass</references>
+        <references refid="qbluetoothdeviceinfo_1manufacturerData">QBluetoothDeviceInfo::manufacturerData</references>
+        <references refid="qbluetoothdeviceinfo_1minorDeviceClass">QBluetoothDeviceInfo::minorDeviceClass</references>
+        <references refid="qbluetoothdeviceinfo_1name">QBluetoothDeviceInfo::name</references>
+        <references refid="qbluetoothdeviceinfo_1ServiceClass-enum">QBluetoothDeviceInfo::NoService</references>
+        <references refid="qbluetoothdeviceinfo_1rssi">QBluetoothDeviceInfo::rssi</references>
+        <references refid="qbluetoothdeviceinfo_1serviceClasses">QBluetoothDeviceInfo::serviceClasses</references>
+        <references refid="qbluetoothdeviceinfo_1serviceUuids">QBluetoothDeviceInfo::serviceUuids</references>
+        <references refid="classScanCommand_1a0004f4c780fb9cbd73bc7eba48613c7c" compoundref="scancommand_8cpp" startline="115" endline="147">toJson</references>
+        <references refid="qbluetoothaddress_1toString">QBluetoothAddress::toString</references>
+        <references refid="quuid_1toString">QUuid::toString</references>
+        <references refid="qbluetoothdeviceinfo_1CoreConfiguration-enum">QBluetoothDeviceInfo::UnknownCoreConfiguration</references>
+        <referencedby refid="classScanCommand_1ac9f53dee63d2dfaa3acf82e71db01d64" compoundref="scancommand_8cpp" startline="69" endline="88">deviceDiscovered</referencedby>
+        <referencedby refid="classScanCommand_1a0004f4c780fb9cbd73bc7eba48613c7c" compoundref="scancommand_8cpp" startline="115" endline="147">toJson</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classScanCommand_1af75eb6fd7d6d9143c18e1ef2b3e3f5ec" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="qjsonarray" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QJsonArray</ref></type>
+        <definition>QJsonArray ScanCommand::toJson</definition>
+        <argsstring>(const QBluetoothDeviceInfo::CoreConfigurations &amp;configurations)</argsstring>
+        <name>toJson</name>
+        <qualifiedname>ScanCommand::toJson</qualifiedname>
+        <param>
+          <type>const <ref refid="qbluetoothdeviceinfo_1CoreConfiguration-enum" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothDeviceInfo::CoreConfigurations</ref> &amp;</type>
+          <declname>configurations</declname>
+        </param>
+        <briefdescription>
+<para>Returns <emphasis>configuration</emphasis> as a JSON array of strings. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/scancommand.h" line="32" column="24" bodyfile="/home/paul/src/dokit/src/cli/scancommand.cpp" bodystart="152" bodyend="164"/>
+      </memberdef>
+      <memberdef kind="function" id="classScanCommand_1a3f96c110d5f90517ef9a3afc9f2b5501" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="qjsonvalue" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QJsonValue</ref></type>
+        <definition>QJsonValue ScanCommand::toJson</definition>
+        <argsstring>(const QBluetoothDeviceInfo::MajorDeviceClass &amp;majorClass)</argsstring>
+        <name>toJson</name>
+        <qualifiedname>ScanCommand::toJson</qualifiedname>
+        <param>
+          <type>const <ref refid="qbluetoothdeviceinfo_1MajorDeviceClass-enum" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothDeviceInfo::MajorDeviceClass</ref> &amp;</type>
+          <declname>majorClass</declname>
+        </param>
+        <briefdescription>
+<para>Returns <emphasis>majorClass</emphasis> as a JSON value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is equivalent to toString, except that if toString does not recognise <emphasis>majorClass</emphasis>, then <emphasis>majorClass</emphasis> is returned as a JSON number (not a string).</para>
+<para><simplesect kind="see"><para><ref refid="classScanCommand_1a4422f8c5972370796065882a622940e1" kindref="member">toString(const QBluetoothDeviceInfo::MajorDeviceClass &amp;majorClass)</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/scancommand.h" line="33" column="24" bodyfile="/home/paul/src/dokit/src/cli/scancommand.cpp" bodystart="172" bodyend="176"/>
+        <references refid="classScanCommand_1a4422f8c5972370796065882a622940e1" compoundref="scancommand_8cpp" startline="255" endline="278">toString</references>
+      </memberdef>
+      <memberdef kind="function" id="classScanCommand_1ae1e453f0e6b1f951b0115e1c96037c48" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="qjsonvalue" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QJsonValue</ref></type>
+        <definition>QJsonValue ScanCommand::toJson</definition>
+        <argsstring>(const QBluetoothDeviceInfo::MajorDeviceClass &amp;majorClass, const quint8 minorClass)</argsstring>
+        <name>toJson</name>
+        <qualifiedname>ScanCommand::toJson</qualifiedname>
+        <param>
+          <type>const <ref refid="qbluetoothdeviceinfo_1MajorDeviceClass-enum" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothDeviceInfo::MajorDeviceClass</ref> &amp;</type>
+          <declname>majorClass</declname>
+        </param>
+        <param>
+          <type>const quint8</type>
+          <declname>minorClass</declname>
+        </param>
+        <briefdescription>
+<para>Returns <emphasis>minorClass</emphasis> as a JSON value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is equivalent to toString, except that if toString does not recognise <emphasis>minorClass</emphasis> as a sub-class of <emphasis>majorClass</emphasis>, then <emphasis>minorClass</emphasis> is returned as a JSON number (not a string).</para>
+<para><simplesect kind="see"><para><ref refid="classScanCommand_1a13d0237febd6f73fd1c8a1c6bf639a23" kindref="member">toString(const QBluetoothDeviceInfo::MajorDeviceClass &amp;majorClass, const quint8 minorClass)</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/scancommand.h" line="34" column="24" bodyfile="/home/paul/src/dokit/src/cli/scancommand.cpp" bodystart="185" bodyend="189"/>
+        <references refid="classScanCommand_1a4422f8c5972370796065882a622940e1" compoundref="scancommand_8cpp" startline="255" endline="278">toString</references>
+      </memberdef>
+      <memberdef kind="function" id="classScanCommand_1a28566c7a8789c6f1cacdadabd2b1e697" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="qjsonarray" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QJsonArray</ref></type>
+        <definition>QJsonArray ScanCommand::toJson</definition>
+        <argsstring>(const QBluetoothDeviceInfo::ServiceClasses &amp;classes)</argsstring>
+        <name>toJson</name>
+        <qualifiedname>ScanCommand::toJson</qualifiedname>
+        <param>
+          <type>const <ref refid="qbluetoothdeviceinfo_1ServiceClass-enum" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothDeviceInfo::ServiceClasses</ref> &amp;</type>
+          <declname>classes</declname>
+        </param>
+        <briefdescription>
+<para>Returns <emphasis>classes</emphasis> as a JSON array of strings. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/scancommand.h" line="35" column="24" bodyfile="/home/paul/src/dokit/src/cli/scancommand.cpp" bodystart="194" bodyend="210"/>
+      </memberdef>
+      <memberdef kind="function" id="classScanCommand_1a692b7c3f071f31211ab36d754d779330" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="qjsonarray" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QJsonArray</ref></type>
+        <definition>QJsonArray ScanCommand::toJson</definition>
+        <argsstring>(const QList&lt; QBluetoothUuid &gt; &amp;uuids)</argsstring>
+        <name>toJson</name>
+        <qualifiedname>ScanCommand::toJson</qualifiedname>
+        <param>
+          <type>const <ref refid="qlist" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QList</ref>&lt; <ref refid="qbluetoothuuid" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothUuid</ref> &gt; &amp;</type>
+          <declname>uuids</declname>
+        </param>
+        <briefdescription>
+<para>Returns <emphasis>uuids</emphasis> as a JSON array. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/scancommand.h" line="36" column="24" bodyfile="/home/paul/src/dokit/src/cli/scancommand.cpp" bodystart="215" bodyend="222"/>
+        <references refid="qjsonarray_1append">QJsonArray::append</references>
+      </memberdef>
+      <memberdef kind="function" id="classScanCommand_1a33d8423caad084f3131066a870f697bc" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="qjsonobject" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QJsonObject</ref></type>
+        <definition>QJsonObject ScanCommand::toJson</definition>
+        <argsstring>(const QMultiHash&lt; quint16, QByteArray &gt; &amp;data)</argsstring>
+        <name>toJson</name>
+        <qualifiedname>ScanCommand::toJson</qualifiedname>
+        <param>
+          <type>const <ref refid="qmultihash" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QMultiHash</ref>&lt; quint16, <ref refid="qbytearray" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QByteArray</ref> &gt; &amp;</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>Returns Bluetooth manufacturer <emphasis>data</emphasis> as a JSON object that maps the manufacturer IDs (unsigned integers as strings) to arrays of one or more values. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/scancommand.h" line="37" column="24" bodyfile="/home/paul/src/dokit/src/cli/scancommand.cpp" bodystart="228" bodyend="246"/>
+        <references refid="qjsonarray_1append">QJsonArray::append</references>
+        <references refid="qlist_1begin">QList::begin</references>
+        <references refid="qlist_1end">QList::end</references>
+        <references refid="qjsonarray_1insert-1">QJsonArray::insert</references>
+        <references refid="qstring_1number-6">QString::number</references>
+        <references refid="qmultihash_1uniqueKeys">QMultiHash::uniqueKeys</references>
+        <references refid="qmultihash_1values">QMultiHash::values</references>
+      </memberdef>
+      <memberdef kind="function" id="classScanCommand_1a4422f8c5972370796065882a622940e1" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref></type>
+        <definition>QString ScanCommand::toString</definition>
+        <argsstring>(const QBluetoothDeviceInfo::MajorDeviceClass &amp;majorClass)</argsstring>
+        <name>toString</name>
+        <qualifiedname>ScanCommand::toString</qualifiedname>
+        <param>
+          <type>const <ref refid="qbluetoothdeviceinfo_1MajorDeviceClass-enum" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothDeviceInfo::MajorDeviceClass</ref> &amp;</type>
+          <declname>majorClass</declname>
+        </param>
+        <briefdescription>
+<para>Returns <emphasis>majorClass</emphasis> as a human-readable string, or a null <ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref> if <emphasis>majorClass</emphasis> is not recognised. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>For example, if <emphasis>majorClass</emphasis> is <computeroutput><ref refid="qbluetoothdeviceinfo_1MajorDeviceClass-enum" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothDeviceInfo::ToyDevice</ref></computeroutput>, then the string <computeroutput>ToyDevice</computeroutput> is returned. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/scancommand.h" line="39" column="20" bodyfile="/home/paul/src/dokit/src/cli/scancommand.cpp" bodystart="255" bodyend="278"/>
+        <references refid="qstring_1arg-14">QString::arg</references>
+        <references refid="qobject_1tr">QObject::tr</references>
+        <referencedby refid="classScanCommand_1ac9f53dee63d2dfaa3acf82e71db01d64" compoundref="scancommand_8cpp" startline="69" endline="88">deviceDiscovered</referencedby>
+        <referencedby refid="classScanCommand_1a3f96c110d5f90517ef9a3afc9f2b5501" compoundref="scancommand_8cpp" startline="172" endline="176">toJson</referencedby>
+        <referencedby refid="classScanCommand_1ae1e453f0e6b1f951b0115e1c96037c48" compoundref="scancommand_8cpp" startline="185" endline="189">toJson</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classScanCommand_1a13d0237febd6f73fd1c8a1c6bf639a23" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref></type>
+        <definition>QString ScanCommand::toString</definition>
+        <argsstring>(const QBluetoothDeviceInfo::MajorDeviceClass &amp;majorClass, const quint8 minorClass)</argsstring>
+        <name>toString</name>
+        <qualifiedname>ScanCommand::toString</qualifiedname>
+        <param>
+          <type>const <ref refid="qbluetoothdeviceinfo_1MajorDeviceClass-enum" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothDeviceInfo::MajorDeviceClass</ref> &amp;</type>
+          <declname>majorClass</declname>
+        </param>
+        <param>
+          <type>const quint8</type>
+          <declname>minorClass</declname>
+        </param>
+        <briefdescription>
+<para>Returns <emphasis>minorClass</emphasis> as a human-readable string, or a null <ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref> if <emphasis>minorClass</emphasis> is not recognised as a sub-class of <emphasis>majorClass</emphasis>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>For example, if <emphasis>majorClass</emphasis> is <computeroutput><ref refid="qbluetoothdeviceinfo_1MajorDeviceClass-enum" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothDeviceInfo::ToyDevice</ref></computeroutput>, and <emphasis>minorClass</emphasis> is <computeroutput><ref refid="qbluetoothdeviceinfo_1MinorToyClass-enum" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothDeviceInfo::ToyRobot</ref></computeroutput>, then the string <computeroutput>ToyRobot</computeroutput> is returned. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/cli/scancommand.h" line="40" column="20" bodyfile="/home/paul/src/dokit/src/cli/scancommand.cpp" bodystart="287" bodyend="399"/>
+        <references refid="qstring_1arg-14">QString::arg</references>
+        <references refid="qbluetoothdeviceinfo_1MajorDeviceClass-enum">QBluetoothDeviceInfo::AudioVideoDevice</references>
+        <references refid="qbluetoothdeviceinfo_1MajorDeviceClass-enum">QBluetoothDeviceInfo::ComputerDevice</references>
+        <references refid="qbluetoothdeviceinfo_1MajorDeviceClass-enum">QBluetoothDeviceInfo::HealthDevice</references>
+        <references refid="qbluetoothdeviceinfo_1MajorDeviceClass-enum">QBluetoothDeviceInfo::ImagingDevice</references>
+        <references refid="qbluetoothdeviceinfo_1MajorDeviceClass-enum">QBluetoothDeviceInfo::MiscellaneousDevice</references>
+        <references refid="qbluetoothdeviceinfo_1MajorDeviceClass-enum">QBluetoothDeviceInfo::NetworkDevice</references>
+        <references refid="qbluetoothdeviceinfo_1MajorDeviceClass-enum">QBluetoothDeviceInfo::PeripheralDevice</references>
+        <references refid="qbluetoothdeviceinfo_1MajorDeviceClass-enum">QBluetoothDeviceInfo::PhoneDevice</references>
+        <references refid="qbluetoothdeviceinfo_1MajorDeviceClass-enum">QBluetoothDeviceInfo::ToyDevice</references>
+        <references refid="qobject_1tr">QObject::tr</references>
+        <references refid="qbluetoothdeviceinfo_1MajorDeviceClass-enum">QBluetoothDeviceInfo::UncategorizedDevice</references>
+        <references refid="qbluetoothdeviceinfo_1MajorDeviceClass-enum">QBluetoothDeviceInfo::WearableDevice</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>The <ref refid="classScanCommand" kindref="compound">ScanCommand</ref> class implements the <computeroutput>scan</computeroutput> CLI command, by scanning for nearby Pokit Bluetooth devices. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>When devices are found, they are logged to stdout in the chosen format. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>AbstractCommand</label>
+        <link refid="classAbstractCommand"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>QObject</label>
+        <link refid="qobject" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags"/>
+      </node>
+      <node id="1">
+        <label>ScanCommand</label>
+        <link refid="classScanCommand"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>AbstractCommand</label>
+        <link refid="classAbstractCommand"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>deviceToScanFor</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>discoveryAgent</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>PokitDiscoveryAgent</label>
+        <link refid="classPokitDiscoveryAgent"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>d_ptr</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>PokitDiscoveryAgentPrivate</label>
+        <link refid="classPokitDiscoveryAgentPrivate"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>q_ptr</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>QBluetoothDeviceDiscoveryAgent</label>
+        <link refid="qbluetoothdevicediscoveryagent" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>QObject</label>
+        <link refid="qobject" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags"/>
+      </node>
+      <node id="4">
+        <label>QString</label>
+        <link refid="qstring" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags"/>
+      </node>
+      <node id="1">
+        <label>ScanCommand</label>
+        <link refid="classScanCommand"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/paul/src/dokit/src/cli/scancommand.h" line="6" column="1" bodyfile="/home/paul/src/dokit/src/cli/scancommand.h" bodystart="7" bodyend="43"/>
+    <listofallmembers>
+      <member refid="classAbstractCommand_1a0d6fde269511e87aa6f178c1733073ae" prot="public" virt="non-virtual"><scope>ScanCommand</scope><name>AbstractCommand</name></member>
+      <member refid="qobject_1objectName-prop" prot="public" virt="non-virtual"><scope>ScanCommand</scope><name>bindableObjectName</name></member>
+      <member refid="qobject_1blockSignals" prot="public" virt="non-virtual"><scope>ScanCommand</scope><name>blockSignals</name></member>
+      <member refid="qobject_1childEvent" prot="protected" virt="virtual"><scope>ScanCommand</scope><name>childEvent</name></member>
+      <member refid="qobject_1children" prot="public" virt="non-virtual"><scope>ScanCommand</scope><name>children</name></member>
+      <member refid="qobject_1connect-4" prot="public" virt="non-virtual"><scope>ScanCommand</scope><name>connect</name></member>
+      <member refid="qobject_1connect-5" prot="public" virt="non-virtual"><scope>ScanCommand</scope><name>connect</name></member>
+      <member refid="qobject_1connect-3" prot="public" virt="non-virtual"><scope>ScanCommand</scope><name>connect</name></member>
+      <member refid="qobject_1connect-1" prot="public" virt="non-virtual"><scope>ScanCommand</scope><name>connect</name></member>
+      <member refid="qobject_1connect" prot="public" virt="non-virtual"><scope>ScanCommand</scope><name>connect</name></member>
+      <member refid="qobject_1connect-2" prot="public" virt="non-virtual"><scope>ScanCommand</scope><name>connect</name></member>
+      <member refid="qobject_1connectNotify" prot="protected" virt="virtual"><scope>ScanCommand</scope><name>connectNotify</name></member>
+      <member refid="qobject_1customEvent" prot="protected" virt="virtual"><scope>ScanCommand</scope><name>customEvent</name></member>
+      <member refid="qobject_1deleteLater" prot="public" virt="non-virtual"><scope>ScanCommand</scope><name>deleteLater</name></member>
+      <member refid="qobject_1destroyed" prot="public" virt="non-virtual"><scope>ScanCommand</scope><name>destroyed</name></member>
+      <member refid="classScanCommand_1ac9f53dee63d2dfaa3acf82e71db01d64" prot="protected" virt="non-virtual"><scope>ScanCommand</scope><name>deviceDiscovered</name></member>
+      <member refid="classScanCommand_1a509decde7ad462eac744e661b5544c62" prot="protected" virt="non-virtual"><scope>ScanCommand</scope><name>deviceDiscoveryFinished</name></member>
+      <member refid="classAbstractCommand_1a07d979bc039d61f5c720cb1521b31208" prot="protected" virt="non-virtual"><scope>ScanCommand</scope><name>deviceToScanFor</name></member>
+      <member refid="classScanCommand_1a2cb218644893d84036ec16cd46f1d488" prot="protected" virt="non-virtual"><scope>ScanCommand</scope><name>deviceUpdated</name></member>
+      <member refid="qobject_1disconnect-4" prot="public" virt="non-virtual"><scope>ScanCommand</scope><name>disconnect</name></member>
+      <member refid="qobject_1disconnect-5" prot="public" virt="non-virtual"><scope>ScanCommand</scope><name>disconnect</name></member>
+      <member refid="qobject_1disconnect-1" prot="public" virt="non-virtual"><scope>ScanCommand</scope><name>disconnect</name></member>
+      <member refid="qobject_1disconnect" prot="public" virt="non-virtual"><scope>ScanCommand</scope><name>disconnect</name></member>
+      <member refid="qobject_1disconnect-3" prot="public" virt="non-virtual"><scope>ScanCommand</scope><name>disconnect</name></member>
+      <member refid="qobject_1disconnect-2" prot="public" virt="non-virtual"><scope>ScanCommand</scope><name>disconnect</name></member>
+      <member refid="qobject_1disconnectNotify" prot="protected" virt="virtual"><scope>ScanCommand</scope><name>disconnectNotify</name></member>
+      <member refid="classAbstractCommand_1a86878df43cd818f4a7f333a97dabac3c" prot="protected" virt="non-virtual"><scope>ScanCommand</scope><name>discoveryAgent</name></member>
+      <member refid="qobject_1dumpObjectInfo" prot="public" virt="non-virtual"><scope>ScanCommand</scope><name>dumpObjectInfo</name></member>
+      <member refid="qobject_1dumpObjectTree" prot="public" virt="non-virtual"><scope>ScanCommand</scope><name>dumpObjectTree</name></member>
+      <member refid="qobject_1dynamicPropertyNames" prot="public" virt="non-virtual"><scope>ScanCommand</scope><name>dynamicPropertyNames</name></member>
+      <member refid="classAbstractCommand_1af85c842568f8a3a893e336e449ef7813" prot="public" virt="non-virtual"><scope>ScanCommand</scope><name>escapeCsvField</name></member>
+      <member refid="qobject_1event" prot="public" virt="virtual"><scope>ScanCommand</scope><name>event</name></member>
+      <member refid="qobject_1eventFilter" prot="public" virt="virtual"><scope>ScanCommand</scope><name>eventFilter</name></member>
+      <member refid="qobject_1findChild" prot="public" virt="non-virtual"><scope>ScanCommand</scope><name>findChild</name></member>
+      <member refid="qobject_1findChildren-1" prot="public" virt="non-virtual"><scope>ScanCommand</scope><name>findChildren</name></member>
+      <member refid="qobject_1findChildren-2" prot="public" virt="non-virtual"><scope>ScanCommand</scope><name>findChildren</name></member>
+      <member refid="qobject_1findChildren" prot="public" virt="non-virtual"><scope>ScanCommand</scope><name>findChildren</name></member>
+      <member refid="classAbstractCommand_1a881d85cd96b6fcc0652b916c366dda7b" prot="protected" virt="non-virtual"><scope>ScanCommand</scope><name>format</name></member>
+      <member refid="qobject_1inherits" prot="public" virt="non-virtual"><scope>ScanCommand</scope><name>inherits</name></member>
+      <member refid="qobject_1installEventFilter" prot="public" virt="non-virtual"><scope>ScanCommand</scope><name>installEventFilter</name></member>
+      <member refid="qobject_1isQuickItemType" prot="public" virt="non-virtual"><scope>ScanCommand</scope><name>isQuickItemType</name></member>
+      <member refid="qobject_1isSignalConnected" prot="protected" virt="non-virtual"><scope>ScanCommand</scope><name>isSignalConnected</name></member>
+      <member refid="qobject_1isWidgetType" prot="public" virt="non-virtual"><scope>ScanCommand</scope><name>isWidgetType</name></member>
+      <member refid="qobject_1isWindowType" prot="public" virt="non-virtual"><scope>ScanCommand</scope><name>isWindowType</name></member>
+      <member refid="qobject_1killTimer" prot="public" virt="non-virtual"><scope>ScanCommand</scope><name>killTimer</name></member>
+      <member refid="qobject_1metaObject" prot="public" virt="virtual"><scope>ScanCommand</scope><name>metaObject</name></member>
+      <member refid="qobject_1moveToThread" prot="public" virt="non-virtual"><scope>ScanCommand</scope><name>moveToThread</name></member>
+      <member refid="qobject_1objectName-prop" prot="public" virt="non-virtual"><scope>ScanCommand</scope><name>objectName</name></member>
+      <member refid="qobject_1objectName-prop" prot="public" virt="non-virtual"><scope>ScanCommand</scope><name>objectName</name></member>
+      <member refid="qobject_1objectNameChanged" prot="public" virt="non-virtual"><scope>ScanCommand</scope><name>objectNameChanged</name></member>
+      <member refid="classAbstractCommand_1aa2dadc72289ff2b0a02c1fb435f8a4dc" prot="public" virt="non-virtual"><scope>ScanCommand</scope><name>OutputFormat</name></member>
+      <member refid="qobject_1parent" prot="public" virt="non-virtual"><scope>ScanCommand</scope><name>parent</name></member>
+      <member refid="classAbstractCommand_1a29b2a2446ef034195183a2ae9d4bb911" prot="public" virt="non-virtual"><scope>ScanCommand</scope><name>parseNumber</name></member>
+      <member refid="classScanCommand_1a9998ef360fde53be932dc3059e86578e" prot="public" virt="non-virtual"><scope>ScanCommand</scope><name>processOptions</name></member>
+      <member refid="qobject_1property" prot="public" virt="non-virtual"><scope>ScanCommand</scope><name>property</name></member>
+      <member refid="qobject_1Q_CLASSINFO" prot="public" virt="non-virtual"><scope>ScanCommand</scope><name>Q_CLASSINFO</name></member>
+      <member refid="qobject_1Q_EMIT" prot="public" virt="non-virtual"><scope>ScanCommand</scope><name>Q_EMIT</name></member>
+      <member refid="qobject_1Q_ENUM" prot="public" virt="non-virtual"><scope>ScanCommand</scope><name>Q_ENUM</name></member>
+      <member refid="qobject_1Q_ENUM_NS" prot="public" virt="non-virtual"><scope>ScanCommand</scope><name>Q_ENUM_NS</name></member>
+      <member refid="qobject-obsolete_1Q_ENUMS" prot="public" virt="non-virtual"><scope>ScanCommand</scope><name>Q_ENUMS</name></member>
+      <member refid="qobject_1Q_FLAG" prot="public" virt="non-virtual"><scope>ScanCommand</scope><name>Q_FLAG</name></member>
+      <member refid="qobject_1Q_FLAG_NS" prot="public" virt="non-virtual"><scope>ScanCommand</scope><name>Q_FLAG_NS</name></member>
+      <member refid="qobject-obsolete_1Q_FLAGS" prot="public" virt="non-virtual"><scope>ScanCommand</scope><name>Q_FLAGS</name></member>
+      <member refid="qobject_1Q_GADGET" prot="public" virt="non-virtual"><scope>ScanCommand</scope><name>Q_GADGET</name></member>
+      <member refid="qobject_1Q_GADGET_EXPORT" prot="public" virt="non-virtual"><scope>ScanCommand</scope><name>Q_GADGET_EXPORT</name></member>
+      <member refid="qobject_1Q_INTERFACES" prot="public" virt="non-virtual"><scope>ScanCommand</scope><name>Q_INTERFACES</name></member>
+      <member refid="qobject_1Q_INVOKABLE" prot="public" virt="non-virtual"><scope>ScanCommand</scope><name>Q_INVOKABLE</name></member>
+      <member refid="classAbstractCommand_1ac8bafb6db670b3c127ab59130584274f" prot="protected" virt="non-virtual"><scope>ScanCommand</scope><name>Q_LOGGING_CATEGORY</name></member>
+      <member refid="qobject_1Q_MOC_INCLUDE" prot="public" virt="non-virtual"><scope>ScanCommand</scope><name>Q_MOC_INCLUDE</name></member>
+      <member refid="qobject_1Q_NAMESPACE" prot="public" virt="non-virtual"><scope>ScanCommand</scope><name>Q_NAMESPACE</name></member>
+      <member refid="qobject_1Q_NAMESPACE_EXPORT" prot="public" virt="non-virtual"><scope>ScanCommand</scope><name>Q_NAMESPACE_EXPORT</name></member>
+      <member refid="qobject_1Q_OBJECT" prot="public" virt="non-virtual"><scope>ScanCommand</scope><name>Q_OBJECT</name></member>
+      <member refid="qobject_1Q_PROPERTY" prot="public" virt="non-virtual"><scope>ScanCommand</scope><name>Q_PROPERTY</name></member>
+      <member refid="qobject_1Q_REVISION" prot="public" virt="non-virtual"><scope>ScanCommand</scope><name>Q_REVISION</name></member>
+      <member refid="qobject_1Q_SET_OBJECT_NAME" prot="public" virt="non-virtual"><scope>ScanCommand</scope><name>Q_SET_OBJECT_NAME</name></member>
+      <member refid="qobject_1Q_SIGNAL" prot="public" virt="non-virtual"><scope>ScanCommand</scope><name>Q_SIGNAL</name></member>
+      <member refid="qobject_1Q_SIGNALS" prot="public" virt="non-virtual"><scope>ScanCommand</scope><name>Q_SIGNALS</name></member>
+      <member refid="qobject_1Q_SLOT" prot="public" virt="non-virtual"><scope>ScanCommand</scope><name>Q_SLOT</name></member>
+      <member refid="qobject_1Q_SLOTS" prot="public" virt="non-virtual"><scope>ScanCommand</scope><name>Q_SLOTS</name></member>
+      <member refid="qobject_1QObject" prot="public" virt="non-virtual"><scope>ScanCommand</scope><name>QObject</name></member>
+      <member refid="qobject_1qobject_cast" prot="public" virt="non-virtual"><scope>ScanCommand</scope><name>qobject_cast</name></member>
+      <member refid="qobject_1qobject_cast-1" prot="public" virt="non-virtual"><scope>ScanCommand</scope><name>qobject_cast</name></member>
+      <member refid="qobject_1QObjectList-typedef" prot="public" virt="non-virtual"><scope>ScanCommand</scope><name>QObjectList</name></member>
+      <member refid="qobject_1QT_NO_NARROWING_CONVERSIONS_IN_CONNECT" prot="public" virt="non-virtual"><scope>ScanCommand</scope><name>QT_NO_NARROWING_CONVERSIONS_IN_CONNECT</name></member>
+      <member refid="qobject_1receivers" prot="protected" virt="non-virtual"><scope>ScanCommand</scope><name>receivers</name></member>
+      <member refid="qobject_1removeEventFilter" prot="public" virt="non-virtual"><scope>ScanCommand</scope><name>removeEventFilter</name></member>
+      <member refid="classScanCommand_1a1fbef848493eb849ba6382c00463f275" prot="public" virt="virtual"><scope>ScanCommand</scope><name>requiredOptions</name></member>
+      <member refid="classScanCommand_1a3e809c3a97ec08aecf2dc0f2cf99a837" prot="public" virt="non-virtual"><scope>ScanCommand</scope><name>ScanCommand</name></member>
+      <member refid="qobject_1sender" prot="protected" virt="non-virtual"><scope>ScanCommand</scope><name>sender</name></member>
+      <member refid="qobject_1senderSignalIndex" prot="protected" virt="non-virtual"><scope>ScanCommand</scope><name>senderSignalIndex</name></member>
+      <member refid="qobject_1setObjectName-1" prot="public" virt="non-virtual"><scope>ScanCommand</scope><name>setObjectName</name></member>
+      <member refid="qobject_1setObjectName" prot="public" virt="non-virtual"><scope>ScanCommand</scope><name>setObjectName</name></member>
+      <member refid="qobject_1setParent" prot="public" virt="non-virtual"><scope>ScanCommand</scope><name>setParent</name></member>
+      <member refid="qobject_1setProperty-1" prot="public" virt="non-virtual"><scope>ScanCommand</scope><name>setProperty</name></member>
+      <member refid="qobject_1setProperty" prot="public" virt="non-virtual"><scope>ScanCommand</scope><name>setProperty</name></member>
+      <member refid="classScanCommand_1a9bdde80750c61e63e21dead03fef3629" prot="private" virt="non-virtual"><scope>ScanCommand</scope><name>showCsvHeader</name></member>
+      <member refid="qobject_1signalsBlocked" prot="public" virt="non-virtual"><scope>ScanCommand</scope><name>signalsBlocked</name></member>
+      <member refid="classScanCommand_1a5fe99205591ced024ad2676f377cc845" prot="public" virt="non-virtual"><scope>ScanCommand</scope><name>start</name></member>
+      <member refid="qobject_1startTimer" prot="public" virt="non-virtual"><scope>ScanCommand</scope><name>startTimer</name></member>
+      <member refid="qobject_1startTimer-1" prot="public" virt="non-virtual"><scope>ScanCommand</scope><name>startTimer</name></member>
+      <member refid="classScanCommand_1afde6034e9362b2986aa5084b638930d6" prot="public" virt="virtual"><scope>ScanCommand</scope><name>supportedOptions</name></member>
+      <member refid="classScanCommand_1a1e81096601fa56c740df641cf445b287" prot="private" virt="non-virtual"><scope>ScanCommand</scope><name>TestScanCommand</name></member>
+      <member refid="qobject_1thread" prot="public" virt="non-virtual"><scope>ScanCommand</scope><name>thread</name></member>
+      <member refid="qobject_1timerEvent" prot="protected" virt="virtual"><scope>ScanCommand</scope><name>timerEvent</name></member>
+      <member refid="classScanCommand_1a0004f4c780fb9cbd73bc7eba48613c7c" prot="private" virt="non-virtual"><scope>ScanCommand</scope><name>toJson</name></member>
+      <member refid="classScanCommand_1af75eb6fd7d6d9143c18e1ef2b3e3f5ec" prot="private" virt="non-virtual"><scope>ScanCommand</scope><name>toJson</name></member>
+      <member refid="classScanCommand_1a3f96c110d5f90517ef9a3afc9f2b5501" prot="private" virt="non-virtual"><scope>ScanCommand</scope><name>toJson</name></member>
+      <member refid="classScanCommand_1ae1e453f0e6b1f951b0115e1c96037c48" prot="private" virt="non-virtual"><scope>ScanCommand</scope><name>toJson</name></member>
+      <member refid="classScanCommand_1a28566c7a8789c6f1cacdadabd2b1e697" prot="private" virt="non-virtual"><scope>ScanCommand</scope><name>toJson</name></member>
+      <member refid="classScanCommand_1a692b7c3f071f31211ab36d754d779330" prot="private" virt="non-virtual"><scope>ScanCommand</scope><name>toJson</name></member>
+      <member refid="classScanCommand_1a33d8423caad084f3131066a870f697bc" prot="private" virt="non-virtual"><scope>ScanCommand</scope><name>toJson</name></member>
+      <member refid="classScanCommand_1a4422f8c5972370796065882a622940e1" prot="private" virt="non-virtual"><scope>ScanCommand</scope><name>toString</name></member>
+      <member refid="classScanCommand_1a13d0237febd6f73fd1c8a1c6bf639a23" prot="private" virt="non-virtual"><scope>ScanCommand</scope><name>toString</name></member>
+      <member refid="qobject_1tr" prot="public" virt="non-virtual"><scope>ScanCommand</scope><name>tr</name></member>
+      <member refid="qobject_1dtor.QObject" prot="public" virt="virtual"><scope>ScanCommand</scope><name>~QObject</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

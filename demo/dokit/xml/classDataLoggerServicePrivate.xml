@@ -1,0 +1,463 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.0" xml:lang="en-US">
+  <compounddef id="classDataLoggerServicePrivate" kind="class" language="C++" prot="public">
+    <compoundname>DataLoggerServicePrivate</compoundname>
+    <basecompoundref refid="classAbstractPokitServicePrivate" prot="public" virt="non-virtual">AbstractPokitServicePrivate</basecompoundref>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="classDataLoggerServicePrivate_1af08b06b984094d1b3813a3b6e01d9989" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class TestDataLoggerService</definition>
+        <argsstring></argsstring>
+        <name>TestDataLoggerService</name>
+        <qualifiedname>DataLoggerServicePrivate::TestDataLoggerService</qualifiedname>
+        <param>
+          <type>TestDataLoggerService</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/lib/dataloggerservice_p.h" line="42" column="18" bodyfile="/home/paul/src/dokit/src/lib/dataloggerservice_p.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classDataLoggerServicePrivate_1afdabd152b55f000163e30a19f06e7f7f" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>DataLoggerServicePrivate::DataLoggerServicePrivate</definition>
+        <argsstring>(QLowEnergyController *controller, DataLoggerService *const q)</argsstring>
+        <name>DataLoggerServicePrivate</name>
+        <qualifiedname>DataLoggerServicePrivate::DataLoggerServicePrivate</qualifiedname>
+        <param>
+          <type><ref refid="qlowenergycontroller" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QLowEnergyController</ref> *</type>
+          <declname>controller</declname>
+        </param>
+        <param>
+          <type><ref refid="classDataLoggerService" kindref="compound">DataLoggerService</ref> *const</type>
+          <declname>q</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<internal><para>Constructs a new <ref refid="classDataLoggerServicePrivate" kindref="compound">DataLoggerServicePrivate</ref> object with public implementation <emphasis>q</emphasis>. </para>
+</internal>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/lib/dataloggerservice_p.h" line="23" column="14" bodyfile="/home/paul/src/dokit/src/lib/dataloggerservice.cpp" bodystart="347" bodyend="352"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classDataLoggerServicePrivate_1a774d21863bf83168171143ec8492a736" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="qbytearray" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QByteArray</ref></type>
+        <definition>QByteArray DataLoggerServicePrivate::encodeSettings</definition>
+        <argsstring>(const DataLoggerService::Settings &amp;settings, const bool updateIntervalIs32bit)</argsstring>
+        <name>encodeSettings</name>
+        <qualifiedname>DataLoggerServicePrivate::encodeSettings</qualifiedname>
+        <param>
+          <type>const <ref refid="structDataLoggerService_1_1Settings" kindref="compound">DataLoggerService::Settings</ref> &amp;</type>
+          <declname>settings</declname>
+        </param>
+        <param>
+          <type>const bool</type>
+          <declname>updateIntervalIs32bit</declname>
+        </param>
+        <briefdescription>
+<para>Returns <emphasis>settings</emphasis> in the format Pokit devices expect. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If <emphasis>updateIntervalIs32bit</emphasis> is <computeroutput>true</computeroutput> then the <computeroutput>Update Interval</computeroutput> field will be encoded in 32-bit instead of 16. </para>
+        </detaileddescription>
+        <inbodydescription>
+<para><xrefsect id="pokit_1_pokit000001"><xreftitle>Pokit Bluetooth API errata</xreftitle><xrefdescription><para>For Pokit Meter, <computeroutput>updateInterval</computeroutput> is <computeroutput>uint16</computeroutput> seconds (as per the Pokit API 1.00), however for Pokit Pro it&apos;s <computeroutput>uint32</computeroutput> milliseconds, even though that&apos;s not officially documented anywhere. </para>
+</xrefdescription></xrefsect></para>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/lib/dataloggerservice_p.h" line="25" column="23" bodyfile="/home/paul/src/dokit/src/lib/dataloggerservice.cpp" bodystart="358" bodyend="388"/>
+        <references refid="structDataLoggerService_1_1Settings_1a5a55213ca7361364642dffa9f8b77ec7" compoundref="dataloggerservice_8h" startline="68">DataLoggerService::Settings::arguments</references>
+        <references refid="structDataLoggerService_1_1Settings_1a71c4c7e8417ee7a187c09a89057c5ab7" compoundref="dataloggerservice_8h" startline="67">DataLoggerService::Settings::command</references>
+        <references refid="qdatastream_1ByteOrder-enum">QDataStream::LittleEndian</references>
+        <references refid="structDataLoggerService_1_1Settings_1ac72c18db4e38d95664c456c527e352f4" compoundref="dataloggerservice_8h" startline="69">DataLoggerService::Settings::mode</references>
+        <references refid="structDataLoggerService_1_1Settings_1a823e19d448e6540ea0bfc6844ffc96f1" compoundref="dataloggerservice_8h" startline="70">DataLoggerService::Settings::range</references>
+        <references refid="qdatastream_1setByteOrder">QDataStream::setByteOrder</references>
+        <references refid="qdatastream_1setFloatingPointPrecision">QDataStream::setFloatingPointPrecision</references>
+        <references refid="qdatastream_1FloatingPointPrecision-enum">QDataStream::SinglePrecision</references>
+        <references refid="qbytearray_1size">QByteArray::size</references>
+        <references refid="structDataLoggerService_1_1Settings_1a4bde857f31f27e5574b9d204c7a5aa48" compoundref="dataloggerservice_8h" startline="72">DataLoggerService::Settings::timestamp</references>
+        <references refid="structDataLoggerService_1_1Settings_1afdd04830ac70e2435cfce3d7be601e9c" compoundref="dataloggerservice_8h" startline="71">DataLoggerService::Settings::updateInterval</references>
+        <references refid="qiodevicebase_1OpenModeFlag-enum">QIODeviceBase::WriteOnly</references>
+        <referencedby refid="classDataLoggerService_1a3b933a1a161a390eb08e5019685f449c" compoundref="dataloggerservice_8cpp" startline="166" endline="184">DataLoggerService::setSettings</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classDataLoggerServicePrivate_1aed59b28db53cea0757289a0960bed3fd" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structDataLoggerService_1_1Metadata" kindref="compound">DataLoggerService::Metadata</ref></type>
+        <definition>DataLoggerService::Metadata DataLoggerServicePrivate::parseMetadata</definition>
+        <argsstring>(const QByteArray &amp;value)</argsstring>
+        <name>parseMetadata</name>
+        <qualifiedname>DataLoggerServicePrivate::parseMetadata</qualifiedname>
+        <param>
+          <type>const <ref refid="qbytearray" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QByteArray</ref> &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Parses the <computeroutput>Metadata</computeroutput> <emphasis>value</emphasis> into a DataLoggerService::Metatdata struct. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para><xrefsect id="pokit_1_pokit000002"><xreftitle>Pokit Bluetooth API errata</xreftitle><xrefdescription><para>For Pokit Meter, <computeroutput>updateInterval</computeroutput> is <computeroutput>uint16</computeroutput> (as per the Pokit API 1.00), however for Pokit Pro it&apos;s <computeroutput>uint32</computeroutput>, even though that&apos;s not officially documented anywhere. Also note, the doc claims &apos;microseconds&apos; (ie 10^-6), but clearly the value is &apos;milliseconds&apos; (ie 10^-3) for Pokit Pro, and whole seconds for Pokit Meter. </para>
+</xrefdescription></xrefsect></para>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/lib/dataloggerservice_p.h" line="28" column="40" bodyfile="/home/paul/src/dokit/src/lib/dataloggerservice.cpp" bodystart="393" bodyend="431"/>
+        <references refid="qstring_1arg-14">QString::arg</references>
+        <references refid="qbytearray_1at">QByteArray::at</references>
+        <references refid="classAbstractPokitServicePrivate_1af8b480a950244540bfff7fc4b476a0ef" compoundref="abstractpokitservice_8cpp" startline="400" endline="415">AbstractPokitServicePrivate::checkSize</references>
+        <references refid="qbytearray_1constData">QByteArray::constData</references>
+        <references refid="classDataLoggerService_1a1a3a38ca8befc3de8121d795879140f6a902b0d55fddef6f8d651fe1035b7d4bd">DataLoggerService::Error</references>
+        <references refid="classDataLoggerService_1ab7fc5073f8ab9d5e93ba7006df685771ae599161956d626eda4cb0a5ffb85271c">DataLoggerService::Idle</references>
+        <references refid="qbytearray_1mid">QByteArray::mid</references>
+        <references refid="qbytearray_1size">QByteArray::size</references>
+        <references refid="qbytearray_1toHex">QByteArray::toHex</references>
+        <references refid="classAbstractPokitServicePrivate_1af748600fc201fe47f29b58e8e93179d8" compoundref="abstractpokitservice_8cpp" startline="425" endline="432">AbstractPokitServicePrivate::toHexString</references>
+        <references refid="qobject_1tr">QObject::tr</references>
+        <referencedby refid="classDataLoggerServicePrivate_1a687b443e1e36e2c07a9776a6ca02e688" compoundref="dataloggerservice_8cpp" startline="517" endline="541">characteristicChanged</referencedby>
+        <referencedby refid="classDataLoggerServicePrivate_1a91ded6976e79e6054954eebe591214be" compoundref="dataloggerservice_8cpp" startline="455" endline="480">characteristicRead</referencedby>
+        <referencedby refid="classDataLoggerService_1aa94364928c317c1769e66eaf8635db92" compoundref="dataloggerservice_8cpp" startline="249" endline="256">DataLoggerService::metadata</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classDataLoggerServicePrivate_1aa929b0252b19e3dc2b40fe1b3e94663d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classDataLoggerService_1a59612dc26aa6b9a6d57be1014b04581b" kindref="member">DataLoggerService::Samples</ref></type>
+        <definition>DataLoggerService::Samples DataLoggerServicePrivate::parseSamples</definition>
+        <argsstring>(const QByteArray &amp;value)</argsstring>
+        <name>parseSamples</name>
+        <qualifiedname>DataLoggerServicePrivate::parseSamples</qualifiedname>
+        <param>
+          <type>const <ref refid="qbytearray" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QByteArray</ref> &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Parses the <computeroutput>Reading</computeroutput> <emphasis>value</emphasis> into a <ref refid="classDataLoggerService_1a59612dc26aa6b9a6d57be1014b04581b" kindref="member">DataLoggerService::Samples</ref> vector. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/lib/dataloggerservice_p.h" line="29" column="39" bodyfile="/home/paul/src/dokit/src/lib/dataloggerservice.cpp" bodystart="436" bodyend="449"/>
+        <references refid="qlist_1append">QList::append</references>
+        <references refid="qstring_1arg-14">QString::arg</references>
+        <references refid="qbytearray_1constData">QByteArray::constData</references>
+        <references refid="qbytearray_1mid">QByteArray::mid</references>
+        <references refid="qbytearray_1size">QByteArray::size</references>
+        <references refid="qlist_1size">QList::size</references>
+        <references refid="classAbstractPokitServicePrivate_1af748600fc201fe47f29b58e8e93179d8" compoundref="abstractpokitservice_8cpp" startline="425" endline="432">AbstractPokitServicePrivate::toHexString</references>
+        <references refid="qobject_1tr">QObject::tr</references>
+        <referencedby refid="classDataLoggerServicePrivate_1a687b443e1e36e2c07a9776a6ca02e688" compoundref="dataloggerservice_8cpp" startline="517" endline="541">characteristicChanged</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classDataLoggerServicePrivate_1a91ded6976e79e6054954eebe591214be" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void DataLoggerServicePrivate::characteristicRead</definition>
+        <argsstring>(const QLowEnergyCharacteristic &amp;characteristic, const QByteArray &amp;value) override</argsstring>
+        <name>characteristicRead</name>
+        <qualifiedname>DataLoggerServicePrivate::characteristicRead</qualifiedname>
+        <reimplements refid="classAbstractPokitServicePrivate_1a84bef330c6ff124f1e460bb8949d82da">characteristicRead</reimplements>
+        <param>
+          <type>const <ref refid="qlowenergycharacteristic" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QLowEnergyCharacteristic</ref> &amp;</type>
+          <declname>characteristic</declname>
+        </param>
+        <param>
+          <type>const <ref refid="qbytearray" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QByteArray</ref> &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Implements <ref refid="classAbstractPokitServicePrivate_1a84bef330c6ff124f1e460bb8949d82da" kindref="member">AbstractPokitServicePrivate::characteristicRead</ref> to parse <emphasis>value</emphasis>, then emit a specialised signal, for each supported <emphasis>characteristic</emphasis>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/lib/dataloggerservice_p.h" line="32" column="10" bodyfile="/home/paul/src/dokit/src/lib/dataloggerservice.cpp" bodystart="455" bodyend="480"/>
+        <references refid="classAbstractPokitServicePrivate_1a84bef330c6ff124f1e460bb8949d82da" compoundref="abstractpokitservice_8cpp" startline="562" endline="567">AbstractPokitServicePrivate::characteristicRead</references>
+        <references refid="structDataLoggerService_1_1CharacteristicUuids_1a360ad74780e776a1233d73e5416db0e9" compoundref="dataloggerservice_8h" startline="36" endline="36">DataLoggerService::CharacteristicUuids::metadata</references>
+        <references refid="qlowenergycharacteristic_1name">QLowEnergyCharacteristic::name</references>
+        <references refid="classDataLoggerServicePrivate_1aed59b28db53cea0757289a0960bed3fd" compoundref="dataloggerservice_8cpp" startline="393" endline="431">parseMetadata</references>
+        <references refid="qobject_1Q_EMIT">QObject::Q_EMIT</references>
+        <references refid="structDataLoggerService_1_1CharacteristicUuids_1ae49f85e600ca4eb2753818bb2ef32d65" compoundref="dataloggerservice_8h" startline="39" endline="39">DataLoggerService::CharacteristicUuids::reading</references>
+        <references refid="classAbstractPokitServicePrivate_1a37538a1aa1beeb85a041f1735d65cbfd" compoundref="abstractpokitservice__p_8h" startline="38">AbstractPokitServicePrivate::serviceUuid</references>
+        <references refid="structDataLoggerService_1_1CharacteristicUuids_1ab5fa52ba8b4cacf839abe6d3f8e8a929" compoundref="dataloggerservice_8h" startline="33" endline="33">DataLoggerService::CharacteristicUuids::settings</references>
+        <references refid="qobject_1tr">QObject::tr</references>
+        <references refid="qlowenergycharacteristic_1uuid">QLowEnergyCharacteristic::uuid</references>
+      </memberdef>
+      <memberdef kind="function" id="classDataLoggerServicePrivate_1a6988cc8bf165d4bf1fcdacf7124ea6f9" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void DataLoggerServicePrivate::characteristicWritten</definition>
+        <argsstring>(const QLowEnergyCharacteristic &amp;characteristic, const QByteArray &amp;newValue) override</argsstring>
+        <name>characteristicWritten</name>
+        <qualifiedname>DataLoggerServicePrivate::characteristicWritten</qualifiedname>
+        <reimplements refid="classAbstractPokitServicePrivate_1aaf4a6cb9f0b1fe537877d615a6634201">characteristicWritten</reimplements>
+        <param>
+          <type>const <ref refid="qlowenergycharacteristic" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QLowEnergyCharacteristic</ref> &amp;</type>
+          <declname>characteristic</declname>
+        </param>
+        <param>
+          <type>const <ref refid="qbytearray" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QByteArray</ref> &amp;</type>
+          <declname>newValue</declname>
+        </param>
+        <briefdescription>
+<para>Implements <ref refid="classAbstractPokitServicePrivate_1aaf4a6cb9f0b1fe537877d615a6634201" kindref="member">AbstractPokitServicePrivate::characteristicWritten</ref> to parse <emphasis>newValue</emphasis>, then emit a specialised signal, for each supported <emphasis>characteristic</emphasis>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/lib/dataloggerservice_p.h" line="34" column="10" bodyfile="/home/paul/src/dokit/src/lib/dataloggerservice.cpp" bodystart="486" bodyend="511"/>
+        <references refid="classAbstractPokitServicePrivate_1aaf4a6cb9f0b1fe537877d615a6634201" compoundref="abstractpokitservice_8cpp" startline="576" endline="581">AbstractPokitServicePrivate::characteristicWritten</references>
+        <references refid="structDataLoggerService_1_1CharacteristicUuids_1a360ad74780e776a1233d73e5416db0e9" compoundref="dataloggerservice_8h" startline="36" endline="36">DataLoggerService::CharacteristicUuids::metadata</references>
+        <references refid="qlowenergycharacteristic_1name">QLowEnergyCharacteristic::name</references>
+        <references refid="qobject_1Q_EMIT">QObject::Q_EMIT</references>
+        <references refid="structDataLoggerService_1_1CharacteristicUuids_1ae49f85e600ca4eb2753818bb2ef32d65" compoundref="dataloggerservice_8h" startline="39" endline="39">DataLoggerService::CharacteristicUuids::reading</references>
+        <references refid="classAbstractPokitServicePrivate_1a37538a1aa1beeb85a041f1735d65cbfd" compoundref="abstractpokitservice__p_8h" startline="38">AbstractPokitServicePrivate::serviceUuid</references>
+        <references refid="structDataLoggerService_1_1CharacteristicUuids_1ab5fa52ba8b4cacf839abe6d3f8e8a929" compoundref="dataloggerservice_8h" startline="33" endline="33">DataLoggerService::CharacteristicUuids::settings</references>
+        <references refid="qobject_1tr">QObject::tr</references>
+        <references refid="qlowenergycharacteristic_1uuid">QLowEnergyCharacteristic::uuid</references>
+      </memberdef>
+      <memberdef kind="function" id="classDataLoggerServicePrivate_1a687b443e1e36e2c07a9776a6ca02e688" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void DataLoggerServicePrivate::characteristicChanged</definition>
+        <argsstring>(const QLowEnergyCharacteristic &amp;characteristic, const QByteArray &amp;newValue) override</argsstring>
+        <name>characteristicChanged</name>
+        <qualifiedname>DataLoggerServicePrivate::characteristicChanged</qualifiedname>
+        <reimplements refid="classAbstractPokitServicePrivate_1a642431b7bfb76baa5d976ae24e90d9ef">characteristicChanged</reimplements>
+        <param>
+          <type>const <ref refid="qlowenergycharacteristic" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QLowEnergyCharacteristic</ref> &amp;</type>
+          <declname>characteristic</declname>
+        </param>
+        <param>
+          <type>const <ref refid="qbytearray" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QByteArray</ref> &amp;</type>
+          <declname>newValue</declname>
+        </param>
+        <briefdescription>
+<para>Implements <ref refid="classAbstractPokitServicePrivate_1a642431b7bfb76baa5d976ae24e90d9ef" kindref="member">AbstractPokitServicePrivate::characteristicChanged</ref> to parse <emphasis>newValue</emphasis>, then emit a specialised signal, for each supported <emphasis>characteristic</emphasis>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/src/lib/dataloggerservice_p.h" line="36" column="10" bodyfile="/home/paul/src/dokit/src/lib/dataloggerservice.cpp" bodystart="517" bodyend="541"/>
+        <references refid="classAbstractPokitServicePrivate_1a642431b7bfb76baa5d976ae24e90d9ef" compoundref="abstractpokitservice_8cpp" startline="591" endline="596">AbstractPokitServicePrivate::characteristicChanged</references>
+        <references refid="structDataLoggerService_1_1CharacteristicUuids_1a360ad74780e776a1233d73e5416db0e9" compoundref="dataloggerservice_8h" startline="36" endline="36">DataLoggerService::CharacteristicUuids::metadata</references>
+        <references refid="qlowenergycharacteristic_1name">QLowEnergyCharacteristic::name</references>
+        <references refid="classDataLoggerServicePrivate_1aed59b28db53cea0757289a0960bed3fd" compoundref="dataloggerservice_8cpp" startline="393" endline="431">parseMetadata</references>
+        <references refid="classDataLoggerServicePrivate_1aa929b0252b19e3dc2b40fe1b3e94663d" compoundref="dataloggerservice_8cpp" startline="436" endline="449">parseSamples</references>
+        <references refid="qobject_1Q_EMIT">QObject::Q_EMIT</references>
+        <references refid="structDataLoggerService_1_1CharacteristicUuids_1ae49f85e600ca4eb2753818bb2ef32d65" compoundref="dataloggerservice_8h" startline="39" endline="39">DataLoggerService::CharacteristicUuids::reading</references>
+        <references refid="classAbstractPokitServicePrivate_1a37538a1aa1beeb85a041f1735d65cbfd" compoundref="abstractpokitservice__p_8h" startline="38">AbstractPokitServicePrivate::serviceUuid</references>
+        <references refid="structDataLoggerService_1_1CharacteristicUuids_1ab5fa52ba8b4cacf839abe6d3f8e8a929" compoundref="dataloggerservice_8h" startline="33" endline="33">DataLoggerService::CharacteristicUuids::settings</references>
+        <references refid="qobject_1tr">QObject::tr</references>
+        <references refid="qlowenergycharacteristic_1uuid">QLowEnergyCharacteristic::uuid</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>The <ref refid="classDataLoggerServicePrivate" kindref="compound">DataLoggerServicePrivate</ref> class provides private implementation for <ref refid="classDataLoggerService" kindref="compound">DataLoggerService</ref>. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>AbstractPokitServicePrivate</label>
+        <link refid="classAbstractPokitServicePrivate"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>DataLoggerServicePrivate</label>
+        <link refid="classDataLoggerServicePrivate"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>QObject</label>
+        <link refid="qobject" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="8">
+        <label>AbstractPokitService</label>
+        <link refid="classAbstractPokitService"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>d_ptr</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>AbstractPokitServicePrivate</label>
+        <link refid="classAbstractPokitServicePrivate"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>controller</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>service</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>serviceUuid</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>q_ptr</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>DataLoggerServicePrivate</label>
+        <link refid="classDataLoggerServicePrivate"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>QBluetoothUuid</label>
+        <link refid="qbluetoothuuid" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>QLowEnergyController</label>
+        <link refid="qlowenergycontroller" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>QLowEnergyService</label>
+        <link refid="qlowenergyservice" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>QObject</label>
+        <link refid="qobject" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags"/>
+      </node>
+      <node id="7">
+        <label>QUuid</label>
+        <link refid="quuid" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/paul/src/dokit/src/lib/dataloggerservice_p.h" line="18" column="1" bodyfile="/home/paul/src/dokit/src/lib/dataloggerservice_p.h" bodystart="19" bodyend="43"/>
+    <listofallmembers>
+      <member refid="classAbstractPokitServicePrivate_1a73d4b6cd1a53f997f78d1c266a1c1871" prot="public" virt="non-virtual"><scope>DataLoggerServicePrivate</scope><name>AbstractPokitServicePrivate</name></member>
+      <member refid="classAbstractPokitServicePrivate_1a21d38af5e7fc69f2c47c219a7ab545c7" prot="public" virt="non-virtual"><scope>DataLoggerServicePrivate</scope><name>autoDiscover</name></member>
+      <member refid="qobject_1objectName-prop" prot="public" virt="non-virtual"><scope>DataLoggerServicePrivate</scope><name>bindableObjectName</name></member>
+      <member refid="qobject_1blockSignals" prot="public" virt="non-virtual"><scope>DataLoggerServicePrivate</scope><name>blockSignals</name></member>
+      <member refid="classDataLoggerServicePrivate_1a687b443e1e36e2c07a9776a6ca02e688" prot="protected" virt="virtual"><scope>DataLoggerServicePrivate</scope><name>characteristicChanged</name></member>
+      <member refid="classDataLoggerServicePrivate_1a91ded6976e79e6054954eebe591214be" prot="protected" virt="virtual"><scope>DataLoggerServicePrivate</scope><name>characteristicRead</name></member>
+      <member refid="classDataLoggerServicePrivate_1a6988cc8bf165d4bf1fcdacf7124ea6f9" prot="protected" virt="virtual"><scope>DataLoggerServicePrivate</scope><name>characteristicWritten</name></member>
+      <member refid="classAbstractPokitServicePrivate_1af8b480a950244540bfff7fc4b476a0ef" prot="public" virt="non-virtual"><scope>DataLoggerServicePrivate</scope><name>checkSize</name></member>
+      <member refid="qobject_1childEvent" prot="protected" virt="virtual"><scope>DataLoggerServicePrivate</scope><name>childEvent</name></member>
+      <member refid="qobject_1children" prot="public" virt="non-virtual"><scope>DataLoggerServicePrivate</scope><name>children</name></member>
+      <member refid="qobject_1connect-4" prot="public" virt="non-virtual"><scope>DataLoggerServicePrivate</scope><name>connect</name></member>
+      <member refid="qobject_1connect-5" prot="public" virt="non-virtual"><scope>DataLoggerServicePrivate</scope><name>connect</name></member>
+      <member refid="qobject_1connect-3" prot="public" virt="non-virtual"><scope>DataLoggerServicePrivate</scope><name>connect</name></member>
+      <member refid="qobject_1connect-1" prot="public" virt="non-virtual"><scope>DataLoggerServicePrivate</scope><name>connect</name></member>
+      <member refid="qobject_1connect" prot="public" virt="non-virtual"><scope>DataLoggerServicePrivate</scope><name>connect</name></member>
+      <member refid="qobject_1connect-2" prot="public" virt="non-virtual"><scope>DataLoggerServicePrivate</scope><name>connect</name></member>
+      <member refid="classAbstractPokitServicePrivate_1a9eec6d6dfe45c70c2907564940966200" prot="protected" virt="non-virtual"><scope>DataLoggerServicePrivate</scope><name>connected</name></member>
+      <member refid="qobject_1connectNotify" prot="protected" virt="virtual"><scope>DataLoggerServicePrivate</scope><name>connectNotify</name></member>
+      <member refid="classAbstractPokitServicePrivate_1aefc2f27e42be44bf63d9e4f944737da1" prot="public" virt="non-virtual"><scope>DataLoggerServicePrivate</scope><name>controller</name></member>
+      <member refid="classAbstractPokitServicePrivate_1a2b105802085225fe68254dfdb6754ad9" prot="public" virt="non-virtual"><scope>DataLoggerServicePrivate</scope><name>createServiceObject</name></member>
+      <member refid="qobject_1customEvent" prot="protected" virt="virtual"><scope>DataLoggerServicePrivate</scope><name>customEvent</name></member>
+      <member refid="classDataLoggerServicePrivate_1afdabd152b55f000163e30a19f06e7f7f" prot="public" virt="non-virtual"><scope>DataLoggerServicePrivate</scope><name>DataLoggerServicePrivate</name></member>
+      <member refid="qobject_1deleteLater" prot="public" virt="non-virtual"><scope>DataLoggerServicePrivate</scope><name>deleteLater</name></member>
+      <member refid="qobject_1destroyed" prot="public" virt="non-virtual"><scope>DataLoggerServicePrivate</scope><name>destroyed</name></member>
+      <member refid="classAbstractPokitServicePrivate_1a2922b59e5fc76b0e90ebef2a88adac9d" prot="public" virt="non-virtual"><scope>DataLoggerServicePrivate</scope><name>disableCharacteristicNotificatons</name></member>
+      <member refid="qobject_1disconnect-4" prot="public" virt="non-virtual"><scope>DataLoggerServicePrivate</scope><name>disconnect</name></member>
+      <member refid="qobject_1disconnect-5" prot="public" virt="non-virtual"><scope>DataLoggerServicePrivate</scope><name>disconnect</name></member>
+      <member refid="qobject_1disconnect-1" prot="public" virt="non-virtual"><scope>DataLoggerServicePrivate</scope><name>disconnect</name></member>
+      <member refid="qobject_1disconnect" prot="public" virt="non-virtual"><scope>DataLoggerServicePrivate</scope><name>disconnect</name></member>
+      <member refid="qobject_1disconnect-3" prot="public" virt="non-virtual"><scope>DataLoggerServicePrivate</scope><name>disconnect</name></member>
+      <member refid="qobject_1disconnect-2" prot="public" virt="non-virtual"><scope>DataLoggerServicePrivate</scope><name>disconnect</name></member>
+      <member refid="qobject_1disconnectNotify" prot="protected" virt="virtual"><scope>DataLoggerServicePrivate</scope><name>disconnectNotify</name></member>
+      <member refid="classAbstractPokitServicePrivate_1a2cc16a897908f50e0f3cfc6b876b50ab" prot="protected" virt="non-virtual"><scope>DataLoggerServicePrivate</scope><name>discoveryFinished</name></member>
+      <member refid="qobject_1dumpObjectInfo" prot="public" virt="non-virtual"><scope>DataLoggerServicePrivate</scope><name>dumpObjectInfo</name></member>
+      <member refid="qobject_1dumpObjectTree" prot="public" virt="non-virtual"><scope>DataLoggerServicePrivate</scope><name>dumpObjectTree</name></member>
+      <member refid="qobject_1dynamicPropertyNames" prot="public" virt="non-virtual"><scope>DataLoggerServicePrivate</scope><name>dynamicPropertyNames</name></member>
+      <member refid="classAbstractPokitServicePrivate_1a7a024ab2e783e62b78568f4834eb6159" prot="public" virt="non-virtual"><scope>DataLoggerServicePrivate</scope><name>enableCharacteristicNotificatons</name></member>
+      <member refid="classDataLoggerServicePrivate_1a774d21863bf83168171143ec8492a736" prot="public" virt="non-virtual"><scope>DataLoggerServicePrivate</scope><name>encodeSettings</name></member>
+      <member refid="classAbstractPokitServicePrivate_1ab086f2e2e5058bc7978a67e86d579325" prot="protected" virt="non-virtual"><scope>DataLoggerServicePrivate</scope><name>errorOccurred</name></member>
+      <member refid="qobject_1event" prot="public" virt="virtual"><scope>DataLoggerServicePrivate</scope><name>event</name></member>
+      <member refid="qobject_1eventFilter" prot="public" virt="virtual"><scope>DataLoggerServicePrivate</scope><name>eventFilter</name></member>
+      <member refid="qobject_1findChild" prot="public" virt="non-virtual"><scope>DataLoggerServicePrivate</scope><name>findChild</name></member>
+      <member refid="qobject_1findChildren-1" prot="public" virt="non-virtual"><scope>DataLoggerServicePrivate</scope><name>findChildren</name></member>
+      <member refid="qobject_1findChildren-2" prot="public" virt="non-virtual"><scope>DataLoggerServicePrivate</scope><name>findChildren</name></member>
+      <member refid="qobject_1findChildren" prot="public" virt="non-virtual"><scope>DataLoggerServicePrivate</scope><name>findChildren</name></member>
+      <member refid="classAbstractPokitServicePrivate_1aaac3ef8e3590334acdddb2b029865eb0" prot="public" virt="non-virtual"><scope>DataLoggerServicePrivate</scope><name>getCharacteristic</name></member>
+      <member refid="qobject_1inherits" prot="public" virt="non-virtual"><scope>DataLoggerServicePrivate</scope><name>inherits</name></member>
+      <member refid="qobject_1installEventFilter" prot="public" virt="non-virtual"><scope>DataLoggerServicePrivate</scope><name>installEventFilter</name></member>
+      <member refid="qobject_1isQuickItemType" prot="public" virt="non-virtual"><scope>DataLoggerServicePrivate</scope><name>isQuickItemType</name></member>
+      <member refid="qobject_1isSignalConnected" prot="protected" virt="non-virtual"><scope>DataLoggerServicePrivate</scope><name>isSignalConnected</name></member>
+      <member refid="qobject_1isWidgetType" prot="public" virt="non-virtual"><scope>DataLoggerServicePrivate</scope><name>isWidgetType</name></member>
+      <member refid="qobject_1isWindowType" prot="public" virt="non-virtual"><scope>DataLoggerServicePrivate</scope><name>isWindowType</name></member>
+      <member refid="qobject_1killTimer" prot="public" virt="non-virtual"><scope>DataLoggerServicePrivate</scope><name>killTimer</name></member>
+      <member refid="qobject_1metaObject" prot="public" virt="virtual"><scope>DataLoggerServicePrivate</scope><name>metaObject</name></member>
+      <member refid="qobject_1moveToThread" prot="public" virt="non-virtual"><scope>DataLoggerServicePrivate</scope><name>moveToThread</name></member>
+      <member refid="qobject_1objectName-prop" prot="public" virt="non-virtual"><scope>DataLoggerServicePrivate</scope><name>objectName</name></member>
+      <member refid="qobject_1objectName-prop" prot="public" virt="non-virtual"><scope>DataLoggerServicePrivate</scope><name>objectName</name></member>
+      <member refid="qobject_1objectNameChanged" prot="public" virt="non-virtual"><scope>DataLoggerServicePrivate</scope><name>objectNameChanged</name></member>
+      <member refid="qobject_1parent" prot="public" virt="non-virtual"><scope>DataLoggerServicePrivate</scope><name>parent</name></member>
+      <member refid="classDataLoggerServicePrivate_1aed59b28db53cea0757289a0960bed3fd" prot="public" virt="non-virtual"><scope>DataLoggerServicePrivate</scope><name>parseMetadata</name></member>
+      <member refid="classDataLoggerServicePrivate_1aa929b0252b19e3dc2b40fe1b3e94663d" prot="public" virt="non-virtual"><scope>DataLoggerServicePrivate</scope><name>parseSamples</name></member>
+      <member refid="classAbstractPokitServicePrivate_1afd4b02970f049753542e539bdf85e218" prot="public" virt="non-virtual"><scope>DataLoggerServicePrivate</scope><name>pokitProduct</name></member>
+      <member refid="qobject_1property" prot="public" virt="non-virtual"><scope>DataLoggerServicePrivate</scope><name>property</name></member>
+      <member refid="qobject_1Q_CLASSINFO" prot="public" virt="non-virtual"><scope>DataLoggerServicePrivate</scope><name>Q_CLASSINFO</name></member>
+      <member refid="qobject_1Q_EMIT" prot="public" virt="non-virtual"><scope>DataLoggerServicePrivate</scope><name>Q_EMIT</name></member>
+      <member refid="qobject_1Q_ENUM" prot="public" virt="non-virtual"><scope>DataLoggerServicePrivate</scope><name>Q_ENUM</name></member>
+      <member refid="qobject_1Q_ENUM_NS" prot="public" virt="non-virtual"><scope>DataLoggerServicePrivate</scope><name>Q_ENUM_NS</name></member>
+      <member refid="qobject-obsolete_1Q_ENUMS" prot="public" virt="non-virtual"><scope>DataLoggerServicePrivate</scope><name>Q_ENUMS</name></member>
+      <member refid="qobject_1Q_FLAG" prot="public" virt="non-virtual"><scope>DataLoggerServicePrivate</scope><name>Q_FLAG</name></member>
+      <member refid="qobject_1Q_FLAG_NS" prot="public" virt="non-virtual"><scope>DataLoggerServicePrivate</scope><name>Q_FLAG_NS</name></member>
+      <member refid="qobject-obsolete_1Q_FLAGS" prot="public" virt="non-virtual"><scope>DataLoggerServicePrivate</scope><name>Q_FLAGS</name></member>
+      <member refid="qobject_1Q_GADGET" prot="public" virt="non-virtual"><scope>DataLoggerServicePrivate</scope><name>Q_GADGET</name></member>
+      <member refid="qobject_1Q_GADGET_EXPORT" prot="public" virt="non-virtual"><scope>DataLoggerServicePrivate</scope><name>Q_GADGET_EXPORT</name></member>
+      <member refid="qobject_1Q_INTERFACES" prot="public" virt="non-virtual"><scope>DataLoggerServicePrivate</scope><name>Q_INTERFACES</name></member>
+      <member refid="qobject_1Q_INVOKABLE" prot="public" virt="non-virtual"><scope>DataLoggerServicePrivate</scope><name>Q_INVOKABLE</name></member>
+      <member refid="classAbstractPokitServicePrivate_1a32f402260c965002c68f7b9191d38af6" prot="public" virt="non-virtual"><scope>DataLoggerServicePrivate</scope><name>Q_LOGGING_CATEGORY</name></member>
+      <member refid="qobject_1Q_MOC_INCLUDE" prot="public" virt="non-virtual"><scope>DataLoggerServicePrivate</scope><name>Q_MOC_INCLUDE</name></member>
+      <member refid="qobject_1Q_NAMESPACE" prot="public" virt="non-virtual"><scope>DataLoggerServicePrivate</scope><name>Q_NAMESPACE</name></member>
+      <member refid="qobject_1Q_NAMESPACE_EXPORT" prot="public" virt="non-virtual"><scope>DataLoggerServicePrivate</scope><name>Q_NAMESPACE_EXPORT</name></member>
+      <member refid="qobject_1Q_OBJECT" prot="public" virt="non-virtual"><scope>DataLoggerServicePrivate</scope><name>Q_OBJECT</name></member>
+      <member refid="qobject_1Q_PROPERTY" prot="public" virt="non-virtual"><scope>DataLoggerServicePrivate</scope><name>Q_PROPERTY</name></member>
+      <member refid="classAbstractPokitServicePrivate_1a68f7ec9c0b34677eb1cf797221eb4845" prot="protected" virt="non-virtual"><scope>DataLoggerServicePrivate</scope><name>q_ptr</name></member>
+      <member refid="qobject_1Q_REVISION" prot="public" virt="non-virtual"><scope>DataLoggerServicePrivate</scope><name>Q_REVISION</name></member>
+      <member refid="qobject_1Q_SET_OBJECT_NAME" prot="public" virt="non-virtual"><scope>DataLoggerServicePrivate</scope><name>Q_SET_OBJECT_NAME</name></member>
+      <member refid="qobject_1Q_SIGNAL" prot="public" virt="non-virtual"><scope>DataLoggerServicePrivate</scope><name>Q_SIGNAL</name></member>
+      <member refid="qobject_1Q_SIGNALS" prot="public" virt="non-virtual"><scope>DataLoggerServicePrivate</scope><name>Q_SIGNALS</name></member>
+      <member refid="qobject_1Q_SLOT" prot="public" virt="non-virtual"><scope>DataLoggerServicePrivate</scope><name>Q_SLOT</name></member>
+      <member refid="qobject_1Q_SLOTS" prot="public" virt="non-virtual"><scope>DataLoggerServicePrivate</scope><name>Q_SLOTS</name></member>
+      <member refid="qobject_1QObject" prot="public" virt="non-virtual"><scope>DataLoggerServicePrivate</scope><name>QObject</name></member>
+      <member refid="qobject_1qobject_cast" prot="public" virt="non-virtual"><scope>DataLoggerServicePrivate</scope><name>qobject_cast</name></member>
+      <member refid="qobject_1qobject_cast-1" prot="public" virt="non-virtual"><scope>DataLoggerServicePrivate</scope><name>qobject_cast</name></member>
+      <member refid="qobject_1QObjectList-typedef" prot="public" virt="non-virtual"><scope>DataLoggerServicePrivate</scope><name>QObjectList</name></member>
+      <member refid="qobject_1QT_NO_NARROWING_CONVERSIONS_IN_CONNECT" prot="public" virt="non-virtual"><scope>DataLoggerServicePrivate</scope><name>QT_NO_NARROWING_CONVERSIONS_IN_CONNECT</name></member>
+      <member refid="classAbstractPokitServicePrivate_1ad58619e237f300294049c82b85d76875" prot="public" virt="non-virtual"><scope>DataLoggerServicePrivate</scope><name>readCharacteristic</name></member>
+      <member refid="qobject_1receivers" prot="protected" virt="non-virtual"><scope>DataLoggerServicePrivate</scope><name>receivers</name></member>
+      <member refid="qobject_1removeEventFilter" prot="public" virt="non-virtual"><scope>DataLoggerServicePrivate</scope><name>removeEventFilter</name></member>
+      <member refid="qobject_1sender" prot="protected" virt="non-virtual"><scope>DataLoggerServicePrivate</scope><name>sender</name></member>
+      <member refid="qobject_1senderSignalIndex" prot="protected" virt="non-virtual"><scope>DataLoggerServicePrivate</scope><name>senderSignalIndex</name></member>
+      <member refid="classAbstractPokitServicePrivate_1adc41ee1de2a4783623aa78d0a8beb85d" prot="public" virt="non-virtual"><scope>DataLoggerServicePrivate</scope><name>service</name></member>
+      <member refid="classAbstractPokitServicePrivate_1a654255854b4aca7718ef30e10260d89b" prot="protected" virt="virtual"><scope>DataLoggerServicePrivate</scope><name>serviceDiscovered</name></member>
+      <member refid="classAbstractPokitServicePrivate_1a37538a1aa1beeb85a041f1735d65cbfd" prot="public" virt="non-virtual"><scope>DataLoggerServicePrivate</scope><name>serviceUuid</name></member>
+      <member refid="qobject_1setObjectName-1" prot="public" virt="non-virtual"><scope>DataLoggerServicePrivate</scope><name>setObjectName</name></member>
+      <member refid="qobject_1setObjectName" prot="public" virt="non-virtual"><scope>DataLoggerServicePrivate</scope><name>setObjectName</name></member>
+      <member refid="qobject_1setParent" prot="public" virt="non-virtual"><scope>DataLoggerServicePrivate</scope><name>setParent</name></member>
+      <member refid="qobject_1setProperty-1" prot="public" virt="non-virtual"><scope>DataLoggerServicePrivate</scope><name>setProperty</name></member>
+      <member refid="qobject_1setProperty" prot="public" virt="non-virtual"><scope>DataLoggerServicePrivate</scope><name>setProperty</name></member>
+      <member refid="qobject_1signalsBlocked" prot="public" virt="non-virtual"><scope>DataLoggerServicePrivate</scope><name>signalsBlocked</name></member>
+      <member refid="qobject_1startTimer" prot="public" virt="non-virtual"><scope>DataLoggerServicePrivate</scope><name>startTimer</name></member>
+      <member refid="qobject_1startTimer-1" prot="public" virt="non-virtual"><scope>DataLoggerServicePrivate</scope><name>startTimer</name></member>
+      <member refid="classAbstractPokitServicePrivate_1ad4cd6a5700b0b764b3a81f67603dc68f" prot="protected" virt="non-virtual"><scope>DataLoggerServicePrivate</scope><name>stateChanged</name></member>
+      <member refid="classDataLoggerServicePrivate_1af08b06b984094d1b3813a3b6e01d9989" prot="private" virt="non-virtual"><scope>DataLoggerServicePrivate</scope><name>TestDataLoggerService</name></member>
+      <member refid="qobject_1thread" prot="public" virt="non-virtual"><scope>DataLoggerServicePrivate</scope><name>thread</name></member>
+      <member refid="qobject_1timerEvent" prot="protected" virt="virtual"><scope>DataLoggerServicePrivate</scope><name>timerEvent</name></member>
+      <member refid="classAbstractPokitServicePrivate_1af748600fc201fe47f29b58e8e93179d8" prot="public" virt="non-virtual"><scope>DataLoggerServicePrivate</scope><name>toHexString</name></member>
+      <member refid="qobject_1tr" prot="public" virt="non-virtual"><scope>DataLoggerServicePrivate</scope><name>tr</name></member>
+      <member refid="qobject_1dtor.QObject" prot="public" virt="virtual"><scope>DataLoggerServicePrivate</scope><name>~QObject</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

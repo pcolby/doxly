@@ -1,0 +1,168 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.0" xml:lang="en-US">
+  <compounddef id="structDeviceInfoService_1_1CharacteristicUuids" kind="struct" language="C++" prot="public">
+    <compoundname>DeviceInfoService::CharacteristicUuids</compoundname>
+    <includes refid="deviceinfoservice_8h" local="no">deviceinfoservice.h</includes>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="structDeviceInfoService_1_1CharacteristicUuids_1a0455d683833dae7fa93ddf08b754136d" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="qbluetoothuuid" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothUuid</ref></type>
+        <definition>const QBluetoothUuid DeviceInfoService::CharacteristicUuids::manufacturerName</definition>
+        <argsstring></argsstring>
+        <name>manufacturerName</name>
+        <qualifiedname>DeviceInfoService::CharacteristicUuids::manufacturerName</qualifiedname>
+        <initializer>{ QBluetoothUuid::CharacteristicType::ManufacturerNameString }</initializer>
+        <briefdescription>
+<para>UUID of the <computeroutput>Device Info</computeroutput> service&apos;s <computeroutput>Manufacturer Name String</computeroutput> characterstic. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/deviceinfoservice.h" line="34" column="44" bodyfile="/home/paul/src/dokit/include/qtpokit/deviceinfoservice.h" bodystart="35" bodyend="35"/>
+        <referencedby refid="classDeviceInfoServicePrivate_1a5ca3ccfe6cc8231247fed820e41551a1" compoundref="deviceinfoservice_8cpp" startline="324" endline="374">DeviceInfoServicePrivate::characteristicRead</referencedby>
+        <referencedby refid="classPokitDevice_1a0a3e6078ce0a7c2d93171ef0f4183d61" compoundref="pokitdevice_8cpp" startline="218" endline="261">PokitDevice::charcteristicToString</referencedby>
+        <referencedby refid="classDeviceInfoService_1ab5614d4e47856aa4400d08ae2b71d72b" compoundref="deviceinfoservice_8cpp" startline="158" endline="164">DeviceInfoService::manufacturer</referencedby>
+        <referencedby refid="classDeviceInfoService_1a5e8128c7432c3ffe4d2ff045e117ab1e" compoundref="deviceinfoservice_8cpp" startline="100" endline="104">DeviceInfoService::readManufacturerCharacteristics</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structDeviceInfoService_1_1CharacteristicUuids_1af5c3bd888ca0d9133ff6d844992a7e34" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="qbluetoothuuid" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothUuid</ref></type>
+        <definition>const QBluetoothUuid DeviceInfoService::CharacteristicUuids::modelNumber</definition>
+        <argsstring></argsstring>
+        <name>modelNumber</name>
+        <qualifiedname>DeviceInfoService::CharacteristicUuids::modelNumber</qualifiedname>
+        <initializer>{ QBluetoothUuid::CharacteristicType::ModelNumberString }</initializer>
+        <briefdescription>
+<para>UUID of the <computeroutput>Device Info</computeroutput> service&apos;s <computeroutput>Model Number String</computeroutput> characterstic. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/deviceinfoservice.h" line="38" column="44" bodyfile="/home/paul/src/dokit/include/qtpokit/deviceinfoservice.h" bodystart="39" bodyend="39"/>
+        <referencedby refid="classDeviceInfoServicePrivate_1a5ca3ccfe6cc8231247fed820e41551a1" compoundref="deviceinfoservice_8cpp" startline="324" endline="374">DeviceInfoServicePrivate::characteristicRead</referencedby>
+        <referencedby refid="classPokitDevice_1a0a3e6078ce0a7c2d93171ef0f4183d61" compoundref="pokitdevice_8cpp" startline="218" endline="261">PokitDevice::charcteristicToString</referencedby>
+        <referencedby refid="classDeviceInfoService_1a7402f9a0c2fe3ee052a29e8f872e26ef" compoundref="deviceinfoservice_8cpp" startline="173" endline="179">DeviceInfoService::modelNumber</referencedby>
+        <referencedby refid="classDeviceInfoService_1a826dda294fcd640e43509bad3db71b10" compoundref="deviceinfoservice_8cpp" startline="115" endline="119">DeviceInfoService::readModelNumberCharacteristic</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structDeviceInfoService_1_1CharacteristicUuids_1a7959177f8c990b2240476746061a236a" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="qbluetoothuuid" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothUuid</ref></type>
+        <definition>const QBluetoothUuid DeviceInfoService::CharacteristicUuids::firmwareRevision</definition>
+        <argsstring></argsstring>
+        <name>firmwareRevision</name>
+        <qualifiedname>DeviceInfoService::CharacteristicUuids::firmwareRevision</qualifiedname>
+        <initializer>{ QBluetoothUuid::CharacteristicType::FirmwareRevisionString }</initializer>
+        <briefdescription>
+<para>UUID of the <computeroutput>Device Info</computeroutput> service&apos;s <computeroutput>Firmware Revision String</computeroutput> characterstic. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/deviceinfoservice.h" line="42" column="44" bodyfile="/home/paul/src/dokit/include/qtpokit/deviceinfoservice.h" bodystart="43" bodyend="43"/>
+        <referencedby refid="classDeviceInfoServicePrivate_1a5ca3ccfe6cc8231247fed820e41551a1" compoundref="deviceinfoservice_8cpp" startline="324" endline="374">DeviceInfoServicePrivate::characteristicRead</referencedby>
+        <referencedby refid="classPokitDevice_1a0a3e6078ce0a7c2d93171ef0f4183d61" compoundref="pokitdevice_8cpp" startline="218" endline="261">PokitDevice::charcteristicToString</referencedby>
+        <referencedby refid="classDeviceInfoService_1ac896b483c3b54e46658fd04ab4bb864b" compoundref="deviceinfoservice_8cpp" startline="203" endline="209">DeviceInfoService::firmwareRevision</referencedby>
+        <referencedby refid="classDeviceInfoService_1a3a77c71bed9398ca507aa0657b41fd9a" compoundref="deviceinfoservice_8cpp" startline="70" endline="74">DeviceInfoService::readFirmwareRevisionCharacteristic</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structDeviceInfoService_1_1CharacteristicUuids_1a2e9f6731a3d49d4e08facc0e4811c91b" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="qbluetoothuuid" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothUuid</ref></type>
+        <definition>const QBluetoothUuid DeviceInfoService::CharacteristicUuids::hardwareRevision</definition>
+        <argsstring></argsstring>
+        <name>hardwareRevision</name>
+        <qualifiedname>DeviceInfoService::CharacteristicUuids::hardwareRevision</qualifiedname>
+        <initializer>{ QBluetoothUuid::CharacteristicType::HardwareRevisionString }</initializer>
+        <briefdescription>
+<para>UUID of the <computeroutput>Device Info</computeroutput> service&apos;s <computeroutput>Hardware Revision String</computeroutput> characterstic. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/deviceinfoservice.h" line="46" column="44" bodyfile="/home/paul/src/dokit/include/qtpokit/deviceinfoservice.h" bodystart="47" bodyend="47"/>
+        <referencedby refid="classDeviceInfoServicePrivate_1a5ca3ccfe6cc8231247fed820e41551a1" compoundref="deviceinfoservice_8cpp" startline="324" endline="374">DeviceInfoServicePrivate::characteristicRead</referencedby>
+        <referencedby refid="classPokitDevice_1a0a3e6078ce0a7c2d93171ef0f4183d61" compoundref="pokitdevice_8cpp" startline="218" endline="261">PokitDevice::charcteristicToString</referencedby>
+        <referencedby refid="classDeviceInfoService_1a4d79805ce884ec8d5ac7879ccd499932" compoundref="deviceinfoservice_8cpp" startline="188" endline="194">DeviceInfoService::hardwareRevision</referencedby>
+        <referencedby refid="classDeviceInfoService_1a0be29e195fea415073d07907e7cf65a6" compoundref="deviceinfoservice_8cpp" startline="85" endline="89">DeviceInfoService::readHardwareRevisionCharacteristic</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structDeviceInfoService_1_1CharacteristicUuids_1a3dcd8fc5858990ac38640acf15ccff69" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="qbluetoothuuid" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothUuid</ref></type>
+        <definition>const QBluetoothUuid DeviceInfoService::CharacteristicUuids::softwareRevision</definition>
+        <argsstring></argsstring>
+        <name>softwareRevision</name>
+        <qualifiedname>DeviceInfoService::CharacteristicUuids::softwareRevision</qualifiedname>
+        <initializer>{ QBluetoothUuid::CharacteristicType::SoftwareRevisionString }</initializer>
+        <briefdescription>
+<para>UUID of the <computeroutput>Device Info</computeroutput> service&apos;s <computeroutput>Software Revision String</computeroutput> characterstic. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/deviceinfoservice.h" line="50" column="44" bodyfile="/home/paul/src/dokit/include/qtpokit/deviceinfoservice.h" bodystart="51" bodyend="51"/>
+        <referencedby refid="classDeviceInfoServicePrivate_1a5ca3ccfe6cc8231247fed820e41551a1" compoundref="deviceinfoservice_8cpp" startline="324" endline="374">DeviceInfoServicePrivate::characteristicRead</referencedby>
+        <referencedby refid="classPokitDevice_1a0a3e6078ce0a7c2d93171ef0f4183d61" compoundref="pokitdevice_8cpp" startline="218" endline="261">PokitDevice::charcteristicToString</referencedby>
+        <referencedby refid="classDeviceInfoService_1a1e08a98402611a2a8301012fd33b069c" compoundref="deviceinfoservice_8cpp" startline="130" endline="134">DeviceInfoService::readSoftwareRevisionCharacteristic</referencedby>
+        <referencedby refid="classDeviceInfoService_1a3619ac5734e074de11927352b0fd5054" compoundref="deviceinfoservice_8cpp" startline="218" endline="224">DeviceInfoService::softwareRevision</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structDeviceInfoService_1_1CharacteristicUuids_1a410471249dd69e69f7931e245b302612" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="qbluetoothuuid" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothUuid</ref></type>
+        <definition>const QBluetoothUuid DeviceInfoService::CharacteristicUuids::serialNumber</definition>
+        <argsstring></argsstring>
+        <name>serialNumber</name>
+        <qualifiedname>DeviceInfoService::CharacteristicUuids::serialNumber</qualifiedname>
+        <initializer>{ QBluetoothUuid::CharacteristicType::SerialNumberString }</initializer>
+        <briefdescription>
+<para>UUID of the <computeroutput>Device Info</computeroutput> service&apos;s <computeroutput>Serial Number String</computeroutput> characterstic. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/deviceinfoservice.h" line="54" column="44" bodyfile="/home/paul/src/dokit/include/qtpokit/deviceinfoservice.h" bodystart="55" bodyend="55"/>
+        <referencedby refid="classDeviceInfoServicePrivate_1a5ca3ccfe6cc8231247fed820e41551a1" compoundref="deviceinfoservice_8cpp" startline="324" endline="374">DeviceInfoServicePrivate::characteristicRead</referencedby>
+        <referencedby refid="classPokitDevice_1a0a3e6078ce0a7c2d93171ef0f4183d61" compoundref="pokitdevice_8cpp" startline="218" endline="261">PokitDevice::charcteristicToString</referencedby>
+        <referencedby refid="classDeviceInfoService_1aa10d77cc1df3cf923740332d9a8b97cb" compoundref="deviceinfoservice_8cpp" startline="49" endline="59">DeviceInfoService::readCharacteristics</referencedby>
+        <referencedby refid="classDeviceInfoService_1a0b2e0b299e03d9c06a45646d042f7843" compoundref="deviceinfoservice_8cpp" startline="145" endline="149">DeviceInfoService::readSerialNumberCharacteristic</referencedby>
+        <referencedby refid="classDeviceInfoService_1a006859d13f7c3d7f4179a0ad9cc04213" compoundref="deviceinfoservice_8cpp" startline="234" endline="246">DeviceInfoService::serialNumber</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Characteristics available via the <computeroutput>Device Info</computeroutput> service. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>DeviceInfoService::CharacteristicUuids</label>
+        <link refid="structDeviceInfoService_1_1CharacteristicUuids"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>firmwareRevision</edgelabel>
+          <edgelabel>hardwareRevision</edgelabel>
+          <edgelabel>manufacturerName</edgelabel>
+          <edgelabel>modelNumber</edgelabel>
+          <edgelabel>serialNumber</edgelabel>
+          <edgelabel>softwareRevision</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QBluetoothUuid</label>
+        <link refid="qbluetoothuuid" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>QUuid</label>
+        <link refid="quuid" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/paul/src/dokit/include/qtpokit/deviceinfoservice.h" line="32" column="5" bodyfile="/home/paul/src/dokit/include/qtpokit/deviceinfoservice.h" bodystart="32" bodyend="56"/>
+    <listofallmembers>
+      <member refid="structDeviceInfoService_1_1CharacteristicUuids_1a7959177f8c990b2240476746061a236a" prot="public" virt="non-virtual"><scope>DeviceInfoService::CharacteristicUuids</scope><name>firmwareRevision</name></member>
+      <member refid="structDeviceInfoService_1_1CharacteristicUuids_1a2e9f6731a3d49d4e08facc0e4811c91b" prot="public" virt="non-virtual"><scope>DeviceInfoService::CharacteristicUuids</scope><name>hardwareRevision</name></member>
+      <member refid="structDeviceInfoService_1_1CharacteristicUuids_1a0455d683833dae7fa93ddf08b754136d" prot="public" virt="non-virtual"><scope>DeviceInfoService::CharacteristicUuids</scope><name>manufacturerName</name></member>
+      <member refid="structDeviceInfoService_1_1CharacteristicUuids_1af5c3bd888ca0d9133ff6d844992a7e34" prot="public" virt="non-virtual"><scope>DeviceInfoService::CharacteristicUuids</scope><name>modelNumber</name></member>
+      <member refid="structDeviceInfoService_1_1CharacteristicUuids_1a410471249dd69e69f7931e245b302612" prot="public" virt="non-virtual"><scope>DeviceInfoService::CharacteristicUuids</scope><name>serialNumber</name></member>
+      <member refid="structDeviceInfoService_1_1CharacteristicUuids_1a3dcd8fc5858990ac38640acf15ccff69" prot="public" virt="non-virtual"><scope>DeviceInfoService::CharacteristicUuids</scope><name>softwareRevision</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

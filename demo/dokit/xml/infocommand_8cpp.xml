@@ -1,0 +1,305 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.0" xml:lang="en-US">
+  <compounddef id="infocommand_8cpp" kind="file" language="C++">
+    <compoundname>infocommand.cpp</compoundname>
+    <includes refid="infocommand_8h" local="yes">infocommand.h</includes>
+    <includes refid="deviceinfoservice_8h" local="no">qtpokit/deviceinfoservice.h</includes>
+    <includes refid="pokitdevice_8h" local="no">qtpokit/pokitdevice.h</includes>
+    <includes local="no">QJsonDocument</includes>
+    <includes local="no">QJsonObject</includes>
+    <includes local="no">iostream</includes>
+    <incdepgraph>
+      <node id="16">
+        <label>abstractpokitservice.h</label>
+        <link refid="abstractpokitservice_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>qtpokit/deviceinfoservice.h</label>
+        <link refid="deviceinfoservice_8h"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>qtpokit/pokitdevice.h</label>
+        <link refid="pokitdevice_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>qtpokit/pokitproducts.h</label>
+        <link refid="pokitproducts_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>qtpokit_global.h</label>
+        <link refid="qtpokit__global_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>abstractcommand.h</label>
+        <link refid="abstractcommand_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>devicecommand.h</label>
+        <link refid="devicecommand_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>infocommand.cpp</label>
+        <link refid="infocommand_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>infocommand.h</label>
+        <link refid="infocommand_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>QBluetoothAddress</label>
+      </node>
+      <node id="5">
+        <label>QBluetoothDeviceInfo</label>
+      </node>
+      <node id="20">
+        <label>QBluetoothUuid</label>
+      </node>
+      <node id="6">
+        <label>QCommandLineParser</label>
+      </node>
+      <node id="12">
+        <label>QFlags</label>
+      </node>
+      <node id="23">
+        <label>QJsonDocument</label>
+      </node>
+      <node id="24">
+        <label>QJsonObject</label>
+      </node>
+      <node id="7">
+        <label>QLoggingCategory</label>
+      </node>
+      <node id="14">
+        <label>QLowEnergyController</label>
+      </node>
+      <node id="17">
+        <label>QLowEnergyService</label>
+      </node>
+      <node id="8">
+        <label>QObject</label>
+      </node>
+      <node id="13">
+        <label>QString</label>
+      </node>
+      <node id="21">
+        <label>QVersionNumber</label>
+      </node>
+      <node id="11">
+        <label>QtGlobal</label>
+      </node>
+      <node id="25">
+        <label>iostream</label>
+      </node>
+      <node id="18">
+        <label>optional</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>SPDX-FileCopyrightText:<sp/>2022-2024<sp/>Paul<sp/>Colby<sp/>&lt;git@colby.id.au&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>SPDX-License-Identifier:<sp/>LGPL-3.0-or-later</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;infocommand.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="deviceinfoservice_8h" kindref="compound">qtpokit/deviceinfoservice.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="pokitdevice_8h" kindref="compound">qtpokit/pokitdevice.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QJsonDocument&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QJsonObject&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="14"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>\class<sp/>InfoCommand</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>The<sp/>InfoCommand<sp/>class<sp/>implements<sp/>the<sp/>`info`<sp/>CLI<sp/>command.</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="20"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/>Construct<sp/>a<sp/>new<sp/>InfoCommand<sp/>object<sp/>with<sp/>\a<sp/>parent.</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="classInfoCommand_1aaa769d9a046313767917c32a9eba05bf" refkind="member"><highlight class="normal"><ref refid="classInfoCommand_1aaa769d9a046313767917c32a9eba05bf" kindref="member">InfoCommand::InfoCommand</ref>(<ref refid="qobject" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QObject</ref><sp/>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>parent)<sp/>:<sp/><ref refid="classDeviceCommand" kindref="compound">DeviceCommand</ref>(parent)</highlight></codeline>
+<codeline lineno="24"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="classInfoCommand_1a0464815b82409a3f99a98b94344057f2" refkind="member"><highlight class="normal"><ref refid="qstringlist" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QStringList</ref><sp/><ref refid="classInfoCommand_1a0464815b82409a3f99a98b94344057f2" kindref="member">InfoCommand::requiredOptions</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qcommandlineparser" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCommandLineParser</ref><sp/>&amp;parser)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="29"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classAbstractCommand_1afd6f41cfc925751415cfa45e3b2d0b4a" kindref="member">DeviceCommand::requiredOptions</ref>(parser)<sp/>+<sp/><ref refid="qstringlist" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QStringList</ref>{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="32"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="classInfoCommand_1a1567186bd098ebc9141d3670f9e276ef" refkind="member"><highlight class="normal"><ref refid="qstringlist" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QStringList</ref><sp/><ref refid="classInfoCommand_1a1567186bd098ebc9141d3670f9e276ef" kindref="member">InfoCommand::supportedOptions</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qcommandlineparser" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCommandLineParser</ref><sp/>&amp;parser)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="35"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classAbstractCommand_1a1ceca3c5b4cb24277dd4d4054f45db18" kindref="member">DeviceCommand::supportedOptions</ref>(parser);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="39"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="40"><highlight class="comment"><sp/>*<sp/>\copybrief<sp/>DeviceCommand::processOptions</highlight></codeline>
+<codeline lineno="41"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="42"><highlight class="comment"><sp/>*<sp/>This<sp/>implementation<sp/>extends<sp/>DeviceCommand::processOptions<sp/>to<sp/>process<sp/>additional<sp/>CLI<sp/>options</highlight></codeline>
+<codeline lineno="43"><highlight class="comment"><sp/>*<sp/>supported<sp/>(or<sp/>required)<sp/>by<sp/>this<sp/>command.</highlight></codeline>
+<codeline lineno="44"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="classInfoCommand_1a7d815cb4b0133025e4354649e2cd7a6a" refkind="member"><highlight class="normal"><ref refid="qstringlist" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QStringList</ref><sp/><ref refid="classInfoCommand_1a7d815cb4b0133025e4354649e2cd7a6a" kindref="member">InfoCommand::processOptions</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qcommandlineparser" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QCommandLineParser</ref><sp/>&amp;parser)</highlight></codeline>
+<codeline lineno="46"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="qstringlist" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QStringList</ref><sp/>errors<sp/>=<sp/><ref refid="classAbstractCommand_1ad827a18a24776efeb955739459d48f7d" kindref="member">DeviceCommand::processOptions</ref>(parser);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!errors.<ref refid="qlist_1isEmpty" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">isEmpty</ref>())<sp/>{</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>errors;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>errors;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="55"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="56"><highlight class="comment"><sp/>*<sp/>\copybrief<sp/>DeviceCommand::getService</highlight></codeline>
+<codeline lineno="57"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="58"><highlight class="comment"><sp/>*<sp/>This<sp/>override<sp/>returns<sp/>a<sp/>pointer<sp/>to<sp/>a<sp/>DeviceInfoService<sp/>object.</highlight></codeline>
+<codeline lineno="59"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60" refid="classInfoCommand_1a5a6f572882374077b39769b794fe7449" refkind="member"><highlight class="normal"><ref refid="classAbstractPokitService" kindref="compound">AbstractPokitService</ref><sp/>*<sp/><ref refid="classInfoCommand_1a5a6f572882374077b39769b794fe7449" kindref="member">InfoCommand::getService</ref>()</highlight></codeline>
+<codeline lineno="61"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_ASSERT(<ref refid="classDeviceCommand_1a2bbf2dc9bb0ba85a2bf29263746c7b57" kindref="member">device</ref>);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!<ref refid="classInfoCommand_1a35869224900c04ffb3daaa2cedd4f761" kindref="member">service</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classInfoCommand_1a35869224900c04ffb3daaa2cedd4f761" kindref="member">service</ref><sp/>=<sp/><ref refid="classDeviceCommand_1a2bbf2dc9bb0ba85a2bf29263746c7b57" kindref="member">device</ref>-&gt;<ref refid="classPokitDevice_1a1e04571a74d06fcc4608e70437b5fa5d" kindref="member">deviceInformation</ref>();</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Q_ASSERT(<ref refid="classInfoCommand_1a35869224900c04ffb3daaa2cedd4f761" kindref="member">service</ref>);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classInfoCommand_1a35869224900c04ffb3daaa2cedd4f761" kindref="member">service</ref>;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="70"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="71"><highlight class="comment"><sp/>*<sp/>\copybrief<sp/>DeviceCommand::serviceDetailsDiscovered</highlight></codeline>
+<codeline lineno="72"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="73"><highlight class="comment"><sp/>*<sp/>This<sp/>override<sp/>fetches<sp/>the<sp/>current<sp/>device&apos;s<sp/>information,<sp/>and<sp/>outputs<sp/>it<sp/>in<sp/>the<sp/>selected<sp/>format.</highlight></codeline>
+<codeline lineno="74"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75" refid="classInfoCommand_1a06d095d57662fd10b201d6273085c34e" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classInfoCommand_1a06d095d57662fd10b201d6273085c34e" kindref="member">InfoCommand::serviceDetailsDiscovered</ref>()</highlight></codeline>
+<codeline lineno="76"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classDeviceCommand_1a906fd97d832be0e8d2ba1c917fba41db" kindref="member">DeviceCommand::serviceDetailsDiscovered</ref>();<sp/></highlight><highlight class="comment">//<sp/>Just<sp/>logs<sp/>consistently.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qlowenergycontroller" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QLowEnergyController</ref><sp/>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>controller<sp/>=<sp/>(<ref refid="classDeviceCommand_1a2bbf2dc9bb0ba85a2bf29263746c7b57" kindref="member">device</ref>)<sp/>?<sp/><ref refid="classDeviceCommand_1a2bbf2dc9bb0ba85a2bf29263746c7b57" kindref="member">device</ref>-&gt;<ref refid="classPokitDevice_1a2e2fb6b30e6f5f0d7bc6cd8f806d6423" kindref="member">controller</ref>()<sp/>:<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref><sp/>deviceName<sp/>=<sp/>(controller)<sp/>?<sp/>controller-&gt;<ref refid="qlowenergycontroller_1remoteName" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">remoteName</ref>()<sp/>:<sp/><ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref>();</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qbluetoothaddress" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothAddress</ref><sp/>deviceAddress<sp/>=<sp/>(controller)<sp/>?<sp/>controller-&gt;<ref refid="qlowenergycontroller_1remoteAddress" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">remoteAddress</ref>()<sp/>:<sp/><ref refid="qbluetoothaddress" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothAddress</ref>();</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qbluetoothuuid" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothUuid</ref><sp/>deviceUuid<sp/>=<sp/>(controller)<sp/>?<sp/>controller-&gt;<ref refid="qlowenergycontroller_1remoteDeviceUuid" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">remoteDeviceUuid</ref>()<sp/>:<sp/><ref refid="qbluetoothuuid" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothUuid</ref>();</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref><sp/>serialNumber<sp/>=<sp/><ref refid="classInfoCommand_1a35869224900c04ffb3daaa2cedd4f761" kindref="member">service</ref>-&gt;<ref refid="classDeviceInfoService_1a006859d13f7c3d7f4179a0ad9cc04213" kindref="member">serialNumber</ref>();</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(<ref refid="classAbstractCommand_1a881d85cd96b6fcc0652b916c366dda7b" kindref="member">format</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="classAbstractCommand_1aa2dadc72289ff2b0a02c1fb435f8a4dcab20daea8bfacec3891fcf5b7be4adca0" kindref="member">OutputFormat::Csv</ref>:</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/>qUtf8Printable(<ref refid="qobject_1tr" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">tr</ref>(</highlight><highlight class="stringliteral">&quot;device_name,device_address,device_uuid,manufacturer_name,model_number,&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;hardware_revision,firmware_revision,software_revision,serial_number\n&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/>qUtf8Printable(<ref refid="qstring_1fromLatin1-1" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString::fromLatin1</ref>(</highlight><highlight class="stringliteral">&quot;%1,%2,%3,%4,%5,%6,%7,%8,%9\n&quot;</highlight><highlight class="normal">).arg(</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classAbstractCommand_1af85c842568f8a3a893e336e449ef7813" kindref="member">escapeCsvField</ref>(deviceName),</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(deviceAddress.<ref refid="qbluetoothaddress_1isNull" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">isNull</ref>())<sp/>?<sp/><ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref>()<sp/>:<sp/>deviceAddress.<ref refid="qbluetoothaddress_1toString" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">toString</ref>(),</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(deviceUuid.<ref refid="quuid_1isNull" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">isNull</ref>())<sp/>?<sp/><ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref>()<sp/>:<sp/>deviceUuid.<ref refid="quuid_1toString" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">toString</ref>(),</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classAbstractCommand_1af85c842568f8a3a893e336e449ef7813" kindref="member">escapeCsvField</ref>(<ref refid="classInfoCommand_1a35869224900c04ffb3daaa2cedd4f761" kindref="member">service</ref>-&gt;<ref refid="classDeviceInfoService_1ab5614d4e47856aa4400d08ae2b71d72b" kindref="member">manufacturer</ref>()),<sp/><ref refid="classAbstractCommand_1af85c842568f8a3a893e336e449ef7813" kindref="member">escapeCsvField</ref>(<ref refid="classInfoCommand_1a35869224900c04ffb3daaa2cedd4f761" kindref="member">service</ref>-&gt;<ref refid="classDeviceInfoService_1a7402f9a0c2fe3ee052a29e8f872e26ef" kindref="member">modelNumber</ref>()),</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classAbstractCommand_1af85c842568f8a3a893e336e449ef7813" kindref="member">escapeCsvField</ref>(<ref refid="classInfoCommand_1a35869224900c04ffb3daaa2cedd4f761" kindref="member">service</ref>-&gt;<ref refid="classDeviceInfoService_1a4d79805ce884ec8d5ac7879ccd499932" kindref="member">hardwareRevision</ref>()),<sp/><ref refid="classAbstractCommand_1af85c842568f8a3a893e336e449ef7813" kindref="member">escapeCsvField</ref>(<ref refid="classInfoCommand_1a35869224900c04ffb3daaa2cedd4f761" kindref="member">service</ref>-&gt;<ref refid="classDeviceInfoService_1ac896b483c3b54e46658fd04ab4bb864b" kindref="member">firmwareRevision</ref>()),</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classAbstractCommand_1af85c842568f8a3a893e336e449ef7813" kindref="member">escapeCsvField</ref>(<ref refid="classInfoCommand_1a35869224900c04ffb3daaa2cedd4f761" kindref="member">service</ref>-&gt;<ref refid="classDeviceInfoService_1a3619ac5734e074de11927352b0fd5054" kindref="member">softwareRevision</ref>()),<sp/><ref refid="classAbstractCommand_1af85c842568f8a3a893e336e449ef7813" kindref="member">escapeCsvField</ref>(serialNumber)));</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="classAbstractCommand_1aa2dadc72289ff2b0a02c1fb435f8a4dcaeed8d85b888a6c015834240885ee6333" kindref="member">OutputFormat::Json</ref>:<sp/>{</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="qjsonobject" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QJsonObject</ref><sp/>jsonObject{</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/><ref refid="qlatin1string" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QLatin1String</ref>(</highlight><highlight class="stringliteral">&quot;manufacturerName&quot;</highlight><highlight class="normal">),<sp/><ref refid="classInfoCommand_1a35869224900c04ffb3daaa2cedd4f761" kindref="member">service</ref>-&gt;<ref refid="classDeviceInfoService_1ab5614d4e47856aa4400d08ae2b71d72b" kindref="member">manufacturer</ref>()<sp/>},</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/><ref refid="qlatin1string" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QLatin1String</ref>(</highlight><highlight class="stringliteral">&quot;modelNumber&quot;</highlight><highlight class="normal">),<sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classInfoCommand_1a35869224900c04ffb3daaa2cedd4f761" kindref="member">service</ref>-&gt;<ref refid="classDeviceInfoService_1a7402f9a0c2fe3ee052a29e8f872e26ef" kindref="member">modelNumber</ref>()<sp/>},</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/><ref refid="qlatin1string" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QLatin1String</ref>(</highlight><highlight class="stringliteral">&quot;hardwareRevision&quot;</highlight><highlight class="normal">),<sp/><ref refid="classInfoCommand_1a35869224900c04ffb3daaa2cedd4f761" kindref="member">service</ref>-&gt;<ref refid="classDeviceInfoService_1a4d79805ce884ec8d5ac7879ccd499932" kindref="member">hardwareRevision</ref>()<sp/>},</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/><ref refid="qlatin1string" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QLatin1String</ref>(</highlight><highlight class="stringliteral">&quot;firmwareRevision&quot;</highlight><highlight class="normal">),<sp/><ref refid="classInfoCommand_1a35869224900c04ffb3daaa2cedd4f761" kindref="member">service</ref>-&gt;<ref refid="classDeviceInfoService_1ac896b483c3b54e46658fd04ab4bb864b" kindref="member">firmwareRevision</ref>()<sp/>},</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/><ref refid="qlatin1string" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QLatin1String</ref>(</highlight><highlight class="stringliteral">&quot;softwareRevision&quot;</highlight><highlight class="normal">),<sp/><ref refid="classInfoCommand_1a35869224900c04ffb3daaa2cedd4f761" kindref="member">service</ref>-&gt;<ref refid="classDeviceInfoService_1a3619ac5734e074de11927352b0fd5054" kindref="member">softwareRevision</ref>()<sp/>},</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!deviceName.<ref refid="qstring_1isEmpty" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">isEmpty</ref>())<sp/>{</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>jsonObject.insert(<ref refid="qlatin1string" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QLatin1String</ref>(</highlight><highlight class="stringliteral">&quot;deviceName&quot;</highlight><highlight class="normal">),<sp/>deviceName);</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!deviceAddress.<ref refid="qbluetoothaddress_1isNull" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">isNull</ref>())<sp/>{</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>jsonObject.insert(<ref refid="qlatin1string" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QLatin1String</ref>(</highlight><highlight class="stringliteral">&quot;deviceAddress&quot;</highlight><highlight class="normal">),<sp/>deviceAddress.<ref refid="qbluetoothaddress_1toString" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">toString</ref>());</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!deviceUuid.<ref refid="quuid_1isNull" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">isNull</ref>())<sp/>{</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>jsonObject.insert(<ref refid="qlatin1string" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QLatin1String</ref>(</highlight><highlight class="stringliteral">&quot;deviceUuid&quot;</highlight><highlight class="normal">),<sp/>deviceUuid.<ref refid="quuid_1toString" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">toString</ref>());</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!serialNumber.<ref refid="qstring_1isNull" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">isNull</ref>())<sp/>{</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>jsonObject.insert(<ref refid="qlatin1string" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QLatin1String</ref>(</highlight><highlight class="stringliteral">&quot;serialNumber&quot;</highlight><highlight class="normal">),<sp/>serialNumber);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/><ref refid="qjsondocument" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QJsonDocument</ref>(jsonObject).<ref refid="qjsondocument_1toJson" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">toJson</ref>().<ref refid="qbytearray_1toStdString" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">toStdString</ref>();</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="classAbstractCommand_1aa2dadc72289ff2b0a02c1fb435f8a4dca9dffbf69ffba8bc38bc4e01abf4b1675" kindref="member">OutputFormat::Text</ref>:</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!deviceName.<ref refid="qstring_1isEmpty" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">isEmpty</ref>())<sp/>{</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/>qUtf8Printable(<ref refid="qobject_1tr" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">tr</ref>(</highlight><highlight class="stringliteral">&quot;Device<sp/>name:<sp/><sp/><sp/><sp/><sp/><sp/><sp/>%1\n&quot;</highlight><highlight class="normal">).arg(deviceName));</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!deviceAddress.<ref refid="qbluetoothaddress_1isNull" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">isNull</ref>())<sp/>{</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/>qUtf8Printable(<ref refid="qobject_1tr" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">tr</ref>(</highlight><highlight class="stringliteral">&quot;Device<sp/>addres:<sp/><sp/><sp/><sp/><sp/>%1\n&quot;</highlight><highlight class="normal">).arg(deviceAddress.<ref refid="qbluetoothaddress_1toString" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">toString</ref>()));</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!deviceUuid.<ref refid="quuid_1isNull" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">isNull</ref>())<sp/>{</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/>qUtf8Printable(<ref refid="qobject_1tr" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">tr</ref>(</highlight><highlight class="stringliteral">&quot;Device<sp/>UUID:<sp/><sp/><sp/><sp/><sp/><sp/><sp/>%1\n&quot;</highlight><highlight class="normal">).arg(deviceUuid.<ref refid="quuid_1toString" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">toString</ref>()));</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/>qUtf8Printable(<ref refid="qobject_1tr" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">tr</ref>(</highlight><highlight class="stringliteral">&quot;Manufacturer<sp/>name:<sp/>%1\n&quot;</highlight><highlight class="normal">).arg(<ref refid="classInfoCommand_1a35869224900c04ffb3daaa2cedd4f761" kindref="member">service</ref>-&gt;<ref refid="classDeviceInfoService_1ab5614d4e47856aa4400d08ae2b71d72b" kindref="member">manufacturer</ref>()));</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/>qUtf8Printable(<ref refid="qobject_1tr" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">tr</ref>(</highlight><highlight class="stringliteral">&quot;Model<sp/>number:<sp/><sp/><sp/><sp/><sp/><sp/>%1\n&quot;</highlight><highlight class="normal">).arg(<ref refid="classInfoCommand_1a35869224900c04ffb3daaa2cedd4f761" kindref="member">service</ref>-&gt;<ref refid="classDeviceInfoService_1a7402f9a0c2fe3ee052a29e8f872e26ef" kindref="member">modelNumber</ref>()));</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/>qUtf8Printable(<ref refid="qobject_1tr" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">tr</ref>(</highlight><highlight class="stringliteral">&quot;Hardware<sp/>revision:<sp/>%1\n&quot;</highlight><highlight class="normal">).arg(<ref refid="classInfoCommand_1a35869224900c04ffb3daaa2cedd4f761" kindref="member">service</ref>-&gt;<ref refid="classDeviceInfoService_1a4d79805ce884ec8d5ac7879ccd499932" kindref="member">hardwareRevision</ref>()));</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/>qUtf8Printable(<ref refid="qobject_1tr" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">tr</ref>(</highlight><highlight class="stringliteral">&quot;Firmware<sp/>revision:<sp/>%1\n&quot;</highlight><highlight class="normal">).arg(<ref refid="classInfoCommand_1a35869224900c04ffb3daaa2cedd4f761" kindref="member">service</ref>-&gt;<ref refid="classDeviceInfoService_1ac896b483c3b54e46658fd04ab4bb864b" kindref="member">firmwareRevision</ref>()));</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/>qUtf8Printable(<ref refid="qobject_1tr" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">tr</ref>(</highlight><highlight class="stringliteral">&quot;Software<sp/>revision:<sp/>%1\n&quot;</highlight><highlight class="normal">).arg(<ref refid="classInfoCommand_1a35869224900c04ffb3daaa2cedd4f761" kindref="member">service</ref>-&gt;<ref refid="classDeviceInfoService_1a3619ac5734e074de11927352b0fd5054" kindref="member">softwareRevision</ref>()));</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!serialNumber.<ref refid="qstring_1isNull" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">isNull</ref>())<sp/>{</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/>qUtf8Printable(<ref refid="qobject_1tr" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">tr</ref>(</highlight><highlight class="stringliteral">&quot;Serial<sp/>number:<sp/><sp/><sp/><sp/><sp/>%1\n&quot;</highlight><highlight class="normal">).arg(serialNumber));</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="classDeviceCommand_1a2bbf2dc9bb0ba85a2bf29263746c7b57" kindref="member">device</ref>)<sp/><ref refid="classDeviceCommand_1ae619166395b5651f1316fd5336d9fa2c" kindref="member">disconnect</ref>();<sp/></highlight><highlight class="comment">//<sp/>Will<sp/>exit<sp/>the<sp/>application<sp/>once<sp/>disconnected.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/paul/src/dokit/src/cli/infocommand.cpp"/>
+  </compounddef>
+</doxygen>

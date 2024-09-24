@@ -1,0 +1,395 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.0" xml:lang="en-US">
+  <compounddef id="statusservice_8h" kind="file" language="C++">
+    <compoundname>statusservice.h</compoundname>
+    <includes refid="abstractpokitservice_8h" local="yes">abstractpokitservice.h</includes>
+    <includes local="no">QBluetoothAddress</includes>
+    <includes local="no">QBluetoothUuid</includes>
+    <includes local="no">QVersionNumber</includes>
+    <includes local="no">optional</includes>
+    <includedby refid="dataloggerservice_8cpp" local="no">dataloggerservice.cpp</includedby>
+    <includedby refid="flashledcommand_8cpp" local="no">flashledcommand.cpp</includedby>
+    <includedby refid="pokitdevice_8cpp" local="no">pokitdevice.cpp</includedby>
+    <includedby refid="pokitdiscoveryagent_8cpp" local="no">pokitdiscoveryagent.cpp</includedby>
+    <includedby refid="pokitproducts_8cpp" local="no">pokitproducts.cpp</includedby>
+    <includedby refid="setnamecommand_8cpp" local="no">setnamecommand.cpp</includedby>
+    <includedby refid="settorchcommand_8h" local="no">settorchcommand.h</includedby>
+    <includedby refid="statuscommand_8h" local="no">statuscommand.h</includedby>
+    <includedby refid="statusservice_8cpp" local="no">statusservice.cpp</includedby>
+    <includedby refid="statusservice__p_8h" local="no">statusservice_p.h</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>abstractpokitservice.h</label>
+        <link refid="abstractpokitservice_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>pokitproducts.h</label>
+        <link refid="pokitproducts_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>qtpokit_global.h</label>
+        <link refid="qtpokit__global_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>statusservice.h</label>
+        <link refid="statusservice_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>QBluetoothAddress</label>
+      </node>
+      <node id="6">
+        <label>QBluetoothDeviceInfo</label>
+      </node>
+      <node id="13">
+        <label>QBluetoothUuid</label>
+      </node>
+      <node id="7">
+        <label>QFlags</label>
+      </node>
+      <node id="9">
+        <label>QLowEnergyService</label>
+      </node>
+      <node id="10">
+        <label>QObject</label>
+      </node>
+      <node id="8">
+        <label>QString</label>
+      </node>
+      <node id="14">
+        <label>QVersionNumber</label>
+      </node>
+      <node id="4">
+        <label>QtGlobal</label>
+      </node>
+      <node id="11">
+        <label>optional</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>statusservice.h</label>
+        <link refid="statusservice_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>flashledcommand.cpp</label>
+        <link refid="flashledcommand_8cpp_source"/>
+      </node>
+      <node id="9">
+        <label>main.cpp</label>
+        <link refid="main_8cpp_source"/>
+      </node>
+      <node id="7">
+        <label>setnamecommand.cpp</label>
+        <link refid="setnamecommand_8cpp_source"/>
+      </node>
+      <node id="10">
+        <label>settorchcommand.cpp</label>
+        <link refid="settorchcommand_8cpp_source"/>
+      </node>
+      <node id="8">
+        <label>settorchcommand.h</label>
+        <link refid="settorchcommand_8h_source"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>statuscommand.cpp</label>
+        <link refid="statuscommand_8cpp_source"/>
+      </node>
+      <node id="11">
+        <label>statuscommand.h</label>
+        <link refid="statuscommand_8h_source"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>dataloggerservice.cpp</label>
+        <link refid="dataloggerservice_8cpp"/>
+      </node>
+      <node id="4">
+        <label>pokitdevice.cpp</label>
+        <link refid="pokitdevice_8cpp"/>
+      </node>
+      <node id="5">
+        <label>pokitdiscoveryagent.cpp</label>
+        <link refid="pokitdiscoveryagent_8cpp"/>
+      </node>
+      <node id="6">
+        <label>pokitproducts.cpp</label>
+        <link refid="pokitproducts_8cpp"/>
+      </node>
+      <node id="13">
+        <label>statusservice.cpp</label>
+        <link refid="statusservice_8cpp"/>
+      </node>
+      <node id="14">
+        <label>statusservice_p.h</label>
+        <link refid="statusservice__p_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classStatusService" prot="public">StatusService</innerclass>
+    <innerclass refid="structStatusService_1_1ServiceUuids" prot="public">StatusService::ServiceUuids</innerclass>
+    <innerclass refid="structStatusService_1_1CharacteristicUuids" prot="public">StatusService::CharacteristicUuids</innerclass>
+    <innerclass refid="structStatusService_1_1DeviceCharacteristics" prot="public">StatusService::DeviceCharacteristics</innerclass>
+    <innerclass refid="structStatusService_1_1Status" prot="public">StatusService::Status</innerclass>
+    <briefdescription>
+<para>Declares the <ref refid="classStatusService" kindref="compound">StatusService</ref> class. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>SPDX-FileCopyrightText:<sp/>2022-2024<sp/>Paul<sp/>Colby<sp/>&lt;git@colby.id.au&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>SPDX-License-Identifier:<sp/>LGPL-3.0-or-later</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="4"><highlight class="comment">/*!</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>\file</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>Declares<sp/>the<sp/>StatusService<sp/>class.</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>QTPOKIT_STATUSSERVICE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>QTPOKIT_STATUSSERVICE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="abstractpokitservice_8h" kindref="compound">abstractpokitservice.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QBluetoothAddress&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QBluetoothUuid&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QVersionNumber&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;optional&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><ref refid="qtpokit__global_8h_1ac5aca53b48a017f8db467922deee7983" kindref="member">QTPOKIT_BEGIN_NAMESPACE</ref></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classStatusServicePrivate" kindref="compound">StatusServicePrivate</ref>;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="classStatusService" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="qtpokit__global_8h_1aeba02234b4a21ddf98bb8127b8d41759" kindref="member">QTPOKIT_EXPORT</ref><sp/><ref refid="classStatusService" kindref="compound">StatusService</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classAbstractPokitService" kindref="compound">AbstractPokitService</ref></highlight></codeline>
+<codeline lineno="25"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_OBJECT</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>UUIDs<sp/>of<sp/>the<sp/>`Pokit<sp/>Status`<sp/>service.</highlight></codeline>
+<codeline lineno="30" refid="structStatusService_1_1ServiceUuids" refkind="compound"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="qtpokit__global_8h_1aeba02234b4a21ddf98bb8127b8d41759" kindref="member">QTPOKIT_EXPORT</ref><sp/><ref refid="structStatusService_1_1ServiceUuids" kindref="compound">ServiceUuids</ref><sp/>{</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="31"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>UUID<sp/>of<sp/>the<sp/>Pokit<sp/>Meter&apos;s<sp/>`Pokit<sp/>Status`<sp/>service.</highlight></codeline>
+<codeline lineno="32" refid="structStatusService_1_1ServiceUuids_1a8fa373d36e9332df30f38411ab3446de" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qbluetoothuuid" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothUuid</ref><sp/>pokitMeter<sp/>{<sp/>QStringLiteral(</highlight><highlight class="stringliteral">&quot;57d3a771-267c-4394-8872-78223e92aec4&quot;</highlight><highlight class="normal">)<sp/>};</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="34"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>UUID<sp/>of<sp/>the<sp/>Pokit<sp/>Pro&apos;s<sp/>`Pokit<sp/>Status`<sp/>service.</highlight></codeline>
+<codeline lineno="35" refid="structStatusService_1_1ServiceUuids_1a0a9ca0f9377093ff60b282d4bfe3b0cf" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qbluetoothuuid" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothUuid</ref><sp/>pokitPro<sp/><sp/><sp/>{<sp/>QStringLiteral(</highlight><highlight class="stringliteral">&quot;57d3a771-267c-4394-8872-78223e92aec5&quot;</highlight><highlight class="normal">)<sp/>};</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="38"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Characteristics<sp/>available<sp/>via<sp/>the<sp/>`Pokit<sp/>Status`<sp/>service.</highlight></codeline>
+<codeline lineno="39" refid="structStatusService_1_1CharacteristicUuids" refkind="compound"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="qtpokit__global_8h_1aeba02234b4a21ddf98bb8127b8d41759" kindref="member">QTPOKIT_EXPORT</ref><sp/><ref refid="structStatusService_1_1CharacteristicUuids" kindref="compound">CharacteristicUuids</ref><sp/>{</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="40"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>UUID<sp/>of<sp/>the<sp/>`Pokit<sp/>Status`<sp/>service&apos;s<sp/>`Device<sp/>Characteristics`<sp/>characterstic.</highlight></codeline>
+<codeline lineno="41" refid="structStatusService_1_1CharacteristicUuids_1ab883f16924c3c325a3400a5146d48ac0" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qbluetoothuuid" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothUuid</ref><sp/>deviceCharacteristics<sp/><sp/>{<sp/>QStringLiteral(</highlight><highlight class="stringliteral">&quot;6974f5e5-0e54-45c3-97dd-29e4b5fb0849&quot;</highlight><highlight class="normal">)<sp/>};</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="43"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>UUID<sp/>of<sp/>the<sp/>`Pokit<sp/>Status`<sp/>service&apos;s<sp/>`Status`<sp/>characterstic.</highlight></codeline>
+<codeline lineno="44" refid="structStatusService_1_1CharacteristicUuids_1af27d015f60e86b0de464eab455c56f7c" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qbluetoothuuid" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothUuid</ref><sp/>status<sp/>{<sp/>QStringLiteral(</highlight><highlight class="stringliteral">&quot;3dba36e1-6120-4706-8dfd-ed9c16e569b6&quot;</highlight><highlight class="normal">)<sp/>};</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="46"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>UUID<sp/>of<sp/>the<sp/>`Pokit<sp/>Status`<sp/>service&apos;s<sp/>`Device<sp/>Name`<sp/>characterstic.</highlight></codeline>
+<codeline lineno="47" refid="structStatusService_1_1CharacteristicUuids_1a3ca6f44f245a642f2a5e9147255a7bd8" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qbluetoothuuid" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothUuid</ref><sp/>name<sp/>{<sp/>QStringLiteral(</highlight><highlight class="stringliteral">&quot;7f0375de-077e-4555-8f78-800494509cc3&quot;</highlight><highlight class="normal">)<sp/>};</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="49"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>UUID<sp/>of<sp/>the<sp/>`Pokit<sp/>Status`<sp/>service&apos;s<sp/>`Flash<sp/>LED`<sp/>characterstic.</highlight></codeline>
+<codeline lineno="50" refid="structStatusService_1_1CharacteristicUuids_1aeb51331d2510873d95a5993e62aa2cf0" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qbluetoothuuid" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothUuid</ref><sp/>flashLed<sp/>{<sp/>QStringLiteral(</highlight><highlight class="stringliteral">&quot;ec9bb1f3-05a9-4277-8dd0-60a7896f0d6e&quot;</highlight><highlight class="normal">)<sp/>};</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="52"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>UUID<sp/>of<sp/>the<sp/>`Pokit<sp/>Status`<sp/>service&apos;s<sp/>(undocumented)<sp/>`Torch`<sp/>characterstic.</highlight></codeline>
+<codeline lineno="53" refid="structStatusService_1_1CharacteristicUuids_1a8e558d76deeac993d962763fec80aa3d" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qbluetoothuuid" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothUuid</ref><sp/>torch<sp/>{<sp/>QStringLiteral(</highlight><highlight class="stringliteral">&quot;aaf3f6d5-43d4-4a83-9510-dff3d858d4cc&quot;</highlight><highlight class="normal">)<sp/>};</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="55"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>UUID<sp/>of<sp/>the<sp/>`Pokit<sp/>Status`<sp/>service&apos;s<sp/>(undocumented)<sp/>`Button<sp/>Press`<sp/>characterstic.</highlight></codeline>
+<codeline lineno="56" refid="structStatusService_1_1CharacteristicUuids_1ae2abf1183b8b6f2cd2e0cb5206a3975f" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qbluetoothuuid" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothUuid</ref><sp/>buttonPress<sp/>{<sp/>QStringLiteral(</highlight><highlight class="stringliteral">&quot;8fe5b5a9-b5b4-4a7b-8ff2-87224b970f89&quot;</highlight><highlight class="normal">)<sp/>};</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Pokit<sp/>Pro<sp/>also<sp/>reports<sp/>an<sp/>unknown<sp/>&quot;a59f052e-c2a1-46b6-8025-64e485c00162&quot;<sp/>characteristic.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="61"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Attributes<sp/>included<sp/>in<sp/>the<sp/>`Device<sp/>Characteristics`<sp/>characterstic.</highlight></codeline>
+<codeline lineno="62" refid="structStatusService_1_1DeviceCharacteristics" refkind="compound"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structStatusService_1_1DeviceCharacteristics" kindref="compound">DeviceCharacteristics</ref><sp/>{</highlight></codeline>
+<codeline lineno="63" refid="structStatusService_1_1DeviceCharacteristics_1afdc814d092204ef6f0628253298ae319" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="qversionnumber" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QVersionNumber</ref><sp/><ref refid="structStatusService_1_1DeviceCharacteristics_1afdc814d092204ef6f0628253298ae319" kindref="member">firmwareVersion</ref>;<sp/></highlight><highlight class="comment">///&lt;<sp/>Device&apos;s<sp/>major<sp/>and<sp/>minor<sp/>firmware<sp/>version.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64" refid="structStatusService_1_1DeviceCharacteristics_1aa254a7737f072c29aeb21b29140c738f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>quint16<sp/><ref refid="structStatusService_1_1DeviceCharacteristics_1aa254a7737f072c29aeb21b29140c738f" kindref="member">maximumVoltage</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">///&lt;<sp/>Device&apos;s<sp/>maximum<sp/>input<sp/>voltage.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65" refid="structStatusService_1_1DeviceCharacteristics_1a0b7a8478916ea9229ca98c9d78c96ee3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>quint16<sp/><ref refid="structStatusService_1_1DeviceCharacteristics_1a0b7a8478916ea9229ca98c9d78c96ee3" kindref="member">maximumCurrent</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">///&lt;<sp/>Device&apos;s<sp/>maximum<sp/>input<sp/>current.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66" refid="structStatusService_1_1DeviceCharacteristics_1ae9154c26eb128b26c0fccb9f653f1420" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>quint16<sp/><ref refid="structStatusService_1_1DeviceCharacteristics_1ae9154c26eb128b26c0fccb9f653f1420" kindref="member">maximumResistance</ref>;<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">///&lt;<sp/>Device&apos;s<sp/>maximum<sp/>input<sp/>resistance.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67" refid="structStatusService_1_1DeviceCharacteristics_1a20ea5dac3e01c2c333a1c9a77ef02d3c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>quint16<sp/><ref refid="structStatusService_1_1DeviceCharacteristics_1a20ea5dac3e01c2c333a1c9a77ef02d3c" kindref="member">maximumSamplingRate</ref>;<sp/><sp/><sp/><sp/></highlight><highlight class="comment">///&lt;<sp/>Device&apos;s<sp/>maximum<sp/>sampling<sp/>rate.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68" refid="structStatusService_1_1DeviceCharacteristics_1a4ddb1ebddb04e6a7b445cff73379e932" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>quint16<sp/><ref refid="structStatusService_1_1DeviceCharacteristics_1a4ddb1ebddb04e6a7b445cff73379e932" kindref="member">samplingBufferSize</ref>;<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">///&lt;<sp/>Device&apos;s<sp/>sampling<sp/>buffer<sp/>size.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69" refid="structStatusService_1_1DeviceCharacteristics_1ac32620649e1f8a2cf4cc6e25a7859656" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>quint16<sp/><ref refid="structStatusService_1_1DeviceCharacteristics_1ac32620649e1f8a2cf4cc6e25a7859656" kindref="member">capabilityMask</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">///&lt;<sp/>Reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70" refid="structStatusService_1_1DeviceCharacteristics_1ac3e0c7d70d55307a49907db75e742348" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="qbluetoothaddress" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothAddress</ref><sp/><ref refid="structStatusService_1_1DeviceCharacteristics_1ac3e0c7d70d55307a49907db75e742348" kindref="member">macAddress</ref>;<sp/><sp/><sp/></highlight><highlight class="comment">///&lt;<sp/>Device&apos;s<sp/>MAC<sp/>address.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="73"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Values<sp/>supported<sp/>by<sp/>the<sp/>`Status`<sp/>attribute<sp/>of<sp/>the<sp/>`Status`<sp/>characteristic.</highlight></codeline>
+<codeline lineno="74" refid="classStatusService_1a50ae778be2cb8e49b85ef159be19af35" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/><ref refid="classStatusService_1a50ae778be2cb8e49b85ef159be19af35" kindref="member">DeviceStatus</ref><sp/>:<sp/>quint8<sp/>{</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Idle<sp/>=<sp/>0,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">///&lt;<sp/>Device<sp/>is<sp/>idle.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MultimeterDcVoltage<sp/>=<sp/>1,<sp/><sp/></highlight><highlight class="comment">///&lt;<sp/>Multimeter<sp/>is<sp/>measuring<sp/>DC<sp/>voltage.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MultimeterAcVoltage<sp/>=<sp/>2,<sp/><sp/></highlight><highlight class="comment">///&lt;<sp/>Multimeter<sp/>is<sp/>measuring<sp/>AC<sp/>voltage.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MultimeterDcCurrent<sp/>=<sp/>3,<sp/><sp/></highlight><highlight class="comment">///&lt;<sp/>Multimeter<sp/>is<sp/>measuring<sp/>DC<sp/>current.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MultimeterAcCurrent<sp/>=<sp/>4,<sp/><sp/></highlight><highlight class="comment">///&lt;<sp/>Multimeter<sp/>is<sp/>measuring<sp/>AC<sp/>current.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MultimeterResistance<sp/>=<sp/>5,<sp/></highlight><highlight class="comment">///&lt;<sp/>Multimeter<sp/>is<sp/>measuring<sp/>resistance.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MultimeterDiode<sp/>=<sp/>6,<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">///&lt;<sp/>Multimeter<sp/>is<sp/>measuring<sp/>diode.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MultimeterContinuity<sp/>=<sp/>7,<sp/></highlight><highlight class="comment">///&lt;<sp/>Multimeter<sp/>is<sp/>measuring<sp/>continuity.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MultimeterTemperature<sp/>=<sp/>8,</highlight><highlight class="comment">///&lt;<sp/>Multimeter<sp/>is<sp/>measuring<sp/>temperature.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DsoModeSampling<sp/>=<sp/>9,<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">///&lt;<sp/>DSO<sp/>is<sp/>sampling.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LoggerModeSampling<sp/>=<sp/>10,<sp/><sp/></highlight><highlight class="comment">///&lt;<sp/>Data<sp/>Logger<sp/>is<sp/>sampling.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref><sp/><ref refid="pokitproducts_8h_1abac6d04d602c122e3de08ef55122d635" kindref="member">toString</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classStatusService_1a50ae778be2cb8e49b85ef159be19af35" kindref="member">StatusService::DeviceStatus</ref><sp/>&amp;status);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="89"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Values<sp/>supported<sp/>by<sp/>the<sp/>`Battery<sp/>Status`<sp/>attribute<sp/>of<sp/>the<sp/>`Status`<sp/>characteristic.</highlight></codeline>
+<codeline lineno="90" refid="classStatusService_1a26ca2c6e0c1127261cc28a778512bf68" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/><ref refid="classStatusService_1a26ca2c6e0c1127261cc28a778512bf68" kindref="member">BatteryStatus</ref><sp/>:<sp/>quint8<sp/>{</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Low<sp/>=<sp/>0,<sp/><sp/></highlight><highlight class="comment">///&lt;<sp/>Low<sp/>(replace<sp/>battery).</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Good<sp/>=<sp/>1,<sp/></highlight><highlight class="comment">///&lt;<sp/>Good.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref><sp/><ref refid="pokitproducts_8h_1abac6d04d602c122e3de08ef55122d635" kindref="member">toString</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classStatusService_1a26ca2c6e0c1127261cc28a778512bf68" kindref="member">StatusService::BatteryStatus</ref><sp/>&amp;status);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="96"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Values<sp/>supported<sp/>by<sp/>the<sp/>(undocumented)<sp/>`Switch<sp/>Position`<sp/>attribute<sp/>of<sp/>the<sp/>`Status`<sp/>characteristic.</highlight></codeline>
+<codeline lineno="97" refid="classStatusService_1a6bb2f85b6df9942ee108c341f4162e1f" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/><ref refid="classStatusService_1a6bb2f85b6df9942ee108c341f4162e1f" kindref="member">SwitchPosition</ref><sp/>:<sp/>quint8<sp/>{</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Voltage<sp/><sp/><sp/><sp/><sp/>=<sp/>0,<sp/></highlight><highlight class="comment">///&lt;<sp/>Device<sp/>is<sp/>switched<sp/>to<sp/>Voltage<sp/>position.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MultiMode<sp/><sp/><sp/>=<sp/>1,<sp/></highlight><highlight class="comment">///&lt;<sp/>Device<sp/>is<sp/>switched<sp/>to<sp/>Resistance<sp/>/<sp/>Low<sp/>Current<sp/>/<sp/>Capacitance<sp/>/<sp/>Diode<sp/>position.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>HighCurrent<sp/>=<sp/>2,<sp/></highlight><highlight class="comment">///&lt;<sp/>Device<sp/>is<sp/>switched<sp/>to<sp/>High<sp/>Current<sp/>position.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref><sp/><ref refid="pokitproducts_8h_1abac6d04d602c122e3de08ef55122d635" kindref="member">toString</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classStatusService_1a6bb2f85b6df9942ee108c341f4162e1f" kindref="member">StatusService::SwitchPosition</ref><sp/>&amp;position);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="104"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Values<sp/>supported<sp/>by<sp/>the<sp/>(undocumented)<sp/>`Charging<sp/>Statue`<sp/>attribute<sp/>of<sp/>the<sp/>`Status`<sp/>characteristic.</highlight></codeline>
+<codeline lineno="105" refid="classStatusService_1af7f9dcc8c9cfa0a1cd9491b829234dc1" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/><ref refid="classStatusService_1af7f9dcc8c9cfa0a1cd9491b829234dc1" kindref="member">ChargingStatus</ref><sp/>:<sp/>quint8<sp/>{</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Discharging<sp/>=<sp/>0,<sp/></highlight><highlight class="comment">///&lt;<sp/>Battery<sp/>is<sp/>dischargin.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Charging<sp/><sp/><sp/><sp/>=<sp/>1,<sp/></highlight><highlight class="comment">///&lt;<sp/>Battery<sp/>is<sp/>being<sp/>charged.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Charged<sp/><sp/><sp/><sp/><sp/>=<sp/>2,<sp/></highlight><highlight class="comment">///&lt;<sp/>Battery<sp/>is<sp/>fully<sp/>charged.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref><sp/><ref refid="pokitproducts_8h_1abac6d04d602c122e3de08ef55122d635" kindref="member">toString</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classStatusService_1af7f9dcc8c9cfa0a1cd9491b829234dc1" kindref="member">StatusService::ChargingStatus</ref><sp/>&amp;status);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="112"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Attributes<sp/>included<sp/>in<sp/>the<sp/>`Status`<sp/>characterstic.</highlight></codeline>
+<codeline lineno="113" refid="structStatusService_1_1Status" refkind="compound"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structStatusService_1_1Status" kindref="compound">Status</ref><sp/>{</highlight></codeline>
+<codeline lineno="114" refid="structStatusService_1_1Status_1aa5d6fe4e5286126d7604c6ceb4da6d11" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classStatusService_1a50ae778be2cb8e49b85ef159be19af35" kindref="member">DeviceStatus</ref><sp/><ref refid="structStatusService_1_1Status_1aa5d6fe4e5286126d7604c6ceb4da6d11" kindref="member">deviceStatus</ref>;<sp/><sp/><sp/></highlight><highlight class="comment">///&lt;<sp/>Current<sp/>Pokit<sp/>device<sp/>status.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115" refid="structStatusService_1_1Status_1a34d5f71da1e356a5f8da381f4b715b46" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="structStatusService_1_1Status_1a34d5f71da1e356a5f8da381f4b715b46" kindref="member">batteryVoltage</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">///&lt;<sp/>Current<sp/>battery<sp/>voltage<sp/>level.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116" refid="structStatusService_1_1Status_1af2a1fab33ca1e643988bc9976a44940d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classStatusService_1a26ca2c6e0c1127261cc28a778512bf68" kindref="member">BatteryStatus</ref><sp/><ref refid="structStatusService_1_1Status_1af2a1fab33ca1e643988bc9976a44940d" kindref="member">batteryStatus</ref>;<sp/></highlight><highlight class="comment">///&lt;<sp/>Logical<sp/>interpretation<sp/>the<sp/>battery<sp/>voltage<sp/>level.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117" refid="structStatusService_1_1Status_1afd171243d9bcdfb3c2e354ffb28b3f88" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::optional&lt;SwitchPosition&gt;<sp/><ref refid="structStatusService_1_1Status_1afd171243d9bcdfb3c2e354ffb28b3f88" kindref="member">switchPosition</ref>;<sp/></highlight><highlight class="comment">///&lt;<sp/>Position<sp/>of<sp/>the<sp/>Pokit<sp/>device&apos;s<sp/>physical<sp/>mode<sp/>switch.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118" refid="structStatusService_1_1Status_1a4c4c144b60207c7e092b83eaf33c3e51" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::optional&lt;ChargingStatus&gt;<sp/><ref refid="structStatusService_1_1Status_1a4c4c144b60207c7e092b83eaf33c3e51" kindref="member">chargingStatus</ref>;<sp/></highlight><highlight class="comment">///&lt;<sp/>Current<sp/>charging<sp/>status,<sp/>if<sp/>supported<sp/>by<sp/>the<sp/>device.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="121"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Values<sp/>supported<sp/>by<sp/>the<sp/>single<sp/>byte<sp/>of<sp/>the<sp/>attribute<sp/>of<sp/>the<sp/>(undocumented)<sp/>`Torch`<sp/>characteristic.</highlight></codeline>
+<codeline lineno="122" refid="classStatusService_1ab219dd54284c7299cce14b36ee59e08b" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/><ref refid="classStatusService_1ab219dd54284c7299cce14b36ee59e08b" kindref="member">TorchStatus</ref><sp/>:<sp/>quint8<sp/>{</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Off<sp/>=<sp/>0,<sp/></highlight><highlight class="comment">///&lt;<sp/>Torch<sp/>is<sp/>off.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>On<sp/><sp/>=<sp/>1,<sp/></highlight><highlight class="comment">///&lt;<sp/>Torch<sp/>is<sp/>on.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref><sp/><ref refid="pokitproducts_8h_1abac6d04d602c122e3de08ef55122d635" kindref="member">toString</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classStatusService_1ab219dd54284c7299cce14b36ee59e08b" kindref="member">StatusService::TorchStatus</ref><sp/>&amp;status);</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="128"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Values<sp/>supported<sp/>by<sp/>the<sp/>second<sp/>byte<sp/>of<sp/>the<sp/>attribute<sp/>of<sp/>the<sp/>(undocumented)<sp/>`Button<sp/>Press`<sp/>characteristic.</highlight></codeline>
+<codeline lineno="129" refid="classStatusService_1a14dc19e0faab66a66e89abebe41082eb" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/><ref refid="classStatusService_1a14dc19e0faab66a66e89abebe41082eb" kindref="member">ButtonStatus</ref><sp/>:<sp/>quint8<sp/>{</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Released<sp/>=<sp/>0,<sp/></highlight><highlight class="comment">///&lt;<sp/>Button<sp/>was<sp/>released.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Pressed<sp/><sp/>=<sp/>1,<sp/></highlight><highlight class="comment">///&lt;<sp/>Button<sp/>was<sp/>pressed.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Held<sp/><sp/><sp/><sp/><sp/>=<sp/>2,<sp/></highlight><highlight class="comment">///&lt;<sp/>Button<sp/>was<sp/>held<sp/>down<sp/>(for<sp/>typically<sp/>1,500ms).</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref><sp/><ref refid="pokitproducts_8h_1abac6d04d602c122e3de08ef55122d635" kindref="member">toString</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classStatusService_1a14dc19e0faab66a66e89abebe41082eb" kindref="member">StatusService::ButtonStatus</ref><sp/>&amp;status);</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classStatusService" kindref="compound">StatusService</ref>(<ref refid="qlowenergycontroller" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QLowEnergyController</ref><sp/>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>pokitDevice,<sp/><ref refid="qobject" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QObject</ref><sp/>*<sp/>parent<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classStatusService" kindref="compound">~StatusService</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classAbstractPokitService_1ab1de532f20d46803d6e8b8ffea835b48" kindref="member">readCharacteristics</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>readDeviceCharacteristics();</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>readStatusCharacteristic();</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>readNameCharacteristic();</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>readTorchCharacteristic();</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>readButtonPressCharacteristic();</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Device<sp/>Characteristics<sp/>characteristic<sp/>(BLE<sp/>read<sp/>only).</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/>DeviceCharacteristics<sp/>deviceCharacteristics()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Status<sp/>characteristic<sp/>(Meter:<sp/>read,<sp/>Pro:<sp/>read/notify).</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/>Status<sp/>status()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>enableStatusNotifications();</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>disableStatusNotifications();</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Device<sp/>Name<sp/>characteristic<sp/>(Both<sp/>read/write).</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref><sp/>deviceName()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>setDeviceName(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref><sp/>&amp;name);</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Flash<sp/>LED<sp/>characteristic<sp/>(Meter:<sp/>write<sp/>only<sp/>(Pro<sp/>claims<sp/>read/write,<sp/>but<sp/>fails<sp/>if<sp/>we<sp/>try).</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>flashLed();</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Undocumented<sp/>Torch<sp/>characteristic<sp/>(Pro<sp/>only:<sp/>read/write/notify).</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/>std::optional&lt;TorchStatus&gt;<sp/>torchStatus()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>setTorchStatus(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TorchStatus<sp/>status);</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>enableTorchStatusNotifications();</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>disableTorchStatusNotifications();</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Undocumented<sp/>Button<sp/>Press<sp/>characteristic<sp/>(Pro<sp/>only:<sp/>read/write/notify).</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/>std::optional&lt;ButtonStatus&gt;<sp/>buttonPress()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>enableButtonPressedNotifications();</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>disableButtonPressedNotifications();</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><ref refid="qobject_1Q_SIGNALS" kindref="member" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">Q_SIGNALS</ref>:</highlight></codeline>
+<codeline lineno="173" refid="classStatusService_1aa7078c4dfbf7a7cc843fac160c2d1f09" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classStatusService_1aa7078c4dfbf7a7cc843fac160c2d1f09" kindref="member">deviceCharacteristicsRead</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structStatusService_1_1DeviceCharacteristics" kindref="compound">StatusService::DeviceCharacteristics</ref><sp/>&amp;characteristics);</highlight></codeline>
+<codeline lineno="174" refid="classStatusService_1a7ac0f6b5cf9cfd4acee67df1479a24bf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classStatusService_1a7ac0f6b5cf9cfd4acee67df1479a24bf" kindref="member">deviceNameRead</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="qstring" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QString</ref><sp/>&amp;deviceName);</highlight></codeline>
+<codeline lineno="175" refid="classStatusService_1ab5d4871d4fae7045dff91f12f8f67d9a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classStatusService_1ab5d4871d4fae7045dff91f12f8f67d9a" kindref="member">deviceNameWritten</ref>();</highlight></codeline>
+<codeline lineno="176" refid="classStatusService_1a9f89222ee84c2f45c4c21a9c6a0c9d4b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classStatusService_1a9f89222ee84c2f45c4c21a9c6a0c9d4b" kindref="member">deviceStatusRead</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structStatusService_1_1Status" kindref="compound">StatusService::Status</ref><sp/>&amp;status);</highlight></codeline>
+<codeline lineno="177" refid="classStatusService_1a2fe685dfd1829b7a51db80b324dea77e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classStatusService_1a2fe685dfd1829b7a51db80b324dea77e" kindref="member">deviceLedFlashed</ref>();</highlight></codeline>
+<codeline lineno="178" refid="classStatusService_1a1658b06923abd2a4e7f15f2cc56686bb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classStatusService_1a1658b06923abd2a4e7f15f2cc56686bb" kindref="member">torchStatusRead</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classStatusService_1ab219dd54284c7299cce14b36ee59e08b" kindref="member">TorchStatus</ref><sp/>&amp;status);</highlight></codeline>
+<codeline lineno="179" refid="classStatusService_1aec3272ddef1ea08f7d6f2a87e41ed197" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classStatusService_1aec3272ddef1ea08f7d6f2a87e41ed197" kindref="member">torchStatusWritten</ref>();</highlight></codeline>
+<codeline lineno="180" refid="classStatusService_1a2084a26b33dd947723c40839d36b7b94" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classStatusService_1a2084a26b33dd947723c40839d36b7b94" kindref="member">buttonPressRead</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>quint8<sp/>&amp;unknown,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classStatusService_1a14dc19e0faab66a66e89abebe41082eb" kindref="member">ButtonStatus</ref><sp/>status);</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="183"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>\cond<sp/>internal</highlight></codeline>
+<codeline lineno="184"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classStatusService" kindref="compound">StatusService</ref>(<ref refid="classStatusServicePrivate" kindref="compound">StatusServicePrivate</ref><sp/>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>d,<sp/><ref refid="qobject" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">QObject</ref><sp/>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>parent);</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="185"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>\endcond</highlight></codeline>
+<codeline lineno="186"><highlight class="comment"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_DECLARE_PRIVATE(<ref refid="classStatusService" kindref="compound">StatusService</ref>)</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_DISABLE_COPY(<ref refid="classStatusService" kindref="compound">StatusService</ref>)</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">TestStatusService;</highlight></codeline>
+<codeline lineno="191"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><ref refid="qtpokit__global_8h_1af2a5fcdf5ad6da4ea4f238aad0d29d65" kindref="member">QTPOKIT_END_NAMESPACE</ref></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>QTPOKIT_STATUSSERVICE_H</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/paul/src/dokit/include/qtpokit/statusservice.h"/>
+  </compounddef>
+</doxygen>

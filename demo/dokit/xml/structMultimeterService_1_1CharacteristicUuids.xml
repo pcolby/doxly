@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.0" xml:lang="en-US">
+  <compounddef id="structMultimeterService_1_1CharacteristicUuids" kind="struct" language="C++" prot="public">
+    <compoundname>MultimeterService::CharacteristicUuids</compoundname>
+    <includes refid="multimeterservice_8h" local="no">multimeterservice.h</includes>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="structMultimeterService_1_1CharacteristicUuids_1a502132c1d5922e86256dd70e6935b6d2" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="qbluetoothuuid" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothUuid</ref></type>
+        <definition>const QBluetoothUuid MultimeterService::CharacteristicUuids::settings</definition>
+        <argsstring></argsstring>
+        <name>settings</name>
+        <qualifiedname>MultimeterService::CharacteristicUuids::settings</qualifiedname>
+        <initializer>{ QStringLiteral(&quot;53dc9a7a-bc19-4280-b76b-002d0e23b078&quot;) }</initializer>
+        <briefdescription>
+<para>UUID of the <computeroutput>Multimeter</computeroutput> service&apos;s <computeroutput><ref refid="structMultimeterService_1_1Settings" kindref="compound">Settings</ref></computeroutput> characterstic. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/multimeterservice.h" line="33" column="44" bodyfile="/home/paul/src/dokit/include/qtpokit/multimeterservice.h" bodystart="33" bodyend="33"/>
+        <referencedby refid="classMultimeterServicePrivate_1af80ef46d902cc372a57bb1ba45313bcb" compoundref="multimeterservice_8cpp" startline="380" endline="399">MultimeterServicePrivate::characteristicChanged</referencedby>
+        <referencedby refid="classMultimeterServicePrivate_1a2cb96a3c5ae351ca9d07ee7bc828029a" compoundref="multimeterservice_8cpp" startline="330" endline="349">MultimeterServicePrivate::characteristicRead</referencedby>
+        <referencedby refid="classMultimeterServicePrivate_1abe299f554929b4b345d5dd527fd7bcea" compoundref="multimeterservice_8cpp" startline="355" endline="374">MultimeterServicePrivate::characteristicWritten</referencedby>
+        <referencedby refid="classPokitDevice_1a0a3e6078ce0a7c2d93171ef0f4183d61" compoundref="pokitdevice_8cpp" startline="218" endline="261">PokitDevice::charcteristicToString</referencedby>
+        <referencedby refid="classMultimeterService_1ab459a9db42aed973bbc18a2bc9fcd957" compoundref="multimeterservice_8cpp" startline="182" endline="198">MultimeterService::setSettings</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structMultimeterService_1_1CharacteristicUuids_1a38e61d8cc1060c1166f11b9d8a5c0643" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="qbluetoothuuid" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags">QBluetoothUuid</ref></type>
+        <definition>const QBluetoothUuid MultimeterService::CharacteristicUuids::reading</definition>
+        <argsstring></argsstring>
+        <name>reading</name>
+        <qualifiedname>MultimeterService::CharacteristicUuids::reading</qualifiedname>
+        <initializer>{ QStringLiteral(&quot;047d3559-8bee-423a-b229-4417fa603b90&quot;) }</initializer>
+        <briefdescription>
+<para>UUID of the <computeroutput>Multimeter</computeroutput> service&apos;s <computeroutput><ref refid="structMultimeterService_1_1Reading" kindref="compound">Reading</ref></computeroutput> characterstic. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/paul/src/dokit/include/qtpokit/multimeterservice.h" line="36" column="44" bodyfile="/home/paul/src/dokit/include/qtpokit/multimeterservice.h" bodystart="36" bodyend="36"/>
+        <referencedby refid="classMultimeterServicePrivate_1af80ef46d902cc372a57bb1ba45313bcb" compoundref="multimeterservice_8cpp" startline="380" endline="399">MultimeterServicePrivate::characteristicChanged</referencedby>
+        <referencedby refid="classMultimeterServicePrivate_1a2cb96a3c5ae351ca9d07ee7bc828029a" compoundref="multimeterservice_8cpp" startline="330" endline="349">MultimeterServicePrivate::characteristicRead</referencedby>
+        <referencedby refid="classMultimeterServicePrivate_1abe299f554929b4b345d5dd527fd7bcea" compoundref="multimeterservice_8cpp" startline="355" endline="374">MultimeterServicePrivate::characteristicWritten</referencedby>
+        <referencedby refid="classPokitDevice_1a0a3e6078ce0a7c2d93171ef0f4183d61" compoundref="pokitdevice_8cpp" startline="218" endline="261">PokitDevice::charcteristicToString</referencedby>
+        <referencedby refid="classMultimeterService_1ae51553919b7d659cf6d0ce1210503555" compoundref="multimeterservice_8cpp" startline="245" endline="249">MultimeterService::disableReadingNotifications</referencedby>
+        <referencedby refid="classMultimeterService_1a321c4fdade8d934ac2e1daec3be174fb" compoundref="multimeterservice_8cpp" startline="232" endline="236">MultimeterService::enableReadingNotifications</referencedby>
+        <referencedby refid="classMultimeterService_1ad7623c59f41fc099bebd3447637a904e" compoundref="multimeterservice_8cpp" startline="214" endline="221">MultimeterService::reading</referencedby>
+        <referencedby refid="classMultimeterService_1a818612a809f2addc659b44bc537c4428" compoundref="multimeterservice_8cpp" startline="169" endline="173">MultimeterService::readReadingCharacteristic</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Characteristics available via the <computeroutput>Multimeter</computeroutput> service. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>MultimeterService::CharacteristicUuids</label>
+        <link refid="structMultimeterService_1_1CharacteristicUuids"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>reading</edgelabel>
+          <edgelabel>settings</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QBluetoothUuid</label>
+        <link refid="qbluetoothuuid" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtbluetooth/qtbluetooth.tags"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>QUuid</label>
+        <link refid="quuid" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/paul/src/dokit/include/qtpokit/multimeterservice.h" line="31" column="5" bodyfile="/home/paul/src/dokit/include/qtpokit/multimeterservice.h" bodystart="31" bodyend="37"/>
+    <listofallmembers>
+      <member refid="structMultimeterService_1_1CharacteristicUuids_1a38e61d8cc1060c1166f11b9d8a5c0643" prot="public" virt="non-virtual"><scope>MultimeterService::CharacteristicUuids</scope><name>reading</name></member>
+      <member refid="structMultimeterService_1_1CharacteristicUuids_1a502132c1d5922e86256dd70e6935b6d2" prot="public" virt="non-virtual"><scope>MultimeterService::CharacteristicUuids</scope><name>settings</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

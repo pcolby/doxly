@@ -1,0 +1,205 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.0" xml:lang="en-US">
+  <compounddef id="md__2home_2paul_2src_2dokit_2doc_2src_2internal_2notes" kind="page">
+    <compoundname>md__2home_2paul_2src_2dokit_2doc_2src_2internal_2notes</compoundname>
+    <title>Notes</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><anchor id="md__2home_2paul_2src_2dokit_2doc_2src_2internal_2notes_1autotoc_md4"/></para>
+<sect1 id="md__2home_2paul_2src_2dokit_2doc_2src_2internal_2notes_1autotoc_md5">
+<title>Pokit Bluetooth API</title><para>See also: <ulink url="pokit.html">Pokit API Errata</ulink></para>
+<sect2 id="md__2home_2paul_2src_2dokit_2doc_2src_2internal_2notes_1autotoc_md6">
+<title>Undocumented Services</title><para>Pokit Meter and Pokit Pro both include the following service(s) with no official documentation to match:</para>
+<para><itemizedlist>
+<listitem><para><computeroutput>1d14d6ee-fd63-4fa1-bfa4-8f47b42119f0</computeroutput> - appears to be a Silicon Labs (formerly BlueGiga) OTA Service for updating firmware, which would make sense.</para>
+</listitem></itemizedlist>
+</para>
+<para>Additionally, the Pokit Meter includes the following undocumented service:</para>
+<para><itemizedlist>
+<listitem><para><computeroutput>831d0001-e98e-1fed-e73e-4bb7596f776e</computeroutput> - no idea.</para>
+</listitem></itemizedlist>
+</para>
+</sect2>
+</sect1>
+<sect1 id="md__2home_2paul_2src_2dokit_2doc_2src_2internal_2notes_1autotoc_md7">
+<title>Qt Versions</title><para>QtPokit requires <ref refid="qt" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">Qt</ref>&apos;s support Bluetooth Low Energy, in Central mode.</para>
+<para><table rows="21" cols="3"><row>
+<entry thead="yes"><para><ref refid="qt" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">Qt</ref>   </para>
+</entry><entry thead="yes" align='center'><para>Supported   </para>
+</entry><entry thead="yes"><para>Notes    </para>
+</entry></row>
+<row>
+<entry thead="no"><para>5.0   </para>
+</entry><entry thead="no" align='center'><para>No   </para>
+</entry><entry thead="no"><para><ref refid="qt" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">Qt</ref> BLE API was <ulink url="https://doc.qt.io/qt-5/qtbluetooth-le-overview.html">not added until v5.4</ulink>.    </para>
+</entry></row>
+<row>
+<entry thead="no"><para>5.1   </para>
+</entry><entry thead="no" align='center'><para>No   </para>
+</entry><entry thead="no"><para><ref refid="qt" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">Qt</ref> BLE API was <ulink url="https://doc.qt.io/qt-5/qtbluetooth-le-overview.html">not added until v5.4</ulink>.    </para>
+</entry></row>
+<row>
+<entry thead="no"><para>5.2   </para>
+</entry><entry thead="no" align='center'><para>No   </para>
+</entry><entry thead="no"><para><ref refid="qt" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">Qt</ref> BLE API was <ulink url="https://doc.qt.io/qt-5/qtbluetooth-le-overview.html">not added until v5.4</ulink>.    </para>
+</entry></row>
+<row>
+<entry thead="no"><para>5.3   </para>
+</entry><entry thead="no" align='center'><para>No   </para>
+</entry><entry thead="no"><para><ref refid="qt" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">Qt</ref> BLE API was <ulink url="https://doc.qt.io/qt-5/qtbluetooth-le-overview.html">not added until v5.4</ulink>.    </para>
+</entry></row>
+<row>
+<entry thead="no"><para>5.4   </para>
+</entry><entry thead="no" align='center'><para>Probably   </para>
+</entry><entry thead="no"><para></para>
+</entry></row>
+<row>
+<entry thead="no"><para>5.5   </para>
+</entry><entry thead="no" align='center'><para>Probably   </para>
+</entry><entry thead="no"><para></para>
+</entry></row>
+<row>
+<entry thead="no"><para>5.6   </para>
+</entry><entry thead="no" align='center'><para>Probably   </para>
+</entry><entry thead="no"><para></para>
+</entry></row>
+<row>
+<entry thead="no"><para>5.7   </para>
+</entry><entry thead="no" align='center'><para>Probably   </para>
+</entry><entry thead="no"><para></para>
+</entry></row>
+<row>
+<entry thead="no"><para>5.8   </para>
+</entry><entry thead="no" align='center'><para>Probably   </para>
+</entry><entry thead="no"><para></para>
+</entry></row>
+<row>
+<entry thead="no"><para>5.9   </para>
+</entry><entry thead="no" align='center'><para>Probably   </para>
+</entry><entry thead="no"><para></para>
+</entry></row>
+<row>
+<entry thead="no"><para>5.10   </para>
+</entry><entry thead="no" align='center'><para>Probably   </para>
+</entry><entry thead="no"><para></para>
+</entry></row>
+<row>
+<entry thead="no"><para>5.11   </para>
+</entry><entry thead="no" align='center'><para>Probably   </para>
+</entry><entry thead="no"><para></para>
+</entry></row>
+<row>
+<entry thead="no"><para>5.12   </para>
+</entry><entry thead="no" align='center'><para>Probably   </para>
+</entry><entry thead="no"><para></para>
+</entry></row>
+<row>
+<entry thead="no"><para>5.13   </para>
+</entry><entry thead="no" align='center'><para>Probably   </para>
+</entry><entry thead="no"><para></para>
+</entry></row>
+<row>
+<entry thead="no"><para>5.14   </para>
+</entry><entry thead="no" align='center'><para>Probably   </para>
+</entry><entry thead="no"><para></para>
+</entry></row>
+<row>
+<entry thead="no"><para>5.15   </para>
+</entry><entry thead="no" align='center'><para>Yes   </para>
+</entry><entry thead="no"><para></para>
+</entry></row>
+<row>
+<entry thead="no"><para>6.0   </para>
+</entry><entry thead="no" align='center'><para>No   </para>
+</entry><entry thead="no"><para>Bluetooth module <ulink url="https://www.qt.io/blog/qt-6.2-lts-released">ported to Qt6 in v6.2</ulink>.    </para>
+</entry></row>
+<row>
+<entry thead="no"><para>6.1   </para>
+</entry><entry thead="no" align='center'><para>No   </para>
+</entry><entry thead="no"><para>Bluetooth module <ulink url="https://www.qt.io/blog/qt-6.2-lts-released">ported to Qt6 in v6.2</ulink>.    </para>
+</entry></row>
+<row>
+<entry thead="no"><para>6.2   </para>
+</entry><entry thead="no" align='center'><para>Yes   </para>
+</entry><entry thead="no"><para></para>
+</entry></row>
+<row>
+<entry thead="no"><para>6.3   </para>
+</entry><entry thead="no" align='center'><para>Yes   </para>
+</entry><entry thead="no"><para></para>
+</entry></row>
+</table>
+</para>
+</sect1>
+<sect1 id="md__2home_2paul_2src_2dokit_2doc_2src_2internal_2notes_1autotoc_md8">
+<title>CMake Versions</title><para>In summary (of the below table), for <emphasis>building</emphasis> QtPokit:</para>
+<para><itemizedlist>
+<listitem><para>CMake 2.8.9 through to pre-3.0 <emphasis>should</emphasis> be possible, but the effort and resulting complexity is high enough to not be worth it.</para>
+</listitem><listitem><para>any CMake 3.x should be fine, except:</para>
+</listitem><listitem><para>CMake 3.12+ is needed for the full set of unit tests.</para>
+</listitem></itemizedlist>
+</para>
+<para><table rows="14" cols="2"><row>
+<entry thead="yes" align='center'><para>Version   </para>
+</entry><entry thead="yes"><para>Dependency    </para>
+</entry></row>
+<row>
+<entry thead="no" align='center'><para>2.8.9   </para>
+</entry><entry thead="no"><para><ulink url="https://github.com/qt/qtbase/blob/v5.1.0/src/corelib/Qt5Config.cmake.in">Qt 5.1+</ulink>    </para>
+</entry></row>
+<row>
+<entry thead="no" align='center'><para>2.8.11   </para>
+</entry><entry thead="no"><para><ulink url="https://cmake.org/cmake/help/v2.8.11/cmake.html#command:target_include_directories"><computeroutput>target_include_directories</computeroutput></ulink>    </para>
+</entry></row>
+<row>
+<entry thead="no" align='center'><para>2.8.11   </para>
+</entry><entry thead="no"><para>Has <computeroutput>-fPIC</computeroutput> issues with <ref refid="qt" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">Qt</ref>.    </para>
+</entry></row>
+<row>
+<entry thead="no" align='center'><para>2.8.12   </para>
+</entry><entry thead="no"><para><ulink url="https://cmake.org/cmake/help/v2.8.12/cmake.html#command:add_compile_options"><computeroutput>add_compile_options</computeroutput></ulink>    </para>
+</entry></row>
+<row>
+<entry thead="no" align='center'><para>2.8.12   </para>
+</entry><entry thead="no"><para>Has compile isssues with <ref refid="qt" kindref="compound" external="/home/paul/opt/qt/Docs/Qt-6.6.3/qtcore/qtcore.tags">Qt</ref>.    </para>
+</entry></row>
+<row>
+<entry thead="no" align='center'><para>3.0   </para>
+</entry><entry thead="no"><para><computeroutput>VERSION</computeroutput> option of the <computeroutput>project()</computeroutput> command.    </para>
+</entry></row>
+<row>
+<entry thead="no" align='center'><para>3.1   </para>
+</entry><entry thead="no"><para><ulink url="https://github.com/qt/qtbase/blob/v5.11.0/src/corelib/Qt5Config.cmake.in">Qt 5.11+</ulink>    </para>
+</entry></row>
+<row>
+<entry thead="no" align='center'><para></para>
+</entry><entry thead="no"><para><computeroutput>target_sources</computeroutput> command.    </para>
+</entry></row>
+<row>
+<entry thead="no" align='center'><para>3.12   </para>
+</entry><entry thead="no"><para><ulink url="https://cmake.org/cmake/help/latest/command/add_library.html#object-libraries">Object Libraries</ulink> for sharing binary objects between the console app and unit tests.    </para>
+</entry></row>
+<row>
+<entry thead="no" align='center'><para>3.13   </para>
+</entry><entry thead="no"><para><computeroutput>-B</computeroutput> CLI option (handy, but not essential).    </para>
+</entry></row>
+<row>
+<entry thead="no" align='center'><para>3.16   </para>
+</entry><entry thead="no"><para><ulink url="https://github.com/qt/qtbase/blob/v6.2.0/.cmake.conf">Qt6.x shared</ulink>    </para>
+</entry></row>
+<row>
+<entry thead="no" align='center'><para>3.18   </para>
+</entry><entry thead="no"><para>Not actually a requirement, but this is the minimum version that&apos;s regularly tested.    </para>
+</entry></row>
+<row>
+<entry thead="no" align='center'><para>3.21   </para>
+</entry><entry thead="no"><para><ulink url="https://github.com/qt/qtbase/blob/v6.2.0/.cmake.conf">Qt6.x static</ulink>   </para>
+</entry></row>
+</table>
+</para>
+</sect1>
+    </detaileddescription>
+    <location file="/home/paul/src/dokit/doc/src/internal/notes.md"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.0" xml:lang="en-US">
+  <compounddef id="dir_50a37931ba53bab1227e676b964746aa" kind="dir">
+    <compoundname>lib</compoundname>
+    <innerfile refid="abstractpokitservice_8cpp">abstractpokitservice.cpp</innerfile>
+    <innerfile refid="abstractpokitservice__p_8h">abstractpokitservice_p.h</innerfile>
+    <innerfile refid="calibrationservice_8cpp">calibrationservice.cpp</innerfile>
+    <innerfile refid="calibrationservice__p_8h">calibrationservice_p.h</innerfile>
+    <innerfile refid="dataloggerservice_8cpp">dataloggerservice.cpp</innerfile>
+    <innerfile refid="dataloggerservice__p_8h">dataloggerservice_p.h</innerfile>
+    <innerfile refid="deviceinfoservice_8cpp">deviceinfoservice.cpp</innerfile>
+    <innerfile refid="deviceinfoservice__p_8h">deviceinfoservice_p.h</innerfile>
+    <innerfile refid="dsoservice_8cpp">dsoservice.cpp</innerfile>
+    <innerfile refid="dsoservice__p_8h">dsoservice_p.h</innerfile>
+    <innerfile refid="multimeterservice_8cpp">multimeterservice.cpp</innerfile>
+    <innerfile refid="multimeterservice__p_8h">multimeterservice_p.h</innerfile>
+    <innerfile refid="pokitdevice_8cpp">pokitdevice.cpp</innerfile>
+    <innerfile refid="pokitdevice__p_8h">pokitdevice_p.h</innerfile>
+    <innerfile refid="pokitdiscoveryagent_8cpp">pokitdiscoveryagent.cpp</innerfile>
+    <innerfile refid="pokitdiscoveryagent__p_8h">pokitdiscoveryagent_p.h</innerfile>
+    <innerfile refid="pokitmeter_8cpp">pokitmeter.cpp</innerfile>
+    <innerfile refid="pokitpro_8cpp">pokitpro.cpp</innerfile>
+    <innerfile refid="pokitproducts_8cpp">pokitproducts.cpp</innerfile>
+    <innerfile refid="pokitproducts__p_8h">pokitproducts_p.h</innerfile>
+    <innerfile refid="statusservice_8cpp">statusservice.cpp</innerfile>
+    <innerfile refid="statusservice__p_8h">statusservice_p.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/paul/src/dokit/src/lib/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.0" xml:lang="en-US">
+  <compounddef id="indexpage" kind="page">
+    <compoundname>index</compoundname>
+    <title>QtPokit - Internal</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><anchor id="index_1md__2home_2paul_2src_2dokit_2doc_2src_2internal_2mainpage"/></para>
+<para>This is <emphasis>internal</emphasis> documentation, aimed at developers that contribute to the QtPokit project itself.</para>
+<sect1 id="index_1autotoc_md1">
+<title>Building from Source</title><para>Prototypical <ulink url="https://cmake.org/">CMake</ulink>-based out-of-source build and test process:</para>
+<para><programlisting filename=".sh"><codeline><highlight class="normal">cmake<sp/>-E<sp/>make_directory<sp/>&lt;tmp-build-dir&gt;</highlight></codeline>
+<codeline><highlight class="normal">cmake<sp/>-D<sp/>CMAKE_BUILD_TYPE=Release<sp/>-S<sp/>&lt;path-to-cloned-repo&gt;<sp/>-B<sp/>&lt;tmp-build-dir&gt;</highlight></codeline>
+<codeline><highlight class="normal">cmake<sp/>--build<sp/>&lt;tmp-build-dir&gt;</highlight></codeline>
+<codeline><highlight class="normal">ctest<sp/>--test-dir<sp/>&lt;tmp-build-dir&gt;<sp/>--verbose</highlight></codeline>
+</programlisting></para>
+<sect2 id="index_1autotoc_md2">
+<title>Test Coverage</title><para>Similar to above, but specify <computeroutput>ENABLE_COVERAGE=YES</computeroutput>, which will add dependencies on <ulink url="https://gcc.gnu.org/onlinedocs/gcc/Gcov.html">gcov</ulink> and <ulink url="http://ltp.sourceforge.net/coverage/lcov.php">LCOV</ulink>.</para>
+<para><programlisting filename=".sh"><codeline><highlight class="normal">cmake<sp/>-E<sp/>make_directory<sp/>&lt;tmp-build-dir&gt;</highlight></codeline>
+<codeline><highlight class="normal">cmake<sp/>-D<sp/>CMAKE_BUILD_TYPE=Release<sp/>-S<sp/>&lt;path-to-cloned-repo&gt;<sp/>-B<sp/>&lt;tmp-build-dir&gt;</highlight></codeline>
+<codeline><highlight class="normal">cmake<sp/>--build<sp/>&lt;tmp-build-dir&gt;</highlight></codeline>
+<codeline><highlight class="normal">ctest<sp/>--test-dir<sp/>&lt;tmp-build-dir&gt;<sp/>--verbose</highlight></codeline>
+<codeline><highlight class="normal">cmake<sp/>--build<sp/>&lt;tmp-build-dir&gt;<sp/>--target<sp/>coverage<sp/>coverage-html</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>ls<sp/>&lt;tmp-build-dir&gt;/test/coverage.info<sp/>#<sp/>Coverage<sp/>tracefile.</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>ls<sp/>&lt;tmp-build-dir&gt;/test/coverage/<sp/>#<sp/>HTML<sp/>report.</highlight></codeline>
+</programlisting></para>
+</sect2>
+<sect2 id="index_1autotoc_md3">
+<title>Documentation</title><para>Configure the same as above, but build the <computeroutput>doc</computeroutput> and (optionally) <computeroutput>doc-internal</computeroutput> targets.</para>
+<para><programlisting filename=".sh"><codeline><highlight class="normal">cmake<sp/>-E<sp/>make_directory<sp/>&lt;tmp-build-dir&gt;</highlight></codeline>
+<codeline><highlight class="normal">cmake<sp/>-S<sp/>&lt;path-to-cloned-repo&gt;<sp/>-B<sp/>&lt;tmp-build-dir&gt;</highlight></codeline>
+<codeline><highlight class="normal">cmake<sp/>--build<sp/>&lt;tmp-build-dir&gt;<sp/>--target<sp/>doc<sp/>doc-internal</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>ls<sp/>&lt;tmp-build-dir&gt;/doc/public<sp/><sp/><sp/><sp/>#<sp/>Library<sp/>end-user<sp/>documentation</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>ls<sp/>&lt;tmp-build-dir&gt;/doc/internal<sp/><sp/>#<sp/>Internal<sp/>developer<sp/>documentation</highlight></codeline>
+</programlisting> </para>
+</sect2>
+</sect1>
+    </detaileddescription>
+    <location file="/home/paul/src/dokit/doc/src/internal/mainpage.md"/>
+  </compounddef>
+</doxygen>
