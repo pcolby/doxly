@@ -112,6 +112,11 @@ def _to_markdown(value):
     """Custom filter to convert values to Markdown"""
     logger.debug(f'Converting {type(value).__name__} to Markdown')
     match type(value):
+        case doxmlparser.compound.descriptionType:
+            assert(value.get_title() == None)  # Just till we see some examples.
+            assert(value.get_internal() == []) # Just till we see some examples.
+            assert(value.get_sect1() == [])    # Just till we see some examples.
+            return ''.join([ _to_markdown(item) for item in value.content_ ])
         case doxmlparser.compound.docAnchorType:
             return f'<a id="{value.get_id()}"></a>'
         case doxmlparser.compound.docListItemType:
@@ -141,7 +146,6 @@ def _to_markdown(value):
             return ''.join([ _to_markdown(item) for item in value.content_ ])
         case doxmlparser.compound.docURLLink:
             content = ''.join([ _to_markdown(item) for item in value.content_ ])
-            print(content)
             return f'[{content}]({value.get_url()})'
         case doxmlparser.compound.docVariableListType:
             text = ''
@@ -152,8 +156,9 @@ def _to_markdown(value):
         case doxmlparser.compound.docVarListEntryType:
             return _to_markdown(value.get_term())
         case doxmlparser.compound.docXRefSectType:
-            print('TODO xref')
-            return 'TODO'
+            text = f'[{''.join(value.get_xreftitle())}]({value.get_id()})\n'
+            text += f'\n> {_to_markdown(value.get_xrefdescription())}'
+            return text
         case doxmlparser.compound.MixedContainer:
             logger.debug(f"MixedContainer:{value.category}:{value.content_type}:'{value.name}':{value.value}")
             match value.getCategory():
