@@ -113,24 +113,24 @@ def _to_markdown(value):
     logger.debug(f'Converting {type(value).__name__} to Markdown')
     match type(value):
         case doxmlparser.compound.descriptionType:
-            assert(value.get_title() == None)  # Just till we see some examples.
-            assert(value.get_internal() == []) # Just till we see some examples.
-            assert(value.get_sect1() == [])    # Just till we see some examples.
+            assert not value.get_title(), 'descriptionType.title not implemented'
+            assert not value.get_internal(), 'descriptionType.internal not implemented'
+            assert not value.get_sect1(), 'descriptionType.sect1 not implemented'
             return ''.join([ _to_markdown(item) for item in value.content_ ])
         case doxmlparser.compound.docAnchorType:
             return f'<a id="{value.get_id()}"></a>'
         case doxmlparser.compound.docListItemType:
-            #print(value.get_override()) # TODO Not sure what this means.
-            #print(value.get_value()) # Same here.
+            assert not value.get_override(), 'docListItemType.override not implemented'
+            assert not value.get_value(), 'docListItemType.value not implemented'
             # TODO we probably need to do hanging indents here?
             return '\n* '+(''.join([ _to_markdown(para) for para in value.get_para() ]))
         case doxmlparser.compound.docListType:
-            #print(value.get_type()) # TODO Handle ordered lists?
-            #print(value.get_start()) # TODO Handle non-zero starts?
+            assert not value.get_type(), 'docListType.type not implemented'
+            assert not value.get_start(), 'docListType.start not implemented'
             return ''.join([ _to_markdown(item) for item in value.get_listitem() ])
         case doxmlparser.compound.docMarkupType:
-            #print(value.get_ulink()) # TODO
-            #print(f'{value.get_computeroutput()}') # TODO
+            assert not value.get_ulink(), 'docMarkupType.ulink not implemented'
+            assert not value.get_computeroutput(), 'docMarkupType.computeroutput not implemented'
             return ''.join([ _to_markdown(item) for item in value.content_ ])
         case doxmlparser.compound.docParaType:
             return ''.join([ _to_markdown(item) for item in value.content_ ])
@@ -165,7 +165,7 @@ def _to_markdown(value):
                 case doxmlparser.compound.MixedContainer.CategoryText:
                     return value.getValue()
                 case doxmlparser.compound.MixedContainer.CategorySimple:
-                    print("SIMPLE") # Todo
+                    assert False, 'MixedContainer.CategorySimple not implemented'
                     return value.getValue()
                 case doxmlparser.compound.MixedContainer.CategoryComplex:
                     return _to_markdown(value.getValue())
