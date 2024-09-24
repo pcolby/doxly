@@ -4,4 +4,4 @@ title: StatusService::DeviceCharacteristics Struct
 description: Attributes included in the  characterstic.
 tags:
 ---
-Attributes included in the TODO characterstic.
+Attributes included in the Device Characteristics characterstic.

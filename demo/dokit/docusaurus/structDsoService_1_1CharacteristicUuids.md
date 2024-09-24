@@ -4,4 +4,4 @@ title: DsoService::CharacteristicUuids Struct
 description: Characteristics available via the  service.
 tags:
 ---
-Characteristics available via the TODO service.
+Characteristics available via the DSO service.
