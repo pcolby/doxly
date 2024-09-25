@@ -1,7 +1,7 @@
 ---
 id: classPokitDevicePrivate
 title: PokitDevicePrivate Class
-description: The  class provides private implementation for .
+description: The [PokitDevicePrivate](classPokitDevicePrivate) class provides private implementation for [PokitDevice](classPokitDevice).
 tags:
 ---
 The [PokitDevicePrivate](classPokitDevicePrivate) class provides private implementation for [PokitDevice](classPokitDevice).

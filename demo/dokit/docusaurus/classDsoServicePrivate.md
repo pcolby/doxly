@@ -1,7 +1,7 @@
 ---
 id: classDsoServicePrivate
 title: DsoServicePrivate Class
-description: The  class provides private implementation for .
+description: The [DsoServicePrivate](classDsoServicePrivate) class provides private implementation for [DsoService](classDsoService).
 tags:
 ---
 The [DsoServicePrivate](classDsoServicePrivate) class provides private implementation for [DsoService](classDsoService).

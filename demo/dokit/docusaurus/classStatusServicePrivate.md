@@ -1,7 +1,7 @@
 ---
 id: classStatusServicePrivate
 title: StatusServicePrivate Class
-description: The  class provides private implementation for .
+description: The [StatusServicePrivate](classStatusServicePrivate) class provides private implementation for [StatusService](classStatusService).
 tags:
 ---
 The [StatusServicePrivate](classStatusServicePrivate) class provides private implementation for [StatusService](classStatusService).

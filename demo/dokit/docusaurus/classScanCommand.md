@@ -1,7 +1,7 @@
 ---
 id: classScanCommand
 title: ScanCommand Class
-description: The  class implements the  CLI command, by scanning for nearby Pokit Bluetooth devices.
+description: The [ScanCommand](classScanCommand) class implements the scan CLI command, by scanning for nearby Pokit Bluetooth devices.
 tags:
 ---
 The [ScanCommand](classScanCommand) class implements the scan CLI command, by scanning for nearby Pokit Bluetooth devices.

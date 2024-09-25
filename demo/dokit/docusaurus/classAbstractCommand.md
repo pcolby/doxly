@@ -1,7 +1,7 @@
 ---
 id: classAbstractCommand
 title: AbstractCommand Class
-description: The  class provides a consistent base for the classes that implement CLI commands.
+description: The [AbstractCommand](classAbstractCommand) class provides a consistent base for the classes that implement CLI commands.
 tags:
 ---
 The [AbstractCommand](classAbstractCommand) class provides a consistent base for the classes that implement CLI commands.

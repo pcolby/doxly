@@ -1,7 +1,7 @@
 ---
 id: classPokitDevice
 title: PokitDevice Class
-description: The  class simplifies Pokit device access.
+description: The [PokitDevice](classPokitDevice) class simplifies Pokit device access.
 tags:
 ---
 The [PokitDevice](classPokitDevice) class simplifies Pokit device access.

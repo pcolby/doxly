@@ -1,7 +1,7 @@
 ---
 id: classInfoCommand
 title: InfoCommand Class
-description: The  class implements the  CLI command.
+description: The [InfoCommand](classInfoCommand) class implements the info CLI command.
 tags:
 ---
 The [InfoCommand](classInfoCommand) class implements the info CLI command.

@@ -1,7 +1,7 @@
 ---
 id: classMultimeterServicePrivate
 title: MultimeterServicePrivate Class
-description: The  class provides private implementation for .
+description: The [MultimeterServicePrivate](classMultimeterServicePrivate) class provides private implementation for [MultimeterService](classMultimeterService).
 tags:
 ---
 The [MultimeterServicePrivate](classMultimeterServicePrivate) class provides private implementation for [MultimeterService](classMultimeterService).

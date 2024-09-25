@@ -1,7 +1,7 @@
 ---
 id: classAbstractPokitServicePrivate
 title: AbstractPokitServicePrivate Class
-description: The  class provides private implementation for .
+description: The [AbstractPokitServicePrivate](classAbstractPokitServicePrivate) class provides private implementation for [AbstractPokitService](classAbstractPokitService).
 tags:
 ---
 The [AbstractPokitServicePrivate](classAbstractPokitServicePrivate) class provides private implementation for [AbstractPokitService](classAbstractPokitService).

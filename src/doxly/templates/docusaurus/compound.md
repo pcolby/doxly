@@ -3,7 +3,7 @@
 id: {{ compound.id }}
 title: {{ compound.compoundname }} {{ compound.kind|capitalize }}
 {% if compound.briefdescription.para -%}
-description: {{ compound.briefdescription.para[0].valueOf_|trim }}
+description: {{ compound.briefdescription|tomarkdown|trim }}
 {% endif -%}
 tags:
 ---
