@@ -5,3 +5,18 @@ description: The  class provides a consistent base for the classes that implemen
 tags:
 ---
 The [AbstractCommand](classAbstractCommand) class provides a consistent base for the classes that implement CLI commands.
+
+
+
+## Public Static Functions
+
+
+
+AbstractCommand::escapeCsvField
+
+
+
+AbstractCommand::parseNumber
+
+
+

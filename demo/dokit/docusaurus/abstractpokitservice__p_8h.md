@@ -5,3 +5,7 @@ description: Declares the  class.
 tags:
 ---
 Declares the [AbstractPokitServicePrivate](classAbstractPokitServicePrivate) class.
+
+
+
+

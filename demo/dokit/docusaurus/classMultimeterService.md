@@ -5,3 +5,22 @@ description: The  class accesses the  service of Pokit devices.
 tags:
 ---
 The [MultimeterService](classMultimeterService) class accesses the Multimeter service of Pokit devices.
+
+
+
+## Public Static Functions
+
+
+
+MultimeterService::toString
+
+
+
+MultimeterService::toString
+
+
+
+MultimeterService::maxValue
+
+
+

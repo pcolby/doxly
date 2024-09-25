@@ -5,3 +5,7 @@ description: Attributes included in the  characterstic.
 tags:
 ---
 Attributes included in the [Reading](structMultimeterService_1_1Reading) characterstic.
+
+
+
+

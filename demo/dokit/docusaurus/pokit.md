@@ -57,3 +57,6 @@ tags:
 ## Member [StatusServicePrivate::parseStatus](classStatusServicePrivate_1a3a6ff8ca3e9d7c884b269e52dd43aeb0)  (const QByteArray &value)
 
 * <a id="pokit_1_pokit000012"></a> Pokit API 0.02 says the Status characteristic is 5 bytes. API 1.00 then added an additional byte for Battery Status, for 6 bytes in total. However, Pokit Pro devices return 8 bytes here. It appears that the first of those 2 extra bytes (ie the 7th byte) is used to indicate the physical switch position, while the other extra byte (ie the 8th byte) indicates the device's current charging status.
+
+
+

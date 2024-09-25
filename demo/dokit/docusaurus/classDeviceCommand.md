@@ -5,3 +5,7 @@ description: The  class extends  to add a  instance.
 tags:
 ---
 The [AbstractCommand](classAbstractCommand) class extends [AbstractCommand](classAbstractCommand) to add a [PokitDevice](classPokitDevice) instance.
+
+
+
+

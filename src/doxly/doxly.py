@@ -129,12 +129,15 @@ def _to_markdown(value):
             assert not value.get_start(), 'docListType.start not implemented'
             return ''.join([ _to_markdown(item) for item in value.get_listitem() ])
         case doxmlparser.compound.docMarkupType:
+            # computeroutput
             assert not value.get_ulink(), 'docMarkupType.ulink not implemented'
             assert not value.get_computeroutput(), 'docMarkupType.computeroutput not implemented'
             return ''.join([ _to_markdown(item) for item in value.content_ ])
         case doxmlparser.compound.docParaType:
+            # computeroutput etc
             return ''.join([ _to_markdown(item) for item in value.content_ ])
         case doxmlparser.compound.docRefTextType:
+            # computeroutput
             content = ''.join([ _to_markdown(item) for item in value.content_ ])
             if value.external:
                 logger.debug(f"Ignoring external reference to {value.kindref} '{value.refid}'")
@@ -145,6 +148,7 @@ def _to_markdown(value):
             # todo Bold etc.
             return ''.join([ _to_markdown(item) for item in value.content_ ])
         case doxmlparser.compound.docURLLink:
+            # todo computeroutput
             content = ''.join([ _to_markdown(item) for item in value.content_ ])
             return f'[{content}]({value.get_url()})'
         case doxmlparser.compound.docVariableListType:

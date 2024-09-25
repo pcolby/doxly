@@ -5,3 +5,18 @@ description: The  class provides private implementation for .
 tags:
 ---
 The [MultimeterServicePrivate](classMultimeterServicePrivate) class provides private implementation for [MultimeterService](classMultimeterService).
+
+
+
+## Public Static Functions
+
+
+
+MultimeterServicePrivate::encodeSettings
+
+
+
+MultimeterServicePrivate::parseReading
+
+
+

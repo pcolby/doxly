@@ -5,3 +5,22 @@ description: The  class accesses the  (Digital Storage Oscilloscope) service of 
 tags:
 ---
 The [DsoService](classDsoService) class accesses the DSO (Digital Storage Oscilloscope) service of Pokit devices.
+
+
+
+## Public Static Functions
+
+
+
+DsoService::toString
+
+
+
+DsoService::toString
+
+
+
+DsoService::maxValue
+
+
+

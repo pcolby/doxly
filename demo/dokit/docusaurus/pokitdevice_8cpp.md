@@ -5,3 +5,7 @@ description: Defines the  and  classes.
 tags:
 ---
 Defines the [PokitDevice](classPokitDevice) and [PokitDevicePrivate](classPokitDevicePrivate) classes.
+
+
+
+

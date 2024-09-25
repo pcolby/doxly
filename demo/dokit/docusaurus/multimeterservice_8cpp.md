@@ -5,3 +5,7 @@ description: Defines the  and  classes.
 tags:
 ---
 Defines the [MultimeterService](classMultimeterService) and [MultimeterServicePrivate](classMultimeterServicePrivate) classes.
+
+
+
+

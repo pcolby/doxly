@@ -5,3 +5,7 @@ description: Encapsulates convenience functions for working with resistance rang
 tags:
 ---
 Encapsulates convenience functions for working with resistance ranges.
+
+
+
+

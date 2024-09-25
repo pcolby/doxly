@@ -5,3 +5,7 @@ description: Attributes included in the  characterstic.
 tags:
 ---
 Attributes included in the [Status](structStatusService_1_1Status) characterstic.
+
+
+
+

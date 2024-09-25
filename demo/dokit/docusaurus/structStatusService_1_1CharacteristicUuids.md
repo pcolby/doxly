@@ -5,3 +5,7 @@ description: Characteristics available via the  service.
 tags:
 ---
 Characteristics available via the Pokit [Status](structStatusService_1_1Status) service.
+
+
+
+

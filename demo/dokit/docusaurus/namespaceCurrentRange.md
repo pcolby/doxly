@@ -5,3 +5,7 @@ description: Encapsulates convenience functions for working with current ranges.
 tags:
 ---
 Encapsulates convenience functions for working with current ranges.
+
+
+
+

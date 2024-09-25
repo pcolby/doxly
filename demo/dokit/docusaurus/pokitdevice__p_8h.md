@@ -5,3 +5,7 @@ description: Declares the  class.
 tags:
 ---
 Declares the [PokitDevicePrivate](classPokitDevicePrivate) class.
+
+
+
+

@@ -5,3 +5,7 @@ description: Attributes included in the  characterstic.
 tags:
 ---
 Attributes included in the [Settings](structDsoService_1_1Settings) characterstic.
+
+
+
+

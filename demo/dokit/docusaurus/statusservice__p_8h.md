@@ -5,3 +5,7 @@ description: Declares the  class.
 tags:
 ---
 Declares the [StatusServicePrivate](classStatusServicePrivate) class.
+
+
+
+

@@ -5,3 +5,14 @@ description: The  class provides private implementation for .
 tags:
 ---
 The [CalibrationServicePrivate](classCalibrationServicePrivate) class provides private implementation for [CalibrationService](classCalibrationService).
+
+
+
+## Public Static Functions
+
+
+
+CalibrationServicePrivate::encodeTemperature
+
+
+

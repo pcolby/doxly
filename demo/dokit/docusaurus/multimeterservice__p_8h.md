@@ -5,3 +5,7 @@ description: Declares the  class.
 tags:
 ---
 Declares the [MultimeterServicePrivate](classMultimeterServicePrivate) class.
+
+
+
+
