@@ -13,26 +13,38 @@ The [StatusService](classStatusService) class accesses the Pokit [Status](struct
 
 
 StatusService::toString
+Returns a string version of the status enum label.
 
-
-
-StatusService::toString
 
 
 
 StatusService::toString
+Returns a string version of the status enum label.
 
-
-
-StatusService::toString
 
 
 
 StatusService::toString
+Returns a string version of the position enum label.
+
 
 
 
 StatusService::toString
+Returns a string version of the status enum label.
+
+
+
+
+StatusService::toString
+Returns a string version of the status enum label.
+
+
+
+
+StatusService::toString
+Returns a string version of the status enum label.
+
 
 
 

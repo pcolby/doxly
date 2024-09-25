@@ -13,6 +13,8 @@ The [PokitDevicePrivate](classPokitDevicePrivate) class provides private impleme
 
 
 PokitDevicePrivate::Q_LOGGING_CATEGORY
+Logging category.
+
 
 
 

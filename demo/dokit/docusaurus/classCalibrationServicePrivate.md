@@ -13,6 +13,8 @@ The [CalibrationServicePrivate](classCalibrationServicePrivate) class provides p
 
 
 CalibrationServicePrivate::encodeTemperature
+Returns value in a format Pokit devices expect.
+Specifically, this just enocdes value as a 32-bit float in litte-endian byte order.
 
 
 

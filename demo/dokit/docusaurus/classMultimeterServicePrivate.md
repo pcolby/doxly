@@ -13,10 +13,14 @@ The [MultimeterServicePrivate](classMultimeterServicePrivate) class provides pri
 
 
 MultimeterServicePrivate::encodeSettings
+Returns settings in the format Pokit devices expect.
+
 
 
 
 MultimeterServicePrivate::parseReading
+Parses the Reading value into a [MultimeterService::Reading](structMultimeterService_1_1Reading) struct.
+
 
 
 

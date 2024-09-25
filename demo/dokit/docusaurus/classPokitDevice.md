@@ -15,10 +15,14 @@ It does this by wrapping QLowEnergyController to provide:
 
 
 PokitDevice::serviceToString
+Returns a human-readable name for the uuid service, or a null QString if unknonw.
+This is equivalent to QBluetoothUuid::serviceClassToString() but for services provided by Pokit devices.
 
 
 
 PokitDevice::charcteristicToString
+Returns a human-readable name for the uuid characteristic, or a null QString if unknown.
+This is equivalent to QBluetoothUuid::characteristicToString() but for characteristics provided by Pokit devices.
 
 
 

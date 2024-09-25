@@ -16,6 +16,8 @@ tags:
 {{ member.type }}
 {{ member.argstring }}
 {{ member.qualifiedname }}
+{{ member.briefdescription|tomarkdown|trim }}
+{{ member.detaileddescription|tomarkdown|trim }}
 {% endfor %}
 {% endfor %}
 

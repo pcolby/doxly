@@ -13,6 +13,8 @@ The [PokitDiscoveryAgentPrivate](classPokitDiscoveryAgentPrivate) class provides
 
 
 PokitDiscoveryAgentPrivate::Q_LOGGING_CATEGORY
+Logging category.
+
 
 
 
